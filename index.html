@@ -2,9 +2,333 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Personal Homepage</title>
+    <style>
+        :root {
+            --bg: #f4efe6;
+            --bg-accent: #d8e6df;
+            --surface: rgba(255, 255, 255, 0.78);
+            --text: #1f2933;
+            --muted: #5b6570;
+            --brand: #0f766e;
+            --brand-dark: #115e59;
+            --border: rgba(31, 41, 51, 0.12);
+            --shadow: 0 24px 60px rgba(31, 41, 51, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(217, 119, 6, 0.12), transparent 24%),
+                linear-gradient(135deg, var(--bg) 0%, #f8f7f3 52%, var(--bg-accent) 100%);
+        }
+
+        .page {
+            width: min(1100px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 24px 0 40px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 14px 18px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.62);
+            backdrop-filter: blur(14px);
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .logo-mark {
+            width: 12px;
+            height: 12px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--brand), #22c55e);
+            box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.08);
+        }
+
+        .nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-left: 18px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 24px;
+            align-items: center;
+            padding: 72px 0 36px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid var(--border);
+            color: var(--brand-dark);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            margin: 18px 0 16px;
+            font-size: clamp(2.9rem, 7vw, 5.6rem);
+            line-height: 0.95;
+            letter-spacing: -0.05em;
+            max-width: 10ch;
+        }
+
+        .lead {
+            max-width: 58ch;
+            font-size: 1.08rem;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 18px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: var(--brand);
+            color: white;
+            box-shadow: 0 16px 30px rgba(15, 118, 110, 0.22);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.7);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .hero-card {
+            padding: 24px;
+            border-radius: 28px;
+            background: var(--surface);
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(14px);
+        }
+
+        .stats {
+            display: grid;
+            gap: 14px;
+        }
+
+        .stat {
+            padding: 16px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid var(--border);
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .section {
+            padding: 20px 0 0;
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            margin: 0 0 16px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            padding: 22px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.68);
+            border: 1px solid var(--border);
+            box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+        }
+
+        .card p,
+        .contact p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .contact {
+            margin: 22px 0 0;
+            padding: 24px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, rgba(15, 118, 110, 0.96), rgba(17, 94, 89, 0.92));
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .contact a {
+            color: white;
+        }
+
+        @media (max-width: 860px) {
+            .hero,
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                border-radius: 24px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav div {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-left: 0;
+            }
+
+            .nav a {
+                margin-left: 0;
+            }
+
+            h1 {
+                max-width: none;
+            }
+        }
+    </style>
 </head>
 <body>
+    <main class="page">
+        <header class="nav">
+            <div class="logo">
+                <span class="logo-mark" aria-hidden="true"></span>
+                <span>Simple Personal Page</span>
+            </div>
+            <div>
+                <a href="#about">About</a>
+                <a href="#stuff">Stuff</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
 
+        <section class="hero">
+            <div>
+                <span class="eyebrow">Just me and my dawg</span>
+                <h1>Simple personal homepage for a chill human.</h1>
+                <p class="lead">
+                    A laid-back little homepage to say who I am, what I’m about, and that my dog is probably
+                    nearby while I’m pretending to be productive.
+                </p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#contact">Say hi</a>
+                    <a class="btn btn-secondary" href="#stuff">See what I do</a>
+                </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Highlights">
+                <div class="stats">
+                    <div class="stat">
+                        <strong>01</strong>
+                        Easygoing, simple, and not trying too hard.
+                    </div>
+                    <div class="stat">
+                        <strong>02</strong>
+                        Built for hanging out, not for looking corporate.
+                    </div>
+                    <div class="stat">
+                        <strong>03</strong>
+                        Perfect for a quick intro and a dog cameo.
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About</h2>
+            <p class="lead">
+                I'm a regular dude, keeping it simple. This page is just a small corner of the internet for
+                a bit about me, some things I like, and maybe a picture of my dawg later.
+            </p>
+        </section>
+
+        <section class="section" id="stuff">
+            <h2>Stuff I’m Into</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Chill Vibes</h3>
+                    <p>Keeping the page clean, calm, and easy to read.</p>
+                </article>
+                <article class="card">
+                    <h3>My Dog</h3>
+                    <p>Important life priority, honestly. The real co-star of the homepage.</p>
+                </article>
+                <article class="card">
+                    <h3>Hanging Out</h3>
+                    <p>A simple page for friends, family, or anyone who just wants the basics.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>
+                Drop in your email, socials, or whatever you want people to reach you on.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
