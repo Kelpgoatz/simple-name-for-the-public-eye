@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Personal Homepage</title>
+    <title>Futur Aero Homepage</title>
     <style>
         :root {
-            --bg: #f4efe6;
-            --bg-accent: #d8e6df;
-            --surface: rgba(255, 255, 255, 0.78);
-            --text: #1f2933;
-            --muted: #5b6570;
-            --brand: #0f766e;
-            --brand-dark: #115e59;
-            --border: rgba(31, 41, 51, 0.12);
-            --shadow: 0 24px 60px rgba(31, 41, 51, 0.12);
+            --sky-1: #dff8ff;
+            --sky-2: #9ddff0;
+            --sky-3: #5fb9d4;
+            --glass: rgba(255, 255, 255, 0.34);
+            --glass-strong: rgba(255, 255, 255, 0.52);
+            --text: #11323f;
+            --muted: #4b6a78;
+            --line: rgba(255, 255, 255, 0.68);
+            --shadow: 0 26px 70px rgba(14, 59, 78, 0.24);
         }
 
         * {
@@ -28,96 +28,179 @@
         body {
             margin: 0;
             min-height: 100vh;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Trebuchet MS", "Segoe UI", sans-serif;
             color: var(--text);
             background:
-                radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 28%),
-                radial-gradient(circle at bottom right, rgba(217, 119, 6, 0.12), transparent 24%),
-                linear-gradient(135deg, var(--bg) 0%, #f8f7f3 52%, var(--bg-accent) 100%);
+                radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.95) 0 7%, transparent 8%),
+                radial-gradient(circle at 24% 26%, rgba(255, 255, 255, 0.7) 0 4%, transparent 5%),
+                radial-gradient(circle at 78% 22%, rgba(255, 255, 255, 0.88) 0 8%, transparent 9%),
+                radial-gradient(circle at 86% 34%, rgba(255, 255, 255, 0.6) 0 4%, transparent 5%),
+                radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.65), transparent 34%),
+                linear-gradient(180deg, #eafcff 0%, var(--sky-1) 26%, #b8ecf9 66%, #7ecfe3 100%);
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(120deg, rgba(255, 255, 255, 0.24) 0%, transparent 18%, transparent 82%, rgba(255, 255, 255, 0.16) 100%),
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.2), transparent 34%),
+                radial-gradient(circle at 80% 72%, rgba(255, 255, 255, 0.14), transparent 28%);
+            mix-blend-mode: screen;
         }
 
         .page {
-            width: min(1100px, calc(100% - 32px));
+            width: min(1120px, calc(100% - 24px));
             margin: 0 auto;
-            padding: 24px 0 40px;
+            padding: 20px 0 28px;
         }
 
-        .nav {
+        .frame {
+            position: relative;
+            overflow: hidden;
+            border-radius: 34px;
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.18)),
+                rgba(255, 255, 255, 0.18);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.8),
+                0 28px 70px rgba(13, 71, 92, 0.24);
+            backdrop-filter: blur(18px);
+        }
+
+        .frame::before,
+        .frame::after {
+            content: "";
+            position: absolute;
+            border-radius: 999px;
+            pointer-events: none;
+            filter: blur(2px);
+        }
+
+        .frame::before {
+            width: 340px;
+            height: 340px;
+            top: -120px;
+            right: -110px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.02) 72%);
+        }
+
+        .frame::after {
+            width: 260px;
+            height: 260px;
+            left: -110px;
+            bottom: -110px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.02) 70%);
+        }
+
+        .topbar {
+            position: relative;
+            z-index: 1;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 16px;
-            padding: 14px 18px;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.62);
-            backdrop-filter: blur(14px);
+            padding: 22px 24px 0;
         }
 
-        .logo {
+        .brand {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             font-weight: 700;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #0d4253;
         }
 
-        .logo-mark {
-            width: 12px;
-            height: 12px;
+        .orb {
+            width: 18px;
+            height: 18px;
             border-radius: 999px;
-            background: linear-gradient(135deg, var(--brand), #22c55e);
-            box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.08);
+            background:
+                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.2) 34%, transparent 36%),
+                linear-gradient(135deg, #fefefe, #8ee2f1 48%, #1f90af 100%);
+            box-shadow:
+                inset 0 1px 2px rgba(255, 255, 255, 0.8),
+                0 0 0 7px rgba(255, 255, 255, 0.15);
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .nav a {
-            color: var(--muted);
+            color: #114454;
             text-decoration: none;
-            font-size: 0.95rem;
-            margin-left: 18px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(208, 244, 255, 0.42));
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.9),
+                0 8px 18px rgba(29, 87, 111, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .nav a:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.95),
+                0 12px 20px rgba(29, 87, 111, 0.16);
         }
 
         .hero {
+            position: relative;
+            z-index: 1;
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-columns: 1.15fr 0.85fr;
             gap: 24px;
             align-items: center;
-            padding: 72px 0 36px;
+            padding: 58px 24px 28px;
         }
 
         .eyebrow {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 14px;
+            gap: 10px;
+            padding: 9px 14px;
             border-radius: 999px;
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid var(--border);
-            color: var(--brand-dark);
-            font-size: 0.9rem;
-            font-weight: 600;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(214, 247, 255, 0.34));
+            border: 1px solid rgba(255, 255, 255, 0.76);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+            color: #0d6178;
+            font-size: 0.92rem;
+            font-weight: 700;
         }
 
         h1 {
             margin: 18px 0 16px;
-            font-size: clamp(2.9rem, 7vw, 5.6rem);
-            line-height: 0.95;
-            letter-spacing: -0.05em;
-            max-width: 10ch;
+            max-width: 11ch;
+            font-size: clamp(3rem, 8vw, 6.2rem);
+            line-height: 0.9;
+            letter-spacing: -0.07em;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
         }
 
         .lead {
-            max-width: 58ch;
-            font-size: 1.08rem;
-            line-height: 1.7;
+            max-width: 56ch;
+            margin: 0;
             color: var(--muted);
+            font-size: 1.06rem;
+            line-height: 1.85;
         }
 
         .actions {
             display: flex;
             flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 28px;
+            gap: 12px;
+            margin-top: 26px;
         }
 
         .btn {
@@ -127,9 +210,9 @@
             min-height: 48px;
             padding: 0 18px;
             border-radius: 999px;
-            font-weight: 700;
             text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .btn:hover {
@@ -137,198 +220,297 @@
         }
 
         .btn-primary {
-            background: var(--brand);
-            color: white;
-            box-shadow: 0 16px 30px rgba(15, 118, 110, 0.22);
+            color: #083747;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(157, 230, 244, 0.74));
+            border: 1px solid rgba(255, 255, 255, 0.82);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.95),
+                0 14px 26px rgba(17, 87, 110, 0.14);
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.7);
-            color: var(--text);
-            border: 1px solid var(--border);
+            color: #114454;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(214, 247, 255, 0.34));
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
         }
 
-        .hero-card {
-            padding: 24px;
+        .glass-card {
+            position: relative;
+            padding: 18px;
             border-radius: 28px;
-            background: var(--surface);
-            border: 1px solid rgba(255, 255, 255, 0.72);
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(14px);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.22));
+            border: 1px solid rgba(255, 255, 255, 0.75);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.95),
+                0 18px 40px rgba(23, 88, 111, 0.14);
         }
 
-        .stats {
-            display: grid;
-            gap: 14px;
+        .window {
+            position: relative;
+            overflow: hidden;
+            height: 290px;
+            border-radius: 22px;
+            background:
+                radial-gradient(circle at 22% 24%, rgba(255, 255, 255, 0.95) 0 5%, transparent 6%),
+                radial-gradient(circle at 62% 20%, rgba(255, 255, 255, 0.75) 0 4%, transparent 5%),
+                radial-gradient(circle at 50% 46%, rgba(255, 255, 255, 0.7) 0 10%, transparent 11%),
+                radial-gradient(circle at 48% 58%, rgba(119, 205, 226, 0.95) 0 27%, rgba(37, 128, 155, 0.9) 60%, rgba(21, 79, 106, 0.88) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.84);
         }
 
-        .stat {
-            padding: 16px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.72);
-            border: 1px solid var(--border);
+        .window::before,
+        .window::after {
+            content: "";
+            position: absolute;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.56);
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8);
         }
 
-        .stat strong {
-            display: block;
-            font-size: 1.5rem;
-            margin-bottom: 6px;
+        .window::before {
+            width: 120px;
+            height: 120px;
+            left: 18px;
+            bottom: 18px;
         }
 
-        .section {
-            padding: 20px 0 0;
+        .window::after {
+            width: 190px;
+            height: 190px;
+            right: -20px;
+            top: -10px;
+            background: rgba(255, 255, 255, 0.22);
         }
 
-        .section h2 {
-            font-size: 1.6rem;
-            margin: 0 0 16px;
+        .bubble {
+            position: absolute;
+            border-radius: 999px;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.14) 40%, rgba(255, 255, 255, 0.04) 70%);
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.85);
         }
 
-        .cards {
+        .bubble.b1 {
+            width: 68px;
+            height: 68px;
+            top: 18px;
+            left: 20px;
+        }
+
+        .bubble.b2 {
+            width: 42px;
+            height: 42px;
+            top: 64px;
+            right: 26px;
+        }
+
+        .bubble.b3 {
+            width: 98px;
+            height: 98px;
+            bottom: 22px;
+            right: 28px;
+        }
+
+        .badge-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(202, 242, 255, 0.3));
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            color: #245463;
+            font-size: 0.92rem;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        }
+
+        .sections {
+            position: relative;
+            z-index: 1;
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 18px;
+            gap: 16px;
+            padding: 0 24px 24px;
         }
 
-        .card {
+        .panel {
             padding: 22px;
             border-radius: 24px;
-            background: rgba(255, 255, 255, 0.68);
-            border: 1px solid var(--border);
-            box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.26));
+            border: 1px solid rgba(255, 255, 255, 0.74);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.88),
+                0 14px 28px rgba(21, 87, 112, 0.08);
         }
 
-        .card h3 {
+        .panel h2 {
             margin: 0 0 10px;
+            color: #0f4e61;
+            font-size: 1.28rem;
         }
 
-        .card p,
-        .contact p {
+        .panel p {
             margin: 0;
             color: var(--muted);
-            line-height: 1.65;
+            line-height: 1.75;
         }
 
         .contact {
-            margin: 22px 0 0;
+            margin: 0 24px 24px;
             padding: 24px;
             border-radius: 28px;
-            background: linear-gradient(135deg, rgba(15, 118, 110, 0.96), rgba(17, 94, 89, 0.92));
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.54), rgba(173, 235, 249, 0.28)),
+                linear-gradient(135deg, rgba(18, 106, 133, 0.94), rgba(62, 166, 194, 0.88));
             color: white;
-            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.82),
+                0 20px 44px rgba(19, 85, 112, 0.22);
         }
 
-        .contact a {
-            color: white;
+        .contact h2 {
+            margin: 0 0 10px;
+            font-size: 1.42rem;
         }
 
-        @media (max-width: 860px) {
-            .hero,
-            .cards {
+        .contact p {
+            margin: 0;
+            max-width: 62ch;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        @media (max-width: 900px) {
+            .topbar,
+            .hero {
                 grid-template-columns: 1fr;
             }
 
-            .nav {
-                border-radius: 24px;
-                flex-direction: column;
-                align-items: flex-start;
+            .topbar {
+                display: grid;
+                justify-content: initial;
             }
 
-            .nav div {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 12px;
-                margin-left: 0;
-            }
-
-            .nav a {
-                margin-left: 0;
+            .sections {
+                grid-template-columns: 1fr;
             }
 
             h1 {
                 max-width: none;
             }
         }
+
+        @media (max-width: 640px) {
+            .page {
+                width: min(100% - 14px, 1120px);
+                padding: 8px 0 16px;
+            }
+
+            .frame {
+                border-radius: 24px;
+            }
+
+            .topbar,
+            .hero,
+            .sections {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            .contact {
+                margin: 0 14px 14px;
+            }
+
+            .window {
+                height: 220px;
+            }
+        }
     </style>
 </head>
 <body>
     <main class="page">
-        <header class="nav">
-            <div class="logo">
-                <span class="logo-mark" aria-hidden="true"></span>
-                <span>Simple Personal Page</span>
-            </div>
-            <div>
-                <a href="#about">About</a>
-                <a href="#stuff">Stuff</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </header>
-
-        <section class="hero">
-            <div>
-                <span class="eyebrow">Just me and my dawg</span>
-                <h1>Simple personal homepage for a chill human.</h1>
-                <p class="lead">
-                    A laid-back little homepage to say who I am, what I’m about, and that my dog is probably
-                    nearby while I’m pretending to be productive.
-                </p>
-                <div class="actions">
-                    <a class="btn btn-primary" href="#contact">Say hi</a>
-                    <a class="btn btn-secondary" href="#stuff">See what I do</a>
+        <div class="frame">
+            <header class="topbar">
+                <div class="brand">
+                    <span class="orb" aria-hidden="true"></span>
+                    <span>Your Name</span>
                 </div>
-            </div>
+                <nav class="nav" aria-label="Primary">
+                    <a href="#about">About</a>
+                    <a href="#stuff">Stuff</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
 
-            <aside class="hero-card" aria-label="Highlights">
-                <div class="stats">
-                    <div class="stat">
-                        <strong>01</strong>
-                        Easygoing, simple, and not trying too hard.
+            <section class="hero">
+                <div>
+                    <span class="eyebrow">Futuristic glass, aqua shine, and a little dog energy</span>
+                    <h1>Just a dude and his dawg.</h1>
+                    <p class="lead">
+                        A simple personal homepage with that glossy Frutiger Aero feel: bright, fresh, bubbly,
+                        and a bit nostalgic. Clean enough to feel polished, relaxed enough to feel like you.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="#contact">Say hi</a>
+                        <a class="btn btn-secondary" href="#stuff">See the vibe</a>
                     </div>
-                    <div class="stat">
-                        <strong>02</strong>
-                        Built for hanging out, not for looking corporate.
-                    </div>
-                    <div class="stat">
-                        <strong>03</strong>
-                        Perfect for a quick intro and a dog cameo.
+                    <div class="badge-strip">
+                        <span class="badge">Aero glass</span>
+                        <span class="badge">Blue sky energy</span>
+                        <span class="badge">Dog approved</span>
                     </div>
                 </div>
-            </aside>
-        </section>
 
-        <section class="section" id="about">
-            <h2>About</h2>
-            <p class="lead">
-                I'm a regular dude, keeping it simple. This page is just a small corner of the internet for
-                a bit about me, some things I like, and maybe a picture of my dawg later.
-            </p>
-        </section>
+                <aside class="glass-card" aria-label="Decorative panel">
+                    <div class="window" aria-hidden="true">
+                        <span class="bubble b1"></span>
+                        <span class="bubble b2"></span>
+                        <span class="bubble b3"></span>
+                    </div>
+                </aside>
+            </section>
 
-        <section class="section" id="stuff">
-            <h2>Stuff I’m Into</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>Chill Vibes</h3>
-                    <p>Keeping the page clean, calm, and easy to read.</p>
+            <section class="sections" id="about">
+                <article class="panel">
+                    <h2>About Me</h2>
+                    <p>
+                        I keep things simple, low-stress, and easy to read. This page is here to feel friendly
+                        instead of corporate.
+                    </p>
                 </article>
-                <article class="card">
-                    <h3>My Dog</h3>
-                    <p>Important life priority, honestly. The real co-star of the homepage.</p>
-                </article>
-                <article class="card">
-                    <h3>Hanging Out</h3>
-                    <p>A simple page for friends, family, or anyone who just wants the basics.</p>
-                </article>
-            </div>
-        </section>
 
-        <section class="contact" id="contact">
-            <h2>Contact</h2>
-            <p>
-                Drop in your email, socials, or whatever you want people to reach you on.
-            </p>
-        </section>
+                <article class="panel" id="stuff">
+                    <h2>Stuff I Like</h2>
+                    <p>
+                        Clean visuals, a smooth layout, and hanging out with my dog. That’s the whole mood.
+                    </p>
+                </article>
+
+                <article class="panel">
+                    <h2>What This Is</h2>
+                    <p>
+                        A one-page personal site with shiny glass panels, bright highlights, and a proper 2000s
+                        aero vibe.
+                    </p>
+                </article>
+            </section>
+
+            <section class="contact" id="contact">
+                    <h2>Contact</h2>
+                    <p>
+                    Drop in your email, socials, or any link you want people to use. If you want, I can also make
+                    it even more Frutiger Aero with water, leaves, more gloss, and a proper centerpiece image.
+                    </p>
+            </section>
+        </div>
     </main>
 </body>
 </html>
