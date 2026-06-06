@@ -3,18 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futur Aero Homepage</title>
+    <title>Aero News</title>
     <style>
         :root {
-            --sky-1: #dff8ff;
-            --sky-2: #9ddff0;
-            --sky-3: #5fb9d4;
-            --glass: rgba(255, 255, 255, 0.34);
-            --glass-strong: rgba(255, 255, 255, 0.52);
+            color-scheme: light;
+            --sky-1: #e8fbff;
+            --sky-2: #b6edf8;
+            --sky-3: #72cfe4;
             --text: #11323f;
-            --muted: #4b6a78;
-            --line: rgba(255, 255, 255, 0.68);
-            --shadow: 0 26px 70px rgba(14, 59, 78, 0.24);
+            --muted: #4f6d79;
+            --brand: #0d4253;
+            --brand-soft: #0f5a6d;
+            --surface-1: rgba(255, 255, 255, 0.5);
+            --surface-2: rgba(255, 255, 255, 0.26);
+            --surface-3: rgba(255, 255, 255, 0.08);
+            --surface-4: rgba(255, 255, 255, 0.05);
+            --line: rgba(255, 255, 255, 0.94);
+            --glow: rgba(255, 255, 255, 0.98);
+            --shadow: 0 28px 72px rgba(16, 69, 88, 0.24);
+        }
+
+        :root[data-theme="dark"] {
+            color-scheme: dark;
+            --sky-1: #0b2030;
+            --sky-2: #102f40;
+            --sky-3: #154c61;
+            --text: #eaf7fb;
+            --muted: #a9c0cb;
+            --brand: #e8fbff;
+            --brand-soft: #8cd7ea;
+            --surface-1: rgba(10, 24, 33, 0.74);
+            --surface-2: rgba(8, 19, 27, 0.42);
+            --surface-3: rgba(7, 18, 25, 0.22);
+            --surface-4: rgba(7, 18, 25, 0.1);
+            --line: rgba(188, 235, 248, 0.18);
+            --glow: rgba(255, 255, 255, 0.12);
+            --shadow: 0 30px 72px rgba(0, 0, 0, 0.34);
         }
 
         * {
@@ -31,13 +55,21 @@
             font-family: "Trebuchet MS", "Segoe UI", sans-serif;
             color: var(--text);
             background:
-                radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.95) 0 7%, transparent 8%),
-                radial-gradient(circle at 24% 26%, rgba(255, 255, 255, 0.7) 0 4%, transparent 5%),
-                radial-gradient(circle at 78% 22%, rgba(255, 255, 255, 0.88) 0 8%, transparent 9%),
-                radial-gradient(circle at 86% 34%, rgba(255, 255, 255, 0.6) 0 4%, transparent 5%),
-                radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.65), transparent 34%),
-                linear-gradient(180deg, #eafcff 0%, var(--sky-1) 26%, #b8ecf9 66%, #7ecfe3 100%);
+                radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.95) 0 7%, transparent 8%),
+                radial-gradient(circle at 24% 28%, rgba(255, 255, 255, 0.72) 0 4%, transparent 5%),
+                radial-gradient(circle at 80% 22%, rgba(255, 255, 255, 0.88) 0 8%, transparent 9%),
+                radial-gradient(circle at 86% 36%, rgba(255, 255, 255, 0.58) 0 4%, transparent 5%),
+                linear-gradient(180deg, #f0fdff 0%, var(--sky-1) 24%, var(--sky-2) 62%, var(--sky-3) 100%);
             overflow-x: hidden;
+        }
+
+        :root[data-theme="dark"] body {
+            background:
+                radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.05) 0 7%, transparent 8%),
+                radial-gradient(circle at 24% 28%, rgba(255, 255, 255, 0.03) 0 4%, transparent 5%),
+                radial-gradient(circle at 80% 22%, rgba(255, 255, 255, 0.04) 0 8%, transparent 9%),
+                radial-gradient(circle at 86% 36%, rgba(255, 255, 255, 0.02) 0 4%, transparent 5%),
+                linear-gradient(180deg, #06131b 0%, var(--sky-1) 24%, var(--sky-2) 62%, var(--sky-3) 100%);
         }
 
         body::before {
@@ -46,14 +78,23 @@
             inset: 0;
             pointer-events: none;
             background:
-                linear-gradient(120deg, rgba(255, 255, 255, 0.24) 0%, transparent 18%, transparent 82%, rgba(255, 255, 255, 0.16) 100%),
-                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.2), transparent 34%),
-                radial-gradient(circle at 80% 72%, rgba(255, 255, 255, 0.14), transparent 28%);
+                linear-gradient(120deg, rgba(255, 255, 255, 0.22) 0%, transparent 18%, transparent 82%, rgba(255, 255, 255, 0.16) 100%),
+                radial-gradient(circle at 18% 82%, rgba(255, 255, 255, 0.16), transparent 34%),
+                radial-gradient(circle at 78% 70%, rgba(255, 255, 255, 0.12), transparent 30%),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
             mix-blend-mode: screen;
         }
 
+        :root[data-theme="dark"] body::before {
+            background:
+                linear-gradient(120deg, rgba(255, 255, 255, 0.08) 0%, transparent 18%, transparent 82%, rgba(255, 255, 255, 0.03) 100%),
+                radial-gradient(circle at 18% 82%, rgba(72, 177, 210, 0.12), transparent 34%),
+                radial-gradient(circle at 78% 70%, rgba(255, 255, 255, 0.05), transparent 30%),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+        }
+
         .page {
-            width: min(1120px, calc(100% - 24px));
+            width: min(1200px, calc(100% - 24px));
             margin: 0 auto;
             padding: 20px 0 28px;
         }
@@ -62,14 +103,14 @@
             position: relative;
             overflow: hidden;
             border-radius: 34px;
-            border: 1px solid rgba(255, 255, 255, 0.72);
+            border: 1px solid var(--line);
             background:
-                linear-gradient(180deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.18)),
-                rgba(255, 255, 255, 0.18);
+                linear-gradient(180deg, var(--surface-1), var(--surface-2)),
+                var(--surface-3);
             box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.8),
-                0 28px 70px rgba(13, 71, 92, 0.24);
-            backdrop-filter: blur(18px);
+                inset 0 1px 0 var(--glow),
+                var(--shadow);
+            backdrop-filter: blur(28px);
         }
 
         .frame::before,
@@ -78,43 +119,86 @@
             position: absolute;
             border-radius: 999px;
             pointer-events: none;
-            filter: blur(2px);
         }
 
         .frame::before {
-            width: 340px;
-            height: 340px;
-            top: -120px;
-            right: -110px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.02) 72%);
+            width: 360px;
+            height: 360px;
+            top: -130px;
+            right: -120px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.02) 72%);
         }
 
         .frame::after {
-            width: 260px;
-            height: 260px;
-            left: -110px;
-            bottom: -110px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.02) 70%);
+            width: 300px;
+            height: 300px;
+            left: -130px;
+            bottom: -130px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.02) 72%);
+        }
+
+        .masthead {
+            position: relative;
+            z-index: 1;
+            padding: 22px 24px 0;
+        }
+
+        .site-banner {
+            margin-bottom: 18px;
+            padding: 18px 22px;
+            border-radius: 26px;
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 14px 26px rgba(23, 88, 111, 0.12);
+            text-align: center;
+            backdrop-filter: blur(30px);
+        }
+
+        .site-banner h1 {
+            margin: 0;
+            max-width: none;
+            font-size: clamp(2.2rem, 5vw, 4.4rem);
+            line-height: 0.95;
+            letter-spacing: -0.06em;
+            color: var(--brand);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+        }
+
+        .site-banner p {
+            margin: 10px 0 0;
+            color: var(--brand-soft);
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
         }
 
         .topbar {
-            position: relative;
-            z-index: 1;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 16px;
-            padding: 22px 24px 0;
+        }
+
+        .topbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-left: auto;
         }
 
         .brand {
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            font-weight: 700;
-            letter-spacing: 0.04em;
+            color: var(--brand);
+            font-weight: 800;
+            letter-spacing: 0.05em;
             text-transform: uppercase;
-            color: #0d4253;
         }
 
         .orb {
@@ -122,47 +206,105 @@
             height: 18px;
             border-radius: 999px;
             background:
-                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.2) 34%, transparent 36%),
-                linear-gradient(135deg, #fefefe, #8ee2f1 48%, #1f90af 100%);
+                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.18) 34%, transparent 36%),
+                linear-gradient(135deg, #ffffff, #93e5f4 45%, #1d8dac 100%);
             box-shadow:
                 inset 0 1px 2px rgba(255, 255, 255, 0.8),
-                0 0 0 7px rgba(255, 255, 255, 0.15);
+                0 0 0 7px rgba(255, 255, 255, 0.12);
         }
 
-        .nav {
+        .search {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
-        }
-
-        .nav a {
-            color: #114454;
-            text-decoration: none;
+            min-width: min(360px, 100%);
             padding: 10px 14px;
             border-radius: 999px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(208, 244, 255, 0.42));
-            border: 1px solid rgba(255, 255, 255, 0.72);
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
             box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.9),
-                0 8px 18px rgba(29, 87, 111, 0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+                inset 0 1px 0 var(--glow),
+                0 10px 18px rgba(30, 86, 109, 0.1);
+            backdrop-filter: blur(24px);
         }
 
-        .nav a:hover {
-            transform: translateY(-2px);
+        .search span {
+            color: var(--brand-soft);
+            font-size: 0.95rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .search input {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: transparent;
+            color: var(--text);
+            font: inherit;
+        }
+
+        .search input::placeholder {
+            color: var(--muted);
+            opacity: 0.72;
+        }
+
+        .theme-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 46px;
+            padding: 0 16px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            color: var(--brand-soft);
+            font: inherit;
+            font-weight: 700;
+            white-space: nowrap;
+            cursor: pointer;
             box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.95),
-                0 12px 20px rgba(29, 87, 111, 0.16);
+                inset 0 1px 0 var(--glow),
+                0 10px 18px rgba(30, 86, 109, 0.1);
+            backdrop-filter: blur(24px);
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-1px);
         }
 
         .hero {
             position: relative;
             z-index: 1;
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 24px;
-            align-items: center;
-            padding: 58px 24px 28px;
+            padding: 24px;
+        }
+
+        .story-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .story-link:hover .top-story {
+            transform: translateY(-2px);
+        }
+
+        .top-story {
+            padding: 28px;
+            border-radius: 28px;
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 18px 36px rgba(23, 88, 111, 0.12);
+            backdrop-filter: blur(26px);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .eyebrow {
@@ -171,246 +313,200 @@
             gap: 10px;
             padding: 9px 14px;
             border-radius: 999px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(214, 247, 255, 0.34));
-            border: 1px solid rgba(255, 255, 255, 0.76);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
-            color: #0d6178;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(214, 247, 255, 0.36));
+            border: 1px solid rgba(255, 255, 255, 0.78);
+            box-shadow: inset 0 1px 0 var(--glow);
+            color: var(--brand-soft);
             font-size: 0.92rem;
             font-weight: 700;
         }
 
-        h1 {
-            margin: 18px 0 16px;
-            max-width: 11ch;
-            font-size: clamp(3rem, 8vw, 6.2rem);
-            line-height: 0.9;
+        .top-story h2 {
+            margin: 18px 0 12px;
+            max-width: 12ch;
+            font-size: clamp(3rem, 8vw, 6.4rem);
+            line-height: 0.88;
             letter-spacing: -0.07em;
             text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+            color: var(--brand);
         }
 
         .lead {
-            max-width: 56ch;
+            margin: 0;
+            max-width: 62ch;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.84;
+        }
+
+        .section-block {
+            position: relative;
+            z-index: 1;
+            padding: 0 24px 24px;
+        }
+
+        .section-head {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .section-head h3 {
+            margin: 0;
+            color: var(--brand);
+            font-size: 1.42rem;
+            letter-spacing: -0.03em;
+        }
+
+        .section-head p {
             margin: 0;
             color: var(--muted);
-            font-size: 1.06rem;
-            line-height: 1.85;
+            line-height: 1.6;
         }
 
-        .actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 26px;
+        .recent-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 14px;
+            grid-auto-flow: dense;
         }
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 48px;
-            padding: 0 18px;
-            border-radius: 999px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .btn-primary {
-            color: #083747;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(157, 230, 244, 0.74));
-            border: 1px solid rgba(255, 255, 255, 0.82);
-            box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.95),
-                0 14px 26px rgba(17, 87, 110, 0.14);
-        }
-
-        .btn-secondary {
-            color: #114454;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(214, 247, 255, 0.34));
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
-        }
-
-        .glass-card {
-            position: relative;
-            padding: 18px;
-            border-radius: 28px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.22));
-            border: 1px solid rgba(255, 255, 255, 0.75);
-            box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.95),
-                0 18px 40px rgba(23, 88, 111, 0.14);
-        }
-
-        .window {
+        .story-card {
+            display: block;
             position: relative;
             overflow: hidden;
-            height: 290px;
-            border-radius: 22px;
+            color: inherit;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 24px;
             background:
-                radial-gradient(circle at 22% 24%, rgba(255, 255, 255, 0.95) 0 5%, transparent 6%),
-                radial-gradient(circle at 62% 20%, rgba(255, 255, 255, 0.75) 0 4%, transparent 5%),
-                radial-gradient(circle at 50% 46%, rgba(255, 255, 255, 0.7) 0 10%, transparent 11%),
-                radial-gradient(circle at 48% 58%, rgba(119, 205, 226, 0.95) 0 27%, rgba(37, 128, 155, 0.9) 60%, rgba(21, 79, 106, 0.88) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.84);
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 14px 28px rgba(20, 86, 109, 0.08);
+            backdrop-filter: blur(28px);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            min-height: 180px;
         }
 
-        .window::before,
-        .window::after {
+        .story-card:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 18px 32px rgba(20, 86, 109, 0.12);
+        }
+
+        .story-card::before {
             content: "";
             position: absolute;
+            inset: auto -20px -26px auto;
+            width: 130px;
+            height: 130px;
             border-radius: 999px;
-            background: rgba(255, 255, 255, 0.56);
-            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.26), transparent 72%);
+            pointer-events: none;
         }
 
-        .window::before {
-            width: 120px;
-            height: 120px;
-            left: 18px;
-            bottom: 18px;
+        :root[data-theme="dark"] .story-card::before {
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 72%);
         }
 
-        .window::after {
-            width: 190px;
-            height: 190px;
-            right: -20px;
-            top: -10px;
-            background: rgba(255, 255, 255, 0.22);
-        }
-
-        .bubble {
-            position: absolute;
-            border-radius: 999px;
-            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.14) 40%, rgba(255, 255, 255, 0.04) 70%);
-            border: 1px solid rgba(255, 255, 255, 0.55);
-            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.85);
-        }
-
-        .bubble.b1 {
-            width: 68px;
-            height: 68px;
-            top: 18px;
-            left: 20px;
-        }
-
-        .bubble.b2 {
-            width: 42px;
-            height: 42px;
-            top: 64px;
-            right: 26px;
-        }
-
-        .bubble.b3 {
-            width: 98px;
-            height: 98px;
-            bottom: 22px;
-            right: 28px;
-        }
-
-        .badge-strip {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .badge {
+        .story-card__tag {
             display: inline-flex;
             align-items: center;
             padding: 8px 12px;
             border-radius: 999px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(202, 242, 255, 0.3));
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            color: #245463;
-            font-size: 0.92rem;
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            background: linear-gradient(180deg, var(--surface-1), var(--surface-4));
+            border: 1px solid var(--line);
+            color: var(--brand-soft);
+            font-size: 0.9rem;
+            font-weight: 700;
+            box-shadow: inset 0 1px 0 var(--glow);
         }
 
-        .sections {
-            position: relative;
-            z-index: 1;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 16px;
-            padding: 0 24px 24px;
+        .story-card h4 {
+            margin: 12px 0 10px;
+            font-size: 1.22rem;
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+            color: var(--brand);
         }
 
-        .panel {
-            padding: 22px;
-            border-radius: 24px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.26));
-            border: 1px solid rgba(255, 255, 255, 0.74);
-            box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.88),
-                0 14px 28px rgba(21, 87, 112, 0.08);
-        }
-
-        .panel h2 {
-            margin: 0 0 10px;
-            color: #0f4e61;
-            font-size: 1.28rem;
-        }
-
-        .panel p {
+        .story-card p {
             margin: 0;
             color: var(--muted);
-            line-height: 1.75;
+            line-height: 1.7;
+            font-size: 0.97rem;
         }
 
-        .contact {
-            margin: 0 24px 24px;
-            padding: 24px;
-            border-radius: 28px;
+        .story-card__meta {
+            margin-top: 12px;
+            color: var(--brand-soft);
+            font-size: 0.88rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .story-card--feature {
+            grid-column: span 7;
+            min-height: 250px;
             background:
-                linear-gradient(180deg, rgba(255, 255, 255, 0.54), rgba(173, 235, 249, 0.28)),
-                linear-gradient(135deg, rgba(18, 106, 133, 0.94), rgba(62, 166, 194, 0.88));
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.82),
-                0 20px 44px rgba(19, 85, 112, 0.22);
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
         }
 
-        .contact h2 {
-            margin: 0 0 10px;
-            font-size: 1.42rem;
+        .story-card--tall {
+            grid-column: span 5;
+            min-height: 250px;
         }
 
-        .contact p {
-            margin: 0;
-            max-width: 62ch;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.92);
+        .story-card--wide {
+            grid-column: span 6;
+            min-height: 190px;
         }
 
-        @media (max-width: 900px) {
-            .topbar,
-            .hero {
-                grid-template-columns: 1fr;
+        .story-card--small {
+            grid-column: span 4;
+            min-height: 180px;
+        }
+
+        .old-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .old-grid .story-card {
+            min-height: 160px;
+        }
+
+        @media (max-width: 980px) {
+            .recent-grid,
+            .old-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
-            .topbar {
-                display: grid;
-                justify-content: initial;
+            .story-card--feature,
+            .story-card--tall,
+            .story-card--wide,
+            .story-card--small {
+                grid-column: span 1;
+                min-height: 180px;
             }
 
-            .sections {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
+            .top-story h2 {
                 max-width: none;
             }
         }
 
         @media (max-width: 640px) {
             .page {
-                width: min(100% - 14px, 1120px);
+                width: min(100% - 14px, 1200px);
                 padding: 8px 0 16px;
             }
 
@@ -418,99 +514,194 @@
                 border-radius: 24px;
             }
 
-            .topbar,
+            .masthead,
             .hero,
-            .sections {
+            .section-block {
                 padding-left: 14px;
                 padding-right: 14px;
             }
 
-            .contact {
-                margin: 0 14px 14px;
+            .site-banner {
+                padding: 16px;
             }
 
-            .window {
-                height: 220px;
+            .topbar {
+                display: grid;
+                justify-content: initial;
+            }
+
+            .topbar-actions {
+                width: 100%;
+            }
+
+            .search {
+                min-width: 0;
+                width: 100%;
+            }
+
+            .top-story {
+                padding: 22px;
+            }
+
+            .top-story h2 {
+                font-size: 2.8rem;
+            }
+
+            .recent-grid,
+            .old-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
-<body>
+<body id="top">
     <main class="page">
         <div class="frame">
-            <header class="topbar">
-                <div class="brand">
-                    <span class="orb" aria-hidden="true"></span>
-                    <span>Your Name</span>
+            <header class="masthead">
+                <div class="site-banner">
+                    <h1>cgrillo.com</h1>
+                    <p>Glassy news, clean headlines, and bright aero vibes.</p>
                 </div>
-                <nav class="nav" aria-label="Primary">
-                    <a href="#about">About</a>
-                    <a href="#stuff">Stuff</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+                <div class="topbar">
+                    <div class="brand">
+                        <span class="orb" aria-hidden="true"></span>
+                        <span>Aero News</span>
+                    </div>
+                    <div class="topbar-actions">
+                        <label class="search" aria-label="Search news">
+                            <span>Search</span>
+                            <input type="search" placeholder="Search headlines..." />
+                        </label>
+                        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark mode</button>
+                    </div>
+                </div>
             </header>
 
             <section class="hero">
-                <div>
-                    <span class="eyebrow">Futuristic glass, aqua shine, and a little dog energy</span>
-                    <h1>Just a dude and his dawg.</h1>
-                    <p class="lead">
-                        A simple personal homepage with that glossy Frutiger Aero feel: bright, fresh, bubbly,
-                        and a bit nostalgic. Clean enough to feel polished, relaxed enough to feel like you.
-                    </p>
-                    <div class="actions">
-                        <a class="btn btn-primary" href="#contact">Say hi</a>
-                        <a class="btn btn-secondary" href="#stuff">See the vibe</a>
-                    </div>
-                    <div class="badge-strip">
-                        <span class="badge">Aero glass</span>
-                        <span class="badge">Blue sky energy</span>
-                        <span class="badge">Dog approved</span>
+                <a class="story-link" href="article.html" aria-label="Open full article">
+                    <article class="top-story" id="world">
+                        <span class="eyebrow">Top Story</span>
+                        <h2>Glassy front page for the day&apos;s biggest stories.</h2>
+                        <p class="lead">
+                            A Frutiger Aero-inspired news homepage with soft glass panels, aqua gradients, rounded cards,
+                            and a clean editorial layout that feels straight out of a stylish news hub.
+                        </p>
+                    </article>
+                </a>
+            </section>
+
+            <section class="section-block" aria-labelledby="recent-stories-title">
+                <div class="section-head">
+                    <div>
+                        <h3 id="recent-stories-title">Recent Stories</h3>
+                        <p>Newer pieces with a few larger cards mixed in.</p>
                     </div>
                 </div>
+                <div class="recent-grid">
+                    <a class="story-card story-card--feature" href="article.html" aria-label="Open city update story">
+                        <span class="story-card__tag">Local</span>
+                        <h4>City update: waterfront lights up at sunrise.</h4>
+                        <p>Morning reports, short quotes, and a brighter start to the day.</p>
+                        <div class="story-card__meta">4 min read</div>
+                    </a>
+                    <a class="story-card story-card--tall" href="article.html" aria-label="Open sports recap story">
+                        <span class="story-card__tag">Sports</span>
+                        <h4>Sports desk: late run changes everything.</h4>
+                        <p>A taller card for a longer recap with room for a little extra detail.</p>
+                        <div class="story-card__meta">6 min read</div>
+                    </a>
+                    <a class="story-card story-card--wide" href="article.html" aria-label="Open opinion story">
+                        <span class="story-card__tag">Opinion</span>
+                        <h4>Why glossy design still feels good on a news page.</h4>
+                        <p>Style can be playful, polished, and easy on the eyes at the same time.</p>
+                        <div class="story-card__meta">3 min read</div>
+                    </a>
+                    <a class="story-card story-card--small" href="article.html" aria-label="Open weather story">
+                        <span class="story-card__tag">Weather</span>
+                        <h4>Clear skies hold through the afternoon.</h4>
+                        <div class="story-card__meta">2 min read</div>
+                    </a>
+                    <a class="story-card story-card--small" href="article.html" aria-label="Open business story">
+                        <span class="story-card__tag">Business</span>
+                        <h4>Cafe district adds two new spots downtown.</h4>
+                        <div class="story-card__meta">5 min read</div>
+                    </a>
+                    <a class="story-card story-card--small" href="article.html" aria-label="Open culture story">
+                        <span class="story-card__tag">Culture</span>
+                        <h4>Gallery night draws a packed crowd.</h4>
+                        <div class="story-card__meta">4 min read</div>
+                    </a>
+                </div>
+            </section>
 
-                <aside class="glass-card" aria-label="Decorative panel">
-                    <div class="window" aria-hidden="true">
-                        <span class="bubble b1"></span>
-                        <span class="bubble b2"></span>
-                        <span class="bubble b3"></span>
+            <section class="section-block" aria-labelledby="old-stories-title">
+                <div class="section-head">
+                    <div>
+                        <h3 id="old-stories-title">Old Stories</h3>
+                        <p>Simple archive grid with older headline templates.</p>
                     </div>
-                </aside>
-            </section>
-
-            <section class="sections" id="about">
-                <article class="panel">
-                    <h2>About Me</h2>
-                    <p>
-                        I keep things simple, low-stress, and easy to read. This page is here to feel friendly
-                        instead of corporate.
-                    </p>
-                </article>
-
-                <article class="panel" id="stuff">
-                    <h2>Stuff I Like</h2>
-                    <p>
-                        Clean visuals, a smooth layout, and hanging out with my dog. That’s the whole mood.
-                    </p>
-                </article>
-
-                <article class="panel">
-                    <h2>What This Is</h2>
-                    <p>
-                        A one-page personal site with shiny glass panels, bright highlights, and a proper 2000s
-                        aero vibe.
-                    </p>
-                </article>
-            </section>
-
-            <section class="contact" id="contact">
-                    <h2>Contact</h2>
-                    <p>
-                    Drop in your email, socials, or any link you want people to use. If you want, I can also make
-                    it even more Frutiger Aero with water, leaves, more gloss, and a proper centerpiece image.
-                    </p>
+                </div>
+                <div class="old-grid">
+                    <a class="story-card" href="article.html" aria-label="Open archive story one">
+                        <span class="story-card__tag">Archive</span>
+                        <h4>Morning commuter rail refresh</h4>
+                        <p>Older coverage with a short summary and a clean layout.</p>
+                    </a>
+                    <a class="story-card" href="article.html" aria-label="Open archive story two">
+                        <span class="story-card__tag">Archive</span>
+                        <h4>Studio opens in the arts quarter</h4>
+                        <p>A straightforward template for a local feature story.</p>
+                    </a>
+                    <a class="story-card" href="article.html" aria-label="Open archive story three">
+                        <span class="story-card__tag">Archive</span>
+                        <h4>Weekend market expands by two rows</h4>
+                        <p>Simple and readable, with room for the essentials.</p>
+                    </a>
+                    <a class="story-card" href="article.html" aria-label="Open archive story four">
+                        <span class="story-card__tag">Archive</span>
+                        <h4>Opinion: the return of glossy web design</h4>
+                        <p>An older commentary card that fits the same glassy theme.</p>
+                    </a>
+                </div>
             </section>
         </div>
     </main>
+    <script>
+        (() => {
+            const storageKey = "cgrillo-theme";
+            const root = document.documentElement;
+            const toggleButton = document.querySelector("[data-theme-toggle]");
+
+            const getStoredTheme = () => {
+                try {
+                    return localStorage.getItem(storageKey);
+                } catch {
+                    return null;
+                }
+            };
+
+            const setTheme = (theme, persist = true) => {
+                root.dataset.theme = theme;
+                if (toggleButton) {
+                    toggleButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+                    toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
+                }
+                if (persist) {
+                    try {
+                        localStorage.setItem(storageKey, theme);
+                    } catch {
+                        // Ignore storage failures on file URLs or restricted environments.
+                    }
+                }
+            };
+
+            const initialTheme = getStoredTheme() || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            setTheme(initialTheme, false);
+
+            toggleButton?.addEventListener("click", () => {
+                setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+            });
+        })();
+    </script>
 </body>
 </html>
