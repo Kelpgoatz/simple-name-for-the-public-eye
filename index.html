@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -283,6 +283,13 @@
             padding: 24px;
         }
 
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.95fr);
+            gap: 14px;
+            align-items: stretch;
+        }
+
         .story-link {
             display: block;
             color: inherit;
@@ -337,6 +344,120 @@
             color: var(--muted);
             font-size: 1.05rem;
             line-height: 1.84;
+        }
+
+        .ladder-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            padding: 22px;
+            border-radius: 28px;
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 18px 36px rgba(23, 88, 111, 0.12);
+            backdrop-filter: blur(26px);
+        }
+
+        .ladder-card__head {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .ladder-card__head h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            letter-spacing: -0.03em;
+            color: var(--brand);
+        }
+
+        .ladder-card__head span {
+            color: var(--brand-soft);
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .ladder-list {
+            display: grid;
+            gap: 10px;
+            max-height: 520px;
+            overflow-y: auto;
+            padding-right: 6px;
+            scrollbar-gutter: stable;
+        }
+
+        .ladder-row {
+            display: grid;
+            grid-template-columns: 24px 34px 1fr auto;
+            gap: 10px;
+            align-items: center;
+            padding: 11px 12px;
+            border-radius: 18px;
+            background:
+                linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 24%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 14%, transparent)),
+                rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+        }
+
+        .ladder-row__pos {
+            color: var(--brand-soft);
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .ladder-row__team {
+            color: var(--brand);
+            font-weight: 800;
+        }
+
+        .ladder-row__logo {
+            width: 34px;
+            height: 34px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            text-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.42),
+                0 0 4px rgba(0, 0, 0, 0.22);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.4),
+                0 8px 14px rgba(14, 68, 88, 0.14);
+            background:
+                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.45), transparent 36%),
+                linear-gradient(
+                    135deg,
+                    var(--logo-from, #79d7ec) 0%,
+                    var(--logo-from, #79d7ec) 62%,
+                    var(--logo-mid, var(--logo-to, #0f5a6d)) 84%,
+                    var(--logo-to, #0f5a6d) 100%
+                );
+        }
+
+        .ladder-row__stats {
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-weight: 700;
+            white-space: nowrap;
+            text-align: right;
+        }
+
+        .ladder-note {
+            margin: 14px 0 0;
+            color: var(--brand-soft);
+            font-size: 0.88rem;
+            font-weight: 700;
         }
 
         .section-block {
@@ -486,6 +607,7 @@
         }
 
         @media (max-width: 980px) {
+            .hero-grid,
             .recent-grid,
             .old-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -547,6 +669,11 @@
                 font-size: 2.8rem;
             }
 
+            .ladder-list {
+                max-height: 420px;
+            }
+
+            .hero-grid,
             .recent-grid,
             .old-grid {
                 grid-template-columns: 1fr;
@@ -578,16 +705,135 @@
             </header>
 
             <section class="hero">
-                <a class="story-link" href="article.html" aria-label="Open full article">
-                    <article class="top-story" id="world">
-                        <span class="eyebrow">Top Story</span>
-                        <h2>Dog turns into a cat and lands 73,789,327 backflips.</h2>
-                        <p class="lead">
-                            The front page&apos;s biggest breaking story arrives in a glossy glass card, with a wild
-                            transformation, a crowd of witnesses, and one very determined cat.
-                        </p>
-                    </article>
-                </a>
+                <div class="hero-grid">
+                    <a class="story-link" href="article.html" aria-label="Open full article">
+                        <article class="top-story" id="world">
+                            <span class="eyebrow">Top Story</span>
+                            <h2>Dog turns into a cat and lands 73,789,327 backflips.</h2>
+                            <p class="lead">
+                                The front page&apos;s biggest breaking story arrives in a glossy glass card, with a wild
+                                transformation, a crowd of witnesses, and one very determined cat.
+                            </p>
+                        </article>
+                    </a>
+                    <aside class="ladder-card" aria-labelledby="afl-ladder-title">
+                        <div class="ladder-card__head">
+                            <h3 id="afl-ladder-title">AFL Ladder</h3>
+                            <span>Round 14</span>
+                        </div>
+                        <div class="ladder-list" data-ladder-list>
+                            <div class="ladder-row" style="--logo-from:#002b5c;--logo-mid:#e31b23;--logo-to:#ffcc00;">
+                                <div class="ladder-row__pos">1</div>
+                                <div class="ladder-row__logo" aria-hidden="true">AC</div>
+                                <div class="ladder-row__team">Adelaide Crows</div>
+                                <div class="ladder-row__stats">14-2 · 136.4%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#7a003c;--logo-mid:#0047bb;--logo-to:#ffcc00;">
+                                <div class="ladder-row__pos">2</div>
+                                <div class="ladder-row__logo" aria-hidden="true">BL</div>
+                                <div class="ladder-row__team">Brisbane Lions</div>
+                                <div class="ladder-row__stats">13-3 · 129.8%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#002b5c;--logo-to:#f7f8fb;--logo-text:#002b5c;">
+                                <div class="ladder-row__pos">3</div>
+                                <div class="ladder-row__logo" aria-hidden="true">CA</div>
+                                <div class="ladder-row__team">Carlton</div>
+                                <div class="ladder-row__stats">12-4 · 124.1%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#111111;--logo-to:#f5f5f5;--logo-text:#111111;">
+                                <div class="ladder-row__pos">4</div>
+                                <div class="ladder-row__logo" aria-hidden="true">CW</div>
+                                <div class="ladder-row__team">Collingwood</div>
+                                <div class="ladder-row__stats">11-5 · 118.6%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#111111;--logo-to:#e31b23;">
+                                <div class="ladder-row__pos">5</div>
+                                <div class="ladder-row__logo" aria-hidden="true">ES</div>
+                                <div class="ladder-row__team">Essendon</div>
+                                <div class="ladder-row__stats">10-6 · 112.2%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#5a2ca0;--logo-to:#f1ebff;--logo-text:#5a2ca0;">
+                                <div class="ladder-row__pos">6</div>
+                                <div class="ladder-row__logo" aria-hidden="true">FR</div>
+                                <div class="ladder-row__team">Fremantle</div>
+                                <div class="ladder-row__stats">10-6 · 108.9%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#002b5c;--logo-to:#f4f7fb;--logo-text:#002b5c;">
+                                <div class="ladder-row__pos">7</div>
+                                <div class="ladder-row__logo" aria-hidden="true">GC</div>
+                                <div class="ladder-row__team">Geelong Cats</div>
+                                <div class="ladder-row__stats">9-7 · 101.5%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#e31b23;--logo-to:#ffd300;--logo-text:#ffffff;">
+                                <div class="ladder-row__pos">8</div>
+                                <div class="ladder-row__logo" aria-hidden="true">GS</div>
+                                <div class="ladder-row__team">Gold Coast Suns</div>
+                                <div class="ladder-row__stats">9-7 · 98.7%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#ff6f00;--logo-mid:#3a3a3a;--logo-to:#ffffff;">
+                                <div class="ladder-row__pos">9</div>
+                                <div class="ladder-row__logo" aria-hidden="true">GW</div>
+                                <div class="ladder-row__team">GWS Giants</div>
+                                <div class="ladder-row__stats">8-8 · 96.2%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#6b3f1d;--logo-to:#ffcc00;">
+                                <div class="ladder-row__pos">10</div>
+                                <div class="ladder-row__logo" aria-hidden="true">HW</div>
+                                <div class="ladder-row__team">Hawthorn</div>
+                                <div class="ladder-row__stats">8-8 · 94.5%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#002b5c;--logo-to:#e31b23;">
+                                <div class="ladder-row__pos">11</div>
+                                <div class="ladder-row__logo" aria-hidden="true">ME</div>
+                                <div class="ladder-row__team">Melbourne</div>
+                                <div class="ladder-row__stats">8-8 · 92.1%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#0047bb;--logo-to:#f7f8fb;--logo-text:#0047bb;">
+                                <div class="ladder-row__pos">12</div>
+                                <div class="ladder-row__logo" aria-hidden="true">NM</div>
+                                <div class="ladder-row__team">North Melbourne</div>
+                                <div class="ladder-row__stats">7-9 · 89.7%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#008c8c;--logo-mid:#111111;--logo-to:#c0c0c0;">
+                                <div class="ladder-row__pos">13</div>
+                                <div class="ladder-row__logo" aria-hidden="true">PA</div>
+                                <div class="ladder-row__team">Port Adelaide</div>
+                                <div class="ladder-row__stats">7-9 · 88.4%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#111111;--logo-to:#fdd000;">
+                                <div class="ladder-row__pos">14</div>
+                                <div class="ladder-row__logo" aria-hidden="true">RI</div>
+                                <div class="ladder-row__team">Richmond</div>
+                                <div class="ladder-row__stats">6-10 · 84.6%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#e31b23;--logo-mid:#f5f5f5;--logo-to:#111111;">
+                                <div class="ladder-row__pos">15</div>
+                                <div class="ladder-row__logo" aria-hidden="true">ST</div>
+                                <div class="ladder-row__team">St Kilda</div>
+                                <div class="ladder-row__stats">6-10 · 82.3%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#e31b23;--logo-to:#f7f7fb;--logo-text:#e31b23;">
+                                <div class="ladder-row__pos">16</div>
+                                <div class="ladder-row__logo" aria-hidden="true">SS</div>
+                                <div class="ladder-row__team">Sydney Swans</div>
+                                <div class="ladder-row__stats">5-11 · 79.5%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#0047bb;--logo-to:#ffcc00;">
+                                <div class="ladder-row__pos">17</div>
+                                <div class="ladder-row__logo" aria-hidden="true">WC</div>
+                                <div class="ladder-row__team">West Coast Eagles</div>
+                                <div class="ladder-row__stats">4-12 · 74.8%</div>
+                            </div>
+                            <div class="ladder-row" style="--logo-from:#0047bb;--logo-mid:#e31b23;--logo-to:#f7f7fb;">
+                                <div class="ladder-row__pos">18</div>
+                                <div class="ladder-row__logo" aria-hidden="true">WB</div>
+                                <div class="ladder-row__team">Western Bulldogs</div>
+                                <div class="ladder-row__stats">3-13 · 70.1%</div>
+                            </div>
+                        </div>
+                        <p class="ladder-note" data-ladder-note>Original club palettes with brighter, more even colour balance.</p>
+                    </aside>
+                </div>
             </section>
 
             <section class="section-block" aria-labelledby="recent-stories-title">
@@ -667,6 +913,135 @@
         </div>
     </main>
     <script>
+        (() => {
+            const apiUrl = "https://api.squiggle.com.au/?q=standings";
+            const ladderList = document.querySelector("[data-ladder-list]");
+            const ladderNote = document.querySelector("[data-ladder-note]");
+
+            if (!ladderList) {
+                return;
+            }
+
+            const teams = {
+                Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
+                "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
+                Carlton: { display: "Carlton", initials: "CA", colors: ["#002b5c", "#f7f8fb"] },
+                Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
+                Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
+                Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
+                Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f4f7fb"] },
+                "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
+                "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
+                Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
+                Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
+                "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
+                "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
+                Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
+                "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
+                Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
+                "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
+                "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
+            };
+
+            const fallbackStandings = [
+                { rank: 1, name: "Fremantle", played: 14, wins: 13, losses: 1, draws: 0, pts: 52, percentage: 144.4, "for": 1411, against: 977 },
+                { rank: 2, name: "Sydney", played: 15, wins: 12, losses: 3, draws: 0, pts: 48, percentage: 135.7, "for": 1661, against: 1224 },
+                { rank: 3, name: "Hawthorn", played: 15, wins: 10, losses: 4, draws: 1, pts: 42, percentage: 113.7, "for": 1457, against: 1281 },
+                { rank: 4, name: "Geelong", played: 15, wins: 9, losses: 6, draws: 0, pts: 36, percentage: 120.6, "for": 1490, against: 1236 },
+                { rank: 5, name: "Adelaide", played: 14, wins: 9, losses: 5, draws: 0, pts: 36, percentage: 113.2, "for": 1257, against: 1110 },
+                { rank: 6, name: "Brisbane Lions", played: 15, wins: 9, losses: 6, draws: 0, pts: 36, percentage: 111.0, "for": 1551, against: 1397 },
+                { rank: 7, name: "Melbourne", played: 15, wins: 9, losses: 6, draws: 0, pts: 36, percentage: 104.2, "for": 1430, against: 1373 },
+                { rank: 8, name: "Western Bulldogs", played: 15, wins: 9, losses: 6, draws: 0, pts: 36, percentage: 92.8, "for": 1270, against: 1369 },
+                { rank: 9, name: "Gold Coast", played: 14, wins: 7, losses: 7, draws: 0, pts: 28, percentage: 105.3, "for": 1330, against: 1263 },
+                { rank: 10, name: "Carlton", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 95.6, "for": 1254, against: 1312 },
+                { rank: 11, name: "North Melbourne", played: 14, wins: 7, losses: 7, draws: 0, pts: 28, percentage: 90.7, "for": 1215, against: 1339 },
+                { rank: 12, name: "Collingwood", played: 14, wins: 6, losses: 7, draws: 1, pts: 26, percentage: 101.6, "for": 1147, against: 1129 },
+                { rank: 13, name: "St Kilda", played: 15, wins: 6, losses: 9, draws: 0, pts: 24, percentage: 100.6, "for": 1334, against: 1326 },
+                { rank: 14, name: "Greater Western Sydney", played: 15, wins: 6, losses: 9, draws: 0, pts: 24, percentage: 99.3, "for": 1362, against: 1372 },
+                { rank: 15, name: "Port Adelaide", played: 14, wins: 4, losses: 10, draws: 0, pts: 16, percentage: 98.6, "for": 1124, against: 1140 },
+                { rank: 16, name: "West Coast", played: 15, wins: 4, losses: 11, draws: 0, pts: 16, percentage: 71.3, "for": 1087, against: 1524 },
+                { rank: 17, name: "Richmond", played: 14, wins: 2, losses: 12, draws: 0, pts: 8, percentage: 61.3, "for": 915, against: 1492 },
+                { rank: 18, name: "Essendon", played: 14, wins: 1, losses: 13, draws: 0, pts: 4, percentage: 70.4, "for": 1027, against: 1458 }
+            ];
+
+            const formatNumber = (value, fallback = 0) => {
+                const number = Number(value);
+                return Number.isFinite(number) ? number : fallback;
+            };
+
+            const formatPercentage = (value) => formatNumber(value).toFixed(1);
+
+            const addText = (className, text, parent) => {
+                const element = document.createElement("div");
+                element.className = className;
+                element.textContent = text;
+                parent.appendChild(element);
+                return element;
+            };
+
+            const applyColors = (row, colors) => {
+                row.style.setProperty("--logo-from", colors[0]);
+                row.style.setProperty("--logo-to", colors[colors.length - 1]);
+                if (colors.length > 2) {
+                    row.style.setProperty("--logo-mid", colors[1]);
+                } else {
+                    row.style.removeProperty("--logo-mid");
+                }
+            };
+
+            const renderStandings = (standings, sourceText) => {
+                const sortedStandings = [...standings].sort((first, second) => formatNumber(first.rank) - formatNumber(second.rank));
+                ladderList.replaceChildren();
+
+                sortedStandings.forEach((standing, index) => {
+                    const team = teams[standing.name] || {
+                        display: standing.name,
+                        initials: standing.name.slice(0, 2).toUpperCase(),
+                        colors: ["#0f5a6d", "#79d7ec"]
+                    };
+                    const row = document.createElement("div");
+                    row.className = "ladder-row";
+                    applyColors(row, team.colors);
+
+                    addText("ladder-row__pos", String(formatNumber(standing.rank, index + 1)), row);
+                    const logo = addText("ladder-row__logo", team.initials, row);
+                    logo.setAttribute("aria-hidden", "true");
+                    addText("ladder-row__team", team.display, row);
+
+                    addText(
+                        "ladder-row__stats",
+                        `${formatNumber(standing.wins)}-${formatNumber(standing.losses)}-${formatNumber(standing.draws)} · ${formatNumber(standing.pts)} pts · ${formatPercentage(standing.percentage)}%`,
+                        row
+                    );
+
+                    ladderList.appendChild(row);
+                });
+
+                if (ladderNote) {
+                    ladderNote.textContent = sourceText;
+                }
+            };
+
+            renderStandings(fallbackStandings, "Loading Squiggle standings...");
+
+            fetch(apiUrl, { headers: { Accept: "application/json" } })
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Squiggle standings failed to load.");
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!Array.isArray(data.standings)) {
+                        throw new Error("Squiggle standings response was missing data.");
+                    }
+                    renderStandings(data.standings, "Live stats from Squiggle: record, points and percentage.");
+                })
+                .catch(() => {
+                    renderStandings(fallbackStandings, "Backup standings shown until Squiggle is reachable.");
+                });
+        })();
+
         (() => {
             const storageKey = "cgrillo-theme";
             const root = document.documentElement;
