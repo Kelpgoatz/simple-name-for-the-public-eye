@@ -97,6 +97,18 @@
   },
   {
     "rank": 9,
+    "name": "Collingwood",
+    "played": 16,
+    "wins": 8,
+    "losses": 7,
+    "draws": 1,
+    "pts": 34,
+    "percentage": 104.4,
+    "for": 1357,
+    "against": 1300
+  },
+  {
+    "rank": 10,
     "name": "North Melbourne",
     "played": 15,
     "wins": 8,
@@ -108,31 +120,7 @@
     "against": 1404
   },
   {
-    "rank": 10,
-    "name": "Collingwood",
-    "played": 15,
-    "wins": 7,
-    "losses": 7,
-    "draws": 1,
-    "pts": 30,
-    "percentage": 104.2,
-    "for": 1253,
-    "against": 1202
-  },
-  {
     "rank": 11,
-    "name": "Gold Coast SUNS",
-    "played": 15,
-    "wins": 7,
-    "losses": 8,
-    "draws": 0,
-    "pts": 28,
-    "percentage": 101.2,
-    "for": 1359,
-    "against": 1343
-  },
-  {
-    "rank": 12,
     "name": "GWS GIANTS",
     "played": 16,
     "wins": 7,
@@ -142,6 +130,18 @@
     "percentage": 100.8,
     "for": 1471,
     "against": 1460
+  },
+  {
+    "rank": 12,
+    "name": "Gold Coast SUNS",
+    "played": 16,
+    "wins": 7,
+    "losses": 9,
+    "draws": 0,
+    "pts": 28,
+    "percentage": 100.7,
+    "for": 1457,
+    "against": 1447
   },
   {
     "rank": 13,
