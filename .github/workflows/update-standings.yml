@@ -17,9 +17,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get current AFL season ID
+        run: |
+          year=$(date +%Y)
+          for page in 0 1 2 3 4 5 6 7 8 9; do
+            id=$(curl -s "https://aflapi.afl.com.au/afl/v2/compseasons?page=$page" | \
+              jq -r --argjson y "$year" \
+                '[.compSeasons[] | select(.season.year == $y and .competition.code == "AFL" and .shortName == "Premiership")][0].id // empty')
+            if [ -n "$id" ]; then
+              echo "season_id=$id" >> $GITHUB_ENV
+              break
+            fi
+          done
+
       - name: Fetch and extract AFL standings
         run: |
-          curl -s "https://aflapi.afl.com.au/afl/v2/compseasons/85/ladders" | \
+          id="${season_id:-85}"
+          curl -s "https://aflapi.afl.com.au/afl/v2/compseasons/$id/ladders" | \
           jq '[.ladders[0].entries[] | {
             rank: .position,
             name: .team.name,
