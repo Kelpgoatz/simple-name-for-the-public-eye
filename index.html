@@ -1025,7 +1025,7 @@
                 }
             };
 
-            renderStandings(fallbackStandings, "Loading standings...");
+            renderStandings(fallbackStandings, "Standings are updated every 6 hours and may not reflect today's completed games.");
 
             fetch("standings.json")
                 .then(response => {
@@ -1034,10 +1034,10 @@
                 })
                 .then(data => {
                     if (!Array.isArray(data)) throw new Error("Invalid response");
-                    renderStandings(data, "Live standings: record, points and percentage.");
+                    renderStandings(data, "Standings are updated every 6 hours and may not reflect today's completed games.");
                 })
                 .catch(() => {
-                    renderStandings(fallbackStandings, "Backup standings shown.");
+                    renderStandings(fallbackStandings, "Standings may not reflect most recent results.");
                 });
         })();
 
