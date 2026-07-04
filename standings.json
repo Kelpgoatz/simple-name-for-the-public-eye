@@ -109,18 +109,6 @@
   },
   {
     "rank": 10,
-    "name": "Carlton",
-    "played": 16,
-    "wins": 8,
-    "losses": 8,
-    "draws": 0,
-    "pts": 32,
-    "percentage": 96.0,
-    "for": 1328,
-    "against": 1384
-  },
-  {
-    "rank": 11,
     "name": "North Melbourne",
     "played": 15,
     "wins": 8,
@@ -132,7 +120,7 @@
     "against": 1404
   },
   {
-    "rank": 12,
+    "rank": 11,
     "name": "GWS GIANTS",
     "played": 16,
     "wins": 7,
@@ -144,7 +132,7 @@
     "against": 1460
   },
   {
-    "rank": 13,
+    "rank": 12,
     "name": "Gold Coast SUNS",
     "played": 16,
     "wins": 7,
@@ -154,6 +142,18 @@
     "percentage": 100.7,
     "for": 1457,
     "against": 1447
+  },
+  {
+    "rank": 13,
+    "name": "Carlton",
+    "played": 15,
+    "wins": 7,
+    "losses": 8,
+    "draws": 0,
+    "pts": 28,
+    "percentage": 95.6,
+    "for": 1254,
+    "against": 1312
   },
   {
     "rank": 14,
@@ -194,14 +194,14 @@
   {
     "rank": 17,
     "name": "Richmond",
-    "played": 16,
+    "played": 15,
     "wins": 2,
-    "losses": 14,
+    "losses": 13,
     "draws": 0,
     "pts": 8,
-    "percentage": 63.3,
-    "for": 1059,
-    "against": 1672
+    "percentage": 61.8,
+    "for": 987,
+    "against": 1598
   },
   {
     "rank": 18,
