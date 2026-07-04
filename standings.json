@@ -2,14 +2,14 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 15,
+    "played": 16,
     "wins": 14,
-    "losses": 1,
+    "losses": 2,
     "draws": 0,
     "pts": 56,
-    "percentage": 148.2,
-    "for": 1491,
-    "against": 1006
+    "percentage": 141.6,
+    "for": 1579,
+    "against": 1115
   },
   {
     "rank": 2,
@@ -26,14 +26,14 @@
   {
     "rank": 3,
     "name": "Hawthorn",
-    "played": 15,
+    "played": 16,
     "wins": 10,
-    "losses": 4,
+    "losses": 5,
     "draws": 1,
     "pts": 42,
-    "percentage": 113.7,
-    "for": 1457,
-    "against": 1281
+    "percentage": 110.0,
+    "for": 1547,
+    "against": 1406
   },
   {
     "rank": 4,
@@ -61,6 +61,18 @@
   },
   {
     "rank": 6,
+    "name": "Melbourne",
+    "played": 16,
+    "wins": 10,
+    "losses": 6,
+    "draws": 0,
+    "pts": 40,
+    "percentage": 106.3,
+    "for": 1555,
+    "against": 1463
+  },
+  {
+    "rank": 7,
     "name": "Geelong Cats",
     "played": 16,
     "wins": 9,
@@ -70,18 +82,6 @@
     "percentage": 117.1,
     "for": 1591,
     "against": 1359
-  },
-  {
-    "rank": 7,
-    "name": "Melbourne",
-    "played": 15,
-    "wins": 9,
-    "losses": 6,
-    "draws": 0,
-    "pts": 36,
-    "percentage": 104.2,
-    "for": 1430,
-    "against": 1373
   },
   {
     "rank": 8,
@@ -133,6 +133,18 @@
   },
   {
     "rank": 12,
+    "name": "GWS GIANTS",
+    "played": 16,
+    "wins": 7,
+    "losses": 9,
+    "draws": 0,
+    "pts": 28,
+    "percentage": 100.8,
+    "for": 1471,
+    "against": 1460
+  },
+  {
+    "rank": 13,
     "name": "Carlton",
     "played": 15,
     "wins": 7,
@@ -144,7 +156,7 @@
     "against": 1312
   },
   {
-    "rank": 13,
+    "rank": 14,
     "name": "St Kilda",
     "played": 15,
     "wins": 6,
@@ -154,18 +166,6 @@
     "percentage": 100.6,
     "for": 1334,
     "against": 1326
-  },
-  {
-    "rank": 14,
-    "name": "GWS GIANTS",
-    "played": 15,
-    "wins": 6,
-    "losses": 9,
-    "draws": 0,
-    "pts": 24,
-    "percentage": 99.3,
-    "for": 1362,
-    "against": 1372
   },
   {
     "rank": 15,
