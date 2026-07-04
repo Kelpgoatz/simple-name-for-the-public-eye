@@ -1025,7 +1025,7 @@
                 }
             };
 
-            renderStandings(fallbackStandings, "Standings updated every 6 hours via AFL API.");
+            renderStandings(fallbackStandings, "Standings updated every 15 minutes via AFL API.");
 
             fetch("standings.json")
                 .then(response => {
@@ -1034,7 +1034,7 @@
                 })
                 .then(data => {
                     if (!Array.isArray(data)) throw new Error("Invalid response");
-                    renderStandings(data, "Standings updated every 6 hours via AFL API.");
+                    renderStandings(data, "Standings updated every 15 minutes via AFL API.");
                 })
                 .catch(() => {
                     renderStandings(fallbackStandings, "Standings may not reflect most recent results.");
