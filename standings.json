@@ -133,6 +133,18 @@
   },
   {
     "rank": 12,
+    "name": "St Kilda",
+    "played": 16,
+    "wins": 7,
+    "losses": 9,
+    "draws": 0,
+    "pts": 28,
+    "percentage": 105.5,
+    "for": 1451,
+    "against": 1376
+  },
+  {
+    "rank": 13,
     "name": "GWS GIANTS",
     "played": 16,
     "wins": 7,
@@ -144,7 +156,7 @@
     "against": 1460
   },
   {
-    "rank": 13,
+    "rank": 14,
     "name": "Gold Coast SUNS",
     "played": 16,
     "wins": 7,
@@ -154,18 +166,6 @@
     "percentage": 100.7,
     "for": 1457,
     "against": 1447
-  },
-  {
-    "rank": 14,
-    "name": "St Kilda",
-    "played": 15,
-    "wins": 6,
-    "losses": 9,
-    "draws": 0,
-    "pts": 24,
-    "percentage": 100.6,
-    "for": 1334,
-    "against": 1326
   },
   {
     "rank": 15,
@@ -206,13 +206,13 @@
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 15,
+    "played": 16,
     "wins": 1,
-    "losses": 14,
+    "losses": 15,
     "draws": 0,
     "pts": 4,
-    "percentage": 71.0,
-    "for": 1092,
-    "against": 1537
+    "percentage": 69.0,
+    "for": 1142,
+    "against": 1654
   }
 ]
