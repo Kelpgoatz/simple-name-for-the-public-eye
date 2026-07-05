@@ -122,14 +122,14 @@
   {
     "rank": 11,
     "name": "North Melbourne",
-    "played": 15,
+    "played": 16,
     "wins": 8,
-    "losses": 7,
+    "losses": 8,
     "draws": 0,
     "pts": 32,
-    "percentage": 92.2,
-    "for": 1294,
-    "against": 1404
+    "percentage": 91.1,
+    "for": 1346,
+    "against": 1477
   },
   {
     "rank": 12,
@@ -170,14 +170,14 @@
   {
     "rank": 15,
     "name": "Port Adelaide",
-    "played": 15,
-    "wins": 5,
+    "played": 16,
+    "wins": 6,
     "losses": 10,
     "draws": 0,
-    "pts": 20,
-    "percentage": 100.9,
-    "for": 1222,
-    "against": 1211
+    "pts": 24,
+    "percentage": 102.5,
+    "for": 1295,
+    "against": 1263
   },
   {
     "rank": 16,
