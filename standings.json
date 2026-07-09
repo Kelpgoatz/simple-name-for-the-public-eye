@@ -2,26 +2,26 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 16,
-    "wins": 14,
+    "played": 17,
+    "wins": 15,
     "losses": 2,
     "draws": 0,
-    "pts": 56,
-    "percentage": 141.6,
-    "for": 1579,
-    "against": 1115
+    "pts": 60,
+    "percentage": 142.3,
+    "for": 1690,
+    "against": 1188
   },
   {
     "rank": 2,
     "name": "Sydney Swans",
-    "played": 16,
+    "played": 17,
     "wins": 13,
-    "losses": 3,
+    "losses": 4,
     "draws": 0,
     "pts": 52,
-    "percentage": 136.9,
-    "for": 1751,
-    "against": 1279
+    "percentage": 131.2,
+    "for": 1824,
+    "against": 1390
   },
   {
     "rank": 3,
