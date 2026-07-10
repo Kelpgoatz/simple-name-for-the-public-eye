@@ -73,6 +73,18 @@
   },
   {
     "rank": 7,
+    "name": "Collingwood",
+    "played": 17,
+    "wins": 9,
+    "losses": 7,
+    "draws": 1,
+    "pts": 38,
+    "percentage": 104.4,
+    "for": 1446,
+    "against": 1385
+  },
+  {
+    "rank": 8,
     "name": "Geelong Cats",
     "played": 16,
     "wins": 9,
@@ -84,7 +96,7 @@
     "against": 1359
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Western Bulldogs",
     "played": 16,
     "wins": 9,
@@ -94,18 +106,6 @@
     "percentage": 90.8,
     "for": 1325,
     "against": 1459
-  },
-  {
-    "rank": 9,
-    "name": "Collingwood",
-    "played": 16,
-    "wins": 8,
-    "losses": 7,
-    "draws": 1,
-    "pts": 34,
-    "percentage": 104.4,
-    "for": 1357,
-    "against": 1300
   },
   {
     "rank": 10,
@@ -122,14 +122,14 @@
   {
     "rank": 11,
     "name": "North Melbourne",
-    "played": 16,
+    "played": 17,
     "wins": 8,
-    "losses": 8,
+    "losses": 9,
     "draws": 0,
     "pts": 32,
-    "percentage": 91.1,
-    "for": 1346,
-    "against": 1477
+    "percentage": 91.4,
+    "for": 1431,
+    "against": 1566
   },
   {
     "rank": 12,
