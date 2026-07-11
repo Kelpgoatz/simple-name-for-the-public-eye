@@ -333,6 +333,7 @@
             flex-direction: column;
             padding: 22px;
             border-radius: 28px;
+            overflow: hidden;
             background:
                 linear-gradient(180deg, var(--surface-1), var(--surface-4)),
                 var(--surface-4);
@@ -374,6 +375,7 @@
             align-items: center;
             padding: 11px 12px;
             border-radius: 18px;
+            min-width: 0;
             background:
                 linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 24%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 14%, transparent)),
                 rgba(255, 255, 255, 0.25);
@@ -390,6 +392,9 @@
         .ladder-row__team {
             color: var(--brand);
             font-weight: 800;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         .ladder-row__logo {
@@ -469,6 +474,22 @@
             .topbar-actions { width: 100%; }
 
             .ladder-list { max-height: 420px; }
+
+            .ladder-row {
+                grid-template-columns: 20px 30px 1fr;
+                gap: 6px;
+                padding: 9px 10px;
+            }
+
+            .ladder-row__pos { font-size: 0.85rem; }
+
+            .ladder-row__logo {
+                width: 30px;
+                height: 30px;
+                font-size: 0.65rem;
+            }
+
+            .ladder-row__stats { display: none; }
         }
     </style>
 </head>
