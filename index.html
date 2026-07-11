@@ -406,6 +406,7 @@
             gap: 10px;
             align-items: center;
             padding: 11px 12px;
+            min-width: 0;
             border-radius: 18px;
             background:
                 linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 24%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 14%, transparent)),
@@ -423,6 +424,9 @@
         .ladder-row__team {
             color: var(--brand);
             font-weight: 800;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         .ladder-row__logo {
@@ -745,10 +749,9 @@
             }
 
             .ladder-row {
-                grid-template-columns: 20px 30px 1fr auto;
+                grid-template-columns: 20px 30px 1fr;
                 gap: 6px;
                 padding: 9px 10px;
-                font-size: 0.88rem;
             }
 
             .ladder-row__pos {
@@ -762,7 +765,7 @@
             }
 
             .ladder-row__stats {
-                font-size: 0.75rem;
+                display: none;
             }
 
             .hero-grid,
