@@ -2,26 +2,26 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 16,
-    "wins": 14,
+    "played": 17,
+    "wins": 15,
     "losses": 2,
     "draws": 0,
-    "pts": 56,
-    "percentage": 141.6,
-    "for": 1579,
-    "against": 1115
+    "pts": 60,
+    "percentage": 142.3,
+    "for": 1690,
+    "against": 1188
   },
   {
     "rank": 2,
     "name": "Sydney Swans",
-    "played": 16,
+    "played": 17,
     "wins": 13,
-    "losses": 3,
+    "losses": 4,
     "draws": 0,
     "pts": 52,
-    "percentage": 136.9,
-    "for": 1751,
-    "against": 1279
+    "percentage": 131.2,
+    "for": 1824,
+    "against": 1390
   },
   {
     "rank": 3,
@@ -73,6 +73,18 @@
   },
   {
     "rank": 7,
+    "name": "Collingwood",
+    "played": 17,
+    "wins": 9,
+    "losses": 7,
+    "draws": 1,
+    "pts": 38,
+    "percentage": 104.4,
+    "for": 1446,
+    "against": 1385
+  },
+  {
+    "rank": 8,
     "name": "Geelong Cats",
     "played": 16,
     "wins": 9,
@@ -84,7 +96,7 @@
     "against": 1359
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Western Bulldogs",
     "played": 16,
     "wins": 9,
@@ -96,43 +108,43 @@
     "against": 1459
   },
   {
-    "rank": 9,
-    "name": "North Melbourne",
-    "played": 15,
+    "rank": 10,
+    "name": "Carlton",
+    "played": 16,
     "wins": 8,
-    "losses": 7,
+    "losses": 8,
     "draws": 0,
     "pts": 32,
-    "percentage": 92.2,
-    "for": 1294,
-    "against": 1404
-  },
-  {
-    "rank": 10,
-    "name": "Collingwood",
-    "played": 15,
-    "wins": 7,
-    "losses": 7,
-    "draws": 1,
-    "pts": 30,
-    "percentage": 104.2,
-    "for": 1253,
-    "against": 1202
+    "percentage": 96.0,
+    "for": 1328,
+    "against": 1384
   },
   {
     "rank": 11,
-    "name": "Gold Coast SUNS",
-    "played": 15,
-    "wins": 7,
-    "losses": 8,
+    "name": "North Melbourne",
+    "played": 17,
+    "wins": 8,
+    "losses": 9,
     "draws": 0,
-    "pts": 28,
-    "percentage": 101.2,
-    "for": 1359,
-    "against": 1343
+    "pts": 32,
+    "percentage": 91.4,
+    "for": 1431,
+    "against": 1566
   },
   {
     "rank": 12,
+    "name": "St Kilda",
+    "played": 16,
+    "wins": 7,
+    "losses": 9,
+    "draws": 0,
+    "pts": 28,
+    "percentage": 105.5,
+    "for": 1451,
+    "against": 1376
+  },
+  {
+    "rank": 13,
     "name": "GWS GIANTS",
     "played": 16,
     "wins": 7,
@@ -144,40 +156,28 @@
     "against": 1460
   },
   {
-    "rank": 13,
-    "name": "Carlton",
-    "played": 15,
-    "wins": 7,
-    "losses": 8,
-    "draws": 0,
-    "pts": 28,
-    "percentage": 95.6,
-    "for": 1254,
-    "against": 1312
-  },
-  {
     "rank": 14,
-    "name": "St Kilda",
-    "played": 15,
-    "wins": 6,
+    "name": "Gold Coast SUNS",
+    "played": 16,
+    "wins": 7,
     "losses": 9,
     "draws": 0,
-    "pts": 24,
-    "percentage": 100.6,
-    "for": 1334,
-    "against": 1326
+    "pts": 28,
+    "percentage": 100.7,
+    "for": 1457,
+    "against": 1447
   },
   {
     "rank": 15,
     "name": "Port Adelaide",
-    "played": 15,
-    "wins": 5,
+    "played": 16,
+    "wins": 6,
     "losses": 10,
     "draws": 0,
-    "pts": 20,
-    "percentage": 100.9,
-    "for": 1222,
-    "against": 1211
+    "pts": 24,
+    "percentage": 102.5,
+    "for": 1295,
+    "against": 1263
   },
   {
     "rank": 16,
@@ -194,25 +194,25 @@
   {
     "rank": 17,
     "name": "Richmond",
-    "played": 15,
+    "played": 16,
     "wins": 2,
-    "losses": 13,
+    "losses": 14,
     "draws": 0,
     "pts": 8,
-    "percentage": 61.8,
-    "for": 987,
-    "against": 1598
+    "percentage": 63.3,
+    "for": 1059,
+    "against": 1672
   },
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 15,
+    "played": 16,
     "wins": 1,
-    "losses": 14,
+    "losses": 15,
     "draws": 0,
     "pts": 4,
-    "percentage": 71.0,
-    "for": 1092,
-    "against": 1537
+    "percentage": 69.0,
+    "for": 1142,
+    "against": 1654
   }
 ]
