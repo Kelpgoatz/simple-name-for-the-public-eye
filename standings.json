@@ -86,14 +86,14 @@
   {
     "rank": 8,
     "name": "Geelong Cats",
-    "played": 16,
+    "played": 17,
     "wins": 9,
-    "losses": 7,
+    "losses": 8,
     "draws": 0,
     "pts": 36,
-    "percentage": 117.1,
-    "for": 1591,
-    "against": 1359
+    "percentage": 115.2,
+    "for": 1664,
+    "against": 1445
   },
   {
     "rank": 9,
@@ -121,6 +121,18 @@
   },
   {
     "rank": 11,
+    "name": "GWS GIANTS",
+    "played": 17,
+    "wins": 8,
+    "losses": 9,
+    "draws": 0,
+    "pts": 32,
+    "percentage": 101.6,
+    "for": 1557,
+    "against": 1533
+  },
+  {
+    "rank": 12,
     "name": "Carlton",
     "played": 16,
     "wins": 8,
@@ -132,7 +144,7 @@
     "against": 1384
   },
   {
-    "rank": 12,
+    "rank": 13,
     "name": "North Melbourne",
     "played": 17,
     "wins": 8,
@@ -142,18 +154,6 @@
     "percentage": 91.4,
     "for": 1431,
     "against": 1566
-  },
-  {
-    "rank": 13,
-    "name": "GWS GIANTS",
-    "played": 16,
-    "wins": 7,
-    "losses": 9,
-    "draws": 0,
-    "pts": 28,
-    "percentage": 100.8,
-    "for": 1471,
-    "against": 1460
   },
   {
     "rank": 14,
