@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Drivers Championship - Aero News</title>
+    <title>AFL Ladder - Aero News</title>
     <style>
         :root {
             color-scheme: light;
@@ -351,49 +351,11 @@
             margin-bottom: 14px;
         }
 
-        .ladder-card__head h2 {
+        .ladder-card__head h3 {
             margin: 0;
-            font-size: 1.42rem;
+            font-size: 1.1rem;
             letter-spacing: -0.03em;
             color: var(--brand);
-        }
-
-        .ladder-card__head span {
-            color: var(--brand-soft);
-            font-size: 0.88rem;
-            font-weight: 700;
-        }
-
-        .tab-group {
-            display: flex;
-            gap: 6px;
-        }
-
-        .tab {
-            padding: 5px 14px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background:
-                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
-                var(--surface-4);
-            color: var(--brand-soft);
-            font: inherit;
-            font-weight: 700;
-            font-size: 0.82rem;
-            cursor: pointer;
-            box-shadow:
-                inset 0 1px 0 var(--glow),
-                0 6px 12px rgba(30, 86, 109, 0.08);
-            backdrop-filter: blur(24px);
-            transition: transform 0.15s ease;
-        }
-
-        .tab:hover { transform: translateY(-1px); }
-
-        .tab--active {
-            background: var(--brand);
-            color: #fff;
-            border-color: var(--brand);
         }
 
         .ladder-list {
@@ -523,11 +485,11 @@
                         <span class="orb" aria-hidden="true"></span>
                         <span>Aero News</span>
                     </div>
-                        <nav class="nav" aria-label="Primary">
-                            <a href="index.html">Home</a>
-                            <a href="f1.html" aria-current="page">F1</a>
-                            <a href="afl.html">AFL</a>
-                        </nav>
+                    <nav class="nav" aria-label="Primary">
+                        <a href="index.html">Home</a>
+                        <a href="f1.html">F1</a>
+                        <a href="afl.html" aria-current="page">AFL</a>
+                    </nav>
                     <div class="topbar-actions">
                         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark mode</button>
                     </div>
@@ -537,27 +499,23 @@
             <section class="hero">
                 <div class="hero-grid">
                     <div class="top-story">
-                        <span class="eyebrow">Formula 1</span>
-                        <h2>F1 Drivers Championship</h2>
+                        <span class="eyebrow">AFL</span>
+                        <h2>AFL Ladder</h2>
                         <p class="lead">
-                            Live drivers championship standings for the <span data-ladder-season>2026</span> season.
-                            Updated every hour via the F1 API.
+                            Live AFL ladder standings for the current season.
+                            Updated every 15 minutes via the AFL API.
                         </p>
                     </div>
-                    <aside class="ladder-card" aria-labelledby="f1-ladder-title">
+                    <aside class="ladder-card" aria-labelledby="afl-ladder-title">
                         <div class="ladder-card__head">
-                            <div class="tab-group" role="tablist">
-                                <button class="tab tab--active" role="tab" aria-selected="true" data-tab="drivers">WDC</button>
-                                <button class="tab" role="tab" aria-selected="false" data-tab="constructors">WCC</button>
-                            </div>
-                            <span data-ladder-season>2026</span>
+                            <h3 id="afl-ladder-title">AFL Ladder</h3>
                         </div>
                         <div class="ladder-list" data-ladder-list>
-                            <div class="ladder-row" style="--logo-from:#00d2be;--logo-to:#000000;">
+                            <div class="ladder-row" style="--logo-from:#002b5c;--logo-mid:#e31b23;--logo-to:#ffcc00;">
                                 <div class="ladder-row__pos">1</div>
-                                <div class="ladder-row__logo" aria-hidden="true">12</div>
-                                <div class="ladder-row__team">Andrea Kimi Antonelli</div>
-                                <div class="ladder-row__stats">179 pts · 5 wins</div>
+                                <div class="ladder-row__logo" aria-hidden="true">AC</div>
+                                <div class="ladder-row__team">Adelaide Crows</div>
+                                <div class="ladder-row__stats">14-2-0 · 56 pts · 136.4%</div>
                             </div>
                         </div>
                         <p class="ladder-note" data-ladder-note></p>
@@ -570,72 +528,61 @@
         (() => {
             const ladderList = document.querySelector("[data-ladder-list]");
             const ladderNote = document.querySelector("[data-ladder-note]");
-            const seasonEl = document.querySelectorAll("[data-ladder-season]");
-            const tabs = document.querySelectorAll("[data-tab]");
 
             if (!ladderList) return;
 
             const teams = {
-                mercedes: { display: "Mercedes", abbr: "MER", colors: ["#00d2be", "#000000"] },
-                ferrari: { display: "Ferrari", abbr: "FER", colors: ["#dc0000", "#fff200"] },
-                red_bull: { display: "Red Bull Racing", abbr: "RBR", colors: ["#1e41a0", "#e31b23"] },
-                mclaren: { display: "McLaren", abbr: "MCL", colors: ["#ff8700", "#000000"] },
-                alpine: { display: "Alpine", abbr: "ALP", colors: ["#0090ff", "#000000"] },
-                rb: { display: "Racing Bulls", abbr: "RB", colors: ["#e31b23", "#1e41a0"] },
-                haas: { display: "Haas", abbr: "HAA", colors: ["#ffffff", "#e31b23"] },
-                audi: { display: "Audi", abbr: "AUD", colors: ["#dc0000", "#000000"] },
-                williams: { display: "Williams", abbr: "WIL", colors: ["#005aff", "#ffffff"] },
-                aston_martin: { display: "Aston Martin", abbr: "AST", colors: ["#006f62", "#000000"] },
-                cadillac: { display: "Cadillac", abbr: "CAD", colors: ["#111111", "#666666"] }
+                Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
+                "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
+                Carlton: { display: "Carlton", initials: "CA", colors: ["#002b5c", "#f7f8fb"] },
+                Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
+                Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
+                Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
+                Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f4f7fb"] },
+                "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
+                "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
+                Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
+                Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
+                "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
+                "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
+                Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
+                "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
+                Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
+                "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
+                "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
             };
 
-            const fallbackDrivers = [
-                { position: 1, points: 179, wins: 5, driver: { name: "Andrea", surname: "Kimi Antonelli", number: 12 }, teamId: "mercedes" },
-                { position: 2, points: 154, wins: 2, driver: { name: "George", surname: "Russell", number: 63 }, teamId: "mercedes" },
-                { position: 3, points: 147, wins: 1, driver: { name: "Lewis", surname: "Hamilton", number: 44 }, teamId: "ferrari" },
-                { position: 4, points: 108, wins: 1, driver: { name: "Charles", surname: "Leclerc", number: 16 }, teamId: "ferrari" },
-                { position: 5, points: 97, wins: 0, driver: { name: "Lando", surname: "Norris", number: 4 }, teamId: "mclaren" },
-                { position: 6, points: 82, wins: 0, driver: { name: "Oscar", surname: "Piastri", number: 81 }, teamId: "mclaren" },
-                { position: 7, points: 76, wins: 0, driver: { name: "Max", surname: "Verstappen", number: 33 }, teamId: "red_bull" },
-                { position: 8, points: 52, wins: 0, driver: { name: "Isack", surname: "Hadjar", number: 6 }, teamId: "red_bull" },
-                { position: 9, points: 42, wins: 0, driver: { name: "Pierre", surname: "Gasly", number: 10 }, teamId: "alpine" },
-                { position: 10, points: 39, wins: 0, driver: { name: "Liam", surname: "Lawson", number: 30 }, teamId: "rb" },
-                { position: 11, points: 20, wins: 0, driver: { name: "Arvid", surname: "Lindblad", number: 36 }, teamId: "rb" },
-                { position: 12, points: 18, wins: 0, driver: { name: "Oliver", surname: "Bearman", number: 87 }, teamId: "haas" },
-                { position: 13, points: 18, wins: 0, driver: { name: "Franco", surname: "Colapinto", number: 43 }, teamId: "alpine" },
-                { position: 14, points: 6, wins: 0, driver: { name: "Gabriel", surname: "Bortoleto", number: 5 }, teamId: "audi" },
-                { position: 15, points: 6, wins: 0, driver: { name: "Carlos", surname: "Sainz", number: 55 }, teamId: "williams" },
-                { position: 16, points: 5, wins: 0, driver: { name: "Alex", surname: "Albon", number: 23 }, teamId: "williams" },
-                { position: 17, points: 3, wins: 0, driver: { name: "Esteban", surname: "Ocon", number: 31 }, teamId: "haas" },
-                { position: 18, points: 1, wins: 0, driver: { name: "Fernando", surname: "Alonso", number: 14 }, teamId: "aston_martin" },
-                { position: 19, points: 0, wins: 0, driver: { name: "Nico", surname: "Hulkenberg", number: 27 }, teamId: "audi" },
-                { position: 20, points: 0, wins: 0, driver: { name: "Valtteri", surname: "Bottas", number: 77 }, teamId: "cadillac" },
-                { position: 21, points: 0, wins: 0, driver: { name: "Sergio", surname: "Pérez", number: 11 }, teamId: "cadillac" },
-                { position: 22, points: 0, wins: 0, driver: { name: "Lance", surname: "Stroll", number: 18 }, teamId: "aston_martin" }
-            ];
+            const teamByName = new Map(
+                Object.entries(teams).map(([key, val]) => [val.display.toLowerCase(), key])
+            );
 
-            const fallbackConstructors = [
-                { position: 1, teamId: "mercedes", points: 333, wins: 7 },
-                { position: 2, teamId: "ferrari", points: 255, wins: 2 },
-                { position: 3, teamId: "mclaren", points: 179, wins: 0 },
-                { position: 4, teamId: "red_bull", points: 128, wins: 0 },
-                { position: 5, teamId: "alpine", points: 60, wins: 0 },
-                { position: 6, teamId: "rb", points: 59, wins: 0 },
-                { position: 7, teamId: "haas", points: 21, wins: 0 },
-                { position: 8, teamId: "williams", points: 11, wins: 0 },
-                { position: 9, teamId: "audi", points: 6, wins: 0 },
-                { position: 10, teamId: "aston_martin", points: 1, wins: 0 },
-                { position: 11, teamId: "cadillac", points: 0, wins: 0 }
+            const fallbackStandings = [
+                { rank: 1, name: "Fremantle", played: 16, wins: 14, losses: 2, draws: 0, pts: 56, percentage: 141.6, "for": 1579, against: 1115 },
+                { rank: 2, name: "Sydney Swans", played: 16, wins: 13, losses: 3, draws: 0, pts: 52, percentage: 136.9, "for": 1751, against: 1279 },
+                { rank: 3, name: "Hawthorn", played: 16, wins: 10, losses: 5, draws: 1, pts: 42, percentage: 110.0, "for": 1547, against: 1406 },
+                { rank: 4, name: "Brisbane Lions", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 111.7, "for": 1674, against: 1498 },
+                { rank: 5, name: "Adelaide Crows", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 111.4, "for": 1427, against: 1281 },
+                { rank: 6, name: "Melbourne", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 106.3, "for": 1555, against: 1463 },
+                { rank: 7, name: "Geelong Cats", played: 16, wins: 9, losses: 7, draws: 0, pts: 36, percentage: 117.1, "for": 1591, against: 1359 },
+                { rank: 8, name: "Western Bulldogs", played: 16, wins: 9, losses: 7, draws: 0, pts: 36, percentage: 90.8, "for": 1325, against: 1459 },
+                { rank: 9, name: "North Melbourne", played: 15, wins: 8, losses: 7, draws: 0, pts: 32, percentage: 92.2, "for": 1294, against: 1404 },
+                { rank: 10, name: "Collingwood", played: 15, wins: 7, losses: 7, draws: 1, pts: 30, percentage: 104.2, "for": 1253, against: 1202 },
+                { rank: 11, name: "Gold Coast SUNS", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 101.2, "for": 1359, against: 1343 },
+                { rank: 12, name: "GWS GIANTS", played: 16, wins: 7, losses: 9, draws: 0, pts: 28, percentage: 100.8, "for": 1471, against: 1460 },
+                { rank: 13, name: "Carlton", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 95.6, "for": 1254, against: 1312 },
+                { rank: 14, name: "St Kilda", played: 15, wins: 6, losses: 9, draws: 0, pts: 24, percentage: 100.6, "for": 1334, against: 1326 },
+                { rank: 15, name: "Port Adelaide", played: 15, wins: 5, losses: 10, draws: 0, pts: 20, percentage: 100.9, "for": 1222, against: 1211 },
+                { rank: 16, name: "West Coast Eagles", played: 16, wins: 4, losses: 12, draws: 0, pts: 16, percentage: 71.5, "for": 1161, against: 1623 },
+                { rank: 17, name: "Richmond", played: 15, wins: 2, losses: 13, draws: 0, pts: 8, percentage: 61.8, "for": 987, against: 1598 },
+                { rank: 18, name: "Essendon", played: 15, wins: 1, losses: 14, draws: 0, pts: 4, percentage: 71.0, "for": 1092, against: 1537 }
             ];
-
-            let currentTab = "drivers";
-            let driversData = null;
-            let constructorsData = null;
 
             const formatNumber = (value, fallback = 0) => {
                 const number = Number(value);
                 return Number.isFinite(number) ? number : fallback;
             };
+
+            const formatPercentage = (value) => formatNumber(value).toFixed(1);
 
             const addText = (className, text, parent) => {
                 const element = document.createElement("div");
@@ -655,121 +602,53 @@
                 }
             };
 
-            const renderDrivers = (data, sourceText) => {
-                const standings = data.drivers_championship || data;
-                const sorted = [...standings].sort((a, b) => formatNumber(a.position) - formatNumber(b.position));
+            const renderStandings = (data, sourceText) => {
+                const sortedStandings = [...data].sort((first, second) => formatNumber(first.rank) - formatNumber(second.rank));
                 ladderList.replaceChildren();
 
-                sorted.forEach((standing) => {
-                    const team = teams[standing.teamId] || { display: standing.teamId, abbr: "", colors: ["#0f5a6d", "#79d7ec"] };
-                    const driverName = `${standing.driver.name} ${standing.driver.surname}`;
-                    const driverNumber = String(standing.driver.number || "");
-
+                sortedStandings.forEach((standing, index) => {
+                    const team = teams[teamByName.get(standing.name.toLowerCase())] || {
+                        display: standing.name,
+                        initials: standing.name.slice(0, 2).toUpperCase(),
+                        colors: ["#0f5a6d", "#79d7ec"]
+                    };
                     const row = document.createElement("div");
                     row.className = "ladder-row";
                     applyColors(row, team.colors);
 
-                    addText("ladder-row__pos", String(formatNumber(standing.position)), row);
-                    const logo = addText("ladder-row__logo", driverNumber, row);
-                    logo.setAttribute("aria-hidden", "true");
-                    addText("ladder-row__team", driverName, row);
-                    addText("ladder-row__stats", `${formatNumber(standing.points)} pts · ${formatNumber(standing.wins)} wins`, row);
-
-                    ladderList.appendChild(row);
-                });
-
-                if (ladderNote) ladderNote.textContent = sourceText;
-            };
-
-            const renderConstructors = (data, sourceText) => {
-                const standings = data.constructors_championship || data;
-                const sorted = [...standings].sort((a, b) => formatNumber(a.position) - formatNumber(b.position));
-                ladderList.replaceChildren();
-
-                sorted.forEach((standing) => {
-                    const team = teams[standing.teamId] || { display: standing.teamId, abbr: "", colors: ["#0f5a6d", "#79d7ec"] };
-
-                    const row = document.createElement("div");
-                    row.className = "ladder-row";
-                    applyColors(row, team.colors);
-
-                    addText("ladder-row__pos", String(formatNumber(standing.position)), row);
-                    const logo = addText("ladder-row__logo", team.abbr, row);
+                    addText("ladder-row__pos", String(formatNumber(standing.rank, index + 1)), row);
+                    const logo = addText("ladder-row__logo", team.initials, row);
                     logo.setAttribute("aria-hidden", "true");
                     addText("ladder-row__team", team.display, row);
-                    addText("ladder-row__stats", `${formatNumber(standing.points)} pts · ${formatNumber(standing.wins)} wins`, row);
+
+                    addText(
+                        "ladder-row__stats",
+                        `${formatNumber(standing.wins)}-${formatNumber(standing.losses)}-${formatNumber(standing.draws)} · ${formatNumber(standing.pts)} pts · ${formatPercentage(standing.percentage)}%`,
+                        row
+                    );
 
                     ladderList.appendChild(row);
                 });
 
-                if (ladderNote) ladderNote.textContent = sourceText;
-            };
-
-            const switchTab = (tab) => {
-                currentTab = tab;
-                tabs.forEach((t) => {
-                    const isActive = t.getAttribute("data-tab") === tab;
-                    t.classList.toggle("tab--active", isActive);
-                    t.setAttribute("aria-selected", String(isActive));
-                });
-
-                if (tab === "drivers") {
-                    if (driversData) {
-                        renderDrivers(driversData, "Standings updated every hour via F1 API.");
-                    } else {
-                        renderDrivers(fallbackDrivers, "Standings may not reflect most recent results.");
-                    }
-                } else {
-                    if (constructorsData) {
-                        renderConstructors(constructorsData, "Standings updated every hour via F1 API.");
-                    } else {
-                        renderConstructors(fallbackConstructors, "Standings may not reflect most recent results.");
-                    }
+                if (ladderNote) {
+                    ladderNote.textContent = sourceText;
                 }
             };
 
-            seasonEl.forEach((el) => { el.textContent = new Date().getFullYear(); });
+            renderStandings(fallbackStandings, "Standings updated every 15 minutes via AFL API.");
 
-            tabs.forEach((tab) => {
-                tab.addEventListener("click", () => {
-                    switchTab(tab.getAttribute("data-tab"));
+            fetch("standings.json")
+                .then(response => {
+                    if (!response.ok) throw new Error("Failed to load standings");
+                    return response.json();
+                })
+                .then(data => {
+                    if (!Array.isArray(data)) throw new Error("Invalid response");
+                    renderStandings(data, "Standings updated every 15 minutes via AFL API.");
+                })
+                .catch(() => {
+                    renderStandings(fallbackStandings, "Standings may not reflect most recent results.");
                 });
-            });
-
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get("tab") === "constructors") {
-                switchTab("constructors");
-            } else {
-                renderDrivers(fallbackDrivers, "Standings updated every hour via F1 API.");
-            }
-
-            fetch("drivers-championship.json")
-                .then((response) => {
-                    if (!response.ok) throw new Error("Failed to load");
-                    return response.json();
-                })
-                .then((data) => {
-                    if (!data.drivers_championship || !Array.isArray(data.drivers_championship)) throw new Error("Invalid");
-                    driversData = data;
-                    if (currentTab === "drivers") {
-                        renderDrivers(data, "Standings updated every hour via F1 API.");
-                    }
-                })
-                .catch(() => {});
-
-            fetch("constructors-championship.json")
-                .then((response) => {
-                    if (!response.ok) throw new Error("Failed to load");
-                    return response.json();
-                })
-                .then((data) => {
-                    if (!data.constructors_championship || !Array.isArray(data.constructors_championship)) throw new Error("Invalid");
-                    constructorsData = data;
-                    if (currentTab === "constructors") {
-                        renderConstructors(data, "Standings updated every hour via F1 API.");
-                    }
-                })
-                .catch(() => {});
         })();
 
         (() => {
