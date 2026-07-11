@@ -289,16 +289,6 @@
             align-items: stretch;
         }
 
-        .story-link {
-            display: block;
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .story-link:hover .top-story {
-            transform: translateY(-2px);
-        }
-
         .top-story {
             padding: 28px;
             border-radius: 28px;
@@ -329,7 +319,6 @@
 
         .top-story h2 {
             margin: 18px 0 12px;
-            max-width: 12ch;
             font-size: clamp(3rem, 8vw, 6.4rem);
             line-height: 0.88;
             letter-spacing: -0.07em;
@@ -540,165 +529,11 @@
             font-weight: 700;
         }
 
-        .section-block {
-            position: relative;
-            z-index: 1;
-            padding: 0 24px 24px;
-        }
 
-        .section-head {
-            display: flex;
-            align-items: end;
-            justify-content: space-between;
-            gap: 14px;
-            margin-bottom: 14px;
-        }
-
-        .section-head h3 {
-            margin: 0;
-            color: var(--brand);
-            font-size: 1.42rem;
-            letter-spacing: -0.03em;
-        }
-
-        .section-head p {
-            margin: 0;
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        .recent-grid {
-            display: grid;
-            grid-template-columns: repeat(12, minmax(0, 1fr));
-            gap: 14px;
-            grid-auto-flow: dense;
-        }
-
-        .story-card {
-            display: block;
-            position: relative;
-            overflow: hidden;
-            color: inherit;
-            text-decoration: none;
-            padding: 18px;
-            border-radius: 24px;
-            background:
-                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
-                var(--surface-4);
-            border: 1px solid var(--line);
-            box-shadow:
-                inset 0 1px 0 var(--glow),
-                0 14px 28px rgba(20, 86, 109, 0.08);
-            backdrop-filter: blur(28px);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            min-height: 180px;
-        }
-
-        .story-card:hover {
-            transform: translateY(-2px);
-            box-shadow:
-                inset 0 1px 0 var(--glow),
-                0 18px 32px rgba(20, 86, 109, 0.12);
-        }
-
-        .story-card::before {
-            content: "";
-            position: absolute;
-            inset: auto -20px -26px auto;
-            width: 130px;
-            height: 130px;
-            border-radius: 999px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.26), transparent 72%);
-            pointer-events: none;
-        }
-
-        :root[data-theme="dark"] .story-card::before {
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.08), transparent 72%);
-        }
-
-        .story-card__tag {
-            display: inline-flex;
-            align-items: center;
-            padding: 8px 12px;
-            border-radius: 999px;
-            background: linear-gradient(180deg, var(--surface-1), var(--surface-4));
-            border: 1px solid var(--line);
-            color: var(--brand-soft);
-            font-size: 0.9rem;
-            font-weight: 700;
-            box-shadow: inset 0 1px 0 var(--glow);
-        }
-
-        .story-card h4 {
-            margin: 12px 0 10px;
-            font-size: 1.22rem;
-            line-height: 1.08;
-            letter-spacing: -0.03em;
-            color: var(--brand);
-        }
-
-        .story-card p {
-            margin: 0;
-            color: var(--muted);
-            line-height: 1.7;
-            font-size: 0.97rem;
-        }
-
-        .story-card__meta {
-            margin-top: 12px;
-            color: var(--brand-soft);
-            font-size: 0.88rem;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-        }
-
-        .story-card--feature {
-            grid-column: span 7;
-            min-height: 250px;
-            background:
-                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
-                var(--surface-4);
-        }
-
-        .story-card--tall {
-            grid-column: span 5;
-            min-height: 250px;
-        }
-
-        .story-card--wide {
-            grid-column: span 6;
-            min-height: 190px;
-        }
-
-        .story-card--small {
-            grid-column: span 4;
-            min-height: 180px;
-        }
-
-        .old-grid {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 14px;
-        }
-
-        .old-grid .story-card {
-            min-height: 160px;
-        }
 
         @media (max-width: 980px) {
-            .hero-grid,
-            .recent-grid,
-            .old-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .story-card--feature,
-            .story-card--tall,
-            .story-card--wide,
-            .story-card--small {
-                grid-column: span 1;
-                min-height: 180px;
+            .hero-grid {
+                grid-template-columns: 1fr;
             }
 
             .top-story h2 {
@@ -768,9 +603,7 @@
                 display: none;
             }
 
-            .hero-grid,
-            .recent-grid,
-            .old-grid {
+            .hero-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -802,16 +635,11 @@
 
             <section class="hero">
                 <div class="hero-grid">
-                    <a class="story-link" href="article.html" aria-label="Open full article">
-                        <article class="top-story" id="world">
-                            <span class="eyebrow">Top Story</span>
-                            <h2>Dog turns into a cat and lands 73,789,327 backflips.</h2>
-                            <p class="lead">
-                                The front page&apos;s biggest breaking story arrives in a glossy glass card, with a wild
-                                transformation, a crowd of witnesses, and one very determined cat.
-                            </p>
-                        </article>
-                    </a>
+                    <div class="top-story top-story--placeholder" id="world">
+                        <span class="eyebrow">Hero</span>
+                        <h2>Your headline here.</h2>
+                        <p class="lead">Placeholder for breaking news, featured content, or a hero message.</p>
+                    </div>
                     <div class="hero-sidebar">
                         <a class="ladder-card ladder-link" href="afl.html" aria-labelledby="afl-ladder-title">
                             <div class="ladder-card__head">
@@ -877,80 +705,6 @@
                 </div>
             </section>
 
-            <section class="section-block" aria-labelledby="recent-stories-title">
-                <div class="section-head">
-                    <div>
-                        <h3 id="recent-stories-title">Recent Stories</h3>
-                        <p>Newer pieces with a few larger cards mixed in.</p>
-                    </div>
-                </div>
-                <div class="recent-grid">
-                    <a class="story-card story-card--feature" href="article.html" aria-label="Open city update story">
-                        <span class="story-card__tag">Breaking</span>
-                        <h4>Dog mysteriously becomes a cat mid-park stroll.</h4>
-                        <p>Witnesses saw the sparkly flash, the transformation, and the first flips.</p>
-                        <div class="story-card__meta">4 min read</div>
-                    </a>
-                    <a class="story-card story-card--tall" href="melbourne.html" aria-label="Open Melbourne history story">
-                        <span class="story-card__tag">History</span>
-                        <h4>Melbourne could be called Batman.</h4>
-                        <p>A Gotham-style footnote, a controversial land deal, and a joke that sticks.</p>
-                        <div class="story-card__meta">6 min read</div>
-                    </a>
-                    <a class="story-card story-card--wide" href="article.html" aria-label="Open opinion story">
-                        <span class="story-card__tag">Opinion</span>
-                        <h4>Why glossy design still feels good on a news page.</h4>
-                        <p>Style can be playful, polished, and easy on the eyes at the same time.</p>
-                        <div class="story-card__meta">3 min read</div>
-                    </a>
-                    <a class="story-card story-card--small" href="article.html" aria-label="Open weather story">
-                        <span class="story-card__tag">Weather</span>
-                        <h4>Clear skies hold through the afternoon.</h4>
-                        <div class="story-card__meta">2 min read</div>
-                    </a>
-                    <a class="story-card story-card--small" href="article.html" aria-label="Open business story">
-                        <span class="story-card__tag">Business</span>
-                        <h4>Cafe district adds two new spots downtown.</h4>
-                        <div class="story-card__meta">5 min read</div>
-                    </a>
-                    <a class="story-card story-card--small" href="article.html" aria-label="Open culture story">
-                        <span class="story-card__tag">Culture</span>
-                        <h4>Gallery night draws a packed crowd.</h4>
-                        <div class="story-card__meta">4 min read</div>
-                    </a>
-                </div>
-            </section>
-
-            <section class="section-block" aria-labelledby="old-stories-title">
-                <div class="section-head">
-                    <div>
-                        <h3 id="old-stories-title">Old Stories</h3>
-                        <p>Simple archive grid with older headline templates.</p>
-                    </div>
-                </div>
-                <div class="old-grid">
-                    <a class="story-card" href="article.html" aria-label="Open archive story one">
-                        <span class="story-card__tag">Archive</span>
-                        <h4>Morning commuter rail refresh</h4>
-                        <p>Older coverage with a short summary and a clean layout.</p>
-                    </a>
-                    <a class="story-card" href="article.html" aria-label="Open archive story two">
-                        <span class="story-card__tag">Archive</span>
-                        <h4>Studio opens in the arts quarter</h4>
-                        <p>A straightforward template for a local feature story.</p>
-                    </a>
-                    <a class="story-card" href="article.html" aria-label="Open archive story three">
-                        <span class="story-card__tag">Archive</span>
-                        <h4>Weekend market expands by two rows</h4>
-                        <p>Simple and readable, with room for the essentials.</p>
-                    </a>
-                    <a class="story-card" href="article.html" aria-label="Open archive story four">
-                        <span class="story-card__tag">Archive</span>
-                        <h4>Opinion: the return of glossy web design</h4>
-                        <p>An older commentary card that fits the same glassy theme.</p>
-                    </a>
-                </div>
-            </section>
         </div>
     </main>
     <script>
