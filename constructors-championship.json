@@ -7,16 +7,170 @@
   "season": 2026,
   "championshipId": "f1_2026",
   "constructors_championship": [
-    {"classificationId": 932, "teamId": "mercedes", "points": 333, "position": 1, "wins": 7, "team": {"teamName": "Mercedes Formula 1 Team", "country": "Germany", "firstAppareance": 1954, "constructorsChampionships": 8, "driversChampionships": 9, "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One"}},
-    {"classificationId": 933, "teamId": "ferrari", "points": 255, "position": 2, "wins": 2, "team": {"teamName": "Scuderia Ferrari", "country": "Italy", "firstAppareance": 1950, "constructorsChampionships": 16, "driversChampionships": 15, "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari"}},
-    {"classificationId": 931, "teamId": "mclaren", "points": 179, "position": 3, "wins": 0, "team": {"teamName": "McLaren Formula 1 Team", "country": "Great Britain", "firstAppareance": 1966, "constructorsChampionships": 10, "driversChampionships": 13, "url": "https://en.wikipedia.org/wiki/McLaren"}},
-    {"classificationId": 934, "teamId": "red_bull", "points": 128, "position": 4, "wins": 0, "team": {"teamName": "Red Bull Racing", "country": "Austria", "firstAppareance": 2005, "constructorsChampionships": 6, "driversChampionships": 8, "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing"}},
-    {"classificationId": 937, "teamId": "alpine", "points": 60, "position": 5, "wins": 0, "team": {"teamName": "Alpine F1 Team", "country": "France", "firstAppareance": 2021, "constructorsChampionships": null, "driversChampionships": null, "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team"}},
-    {"classificationId": 939, "teamId": "rb", "points": 59, "position": 6, "wins": 0, "team": {"teamName": "RB F1 Team", "country": "Italy", "firstAppareance": 2024, "constructorsChampionships": null, "driversChampionships": null, "url": "https://en.wikipedia.org/wiki/RB_Formula_One_Team"}},
-    {"classificationId": 935, "teamId": "haas", "points": 21, "position": 7, "wins": 0, "team": {"teamName": "Haas F1 Team", "country": "United States", "firstAppareance": 2016, "constructorsChampionships": null, "driversChampionships": null, "url": "https://en.wikipedia.org/wiki/Haas_F1_Team"}},
-    {"classificationId": 936, "teamId": "williams", "points": 11, "position": 8, "wins": 0, "team": {"teamName": "Williams Racing", "country": "Great Britain", "firstAppareance": 1977, "constructorsChampionships": 9, "driversChampionships": 7, "url": "https://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering"}},
-    {"classificationId": 938, "teamId": "audi", "points": 6, "position": 9, "wins": 0, "team": {"teamName": "Audi Revolut F1 Team", "country": "Germany", "firstAppareance": 2026, "constructorsChampionships": null, "driversChampionships": null, "url": "https://en.wikipedia.org/wiki/Audi_in_Formula_One"}},
-    {"classificationId": 940, "teamId": "aston_martin", "points": 1, "position": 10, "wins": 0, "team": {"teamName": "Aston Martin F1 Team", "country": "Great Britain", "firstAppareance": 1959, "constructorsChampionships": null, "driversChampionships": null, "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One"}},
-    {"classificationId": 941, "teamId": "cadillac", "points": 0, "position": 11, "wins": 0, "team": {"teamName": "Cadillac Formula 1 Team", "country": "United States", "firstAppareance": 2026, "constructorsChampionships": null, "driversChampionships": null, "url": "https://en.wikipedia.org/wiki/Cadillac_in_Formula_One"}}
+    {
+      "classificationId": 932,
+      "teamId": "mercedes",
+      "points": 333,
+      "position": 1,
+      "wins": 7,
+      "team": {
+        "teamName": "Mercedes Formula 1 Team",
+        "country": "Germany",
+        "firstAppareance": 1954,
+        "constructorsChampionships": 8,
+        "driversChampionships": 9,
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One"
+      }
+    },
+    {
+      "classificationId": 933,
+      "teamId": "ferrari",
+      "points": 255,
+      "position": 2,
+      "wins": 2,
+      "team": {
+        "teamName": "Scuderia Ferrari",
+        "country": "Italy",
+        "firstAppareance": 1950,
+        "constructorsChampionships": 16,
+        "driversChampionships": 15,
+        "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari"
+      }
+    },
+    {
+      "classificationId": 931,
+      "teamId": "mclaren",
+      "points": 179,
+      "position": 3,
+      "wins": 0,
+      "team": {
+        "teamName": "McLaren Formula 1 Team",
+        "country": "Great Britain",
+        "firstAppareance": 1966,
+        "constructorsChampionships": 10,
+        "driversChampionships": 13,
+        "url": "https://en.wikipedia.org/wiki/McLaren"
+      }
+    },
+    {
+      "classificationId": 934,
+      "teamId": "red_bull",
+      "points": 128,
+      "position": 4,
+      "wins": 0,
+      "team": {
+        "teamName": "Red Bull Racing",
+        "country": "Austria",
+        "firstAppareance": 2005,
+        "constructorsChampionships": 6,
+        "driversChampionships": 8,
+        "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing"
+      }
+    },
+    {
+      "classificationId": 937,
+      "teamId": "alpine",
+      "points": 60,
+      "position": 5,
+      "wins": 0,
+      "team": {
+        "teamName": "Alpine F1 Team",
+        "country": "France",
+        "firstAppareance": 2021,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team"
+      }
+    },
+    {
+      "classificationId": 939,
+      "teamId": "rb",
+      "points": 59,
+      "position": 6,
+      "wins": 0,
+      "team": {
+        "teamName": "RB F1 Team",
+        "country": "Italy",
+        "firstAppareance": 2024,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/RB_Formula_One_Team"
+      }
+    },
+    {
+      "classificationId": 935,
+      "teamId": "haas",
+      "points": 21,
+      "position": 7,
+      "wins": 0,
+      "team": {
+        "teamName": "Haas F1 Team",
+        "country": "United States",
+        "firstAppareance": 2016,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Haas_F1_Team"
+      }
+    },
+    {
+      "classificationId": 936,
+      "teamId": "williams",
+      "points": 11,
+      "position": 8,
+      "wins": 0,
+      "team": {
+        "teamName": "Williams Racing",
+        "country": "Great Britain",
+        "firstAppareance": 1977,
+        "constructorsChampionships": 9,
+        "driversChampionships": 7,
+        "url": "https://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering"
+      }
+    },
+    {
+      "classificationId": 938,
+      "teamId": "audi",
+      "points": 6,
+      "position": 9,
+      "wins": 0,
+      "team": {
+        "teamName": "Audi Revolut F1 Team",
+        "country": "Germany",
+        "firstAppareance": 2026,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Audi_in_Formula_One"
+      }
+    },
+    {
+      "classificationId": 940,
+      "teamId": "aston_martin",
+      "points": 1,
+      "position": 10,
+      "wins": 0,
+      "team": {
+        "teamName": "Aston Martin F1 Team",
+        "country": "Great Britain",
+        "firstAppareance": 1959,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One"
+      }
+    },
+    {
+      "classificationId": 941,
+      "teamId": "cadillac",
+      "points": 0,
+      "position": 11,
+      "wins": 0,
+      "team": {
+        "teamName": "Cadillac Formula 1 Team",
+        "country": "United States",
+        "firstAppareance": 2026,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Cadillac_in_Formula_One"
+      }
+    }
   ]
 }
