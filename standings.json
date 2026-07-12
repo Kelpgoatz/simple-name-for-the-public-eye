@@ -73,6 +73,18 @@
   },
   {
     "rank": 7,
+    "name": "Western Bulldogs",
+    "played": 17,
+    "wins": 10,
+    "losses": 7,
+    "draws": 0,
+    "pts": 40,
+    "percentage": 92.3,
+    "for": 1411,
+    "against": 1529
+  },
+  {
+    "rank": 8,
     "name": "Collingwood",
     "played": 17,
     "wins": 9,
@@ -84,7 +96,7 @@
     "against": 1385
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Geelong Cats",
     "played": 17,
     "wins": 9,
@@ -94,18 +106,6 @@
     "percentage": 115.2,
     "for": 1664,
     "against": 1445
-  },
-  {
-    "rank": 9,
-    "name": "Western Bulldogs",
-    "played": 16,
-    "wins": 9,
-    "losses": 7,
-    "draws": 0,
-    "pts": 36,
-    "percentage": 90.8,
-    "for": 1325,
-    "against": 1459
   },
   {
     "rank": 10,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 16,
+    "played": 17,
     "wins": 4,
-    "losses": 12,
+    "losses": 13,
     "draws": 0,
     "pts": 16,
-    "percentage": 71.5,
-    "for": 1161,
-    "against": 1623
+    "percentage": 72.0,
+    "for": 1231,
+    "against": 1709
   },
   {
     "rank": 17,
