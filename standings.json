@@ -37,6 +37,18 @@
   },
   {
     "rank": 4,
+    "name": "Brisbane Lions",
+    "played": 17,
+    "wins": 11,
+    "losses": 6,
+    "draws": 0,
+    "pts": 44,
+    "percentage": 117.1,
+    "for": 1823,
+    "against": 1557
+  },
+  {
+    "rank": 5,
     "name": "Adelaide Crows",
     "played": 17,
     "wins": 11,
@@ -48,31 +60,31 @@
     "against": 1330
   },
   {
-    "rank": 5,
-    "name": "Brisbane Lions",
-    "played": 16,
-    "wins": 10,
-    "losses": 6,
-    "draws": 0,
-    "pts": 40,
-    "percentage": 111.7,
-    "for": 1674,
-    "against": 1498
-  },
-  {
     "rank": 6,
     "name": "Melbourne",
-    "played": 16,
-    "wins": 10,
+    "played": 17,
+    "wins": 11,
     "losses": 6,
     "draws": 0,
-    "pts": 40,
-    "percentage": 106.3,
-    "for": 1555,
-    "against": 1463
+    "pts": 44,
+    "percentage": 109.0,
+    "for": 1666,
+    "against": 1528
   },
   {
     "rank": 7,
+    "name": "Western Bulldogs",
+    "played": 17,
+    "wins": 10,
+    "losses": 7,
+    "draws": 0,
+    "pts": 40,
+    "percentage": 92.3,
+    "for": 1411,
+    "against": 1529
+  },
+  {
+    "rank": 8,
     "name": "Collingwood",
     "played": 17,
     "wins": 9,
@@ -84,7 +96,7 @@
     "against": 1385
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Geelong Cats",
     "played": 17,
     "wins": 9,
@@ -94,18 +106,6 @@
     "percentage": 115.2,
     "for": 1664,
     "against": 1445
-  },
-  {
-    "rank": 9,
-    "name": "Western Bulldogs",
-    "played": 16,
-    "wins": 9,
-    "losses": 7,
-    "draws": 0,
-    "pts": 36,
-    "percentage": 90.8,
-    "for": 1325,
-    "against": 1459
   },
   {
     "rank": 10,
@@ -182,37 +182,37 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 16,
+    "played": 17,
     "wins": 4,
-    "losses": 12,
+    "losses": 13,
     "draws": 0,
     "pts": 16,
-    "percentage": 71.5,
-    "for": 1161,
-    "against": 1623
+    "percentage": 72.0,
+    "for": 1231,
+    "against": 1709
   },
   {
     "rank": 17,
     "name": "Richmond",
-    "played": 16,
+    "played": 17,
     "wins": 2,
-    "losses": 14,
+    "losses": 15,
     "draws": 0,
     "pts": 8,
-    "percentage": 63.3,
-    "for": 1059,
-    "against": 1672
+    "percentage": 63.0,
+    "for": 1124,
+    "against": 1783
   },
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 16,
+    "played": 17,
     "wins": 1,
-    "losses": 15,
+    "losses": 16,
     "draws": 0,
     "pts": 4,
-    "percentage": 69.0,
-    "for": 1142,
-    "against": 1654
+    "percentage": 66.6,
+    "for": 1201,
+    "against": 1803
   }
 ]
