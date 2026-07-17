@@ -14,17 +14,29 @@
   {
     "rank": 2,
     "name": "Sydney Swans",
-    "played": 17,
+    "played": 18,
     "wins": 13,
-    "losses": 4,
+    "losses": 5,
     "draws": 0,
     "pts": 52,
-    "percentage": 131.2,
-    "for": 1824,
-    "against": 1390
+    "percentage": 128.3,
+    "for": 1895,
+    "against": 1477
   },
   {
     "rank": 3,
+    "name": "Adelaide Crows",
+    "played": 18,
+    "wins": 12,
+    "losses": 6,
+    "draws": 0,
+    "pts": 48,
+    "percentage": 117.2,
+    "for": 1642,
+    "against": 1401
+  },
+  {
+    "rank": 4,
     "name": "Hawthorn",
     "played": 17,
     "wins": 11,
@@ -36,7 +48,7 @@
     "against": 1445
   },
   {
-    "rank": 4,
+    "rank": 5,
     "name": "Brisbane Lions",
     "played": 17,
     "wins": 11,
@@ -46,18 +58,6 @@
     "percentage": 117.1,
     "for": 1823,
     "against": 1557
-  },
-  {
-    "rank": 5,
-    "name": "Adelaide Crows",
-    "played": 17,
-    "wins": 11,
-    "losses": 6,
-    "draws": 0,
-    "pts": 44,
-    "percentage": 116.9,
-    "for": 1555,
-    "against": 1330
   },
   {
     "rank": 6,
