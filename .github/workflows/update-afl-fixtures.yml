@@ -1,0 +1,65 @@
+name: Update AFL fixtures
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get current AFL season ID
+        run: |
+          year=$(date +%Y)
+          for page in 0 1 2 3 4 5 6 7 8 9; do
+            id=$(curl -s "https://aflapi.afl.com.au/afl/v2/compseasons?page=$page" | \
+              jq -r --argjson y "$year" \
+                '[.compSeasons[] | select(.season.year == $y and .competition.code == "AFL" and .shortName == "Premiership")][0].id // empty')
+            if [ -n "$id" ]; then
+              echo "season_id=$id" >> $GITHUB_ENV
+              break
+            fi
+          done
+
+      - name: Fetch and extract AFL fixtures
+        run: |
+          id="${season_id:-85}"
+          page=0
+          echo '[]' > /tmp/all.json
+          while true; do
+            data=$(curl -s "https://aflapi.afl.com.au/afl/v2/matches?page=$page&pageSize=50")
+            count=$(echo "$data" | jq '.matches | length')
+            if [ "$count" = "0" ] || [ -z "$count" ]; then break; fi
+            echo "$data" | jq '[.matches[] | select(.compSeason.id == '$id') | {
+              round: (.roundNumber // .round.name | gsub("Round "; "") | tonumber? // 0),
+              homeTeam: .home.team.name,
+              awayTeam: .away.team.name,
+              homeScore: .home.score.totalScore?,
+              awayScore: .away.score.totalScore?,
+              venue: (.venue.name // ""),
+              status: (.status // "scheduled")
+            }]' > /tmp/page.json
+            jq -s 'add' /tmp/all.json /tmp/page.json > /tmp/merged.json
+            mv /tmp/merged.json /tmp/all.json
+            page=$((page + 1))
+          done
+          jq '[group_by(.round)[] | { round: .[0].round, matches: . }] | sort_by(.round)' /tmp/all.json > afl-fixtures.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add afl-fixtures.json
+          if ! git diff --quiet --cached; then
+            git commit -m "Update AFL fixtures"
+            git push
+          fi

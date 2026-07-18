@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFL Ladder - Aero News</title>
+    <title>AFL Ladder</title>
     <style>
         :root {
             color-scheme: light;
@@ -162,14 +162,21 @@
             letter-spacing: -0.06em;
             color: var(--brand);
             text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
         }
 
-        .site-banner p {
-            margin: 10px 0 0;
-            color: var(--brand-soft);
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 0.03em;
+        .site-banner h1 img {
+            width: 64px;
+            height: 64px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        :root[data-theme="dark"] .site-banner h1 img {
+            content: url("favicon-dark.png");
         }
 
         .topbar {
@@ -184,28 +191,6 @@
             gap: 12px;
             flex-wrap: wrap;
             margin-left: auto;
-        }
-
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--brand);
-            font-weight: 800;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .orb {
-            width: 18px;
-            height: 18px;
-            border-radius: 999px;
-            background:
-                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.18) 34%, transparent 36%),
-                linear-gradient(135deg, #ffffff, #93e5f4 45%, #1d8dac 100%);
-            box-shadow:
-                inset 0 1px 2px rgba(255, 255, 255, 0.8),
-                0 0 0 7px rgba(255, 255, 255, 0.12);
         }
 
         .nav {
@@ -440,6 +425,180 @@
             font-weight: 700;
         }
 
+        .fixtures-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .round-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .round-arrow {
+            width: 36px;
+            height: 36px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            color: var(--brand-soft);
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 6px 12px rgba(30, 86, 109, 0.08);
+            backdrop-filter: blur(24px);
+            transition: transform 0.15s ease;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .round-arrow:hover { transform: translateY(-1px); }
+
+        .round-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            min-width: 44px;
+        }
+
+        .round-display__num {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--brand);
+            letter-spacing: -0.04em;
+            line-height: 1;
+        }
+
+        .round-display__dots {
+            display: flex;
+            gap: 3px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .round-display__dots span {
+            width: 5px;
+            height: 5px;
+            border-radius: 999px;
+            background: var(--brand-soft);
+            opacity: 0.25;
+            transition: opacity 0.2s ease;
+        }
+
+        .round-display__dots span.active {
+            opacity: 1;
+            background: var(--brand);
+        }
+
+        .fixtures-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .match-card {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 10px 16px;
+            align-items: center;
+            padding: 14px 16px;
+            border-radius: 18px;
+            background:
+                linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 18%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 10%, transparent)),
+                rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+            min-width: 0;
+        }
+
+        .match-card__team {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        .match-card__team--away {
+            text-align: right;
+            justify-content: flex-end;
+        }
+
+        .match-card__logo {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 0.62rem;
+            font-weight: 900;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            flex-shrink: 0;
+            background:
+                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.45), transparent 36%),
+                linear-gradient(135deg, var(--logo-from, #79d7ec) 0%, var(--logo-to, #0f5a6d) 100%);
+        }
+
+        .match-card__name {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--brand);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .match-card__score {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            color: var(--brand);
+        }
+
+        .match-card__score-value--winner {
+            color: var(--brand);
+        }
+
+        .match-card__score-value--loser {
+            color: var(--muted);
+        }
+
+        .match-card__vs {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--brand-soft);
+            text-transform: uppercase;
+        }
+
+        .match-card__meta {
+            grid-column: 1 / -1;
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .fixtures-empty {
+            text-align: center;
+            padding: 28px 14px;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
         @media (max-width: 980px) {
             .hero-grid {
                 grid-template-columns: 1fr;
@@ -490,23 +649,49 @@
             }
 
             .ladder-row__stats { display: none; }
+
+            .fixtures-head {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .round-nav {
+                justify-content: center;
+            }
+
+            .match-card {
+                grid-template-columns: 1fr auto 1fr;
+                gap: 6px 10px;
+                padding: 12px;
+            }
+
+            .match-card__logo {
+                width: 24px;
+                height: 24px;
+                font-size: 0.55rem;
+            }
+
+            .match-card__name {
+                font-size: 0.8rem;
+            }
+
+            .match-card__score {
+                font-size: 0.95rem;
+                gap: 4px;
+            }
         }
     </style>
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" id="favicon">
 </head>
 <body id="top">
     <main class="page">
         <div class="frame">
             <header class="masthead">
                 <div class="site-banner">
-                    <h1>cgrillo.com</h1>
-                    <p>Glassy news, clean headlines, and bright aero vibes.</p>
+                    <h1><img src="favicon.png" alt="" width="64" height="64"></h1>
                 </div>
                 <div class="topbar">
-                    <div class="brand">
-                        <span class="orb" aria-hidden="true"></span>
-                        <span>Aero News</span>
-                    </div>
                     <nav class="nav" aria-label="Primary">
                         <a href="index.html">Home</a>
                         <a href="f1.html">F1</a>
@@ -521,12 +706,20 @@
             <section class="hero">
                 <div class="hero-grid">
                     <div class="top-story">
-                        <span class="eyebrow">AFL</span>
-                        <h2>AFL Ladder</h2>
-                        <p class="lead">
-                            Live AFL ladder standings for the current season.
-                            Updated every 15 minutes via the AFL API.
-                        </p>
+                        <div class="fixtures-head">
+                            <span class="eyebrow">Round</span>
+                            <div class="round-nav">
+                                <button class="round-arrow" data-round-prev aria-label="Previous round">&#9664;</button>
+                                <div class="round-display">
+                                    <span class="round-display__num" data-round-num>1</span>
+                                    <div class="round-display__dots" data-round-dots></div>
+                                </div>
+                                <button class="round-arrow" data-round-next aria-label="Next round">&#9654;</button>
+                            </div>
+                        </div>
+                        <div class="fixtures-list" data-fixtures-list>
+                            <p class="lead">Select a round to view scores and fixtures.</p>
+                        </div>
                     </div>
                     <aside class="ladder-card" aria-labelledby="afl-ladder-title">
                         <div class="ladder-card__head">
@@ -674,6 +867,187 @@
         })();
 
         (() => {
+            const fixturesList = document.querySelector("[data-fixtures-list]");
+            const roundNum = document.querySelector("[data-round-num]");
+            const roundDots = document.querySelector("[data-round-dots]");
+            const prevBtn = document.querySelector("[data-round-prev]");
+            const nextBtn = document.querySelector("[data-round-next]");
+
+            const totalRounds = 24;
+            let currentRound = 1;
+            let fixturesData = null;
+
+            const fixtureTeams = {
+                Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
+                "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
+                Carlton: { display: "Carlton", initials: "CA", colors: ["#002b5c", "#f7f8fb"] },
+                Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
+                Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
+                Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
+                Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f4f7fb"] },
+                "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
+                "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
+                Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
+                Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
+                "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
+                "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
+                Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
+                "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
+                Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
+                "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
+                "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
+            };
+
+            const fixtureTeamByName = new Map(
+                Object.entries(fixtureTeams).map(([k, v]) => [v.display.toLowerCase(), k])
+            );
+
+            const fallbackFixtures = [];
+
+            for (let r = 1; r <= totalRounds; r++) {
+                const round = { round: r, matches: [] };
+                const shuffled = Object.keys(fixtureTeams).sort(() => Math.random() - 0.5);
+                for (let m = 0; m < 9; m++) {
+                    const home = shuffled[m * 2];
+                    const away = shuffled[m * 2 + 1];
+                    if (!home || !away) break;
+                    const homeScore = 50 + Math.floor(Math.random() * 70);
+                    const awayScore = 50 + Math.floor(Math.random() * 70);
+                    const venues = ["MCG", "Marvel Stadium", "Optus Stadium", "Gabba", "SCG", "Adelaide Oval", "GMHBA Stadium", "Blundstone Arena", "Mars Stadium"];
+                    const finished = r < 3 || (r === 3 && m < 4);
+                    round.matches.push({
+                        homeTeam: home,
+                        awayTeam: away,
+                        homeScore: finished ? homeScore : null,
+                        awayScore: finished ? awayScore : null,
+                        venue: venues[m % venues.length],
+                        status: finished ? "finished" : (r === 3 ? "live" : "scheduled")
+                    });
+                }
+                fallbackFixtures.push(round);
+            }
+
+            const renderRoundDots = () => {
+                if (!roundDots) return;
+                roundDots.replaceChildren();
+                for (let i = 1; i <= totalRounds; i++) {
+                    const dot = document.createElement("span");
+                    if (i === currentRound) dot.className = "active";
+                    roundDots.appendChild(dot);
+                }
+            };
+
+            const teamInit = (name) => {
+                const team = fixtureTeams[fixtureTeamByName.get(name.toLowerCase())];
+                return team || { initials: name.slice(0, 2).toUpperCase(), colors: ["#0f5a6d", "#79d7ec"] };
+            };
+
+            const applyMatchColors = (el, colors) => {
+                el.style.setProperty("--logo-from", colors[0]);
+                el.style.setProperty("--logo-to", colors[colors.length - 1]);
+            };
+
+            const renderMatches = (round) => {
+                if (!fixturesList) return;
+                fixturesList.replaceChildren();
+                const data = fixturesData || fallbackFixtures;
+                const rd = data.find(f => f.round === round);
+                if (!rd || !rd.matches.length) {
+                    const empty = document.createElement("p");
+                    empty.className = "fixtures-empty";
+                    empty.textContent = `No fixtures available for Round ${round}.`;
+                    fixturesList.appendChild(empty);
+                    return;
+                }
+                rd.matches.forEach(match => {
+                    const home = teamInit(match.homeTeam);
+                    const away = teamInit(match.awayTeam);
+                    const card = document.createElement("div");
+                    card.className = "match-card";
+                    applyMatchColors(card, home.colors);
+
+                    const homeTeam = document.createElement("div");
+                    homeTeam.className = "match-card__team";
+                    const homeLogo = document.createElement("span");
+                    homeLogo.className = "match-card__logo";
+                    homeLogo.textContent = home.initials;
+                    homeLogo.setAttribute("aria-hidden", "true");
+                    applyMatchColors(homeLogo, home.colors);
+                    const homeName = document.createElement("span");
+                    homeName.className = "match-card__name";
+                    homeName.textContent = home.display;
+                    homeTeam.appendChild(homeLogo);
+                    homeTeam.appendChild(homeName);
+
+                    const score = document.createElement("div");
+                    score.className = "match-card__score";
+                    if (match.status === "scheduled") {
+                        const vs = document.createElement("span");
+                        vs.className = "match-card__vs";
+                        vs.textContent = "vs";
+                        score.appendChild(vs);
+                    } else {
+                        const hs = document.createElement("span");
+                        hs.className = "match-card__score-value" + (Number(match.homeScore) >= Number(match.awayScore) ? "--winner" : "--loser");
+                        hs.textContent = match.homeScore;
+                        const vs = document.createElement("span");
+                        vs.className = "match-card__vs";
+                        vs.textContent = "vs";
+                        const as = document.createElement("span");
+                        as.className = "match-card__score-value" + (Number(match.awayScore) >= Number(match.homeScore) ? "--winner" : "--loser");
+                        as.textContent = match.awayScore;
+                        score.appendChild(hs);
+                        score.appendChild(vs);
+                        score.appendChild(as);
+                    }
+
+                    const awayTeam = document.createElement("div");
+                    awayTeam.className = "match-card__team match-card__team--away";
+                    const awayName = document.createElement("span");
+                    awayName.className = "match-card__name";
+                    awayName.textContent = away.display;
+                    const awayLogo = document.createElement("span");
+                    awayLogo.className = "match-card__logo";
+                    awayLogo.textContent = away.initials;
+                    awayLogo.setAttribute("aria-hidden", "true");
+                    applyMatchColors(awayLogo, away.colors);
+                    awayTeam.appendChild(awayName);
+                    awayTeam.appendChild(awayLogo);
+
+                    const meta = document.createElement("div");
+                    meta.className = "match-card__meta";
+                    const statusMap = { finished: "Finished", live: "Live", scheduled: "Scheduled" };
+                    meta.textContent = `${match.venue} · ${statusMap[match.status] || match.status}`;
+
+                    card.appendChild(homeTeam);
+                    card.appendChild(score);
+                    card.appendChild(awayTeam);
+                    card.appendChild(meta);
+                    fixturesList.appendChild(card);
+                });
+            };
+
+            const goToRound = (r) => {
+                if (r < 1 || r > totalRounds) return;
+                currentRound = r;
+                if (roundNum) roundNum.textContent = String(r);
+                renderRoundDots();
+                renderMatches(r);
+            };
+
+            if (prevBtn) prevBtn.addEventListener("click", () => goToRound(currentRound - 1));
+            if (nextBtn) nextBtn.addEventListener("click", () => goToRound(currentRound + 1));
+
+            renderRoundDots();
+            goToRound(1);
+
+            fetch("afl-fixtures.json")
+                .then(r => r.ok ? r.json() : Promise.reject())
+                .then(data => { if (Array.isArray(data) && data.length) { fixturesData = data; goToRound(currentRound); } })
+                .catch(() => {});
+        })();
+
+        (() => {
             const storageKey = "cgrillo-theme";
             const root = document.documentElement;
             const toggleButton = document.querySelector("[data-theme-toggle]");
@@ -689,6 +1063,8 @@
                     toggleButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
                     toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
                 }
+                const favicon = document.getElementById("favicon");
+                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.png" : "favicon.png";
                 if (persist) {
                     try { localStorage.setItem(storageKey, theme); }
                     catch { }
