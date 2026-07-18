@@ -2,14 +2,14 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 18,
-    "wins": 16,
+    "played": 17,
+    "wins": 15,
     "losses": 2,
     "draws": 0,
-    "pts": 64,
-    "percentage": 142.0,
-    "for": 1793,
-    "against": 1263
+    "pts": 60,
+    "percentage": 142.3,
+    "for": 1690,
+    "against": 1188
   },
   {
     "rank": 2,
@@ -170,14 +170,14 @@
   {
     "rank": 15,
     "name": "Port Adelaide",
-    "played": 18,
+    "played": 17,
     "wins": 6,
-    "losses": 12,
+    "losses": 11,
     "draws": 0,
     "pts": 24,
-    "percentage": 99.3,
-    "for": 1443,
-    "against": 1453
+    "percentage": 101.3,
+    "for": 1368,
+    "against": 1350
   },
   {
     "rank": 16,
