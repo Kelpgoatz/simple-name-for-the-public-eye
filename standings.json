@@ -25,6 +25,18 @@
   },
   {
     "rank": 3,
+    "name": "Brisbane Lions",
+    "played": 18,
+    "wins": 12,
+    "losses": 6,
+    "draws": 0,
+    "pts": 48,
+    "percentage": 117.8,
+    "for": 1916,
+    "against": 1626
+  },
+  {
+    "rank": 4,
     "name": "Adelaide Crows",
     "played": 18,
     "wins": 12,
@@ -36,7 +48,7 @@
     "against": 1401
   },
   {
-    "rank": 4,
+    "rank": 5,
     "name": "Melbourne",
     "played": 18,
     "wins": 12,
@@ -48,7 +60,7 @@
     "against": 1604
   },
   {
-    "rank": 5,
+    "rank": 6,
     "name": "Hawthorn",
     "played": 17,
     "wins": 11,
@@ -58,18 +70,6 @@
     "percentage": 114.2,
     "for": 1650,
     "against": 1445
-  },
-  {
-    "rank": 6,
-    "name": "Brisbane Lions",
-    "played": 17,
-    "wins": 11,
-    "losses": 6,
-    "draws": 0,
-    "pts": 44,
-    "percentage": 117.1,
-    "for": 1823,
-    "against": 1557
   },
   {
     "rank": 7,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 17,
+    "played": 18,
     "wins": 4,
-    "losses": 13,
+    "losses": 14,
     "draws": 0,
     "pts": 16,
-    "percentage": 72.0,
-    "for": 1231,
-    "against": 1709
+    "percentage": 72.1,
+    "for": 1300,
+    "against": 1802
   },
   {
     "rank": 17,
