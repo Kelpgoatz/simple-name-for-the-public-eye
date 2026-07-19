@@ -122,14 +122,14 @@
   {
     "rank": 11,
     "name": "GWS GIANTS",
-    "played": 18,
+    "played": 17,
     "wins": 8,
-    "losses": 10,
+    "losses": 9,
     "draws": 0,
     "pts": 32,
-    "percentage": 101.3,
-    "for": 1621,
-    "against": 1600
+    "percentage": 101.6,
+    "for": 1557,
+    "against": 1533
   },
   {
     "rank": 12,
@@ -193,18 +193,6 @@
   },
   {
     "rank": 17,
-    "name": "Essendon",
-    "played": 18,
-    "wins": 2,
-    "losses": 16,
-    "draws": 0,
-    "pts": 8,
-    "percentage": 67.9,
-    "for": 1268,
-    "against": 1867
-  },
-  {
-    "rank": 18,
     "name": "Richmond",
     "played": 18,
     "wins": 2,
@@ -214,5 +202,17 @@
     "percentage": 61.7,
     "for": 1176,
     "against": 1905
+  },
+  {
+    "rank": 18,
+    "name": "Essendon",
+    "played": 17,
+    "wins": 1,
+    "losses": 16,
+    "draws": 0,
+    "pts": 4,
+    "percentage": 66.6,
+    "for": 1201,
+    "against": 1803
   }
 ]
