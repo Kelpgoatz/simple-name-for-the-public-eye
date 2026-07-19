@@ -73,6 +73,18 @@
   },
   {
     "rank": 7,
+    "name": "Western Bulldogs",
+    "played": 18,
+    "wins": 11,
+    "losses": 7,
+    "draws": 0,
+    "pts": 44,
+    "percentage": 93.2,
+    "for": 1488,
+    "against": 1597
+  },
+  {
+    "rank": 8,
     "name": "Collingwood",
     "played": 18,
     "wins": 10,
@@ -84,7 +96,7 @@
     "against": 1454
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Geelong Cats",
     "played": 18,
     "wins": 10,
@@ -94,18 +106,6 @@
     "percentage": 116.2,
     "for": 1766,
     "against": 1520
-  },
-  {
-    "rank": 9,
-    "name": "Western Bulldogs",
-    "played": 17,
-    "wins": 10,
-    "losses": 7,
-    "draws": 0,
-    "pts": 40,
-    "percentage": 92.3,
-    "for": 1411,
-    "against": 1529
   },
   {
     "rank": 10,
@@ -122,14 +122,14 @@
   {
     "rank": 11,
     "name": "GWS GIANTS",
-    "played": 17,
+    "played": 18,
     "wins": 8,
-    "losses": 9,
+    "losses": 10,
     "draws": 0,
     "pts": 32,
-    "percentage": 101.6,
-    "for": 1557,
-    "against": 1533
+    "percentage": 101.3,
+    "for": 1621,
+    "against": 1600
   },
   {
     "rank": 12,
@@ -158,14 +158,14 @@
   {
     "rank": 14,
     "name": "Gold Coast SUNS",
-    "played": 17,
+    "played": 18,
     "wins": 7,
-    "losses": 10,
+    "losses": 11,
     "draws": 0,
     "pts": 28,
-    "percentage": 95.6,
-    "for": 1506,
-    "against": 1575
+    "percentage": 95.3,
+    "for": 1574,
+    "against": 1652
   },
   {
     "rank": 15,
@@ -193,6 +193,18 @@
   },
   {
     "rank": 17,
+    "name": "Essendon",
+    "played": 18,
+    "wins": 2,
+    "losses": 16,
+    "draws": 0,
+    "pts": 8,
+    "percentage": 67.9,
+    "for": 1268,
+    "against": 1867
+  },
+  {
+    "rank": 18,
     "name": "Richmond",
     "played": 18,
     "wins": 2,
@@ -202,17 +214,5 @@
     "percentage": 61.7,
     "for": 1176,
     "against": 1905
-  },
-  {
-    "rank": 18,
-    "name": "Essendon",
-    "played": 17,
-    "wins": 1,
-    "losses": 16,
-    "draws": 0,
-    "pts": 4,
-    "percentage": 66.6,
-    "for": 1201,
-    "against": 1803
   }
 ]
