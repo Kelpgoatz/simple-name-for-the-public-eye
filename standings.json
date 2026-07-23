@@ -50,14 +50,14 @@
   {
     "rank": 5,
     "name": "Adelaide Crows",
-    "played": 18,
+    "played": 19,
     "wins": 12,
-    "losses": 6,
+    "losses": 7,
     "draws": 0,
     "pts": 48,
-    "percentage": 117.2,
-    "for": 1642,
-    "against": 1401
+    "percentage": 113.7,
+    "for": 1716,
+    "against": 1509
   },
   {
     "rank": 6,
@@ -73,6 +73,18 @@
   },
   {
     "rank": 7,
+    "name": "Collingwood",
+    "played": 19,
+    "wins": 11,
+    "losses": 7,
+    "draws": 1,
+    "pts": 46,
+    "percentage": 107.6,
+    "for": 1644,
+    "against": 1528
+  },
+  {
+    "rank": 8,
     "name": "Western Bulldogs",
     "played": 18,
     "wins": 11,
@@ -82,18 +94,6 @@
     "percentage": 93.2,
     "for": 1488,
     "against": 1597
-  },
-  {
-    "rank": 8,
-    "name": "Collingwood",
-    "played": 18,
-    "wins": 10,
-    "losses": 7,
-    "draws": 1,
-    "pts": 42,
-    "percentage": 105.6,
-    "for": 1536,
-    "against": 1454
   },
   {
     "rank": 9,
