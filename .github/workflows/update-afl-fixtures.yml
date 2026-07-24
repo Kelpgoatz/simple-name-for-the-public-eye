@@ -2,7 +2,7 @@ name: Update AFL fixtures
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
   push:
     branches:
@@ -17,41 +17,49 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Get current AFL season ID
+      - name: Fetch and update AFL fixtures
         run: |
-          year=$(date +%Y)
-          for page in 0 1 2 3 4 5 6 7 8 9; do
-            id=$(curl -s "https://aflapi.afl.com.au/afl/v2/compseasons?page=$page" | \
-              jq -r --argjson y "$year" \
-                '[.compSeasons[] | select(.season.year == $y and .competition.code == "AFL" and .shortName == "Premiership")][0].id // empty')
-            if [ -n "$id" ]; then
-              echo "season_id=$id" >> $GITHUB_ENV
-              break
-            fi
-          done
-
-      - name: Fetch and extract AFL fixtures
-        run: |
-          id="${season_id:-85}"
+          season_id=85
           page=0
           echo '[]' > /tmp/all.json
+
           while true; do
-            data=$(curl -s "https://aflapi.afl.com.au/afl/v2/matches?page=$page&pageSize=50")
+            data=$(curl -sf "https://aflapi.afl.com.au/afl/v2/matches?compSeasonId=$season_id&page=$page&pageSize=50")
             count=$(echo "$data" | jq '.matches | length')
             if [ "$count" = "0" ] || [ -z "$count" ]; then break; fi
-            echo "$data" | jq '[.matches[] | select(.compSeason.id == '$id') | {
-              round: (.roundNumber // .round.name | gsub("Round "; "") | tonumber? // 0),
-              homeTeam: .home.team.name,
-              awayTeam: .away.team.name,
-              homeScore: .home.score.totalScore?,
-              awayScore: .away.score.totalScore?,
-              venue: (.venue.name // ""),
-              status: (.status // "scheduled")
-            }]' > /tmp/page.json
+
+            echo "$data" | jq '
+              [.matches[]
+               | {
+                   round: .round.roundNumber,
+                   homeTeam: (if .home.team.name == "Sydney Swans" then "Sydney"
+                              elif .home.team.name == "Geelong Cats" then "Geelong"
+                              elif .home.team.name == "Gold Coast SUNS" then "Gold Coast"
+                              elif .home.team.name == "GWS GIANTS" then "Greater Western Sydney"
+                              elif .home.team.name == "West Coast Eagles" then "West Coast"
+                              elif .home.team.name == "Adelaide Crows" then "Adelaide"
+                              else .home.team.name end),
+                   awayTeam: (if .away.team.name == "Sydney Swans" then "Sydney"
+                              elif .away.team.name == "Geelong Cats" then "Geelong"
+                              elif .away.team.name == "Gold Coast SUNS" then "Gold Coast"
+                              elif .away.team.name == "GWS GIANTS" then "Greater Western Sydney"
+                              elif .away.team.name == "West Coast Eagles" then "West Coast"
+                              elif .away.team.name == "Adelaide Crows" then "Adelaide"
+                              else .away.team.name end),
+                   homeScore: .home.score.totalScore?,
+                   awayScore: .away.score.totalScore?,
+                   venue: (.venue.name // ""),
+                   status: (.status // "SCHEDULED"),
+                   matchId: .id,
+                   startTime: (.utcStartTime // "")
+                 }]
+            ' > /tmp/page.json
+
             jq -s 'add' /tmp/all.json /tmp/page.json > /tmp/merged.json
             mv /tmp/merged.json /tmp/all.json
             page=$((page + 1))
           done
+
           jq '[group_by(.round)[] | { round: .[0].round, matches: . }] | sort_by(.round)' /tmp/all.json > afl-fixtures.json
 
       - name: Commit and push if changed

@@ -263,7 +263,7 @@
 
         .hero-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.95fr);
+            grid-template-columns: 1fr minmax(280px, 0.95fr);
             gap: 14px;
             align-items: stretch;
         }
@@ -514,8 +514,8 @@
             padding: 14px 16px;
             border-radius: 18px;
             background:
-                linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 18%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 10%, transparent)),
-                rgba(255, 255, 255, 0.2);
+                linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 24%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 14%, transparent)),
+                rgba(255, 255, 255, 0.25);
             border: 1px solid rgba(255, 255, 255, 0.28);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
             min-width: 0;
@@ -534,21 +534,32 @@
         }
 
         .match-card__logo {
-            width: 28px;
-            height: 28px;
-            border-radius: 8px;
+            width: 34px;
+            height: 34px;
+            border-radius: 12px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             color: #ffffff;
-            font-size: 0.62rem;
+            font-size: 0.72rem;
             font-weight: 900;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            letter-spacing: 0.05em;
+            text-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.42),
+                0 0 4px rgba(0, 0, 0, 0.22);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.4),
+                0 8px 14px rgba(14, 68, 88, 0.14);
             flex-shrink: 0;
             background:
                 radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.45), transparent 36%),
-                linear-gradient(135deg, var(--logo-from, #79d7ec) 0%, var(--logo-to, #0f5a6d) 100%);
+                linear-gradient(
+                    135deg,
+                    var(--logo-from, #79d7ec) 0%,
+                    var(--logo-from, #79d7ec) 62%,
+                    var(--logo-mid, var(--logo-to, #0f5a6d)) 84%,
+                    var(--logo-to, #0f5a6d) 100%
+                );
         }
 
         .match-card__name {
@@ -667,9 +678,9 @@
             }
 
             .match-card__logo {
-                width: 24px;
-                height: 24px;
-                font-size: 0.55rem;
+                width: 30px;
+                height: 30px;
+                font-size: 0.65rem;
             }
 
             .match-card__name {
@@ -705,22 +716,6 @@
 
             <section class="hero">
                 <div class="hero-grid">
-                    <div class="top-story">
-                        <div class="fixtures-head">
-                            <span class="eyebrow">Round</span>
-                            <div class="round-nav">
-                                <button class="round-arrow" data-round-prev aria-label="Previous round">&#9664;</button>
-                                <div class="round-display">
-                                    <span class="round-display__num" data-round-num>1</span>
-                                    <div class="round-display__dots" data-round-dots></div>
-                                </div>
-                                <button class="round-arrow" data-round-next aria-label="Next round">&#9654;</button>
-                            </div>
-                        </div>
-                        <div class="fixtures-list" data-fixtures-list>
-                            <p class="lead">Select a round to view scores and fixtures.</p>
-                        </div>
-                    </div>
                     <aside class="ladder-card" aria-labelledby="afl-ladder-title">
                         <div class="ladder-card__head">
                             <h3 id="afl-ladder-title">AFL Ladder</h3>
@@ -740,32 +735,32 @@
         </div>
     </main>
     <script>
+        const teams = {
+            Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
+            "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
+            Carlton: { display: "Carlton", initials: "CA", colors: ["#0055cc", "#001a5c"] },
+            Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
+            Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
+            Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
+            Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f7f8fb"] },
+            "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
+            "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
+            Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
+            Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
+            "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
+            "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
+            Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
+            "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
+            Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
+            "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
+            "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
+        };
+
         (() => {
             const ladderList = document.querySelector("[data-ladder-list]");
             const ladderNote = document.querySelector("[data-ladder-note]");
 
             if (!ladderList) return;
-
-            const teams = {
-                Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
-                "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
-                Carlton: { display: "Carlton", initials: "CA", colors: ["#002b5c", "#f7f8fb"] },
-                Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
-                Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
-                Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
-                Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f4f7fb"] },
-                "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
-                "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
-                Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
-                Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
-                "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
-                "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
-                Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
-                "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
-                Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
-                "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
-                "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
-            };
 
             const teamByName = new Map(
                 Object.entries(teams).map(([key, val]) => [val.display.toLowerCase(), key])
@@ -874,54 +869,30 @@
             const nextBtn = document.querySelector("[data-round-next]");
 
             const totalRounds = 24;
-            let currentRound = 1;
+            const lastCompletedRound = 19;
+            let currentRound = lastCompletedRound;
             let fixturesData = null;
-
-            const fixtureTeams = {
-                Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
-                "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
-                Carlton: { display: "Carlton", initials: "CA", colors: ["#002b5c", "#f7f8fb"] },
-                Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
-                Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
-                Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
-                Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f4f7fb"] },
-                "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
-                "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
-                Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
-                Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
-                "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
-                "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
-                Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
-                "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
-                Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
-                "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
-                "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
-            };
-
-            const fixtureTeamByName = new Map(
-                Object.entries(fixtureTeams).map(([k, v]) => [v.display.toLowerCase(), k])
-            );
 
             const fallbackFixtures = [];
 
             for (let r = 1; r <= totalRounds; r++) {
                 const round = { round: r, matches: [] };
-                const shuffled = Object.keys(fixtureTeams).sort(() => Math.random() - 0.5);
+                const shuffled = Object.keys(teams).sort(() => Math.random() - 0.5);
+                const isPast = r <= lastCompletedRound;
                 for (let m = 0; m < 9; m++) {
                     const home = shuffled[m * 2];
                     const away = shuffled[m * 2 + 1];
                     if (!home || !away) break;
-                    const homeScore = 50 + Math.floor(Math.random() * 70);
-                    const awayScore = 50 + Math.floor(Math.random() * 70);
+                    const homeScore = isPast ? 50 + Math.floor(Math.random() * 70) : null;
+                    const awayScore = isPast ? 50 + Math.floor(Math.random() * 70) : null;
                     const venues = ["MCG", "Marvel Stadium", "Optus Stadium", "Gabba", "SCG", "Adelaide Oval", "GMHBA Stadium", "Blundstone Arena", "Mars Stadium"];
-                    const finished = r < 3 || (r === 3 && m < 4);
                     round.matches.push({
                         homeTeam: home,
                         awayTeam: away,
-                        homeScore: finished ? homeScore : null,
-                        awayScore: finished ? awayScore : null,
+                        homeScore: homeScore,
+                        awayScore: awayScore,
                         venue: venues[m % venues.length],
-                        status: finished ? "finished" : (r === 3 ? "live" : "scheduled")
+                        status: isPast ? "finished" : "scheduled"
                     });
                 }
                 fallbackFixtures.push(round);
@@ -930,21 +901,25 @@
             const renderRoundDots = () => {
                 if (!roundDots) return;
                 roundDots.replaceChildren();
-                for (let i = 1; i <= totalRounds; i++) {
+                for (let i = 0; i < totalRounds; i++) {
                     const dot = document.createElement("span");
-                    if (i === currentRound) dot.className = "active";
+                    if (i === currentRound - 1) dot.className = "active";
                     roundDots.appendChild(dot);
                 }
             };
 
             const teamInit = (name) => {
-                const team = fixtureTeams[fixtureTeamByName.get(name.toLowerCase())];
-                return team || { initials: name.slice(0, 2).toUpperCase(), colors: ["#0f5a6d", "#79d7ec"] };
+                return teams[name] || { initials: name.slice(0, 2).toUpperCase(), colors: ["#0f5a6d", "#79d7ec"] };
             };
 
             const applyMatchColors = (el, colors) => {
                 el.style.setProperty("--logo-from", colors[0]);
                 el.style.setProperty("--logo-to", colors[colors.length - 1]);
+                if (colors.length > 2) {
+                    el.style.setProperty("--logo-mid", colors[1]);
+                } else {
+                    el.style.removeProperty("--logo-mid");
+                }
             };
 
             const renderMatches = (round) => {
@@ -1030,7 +1005,7 @@
             const goToRound = (r) => {
                 if (r < 1 || r > totalRounds) return;
                 currentRound = r;
-                if (roundNum) roundNum.textContent = String(r);
+                if (roundNum) roundNum.textContent = String(r - 1);
                 renderRoundDots();
                 renderMatches(r);
             };
@@ -1039,7 +1014,7 @@
             if (nextBtn) nextBtn.addEventListener("click", () => goToRound(currentRound + 1));
 
             renderRoundDots();
-            goToRound(1);
+            goToRound(lastCompletedRound);
 
             fetch("afl-fixtures.json")
                 .then(r => r.ok ? r.json() : Promise.reject())
