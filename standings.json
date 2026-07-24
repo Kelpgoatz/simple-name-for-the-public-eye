@@ -2,14 +2,14 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 18,
-    "wins": 16,
+    "played": 19,
+    "wins": 17,
     "losses": 2,
     "draws": 0,
-    "pts": 64,
-    "percentage": 142.0,
-    "for": 1793,
-    "against": 1263
+    "pts": 68,
+    "percentage": 146.0,
+    "for": 1905,
+    "against": 1305
   },
   {
     "rank": 2,
@@ -62,14 +62,14 @@
   {
     "rank": 6,
     "name": "Melbourne",
-    "played": 18,
+    "played": 19,
     "wins": 12,
-    "losses": 6,
+    "losses": 7,
     "draws": 0,
     "pts": 48,
-    "percentage": 109.6,
-    "for": 1758,
-    "against": 1604
+    "percentage": 107.8,
+    "for": 1855,
+    "against": 1721
   },
   {
     "rank": 7,
@@ -85,6 +85,18 @@
   },
   {
     "rank": 8,
+    "name": "Geelong Cats",
+    "played": 19,
+    "wins": 11,
+    "losses": 8,
+    "draws": 0,
+    "pts": 44,
+    "percentage": 116.5,
+    "for": 1883,
+    "against": 1617
+  },
+  {
+    "rank": 9,
     "name": "Western Bulldogs",
     "played": 18,
     "wins": 11,
@@ -94,18 +106,6 @@
     "percentage": 93.2,
     "for": 1488,
     "against": 1597
-  },
-  {
-    "rank": 9,
-    "name": "Geelong Cats",
-    "played": 18,
-    "wins": 10,
-    "losses": 8,
-    "draws": 0,
-    "pts": 40,
-    "percentage": 116.2,
-    "for": 1766,
-    "against": 1520
   },
   {
     "rank": 10,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 18,
+    "played": 19,
     "wins": 4,
-    "losses": 14,
+    "losses": 15,
     "draws": 0,
     "pts": 16,
-    "percentage": 72.1,
-    "for": 1300,
-    "against": 1802
+    "percentage": 70.1,
+    "for": 1342,
+    "against": 1914
   },
   {
     "rank": 17,
