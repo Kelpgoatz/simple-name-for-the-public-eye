@@ -1946,7 +1946,7 @@
         "homeScore": 88,
         "awayScore": 139,
         "venue": "ENGIE Stadium",
-        "status": "CONCLUDED",
+        "status": "POSTGAME",
         "matchId": 8208,
         "startTime": "2026-07-25T06:35:00.000+0000"
       },
@@ -1957,7 +1957,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8204,
         "startTime": "2026-07-25T09:40:00.000+0000"
       },
