@@ -109,6 +109,18 @@
   },
   {
     "rank": 10,
+    "name": "Carlton",
+    "played": 19,
+    "wins": 9,
+    "losses": 10,
+    "draws": 0,
+    "pts": 36,
+    "percentage": 92.4,
+    "for": 1546,
+    "against": 1674
+  },
+  {
+    "rank": 11,
     "name": "St Kilda",
     "played": 18,
     "wins": 8,
@@ -120,7 +132,7 @@
     "against": 1551
   },
   {
-    "rank": 11,
+    "rank": 12,
     "name": "GWS GIANTS",
     "played": 18,
     "wins": 8,
@@ -130,18 +142,6 @@
     "percentage": 101.3,
     "for": 1621,
     "against": 1600
-  },
-  {
-    "rank": 12,
-    "name": "Carlton",
-    "played": 18,
-    "wins": 8,
-    "losses": 10,
-    "draws": 0,
-    "pts": 32,
-    "percentage": 91.1,
-    "for": 1436,
-    "against": 1577
   },
   {
     "rank": 13,
@@ -158,14 +158,14 @@
   {
     "rank": 14,
     "name": "Gold Coast SUNS",
-    "played": 18,
+    "played": 19,
     "wins": 7,
-    "losses": 11,
+    "losses": 12,
     "draws": 0,
     "pts": 28,
-    "percentage": 95.3,
-    "for": 1574,
-    "against": 1652
+    "percentage": 94.8,
+    "for": 1671,
+    "against": 1762
   },
   {
     "rank": 15,
