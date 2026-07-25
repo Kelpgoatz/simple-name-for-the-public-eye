@@ -14,26 +14,26 @@
   {
     "rank": 2,
     "name": "Sydney Swans",
-    "played": 18,
-    "wins": 13,
+    "played": 19,
+    "wins": 14,
     "losses": 5,
     "draws": 0,
-    "pts": 52,
-    "percentage": 128.3,
-    "for": 1895,
-    "against": 1477
+    "pts": 56,
+    "percentage": 130.0,
+    "for": 2034,
+    "against": 1565
   },
   {
     "rank": 3,
     "name": "Hawthorn",
-    "played": 18,
-    "wins": 12,
+    "played": 19,
+    "wins": 13,
     "losses": 5,
     "draws": 1,
-    "pts": 50,
-    "percentage": 118.4,
-    "for": 1772,
-    "against": 1497
+    "pts": 54,
+    "percentage": 124.0,
+    "for": 1904,
+    "against": 1536
   },
   {
     "rank": 4,
@@ -134,14 +134,14 @@
   {
     "rank": 12,
     "name": "GWS GIANTS",
-    "played": 18,
+    "played": 19,
     "wins": 8,
-    "losses": 10,
+    "losses": 11,
     "draws": 0,
     "pts": 32,
-    "percentage": 101.3,
-    "for": 1621,
-    "against": 1600
+    "percentage": 98.3,
+    "for": 1709,
+    "against": 1739
   },
   {
     "rank": 13,
@@ -194,14 +194,14 @@
   {
     "rank": 17,
     "name": "Essendon",
-    "played": 18,
+    "played": 19,
     "wins": 2,
-    "losses": 16,
+    "losses": 17,
     "draws": 0,
     "pts": 8,
-    "percentage": 67.9,
-    "for": 1268,
-    "against": 1867
+    "percentage": 65.4,
+    "for": 1307,
+    "against": 1999
   },
   {
     "rank": 18,
