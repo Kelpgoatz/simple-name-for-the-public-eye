@@ -73,6 +73,18 @@
   },
   {
     "rank": 7,
+    "name": "Western Bulldogs",
+    "played": 19,
+    "wins": 12,
+    "losses": 7,
+    "draws": 0,
+    "pts": 48,
+    "percentage": 96.8,
+    "for": 1593,
+    "against": 1645
+  },
+  {
+    "rank": 8,
     "name": "Collingwood",
     "played": 19,
     "wins": 11,
@@ -84,7 +96,7 @@
     "against": 1528
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Geelong Cats",
     "played": 19,
     "wins": 11,
@@ -94,18 +106,6 @@
     "percentage": 116.5,
     "for": 1883,
     "against": 1617
-  },
-  {
-    "rank": 9,
-    "name": "Western Bulldogs",
-    "played": 18,
-    "wins": 11,
-    "losses": 7,
-    "draws": 0,
-    "pts": 44,
-    "percentage": 93.2,
-    "for": 1488,
-    "against": 1597
   },
   {
     "rank": 10,
@@ -206,13 +206,13 @@
   {
     "rank": 18,
     "name": "Richmond",
-    "played": 18,
+    "played": 19,
     "wins": 2,
-    "losses": 16,
+    "losses": 17,
     "draws": 0,
     "pts": 8,
-    "percentage": 61.7,
-    "for": 1176,
-    "against": 1905
+    "percentage": 60.9,
+    "for": 1224,
+    "against": 2010
   }
 ]
