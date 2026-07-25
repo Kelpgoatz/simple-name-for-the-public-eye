@@ -659,7 +659,7 @@
         "awayTeam": "Gold Coast",
         "homeScore": 112,
         "awayScore": 63,
-        "venue": "UTAS Stadium",
+        "venue": "University of Tasmania Stadium",
         "status": "CONCLUDED",
         "matchId": 8095,
         "startTime": "2026-04-25T02:30:00.000+0000"
@@ -1053,7 +1053,7 @@
         "awayTeam": "Adelaide",
         "homeScore": 75,
         "awayScore": 66,
-        "venue": "UTAS Stadium",
+        "venue": "University of Tasmania Stadium",
         "status": "CONCLUDED",
         "matchId": 8130,
         "startTime": "2026-05-21T09:30:00.000+0000"
@@ -1611,7 +1611,7 @@
         "awayTeam": "Melbourne",
         "homeScore": 90,
         "awayScore": 125,
-        "venue": "UTAS Stadium",
+        "venue": "University of Tasmania Stadium",
         "status": "CONCLUDED",
         "matchId": 8175,
         "startTime": "2026-07-04T03:15:00.000+0000"
@@ -1921,10 +1921,10 @@
         "round": 20,
         "homeTeam": "Carlton",
         "awayTeam": "Gold Coast",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 110,
+        "awayScore": 97,
         "venue": "Marvel Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 8201,
         "startTime": "2026-07-25T03:05:00.000+0000"
       },
@@ -1935,7 +1935,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8206,
         "startTime": "2026-07-25T06:15:00.000+0000"
       },
@@ -1946,7 +1946,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "ENGIE Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8208,
         "startTime": "2026-07-25T06:35:00.000+0000"
       },
