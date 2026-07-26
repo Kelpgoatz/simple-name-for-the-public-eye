@@ -109,6 +109,18 @@
   },
   {
     "rank": 10,
+    "name": "St Kilda",
+    "played": 19,
+    "wins": 9,
+    "losses": 10,
+    "draws": 0,
+    "pts": 36,
+    "percentage": 105.8,
+    "for": 1706,
+    "against": 1613
+  },
+  {
+    "rank": 11,
     "name": "Carlton",
     "played": 19,
     "wins": 9,
@@ -118,18 +130,6 @@
     "percentage": 92.4,
     "for": 1546,
     "against": 1674
-  },
-  {
-    "rank": 11,
-    "name": "St Kilda",
-    "played": 18,
-    "wins": 8,
-    "losses": 10,
-    "draws": 0,
-    "pts": 32,
-    "percentage": 104.0,
-    "for": 1613,
-    "against": 1551
   },
   {
     "rank": 12,
@@ -146,14 +146,14 @@
   {
     "rank": 13,
     "name": "North Melbourne",
-    "played": 18,
+    "played": 19,
     "wins": 8,
-    "losses": 10,
+    "losses": 11,
     "draws": 0,
     "pts": 32,
-    "percentage": 90.9,
-    "for": 1507,
-    "against": 1658
+    "percentage": 89.6,
+    "for": 1569,
+    "against": 1751
   },
   {
     "rank": 14,
