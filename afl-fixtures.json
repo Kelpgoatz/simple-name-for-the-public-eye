@@ -1965,10 +1965,10 @@
         "round": 20,
         "homeTeam": "Brisbane Lions",
         "awayTeam": "Port Adelaide",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 126,
+        "awayScore": 67,
         "venue": "Gabba",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 8203,
         "startTime": "2026-07-26T03:10:00.000+0000"
       },
@@ -1979,7 +1979,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8207,
         "startTime": "2026-07-26T05:15:00.000+0000"
       }
