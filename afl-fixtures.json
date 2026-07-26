@@ -1976,10 +1976,10 @@
         "round": 20,
         "homeTeam": "North Melbourne",
         "awayTeam": "St Kilda",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 62,
+        "awayScore": 93,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8207,
         "startTime": "2026-07-26T05:15:00.000+0000"
       }
