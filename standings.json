@@ -38,14 +38,14 @@
   {
     "rank": 4,
     "name": "Brisbane Lions",
-    "played": 18,
-    "wins": 12,
+    "played": 19,
+    "wins": 13,
     "losses": 6,
     "draws": 0,
-    "pts": 48,
-    "percentage": 117.8,
-    "for": 1916,
-    "against": 1626
+    "pts": 52,
+    "percentage": 120.6,
+    "for": 2042,
+    "against": 1693
   },
   {
     "rank": 5,
@@ -170,14 +170,14 @@
   {
     "rank": 15,
     "name": "Port Adelaide",
-    "played": 18,
+    "played": 19,
     "wins": 6,
-    "losses": 12,
+    "losses": 13,
     "draws": 0,
     "pts": 24,
-    "percentage": 99.3,
-    "for": 1443,
-    "against": 1453
+    "percentage": 95.6,
+    "for": 1510,
+    "against": 1579
   },
   {
     "rank": 16,
