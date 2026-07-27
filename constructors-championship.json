@@ -10,7 +10,7 @@
     {
       "classificationId": 932,
       "teamId": "mercedes",
-      "points": 358,
+      "points": 379,
       "position": 1,
       "wins": 8,
       "team": {
@@ -25,7 +25,7 @@
     {
       "classificationId": 933,
       "teamId": "ferrari",
-      "points": 285,
+      "points": 307,
       "position": 2,
       "wins": 2,
       "team": {
@@ -40,9 +40,9 @@
     {
       "classificationId": 931,
       "teamId": "mclaren",
-      "points": 195,
+      "points": 220,
       "position": 3,
-      "wins": 0,
+      "wins": 1,
       "team": {
         "teamName": "McLaren Formula 1 Team",
         "country": "Great Britain",
@@ -55,7 +55,7 @@
     {
       "classificationId": 934,
       "teamId": "red_bull",
-      "points": 151,
+      "points": 177,
       "position": 4,
       "wins": 0,
       "team": {
@@ -68,25 +68,10 @@
       }
     },
     {
-      "classificationId": 937,
-      "teamId": "alpine",
-      "points": 61,
-      "position": 5,
-      "wins": 0,
-      "team": {
-        "teamName": "Alpine F1 Team",
-        "country": "France",
-        "firstAppareance": 2021,
-        "constructorsChampionships": null,
-        "driversChampionships": null,
-        "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team"
-      }
-    },
-    {
       "classificationId": 939,
       "teamId": "rb",
-      "points": 61,
-      "position": 6,
+      "points": 66,
+      "position": 5,
       "wins": 0,
       "team": {
         "teamName": "RB F1 Team",
@@ -95,6 +80,21 @@
         "constructorsChampionships": null,
         "driversChampionships": null,
         "url": "https://en.wikipedia.org/wiki/RB_Formula_One_Team"
+      }
+    },
+    {
+      "classificationId": 937,
+      "teamId": "alpine",
+      "points": 61,
+      "position": 6,
+      "wins": 0,
+      "team": {
+        "teamName": "Alpine F1 Team",
+        "country": "France",
+        "firstAppareance": 2021,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team"
       }
     },
     {
@@ -113,25 +113,10 @@
       }
     },
     {
-      "classificationId": 936,
-      "teamId": "williams",
-      "points": 11,
-      "position": 8,
-      "wins": 0,
-      "team": {
-        "teamName": "Williams Racing",
-        "country": "Great Britain",
-        "firstAppareance": 1977,
-        "constructorsChampionships": 9,
-        "driversChampionships": 7,
-        "url": "https://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering"
-      }
-    },
-    {
       "classificationId": 938,
       "teamId": "audi",
-      "points": 10,
-      "position": 9,
+      "points": 12,
+      "position": 8,
       "wins": 0,
       "team": {
         "teamName": "Audi Revolut F1 Team",
@@ -140,6 +125,21 @@
         "constructorsChampionships": null,
         "driversChampionships": null,
         "url": "https://en.wikipedia.org/wiki/Audi_in_Formula_One"
+      }
+    },
+    {
+      "classificationId": 936,
+      "teamId": "williams",
+      "points": 11,
+      "position": 9,
+      "wins": 0,
+      "team": {
+        "teamName": "Williams Racing",
+        "country": "Great Britain",
+        "firstAppareance": 1977,
+        "constructorsChampionships": 9,
+        "driversChampionships": 7,
+        "url": "https://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering"
       }
     },
     {
