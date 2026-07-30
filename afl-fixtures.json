@@ -1992,10 +1992,10 @@
         "round": 21,
         "homeTeam": "Collingwood",
         "awayTeam": "Geelong",
-        "homeScore": 72,
-        "awayScore": 97,
+        "homeScore": null,
+        "awayScore": null,
         "venue": "MCG",
-        "status": "CONCLUDED",
+        "status": "LIVE",
         "matchId": 8213,
         "startTime": "2026-07-30T09:30:00.000+0000"
       },
