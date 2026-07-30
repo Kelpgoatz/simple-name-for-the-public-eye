@@ -49,6 +49,18 @@
   },
   {
     "rank": 5,
+    "name": "Geelong Cats",
+    "played": 20,
+    "wins": 12,
+    "losses": 8,
+    "draws": 0,
+    "pts": 48,
+    "percentage": 117.2,
+    "for": 1980,
+    "against": 1689
+  },
+  {
+    "rank": 6,
     "name": "Adelaide Crows",
     "played": 19,
     "wins": 12,
@@ -60,7 +72,7 @@
     "against": 1509
   },
   {
-    "rank": 6,
+    "rank": 7,
     "name": "Melbourne",
     "played": 19,
     "wins": 12,
@@ -72,7 +84,7 @@
     "against": 1721
   },
   {
-    "rank": 7,
+    "rank": 8,
     "name": "Western Bulldogs",
     "played": 19,
     "wins": 12,
@@ -84,28 +96,16 @@
     "against": 1645
   },
   {
-    "rank": 8,
-    "name": "Collingwood",
-    "played": 19,
-    "wins": 11,
-    "losses": 7,
-    "draws": 1,
-    "pts": 46,
-    "percentage": 107.6,
-    "for": 1644,
-    "against": 1528
-  },
-  {
     "rank": 9,
-    "name": "Geelong Cats",
-    "played": 19,
+    "name": "Collingwood",
+    "played": 20,
     "wins": 11,
     "losses": 8,
-    "draws": 0,
-    "pts": 44,
-    "percentage": 116.5,
-    "for": 1883,
-    "against": 1617
+    "draws": 1,
+    "pts": 46,
+    "percentage": 105.6,
+    "for": 1716,
+    "against": 1625
   },
   {
     "rank": 10,
