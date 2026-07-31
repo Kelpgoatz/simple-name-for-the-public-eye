@@ -2,14 +2,14 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 19,
-    "wins": 17,
+    "played": 20,
+    "wins": 18,
     "losses": 2,
     "draws": 0,
-    "pts": 68,
-    "percentage": 146.0,
-    "for": 1905,
-    "against": 1305
+    "pts": 72,
+    "percentage": 147.3,
+    "for": 1983,
+    "against": 1346
   },
   {
     "rank": 2,
@@ -86,14 +86,14 @@
   {
     "rank": 8,
     "name": "Western Bulldogs",
-    "played": 19,
+    "played": 20,
     "wins": 12,
-    "losses": 7,
+    "losses": 8,
     "draws": 0,
     "pts": 48,
-    "percentage": 96.8,
-    "for": 1593,
-    "against": 1645
+    "percentage": 94.8,
+    "for": 1634,
+    "against": 1723
   },
   {
     "rank": 9,
