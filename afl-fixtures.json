@@ -2003,10 +2003,10 @@
         "round": 21,
         "homeTeam": "Fremantle",
         "awayTeam": "Western Bulldogs",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 78,
+        "awayScore": 41,
         "venue": "Optus Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 8218,
         "startTime": "2026-07-31T10:10:00.000+0000"
       },
