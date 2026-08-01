@@ -2047,10 +2047,10 @@
         "round": 21,
         "homeTeam": "Carlton",
         "awayTeam": "Brisbane Lions",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 154,
+        "awayScore": 78,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8209,
         "startTime": "2026-08-01T09:40:00.000+0000"
       },
