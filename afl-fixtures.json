@@ -2061,7 +2061,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8214,
         "startTime": "2026-08-02T03:10:00.000+0000"
       },
@@ -2072,7 +2072,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "People First Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8215,
         "startTime": "2026-08-02T05:15:00.000+0000"
       },
