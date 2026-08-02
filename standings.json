@@ -182,17 +182,29 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 19,
+    "played": 20,
     "wins": 4,
-    "losses": 15,
+    "losses": 16,
     "draws": 0,
     "pts": 16,
-    "percentage": 70.1,
-    "for": 1342,
-    "against": 1914
+    "percentage": 70.8,
+    "for": 1415,
+    "against": 1998
   },
   {
     "rank": 17,
+    "name": "Richmond",
+    "played": 20,
+    "wins": 3,
+    "losses": 17,
+    "draws": 0,
+    "pts": 12,
+    "percentage": 62.8,
+    "for": 1308,
+    "against": 2083
+  },
+  {
+    "rank": 18,
     "name": "Essendon",
     "played": 19,
     "wins": 2,
@@ -202,17 +214,5 @@
     "percentage": 65.4,
     "for": 1307,
     "against": 1999
-  },
-  {
-    "rank": 18,
-    "name": "Richmond",
-    "played": 19,
-    "wins": 2,
-    "losses": 17,
-    "draws": 0,
-    "pts": 8,
-    "percentage": 60.9,
-    "for": 1224,
-    "against": 2010
   }
 ]
