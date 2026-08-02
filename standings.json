@@ -37,6 +37,18 @@
   },
   {
     "rank": 4,
+    "name": "Adelaide Crows",
+    "played": 20,
+    "wins": 13,
+    "losses": 7,
+    "draws": 0,
+    "pts": 52,
+    "percentage": 117.6,
+    "for": 1861,
+    "against": 1582
+  },
+  {
+    "rank": 5,
     "name": "Brisbane Lions",
     "played": 20,
     "wins": 13,
@@ -48,7 +60,19 @@
     "against": 1847
   },
   {
-    "rank": 5,
+    "rank": 6,
+    "name": "Melbourne",
+    "played": 20,
+    "wins": 13,
+    "losses": 7,
+    "draws": 0,
+    "pts": 52,
+    "percentage": 107.8,
+    "for": 1969,
+    "against": 1826
+  },
+  {
+    "rank": 7,
     "name": "Geelong Cats",
     "played": 20,
     "wins": 12,
@@ -58,30 +82,6 @@
     "percentage": 117.2,
     "for": 1980,
     "against": 1689
-  },
-  {
-    "rank": 6,
-    "name": "Adelaide Crows",
-    "played": 19,
-    "wins": 12,
-    "losses": 7,
-    "draws": 0,
-    "pts": 48,
-    "percentage": 113.7,
-    "for": 1716,
-    "against": 1509
-  },
-  {
-    "rank": 7,
-    "name": "Melbourne",
-    "played": 19,
-    "wins": 12,
-    "losses": 7,
-    "draws": 0,
-    "pts": 48,
-    "percentage": 107.8,
-    "for": 1855,
-    "against": 1721
   },
   {
     "rank": 8,
@@ -158,14 +158,14 @@
   {
     "rank": 14,
     "name": "Gold Coast SUNS",
-    "played": 19,
+    "played": 20,
     "wins": 7,
-    "losses": 12,
+    "losses": 13,
     "draws": 0,
     "pts": 28,
-    "percentage": 94.8,
-    "for": 1671,
-    "against": 1762
+    "percentage": 94.7,
+    "for": 1776,
+    "against": 1876
   },
   {
     "rank": 15,
@@ -206,13 +206,13 @@
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 19,
+    "played": 20,
     "wins": 2,
-    "losses": 17,
+    "losses": 18,
     "draws": 0,
     "pts": 8,
-    "percentage": 65.4,
-    "for": 1307,
-    "against": 1999
+    "percentage": 64.4,
+    "for": 1380,
+    "against": 2144
   }
 ]
