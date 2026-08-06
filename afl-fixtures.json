@@ -2099,7 +2099,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8224,
         "startTime": "2026-08-06T09:30:00.000+0000"
       },
@@ -2110,7 +2110,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Gabba",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8223,
         "startTime": "2026-08-07T09:40:00.000+0000"
       },
@@ -2121,7 +2121,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8220,
         "startTime": "2026-08-08T03:15:00.000+0000"
       },
@@ -2132,7 +2132,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8222,
         "startTime": "2026-08-08T06:15:00.000+0000"
       },
@@ -2143,7 +2143,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "GMHBA Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8219,
         "startTime": "2026-08-08T06:35:00.000+0000"
       },
@@ -2154,7 +2154,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8230,
         "startTime": "2026-08-08T09:35:00.000+0000"
       },
@@ -2165,7 +2165,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Corroboree Group Oval Manuka",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8228,
         "startTime": "2026-08-09T03:10:00.000+0000"
       },
@@ -2176,7 +2176,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8227,
         "startTime": "2026-08-09T06:10:00.000+0000"
       },
@@ -2187,7 +2187,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8225,
         "startTime": "2026-08-09T09:20:00.000+0000"
       }
