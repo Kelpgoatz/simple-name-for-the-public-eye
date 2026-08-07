@@ -2096,10 +2096,10 @@
         "round": 22,
         "homeTeam": "Western Bulldogs",
         "awayTeam": "North Melbourne",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 77,
+        "awayScore": 100,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8224,
         "startTime": "2026-08-06T09:30:00.000+0000"
       },
