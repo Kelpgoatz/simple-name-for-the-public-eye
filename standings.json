@@ -26,17 +26,29 @@
   {
     "rank": 3,
     "name": "Hawthorn",
-    "played": 20,
+    "played": 21,
     "wins": 14,
-    "losses": 5,
+    "losses": 6,
     "draws": 1,
     "pts": 58,
-    "percentage": 123.7,
-    "for": 2003,
-    "against": 1619
+    "percentage": 118.2,
+    "for": 2061,
+    "against": 1744
   },
   {
     "rank": 4,
+    "name": "Brisbane Lions",
+    "played": 21,
+    "wins": 14,
+    "losses": 7,
+    "draws": 0,
+    "pts": 56,
+    "percentage": 117.8,
+    "for": 2245,
+    "against": 1905
+  },
+  {
+    "rank": 5,
     "name": "Adelaide Crows",
     "played": 20,
     "wins": 13,
@@ -46,18 +58,6 @@
     "percentage": 117.6,
     "for": 1861,
     "against": 1582
-  },
-  {
-    "rank": 5,
-    "name": "Brisbane Lions",
-    "played": 20,
-    "wins": 13,
-    "losses": 7,
-    "draws": 0,
-    "pts": 52,
-    "percentage": 114.8,
-    "for": 2120,
-    "against": 1847
   },
   {
     "rank": 6,
