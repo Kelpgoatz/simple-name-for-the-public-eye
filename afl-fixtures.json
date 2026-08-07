@@ -2107,10 +2107,10 @@
         "round": 22,
         "homeTeam": "Brisbane Lions",
         "awayTeam": "Hawthorn",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 125,
+        "awayScore": 58,
         "venue": "Gabba",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8223,
         "startTime": "2026-08-07T09:40:00.000+0000"
       },
