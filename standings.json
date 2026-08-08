@@ -49,6 +49,18 @@
   },
   {
     "rank": 5,
+    "name": "Adelaide Crows",
+    "played": 21,
+    "wins": 14,
+    "losses": 7,
+    "draws": 0,
+    "pts": 56,
+    "percentage": 117.6,
+    "for": 1924,
+    "against": 1636
+  },
+  {
+    "rank": 6,
     "name": "Melbourne",
     "played": 21,
     "wins": 14,
@@ -60,7 +72,7 @@
     "against": 1935
   },
   {
-    "rank": 6,
+    "rank": 7,
     "name": "Geelong Cats",
     "played": 21,
     "wins": 13,
@@ -70,18 +82,6 @@
     "percentage": 120.6,
     "for": 2097,
     "against": 1739
-  },
-  {
-    "rank": 7,
-    "name": "Adelaide Crows",
-    "played": 20,
-    "wins": 13,
-    "losses": 7,
-    "draws": 0,
-    "pts": 52,
-    "percentage": 117.6,
-    "for": 1861,
-    "against": 1582
   },
   {
     "rank": 8,
@@ -194,14 +194,14 @@
   {
     "rank": 17,
     "name": "Richmond",
-    "played": 20,
+    "played": 21,
     "wins": 3,
-    "losses": 17,
+    "losses": 18,
     "draws": 0,
     "pts": 12,
-    "percentage": 62.8,
-    "for": 1308,
-    "against": 2083
+    "percentage": 63.5,
+    "for": 1362,
+    "against": 2146
   },
   {
     "rank": 18,
