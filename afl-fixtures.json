@@ -2151,10 +2151,10 @@
         "round": 22,
         "homeTeam": "Adelaide",
         "awayTeam": "Richmond",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 63,
+        "awayScore": 54,
         "venue": "Adelaide Oval",
-        "status": "CONFIRMED_TEAMS",
+        "status": "POSTGAME",
         "matchId": 8230,
         "startTime": "2026-08-08T09:35:00.000+0000"
       },
