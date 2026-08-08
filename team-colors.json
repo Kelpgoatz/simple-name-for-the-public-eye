@@ -1,0 +1,20 @@
+{
+  "Fremantle": { "initials": "FR", "colors": ["#5a2ca0", "#f1ebff"] },
+  "Sydney Swans": { "initials": "SS", "colors": ["#e31b23", "#f7f7fb"] },
+  "Hawthorn": { "initials": "HW", "colors": ["#6b3f1d", "#ffcc00"] },
+  "Brisbane Lions": { "initials": "BL", "colors": ["#7a003c", "#0047bb", "#ffcc00"] },
+  "Adelaide Crows": { "initials": "AC", "colors": ["#002b5c", "#e31b23", "#ffcc00"] },
+  "Melbourne": { "initials": "ME", "colors": ["#002b5c", "#e31b23"] },
+  "Geelong Cats": { "initials": "GC", "colors": ["#002b5c", "#f7f8fb"] },
+  "Western Bulldogs": { "initials": "WB", "colors": ["#0047bb", "#e31b23", "#f7f7fb"] },
+  "Collingwood": { "initials": "CW", "colors": ["#111111", "#f5f5f5"] },
+  "Carlton": { "initials": "CA", "colors": ["#0055cc", "#001a5c"] },
+  "St Kilda": { "initials": "ST", "colors": ["#e31b23", "#f5f5f5", "#111111"] },
+  "GWS GIANTS": { "initials": "GW", "colors": ["#ff6f00", "#3a3a3a", "#ffffff"] },
+  "North Melbourne": { "initials": "NM", "colors": ["#0047bb", "#f7f8fb"] },
+  "Gold Coast SUNS": { "initials": "GS", "colors": ["#e31b23", "#ffd300"] },
+  "Port Adelaide": { "initials": "PA", "colors": ["#008c8c", "#111111", "#c0c0c0"] },
+  "West Coast Eagles": { "initials": "WC", "colors": ["#0047bb", "#ffcc00"] },
+  "Richmond": { "initials": "RI", "colors": ["#111111", "#fdd000"] },
+  "Essendon": { "initials": "ES", "colors": ["#111111", "#e31b23"] }
+}

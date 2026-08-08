@@ -43,7 +43,6 @@ jobs:
 
             echo "$data" | jq '
               [.matches[]
-               | select(.round.roundNumber <= 24)
                | {
                    round: .round.roundNumber,
                    homeTeam: (if .home.team.name == "Sydney Swans" then "Sydney"

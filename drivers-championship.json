@@ -11,7 +11,7 @@
       "classificationId": 3430,
       "driverId": "antonelli",
       "teamId": "mercedes",
-      "points": 204,
+      "points": 219,
       "position": 1,
       "wins": 6,
       "driver": {
@@ -37,7 +37,7 @@
       "classificationId": 3424,
       "driverId": "hamilton",
       "teamId": "ferrari",
-      "points": 159,
+      "points": 169,
       "position": 2,
       "wins": 1,
       "driver": {
@@ -63,7 +63,7 @@
       "classificationId": 3426,
       "driverId": "russell",
       "teamId": "mercedes",
-      "points": 154,
+      "points": 160,
       "position": 3,
       "wins": 2,
       "driver": {
@@ -89,7 +89,7 @@
       "classificationId": 3431,
       "driverId": "leclerc",
       "teamId": "ferrari",
-      "points": 126,
+      "points": 138,
       "position": 4,
       "wins": 1,
       "driver": {
@@ -115,9 +115,9 @@
       "classificationId": 3422,
       "driverId": "norris",
       "teamId": "mclaren",
-      "points": 103,
+      "points": 128,
       "position": 5,
-      "wins": 0,
+      "wins": 1,
       "driver": {
         "name": "Lando",
         "surname": "Norris",
@@ -138,37 +138,11 @@
       }
     },
     {
-      "classificationId": 3421,
-      "driverId": "piastri",
-      "teamId": "mclaren",
-      "points": 92,
-      "position": 6,
-      "wins": 0,
-      "driver": {
-        "name": "Oscar",
-        "surname": "Piastri",
-        "nationality": "Australia",
-        "birthday": "06/04/2001",
-        "number": 81,
-        "shortName": "PIA",
-        "url": "https://en.wikipedia.org/wiki/Oscar_Piastri"
-      },
-      "team": {
-        "teamId": "mclaren",
-        "teamName": "McLaren Formula 1 Team",
-        "country": "Great Britain",
-        "firstAppareance": 1966,
-        "constructorsChampionships": 10,
-        "driversChampionships": 13,
-        "url": "https://en.wikipedia.org/wiki/McLaren"
-      }
-    },
-    {
       "classificationId": 3414,
       "driverId": "max_verstappen",
       "teamId": "red_bull",
-      "points": 91,
-      "position": 7,
+      "points": 109,
+      "position": 6,
       "wins": 0,
       "driver": {
         "name": "Max",
@@ -190,10 +164,36 @@
       }
     },
     {
+      "classificationId": 3421,
+      "driverId": "piastri",
+      "teamId": "mclaren",
+      "points": 92,
+      "position": 7,
+      "wins": 0,
+      "driver": {
+        "name": "Oscar",
+        "surname": "Piastri",
+        "nationality": "Australia",
+        "birthday": "06/04/2001",
+        "number": 81,
+        "shortName": "PIA",
+        "url": "https://en.wikipedia.org/wiki/Oscar_Piastri"
+      },
+      "team": {
+        "teamId": "mclaren",
+        "teamName": "McLaren Formula 1 Team",
+        "country": "Great Britain",
+        "firstAppareance": 1966,
+        "constructorsChampionships": 10,
+        "driversChampionships": 13,
+        "url": "https://en.wikipedia.org/wiki/McLaren"
+      }
+    },
+    {
       "classificationId": 3419,
       "driverId": "hadjar",
       "teamId": "red_bull",
-      "points": 60,
+      "points": 68,
       "position": 8,
       "wins": 0,
       "driver": {
@@ -216,37 +216,11 @@
       }
     },
     {
-      "classificationId": 3418,
-      "driverId": "gasly",
-      "teamId": "alpine",
-      "points": 42,
-      "position": 9,
-      "wins": 0,
-      "driver": {
-        "name": "Pierre",
-        "surname": "Gasly",
-        "nationality": "France",
-        "birthday": "07/02/1996",
-        "number": 10,
-        "shortName": "GAS",
-        "url": "https://en.wikipedia.org/wiki/Pierre_Gasly"
-      },
-      "team": {
-        "teamId": "alpine",
-        "teamName": "Alpine F1 Team",
-        "country": "France",
-        "firstAppareance": 2021,
-        "constructorsChampionships": null,
-        "driversChampionships": null,
-        "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team"
-      }
-    },
-    {
       "classificationId": 3416,
       "driverId": "lawson",
       "teamId": "rb",
-      "points": 39,
-      "position": 10,
+      "points": 43,
+      "position": 9,
       "wins": 0,
       "driver": {
         "name": "Liam",
@@ -268,10 +242,36 @@
       }
     },
     {
+      "classificationId": 3418,
+      "driverId": "gasly",
+      "teamId": "alpine",
+      "points": 42,
+      "position": 10,
+      "wins": 0,
+      "driver": {
+        "name": "Pierre",
+        "surname": "Gasly",
+        "nationality": "France",
+        "birthday": "07/02/1996",
+        "number": 10,
+        "shortName": "GAS",
+        "url": "https://en.wikipedia.org/wiki/Pierre_Gasly"
+      },
+      "team": {
+        "teamId": "alpine",
+        "teamName": "Alpine F1 Team",
+        "country": "France",
+        "firstAppareance": 2021,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team"
+      }
+    },
+    {
       "classificationId": 3425,
       "driverId": "lindblad",
       "teamId": "rb",
-      "points": 22,
+      "points": 23,
       "position": 11,
       "wins": 0,
       "driver": {
@@ -450,37 +450,11 @@
       }
     },
     {
-      "classificationId": 3423,
-      "driverId": "alonso",
-      "teamId": "aston_martin",
-      "points": 1,
-      "position": 18,
-      "wins": 0,
-      "driver": {
-        "name": "Fernando",
-        "surname": "Alonso",
-        "nationality": "Spain",
-        "birthday": "1981-07-29",
-        "number": 14,
-        "shortName": "ALO",
-        "url": "https://en.wikipedia.org/wiki/Fernando_Alonso"
-      },
-      "team": {
-        "teamId": "aston_martin",
-        "teamName": "Aston Martin F1 Team",
-        "country": "Great Britain",
-        "firstAppareance": 1959,
-        "constructorsChampionships": null,
-        "driversChampionships": null,
-        "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One"
-      }
-    },
-    {
       "classificationId": 3427,
       "driverId": "hulkenberg",
       "teamId": "audi",
-      "points": 0,
-      "position": 19,
+      "points": 2,
+      "position": 18,
       "wins": 0,
       "driver": {
         "name": "Nico",
@@ -502,11 +476,63 @@
       }
     },
     {
+      "classificationId": 3423,
+      "driverId": "alonso",
+      "teamId": "aston_martin",
+      "points": 1,
+      "position": 19,
+      "wins": 0,
+      "driver": {
+        "name": "Fernando",
+        "surname": "Alonso",
+        "nationality": "Spain",
+        "birthday": "1981-07-29",
+        "number": 14,
+        "shortName": "ALO",
+        "url": "https://en.wikipedia.org/wiki/Fernando_Alonso"
+      },
+      "team": {
+        "teamId": "aston_martin",
+        "teamName": "Aston Martin F1 Team",
+        "country": "Great Britain",
+        "firstAppareance": 1959,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One"
+      }
+    },
+    {
+      "classificationId": 3420,
+      "driverId": "stroll",
+      "teamId": "aston_martin",
+      "points": 0,
+      "position": 20,
+      "wins": 0,
+      "driver": {
+        "name": "Lance",
+        "surname": "Stroll",
+        "nationality": "Canada",
+        "birthday": "1998-10-29",
+        "number": 18,
+        "shortName": "STR",
+        "url": "https://en.wikipedia.org/wiki/Lance_Stroll"
+      },
+      "team": {
+        "teamId": "aston_martin",
+        "teamName": "Aston Martin F1 Team",
+        "country": "Great Britain",
+        "firstAppareance": 1959,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One"
+      }
+    },
+    {
       "classificationId": 3434,
       "driverId": "bottas",
       "teamId": "cadillac",
       "points": 0,
-      "position": 20,
+      "position": 21,
       "wins": 0,
       "driver": {
         "name": "Valtteri",
@@ -532,7 +558,7 @@
       "driverId": "perez",
       "teamId": "cadillac",
       "points": 0,
-      "position": 21,
+      "position": 22,
       "wins": 0,
       "driver": {
         "name": "Sergio",
@@ -551,32 +577,6 @@
         "constructorsChampionships": null,
         "driversChampionships": null,
         "url": "https://en.wikipedia.org/wiki/Cadillac_in_Formula_One"
-      }
-    },
-    {
-      "classificationId": 3420,
-      "driverId": "stroll",
-      "teamId": "aston_martin",
-      "points": 0,
-      "position": 22,
-      "wins": 0,
-      "driver": {
-        "name": "Lance",
-        "surname": "Stroll",
-        "nationality": "Canada",
-        "birthday": "1998-10-29",
-        "number": 18,
-        "shortName": "STR",
-        "url": "https://en.wikipedia.org/wiki/Lance_Stroll"
-      },
-      "team": {
-        "teamId": "aston_martin",
-        "teamName": "Aston Martin F1 Team",
-        "country": "Great Britain",
-        "firstAppareance": 1959,
-        "constructorsChampionships": null,
-        "driversChampionships": null,
-        "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One"
       }
     }
   ]
