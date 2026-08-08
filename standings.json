@@ -61,18 +61,6 @@
   },
   {
     "rank": 6,
-    "name": "Geelong Cats",
-    "played": 21,
-    "wins": 13,
-    "losses": 8,
-    "draws": 0,
-    "pts": 52,
-    "percentage": 120.6,
-    "for": 2097,
-    "against": 1739
-  },
-  {
-    "rank": 7,
     "name": "Adelaide Crows",
     "played": 20,
     "wins": 13,
@@ -82,6 +70,18 @@
     "percentage": 117.6,
     "for": 1861,
     "against": 1582
+  },
+  {
+    "rank": 7,
+    "name": "Geelong Cats",
+    "played": 20,
+    "wins": 12,
+    "losses": 8,
+    "draws": 0,
+    "pts": 48,
+    "percentage": 117.2,
+    "for": 1980,
+    "against": 1689
   },
   {
     "rank": 8,
@@ -206,13 +206,13 @@
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 21,
+    "played": 20,
     "wins": 2,
-    "losses": 19,
+    "losses": 18,
     "draws": 0,
     "pts": 8,
-    "percentage": 63.2,
-    "for": 1430,
-    "against": 2261
+    "percentage": 64.4,
+    "for": 1380,
+    "against": 2144
   }
 ]
