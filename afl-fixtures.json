@@ -2118,10 +2118,10 @@
         "round": 22,
         "homeTeam": "Melbourne",
         "awayTeam": "Fremantle",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 113,
+        "awayScore": 109,
         "venue": "MCG",
-        "status": "CONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 8220,
         "startTime": "2026-08-08T03:15:00.000+0000"
       },
@@ -2132,7 +2132,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8222,
         "startTime": "2026-08-08T06:15:00.000+0000"
       },
@@ -2143,7 +2143,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "GMHBA Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8219,
         "startTime": "2026-08-08T06:35:00.000+0000"
       },
