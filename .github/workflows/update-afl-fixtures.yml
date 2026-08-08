@@ -17,9 +17,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get current AFL season ID
+        run: |
+          year=$(date +%Y)
+          for page in 0 1 2 3 4 5 6 7 8 9; do
+            id=$(curl -s "https://aflapi.afl.com.au/afl/v2/compseasons?page=$page" | \
+              jq -r --argjson y "$year" \
+                '[.compSeasons[] | select(.season.year == $y and .competition.code == "AFL" and .shortName == "Premiership")][0].id // empty')
+            if [ -n "$id" ]; then
+              echo "season_id=$id" >> $GITHUB_ENV
+              break
+            fi
+          done
+
       - name: Fetch and update AFL fixtures
         run: |
-          season_id=85
+          season_id="${season_id:-85}"
           page=0
           echo '[]' > /tmp/all.json
 
@@ -30,6 +43,7 @@ jobs:
 
             echo "$data" | jq '
               [.matches[]
+               | select(.round.roundNumber <= 24)
                | {
                    round: .round.roundNumber,
                    homeTeam: (if .home.team.name == "Sydney Swans" then "Sydney"
@@ -38,6 +52,7 @@ jobs:
                               elif .home.team.name == "GWS GIANTS" then "Greater Western Sydney"
                               elif .home.team.name == "West Coast Eagles" then "West Coast"
                               elif .home.team.name == "Adelaide Crows" then "Adelaide"
+                              elif .home.team.name == "Tasmania Devils" then "Tasmania"
                               else .home.team.name end),
                    awayTeam: (if .away.team.name == "Sydney Swans" then "Sydney"
                               elif .away.team.name == "Geelong Cats" then "Geelong"
@@ -45,6 +60,7 @@ jobs:
                               elif .away.team.name == "GWS GIANTS" then "Greater Western Sydney"
                               elif .away.team.name == "West Coast Eagles" then "West Coast"
                               elif .away.team.name == "Adelaide Crows" then "Adelaide"
+                              elif .away.team.name == "Tasmania Devils" then "Tasmania"
                               else .away.team.name end),
                    homeScore: .home.score.totalScore?,
                    awayScore: .away.score.totalScore?,

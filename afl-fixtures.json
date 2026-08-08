@@ -1,1 +1,2404 @@
-﻿[]
+[
+  {
+    "round": 0,
+    "matches": [
+      {
+        "round": 0,
+        "homeTeam": "Sydney",
+        "awayTeam": "Carlton",
+        "homeScore": 132,
+        "awayScore": 69,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8041,
+        "startTime": "2026-03-05T08:30:00.000+0000"
+      },
+      {
+        "round": 0,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Geelong",
+        "homeScore": 125,
+        "awayScore": 69,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8042,
+        "startTime": "2026-03-06T09:05:00.000+0000"
+      },
+      {
+        "round": 0,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Hawthorn",
+        "homeScore": 122,
+        "awayScore": 95,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8040,
+        "startTime": "2026-03-07T05:15:00.000+0000"
+      },
+      {
+        "round": 0,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 106,
+        "awayScore": 111,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8043,
+        "startTime": "2026-03-07T08:35:00.000+0000"
+      },
+      {
+        "round": 0,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Collingwood",
+        "homeScore": 66,
+        "awayScore": 78,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8046,
+        "startTime": "2026-03-08T08:20:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 1,
+    "matches": [
+      {
+        "round": 1,
+        "homeTeam": "Carlton",
+        "awayTeam": "Richmond",
+        "homeScore": 75,
+        "awayScore": 71,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8045,
+        "startTime": "2026-03-12T08:30:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Essendon",
+        "awayTeam": "Hawthorn",
+        "homeScore": 83,
+        "awayScore": 145,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8044,
+        "startTime": "2026-03-13T08:40:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 134,
+        "awayScore": 53,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8047,
+        "startTime": "2026-03-14T02:15:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Geelong",
+        "awayTeam": "Fremantle",
+        "homeScore": 110,
+        "awayScore": 100,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8049,
+        "startTime": "2026-03-14T05:15:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Sydney",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 104,
+        "awayScore": 60,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8048,
+        "startTime": "2026-03-14T08:10:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Adelaide",
+        "homeScore": 79,
+        "awayScore": 93,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8051,
+        "startTime": "2026-03-14T08:35:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 113,
+        "awayScore": 67,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8056,
+        "startTime": "2026-03-15T02:10:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Melbourne",
+        "awayTeam": "St Kilda",
+        "homeScore": 120,
+        "awayScore": 107,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8055,
+        "startTime": "2026-03-15T04:15:00.000+0000"
+      },
+      {
+        "round": 1,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "West Coast",
+        "homeScore": 131,
+        "awayScore": 72,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8050,
+        "startTime": "2026-03-15T07:10:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "matches": [
+      {
+        "round": 2,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Sydney",
+        "homeScore": 99,
+        "awayScore": 82,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8052,
+        "startTime": "2026-03-19T08:30:00.000+0000"
+      },
+      {
+        "round": 2,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 88,
+        "awayScore": 94,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8053,
+        "startTime": "2026-03-20T08:40:00.000+0000"
+      },
+      {
+        "round": 2,
+        "homeTeam": "Richmond",
+        "awayTeam": "Gold Coast",
+        "homeScore": 60,
+        "awayScore": 128,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8054,
+        "startTime": "2026-03-21T02:15:00.000+0000"
+      },
+      {
+        "round": 2,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "St Kilda",
+        "homeScore": 74,
+        "awayScore": 78,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8059,
+        "startTime": "2026-03-21T05:15:00.000+0000"
+      },
+      {
+        "round": 2,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Melbourne",
+        "homeScore": 118,
+        "awayScore": 70,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8057,
+        "startTime": "2026-03-21T08:35:00.000+0000"
+      },
+      {
+        "round": 2,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Essendon",
+        "homeScore": 133,
+        "awayScore": 70,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8058,
+        "startTime": "2026-03-22T04:15:00.000+0000"
+      },
+      {
+        "round": 2,
+        "homeTeam": "West Coast",
+        "awayTeam": "North Melbourne",
+        "homeScore": 111,
+        "awayScore": 94,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8060,
+        "startTime": "2026-03-22T07:10:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "matches": [
+      {
+        "round": 3,
+        "homeTeam": "Geelong",
+        "awayTeam": "Adelaide",
+        "homeScore": 68,
+        "awayScore": 60,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8062,
+        "startTime": "2026-03-26T08:30:00.000+0000"
+      },
+      {
+        "round": 3,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 87,
+        "awayScore": 54,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8064,
+        "startTime": "2026-03-27T08:40:00.000+0000"
+      },
+      {
+        "round": 3,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 80,
+        "awayScore": 113,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8061,
+        "startTime": "2026-03-28T01:35:00.000+0000"
+      },
+      {
+        "round": 3,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Richmond",
+        "homeScore": 103,
+        "awayScore": 43,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8065,
+        "startTime": "2026-03-28T05:15:00.000+0000"
+      },
+      {
+        "round": 3,
+        "homeTeam": "Essendon",
+        "awayTeam": "North Melbourne",
+        "homeScore": 69,
+        "awayScore": 81,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8063,
+        "startTime": "2026-03-28T08:35:00.000+0000"
+      },
+      {
+        "round": 3,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "West Coast",
+        "homeScore": 90,
+        "awayScore": 92,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8071,
+        "startTime": "2026-03-29T01:30:00.000+0000"
+      },
+      {
+        "round": 3,
+        "homeTeam": "Carlton",
+        "awayTeam": "Melbourne",
+        "homeScore": 77,
+        "awayScore": 100,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8075,
+        "startTime": "2026-03-29T04:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "matches": [
+      {
+        "round": 4,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Collingwood",
+        "homeScore": 119,
+        "awayScore": 65,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8066,
+        "startTime": "2026-04-02T08:30:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Carlton",
+        "homeScore": 96,
+        "awayScore": 86,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8067,
+        "startTime": "2026-04-03T04:15:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Fremantle",
+        "homeScore": 76,
+        "awayScore": 78,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8069,
+        "startTime": "2026-04-03T08:15:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "Richmond",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 48,
+        "awayScore": 90,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8070,
+        "startTime": "2026-04-04T05:15:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "West Coast",
+        "awayTeam": "Sydney",
+        "homeScore": 35,
+        "awayScore": 163,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8068,
+        "startTime": "2026-04-04T08:35:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Gold Coast",
+        "homeScore": 109,
+        "awayScore": 89,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8074,
+        "startTime": "2026-04-05T05:15:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Essendon",
+        "homeScore": 99,
+        "awayScore": 65,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8073,
+        "startTime": "2026-04-05T09:20:00.000+0000"
+      },
+      {
+        "round": 4,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Geelong",
+        "homeScore": 92,
+        "awayScore": 91,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8077,
+        "startTime": "2026-04-06T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 5,
+    "matches": [
+      {
+        "round": 5,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Carlton",
+        "homeScore": 114,
+        "awayScore": 86,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8072,
+        "startTime": "2026-04-09T09:40:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Fremantle",
+        "homeScore": 39,
+        "awayScore": 45,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8076,
+        "startTime": "2026-04-10T09:40:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 66,
+        "awayScore": 92,
+        "venue": "Barossa Park",
+        "status": "CONCLUDED",
+        "matchId": 8078,
+        "startTime": "2026-04-11T02:35:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Essendon",
+        "awayTeam": "Melbourne",
+        "homeScore": 113,
+        "awayScore": 68,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8079,
+        "startTime": "2026-04-11T03:15:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Sydney",
+        "awayTeam": "Gold Coast",
+        "homeScore": 100,
+        "awayScore": 68,
+        "venue": "Norwood Oval",
+        "status": "CONCLUDED",
+        "matchId": 8080,
+        "startTime": "2026-04-11T06:15:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 104,
+        "awayScore": 64,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8081,
+        "startTime": "2026-04-11T09:35:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Geelong",
+        "awayTeam": "West Coast",
+        "homeScore": 122,
+        "awayScore": 76,
+        "venue": "Norwood Oval",
+        "status": "CONCLUDED",
+        "matchId": 8082,
+        "startTime": "2026-04-12T02:30:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Richmond",
+        "homeScore": 131,
+        "awayScore": 75,
+        "venue": "Barossa Park",
+        "status": "CONCLUDED",
+        "matchId": 8084,
+        "startTime": "2026-04-12T05:15:00.000+0000"
+      },
+      {
+        "round": 5,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "St Kilda",
+        "homeScore": 67,
+        "awayScore": 81,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8088,
+        "startTime": "2026-04-12T09:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 6,
+    "matches": [
+      {
+        "round": 6,
+        "homeTeam": "Carlton",
+        "awayTeam": "Collingwood",
+        "homeScore": 83,
+        "awayScore": 88,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8083,
+        "startTime": "2026-04-16T09:30:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "Geelong",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 131,
+        "awayScore": 56,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8085,
+        "startTime": "2026-04-17T09:20:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "Sydney",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 107,
+        "awayScore": 66,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8086,
+        "startTime": "2026-04-17T09:50:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Essendon",
+        "homeScore": 119,
+        "awayScore": 110,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8087,
+        "startTime": "2026-04-18T03:15:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 89,
+        "awayScore": 86,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8089,
+        "startTime": "2026-04-18T06:15:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "Adelaide",
+        "awayTeam": "St Kilda",
+        "homeScore": 103,
+        "awayScore": 102,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8092,
+        "startTime": "2026-04-18T09:35:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Richmond",
+        "homeScore": 130,
+        "awayScore": 55,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8090,
+        "startTime": "2026-04-19T03:10:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 104,
+        "awayScore": 102,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8091,
+        "startTime": "2026-04-19T05:15:00.000+0000"
+      },
+      {
+        "round": 6,
+        "homeTeam": "West Coast",
+        "awayTeam": "Fremantle",
+        "homeScore": 41,
+        "awayScore": 97,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8094,
+        "startTime": "2026-04-19T07:10:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 7,
+    "matches": [
+      {
+        "round": 7,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Sydney",
+        "homeScore": 60,
+        "awayScore": 126,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8093,
+        "startTime": "2026-04-23T09:30:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Richmond",
+        "awayTeam": "Melbourne",
+        "homeScore": 72,
+        "awayScore": 126,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8097,
+        "startTime": "2026-04-24T09:40:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Gold Coast",
+        "homeScore": 112,
+        "awayScore": 63,
+        "venue": "UTAS Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8095,
+        "startTime": "2026-04-25T02:30:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Essendon",
+        "awayTeam": "Collingwood",
+        "homeScore": 60,
+        "awayScore": 137,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8098,
+        "startTime": "2026-04-25T05:20:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Geelong",
+        "homeScore": 95,
+        "awayScore": 65,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8096,
+        "startTime": "2026-04-25T08:35:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Carlton",
+        "homeScore": 103,
+        "awayScore": 89,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8105,
+        "startTime": "2026-04-25T10:15:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "St Kilda",
+        "awayTeam": "West Coast",
+        "homeScore": 143,
+        "awayScore": 42,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8100,
+        "startTime": "2026-04-26T03:10:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Adelaide",
+        "homeScore": 127,
+        "awayScore": 75,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8099,
+        "startTime": "2026-04-26T05:15:00.000+0000"
+      },
+      {
+        "round": 7,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "North Melbourne",
+        "homeScore": 105,
+        "awayScore": 98,
+        "venue": "Corroboree Group Oval Manuka",
+        "status": "CONCLUDED",
+        "matchId": 8101,
+        "startTime": "2026-04-26T06:40:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 8,
+    "matches": [
+      {
+        "round": 8,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Hawthorn",
+        "homeScore": 93,
+        "awayScore": 93,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8104,
+        "startTime": "2026-04-30T09:30:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Fremantle",
+        "homeScore": 102,
+        "awayScore": 114,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8102,
+        "startTime": "2026-05-01T09:30:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 76,
+        "awayScore": 75,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8103,
+        "startTime": "2026-05-01T10:10:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Essendon",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 79,
+        "awayScore": 143,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8109,
+        "startTime": "2026-05-02T02:35:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "West Coast",
+        "awayTeam": "Richmond",
+        "homeScore": 88,
+        "awayScore": 99,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8108,
+        "startTime": "2026-05-02T06:15:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Geelong",
+        "awayTeam": "North Melbourne",
+        "homeScore": 135,
+        "awayScore": 86,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8106,
+        "startTime": "2026-05-02T06:35:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Carlton",
+        "awayTeam": "St Kilda",
+        "homeScore": 69,
+        "awayScore": 108,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8114,
+        "startTime": "2026-05-02T09:35:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Sydney",
+        "awayTeam": "Melbourne",
+        "homeScore": 131,
+        "awayScore": 114,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8107,
+        "startTime": "2026-05-03T05:15:00.000+0000"
+      },
+      {
+        "round": 8,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 83,
+        "awayScore": 63,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8111,
+        "startTime": "2026-05-03T09:20:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 9,
+    "matches": [
+      {
+        "round": 9,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Hawthorn",
+        "homeScore": 88,
+        "awayScore": 73,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8113,
+        "startTime": "2026-05-07T10:10:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Carlton",
+        "homeScore": 100,
+        "awayScore": 89,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8116,
+        "startTime": "2026-05-08T09:30:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 72,
+        "awayScore": 74,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8110,
+        "startTime": "2026-05-08T10:10:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Sydney",
+        "homeScore": 97,
+        "awayScore": 105,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8112,
+        "startTime": "2026-05-09T03:15:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Essendon",
+        "homeScore": 103,
+        "awayScore": 89,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8115,
+        "startTime": "2026-05-09T06:15:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "St Kilda",
+        "homeScore": 89,
+        "awayScore": 60,
+        "venue": "TIO Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8120,
+        "startTime": "2026-05-09T09:10:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Geelong",
+        "awayTeam": "Collingwood",
+        "homeScore": 122,
+        "awayScore": 68,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8119,
+        "startTime": "2026-05-09T09:35:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Melbourne",
+        "awayTeam": "West Coast",
+        "homeScore": 99,
+        "awayScore": 67,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8122,
+        "startTime": "2026-05-10T03:10:00.000+0000"
+      },
+      {
+        "round": 9,
+        "homeTeam": "Richmond",
+        "awayTeam": "Adelaide",
+        "homeScore": 61,
+        "awayScore": 98,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8118,
+        "startTime": "2026-05-10T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 10,
+    "matches": [
+      {
+        "round": 10,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Geelong",
+        "homeScore": 76,
+        "awayScore": 117,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8117,
+        "startTime": "2026-05-14T09:30:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "Sydney",
+        "awayTeam": "Collingwood",
+        "homeScore": 81,
+        "awayScore": 75,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8121,
+        "startTime": "2026-05-15T09:30:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 98,
+        "awayScore": 73,
+        "venue": "TIO Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8125,
+        "startTime": "2026-05-15T10:10:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "Adelaide",
+        "awayTeam": "North Melbourne",
+        "homeScore": 133,
+        "awayScore": 65,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8124,
+        "startTime": "2026-05-16T03:15:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Hawthorn",
+        "homeScore": 120,
+        "awayScore": 81,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8129,
+        "startTime": "2026-05-16T06:15:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "Carlton",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 74,
+        "awayScore": 62,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8123,
+        "startTime": "2026-05-16T09:35:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "Essendon",
+        "awayTeam": "Fremantle",
+        "homeScore": 61,
+        "awayScore": 104,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8126,
+        "startTime": "2026-05-17T03:10:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Richmond",
+        "homeScore": 109,
+        "awayScore": 73,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8127,
+        "startTime": "2026-05-17T05:15:00.000+0000"
+      },
+      {
+        "round": 10,
+        "homeTeam": "West Coast",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 88,
+        "awayScore": 71,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8128,
+        "startTime": "2026-05-17T08:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 11,
+    "matches": [
+      {
+        "round": 11,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Adelaide",
+        "homeScore": 75,
+        "awayScore": 66,
+        "venue": "UTAS Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8130,
+        "startTime": "2026-05-21T09:30:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Richmond",
+        "awayTeam": "Essendon",
+        "homeScore": 74,
+        "awayScore": 56,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8131,
+        "startTime": "2026-05-22T09:45:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Fremantle",
+        "awayTeam": "St Kilda",
+        "homeScore": 104,
+        "awayScore": 74,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8133,
+        "startTime": "2026-05-22T10:30:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Gold Coast",
+        "homeScore": 111,
+        "awayScore": 105,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8134,
+        "startTime": "2026-05-23T03:15:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Geelong",
+        "awayTeam": "Sydney",
+        "homeScore": 107,
+        "awayScore": 80,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8132,
+        "startTime": "2026-05-23T06:15:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Collingwood",
+        "awayTeam": "West Coast",
+        "homeScore": 92,
+        "awayScore": 82,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8137,
+        "startTime": "2026-05-23T06:35:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Carlton",
+        "homeScore": 58,
+        "awayScore": 92,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8135,
+        "startTime": "2026-05-23T09:35:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 166,
+        "awayScore": 88,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8136,
+        "startTime": "2026-05-24T02:30:00.000+0000"
+      },
+      {
+        "round": 11,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Melbourne",
+        "homeScore": 93,
+        "awayScore": 90,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8138,
+        "startTime": "2026-05-24T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 12,
+    "matches": [
+      {
+        "round": 12,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Hawthorn",
+        "homeScore": 67,
+        "awayScore": 119,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8139,
+        "startTime": "2026-05-28T09:30:00.000+0000"
+      },
+      {
+        "round": 12,
+        "homeTeam": "Carlton",
+        "awayTeam": "Geelong",
+        "homeScore": 88,
+        "awayScore": 84,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8140,
+        "startTime": "2026-05-29T09:40:00.000+0000"
+      },
+      {
+        "round": 12,
+        "homeTeam": "Sydney",
+        "awayTeam": "Richmond",
+        "homeScore": 170,
+        "awayScore": 56,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8141,
+        "startTime": "2026-05-30T03:15:00.000+0000"
+      },
+      {
+        "round": 12,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Fremantle",
+        "homeScore": 78,
+        "awayScore": 103,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8142,
+        "startTime": "2026-05-30T06:15:00.000+0000"
+      },
+      {
+        "round": 12,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Collingwood",
+        "homeScore": 97,
+        "awayScore": 93,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8143,
+        "startTime": "2026-05-30T09:35:00.000+0000"
+      },
+      {
+        "round": 12,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 70,
+        "awayScore": 119,
+        "venue": "TIO Traeger Park",
+        "status": "CONCLUDED",
+        "matchId": 8144,
+        "startTime": "2026-05-31T05:15:00.000+0000"
+      },
+      {
+        "round": 12,
+        "homeTeam": "West Coast",
+        "awayTeam": "Essendon",
+        "homeScore": 85,
+        "awayScore": 55,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8145,
+        "startTime": "2026-05-31T09:20:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 13,
+    "matches": [
+      {
+        "round": 13,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Geelong",
+        "homeScore": 75,
+        "awayScore": 74,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8148,
+        "startTime": "2026-06-04T09:30:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 71,
+        "awayScore": 77,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8146,
+        "startTime": "2026-06-05T09:40:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Fremantle",
+        "homeScore": 31,
+        "awayScore": 155,
+        "venue": "Hands Oval",
+        "status": "CONCLUDED",
+        "matchId": 8147,
+        "startTime": "2026-06-06T04:15:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 75,
+        "awayScore": 106,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8150,
+        "startTime": "2026-06-06T07:15:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "West Coast",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 71,
+        "awayScore": 77,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8149,
+        "startTime": "2026-06-06T10:15:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "Sydney",
+        "awayTeam": "St Kilda",
+        "homeScore": 104,
+        "awayScore": 102,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8152,
+        "startTime": "2026-06-07T05:15:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "Essendon",
+        "awayTeam": "Carlton",
+        "homeScore": 67,
+        "awayScore": 72,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8151,
+        "startTime": "2026-06-07T09:20:00.000+0000"
+      },
+      {
+        "round": 13,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Melbourne",
+        "homeScore": 75,
+        "awayScore": 83,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8153,
+        "startTime": "2026-06-08T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 14,
+    "matches": [
+      {
+        "round": 14,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Adelaide",
+        "homeScore": 64,
+        "awayScore": 121,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8154,
+        "startTime": "2026-06-11T09:30:00.000+0000"
+      },
+      {
+        "round": 14,
+        "homeTeam": "Geelong",
+        "awayTeam": "Gold Coast",
+        "homeScore": 105,
+        "awayScore": 60,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8158,
+        "startTime": "2026-06-12T09:40:00.000+0000"
+      },
+      {
+        "round": 14,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Essendon",
+        "homeScore": 95,
+        "awayScore": 50,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8156,
+        "startTime": "2026-06-13T03:15:00.000+0000"
+      },
+      {
+        "round": 14,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "West Coast",
+        "homeScore": 74,
+        "awayScore": 73,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8155,
+        "startTime": "2026-06-13T06:15:00.000+0000"
+      },
+      {
+        "round": 14,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Sydney",
+        "homeScore": 90,
+        "awayScore": 93,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8157,
+        "startTime": "2026-06-13T09:35:00.000+0000"
+      },
+      {
+        "round": 14,
+        "homeTeam": "Richmond",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 80,
+        "awayScore": 115,
+        "venue": "Ninja Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8159,
+        "startTime": "2026-06-14T03:10:00.000+0000"
+      },
+      {
+        "round": 14,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 96,
+        "awayScore": 88,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8170,
+        "startTime": "2026-06-14T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 15,
+    "matches": [
+      {
+        "round": 15,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Geelong",
+        "homeScore": 99,
+        "awayScore": 90,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8160,
+        "startTime": "2026-06-18T10:10:00.000+0000"
+      },
+      {
+        "round": 15,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Hawthorn",
+        "homeScore": 97,
+        "awayScore": 113,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8161,
+        "startTime": "2026-06-19T09:40:00.000+0000"
+      },
+      {
+        "round": 15,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Melbourne",
+        "homeScore": 79,
+        "awayScore": 62,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8164,
+        "startTime": "2026-06-20T03:15:00.000+0000"
+      },
+      {
+        "round": 15,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Carlton",
+        "homeScore": 65,
+        "awayScore": 88,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8162,
+        "startTime": "2026-06-20T06:15:00.000+0000"
+      },
+      {
+        "round": 15,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 78,
+        "awayScore": 52,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8163,
+        "startTime": "2026-06-20T09:35:00.000+0000"
+      },
+      {
+        "round": 15,
+        "homeTeam": "Richmond",
+        "awayTeam": "North Melbourne",
+        "homeScore": 48,
+        "awayScore": 73,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8165,
+        "startTime": "2026-06-21T03:10:00.000+0000"
+      },
+      {
+        "round": 15,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 61,
+        "awayScore": 83,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8166,
+        "startTime": "2026-06-21T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 16,
+    "matches": [
+      {
+        "round": 16,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Sydney",
+        "homeScore": 126,
+        "awayScore": 83,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8168,
+        "startTime": "2026-06-25T09:30:00.000+0000"
+      },
+      {
+        "round": 16,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 96,
+        "awayScore": 82,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8172,
+        "startTime": "2026-06-26T09:40:00.000+0000"
+      },
+      {
+        "round": 16,
+        "homeTeam": "Carlton",
+        "awayTeam": "West Coast",
+        "homeScore": 117,
+        "awayScore": 64,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8167,
+        "startTime": "2026-06-27T03:15:00.000+0000"
+      },
+      {
+        "round": 16,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Richmond",
+        "homeScore": 106,
+        "awayScore": 72,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8174,
+        "startTime": "2026-06-27T06:15:00.000+0000"
+      },
+      {
+        "round": 16,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Adelaide",
+        "homeScore": 97,
+        "awayScore": 71,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8179,
+        "startTime": "2026-06-27T09:35:00.000+0000"
+      },
+      {
+        "round": 16,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Essendon",
+        "homeScore": 79,
+        "awayScore": 65,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8169,
+        "startTime": "2026-06-28T05:15:00.000+0000"
+      },
+      {
+        "round": 16,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Gold Coast",
+        "homeScore": 80,
+        "awayScore": 29,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8171,
+        "startTime": "2026-06-28T07:10:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 17,
+    "matches": [
+      {
+        "round": 17,
+        "homeTeam": "Geelong",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 101,
+        "awayScore": 123,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8178,
+        "startTime": "2026-07-02T09:30:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Sydney",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 90,
+        "awayScore": 55,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8177,
+        "startTime": "2026-07-03T09:40:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "West Coast",
+        "awayTeam": "Adelaide",
+        "homeScore": 74,
+        "awayScore": 99,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8183,
+        "startTime": "2026-07-03T10:10:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Melbourne",
+        "homeScore": 90,
+        "awayScore": 125,
+        "venue": "UTAS Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8175,
+        "startTime": "2026-07-04T03:15:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Fremantle",
+        "homeScore": 109,
+        "awayScore": 88,
+        "venue": "Corroboree Group Oval Manuka",
+        "status": "CONCLUDED",
+        "matchId": 8187,
+        "startTime": "2026-07-04T03:35:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Collingwood",
+        "homeScore": 98,
+        "awayScore": 104,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8180,
+        "startTime": "2026-07-04T06:15:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Richmond",
+        "awayTeam": "Carlton",
+        "homeScore": 72,
+        "awayScore": 74,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8176,
+        "startTime": "2026-07-04T09:35:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Essendon",
+        "awayTeam": "St Kilda",
+        "homeScore": 50,
+        "awayScore": 117,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8173,
+        "startTime": "2026-07-05T05:15:00.000+0000"
+      },
+      {
+        "round": 17,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "North Melbourne",
+        "homeScore": 73,
+        "awayScore": 52,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8181,
+        "startTime": "2026-07-05T06:40:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 18,
+    "matches": [
+      {
+        "round": 18,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Sydney",
+        "homeScore": 111,
+        "awayScore": 73,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8189,
+        "startTime": "2026-07-09T10:10:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Collingwood",
+        "awayTeam": "North Melbourne",
+        "homeScore": 89,
+        "awayScore": 85,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8182,
+        "startTime": "2026-07-10T09:40:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 87,
+        "awayScore": 73,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8188,
+        "startTime": "2026-07-11T03:15:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Geelong",
+        "homeScore": 86,
+        "awayScore": 73,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8192,
+        "startTime": "2026-07-11T06:15:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Carlton",
+        "awayTeam": "Hawthorn",
+        "homeScore": 39,
+        "awayScore": 103,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8184,
+        "startTime": "2026-07-11T09:35:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Gold Coast",
+        "homeScore": 128,
+        "awayScore": 49,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8190,
+        "startTime": "2026-07-11T10:10:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "West Coast",
+        "homeScore": 86,
+        "awayScore": 70,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8193,
+        "startTime": "2026-07-12T03:10:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Richmond",
+        "homeScore": 111,
+        "awayScore": 65,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8185,
+        "startTime": "2026-07-12T05:15:00.000+0000"
+      },
+      {
+        "round": 18,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Essendon",
+        "homeScore": 149,
+        "awayScore": 59,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8186,
+        "startTime": "2026-07-12T06:40:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 19,
+    "matches": [
+      {
+        "round": 19,
+        "homeTeam": "Geelong",
+        "awayTeam": "St Kilda",
+        "homeScore": 102,
+        "awayScore": 75,
+        "venue": "GMHBA Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8195,
+        "startTime": "2026-07-16T09:30:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "Sydney",
+        "awayTeam": "Adelaide",
+        "homeScore": 71,
+        "awayScore": 87,
+        "venue": "SCG",
+        "status": "CONCLUDED",
+        "matchId": 8199,
+        "startTime": "2026-07-17T09:40:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Fremantle",
+        "homeScore": 75,
+        "awayScore": 103,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8198,
+        "startTime": "2026-07-18T03:15:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Melbourne",
+        "homeScore": 76,
+        "awayScore": 92,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8197,
+        "startTime": "2026-07-18T06:15:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Carlton",
+        "homeScore": 90,
+        "awayScore": 69,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8194,
+        "startTime": "2026-07-18T09:35:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "West Coast",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 69,
+        "awayScore": 93,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8202,
+        "startTime": "2026-07-18T10:10:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "Richmond",
+        "awayTeam": "Hawthorn",
+        "homeScore": 52,
+        "awayScore": 122,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8196,
+        "startTime": "2026-07-19T03:10:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 68,
+        "awayScore": 77,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8200,
+        "startTime": "2026-07-19T05:15:00.000+0000"
+      },
+      {
+        "round": 19,
+        "homeTeam": "Essendon",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 67,
+        "awayScore": 64,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8191,
+        "startTime": "2026-07-19T06:40:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 20,
+    "matches": [
+      {
+        "round": 20,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Collingwood",
+        "homeScore": 74,
+        "awayScore": 108,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8216,
+        "startTime": "2026-07-23T09:30:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Geelong",
+        "homeScore": 97,
+        "awayScore": 117,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8205,
+        "startTime": "2026-07-24T09:40:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Fremantle",
+        "awayTeam": "West Coast",
+        "homeScore": 112,
+        "awayScore": 42,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8210,
+        "startTime": "2026-07-24T10:10:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Carlton",
+        "awayTeam": "Gold Coast",
+        "homeScore": 110,
+        "awayScore": 97,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8201,
+        "startTime": "2026-07-25T03:05:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Essendon",
+        "homeScore": 132,
+        "awayScore": 39,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8206,
+        "startTime": "2026-07-25T06:15:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Sydney",
+        "homeScore": 88,
+        "awayScore": 139,
+        "venue": "ENGIE Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8208,
+        "startTime": "2026-07-25T06:35:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Richmond",
+        "homeScore": 105,
+        "awayScore": 48,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8204,
+        "startTime": "2026-07-25T09:40:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Port Adelaide",
+        "homeScore": 126,
+        "awayScore": 67,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8203,
+        "startTime": "2026-07-26T03:10:00.000+0000"
+      },
+      {
+        "round": 20,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "St Kilda",
+        "homeScore": 62,
+        "awayScore": 93,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8207,
+        "startTime": "2026-07-26T05:15:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 21,
+    "matches": [
+      {
+        "round": 21,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Geelong",
+        "homeScore": 72,
+        "awayScore": 97,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8213,
+        "startTime": "2026-07-30T09:30:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": 78,
+        "awayScore": 41,
+        "venue": "Optus Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8218,
+        "startTime": "2026-07-31T10:10:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Sydney",
+        "homeScore": 88,
+        "awayScore": 107,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8217,
+        "startTime": "2026-08-01T03:05:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "North Melbourne",
+        "homeScore": 99,
+        "awayScore": 83,
+        "venue": "UTAS Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8212,
+        "startTime": "2026-08-01T03:35:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": 63,
+        "awayScore": 75,
+        "venue": "Adelaide Oval",
+        "status": "CONCLUDED",
+        "matchId": 8221,
+        "startTime": "2026-08-01T08:35:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Carlton",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": 154,
+        "awayScore": 78,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8209,
+        "startTime": "2026-08-01T09:40:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Richmond",
+        "awayTeam": "West Coast",
+        "homeScore": 84,
+        "awayScore": 73,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8214,
+        "startTime": "2026-08-02T03:10:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Gold Coast",
+        "awayTeam": "Melbourne",
+        "homeScore": 105,
+        "awayScore": 114,
+        "venue": "People First Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8215,
+        "startTime": "2026-08-02T05:15:00.000+0000"
+      },
+      {
+        "round": 21,
+        "homeTeam": "Essendon",
+        "awayTeam": "Adelaide",
+        "homeScore": 73,
+        "awayScore": 145,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8211,
+        "startTime": "2026-08-02T06:40:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 22,
+    "matches": [
+      {
+        "round": 22,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "North Melbourne",
+        "homeScore": 77,
+        "awayScore": 100,
+        "venue": "Marvel Stadium",
+        "status": "CONCLUDED",
+        "matchId": 8224,
+        "startTime": "2026-08-06T09:30:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Hawthorn",
+        "homeScore": 125,
+        "awayScore": 58,
+        "venue": "Gabba",
+        "status": "CONCLUDED",
+        "matchId": 8223,
+        "startTime": "2026-08-07T09:40:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Fremantle",
+        "homeScore": 113,
+        "awayScore": 109,
+        "venue": "MCG",
+        "status": "CONCLUDED",
+        "matchId": 8220,
+        "startTime": "2026-08-08T03:15:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "Sydney",
+        "awayTeam": "Port Adelaide",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "SCG",
+        "status": "LIVE",
+        "matchId": 8222,
+        "startTime": "2026-08-08T06:15:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "Geelong",
+        "awayTeam": "Essendon",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "GMHBA Stadium",
+        "status": "CONFIRMED_TEAMS",
+        "matchId": 8219,
+        "startTime": "2026-08-08T06:35:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Richmond",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Adelaide Oval",
+        "status": "UNCONFIRMED_TEAMS",
+        "matchId": 8230,
+        "startTime": "2026-08-08T09:35:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "Gold Coast",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Corroboree Group Oval Manuka",
+        "status": "UNCONFIRMED_TEAMS",
+        "matchId": 8228,
+        "startTime": "2026-08-09T03:10:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "West Coast",
+        "awayTeam": "Collingwood",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Optus Stadium",
+        "status": "UNCONFIRMED_TEAMS",
+        "matchId": 8227,
+        "startTime": "2026-08-09T06:10:00.000+0000"
+      },
+      {
+        "round": 22,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Carlton",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Marvel Stadium",
+        "status": "UNCONFIRMED_TEAMS",
+        "matchId": 8225,
+        "startTime": "2026-08-09T09:20:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 23,
+    "matches": [
+      {
+        "round": 23,
+        "homeTeam": "Fremantle",
+        "awayTeam": "Adelaide",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Optus Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8237,
+        "startTime": "2026-08-14T10:10:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Richmond",
+        "awayTeam": "St Kilda",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "MCG",
+        "status": "SCHEDULED",
+        "matchId": 8238,
+        "startTime": "2026-08-15T02:35:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "North Melbourne",
+        "awayTeam": "Geelong",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Marvel Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8231,
+        "startTime": "2026-08-15T05:45:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Gold Coast",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Gabba",
+        "status": "SCHEDULED",
+        "matchId": 8229,
+        "startTime": "2026-08-15T06:15:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Collingwood",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "MCG",
+        "status": "SCHEDULED",
+        "matchId": 8244,
+        "startTime": "2026-08-15T09:40:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Port Adelaide",
+        "awayTeam": "Melbourne",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Adelaide Oval",
+        "status": "SCHEDULED",
+        "matchId": 8234,
+        "startTime": "2026-08-15T10:10:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Greater Western Sydney",
+        "awayTeam": "West Coast",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "ENGIE Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8233,
+        "startTime": "2026-08-16T03:40:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Western Bulldogs",
+        "awayTeam": "Carlton",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Marvel Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8232,
+        "startTime": "2026-08-16T05:15:00.000+0000"
+      },
+      {
+        "round": 23,
+        "homeTeam": "Essendon",
+        "awayTeam": "Sydney",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "MCG",
+        "status": "SCHEDULED",
+        "matchId": 8226,
+        "startTime": "2026-08-16T06:40:00.000+0000"
+      }
+    ]
+  },
+  {
+    "round": 24,
+    "matches": [
+      {
+        "round": 24,
+        "homeTeam": "St Kilda",
+        "awayTeam": "Gold Coast",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Marvel Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8242,
+        "startTime": "2026-08-20T09:30:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Collingwood",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "MCG",
+        "status": "SCHEDULED",
+        "matchId": 8239,
+        "startTime": "2026-08-21T09:40:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Carlton",
+        "awayTeam": "Fremantle",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Marvel Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8240,
+        "startTime": "2026-08-22T03:15:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Melbourne",
+        "awayTeam": "Western Bulldogs",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "MCG",
+        "status": "SCHEDULED",
+        "matchId": 8236,
+        "startTime": "2026-08-22T06:15:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Geelong",
+        "awayTeam": "Richmond",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "GMHBA Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8246,
+        "startTime": "2026-08-22T09:45:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Adelaide",
+        "awayTeam": "Greater Western Sydney",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Adelaide Oval",
+        "status": "SCHEDULED",
+        "matchId": 8243,
+        "startTime": "2026-08-22T10:10:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Essendon",
+        "awayTeam": "Port Adelaide",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Marvel Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8235,
+        "startTime": "2026-08-23T02:20:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "Sydney",
+        "awayTeam": "North Melbourne",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "SCG",
+        "status": "SCHEDULED",
+        "matchId": 8245,
+        "startTime": "2026-08-23T05:20:00.000+0000"
+      },
+      {
+        "round": 24,
+        "homeTeam": "West Coast",
+        "awayTeam": "Hawthorn",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "Optus Stadium",
+        "status": "SCHEDULED",
+        "matchId": 8241,
+        "startTime": "2026-08-23T09:20:00.000+0000"
+      }
+    ]
+  }
+]
