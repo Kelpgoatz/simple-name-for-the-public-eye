@@ -85,18 +85,6 @@
   },
   {
     "rank": 8,
-    "name": "Collingwood",
-    "played": 21,
-    "wins": 12,
-    "losses": 8,
-    "draws": 1,
-    "pts": 50,
-    "percentage": 106.4,
-    "for": 1833,
-    "against": 1723
-  },
-  {
-    "rank": 9,
     "name": "Western Bulldogs",
     "played": 21,
     "wins": 12,
@@ -106,6 +94,18 @@
     "percentage": 93.9,
     "for": 1711,
     "against": 1823
+  },
+  {
+    "rank": 9,
+    "name": "Collingwood",
+    "played": 20,
+    "wins": 11,
+    "losses": 8,
+    "draws": 1,
+    "pts": 46,
+    "percentage": 105.6,
+    "for": 1716,
+    "against": 1625
   },
   {
     "rank": 10,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 21,
+    "played": 20,
     "wins": 4,
-    "losses": 17,
+    "losses": 16,
     "draws": 0,
     "pts": 16,
-    "percentage": 71.5,
-    "for": 1513,
-    "against": 2115
+    "percentage": 70.8,
+    "for": 1415,
+    "against": 1998
   },
   {
     "rank": 17,
