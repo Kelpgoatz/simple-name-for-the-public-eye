@@ -2173,10 +2173,10 @@
         "round": 22,
         "homeTeam": "West Coast",
         "awayTeam": "Collingwood",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 98,
+        "awayScore": 117,
         "venue": "Optus Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8227,
         "startTime": "2026-08-09T06:10:00.000+0000"
       },
@@ -2187,7 +2187,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8225,
         "startTime": "2026-08-09T09:20:00.000+0000"
       }
