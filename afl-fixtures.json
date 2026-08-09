@@ -2184,10 +2184,10 @@
         "round": 22,
         "homeTeam": "St Kilda",
         "awayTeam": "Carlton",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 62,
+        "awayScore": 106,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8225,
         "startTime": "2026-08-09T09:20:00.000+0000"
       }
