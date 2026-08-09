@@ -2165,7 +2165,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Corroboree Group Oval Manuka",
-        "status": "LIVE",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8228,
         "startTime": "2026-08-09T03:10:00.000+0000"
       },
@@ -2176,7 +2176,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8227,
         "startTime": "2026-08-09T06:10:00.000+0000"
       },
