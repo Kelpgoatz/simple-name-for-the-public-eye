@@ -85,6 +85,18 @@
   },
   {
     "rank": 8,
+    "name": "Collingwood",
+    "played": 21,
+    "wins": 12,
+    "losses": 8,
+    "draws": 1,
+    "pts": 50,
+    "percentage": 106.4,
+    "for": 1833,
+    "against": 1723
+  },
+  {
+    "rank": 9,
     "name": "Western Bulldogs",
     "played": 21,
     "wins": 12,
@@ -94,18 +106,6 @@
     "percentage": 93.9,
     "for": 1711,
     "against": 1823
-  },
-  {
-    "rank": 9,
-    "name": "Collingwood",
-    "played": 20,
-    "wins": 11,
-    "losses": 8,
-    "draws": 1,
-    "pts": 46,
-    "percentage": 105.6,
-    "for": 1716,
-    "against": 1625
   },
   {
     "rank": 10,
@@ -134,14 +134,14 @@
   {
     "rank": 12,
     "name": "GWS GIANTS",
-    "played": 20,
+    "played": 21,
     "wins": 9,
-    "losses": 11,
+    "losses": 12,
     "draws": 0,
     "pts": 36,
-    "percentage": 99.0,
-    "for": 1784,
-    "against": 1802
+    "percentage": 98.9,
+    "for": 1861,
+    "against": 1881
   },
   {
     "rank": 13,
@@ -158,14 +158,14 @@
   {
     "rank": 14,
     "name": "Gold Coast SUNS",
-    "played": 20,
-    "wins": 7,
+    "played": 21,
+    "wins": 8,
     "losses": 13,
     "draws": 0,
-    "pts": 28,
-    "percentage": 94.7,
-    "for": 1776,
-    "against": 1876
+    "pts": 32,
+    "percentage": 95.0,
+    "for": 1855,
+    "against": 1953
   },
   {
     "rank": 15,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 20,
+    "played": 21,
     "wins": 4,
-    "losses": 16,
+    "losses": 17,
     "draws": 0,
     "pts": 16,
-    "percentage": 70.8,
-    "for": 1415,
-    "against": 1998
+    "percentage": 71.5,
+    "for": 1513,
+    "against": 2115
   },
   {
     "rank": 17,
