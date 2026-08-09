@@ -2162,10 +2162,10 @@
         "round": 22,
         "homeTeam": "Greater Western Sydney",
         "awayTeam": "Gold Coast",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 77,
+        "awayScore": 79,
         "venue": "Corroboree Group Oval Manuka",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8228,
         "startTime": "2026-08-09T03:10:00.000+0000"
       },
@@ -2176,7 +2176,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8227,
         "startTime": "2026-08-09T06:10:00.000+0000"
       },
