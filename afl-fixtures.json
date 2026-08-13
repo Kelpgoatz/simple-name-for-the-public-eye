@@ -659,7 +659,7 @@
         "awayTeam": "Gold Coast",
         "homeScore": 112,
         "awayScore": 63,
-        "venue": "UTAS Stadium",
+        "venue": "University of Tasmania Stadium",
         "status": "CONCLUDED",
         "matchId": 8095,
         "startTime": "2026-04-25T02:30:00.000+0000"
@@ -1053,7 +1053,7 @@
         "awayTeam": "Adelaide",
         "homeScore": 75,
         "awayScore": 66,
-        "venue": "UTAS Stadium",
+        "venue": "University of Tasmania Stadium",
         "status": "CONCLUDED",
         "matchId": 8130,
         "startTime": "2026-05-21T09:30:00.000+0000"
@@ -1611,7 +1611,7 @@
         "awayTeam": "Melbourne",
         "homeScore": 90,
         "awayScore": 125,
-        "venue": "UTAS Stadium",
+        "venue": "University of Tasmania Stadium",
         "status": "CONCLUDED",
         "matchId": 8175,
         "startTime": "2026-07-04T03:15:00.000+0000"
@@ -2203,7 +2203,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8237,
         "startTime": "2026-08-14T10:10:00.000+0000"
       },
@@ -2214,7 +2214,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8238,
         "startTime": "2026-08-15T02:35:00.000+0000"
       },
@@ -2225,7 +2225,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8231,
         "startTime": "2026-08-15T05:45:00.000+0000"
       },
@@ -2236,7 +2236,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Gabba",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8229,
         "startTime": "2026-08-15T06:15:00.000+0000"
       },
@@ -2247,7 +2247,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8244,
         "startTime": "2026-08-15T09:40:00.000+0000"
       },
@@ -2258,7 +2258,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8234,
         "startTime": "2026-08-15T10:10:00.000+0000"
       },
@@ -2269,7 +2269,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "ENGIE Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8233,
         "startTime": "2026-08-16T03:40:00.000+0000"
       },
@@ -2280,7 +2280,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8232,
         "startTime": "2026-08-16T05:15:00.000+0000"
       },
@@ -2291,7 +2291,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8226,
         "startTime": "2026-08-16T06:40:00.000+0000"
       }
