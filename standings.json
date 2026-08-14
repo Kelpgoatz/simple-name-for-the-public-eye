@@ -2,14 +2,14 @@
   {
     "rank": 1,
     "name": "Fremantle",
-    "played": 21,
-    "wins": 18,
+    "played": 22,
+    "wins": 19,
     "losses": 3,
     "draws": 0,
-    "pts": 72,
-    "percentage": 143.4,
-    "for": 2092,
-    "against": 1459
+    "pts": 76,
+    "percentage": 142.5,
+    "for": 2204,
+    "against": 1547
   },
   {
     "rank": 2,
@@ -50,14 +50,14 @@
   {
     "rank": 5,
     "name": "Adelaide Crows",
-    "played": 21,
+    "played": 22,
     "wins": 14,
-    "losses": 7,
+    "losses": 8,
     "draws": 0,
     "pts": 56,
-    "percentage": 117.6,
-    "for": 1924,
-    "against": 1636
+    "percentage": 115.1,
+    "for": 2012,
+    "against": 1748
   },
   {
     "rank": 6,
