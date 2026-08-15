@@ -226,9 +226,9 @@
         .nav a:hover { transform: translateY(-1px); }
 
         .nav a[aria-current="page"] {
-            background: var(--brand);
+            background: #2e7dd2c9;
             color: #fff;
-            border-color: var(--brand);
+            border-color: #2e7dd2c9;
         }
 
         .theme-toggle {
@@ -686,13 +686,51 @@
         }
 
         .fixture__status--live {
-            background: rgba(231, 62, 62, 0.12);
+            background: rgba(231, 62, 62, 0.4);
             border-color: rgba(231, 62, 62, 0.35);
             color: #d64545;
         }
 
+        .fixture__status--scheduled {
+            background: rgb(255, 255, 255);
+            border-color: rgba(13, 66, 83, 0.18);
+            color: var(--brand-soft);
+        }
+
         .fixture__status--finished {
-            color: var(--muted);
+            background: rgb(192, 232, 253);
+            border-color: rgba(13, 66, 83, 0.18);
+            color: var(--brand-soft);
+        }
+
+        :root[data-theme="dark"] .fixture__status--scheduled {
+            background: rgb(0, 0, 0);
+            border-color: rgba(255, 255, 255, 0.22);
+        }
+
+        :root[data-theme="dark"] .fixture__status--finished {
+            background: rgb(23, 64, 95);
+            border-color: rgba(255, 255, 255, 0.22);
+        }
+
+        :root[data-theme="dark"] .fixture__status--live {
+            color: #ffffff;
+        }
+
+        :root[data-theme="dark"] .live-dot {
+            background: #ffffff;
+        }
+
+        .fixture__status--tbc {
+            background: rgba(255, 204, 0, 0.75);
+            border-color: rgba(160, 128, 0, 0.35);
+            color: #5a4a00;
+        }
+
+        :root[data-theme="dark"] .fixture__status--tbc {
+            background: rgba(247, 255, 0, 0.16);
+            border-color: rgba(247, 255, 0, 0.3);
+            color: #ffffff;
         }
 
         .live-dot {
@@ -1127,6 +1165,8 @@
                     const status = String(match.status || "SCHEDULED").toUpperCase();
                     const isLive = /LIVE|IN_PROGRESS/.test(status);
                     const isFinished = status === "CONCLUDED";
+                    const isScheduled = statusLabels[status] === "Scheduled";
+                    const isTbc = statusLabels[status] === "TBC";
                     const hasScores = match.homeScore != null && match.awayScore != null;
 
                     const card = document.createElement("div");
@@ -1168,11 +1208,14 @@
                     const meta = document.createElement("div");
                     meta.className = "fixture__meta";
 
-                    if (isFinalsRound) {
-                        meta.appendChild(addText("fixture__meta-item", "Date TBC", meta));
-                    } else {
-                        const startTime = parseStartTime(match.startTime);
-                        if (startTime) {
+                    const startTime = parseStartTime(match.startTime);
+                    if (startTime) {
+                        if (isFinalsRound) {
+                            if (currentRound === 29) {
+                                const dayPart = startTime.toLocaleDateString(undefined, { weekday: "long" });
+                                meta.appendChild(addText("fixture__meta-item", dayPart, meta));
+                            }
+                        } else {
                             const datePart = startTime.toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short" });
                             const timePart = startTime.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
                             meta.appendChild(addText("fixture__meta-item", `${datePart} · ${timePart}`, meta));
@@ -1183,7 +1226,7 @@
                     }
 
                     const statusBadge = document.createElement("span");
-                    statusBadge.className = "fixture__status" + (isLive ? " fixture__status--live" : isFinished ? " fixture__status--finished" : "");
+                    statusBadge.className = "fixture__status" + (isLive ? " fixture__status--live" : isFinished ? " fixture__status--finished" : isScheduled ? " fixture__status--scheduled" : isTbc ? " fixture__status--tbc" : "");
                     if (isLive) {
                         const dot = document.createElement("span");
                         dot.className = "live-dot";
