@@ -2236,7 +2236,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Gabba",
-        "status": "LIVE",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8229,
         "startTime": "2026-08-15T06:15:00.000+0000"
       },
