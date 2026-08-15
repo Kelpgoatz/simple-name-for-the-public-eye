@@ -274,6 +274,12 @@
             align-items: stretch;
         }
 
+        .hero-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
         .top-story {
             padding: 28px;
             border-radius: 28px;
@@ -514,6 +520,250 @@
             font-weight: 700;
         }
 
+        .page-foot {
+            position: relative;
+            z-index: 1;
+            padding: 4px 24px 24px;
+            text-align: center;
+        }
+
+        .dev-note-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 46px;
+            padding: 0 22px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            color: var(--brand-soft);
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 10px 18px rgba(30, 86, 109, 0.1);
+            backdrop-filter: blur(24px);
+            transition: transform 0.2s ease;
+        }
+
+        .dev-note-toggle:hover {
+            transform: translateY(-1px);
+        }
+
+        .page-foot__actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dev-note {
+            margin-top: 18px;
+            padding: 22px;
+            border-radius: 28px;
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 18px 36px rgba(23, 88, 111, 0.12);
+            backdrop-filter: blur(26px);
+            text-align: left;
+        }
+
+        .dev-note__head {
+            margin-bottom: 6px;
+        }
+
+        .dev-note__head h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: -0.04em;
+            color: var(--brand);
+        }
+
+        .dev-note__head p {
+            margin: 8px 0 0;
+            color: var(--muted);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .dev-note__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .dev-note__form {
+            display: grid;
+            gap: 12px;
+        }
+
+        .dev-note__form label {
+            display: grid;
+            gap: 6px;
+            color: var(--brand-soft);
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .dev-note__form input,
+        .dev-note__form textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 16px;
+            border: 1px solid var(--line);
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            color: var(--text);
+            font: inherit;
+            font-size: 0.95rem;
+            box-shadow: inset 0 1px 0 var(--glow);
+            backdrop-filter: blur(24px);
+        }
+
+        .dev-note__form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .dev-note__form input:focus,
+        .dev-note__form textarea:focus {
+            outline: none;
+            border-color: var(--brand-soft);
+        }
+
+        .dev-note__send {
+            justify-self: start;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 0 20px;
+            border-radius: 999px;
+            border: 1px solid var(--brand);
+            background: var(--brand);
+            color: #fff;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+
+        .dev-note__send:hover {
+            transform: translateY(-1px);
+        }
+
+        .dev-note__log {
+            display: grid;
+            align-content: start;
+            gap: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 6px;
+            scrollbar-gutter: stable;
+        }
+
+        .dev-note__empty {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .dev-note__entry {
+            padding: 12px 14px;
+            border-radius: 18px;
+            background:
+                linear-gradient(135deg, rgba(114, 207, 228, 0.16), rgba(255, 255, 255, 0.06)),
+                rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+        }
+
+        .dev-note__entry-time {
+            color: var(--brand-soft);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .dev-note__entry-name {
+            margin-top: 4px;
+            color: var(--brand);
+            font-weight: 800;
+        }
+
+        .dev-note__entry-text {
+            margin: 6px 0 0;
+            color: var(--text);
+            font-size: 0.92rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+        }
+
+        .dev-updates {
+            margin-top: 18px;
+            padding: 22px;
+            border-radius: 28px;
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 18px 36px rgba(23, 88, 111, 0.12);
+            backdrop-filter: blur(26px);
+            text-align: left;
+        }
+
+        .dev-updates__list {
+            display: grid;
+            gap: 10px;
+            margin-top: 16px;
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 6px;
+            scrollbar-gutter: stable;
+        }
+
+        .dev-updates__entry {
+            padding: 12px 14px;
+            border-radius: 18px;
+            background:
+                linear-gradient(135deg, rgba(114, 207, 228, 0.16), rgba(255, 255, 255, 0.06)),
+                rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+        }
+
+        .dev-updates__entry-time {
+            color: var(--brand-soft);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .dev-updates__entry-title {
+            margin-top: 4px;
+            color: var(--brand);
+            font-weight: 800;
+        }
+
+        .dev-updates__entry-text {
+            margin: 6px 0 0;
+            color: var(--text);
+            font-size: 0.92rem;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
 
 
         @media (max-width: 980px) {
@@ -538,7 +788,8 @@
 
             .masthead,
             .hero,
-            .section-block {
+            .section-block,
+            .page-foot {
                 padding-left: 14px;
                 padding-right: 14px;
             }
@@ -591,6 +842,10 @@
             .hero-grid {
                 grid-template-columns: 1fr;
             }
+
+            .dev-note__grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <link rel="icon" href="favicon.png" id="favicon">
@@ -617,7 +872,6 @@
             <section class="hero">
                 <div class="hero-grid">
                     <div class="top-story top-story--placeholder" id="world">
-                        <span class="eyebrow">Hero</span>
                         <h2>Your headline here.</h2>
                         <p class="lead">Placeholder for breaking news, featured content, or a hero message.</p>
                     </div>
@@ -685,6 +939,41 @@
                     </div>
                 </div>
             </section>
+
+            <footer class="page-foot">
+                <div class="page-foot__actions">
+                    <button class="dev-note-toggle" type="button" data-dev-note-toggle aria-expanded="false" aria-controls="dev-note">Dev note</button>
+                    <button class="dev-note-toggle" type="button" data-dev-updates-toggle aria-expanded="false" aria-controls="dev-updates">Dev updates</button>
+                </div>
+                <section class="dev-note" id="dev-note" data-dev-note hidden>
+                    <div class="dev-note__head">
+                        <h2>Send a dev note</h2>
+                        <p>Your message is emailed to the developer. The date and time it was sent are logged below.</p>
+                    </div>
+                    <div class="dev-note__grid">
+                        <form class="dev-note__form" data-dev-note-form novalidate>
+                            <label>
+                                Name
+                                <input type="text" name="name" maxlength="60" placeholder="Your name">
+                            </label>
+                            <label>
+                                Message
+                                <textarea name="message" maxlength="2000" placeholder="What's on your mind?" required></textarea>
+                            </label>
+                            <button class="dev-note__send" type="submit">Send</button>
+                        </form>
+                        <div class="dev-note__log" data-dev-note-log></div>
+                    </div>
+                </section>
+
+                <section class="dev-updates" id="dev-updates" data-dev-updates aria-labelledby="dev-updates-title" hidden>
+                    <div class="dev-note__head">
+                        <h2 id="dev-updates-title">Dev updates</h2>
+                        <p>What's new on the site.</p>
+                    </div>
+                    <div class="dev-updates__list" data-dev-updates-list></div>
+                </section>
+            </footer>
 
         </div>
     </main>
@@ -914,6 +1203,159 @@
             toggleButton?.addEventListener("click", () => {
                 setTheme(root.dataset.theme === "dark" ? "light" : "dark");
             });
+        })();
+
+        (() => {
+            const storageKey = "cgrillo-dev-notes";
+            const recipient = "yb665uazc@mozmail.com";
+            const toggle = document.querySelector("[data-dev-note-toggle]");
+            const panel = document.querySelector("[data-dev-note]");
+            const form = document.querySelector("[data-dev-note-form]");
+            const log = document.querySelector("[data-dev-note-log]");
+            const nameInput = form?.querySelector('[name="name"]');
+            const messageInput = form?.querySelector('[name="message"]');
+
+            const loadNotes = () => {
+                try {
+                    const notes = JSON.parse(localStorage.getItem(storageKey) || "[]");
+                    return Array.isArray(notes) ? notes : [];
+                } catch {
+                    return [];
+                }
+            };
+
+            const saveNotes = (notes) => {
+                try {
+                    localStorage.setItem(storageKey, JSON.stringify(notes));
+                } catch {
+                    // Ignore storage failures on file URLs or restricted environments.
+                }
+            };
+
+            const formatDateTime = (date) =>
+                date.toLocaleString(undefined, {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit"
+                });
+
+            const renderNotes = (notes) => {
+                if (!log) return;
+                log.replaceChildren();
+                if (notes.length === 0) {
+                    const empty = document.createElement("p");
+                    empty.className = "dev-note__empty";
+                    empty.textContent = "No dev notes yet. Send one and it will appear here with the date and time.";
+                    log.appendChild(empty);
+                    return;
+                }
+                notes.forEach((note) => {
+                    const entry = document.createElement("div");
+                    entry.className = "dev-note__entry";
+                    const time = document.createElement("div");
+                    time.className = "dev-note__entry-time";
+                    time.textContent = note.dateTime;
+                    entry.appendChild(time);
+                    if (note.name) {
+                        const name = document.createElement("div");
+                        name.className = "dev-note__entry-name";
+                        name.textContent = note.name;
+                        entry.appendChild(name);
+                    }
+                    const text = document.createElement("p");
+                    text.className = "dev-note__entry-text";
+                    text.textContent = note.message;
+                    entry.appendChild(text);
+                    log.appendChild(entry);
+                });
+            };
+
+            toggle?.addEventListener("click", () => {
+                if (!panel) return;
+                const opening = panel.hidden;
+                panel.hidden = !opening;
+                toggle.setAttribute("aria-expanded", String(opening));
+                if (opening) {
+                    panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                }
+            });
+
+            form?.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const message = (messageInput?.value || "").trim();
+                if (!message) {
+                    messageInput?.focus();
+                    return;
+                }
+                const name = (nameInput?.value || "").trim();
+                const dateTime = formatDateTime(new Date());
+                const notes = loadNotes();
+                notes.push({ dateTime, name, message });
+                saveNotes(notes);
+                renderNotes(notes);
+
+                const subject = "Dev note from cgrillo.com";
+                const body = [
+                    `Sent: ${dateTime}`,
+                    `Name: ${name || "Anonymous"}`,
+                    "",
+                    message
+                ].join("\n");
+                window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                form.reset();
+                messageInput?.focus();
+            });
+
+            renderNotes(loadNotes());
+        })();
+
+        (() => {
+            const toggle = document.querySelector("[data-dev-updates-toggle]");
+            const panel = document.querySelector("[data-dev-updates]");
+            const list = document.querySelector("[data-dev-updates-list]");
+
+            const updates = [
+                { date: "15 Aug 2026", title: "Live game fix and colour correction", text: "We have fixed the live game issue, and also colour corrected unreadable text." },
+                { date: "15 Aug 2026", title: "Dev note added", text: "Visitors can now send notes straight to the developer from the bottom of the homepage." },
+                { date: "14 Aug 2026", title: "Homepage refresh", text: "New hero layout and live standings for AFL and F1." }
+            ];
+
+            const renderUpdates = () => {
+                if (!list) return;
+                list.replaceChildren();
+                updates.forEach((update) => {
+                    const entry = document.createElement("div");
+                    entry.className = "dev-updates__entry";
+                    const time = document.createElement("div");
+                    time.className = "dev-updates__entry-time";
+                    time.textContent = update.date;
+                    entry.appendChild(time);
+                    const title = document.createElement("div");
+                    title.className = "dev-updates__entry-title";
+                    title.textContent = update.title;
+                    entry.appendChild(title);
+                    const text = document.createElement("p");
+                    text.className = "dev-updates__entry-text";
+                    text.textContent = update.text;
+                    entry.appendChild(text);
+                    list.appendChild(entry);
+                });
+            };
+
+            toggle?.addEventListener("click", () => {
+                if (!panel) return;
+                const opening = panel.hidden;
+                panel.hidden = !opening;
+                toggle.setAttribute("aria-expanded", String(opening));
+                if (opening) {
+                    panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                }
+            });
+
+            renderUpdates();
         })();
     </script>
 </body>

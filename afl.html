@@ -1163,11 +1163,41 @@
                     const home = resolveTeam(match.homeTeam);
                     const away = resolveTeam(match.awayTeam);
                     const status = String(match.status || "SCHEDULED").toUpperCase();
-                    const isLive = /LIVE|IN_PROGRESS/.test(status);
-                    const isFinished = status === "CONCLUDED";
-                    const isScheduled = statusLabels[status] === "Scheduled";
-                    const isTbc = statusLabels[status] === "TBC";
+                    const startTime = parseStartTime(match.startTime);
                     const hasScores = match.homeScore != null && match.awayScore != null;
+                    const now = Date.now();
+                    const PRE_START_WINDOW = 10 * 60 * 1000;
+                    const GAME_DURATION = (2 * 60 + 25) * 60 * 1000;
+
+                    let isLive = false;
+                    let isCountdown = false;
+                    let isFinished = false;
+                    let isPending = false;
+                    let isTbc = false;
+                    let countdownEnd = null;
+
+                    if (status === "CONCLUDED") {
+                        isFinished = true;
+                    } else if (statusLabels[status] === "TBC") {
+                        isTbc = true;
+                    } else if (startTime) {
+                        const diff = startTime.getTime() - now;
+                        if (diff > PRE_START_WINDOW) {
+                            // still scheduled
+                        } else if (diff > 0) {
+                            isCountdown = true;
+                            countdownEnd = startTime.getTime();
+                        } else if (now < startTime.getTime() + GAME_DURATION) {
+                            isLive = true;
+                        } else if (hasScores) {
+                            isFinished = true;
+                        } else {
+                            isPending = true;
+                        }
+                    } else if (/LIVE|IN_PROGRESS/.test(status)) {
+                        isLive = true;
+                    }
+                    const isScheduled = !(isLive || isCountdown || isFinished || isPending || isTbc);
 
                     const card = document.createElement("div");
                     card.className = "fixture";
@@ -1208,7 +1238,6 @@
                     const meta = document.createElement("div");
                     meta.className = "fixture__meta";
 
-                    const startTime = parseStartTime(match.startTime);
                     if (startTime) {
                         if (isFinalsRound) {
                             if (currentRound === 29) {
@@ -1226,14 +1255,34 @@
                     }
 
                     const statusBadge = document.createElement("span");
-                    statusBadge.className = "fixture__status" + (isLive ? " fixture__status--live" : isFinished ? " fixture__status--finished" : isScheduled ? " fixture__status--scheduled" : isTbc ? " fixture__status--tbc" : "");
-                    if (isLive) {
+                    statusBadge.className = "fixture__status" + (isLive || isCountdown ? " fixture__status--live" : isFinished ? " fixture__status--finished" : isPending || isTbc ? " fixture__status--tbc" : isScheduled ? " fixture__status--scheduled" : "");
+                    if (isLive || isPending) {
                         const dot = document.createElement("span");
                         dot.className = "live-dot";
                         dot.setAttribute("aria-hidden", "true");
                         statusBadge.appendChild(dot);
                     }
-                    statusBadge.appendChild(document.createTextNode(statusLabels[status] || "Scheduled"));
+                    if (isCountdown) {
+                        const formatCountdown = () => {
+                            const ms = Math.max(0, countdownEnd - Date.now());
+                            const minutes = Math.floor(ms / 60000);
+                            const seconds = Math.floor((ms % 60000) / 1000);
+                            return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+                        };
+                        statusBadge.textContent = formatCountdown();
+                        const timer = setInterval(() => {
+                            if (countdownEnd - Date.now() <= 0) {
+                                clearInterval(timer);
+                                if (statusBadge.isConnected) render();
+                            } else {
+                                statusBadge.textContent = formatCountdown();
+                            }
+                        }, 1000);
+                    } else if (isPending) {
+                        statusBadge.appendChild(document.createTextNode("Pending"));
+                    } else {
+                        statusBadge.appendChild(document.createTextNode(isLive ? "Live" : isFinished ? "Finished" : (statusLabels[status] || "Scheduled")));
+                    }
                     meta.appendChild(statusBadge);
 
                     card.appendChild(homeTeam);
@@ -1268,13 +1317,28 @@
                 buildPositionTeams(standings);
                 if (!Array.isArray(data) || !data.length) { goToRound(MIN_ROUND); return; }
                 fixturesData = data;
+                const GAME_DURATION = (2 * 60 + 25) * 60 * 1000;
+                const isMatchLive = (m) => {
+                    const s = String(m.status || "").toUpperCase();
+                    if (/LIVE|IN_PROGRESS/.test(s)) return true;
+                    if (s === "CONCLUDED") return false;
+                    const st = parseStartTime(m.startTime);
+                    return !!st && st.getTime() <= Date.now() && Date.now() < st.getTime() + GAME_DURATION;
+                };
                 let defaultRound = MIN_ROUND;
                 data.forEach(round => {
                     if (round.round > maxRound && Number.isInteger(round.round)) maxRound = round.round;
-                    if (Array.isArray(round.matches) && round.matches.some(m => String(m.status || "").toUpperCase() === "CONCLUDED")) {
+                    if (Array.isArray(round.matches) && round.matches.some(isMatchLive)) {
                         defaultRound = round.round;
                     }
                 });
+                if (defaultRound === MIN_ROUND) {
+                    data.forEach(round => {
+                        if (Array.isArray(round.matches) && round.matches.some(m => String(m.status || "").toUpperCase() === "CONCLUDED")) {
+                            defaultRound = round.round;
+                        }
+                    });
+                }
                 goToRound(defaultRound);
             }).catch(() => goToRound(MIN_ROUND));
         })();
