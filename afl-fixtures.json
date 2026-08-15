@@ -2214,7 +2214,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "LIVE",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8238,
         "startTime": "2026-08-15T02:35:00.000+0000"
       },
