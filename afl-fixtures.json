@@ -2236,7 +2236,7 @@
         "homeScore": 95,
         "awayScore": 53,
         "venue": "Gabba",
-        "status": "POSTGAME",
+        "status": "CONCLUDED",
         "matchId": 8229,
         "startTime": "2026-08-15T06:15:00.000+0000"
       },
@@ -2244,10 +2244,10 @@
         "round": 23,
         "homeTeam": "Hawthorn",
         "awayTeam": "Collingwood",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 92,
+        "awayScore": 92,
         "venue": "MCG",
-        "status": "CONFIRMED_TEAMS",
+        "status": "POSTGAME",
         "matchId": 8244,
         "startTime": "2026-08-15T09:40:00.000+0000"
       },
@@ -2258,7 +2258,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8234,
         "startTime": "2026-08-15T10:10:00.000+0000"
       },
