@@ -2214,7 +2214,7 @@
         "homeScore": 45,
         "awayScore": 94,
         "venue": "MCG",
-        "status": "POSTGAME",
+        "status": "CONCLUDED",
         "matchId": 8238,
         "startTime": "2026-08-15T02:35:00.000+0000"
       },
@@ -2225,7 +2225,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8231,
         "startTime": "2026-08-15T05:45:00.000+0000"
       },
@@ -2236,7 +2236,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Gabba",
-        "status": "CONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8229,
         "startTime": "2026-08-15T06:15:00.000+0000"
       },
