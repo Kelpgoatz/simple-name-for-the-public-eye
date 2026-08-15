@@ -2236,7 +2236,7 @@
         "homeScore": 95,
         "awayScore": 53,
         "venue": "Gabba",
-        "status": "CONCLUDED",
+        "status": "POSTGAME",
         "matchId": 8229,
         "startTime": "2026-08-15T06:15:00.000+0000"
       },
@@ -2247,7 +2247,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "LIVE",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8244,
         "startTime": "2026-08-15T09:40:00.000+0000"
       },
@@ -2258,7 +2258,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "LIVE",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8234,
         "startTime": "2026-08-15T10:10:00.000+0000"
       },
