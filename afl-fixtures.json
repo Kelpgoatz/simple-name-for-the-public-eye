@@ -2211,10 +2211,10 @@
         "round": 23,
         "homeTeam": "Richmond",
         "awayTeam": "St Kilda",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 45,
+        "awayScore": 94,
         "venue": "MCG",
-        "status": "LIVE",
+        "status": "POSTGAME",
         "matchId": 8238,
         "startTime": "2026-08-15T02:35:00.000+0000"
       },
@@ -2225,7 +2225,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8231,
         "startTime": "2026-08-15T05:45:00.000+0000"
       },
@@ -2236,7 +2236,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Gabba",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8229,
         "startTime": "2026-08-15T06:15:00.000+0000"
       },
