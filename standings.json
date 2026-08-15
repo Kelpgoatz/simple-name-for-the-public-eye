@@ -38,17 +38,29 @@
   {
     "rank": 4,
     "name": "Hawthorn",
-    "played": 21,
+    "played": 22,
     "wins": 14,
     "losses": 6,
-    "draws": 1,
-    "pts": 58,
-    "percentage": 118.2,
-    "for": 2061,
-    "against": 1744
+    "draws": 2,
+    "pts": 60,
+    "percentage": 117.3,
+    "for": 2153,
+    "against": 1836
   },
   {
     "rank": 5,
+    "name": "Melbourne",
+    "played": 22,
+    "wins": 15,
+    "losses": 7,
+    "draws": 0,
+    "pts": 60,
+    "percentage": 111.2,
+    "for": 2214,
+    "against": 1991
+  },
+  {
+    "rank": 6,
     "name": "Geelong Cats",
     "played": 22,
     "wins": 14,
@@ -60,7 +72,7 @@
     "against": 1849
   },
   {
-    "rank": 6,
+    "rank": 7,
     "name": "Adelaide Crows",
     "played": 22,
     "wins": 14,
@@ -72,28 +84,16 @@
     "against": 1748
   },
   {
-    "rank": 7,
-    "name": "Melbourne",
-    "played": 21,
-    "wins": 14,
-    "losses": 7,
-    "draws": 0,
-    "pts": 56,
-    "percentage": 107.6,
-    "for": 2082,
-    "against": 1935
-  },
-  {
     "rank": 8,
     "name": "Collingwood",
-    "played": 21,
+    "played": 22,
     "wins": 12,
     "losses": 8,
-    "draws": 1,
-    "pts": 50,
-    "percentage": 106.4,
-    "for": 1833,
-    "against": 1723
+    "draws": 2,
+    "pts": 52,
+    "percentage": 106.1,
+    "for": 1925,
+    "against": 1815
   },
   {
     "rank": 9,
@@ -170,14 +170,14 @@
   {
     "rank": 15,
     "name": "Port Adelaide",
-    "played": 21,
+    "played": 22,
     "wins": 6,
-    "losses": 15,
+    "losses": 16,
     "draws": 0,
     "pts": 24,
-    "percentage": 90.2,
-    "for": 1643,
-    "against": 1821
+    "percentage": 87.0,
+    "for": 1699,
+    "against": 1953
   },
   {
     "rank": 16,
