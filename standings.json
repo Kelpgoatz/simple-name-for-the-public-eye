@@ -122,14 +122,14 @@
   {
     "rank": 11,
     "name": "St Kilda",
-    "played": 21,
-    "wins": 9,
+    "played": 22,
+    "wins": 10,
     "losses": 12,
     "draws": 0,
-    "pts": 36,
-    "percentage": 101.6,
-    "for": 1856,
-    "against": 1826
+    "pts": 40,
+    "percentage": 104.2,
+    "for": 1950,
+    "against": 1871
   },
   {
     "rank": 12,
@@ -194,14 +194,14 @@
   {
     "rank": 17,
     "name": "Richmond",
-    "played": 21,
+    "played": 22,
     "wins": 3,
-    "losses": 18,
+    "losses": 19,
     "draws": 0,
     "pts": 12,
-    "percentage": 63.5,
-    "for": 1362,
-    "against": 2146
+    "percentage": 62.8,
+    "for": 1407,
+    "against": 2240
   },
   {
     "rank": 18,
