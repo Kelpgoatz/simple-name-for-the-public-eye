@@ -2266,10 +2266,10 @@
         "round": 23,
         "homeTeam": "Greater Western Sydney",
         "awayTeam": "West Coast",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 111,
+        "awayScore": 57,
         "venue": "ENGIE Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8233,
         "startTime": "2026-08-16T03:40:00.000+0000"
       },
@@ -2277,10 +2277,10 @@
         "round": 23,
         "homeTeam": "Western Bulldogs",
         "awayTeam": "Carlton",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 82,
+        "awayScore": 82,
         "venue": "Marvel Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 8232,
         "startTime": "2026-08-16T05:15:00.000+0000"
       },
@@ -2291,7 +2291,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8226,
         "startTime": "2026-08-16T06:40:00.000+0000"
       }
