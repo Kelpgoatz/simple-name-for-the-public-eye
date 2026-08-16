@@ -98,26 +98,26 @@
   {
     "rank": 9,
     "name": "Western Bulldogs",
-    "played": 21,
+    "played": 22,
     "wins": 12,
     "losses": 9,
-    "draws": 0,
-    "pts": 48,
-    "percentage": 93.9,
-    "for": 1711,
-    "against": 1823
+    "draws": 1,
+    "pts": 50,
+    "percentage": 94.1,
+    "for": 1793,
+    "against": 1905
   },
   {
     "rank": 10,
     "name": "Carlton",
-    "played": 21,
+    "played": 22,
     "wins": 11,
     "losses": 10,
-    "draws": 0,
-    "pts": 44,
+    "draws": 1,
+    "pts": 46,
     "percentage": 99.6,
-    "for": 1806,
-    "against": 1814
+    "for": 1888,
+    "against": 1896
   },
   {
     "rank": 11,
