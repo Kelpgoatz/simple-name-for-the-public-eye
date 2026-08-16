@@ -134,14 +134,14 @@
   {
     "rank": 12,
     "name": "GWS GIANTS",
-    "played": 21,
-    "wins": 9,
+    "played": 22,
+    "wins": 10,
     "losses": 12,
     "draws": 0,
-    "pts": 36,
-    "percentage": 98.9,
-    "for": 1861,
-    "against": 1881
+    "pts": 40,
+    "percentage": 101.8,
+    "for": 1972,
+    "against": 1938
   },
   {
     "rank": 13,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 21,
+    "played": 22,
     "wins": 4,
-    "losses": 17,
+    "losses": 18,
     "draws": 0,
     "pts": 16,
-    "percentage": 71.5,
-    "for": 1513,
-    "against": 2115
+    "percentage": 70.5,
+    "for": 1570,
+    "against": 2226
   },
   {
     "rank": 17,
