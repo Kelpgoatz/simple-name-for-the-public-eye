@@ -2269,7 +2269,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "ENGIE Stadium",
-        "status": "LIVE",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8233,
         "startTime": "2026-08-16T03:40:00.000+0000"
       },
@@ -2280,7 +2280,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "CONFIRMED_TEAMS",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8232,
         "startTime": "2026-08-16T05:15:00.000+0000"
       },
