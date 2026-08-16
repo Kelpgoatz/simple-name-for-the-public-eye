@@ -2288,10 +2288,10 @@
         "round": 23,
         "homeTeam": "Essendon",
         "awayTeam": "Sydney",
-        "homeScore": 76,
-        "awayScore": 112,
+        "homeScore": null,
+        "awayScore": null,
         "venue": "MCG",
-        "status": "CONCLUDED",
+        "status": "LIVE",
         "matchId": 8226,
         "startTime": "2026-08-16T06:40:00.000+0000"
       }
