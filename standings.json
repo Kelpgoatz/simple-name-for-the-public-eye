@@ -14,14 +14,14 @@
   {
     "rank": 2,
     "name": "Sydney Swans",
-    "played": 21,
-    "wins": 16,
+    "played": 22,
+    "wins": 17,
     "losses": 5,
     "draws": 0,
-    "pts": 64,
-    "percentage": 134.0,
-    "for": 2308,
-    "against": 1723
+    "pts": 68,
+    "percentage": 134.5,
+    "for": 2420,
+    "against": 1799
   },
   {
     "rank": 3,
@@ -206,13 +206,13 @@
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 21,
+    "played": 22,
     "wins": 2,
-    "losses": 19,
+    "losses": 20,
     "draws": 0,
     "pts": 8,
-    "percentage": 63.2,
-    "for": 1430,
-    "against": 2261
+    "percentage": 63.5,
+    "for": 1506,
+    "against": 2373
   }
 ]
