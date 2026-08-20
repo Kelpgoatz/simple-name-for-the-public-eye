@@ -2307,7 +2307,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8242,
         "startTime": "2026-08-20T09:30:00.000+0000"
       },
@@ -2329,7 +2329,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8240,
         "startTime": "2026-08-22T03:15:00.000+0000"
       },
@@ -2340,7 +2340,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8236,
         "startTime": "2026-08-22T06:15:00.000+0000"
       },
@@ -2351,7 +2351,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "GMHBA Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8246,
         "startTime": "2026-08-22T09:45:00.000+0000"
       },
@@ -2362,7 +2362,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8243,
         "startTime": "2026-08-22T10:10:00.000+0000"
       },
@@ -2373,7 +2373,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Marvel Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8235,
         "startTime": "2026-08-23T02:20:00.000+0000"
       },
@@ -2384,7 +2384,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8245,
         "startTime": "2026-08-23T05:20:00.000+0000"
       },
@@ -2395,7 +2395,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "SCHEDULED",
         "matchId": 8241,
         "startTime": "2026-08-23T09:20:00.000+0000"
       }
