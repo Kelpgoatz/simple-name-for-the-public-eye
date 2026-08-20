@@ -2304,10 +2304,10 @@
         "round": 24,
         "homeTeam": "St Kilda",
         "awayTeam": "Gold Coast",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 80,
+        "awayScore": 103,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8242,
         "startTime": "2026-08-20T09:30:00.000+0000"
       },
