@@ -122,14 +122,14 @@
   {
     "rank": 11,
     "name": "St Kilda",
-    "played": 23,
+    "played": 22,
     "wins": 10,
-    "losses": 13,
+    "losses": 12,
     "draws": 0,
     "pts": 40,
-    "percentage": 102.8,
-    "for": 2030,
-    "against": 1974
+    "percentage": 104.2,
+    "for": 1950,
+    "against": 1871
   },
   {
     "rank": 12,
@@ -145,18 +145,6 @@
   },
   {
     "rank": 13,
-    "name": "Gold Coast SUNS",
-    "played": 23,
-    "wins": 9,
-    "losses": 14,
-    "draws": 0,
-    "pts": 36,
-    "percentage": 94.5,
-    "for": 2011,
-    "against": 2128
-  },
-  {
-    "rank": 14,
     "name": "North Melbourne",
     "played": 22,
     "wins": 9,
@@ -166,6 +154,18 @@
     "percentage": 90.7,
     "for": 1862,
     "against": 2052
+  },
+  {
+    "rank": 14,
+    "name": "Gold Coast SUNS",
+    "played": 22,
+    "wins": 8,
+    "losses": 14,
+    "draws": 0,
+    "pts": 32,
+    "percentage": 93.2,
+    "for": 1908,
+    "against": 2048
   },
   {
     "rank": 15,
