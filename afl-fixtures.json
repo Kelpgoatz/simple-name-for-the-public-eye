@@ -2315,10 +2315,10 @@
         "round": 24,
         "homeTeam": "Collingwood",
         "awayTeam": "Brisbane Lions",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 96,
+        "awayScore": 159,
         "venue": "MCG",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8239,
         "startTime": "2026-08-21T09:40:00.000+0000"
       },
