@@ -2362,7 +2362,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "LIVE",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8243,
         "startTime": "2026-08-22T10:10:00.000+0000"
       },
