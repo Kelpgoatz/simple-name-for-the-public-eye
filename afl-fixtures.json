@@ -2329,7 +2329,7 @@
         "homeScore": 119,
         "awayScore": 82,
         "venue": "Marvel Stadium",
-        "status": "POSTGAME",
+        "status": "CONCLUDED",
         "matchId": 8240,
         "startTime": "2026-08-22T03:15:00.000+0000"
       },
@@ -2340,7 +2340,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "CONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8236,
         "startTime": "2026-08-22T06:15:00.000+0000"
       },
