@@ -2326,10 +2326,10 @@
         "round": 24,
         "homeTeam": "Carlton",
         "awayTeam": "Fremantle",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 119,
+        "awayScore": 82,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "POSTGAME",
         "matchId": 8240,
         "startTime": "2026-08-22T03:15:00.000+0000"
       },
@@ -2340,7 +2340,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8236,
         "startTime": "2026-08-22T06:15:00.000+0000"
       },
