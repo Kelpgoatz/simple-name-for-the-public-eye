@@ -2337,10 +2337,10 @@
         "round": 24,
         "homeTeam": "Melbourne",
         "awayTeam": "Western Bulldogs",
-        "homeScore": 87,
-        "awayScore": 108,
+        "homeScore": null,
+        "awayScore": null,
         "venue": "MCG",
-        "status": "CONCLUDED",
+        "status": "LIVE",
         "matchId": 8236,
         "startTime": "2026-08-22T06:15:00.000+0000"
       },
@@ -2351,7 +2351,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "GMHBA Stadium",
-        "status": "LIVE",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8246,
         "startTime": "2026-08-22T09:45:00.000+0000"
       },
@@ -2362,7 +2362,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "LIVE",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 8243,
         "startTime": "2026-08-22T10:10:00.000+0000"
       },
