@@ -2392,10 +2392,10 @@
         "round": 24,
         "homeTeam": "West Coast",
         "awayTeam": "Hawthorn",
-        "homeScore": 45,
-        "awayScore": 107,
+        "homeScore": null,
+        "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "CONCLUDED",
+        "status": "LIVE",
         "matchId": 8241,
         "startTime": "2026-08-23T09:20:00.000+0000"
       }
@@ -2406,25 +2406,25 @@
     "matches": [
       {
         "round": 25,
-        "homeTeam": "Western Bulldogs",
-        "awayTeam": "Collingwood",
+        "homeTeam": "7th",
+        "awayTeam": "10th",
         "homeScore": null,
         "awayScore": null,
-        "venue": "MCG",
-        "status": "SCHEDULED",
-        "matchId": 9020,
-        "startTime": "2026-08-28T09:40:00.000+0000"
+        "venue": "To Be Confirmed",
+        "status": "PLACEHOLDER",
+        "matchId": 9021,
+        "startTime": "2026-08-24T02:00:00.000+0000"
       },
       {
         "round": 25,
-        "homeTeam": "Melbourne",
-        "awayTeam": "Carlton",
+        "homeTeam": "8th",
+        "awayTeam": "9th",
         "homeScore": null,
         "awayScore": null,
-        "venue": "MCG",
-        "status": "SCHEDULED",
-        "matchId": 9021,
-        "startTime": "2026-08-29T09:35:00.000+0000"
+        "venue": "To Be Confirmed",
+        "status": "PLACEHOLDER",
+        "matchId": 9020,
+        "startTime": "2026-08-24T02:00:00.000+0000"
       }
     ]
   },
@@ -2433,8 +2433,8 @@
     "matches": [
       {
         "round": 26,
-        "homeTeam": "Fremantle",
-        "awayTeam": "Hawthorn",
+        "homeTeam": "1st",
+        "awayTeam": "4th",
         "homeScore": null,
         "awayScore": null,
         "venue": "To Be Confirmed",
@@ -2444,8 +2444,8 @@
       },
       {
         "round": 26,
-        "homeTeam": "Sydney",
-        "awayTeam": "Brisbane Lions",
+        "homeTeam": "2nd",
+        "awayTeam": "3rd",
         "homeScore": null,
         "awayScore": null,
         "venue": "To Be Confirmed",
@@ -2455,7 +2455,7 @@
       },
       {
         "round": 26,
-        "homeTeam": "Geelong",
+        "homeTeam": "5th",
         "awayTeam": "Lowest-ranked WF Winner",
         "homeScore": null,
         "awayScore": null,
@@ -2466,7 +2466,7 @@
       },
       {
         "round": 26,
-        "homeTeam": "Adelaide",
+        "homeTeam": "6th",
         "awayTeam": "Highest-ranked WF Winner",
         "homeScore": null,
         "awayScore": null,
