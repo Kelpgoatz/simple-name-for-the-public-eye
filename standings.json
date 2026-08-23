@@ -14,14 +14,14 @@
   {
     "rank": 2,
     "name": "Sydney Swans",
-    "played": 23,
-    "wins": 18,
+    "played": 22,
+    "wins": 17,
     "losses": 5,
     "draws": 0,
-    "pts": 72,
-    "percentage": 136.1,
-    "for": 2543,
-    "against": 1869
+    "pts": 68,
+    "percentage": 134.5,
+    "for": 2420,
+    "against": 1799
   },
   {
     "rank": 3,
@@ -158,14 +158,14 @@
   {
     "rank": 14,
     "name": "North Melbourne",
-    "played": 23,
+    "played": 22,
     "wins": 9,
-    "losses": 14,
+    "losses": 13,
     "draws": 0,
     "pts": 36,
-    "percentage": 88.8,
-    "for": 1932,
-    "against": 2175
+    "percentage": 90.7,
+    "for": 1862,
+    "against": 2052
   },
   {
     "rank": 15,
