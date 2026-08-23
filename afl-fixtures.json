@@ -2370,10 +2370,10 @@
         "round": 24,
         "homeTeam": "Essendon",
         "awayTeam": "Port Adelaide",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 95,
+        "awayScore": 105,
         "venue": "Marvel Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8235,
         "startTime": "2026-08-23T02:20:00.000+0000"
       },
@@ -2384,7 +2384,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 8245,
         "startTime": "2026-08-23T05:20:00.000+0000"
       },
