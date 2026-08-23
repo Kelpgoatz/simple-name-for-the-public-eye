@@ -37,18 +37,6 @@
   },
   {
     "rank": 4,
-    "name": "Hawthorn",
-    "played": 23,
-    "wins": 15,
-    "losses": 6,
-    "draws": 2,
-    "pts": 64,
-    "percentage": 120.1,
-    "for": 2260,
-    "against": 1881
-  },
-  {
-    "rank": 5,
     "name": "Geelong Cats",
     "played": 23,
     "wins": 15,
@@ -60,7 +48,7 @@
     "against": 1925
   },
   {
-    "rank": 6,
+    "rank": 5,
     "name": "Adelaide Crows",
     "played": 23,
     "wins": 15,
@@ -70,6 +58,18 @@
     "percentage": 117.3,
     "for": 2169,
     "against": 1849
+  },
+  {
+    "rank": 6,
+    "name": "Hawthorn",
+    "played": 22,
+    "wins": 14,
+    "losses": 6,
+    "draws": 2,
+    "pts": 60,
+    "percentage": 117.3,
+    "for": 2153,
+    "against": 1836
   },
   {
     "rank": 7,
@@ -182,14 +182,14 @@
   {
     "rank": 16,
     "name": "West Coast Eagles",
-    "played": 23,
+    "played": 22,
     "wins": 4,
-    "losses": 19,
+    "losses": 18,
     "draws": 0,
     "pts": 16,
-    "percentage": 69.2,
-    "for": 1615,
-    "against": 2333
+    "percentage": 70.5,
+    "for": 1570,
+    "against": 2226
   },
   {
     "rank": 17,
