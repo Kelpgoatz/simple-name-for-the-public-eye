@@ -2381,10 +2381,10 @@
         "round": 24,
         "homeTeam": "Sydney",
         "awayTeam": "North Melbourne",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 123,
+        "awayScore": 70,
         "venue": "SCG",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 8245,
         "startTime": "2026-08-23T05:20:00.000+0000"
       },
@@ -2395,7 +2395,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 8241,
         "startTime": "2026-08-23T09:20:00.000+0000"
       }
