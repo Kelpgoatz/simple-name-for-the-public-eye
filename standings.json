@@ -170,14 +170,14 @@
   {
     "rank": 15,
     "name": "Port Adelaide",
-    "played": 23,
-    "wins": 7,
+    "played": 22,
+    "wins": 6,
     "losses": 16,
     "draws": 0,
-    "pts": 28,
-    "percentage": 88.1,
-    "for": 1804,
-    "against": 2048
+    "pts": 24,
+    "percentage": 87.0,
+    "for": 1699,
+    "against": 1953
   },
   {
     "rank": 16,
@@ -206,13 +206,13 @@
   {
     "rank": 18,
     "name": "Essendon",
-    "played": 23,
+    "played": 22,
     "wins": 2,
-    "losses": 21,
+    "losses": 20,
     "draws": 0,
     "pts": 8,
-    "percentage": 64.6,
-    "for": 1601,
-    "against": 2478
+    "percentage": 63.5,
+    "for": 1506,
+    "against": 2373
   }
 ]
