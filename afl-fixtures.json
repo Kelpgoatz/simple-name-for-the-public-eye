@@ -2411,7 +2411,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9020,
         "startTime": "2026-08-28T09:40:00.000+0000"
       },
@@ -2422,7 +2422,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9021,
         "startTime": "2026-08-29T09:35:00.000+0000"
       }
