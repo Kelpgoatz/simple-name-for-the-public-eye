@@ -2408,10 +2408,10 @@
         "round": 25,
         "homeTeam": "Western Bulldogs",
         "awayTeam": "Collingwood",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 96,
+        "awayScore": 93,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 9020,
         "startTime": "2026-08-28T09:40:00.000+0000"
       },
