@@ -1082,6 +1082,14 @@
                 return Number.isNaN(date.getTime()) ? null : date;
             };
 
+            const formatWeekOf = (date) => {
+                const monday = new Date(date);
+                monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));
+                const weekday = monday.toLocaleDateString("en-AU", { weekday: "long" });
+                const datePart = monday.toLocaleDateString("en-AU", { day: "numeric", month: "long" });
+                return `Week of ${weekday} ${datePart}`;
+            };
+
             const resolveTeam = (name) => {
                 if (!name) return tbdTeam;
                 if (teams[name]) {
@@ -1145,7 +1153,7 @@
                 if (fixturesNote) {
                     fixturesNote.hidden = !isFinalsRound;
                     if (isFinalsRound) {
-                        fixturesNote.textContent = "Finals teams and dates are not confirmed — teams shown reflect the current ladder until the finals begin.";
+                        fixturesNote.textContent = "Finals teams may change as results are confirmed.";
                     }
                 }
                 fixturesList.replaceChildren();
@@ -1238,17 +1246,15 @@
                     const meta = document.createElement("div");
                     meta.className = "fixture__meta";
 
-                    if (startTime) {
-                        if (isFinalsRound) {
-                            if (currentRound === 29) {
-                                const dayPart = startTime.toLocaleDateString(undefined, { weekday: "long" });
-                                meta.appendChild(addText("fixture__meta-item", dayPart, meta));
-                            }
-                        } else {
-                            const datePart = startTime.toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short" });
-                            const timePart = startTime.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
-                            meta.appendChild(addText("fixture__meta-item", `${datePart} · ${timePart}`, meta));
-                        }
+                    const isUnassignedFinal = isFinalsRound && (status === "PLACEHOLDER" || !startTime);
+                    if (isUnassignedFinal && startTime) {
+                        meta.appendChild(addText("fixture__meta-item", formatWeekOf(startTime), meta));
+                    } else if (startTime) {
+                        const datePart = startTime.toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short" });
+                        const timePart = startTime.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+                        meta.appendChild(addText("fixture__meta-item", `${datePart} · ${timePart}`, meta));
+                    } else if (isUnassignedFinal) {
+                        meta.appendChild(addText("fixture__meta-item", "Week to be confirmed", meta));
                     }
                     if (match.venue && match.venue !== "To Be Confirmed") {
                         meta.appendChild(addText("fixture__meta-item", match.venue, meta));
