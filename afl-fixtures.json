@@ -2419,10 +2419,10 @@
         "round": 25,
         "homeTeam": "Melbourne",
         "awayTeam": "Carlton",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 55,
+        "awayScore": 74,
         "venue": "MCG",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 9021,
         "startTime": "2026-08-29T09:35:00.000+0000"
       }
@@ -2445,7 +2445,7 @@
       {
         "round": 26,
         "homeTeam": "Geelong",
-        "awayTeam": "Lowest-ranked WF Winner",
+        "awayTeam": "Carlton",
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
@@ -2467,7 +2467,7 @@
       {
         "round": 26,
         "homeTeam": "Adelaide",
-        "awayTeam": "Highest-ranked WF Winner",
+        "awayTeam": "Western Bulldogs",
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
