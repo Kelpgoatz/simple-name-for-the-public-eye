@@ -2438,7 +2438,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9024,
         "startTime": "2026-09-03T10:10:00.000+0000"
       },
