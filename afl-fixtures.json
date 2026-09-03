@@ -2438,7 +2438,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Optus Stadium",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONFIRMED_TEAMS",
         "matchId": 9024,
         "startTime": "2026-09-03T10:10:00.000+0000"
       },
@@ -2449,7 +2449,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9022,
         "startTime": "2026-09-04T09:40:00.000+0000"
       },
@@ -2460,7 +2460,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9029,
         "startTime": "2026-09-05T05:15:00.000+0000"
       },
@@ -2471,7 +2471,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "Adelaide Oval",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9025,
         "startTime": "2026-09-05T09:35:00.000+0000"
       }
