@@ -2460,7 +2460,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "LIVE",
         "matchId": 9029,
         "startTime": "2026-09-05T05:15:00.000+0000"
       },
@@ -2483,7 +2483,7 @@
       {
         "round": 27,
         "homeTeam": "Fremantle",
-        "awayTeam": "Winner of EF1",
+        "awayTeam": "Geelong",
         "homeScore": null,
         "awayScore": null,
         "venue": "To Be Confirmed",
