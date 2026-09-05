@@ -2457,10 +2457,10 @@
         "round": 26,
         "homeTeam": "Sydney",
         "awayTeam": "Brisbane Lions",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 141,
+        "awayScore": 88,
         "venue": "SCG",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 9029,
         "startTime": "2026-09-05T05:15:00.000+0000"
       },
@@ -2468,10 +2468,10 @@
         "round": 26,
         "homeTeam": "Adelaide",
         "awayTeam": "Western Bulldogs",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 90,
+        "awayScore": 68,
         "venue": "Adelaide Oval",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 9025,
         "startTime": "2026-09-05T09:35:00.000+0000"
       }
@@ -2486,21 +2486,21 @@
         "awayTeam": "Geelong",
         "homeScore": null,
         "awayScore": null,
-        "venue": "To Be Confirmed",
-        "status": "PLACEHOLDER",
+        "venue": "Optus Stadium",
+        "status": "SCHEDULED",
         "matchId": 9023,
-        "startTime": "2026-09-07T02:00:00.000+0000"
+        "startTime": "2026-09-11T10:10:00.000+0000"
       },
       {
         "round": 27,
-        "homeTeam": "Loser of QF2",
-        "awayTeam": "Winner of EF2",
+        "homeTeam": "Brisbane Lions",
+        "awayTeam": "Adelaide",
         "homeScore": null,
         "awayScore": null,
-        "venue": "To Be Confirmed",
-        "status": "PLACEHOLDER",
+        "venue": "Gabba",
+        "status": "SCHEDULED",
         "matchId": 9030,
-        "startTime": "2026-09-07T02:00:00.000+0000"
+        "startTime": "2026-09-12T09:35:00.000+0000"
       }
     ]
   },
@@ -2520,7 +2520,7 @@
       },
       {
         "round": 28,
-        "homeTeam": "Winner of QF2",
+        "homeTeam": "Sydney",
         "awayTeam": "Winner of SF1",
         "homeScore": null,
         "awayScore": null,
