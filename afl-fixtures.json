@@ -2484,10 +2484,10 @@
         "round": 27,
         "homeTeam": "Fremantle",
         "awayTeam": "Geelong",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 120,
+        "awayScore": 106,
         "venue": "Optus Stadium",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 9023,
         "startTime": "2026-09-11T10:10:00.000+0000"
       },
@@ -2521,7 +2521,7 @@
       {
         "round": 28,
         "homeTeam": "Sydney",
-        "awayTeam": "Winner of SF1",
+        "awayTeam": "Fremantle",
         "homeScore": null,
         "awayScore": null,
         "venue": "To Be Confirmed",
