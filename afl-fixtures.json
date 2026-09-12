@@ -2495,10 +2495,10 @@
         "round": 27,
         "homeTeam": "Brisbane Lions",
         "awayTeam": "Adelaide",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 144,
+        "awayScore": 91,
         "venue": "Gabba",
-        "status": "LIVE",
+        "status": "CONCLUDED",
         "matchId": 9030,
         "startTime": "2026-09-12T09:35:00.000+0000"
       }
@@ -2509,25 +2509,25 @@
     "matches": [
       {
         "round": 28,
-        "homeTeam": "Hawthorn",
-        "awayTeam": "Winner of SF2",
-        "homeScore": null,
-        "awayScore": null,
-        "venue": "To Be Confirmed",
-        "status": "PLACEHOLDER",
-        "matchId": 9027,
-        "startTime": "2026-09-14T02:00:00.000+0000"
-      },
-      {
-        "round": 28,
         "homeTeam": "Sydney",
         "awayTeam": "Fremantle",
         "homeScore": null,
         "awayScore": null,
-        "venue": "To Be Confirmed",
-        "status": "PLACEHOLDER",
+        "venue": "SCG",
+        "status": "SCHEDULED",
         "matchId": 9026,
-        "startTime": "2026-09-14T02:00:00.000+0000"
+        "startTime": "2026-09-18T09:40:00.000+0000"
+      },
+      {
+        "round": 28,
+        "homeTeam": "Hawthorn",
+        "awayTeam": "Brisbane Lions",
+        "homeScore": null,
+        "awayScore": null,
+        "venue": "MCG",
+        "status": "SCHEDULED",
+        "matchId": 9027,
+        "startTime": "2026-09-19T07:15:00.000+0000"
       }
     ]
   },
