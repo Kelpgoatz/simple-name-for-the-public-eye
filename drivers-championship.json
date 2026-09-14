@@ -11,9 +11,9 @@
       "classificationId": 3430,
       "driverId": "antonelli",
       "teamId": "mercedes",
-      "points": 267,
+      "points": 292,
       "position": 1,
-      "wins": 7,
+      "wins": 8,
       "driver": {
         "name": "Andrea",
         "surname": "Kimi Antonelli",
@@ -37,7 +37,7 @@
       "classificationId": 3426,
       "driverId": "russell",
       "teamId": "mercedes",
-      "points": 201,
+      "points": 211,
       "position": 2,
       "wins": 2,
       "driver": {
@@ -89,7 +89,7 @@
       "classificationId": 3422,
       "driverId": "norris",
       "teamId": "mclaren",
-      "points": 171,
+      "points": 186,
       "position": 4,
       "wins": 2,
       "driver": {
@@ -115,7 +115,7 @@
       "classificationId": 3431,
       "driverId": "leclerc",
       "teamId": "ferrari",
-      "points": 155,
+      "points": 167,
       "position": 5,
       "wins": 1,
       "driver": {
@@ -141,7 +141,7 @@
       "classificationId": 3414,
       "driverId": "max_verstappen",
       "teamId": "red_bull",
-      "points": 127,
+      "points": 145,
       "position": 6,
       "wins": 0,
       "driver": {
@@ -167,7 +167,7 @@
       "classificationId": 3421,
       "driverId": "piastri",
       "teamId": "mclaren",
-      "points": 116,
+      "points": 120,
       "position": 7,
       "wins": 0,
       "driver": {
@@ -219,7 +219,7 @@
       "classificationId": 3416,
       "driverId": "lawson",
       "teamId": "rb",
-      "points": 51,
+      "points": 59,
       "position": 9,
       "wins": 0,
       "driver": {
@@ -271,7 +271,7 @@
       "classificationId": 3425,
       "driverId": "lindblad",
       "teamId": "rb",
-      "points": 29,
+      "points": 31,
       "position": 11,
       "wins": 0,
       "driver": {
@@ -297,7 +297,7 @@
       "classificationId": 3433,
       "driverId": "colapinto",
       "teamId": "alpine",
-      "points": 21,
+      "points": 27,
       "position": 12,
       "wins": 0,
       "driver": {
@@ -375,7 +375,7 @@
       "classificationId": 3427,
       "driverId": "hulkenberg",
       "teamId": "audi",
-      "points": 6,
+      "points": 7,
       "position": 15,
       "wins": 0,
       "driver": {
