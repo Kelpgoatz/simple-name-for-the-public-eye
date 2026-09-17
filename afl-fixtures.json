@@ -2027,7 +2027,7 @@
         "awayTeam": "North Melbourne",
         "homeScore": 99,
         "awayScore": 83,
-        "venue": "University of Tasmania Stadium",
+        "venue": "UTAS Stadium",
         "status": "CONCLUDED",
         "matchId": 8212,
         "startTime": "2026-08-01T03:35:00.000+0000"
@@ -2514,7 +2514,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "SCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9026,
         "startTime": "2026-09-18T09:40:00.000+0000"
       },
@@ -2525,7 +2525,7 @@
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
-        "status": "SCHEDULED",
+        "status": "UNCONFIRMED_TEAMS",
         "matchId": 9027,
         "startTime": "2026-09-19T07:15:00.000+0000"
       }
