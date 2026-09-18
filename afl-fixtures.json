@@ -2511,10 +2511,10 @@
         "round": 28,
         "homeTeam": "Sydney",
         "awayTeam": "Fremantle",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 71,
+        "awayScore": 83,
         "venue": "SCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 9026,
         "startTime": "2026-09-18T09:40:00.000+0000"
       },
