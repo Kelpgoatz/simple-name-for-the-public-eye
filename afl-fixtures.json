@@ -2522,10 +2522,10 @@
         "round": 28,
         "homeTeam": "Hawthorn",
         "awayTeam": "Brisbane Lions",
-        "homeScore": null,
-        "awayScore": null,
+        "homeScore": 122,
+        "awayScore": 131,
         "venue": "MCG",
-        "status": "UNCONFIRMED_TEAMS",
+        "status": "CONCLUDED",
         "matchId": 9027,
         "startTime": "2026-09-19T07:15:00.000+0000"
       }
@@ -2536,8 +2536,8 @@
     "matches": [
       {
         "round": 29,
-        "homeTeam": "Winner of PF1",
-        "awayTeam": "Winner of PF2",
+        "homeTeam": "Fremantle",
+        "awayTeam": "Brisbane Lions",
         "homeScore": null,
         "awayScore": null,
         "venue": "MCG",
