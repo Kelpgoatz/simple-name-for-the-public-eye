@@ -10,9 +10,9 @@
     {
       "classificationId": 932,
       "teamId": "mercedes",
-      "points": 503,
+      "points": 538,
       "position": 1,
-      "wins": 10,
+      "wins": 11,
       "team": {
         "teamName": "Mercedes Formula 1 Team",
         "country": "Germany",
@@ -25,7 +25,7 @@
     {
       "classificationId": 933,
       "teamId": "ferrari",
-      "points": 358,
+      "points": 378,
       "position": 2,
       "wins": 2,
       "team": {
@@ -55,7 +55,7 @@
     {
       "classificationId": 934,
       "teamId": "red_bull",
-      "points": 230,
+      "points": 263,
       "position": 4,
       "wins": 0,
       "team": {
@@ -70,7 +70,7 @@
     {
       "classificationId": 939,
       "teamId": "rb",
-      "points": 77,
+      "points": 83,
       "position": 5,
       "wins": 0,
       "team": {
@@ -100,7 +100,7 @@
     {
       "classificationId": 935,
       "teamId": "haas",
-      "points": 21,
+      "points": 27,
       "position": 7,
       "wins": 0,
       "team": {
@@ -130,7 +130,7 @@
     {
       "classificationId": 936,
       "teamId": "williams",
-      "points": 11,
+      "points": 12,
       "position": 9,
       "wins": 0,
       "team": {
