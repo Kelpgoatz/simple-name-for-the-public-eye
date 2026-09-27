@@ -11,7 +11,7 @@
       "classificationId": 3430,
       "driverId": "antonelli",
       "teamId": "mercedes",
-      "points": 292,
+      "points": 302,
       "position": 1,
       "wins": 8,
       "driver": {
@@ -37,9 +37,9 @@
       "classificationId": 3426,
       "driverId": "russell",
       "teamId": "mercedes",
-      "points": 211,
+      "points": 236,
       "position": 2,
-      "wins": 2,
+      "wins": 3,
       "driver": {
         "name": "George",
         "surname": "Russell",
@@ -63,7 +63,7 @@
       "classificationId": 3424,
       "driverId": "hamilton",
       "teamId": "ferrari",
-      "points": 191,
+      "points": 199,
       "position": 3,
       "wins": 1,
       "driver": {
@@ -115,7 +115,7 @@
       "classificationId": 3431,
       "driverId": "leclerc",
       "teamId": "ferrari",
-      "points": 167,
+      "points": 179,
       "position": 5,
       "wins": 1,
       "driver": {
@@ -141,7 +141,7 @@
       "classificationId": 3414,
       "driverId": "max_verstappen",
       "teamId": "red_bull",
-      "points": 145,
+      "points": 163,
       "position": 6,
       "wins": 0,
       "driver": {
@@ -193,7 +193,7 @@
       "classificationId": 3419,
       "driverId": "hadjar",
       "teamId": "red_bull",
-      "points": 71,
+      "points": 86,
       "position": 8,
       "wins": 0,
       "driver": {
@@ -271,7 +271,7 @@
       "classificationId": 3425,
       "driverId": "lindblad",
       "teamId": "rb",
-      "points": 31,
+      "points": 37,
       "position": 11,
       "wins": 0,
       "driver": {
@@ -323,7 +323,7 @@
       "classificationId": 3428,
       "driverId": "bearman",
       "teamId": "haas",
-      "points": 18,
+      "points": 20,
       "position": 13,
       "wins": 0,
       "driver": {
@@ -398,11 +398,37 @@
       }
     },
     {
+      "classificationId": 3415,
+      "driverId": "ocon",
+      "teamId": "haas",
+      "points": 7,
+      "position": 16,
+      "wins": 0,
+      "driver": {
+        "name": "Esteban",
+        "surname": "Ocon",
+        "nationality": "France",
+        "birthday": "17/09/1996",
+        "number": 31,
+        "shortName": "OCO",
+        "url": "https://en.wikipedia.org/wiki/Esteban_Ocon"
+      },
+      "team": {
+        "teamId": "haas",
+        "teamName": "Haas F1 Team",
+        "country": "United States",
+        "firstAppareance": 2016,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Haas_F1_Team"
+      }
+    },
+    {
       "classificationId": 3429,
       "driverId": "sainz",
       "teamId": "williams",
-      "points": 6,
-      "position": 16,
+      "points": 7,
+      "position": 17,
       "wins": 0,
       "driver": {
         "name": "Carlos",
@@ -428,7 +454,7 @@
       "driverId": "albon",
       "teamId": "williams",
       "points": 5,
-      "position": 17,
+      "position": 18,
       "wins": 0,
       "driver": {
         "name": "Alex",
@@ -447,32 +473,6 @@
         "constructorsChampionships": 9,
         "driversChampionships": 7,
         "url": "https://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering"
-      }
-    },
-    {
-      "classificationId": 3415,
-      "driverId": "ocon",
-      "teamId": "haas",
-      "points": 3,
-      "position": 18,
-      "wins": 0,
-      "driver": {
-        "name": "Esteban",
-        "surname": "Ocon",
-        "nationality": "France",
-        "birthday": "17/09/1996",
-        "number": 31,
-        "shortName": "OCO",
-        "url": "https://en.wikipedia.org/wiki/Esteban_Ocon"
-      },
-      "team": {
-        "teamId": "haas",
-        "teamName": "Haas F1 Team",
-        "country": "United States",
-        "firstAppareance": 2016,
-        "constructorsChampionships": null,
-        "driversChampionships": null,
-        "url": "https://en.wikipedia.org/wiki/Haas_F1_Team"
       }
     },
     {
