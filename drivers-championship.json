@@ -11,7 +11,7 @@
       "classificationId": 3430,
       "driverId": "antonelli",
       "teamId": "mercedes",
-      "points": 320,
+      "points": 340,
       "position": 1,
       "wins": 8,
       "driver": {
@@ -37,7 +37,7 @@
       "classificationId": 3426,
       "driverId": "russell",
       "teamId": "mercedes",
-      "points": 236,
+      "points": 238,
       "position": 2,
       "wins": 3,
       "driver": {
@@ -63,7 +63,7 @@
       "classificationId": 3424,
       "driverId": "hamilton",
       "teamId": "ferrari",
-      "points": 214,
+      "points": 229,
       "position": 3,
       "wins": 1,
       "driver": {
@@ -86,11 +86,37 @@
       }
     },
     {
+      "classificationId": 3414,
+      "driverId": "max_verstappen",
+      "teamId": "red_bull",
+      "points": 221,
+      "position": 4,
+      "wins": 2,
+      "driver": {
+        "name": "Max",
+        "surname": "Verstappen",
+        "nationality": "Netherlands",
+        "birthday": "1997-09-30",
+        "number": 33,
+        "shortName": "VER",
+        "url": "https://en.wikipedia.org/wiki/Max_Verstappen"
+      },
+      "team": {
+        "teamId": "red_bull",
+        "teamName": "Red Bull Racing",
+        "country": "Austria",
+        "firstAppareance": 2005,
+        "constructorsChampionships": 6,
+        "driversChampionships": 8,
+        "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing"
+      }
+    },
+    {
       "classificationId": 3431,
       "driverId": "leclerc",
       "teamId": "ferrari",
-      "points": 191,
-      "position": 4,
+      "points": 215,
+      "position": 5,
       "wins": 1,
       "driver": {
         "name": "Charles",
@@ -115,8 +141,8 @@
       "classificationId": 3422,
       "driverId": "norris",
       "teamId": "mclaren",
-      "points": 188,
-      "position": 5,
+      "points": 201,
+      "position": 6,
       "wins": 2,
       "driver": {
         "name": "Lando",
@@ -138,36 +164,10 @@
       }
     },
     {
-      "classificationId": 3414,
-      "driverId": "max_verstappen",
-      "teamId": "red_bull",
-      "points": 188,
-      "position": 6,
-      "wins": 1,
-      "driver": {
-        "name": "Max",
-        "surname": "Verstappen",
-        "nationality": "Netherlands",
-        "birthday": "1997-09-30",
-        "number": 33,
-        "shortName": "VER",
-        "url": "https://en.wikipedia.org/wiki/Max_Verstappen"
-      },
-      "team": {
-        "teamId": "red_bull",
-        "teamName": "Red Bull Racing",
-        "country": "Austria",
-        "firstAppareance": 2005,
-        "constructorsChampionships": 6,
-        "driversChampionships": 8,
-        "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing"
-      }
-    },
-    {
       "classificationId": 3421,
       "driverId": "piastri",
       "teamId": "mclaren",
-      "points": 128,
+      "points": 138,
       "position": 7,
       "wins": 0,
       "driver": {
@@ -193,7 +193,7 @@
       "classificationId": 3419,
       "driverId": "hadjar",
       "teamId": "red_bull",
-      "points": 96,
+      "points": 97,
       "position": 8,
       "wins": 0,
       "driver": {
@@ -219,7 +219,7 @@
       "classificationId": 3416,
       "driverId": "lawson",
       "teamId": "rb",
-      "points": 65,
+      "points": 75,
       "position": 9,
       "wins": 0,
       "driver": {
@@ -323,7 +323,7 @@
       "classificationId": 3428,
       "driverId": "bearman",
       "teamId": "haas",
-      "points": 20,
+      "points": 23,
       "position": 13,
       "wins": 0,
       "driver": {
@@ -346,20 +346,20 @@
       }
     },
     {
-      "classificationId": 3432,
-      "driverId": "bortoleto",
+      "classificationId": 3427,
+      "driverId": "hulkenberg",
       "teamId": "audi",
-      "points": 10,
+      "points": 13,
       "position": 14,
       "wins": 0,
       "driver": {
-        "name": "Gabriel",
-        "surname": "Bortoleto",
-        "nationality": "Brazil",
-        "birthday": "2004-10-14",
-        "number": 5,
-        "shortName": "BOR",
-        "url": "https://en.wikipedia.org/wiki/Gabriel_Bortoleto"
+        "name": "Nico",
+        "surname": "Hulkenberg",
+        "nationality": "Germany",
+        "birthday": "19/08/1987",
+        "number": 27,
+        "shortName": "HUL",
+        "url": "https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
       },
       "team": {
         "teamId": "audi",
@@ -372,20 +372,20 @@
       }
     },
     {
-      "classificationId": 3427,
-      "driverId": "hulkenberg",
+      "classificationId": 3432,
+      "driverId": "bortoleto",
       "teamId": "audi",
-      "points": 7,
+      "points": 10,
       "position": 15,
       "wins": 0,
       "driver": {
-        "name": "Nico",
-        "surname": "Hulkenberg",
-        "nationality": "Germany",
-        "birthday": "19/08/1987",
-        "number": 27,
-        "shortName": "HUL",
-        "url": "https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
+        "name": "Gabriel",
+        "surname": "Bortoleto",
+        "nationality": "Brazil",
+        "birthday": "2004-10-14",
+        "number": 5,
+        "shortName": "BOR",
+        "url": "https://en.wikipedia.org/wiki/Gabriel_Bortoleto"
       },
       "team": {
         "teamId": "audi",
