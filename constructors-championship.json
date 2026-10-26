@@ -10,9 +10,9 @@
     {
       "classificationId": 932,
       "teamId": "mercedes",
-      "points": 578,
+      "points": 607,
       "position": 1,
-      "wins": 11,
+      "wins": 12,
       "team": {
         "teamName": "Mercedes Formula 1 Team",
         "country": "Germany",
@@ -25,7 +25,7 @@
     {
       "classificationId": 933,
       "teamId": "ferrari",
-      "points": 444,
+      "points": 474,
       "position": 2,
       "wins": 2,
       "team": {
@@ -38,25 +38,10 @@
       }
     },
     {
-      "classificationId": 931,
-      "teamId": "mclaren",
-      "points": 339,
-      "position": 3,
-      "wins": 2,
-      "team": {
-        "teamName": "McLaren Formula 1 Team",
-        "country": "Great Britain",
-        "firstAppareance": 1966,
-        "constructorsChampionships": 10,
-        "driversChampionships": 13,
-        "url": "https://en.wikipedia.org/wiki/McLaren"
-      }
-    },
-    {
       "classificationId": 934,
       "teamId": "red_bull",
-      "points": 332,
-      "position": 4,
+      "points": 355,
+      "position": 3,
       "wins": 2,
       "team": {
         "teamName": "Red Bull Racing",
@@ -68,9 +53,24 @@
       }
     },
     {
+      "classificationId": 931,
+      "teamId": "mclaren",
+      "points": 355,
+      "position": 4,
+      "wins": 2,
+      "team": {
+        "teamName": "McLaren Formula 1 Team",
+        "country": "Great Britain",
+        "firstAppareance": 1966,
+        "constructorsChampionships": 10,
+        "driversChampionships": 13,
+        "url": "https://en.wikipedia.org/wiki/McLaren"
+      }
+    },
+    {
       "classificationId": 939,
       "teamId": "rb",
-      "points": 100,
+      "points": 102,
       "position": 5,
       "wins": 0,
       "team": {
@@ -85,7 +85,7 @@
     {
       "classificationId": 937,
       "teamId": "alpine",
-      "points": 68,
+      "points": 69,
       "position": 6,
       "wins": 0,
       "team": {
