@@ -97,7 +97,7 @@
         "surname": "Verstappen",
         "nationality": "Netherlands",
         "birthday": "1997-09-30",
-        "number": 33,
+        "number": 3,
         "shortName": "VER",
         "url": "https://en.wikipedia.org/wiki/Max_Verstappen"
       },
@@ -149,7 +149,7 @@
         "surname": "Norris",
         "nationality": "Great Britain",
         "birthday": "13/11/1999",
-        "number": 4,
+        "number": 1,
         "shortName": "NOR",
         "url": "https://en.wikipedia.org/wiki/Lando_Norris"
       },
@@ -279,7 +279,7 @@
         "surname": "Lindblad",
         "nationality": "Great Britain",
         "birthday": "2007-08-07",
-        "number": 36,
+        "number": 41,
         "shortName": "LIN",
         "url": "https://en.wikipedia.org/wiki/Arvid_Lindblad"
       },
