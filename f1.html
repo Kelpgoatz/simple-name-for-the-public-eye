@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Drivers Championship</title>
+    <title>F1 Fixtures &amp; Championships</title>
+    <meta name="description" content="Formula 1 fixtures, circuit maps, full race results, fastest laps and World Drivers’ and Constructors’ Championship standings.">
     <style>
         :root {
             color-scheme: light;
@@ -176,7 +177,7 @@
         }
 
         :root[data-theme="dark"] .site-banner h1 img {
-            content: url("favicon-dark.png");
+            content: url("favicon-dark.svg");
         }
 
         .topbar {
@@ -326,6 +327,304 @@
                 inset 0 1px 0 var(--glow),
                 0 18px 36px rgba(23, 88, 111, 0.12);
             backdrop-filter: blur(26px);
+        }
+
+        .fixtures-card {
+            display: flex;
+            flex-direction: column;
+            padding: 22px;
+            border-radius: 28px;
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            border: 1px solid var(--line);
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 18px 36px rgba(23, 88, 111, 0.12);
+            backdrop-filter: blur(26px);
+        }
+
+        .fixtures-card__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .fixtures-card__head h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            letter-spacing: -0.03em;
+            color: var(--brand);
+        }
+
+        .round-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .round-selector__btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background:
+                linear-gradient(180deg, var(--surface-1), var(--surface-4)),
+                var(--surface-4);
+            color: var(--brand-soft);
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                inset 0 1px 0 var(--glow),
+                0 6px 12px rgba(30, 86, 109, 0.08);
+            backdrop-filter: blur(24px);
+            transition: transform 0.15s ease;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .round-selector__btn:hover { transform: translateY(-1px); }
+
+        .round-selector__display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            min-width: 76px;
+        }
+
+        .round-selector__label {
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            text-align: center;
+            line-height: 1.15;
+        }
+
+        .round-selector__value {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--brand);
+            letter-spacing: -0.04em;
+            line-height: 1;
+        }
+
+        .round-slider {
+            width: 100%;
+            margin: 4px 0 16px;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 6px;
+            border-radius: 999px;
+            background:
+                linear-gradient(90deg, var(--brand-soft) var(--fill, 0%), var(--surface-3) var(--fill, 0%));
+            outline: none;
+            cursor: pointer;
+        }
+
+        .round-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 999px;
+            background: var(--brand);
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 8px rgba(14, 68, 88, 0.3);
+            cursor: pointer;
+        }
+
+        .round-slider::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 999px;
+            background: var(--brand);
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 8px rgba(14, 68, 88, 0.3);
+            cursor: pointer;
+        }
+
+        .round-slider::-moz-range-track {
+            height: 6px;
+            border-radius: 999px;
+            background: var(--surface-3);
+        }
+
+        .fixtures-list {
+            display: grid;
+            gap: 10px;
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 6px;
+            scrollbar-gutter: stable;
+        }
+
+        .fixture {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 8px 14px;
+            align-items: center;
+            padding: 13px 14px;
+            border-radius: 18px;
+            background:
+                linear-gradient(135deg, color-mix(in srgb, var(--logo-from, #dff8ff) 24%, transparent), color-mix(in srgb, var(--logo-to, #ffffff) 14%, transparent)),
+                rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+            min-width: 0;
+        }
+
+        .fixture__team {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .fixture__team--away {
+            text-align: right;
+            justify-content: flex-end;
+        }
+
+        .fixture__logo {
+            width: 34px;
+            height: 34px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            text-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.42),
+                0 0 4px rgba(0, 0, 0, 0.22);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.4),
+                0 8px 14px rgba(14, 68, 88, 0.14);
+            flex-shrink: 0;
+            background:
+                radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.45), transparent 36%),
+                linear-gradient(
+                    135deg,
+                    var(--logo-from, #79d7ec) 0%,
+                    var(--logo-from, #79d7ec) 62%,
+                    var(--logo-mid, var(--logo-to, #0f5a6d)) 84%,
+                    var(--logo-to, #0f5a6d) 100%
+                );
+        }
+
+        .fixture__name {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--brand);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .fixture__score {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            color: var(--brand);
+            white-space: nowrap;
+        }
+
+        .fixture__vs {
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: var(--brand-soft);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .fixture__meta {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px 16px;
+            flex-wrap: wrap;
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .fixture__meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .fixture__status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.32);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 0.7rem;
+        }
+
+        .fixture__status--scheduled {
+            background: rgb(255, 255, 255);
+            border-color: rgba(13, 66, 83, 0.18);
+            color: var(--brand-soft);
+        }
+
+        .fixture__status--finished {
+            background: rgb(192, 232, 253);
+            border-color: rgba(13, 66, 83, 0.18);
+            color: var(--brand-soft);
+        }
+
+        :root[data-theme="dark"] .fixture__status--scheduled {
+            background: rgb(0, 0, 0);
+            border-color: rgba(255, 255, 255, 0.22);
+        }
+
+        :root[data-theme="dark"] .fixture__status--finished {
+            background: rgb(23, 64, 95);
+            border-color: rgba(255, 255, 255, 0.22);
+        }
+
+        .fixtures-empty {
+            text-align: center;
+            padding: 28px 14px;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
+        .fixtures-note {
+            margin: 14px 0 0;
+            padding: 9px 14px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.35);
+            border: 1px dashed rgba(255, 255, 255, 0.5);
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.45;
         }
 
         .ladder-card__head {
@@ -514,14 +813,19 @@
             .ladder-row__stats { display: none; }
         }
     </style>
-    <link rel="icon" href="favicon.png" id="favicon">
+    <link rel="stylesheet" href="f1.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
+    <link rel="stylesheet" href="editorial.css">
+    <script src="editorial.js" defer></script>
 </head>
 <body id="top">
     <main class="page">
         <div class="frame">
             <header class="masthead">
                 <div class="site-banner">
-                    <h1><img src="favicon.png" alt="" width="64" height="64"></h1>
+                    <div class="masthead-meta"><span class="edition-label">Formula 1</span><time data-edition-date></time></div>
+                    <h1><a class="site-wordmark" href="index.html" aria-label="cgrillo home">cgrillo</a></h1>
+                    <p class="masthead-caption">Sport &amp; perspective</p>
                 </div>
                 <div class="topbar">
                     <nav class="nav" aria-label="Primary">
@@ -537,29 +841,35 @@
 
             <section class="hero">
                 <div class="hero-grid">
-                    <div class="top-story">
-                        <span class="eyebrow">Formula 1</span>
-                        <h2>F1 Drivers Championship</h2>
-                        <p class="lead">
-                            Live drivers championship standings for the <span data-ladder-season>2026</span> season.
-                            Updated every hour via the F1 API.
-                        </p>
-                    </div>
+                    <section class="fixtures-card" aria-labelledby="f1-fixtures-title">
+                        <div class="fixtures-card__head">
+                            <h3 id="f1-fixtures-title">F1 Fixtures</h3>
+                            <div class="round-selector">
+                                <button class="round-selector__btn" type="button" data-round-prev disabled aria-label="Previous round">&#9664;</button>
+                                <div class="round-selector__display">
+                                    <span class="round-selector__label" data-round-label>Round</span>
+                                    <span class="round-selector__value" data-round-value>1</span>
+                                </div>
+                                <button class="round-selector__btn" type="button" data-round-next disabled aria-label="Next round">&#9654;</button>
+                            </div>
+                        </div>
+                        <input class="round-slider" type="range" min="0" max="0" step="1" value="0" disabled data-round-slider aria-label="Select round">
+                        <div class="fixtures-list" data-fixtures-list>
+                            <p class="fixtures-empty">Loading fixtures...</p>
+                        </div>
+                        <p class="fixtures-note" data-fixtures-note hidden></p>
+                    </section>
                     <aside class="ladder-card" aria-labelledby="f1-ladder-title">
                         <div class="ladder-card__head">
-                            <div class="tab-group" role="tablist">
-                                <button class="tab tab--active" role="tab" aria-selected="true" data-tab="drivers">WDC</button>
-                                <button class="tab" role="tab" aria-selected="false" data-tab="constructors">WCC</button>
+                            <div class="tab-group" role="tablist" aria-label="F1 championship">
+                                <button class="tab tab--active" type="button" id="tab-drivers" role="tab" aria-controls="championship-panel" aria-label="World Drivers’ Championship" aria-selected="true" data-tab="drivers">WDC</button>
+                                <button class="tab" type="button" id="tab-constructors" role="tab" aria-controls="championship-panel" aria-label="World Constructors’ Championship" aria-selected="false" tabindex="-1" data-tab="constructors">WCC</button>
                             </div>
                             <span data-ladder-season>2026</span>
                         </div>
-                        <div class="ladder-list" data-ladder-list>
-                            <div class="ladder-row" style="--logo-from:#00d2be;--logo-to:#000000;">
-                                <div class="ladder-row__pos">1</div>
-                                <div class="ladder-row__logo" aria-hidden="true">12</div>
-                                <div class="ladder-row__team">Andrea Kimi Antonelli</div>
-                                <div class="ladder-row__stats">179 pts · 5 wins</div>
-                            </div>
+                        <h2 id="f1-ladder-title" class="championship-title" data-ladder-title>World Drivers’ Championship</h2>
+                        <div class="ladder-list" id="championship-panel" role="tabpanel" aria-labelledby="tab-drivers" tabindex="0" data-ladder-list>
+                            <p class="fixtures-empty">Loading standings...</p>
                         </div>
                         <p class="ladder-note" data-ladder-note></p>
                     </aside>
@@ -567,243 +877,8 @@
             </section>
         </div>
     </main>
-    <script>
-        (() => {
-            const ladderList = document.querySelector("[data-ladder-list]");
-            const ladderNote = document.querySelector("[data-ladder-note]");
-            const seasonEl = document.querySelectorAll("[data-ladder-season]");
-            const tabs = document.querySelectorAll("[data-tab]");
-
-            if (!ladderList) return;
-
-            const teams = {
-                mercedes: { display: "Mercedes", abbr: "MER", colors: ["#00d2be", "#000000"] },
-                ferrari: { display: "Ferrari", abbr: "FER", colors: ["#dc0000", "#fff200"] },
-                red_bull: { display: "Red Bull Racing", abbr: "RBR", colors: ["#1e41a0", "#e31b23"] },
-                mclaren: { display: "McLaren", abbr: "MCL", colors: ["#ff8700", "#000000"] },
-                alpine: { display: "Alpine", abbr: "ALP", colors: ["#0090ff", "#000000"] },
-                rb: { display: "Racing Bulls", abbr: "RB", colors: ["#e31b23", "#1e41a0"] },
-                haas: { display: "Haas", abbr: "HAA", colors: ["#ffffff", "#e31b23"] },
-                audi: { display: "Audi", abbr: "AUD", colors: ["#dc0000", "#000000"] },
-                williams: { display: "Williams", abbr: "WIL", colors: ["#005aff", "#ffffff"] },
-                aston_martin: { display: "Aston Martin", abbr: "AST", colors: ["#006f62", "#000000"] },
-                cadillac: { display: "Cadillac", abbr: "CAD", colors: ["#111111", "#666666"] }
-            };
-
-            const fallbackDrivers = [
-                { position: 1, points: 179, wins: 5, driver: { name: "Andrea", surname: "Kimi Antonelli", number: 12 }, teamId: "mercedes" },
-                { position: 2, points: 154, wins: 2, driver: { name: "George", surname: "Russell", number: 63 }, teamId: "mercedes" },
-                { position: 3, points: 147, wins: 1, driver: { name: "Lewis", surname: "Hamilton", number: 44 }, teamId: "ferrari" },
-                { position: 4, points: 108, wins: 1, driver: { name: "Charles", surname: "Leclerc", number: 16 }, teamId: "ferrari" },
-                { position: 5, points: 97, wins: 0, driver: { name: "Lando", surname: "Norris", number: 4 }, teamId: "mclaren" },
-                { position: 6, points: 82, wins: 0, driver: { name: "Oscar", surname: "Piastri", number: 81 }, teamId: "mclaren" },
-                { position: 7, points: 76, wins: 0, driver: { name: "Max", surname: "Verstappen", number: 33 }, teamId: "red_bull" },
-                { position: 8, points: 52, wins: 0, driver: { name: "Isack", surname: "Hadjar", number: 6 }, teamId: "red_bull" },
-                { position: 9, points: 42, wins: 0, driver: { name: "Pierre", surname: "Gasly", number: 10 }, teamId: "alpine" },
-                { position: 10, points: 39, wins: 0, driver: { name: "Liam", surname: "Lawson", number: 30 }, teamId: "rb" },
-                { position: 11, points: 20, wins: 0, driver: { name: "Arvid", surname: "Lindblad", number: 36 }, teamId: "rb" },
-                { position: 12, points: 18, wins: 0, driver: { name: "Oliver", surname: "Bearman", number: 87 }, teamId: "haas" },
-                { position: 13, points: 18, wins: 0, driver: { name: "Franco", surname: "Colapinto", number: 43 }, teamId: "alpine" },
-                { position: 14, points: 6, wins: 0, driver: { name: "Gabriel", surname: "Bortoleto", number: 5 }, teamId: "audi" },
-                { position: 15, points: 6, wins: 0, driver: { name: "Carlos", surname: "Sainz", number: 55 }, teamId: "williams" },
-                { position: 16, points: 5, wins: 0, driver: { name: "Alex", surname: "Albon", number: 23 }, teamId: "williams" },
-                { position: 17, points: 3, wins: 0, driver: { name: "Esteban", surname: "Ocon", number: 31 }, teamId: "haas" },
-                { position: 18, points: 1, wins: 0, driver: { name: "Fernando", surname: "Alonso", number: 14 }, teamId: "aston_martin" },
-                { position: 19, points: 0, wins: 0, driver: { name: "Nico", surname: "Hulkenberg", number: 27 }, teamId: "audi" },
-                { position: 20, points: 0, wins: 0, driver: { name: "Valtteri", surname: "Bottas", number: 77 }, teamId: "cadillac" },
-                { position: 21, points: 0, wins: 0, driver: { name: "Sergio", surname: "Pérez", number: 11 }, teamId: "cadillac" },
-                { position: 22, points: 0, wins: 0, driver: { name: "Lance", surname: "Stroll", number: 18 }, teamId: "aston_martin" }
-            ];
-
-            const fallbackConstructors = [
-                { position: 1, teamId: "mercedes", points: 333, wins: 7 },
-                { position: 2, teamId: "ferrari", points: 255, wins: 2 },
-                { position: 3, teamId: "mclaren", points: 179, wins: 0 },
-                { position: 4, teamId: "red_bull", points: 128, wins: 0 },
-                { position: 5, teamId: "alpine", points: 60, wins: 0 },
-                { position: 6, teamId: "rb", points: 59, wins: 0 },
-                { position: 7, teamId: "haas", points: 21, wins: 0 },
-                { position: 8, teamId: "williams", points: 11, wins: 0 },
-                { position: 9, teamId: "audi", points: 6, wins: 0 },
-                { position: 10, teamId: "aston_martin", points: 1, wins: 0 },
-                { position: 11, teamId: "cadillac", points: 0, wins: 0 }
-            ];
-
-            let currentTab = "drivers";
-            let driversData = null;
-            let constructorsData = null;
-
-            const formatNumber = (value, fallback = 0) => {
-                const number = Number(value);
-                return Number.isFinite(number) ? number : fallback;
-            };
-
-            const addText = (className, text, parent) => {
-                const element = document.createElement("div");
-                element.className = className;
-                element.textContent = text;
-                parent.appendChild(element);
-                return element;
-            };
-
-            const applyColors = (row, colors) => {
-                row.style.setProperty("--logo-from", colors[0]);
-                row.style.setProperty("--logo-to", colors[colors.length - 1]);
-                if (colors.length > 2) {
-                    row.style.setProperty("--logo-mid", colors[1]);
-                } else {
-                    row.style.removeProperty("--logo-mid");
-                }
-            };
-
-            const renderDrivers = (data, sourceText) => {
-                const standings = data.drivers_championship || data;
-                const sorted = [...standings].sort((a, b) => formatNumber(a.position) - formatNumber(b.position));
-                ladderList.replaceChildren();
-
-                sorted.forEach((standing) => {
-                    const team = teams[standing.teamId] || { display: standing.teamId, abbr: "", colors: ["#0f5a6d", "#79d7ec"] };
-                    const driverName = `${standing.driver.name} ${standing.driver.surname}`;
-                    const driverNumber = String(standing.driver.number || "");
-
-                    const row = document.createElement("div");
-                    row.className = "ladder-row";
-                    applyColors(row, team.colors);
-
-                    addText("ladder-row__pos", String(formatNumber(standing.position)), row);
-                    const logo = addText("ladder-row__logo", driverNumber, row);
-                    logo.setAttribute("aria-hidden", "true");
-                    addText("ladder-row__team", driverName, row);
-                    addText("ladder-row__stats", `${formatNumber(standing.points)} pts · ${formatNumber(standing.wins)} wins`, row);
-
-                    ladderList.appendChild(row);
-                });
-
-                if (ladderNote) ladderNote.textContent = sourceText;
-            };
-
-            const renderConstructors = (data, sourceText) => {
-                const standings = data.constructors_championship || data;
-                const sorted = [...standings].sort((a, b) => formatNumber(a.position) - formatNumber(b.position));
-                ladderList.replaceChildren();
-
-                sorted.forEach((standing) => {
-                    const team = teams[standing.teamId] || { display: standing.teamId, abbr: "", colors: ["#0f5a6d", "#79d7ec"] };
-
-                    const row = document.createElement("div");
-                    row.className = "ladder-row";
-                    applyColors(row, team.colors);
-
-                    addText("ladder-row__pos", String(formatNumber(standing.position)), row);
-                    const logo = addText("ladder-row__logo", team.abbr, row);
-                    logo.setAttribute("aria-hidden", "true");
-                    addText("ladder-row__team", team.display, row);
-                    addText("ladder-row__stats", `${formatNumber(standing.points)} pts · ${formatNumber(standing.wins)} wins`, row);
-
-                    ladderList.appendChild(row);
-                });
-
-                if (ladderNote) ladderNote.textContent = sourceText;
-            };
-
-            const switchTab = (tab) => {
-                currentTab = tab;
-                tabs.forEach((t) => {
-                    const isActive = t.getAttribute("data-tab") === tab;
-                    t.classList.toggle("tab--active", isActive);
-                    t.setAttribute("aria-selected", String(isActive));
-                });
-
-                if (tab === "drivers") {
-                    if (driversData) {
-                        renderDrivers(driversData, "Standings updated every hour via F1 API.");
-                    } else {
-                        renderDrivers(fallbackDrivers, "Standings may not reflect most recent results.");
-                    }
-                } else {
-                    if (constructorsData) {
-                        renderConstructors(constructorsData, "Standings updated every hour via F1 API.");
-                    } else {
-                        renderConstructors(fallbackConstructors, "Standings may not reflect most recent results.");
-                    }
-                }
-            };
-
-            seasonEl.forEach((el) => { el.textContent = new Date().getFullYear(); });
-
-            tabs.forEach((tab) => {
-                tab.addEventListener("click", () => {
-                    switchTab(tab.getAttribute("data-tab"));
-                });
-            });
-
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get("tab") === "constructors") {
-                switchTab("constructors");
-            } else {
-                renderDrivers(fallbackDrivers, "Standings updated every hour via F1 API.");
-            }
-
-            fetch("drivers-championship.json")
-                .then((response) => {
-                    if (!response.ok) throw new Error("Failed to load");
-                    return response.json();
-                })
-                .then((data) => {
-                    if (!data.drivers_championship || !Array.isArray(data.drivers_championship)) throw new Error("Invalid");
-                    driversData = data;
-                    if (currentTab === "drivers") {
-                        renderDrivers(data, "Standings updated every hour via F1 API.");
-                    }
-                })
-                .catch(() => {});
-
-            fetch("constructors-championship.json")
-                .then((response) => {
-                    if (!response.ok) throw new Error("Failed to load");
-                    return response.json();
-                })
-                .then((data) => {
-                    if (!data.constructors_championship || !Array.isArray(data.constructors_championship)) throw new Error("Invalid");
-                    constructorsData = data;
-                    if (currentTab === "constructors") {
-                        renderConstructors(data, "Standings updated every hour via F1 API.");
-                    }
-                })
-                .catch(() => {});
-        })();
-
-        (() => {
-            const storageKey = "cgrillo-theme";
-            const root = document.documentElement;
-            const toggleButton = document.querySelector("[data-theme-toggle]");
-
-            const getStoredTheme = () => {
-                try { return localStorage.getItem(storageKey); }
-                catch { return null; }
-            };
-
-            const setTheme = (theme, persist = true) => {
-                root.dataset.theme = theme;
-                if (toggleButton) {
-                    toggleButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-                    toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
-                }
-                const favicon = document.getElementById("favicon");
-                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.png" : "favicon.png";
-                if (persist) {
-                    try { localStorage.setItem(storageKey, theme); }
-                    catch { }
-                }
-            };
-
-            const initialTheme = getStoredTheme() || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-            setTheme(initialTheme, false);
-
-            toggleButton?.addEventListener("click", () => {
-                setTheme(root.dataset.theme === "dark" ? "light" : "dark");
-            });
-        })();
-    </script>
+    <noscript><p class="page">Enable JavaScript to view F1 fixtures and championship standings.</p></noscript>
+    <script src="f1-session-utils.js" defer></script>
+    <script src="f1.js" defer></script>
 </body>
 </html>

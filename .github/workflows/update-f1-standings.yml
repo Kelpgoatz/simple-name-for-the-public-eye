@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
       - name: Fetch F1 drivers championship
-        run: |
-          year=$(date +%Y)
-          curl -s "https://f1api.dev/api/$year/drivers-championship" | \
-            jq '.' > drivers-championship.json
+        run: node scripts/update-f1-standings.mjs drivers
 
       - name: Commit and push if changed
         run: |
@@ -30,5 +30,6 @@ jobs:
           git add drivers-championship.json
           if ! git diff --quiet --cached; then
             git commit -m "Update F1 drivers championship"
+            git pull --rebase origin main
             git push
           fi

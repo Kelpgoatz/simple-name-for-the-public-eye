@@ -1,0 +1,271 @@
+{
+  "season": 2026,
+  "source": "https://www.formula1.com/en/results/2026/races",
+  "races": {
+    "australian_2026": {},
+    "austrian_2026": {},
+    "azerbaijan_2026": {
+      "bortoleto": [
+        {
+          "note": "10s time penalty — overtaking under yellow flags.",
+          "source": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result"
+        }
+      ]
+    },
+    "bahrain_2026": {},
+    "belgian_2026": {},
+    "british_2026": {
+      "antonelli": [
+        {
+          "note": "5s time penalty — exceeding track limits.",
+          "source": "https://www.formula1.com/en/results/2026/races/1289/great-britain/race-result"
+        }
+      ],
+      "sainz": [
+        {
+          "note": "Result penalty — overtaking the Safety Car.",
+          "source": "https://www.formula1.com/en/results/2026/races/1289/great-britain/race-result"
+        }
+      ]
+    },
+    "canadian_2026": {
+      "bortoleto": [
+        {
+          "note": "5s time penalty — a Virtual Safety Car (VSC) infringement.",
+          "source": "https://www.formula1.com/en/results/2026/races/1285/canada/race-result"
+        }
+      ]
+    },
+    "catalunya_2026": {
+      "colapinto": [
+        {
+          "note": "10s time penalty — yellow-flag infringement.",
+          "source": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-result"
+        }
+      ],
+      "antonelli": [
+        {
+          "note": "5s time penalty — leaving the track without a justifiable reason multiple times.",
+          "source": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-result"
+        }
+      ]
+    },
+    "chinese_2026": {},
+    "dutch_2026": {
+      "lawson": [
+        {
+          "note": "10s time penalty — yellow-flag infringement.",
+          "source": "https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result"
+        }
+      ],
+      "colapinto": [
+        {
+          "note": "10s time penalty — yellow-flag infringement.",
+          "source": "https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result"
+        }
+      ],
+      "sainz": [
+        {
+          "note": "10s time penalty — collision.",
+          "source": "https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result"
+        }
+      ]
+    },
+    "hungarian_2026": {
+      "bearman": [
+        {
+          "note": "5s time penalty — ignoring blue flags.",
+          "source": "https://www.formula1.com/en/results/2026/races/1291/hungary/race-result"
+        }
+      ],
+      "hamilton": [
+        {
+          "note": "5s time penalty — speeding in the pit lane.",
+          "source": "https://www.formula1.com/en/results/2026/races/1291/hungary/race-result"
+        }
+      ]
+    },
+    "italian_2026": {
+      "perez": [
+        {
+          "note": "5s time penalty — failing to follow Race Director's instructions.",
+          "source": "https://www.formula1.com/en/results/2026/races/1293/italy/race-result"
+        }
+      ]
+    },
+    "japanese_2026": {},
+    "mexican_2026": {
+      "piastri": [
+        {
+          "note": "10s time penalty applied after race — collision.",
+          "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+        }
+      ],
+      "colapinto": [
+        {
+          "note": "10s time penalty applied after race — yellow-flag infringement.",
+          "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+        }
+      ],
+      "gasly": [
+        {
+          "note": "Stop/go penalty applied after race — yellow-flag infringement.",
+          "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+        }
+      ]
+    },
+    "miami_2026": {
+      "leclerc": [
+        {
+          "note": "20s time penalty — leaving the track on multiple occasions without a justifiable reason.",
+          "source": "https://www.formula1.com/en/results/2026/races/1284/miami/race-result"
+        }
+      ],
+      "max_verstappen": [
+        {
+          "note": "5s time penalty — crossing the white line at the pit exit.",
+          "source": "https://www.formula1.com/en/results/2026/races/1284/miami/race-result"
+        }
+      ]
+    },
+    "monaco_2026": {
+      "colapinto": [
+        {
+          "note": "5s time penalty — speeding in the pit lane.",
+          "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result"
+        }
+      ],
+      "gasly": [
+        {
+          "note": "5s time penalty — speeding in the pit lane.",
+          "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result"
+        }
+      ],
+      "stroll": [
+        {
+          "note": "5s time penalty — exceeding track limits.",
+          "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result"
+        }
+      ],
+      "hulkenberg": [
+        {
+          "note": "10s time penalty — collision.",
+          "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result"
+        }
+      ],
+      "perez": [
+        {
+          "note": "10s time penalty — a false start.",
+          "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result"
+        }
+      ]
+    },
+    "singapore_2026": {},
+    "spanish_2026": {
+      "gasly": [
+        {
+          "note": "5s time penalty — speeding in the pit lane.",
+          "source": "https://www.formula1.com/en/results/2026/races/1294/spain/race-result"
+        }
+      ]
+    },
+    "united_states_2026": {}
+  },
+  "coverage": {
+    "australian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1279/australia/race-result",
+      "unmatched": []
+    },
+    "austrian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1288/austria/race-result",
+      "unmatched": []
+    },
+    "azerbaijan_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result",
+      "unmatched": []
+    },
+    "bahrain_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result",
+      "unmatched": []
+    },
+    "belgian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1290/belgium/race-result",
+      "unmatched": []
+    },
+    "british_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1289/great-britain/race-result",
+      "unmatched": []
+    },
+    "canadian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1285/canada/race-result",
+      "unmatched": []
+    },
+    "catalunya_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-result",
+      "unmatched": []
+    },
+    "chinese_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1280/china/race-result",
+      "unmatched": []
+    },
+    "dutch_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result",
+      "unmatched": []
+    },
+    "hungarian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1291/hungary/race-result",
+      "unmatched": []
+    },
+    "italian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1293/italy/race-result",
+      "unmatched": []
+    },
+    "japanese_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1281/japan/race-result",
+      "unmatched": []
+    },
+    "mexican_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result",
+      "unmatched": []
+    },
+    "miami_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1284/miami/race-result",
+      "unmatched": []
+    },
+    "monaco_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result",
+      "unmatched": []
+    },
+    "singapore_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1296/singapore/race-result",
+      "unmatched": []
+    },
+    "spanish_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1294/spain/race-result",
+      "unmatched": []
+    },
+    "united_states_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1297/united-states/race-result",
+      "unmatched": []
+    }
+  }
+}

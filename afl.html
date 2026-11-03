@@ -176,7 +176,7 @@
         }
 
         :root[data-theme="dark"] .site-banner h1 img {
-            content: url("favicon-dark.png");
+            content: url("favicon-dark.svg");
         }
 
         .topbar {
@@ -851,14 +851,18 @@
             }
         }
     </style>
-    <link rel="icon" href="favicon.png" id="favicon">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
+    <link rel="stylesheet" href="editorial.css">
+    <script src="editorial.js" defer></script>
 </head>
 <body id="top">
     <main class="page">
         <div class="frame">
             <header class="masthead">
                 <div class="site-banner">
-                    <h1><img src="favicon.png" alt="" width="64" height="64"></h1>
+                    <div class="masthead-meta"><span class="edition-label">Australian football</span><time data-edition-date></time></div>
+                    <h1><a class="site-wordmark" href="index.html" aria-label="cgrillo home">cgrillo</a></h1>
+                    <p class="masthead-caption">Sport &amp; perspective</p>
                 </div>
                 <div class="topbar">
                     <nav class="nav" aria-label="Primary">
@@ -1366,7 +1370,7 @@
                     toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
                 }
                 const favicon = document.getElementById("favicon");
-                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.png" : "favicon.png";
+                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.svg" : "favicon.svg";
                 if (persist) {
                     try { localStorage.setItem(storageKey, theme); }
                     catch { }

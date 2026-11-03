@@ -1,0 +1,49 @@
+name: Update F1 fixtures and results
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/update-f1-fixtures.mjs
+      - scripts/update-f1-penalties.mjs
+      - scripts/update-f1-grids.mjs
+      - scripts/update-f1-sessions.mjs
+      - .github/workflows/update-f1-fixtures.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-f1-fixtures
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch calendar, race classifications and fastest laps
+        run: node scripts/update-f1-fixtures.mjs
+      - name: Fetch practice, qualifying and sprint sessions
+        run: node scripts/update-f1-sessions.mjs
+      - name: Import penalty notes from official F1 result pages
+        run: node scripts/update-f1-penalties.mjs
+      - name: Confirm missing grids and pit-lane starts against official F1 starting grids
+        run: node scripts/update-f1-grids.mjs
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add f1-fixtures.json f1-penalties.json f1-sessions.json
+          if ! git diff --quiet --cached; then
+            git commit -m "Update F1 fixtures and results"
+            git pull --rebase origin main
+            git push
+          fi
