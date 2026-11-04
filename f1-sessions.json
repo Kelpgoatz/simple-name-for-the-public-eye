@@ -1,5 +1,6 @@
 {
   "season": 2026,
+  "schemaVersion": 2,
   "races": {
     "australian_2026": {
       "isSprint": false,
@@ -24952,6 +24953,5 @@
         }
       }
     }
-  },
-  "schemaVersion": 2
+  }
 }

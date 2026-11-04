@@ -691,6 +691,7 @@
         {
           "position": "NC",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1280/china/starting-grid",
           "driverId": "albon",
           "driver": {
             "name": "Alex",
@@ -701,8 +702,7 @@
           "points": 0,
           "time": "DNF (0)",
           "retired": null,
-          "fastLap": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1280/china/starting-grid"
+          "fastLap": null
         }
       ],
       "resultsSource": "https://f1api.dev/api/2026/2/race?limit=100"
@@ -1351,6 +1351,7 @@
         {
           "position": "-",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid",
           "driverId": "hadjar",
           "driver": {
             "name": "Isack",
@@ -1361,8 +1362,7 @@
           "points": 0,
           "time": "DNF (57)",
           "retired": null,
-          "fastLap": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid"
+          "fastLap": null
         },
         {
           "position": "-",
@@ -1644,6 +1644,7 @@
         {
           "position": "15",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid",
           "driverId": "stroll",
           "driver": {
             "name": "Lance",
@@ -1654,8 +1655,7 @@
           "points": 0,
           "time": "+4 laps",
           "retired": null,
-          "fastLap": "1:18.721",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid"
+          "fastLap": "1:18.721"
         },
         {
           "position": "16",
@@ -1705,6 +1705,7 @@
         {
           "position": "-",
           "grid": "9",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid",
           "driverId": "lindblad",
           "driver": {
             "name": "Arvid",
@@ -1715,8 +1716,7 @@
           "points": 0,
           "time": "DNF (68)",
           "retired": null,
-          "fastLap": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid"
+          "fastLap": null
         },
         {
           "position": "-",
@@ -2455,6 +2455,7 @@
         {
           "position": "-",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/starting-grid",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -2465,8 +2466,7 @@
           "points": 0,
           "time": "DNF (66)",
           "retired": null,
-          "fastLap": "1:25.366",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/starting-grid"
+          "fastLap": "1:25.366"
         }
       ],
       "resultsSource": "https://f1api.dev/api/2026/7/race?limit=100"
@@ -3100,6 +3100,7 @@
         {
           "position": "18",
           "grid": "21",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1289/great-britain/starting-grid",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -3110,8 +3111,7 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:35.827",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1289/great-britain/starting-grid"
+          "fastLap": "1:35.827"
         },
         {
           "position": "19",
@@ -3865,6 +3865,7 @@
         {
           "position": "-",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1291/hungary/starting-grid",
           "driverId": "perez",
           "driver": {
             "name": "Sergio",
@@ -3875,8 +3876,7 @@
           "points": 0,
           "time": "DNF (70)",
           "retired": null,
-          "fastLap": "1:26.342",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1291/hungary/starting-grid"
+          "fastLap": "1:26.342"
         }
       ],
       "resultsSource": "https://f1api.dev/api/2026/11/race?limit=100"
@@ -4113,6 +4113,7 @@
         {
           "position": "15",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1292/netherlands/starting-grid",
           "driverId": "perez",
           "driver": {
             "name": "Sergio",
@@ -4123,8 +4124,7 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:17.523",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1292/netherlands/starting-grid"
+          "fastLap": "1:17.523"
         },
         {
           "position": "16",
@@ -4451,6 +4451,7 @@
         {
           "position": "14",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid",
           "driverId": "lawson",
           "driver": {
             "name": "Liam",
@@ -4461,8 +4462,7 @@
           "points": 0,
           "time": "+1:15.609",
           "retired": null,
-          "fastLap": "1:25.578",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid"
+          "fastLap": "1:25.578"
         },
         {
           "position": "15",
@@ -4557,6 +4557,7 @@
         {
           "position": "-",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -4567,8 +4568,7 @@
           "points": 0,
           "time": "DNF (53)",
           "retired": null,
-          "fastLap": "1:27.961",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid"
+          "fastLap": "1:27.961"
         },
         {
           "position": "-",
@@ -4835,6 +4835,7 @@
         {
           "position": "16",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1294/spain/starting-grid",
           "driverId": "bearman",
           "driver": {
             "name": "Oliver",
@@ -4845,8 +4846,7 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.308",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1294/spain/starting-grid"
+          "fastLap": "1:37.308"
         },
         {
           "position": "17",
@@ -5802,6 +5802,7 @@
         {
           "position": "10",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
           "driverId": "hadjar",
           "driver": {
             "name": "Isack",
@@ -5812,8 +5813,7 @@
           "points": 1,
           "time": "+1:30.862",
           "retired": null,
-          "fastLap": "1:35.917",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid"
+          "fastLap": "1:35.917"
         },
         {
           "position": "11",
@@ -5893,6 +5893,7 @@
         {
           "position": "16",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -5903,8 +5904,7 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.032",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid"
+          "fastLap": "1:38.032"
         },
         {
           "position": "17",
@@ -5984,6 +5984,7 @@
         {
           "position": "-",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
           "driverId": "stroll",
           "driver": {
             "name": "Lance",
@@ -5994,8 +5995,7 @@
           "points": 0,
           "time": "DNF (62)",
           "retired": null,
-          "fastLap": "1:39.137",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid"
+          "fastLap": "1:39.137"
         }
       ],
       "resultsSource": "https://f1api.dev/api/2026/17/race?limit=100"
@@ -6232,6 +6232,7 @@
         {
           "position": "15",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1297/united-states/starting-grid",
           "driverId": "stroll",
           "driver": {
             "name": "Lance",
@@ -6242,8 +6243,7 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:40.189",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1297/united-states/starting-grid"
+          "fastLap": "1:40.189"
         },
         {
           "position": "16",
@@ -6465,6 +6465,7 @@
         {
           "position": "7",
           "grid": "Pit lane",
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid",
           "driverId": "lawson",
           "driver": {
             "name": "Liam",
@@ -6475,8 +6476,7 @@
           "points": 6,
           "time": "+20.899",
           "retired": null,
-          "fastLap": "1:20.713",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid"
+          "fastLap": "1:20.713"
         },
         {
           "position": "8",
@@ -6775,5 +6775,5 @@
       "resultsSource": "https://f1api.dev/api/2026/23/race?limit=100"
     }
   ],
-  "updatedAt": "2026-11-03T10:13:50.566Z"
+  "updatedAt": "2026-11-03T10:46:32.589Z"
 }
