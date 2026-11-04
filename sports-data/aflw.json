@@ -1,0 +1,3331 @@
+{
+  "sport": "aflw",
+  "season": 2026,
+  "seasonId": 96,
+  "seasonLabel": "2026",
+  "updatedAt": "2026-11-04T09:33:01.588Z",
+  "fixturesUpdatedAt": "2026-11-04T09:33:01.588Z",
+  "seasonStart": "2026-08-09T06:35:00.000Z",
+  "seasonEnd": "2026-11-23T01:00:00.000Z",
+  "standingsUpdatedAt": "2026-11-04T09:33:01.588Z",
+  "source": {
+    "name": "AFL.com.au",
+    "url": "https://www.afl.com.au/aflw/fixture"
+  },
+  "sources": [
+    {
+      "name": "Official AFLW fixtures",
+      "url": "https://aflapi.afl.com.au/afl/v2/matches?compSeasonId=96"
+    },
+    {
+      "name": "Official AFLW ladder",
+      "url": "https://aflapi.afl.com.au/afl/v2/compseasons/96/ladders"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "label": "Round 1",
+      "startDate": "2026-08-09T06:35:00.000Z",
+      "endDate": "2026-08-16T06:45:00.000Z",
+      "matches": [
+        {
+          "id": "8988",
+          "startTime": "2026-08-09T06:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Marvel Stadium · Melbourne",
+          "home": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 40,
+          "awayScore": 66,
+          "winner": "away"
+        },
+        {
+          "id": "8884",
+          "startTime": "2026-08-13T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 41,
+          "awayScore": 60,
+          "winner": "away"
+        },
+        {
+          "id": "8881",
+          "startTime": "2026-08-15T03:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Marvel Stadium · Melbourne",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 100,
+          "awayScore": 27,
+          "winner": "home"
+        },
+        {
+          "id": "8885",
+          "startTime": "2026-08-15T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 46,
+          "awayScore": 28,
+          "winner": "home"
+        },
+        {
+          "id": "8883",
+          "startTime": "2026-08-15T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "People First Stadium · Gold Coast",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 14,
+          "awayScore": 40,
+          "winner": "away"
+        },
+        {
+          "id": "8886",
+          "startTime": "2026-08-16T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 37,
+          "awayScore": 85,
+          "winner": "away"
+        },
+        {
+          "id": "8888",
+          "startTime": "2026-08-16T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Unley Oval · Adelaide",
+          "home": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 53,
+          "awayScore": 61,
+          "winner": "away"
+        },
+        {
+          "id": "8887",
+          "startTime": "2026-08-16T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cockburn ARC Oval · Perth",
+          "home": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 41,
+          "winner": "away"
+        },
+        {
+          "id": "8882",
+          "startTime": "2026-08-16T06:45:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "ENGIE Stadium · Sydney",
+          "home": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 54,
+          "awayScore": 42,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "label": "Round 2",
+      "startDate": "2026-08-22T04:05:00.000Z",
+      "endDate": "2026-08-23T07:20:00.000Z",
+      "matches": [
+        {
+          "id": "8892",
+          "startTime": "2026-08-22T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mission Whitten Oval · Melbourne",
+          "home": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 48,
+          "awayScore": 37,
+          "winner": "home"
+        },
+        {
+          "id": "8898",
+          "startTime": "2026-08-22T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mineral Resources Park · Perth",
+          "home": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 34,
+          "awayScore": 69,
+          "winner": "away"
+        },
+        {
+          "id": "8890",
+          "startTime": "2026-08-22T07:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GMHBA Stadium · Geelong",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 100,
+          "awayScore": 15,
+          "winner": "home"
+        },
+        {
+          "id": "8893",
+          "startTime": "2026-08-22T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Brighton Homes Arena · Ipswich",
+          "home": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 44,
+          "winner": "away"
+        },
+        {
+          "id": "8889",
+          "startTime": "2026-08-23T02:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "SCG · Sydney",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 66,
+          "awayScore": 42,
+          "winner": "home"
+        },
+        {
+          "id": "8891",
+          "startTime": "2026-08-23T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Victoria Park · Melbourne",
+          "home": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 50,
+          "winner": "away"
+        },
+        {
+          "id": "8894",
+          "startTime": "2026-08-23T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Casey Fields · Melbourne",
+          "home": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 60,
+          "awayScore": 12,
+          "winner": "home"
+        },
+        {
+          "id": "8895",
+          "startTime": "2026-08-23T05:20:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 50,
+          "awayScore": 23,
+          "winner": "home"
+        },
+        {
+          "id": "8896",
+          "startTime": "2026-08-23T07:20:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Alberton Oval · Adelaide",
+          "home": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 65,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "label": "Round 3",
+      "startDate": "2026-08-29T02:35:00.000Z",
+      "endDate": "2026-08-30T09:20:00.000Z",
+      "matches": [
+        {
+          "id": "8897",
+          "startTime": "2026-08-29T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "UTAS Stadium · Launceston",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 70,
+          "awayScore": 23,
+          "winner": "home"
+        },
+        {
+          "id": "8899",
+          "startTime": "2026-08-29T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Unley Oval · Adelaide",
+          "home": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 60,
+          "awayScore": 43,
+          "winner": "home"
+        },
+        {
+          "id": "8902",
+          "startTime": "2026-08-29T06:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "C.ex Coffs International Stadium · Coffs Harbour",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 38,
+          "awayScore": 15,
+          "winner": "home"
+        },
+        {
+          "id": "8900",
+          "startTime": "2026-08-30T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Corroboree Group Oval Manuka · Canberra",
+          "home": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 48,
+          "awayScore": 52,
+          "winner": "away"
+        },
+        {
+          "id": "8901",
+          "startTime": "2026-08-30T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Casey Fields · Melbourne",
+          "home": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 89,
+          "awayScore": 33,
+          "winner": "home"
+        },
+        {
+          "id": "8903",
+          "startTime": "2026-08-30T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "People First Stadium · Gold Coast",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 57,
+          "awayScore": 64,
+          "winner": "away"
+        },
+        {
+          "id": "8904",
+          "startTime": "2026-08-30T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Victoria Park · Melbourne",
+          "home": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 26,
+          "awayScore": 54,
+          "winner": "away"
+        },
+        {
+          "id": "8908",
+          "startTime": "2026-08-30T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cockburn ARC Oval · Perth",
+          "home": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 42,
+          "awayScore": 48,
+          "winner": "away"
+        },
+        {
+          "id": "8906",
+          "startTime": "2026-08-30T09:20:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "TIO Stadium · Darwin",
+          "home": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 38,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "label": "Round 4",
+      "startDate": "2026-09-05T02:35:00.000Z",
+      "endDate": "2026-09-06T07:05:00.000Z",
+      "matches": [
+        {
+          "id": "8905",
+          "startTime": "2026-09-05T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mission Whitten Oval · Melbourne",
+          "home": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 60,
+          "awayScore": 33,
+          "winner": "home"
+        },
+        {
+          "id": "8907",
+          "startTime": "2026-09-05T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "RSEA Park · Melbourne",
+          "home": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 7,
+          "awayScore": 99,
+          "winner": "away"
+        },
+        {
+          "id": "8910",
+          "startTime": "2026-09-05T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Alberton Oval · Adelaide",
+          "home": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 14,
+          "awayScore": 17,
+          "winner": "away"
+        },
+        {
+          "id": "8909",
+          "startTime": "2026-09-05T08:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Brighton Homes Arena · Ipswich",
+          "home": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 55,
+          "awayScore": 24,
+          "winner": "home"
+        },
+        {
+          "id": "8911",
+          "startTime": "2026-09-06T02:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 35,
+          "awayScore": 60,
+          "winner": "away"
+        },
+        {
+          "id": "8912",
+          "startTime": "2026-09-06T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Kennedy Community Centre · Dingley Village",
+          "home": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 39,
+          "awayScore": 67,
+          "winner": "away"
+        },
+        {
+          "id": "8914",
+          "startTime": "2026-09-06T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GMHBA Stadium · Geelong",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 83,
+          "awayScore": 51,
+          "winner": "home"
+        },
+        {
+          "id": "8916",
+          "startTime": "2026-09-06T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 68,
+          "awayScore": 29,
+          "winner": "home"
+        },
+        {
+          "id": "8913",
+          "startTime": "2026-09-06T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mineral Resources Park · Perth",
+          "home": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 44,
+          "awayScore": 81,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "label": "Round 5",
+      "startDate": "2026-09-12T03:05:00.000Z",
+      "endDate": "2026-09-13T07:05:00.000Z",
+      "matches": [
+        {
+          "id": "8915",
+          "startTime": "2026-09-12T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Kennedy Community Centre · Dingley Village",
+          "home": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 41,
+          "awayScore": 30,
+          "winner": "home"
+        },
+        {
+          "id": "8919",
+          "startTime": "2026-09-12T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "People First Stadium · Gold Coast",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 62,
+          "awayScore": 32,
+          "winner": "home"
+        },
+        {
+          "id": "8917",
+          "startTime": "2026-09-12T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Unley Oval · Adelaide",
+          "home": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 46,
+          "awayScore": 57,
+          "winner": "away"
+        },
+        {
+          "id": "8918",
+          "startTime": "2026-09-12T06:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mineral Resources Park · Perth",
+          "home": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 46,
+          "awayScore": 41,
+          "winner": "home"
+        },
+        {
+          "id": "8923",
+          "startTime": "2026-09-13T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Casey Fields · Melbourne",
+          "home": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 74,
+          "awayScore": 23,
+          "winner": "home"
+        },
+        {
+          "id": "8921",
+          "startTime": "2026-09-13T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 58,
+          "awayScore": 43,
+          "winner": "home"
+        },
+        {
+          "id": "8920",
+          "startTime": "2026-09-13T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 87,
+          "awayScore": 56,
+          "winner": "home"
+        },
+        {
+          "id": "8922",
+          "startTime": "2026-09-13T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Arden Street Oval · Melbourne",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 23,
+          "winner": "home"
+        },
+        {
+          "id": "8924",
+          "startTime": "2026-09-13T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cockburn ARC Oval · Perth",
+          "home": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 37,
+          "awayScore": 22,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "label": "Round 6",
+      "startDate": "2026-09-18T07:45:00.000Z",
+      "endDate": "2026-09-20T07:05:00.000Z",
+      "matches": [
+        {
+          "id": "8925",
+          "startTime": "2026-09-18T07:45:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cazalys Stadium · Cairns",
+          "home": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 32,
+          "awayScore": 25,
+          "winner": "home"
+        },
+        {
+          "id": "8926",
+          "startTime": "2026-09-19T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Victoria Park · Melbourne",
+          "home": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 49,
+          "awayScore": 90,
+          "winner": "away"
+        },
+        {
+          "id": "8928",
+          "startTime": "2026-09-19T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Casey Fields · Melbourne",
+          "home": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 58,
+          "awayScore": 24,
+          "winner": "home"
+        },
+        {
+          "id": "8927",
+          "startTime": "2026-09-19T04:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Alberton Oval · Adelaide",
+          "home": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 27,
+          "awayScore": 41,
+          "winner": "away"
+        },
+        {
+          "id": "8930",
+          "startTime": "2026-09-19T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cockburn ARC Oval · Perth",
+          "home": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 40,
+          "winner": "away"
+        },
+        {
+          "id": "8929",
+          "startTime": "2026-09-20T02:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Corroboree Group Oval Manuka · Canberra",
+          "home": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 61,
+          "awayScore": 68,
+          "winner": "away"
+        },
+        {
+          "id": "8931",
+          "startTime": "2026-09-20T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 51,
+          "winner": "away"
+        },
+        {
+          "id": "8932",
+          "startTime": "2026-09-20T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "RSEA Park · Melbourne",
+          "home": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 25,
+          "awayScore": 36,
+          "winner": "away"
+        },
+        {
+          "id": "8933",
+          "startTime": "2026-09-20T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Brighton Homes Arena · Ipswich",
+          "home": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 39,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "label": "Round 7",
+      "startDate": "2026-09-24T09:15:00.000Z",
+      "endDate": "2026-09-27T07:05:00.000Z",
+      "matches": [
+        {
+          "id": "8935",
+          "startTime": "2026-09-24T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GMHBA Stadium · Geelong",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 82,
+          "awayScore": 46,
+          "winner": "home"
+        },
+        {
+          "id": "8934",
+          "startTime": "2026-09-25T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 35,
+          "awayScore": 45,
+          "winner": "away"
+        },
+        {
+          "id": "8936",
+          "startTime": "2026-09-25T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mission Whitten Oval · Melbourne",
+          "home": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 62,
+          "awayScore": 49,
+          "winner": "home"
+        },
+        {
+          "id": "8939",
+          "startTime": "2026-09-25T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 76,
+          "awayScore": 21,
+          "winner": "home"
+        },
+        {
+          "id": "8937",
+          "startTime": "2026-09-25T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 34,
+          "awayScore": 65,
+          "winner": "away"
+        },
+        {
+          "id": "8941",
+          "startTime": "2026-09-27T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Victoria Park · Melbourne",
+          "home": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 34,
+          "awayScore": 25,
+          "winner": "home"
+        },
+        {
+          "id": "8938",
+          "startTime": "2026-09-27T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Unley Oval · Adelaide",
+          "home": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 35,
+          "awayScore": 60,
+          "winner": "away"
+        },
+        {
+          "id": "8940",
+          "startTime": "2026-09-27T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 37,
+          "awayScore": 23,
+          "winner": "home"
+        },
+        {
+          "id": "8942",
+          "startTime": "2026-09-27T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "People First Stadium · Gold Coast",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 69,
+          "awayScore": 39,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "label": "Round 8",
+      "startDate": "2026-10-01T09:15:00.000Z",
+      "endDate": "2026-10-04T06:05:00.000Z",
+      "matches": [
+        {
+          "id": "8943",
+          "startTime": "2026-10-01T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 36,
+          "awayScore": 24,
+          "winner": "home"
+        },
+        {
+          "id": "8945",
+          "startTime": "2026-10-02T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 54,
+          "winner": "away"
+        },
+        {
+          "id": "8946",
+          "startTime": "2026-10-03T03:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 35,
+          "awayScore": 43,
+          "winner": "away"
+        },
+        {
+          "id": "8944",
+          "startTime": "2026-10-03T05:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mars Stadium · Ballarat",
+          "home": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 31,
+          "awayScore": 1,
+          "winner": "home"
+        },
+        {
+          "id": "8947",
+          "startTime": "2026-10-03T07:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Brighton Homes Arena · Ipswich",
+          "home": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 40,
+          "winner": "away"
+        },
+        {
+          "id": "8948",
+          "startTime": "2026-10-03T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Alberton Oval · Adelaide",
+          "home": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 36,
+          "awayScore": 22,
+          "winner": "home"
+        },
+        {
+          "id": "8949",
+          "startTime": "2026-10-04T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Arden Street Oval · Melbourne",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 71,
+          "awayScore": 16,
+          "winner": "home"
+        },
+        {
+          "id": "8950",
+          "startTime": "2026-10-04T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Victoria Park · Melbourne",
+          "home": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 21,
+          "awayScore": 42,
+          "winner": "away"
+        },
+        {
+          "id": "8953",
+          "startTime": "2026-10-04T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Sullivan Logistics Stadium · Perth",
+          "home": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 39,
+          "awayScore": 27,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "label": "Round 9",
+      "startDate": "2026-10-09T08:15:00.000Z",
+      "endDate": "2026-10-11T04:05:00.000Z",
+      "matches": [
+        {
+          "id": "8951",
+          "startTime": "2026-10-09T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mission Whitten Oval · Melbourne",
+          "home": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 65,
+          "awayScore": 22,
+          "winner": "home"
+        },
+        {
+          "id": "8952",
+          "startTime": "2026-10-10T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "RSEA Park · Melbourne",
+          "home": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 39,
+          "awayScore": 37,
+          "winner": "home"
+        },
+        {
+          "id": "8955",
+          "startTime": "2026-10-10T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Alberton Oval · Adelaide",
+          "home": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 26,
+          "awayScore": 22,
+          "winner": "home"
+        },
+        {
+          "id": "8954",
+          "startTime": "2026-10-10T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GMHBA Stadium · Geelong",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 96,
+          "awayScore": 33,
+          "winner": "home"
+        },
+        {
+          "id": "8958",
+          "startTime": "2026-10-10T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 62,
+          "winner": "away"
+        },
+        {
+          "id": "8956",
+          "startTime": "2026-10-10T09:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Great Barrier Reef Arena · Mackay",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 61,
+          "awayScore": 39,
+          "winner": "home"
+        },
+        {
+          "id": "8957",
+          "startTime": "2026-10-11T01:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Arden Street Oval · Melbourne",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 58,
+          "awayScore": 30,
+          "winner": "home"
+        },
+        {
+          "id": "8959",
+          "startTime": "2026-10-11T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Kennedy Community Centre · Dingley Village",
+          "home": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 65,
+          "awayScore": 40,
+          "winner": "home"
+        },
+        {
+          "id": "8960",
+          "startTime": "2026-10-11T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 32,
+          "awayScore": 59,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "label": "Round 10",
+      "startDate": "2026-10-16T08:15:00.000Z",
+      "endDate": "2026-10-18T06:05:00.000Z",
+      "matches": [
+        {
+          "id": "8961",
+          "startTime": "2026-10-16T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 94,
+          "awayScore": 32,
+          "winner": "home"
+        },
+        {
+          "id": "8962",
+          "startTime": "2026-10-17T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Unley Oval · Adelaide",
+          "home": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 63,
+          "awayScore": 53,
+          "winner": "home"
+        },
+        {
+          "id": "8964",
+          "startTime": "2026-10-17T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 26,
+          "awayScore": 56,
+          "winner": "away"
+        },
+        {
+          "id": "8963",
+          "startTime": "2026-10-17T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Brighton Homes Arena · Ipswich",
+          "home": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 34,
+          "awayScore": 18,
+          "winner": "home"
+        },
+        {
+          "id": "8966",
+          "startTime": "2026-10-17T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Sullivan Logistics Stadium · Perth",
+          "home": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 13,
+          "awayScore": 66,
+          "winner": "away"
+        },
+        {
+          "id": "8965",
+          "startTime": "2026-10-18T01:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 29,
+          "awayScore": 80,
+          "winner": "away"
+        },
+        {
+          "id": "8967",
+          "startTime": "2026-10-18T03:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 55,
+          "awayScore": 54,
+          "winner": "home"
+        },
+        {
+          "id": "8968",
+          "startTime": "2026-10-18T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 85,
+          "winner": "away"
+        },
+        {
+          "id": "8969",
+          "startTime": "2026-10-18T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cockburn ARC Oval · Perth",
+          "home": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 51,
+          "awayScore": 40,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "label": "Round 11",
+      "startDate": "2026-10-23T08:15:00.000Z",
+      "endDate": "2026-10-25T06:05:00.000Z",
+      "matches": [
+        {
+          "id": "8970",
+          "startTime": "2026-10-23T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Alberton Oval · Adelaide",
+          "home": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 52,
+          "awayScore": 4,
+          "winner": "home"
+        },
+        {
+          "id": "8971",
+          "startTime": "2026-10-24T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "RSEA Park · Melbourne",
+          "home": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 23,
+          "awayScore": 75,
+          "winner": "away"
+        },
+        {
+          "id": "8974",
+          "startTime": "2026-10-24T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GMHBA Stadium · Geelong",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 64,
+          "awayScore": 34,
+          "winner": "home"
+        },
+        {
+          "id": "8972",
+          "startTime": "2026-10-24T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "People First Stadium · Gold Coast",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 54,
+          "awayScore": 50,
+          "winner": "home"
+        },
+        {
+          "id": "8973",
+          "startTime": "2026-10-24T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Mission Whitten Oval · Melbourne",
+          "home": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 37,
+          "winner": "away"
+        },
+        {
+          "id": "8977",
+          "startTime": "2026-10-25T01:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 78,
+          "awayScore": 56,
+          "winner": "home"
+        },
+        {
+          "id": "8979",
+          "startTime": "2026-10-25T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "North Hobart Oval · Hobart",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 38,
+          "awayScore": 29,
+          "winner": "home"
+        },
+        {
+          "id": "8976",
+          "startTime": "2026-10-25T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Kennedy Community Centre · Dingley Village",
+          "home": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 25,
+          "awayScore": 20,
+          "winner": "home"
+        },
+        {
+          "id": "8975",
+          "startTime": "2026-10-25T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 38,
+          "awayScore": 23,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "label": "Round 12",
+      "startDate": "2026-10-30T08:15:00.000Z",
+      "endDate": "2026-11-01T06:05:00.000Z",
+      "matches": [
+        {
+          "id": "8978",
+          "startTime": "2026-10-30T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GMHBA Stadium · Geelong",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 88,
+          "awayScore": 20,
+          "winner": "home"
+        },
+        {
+          "id": "8984",
+          "startTime": "2026-10-31T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "RSEA Park · Melbourne",
+          "home": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 45,
+          "awayScore": 51,
+          "winner": "away"
+        },
+        {
+          "id": "8980",
+          "startTime": "2026-10-31T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 101,
+          "winner": "away"
+        },
+        {
+          "id": "8981",
+          "startTime": "2026-10-31T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Brighton Homes Arena · Ipswich",
+          "home": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 35,
+          "awayScore": 40,
+          "winner": "away"
+        },
+        {
+          "id": "8982",
+          "startTime": "2026-10-31T08:15:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Sullivan Logistics Stadium · Perth",
+          "home": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 39,
+          "awayScore": 94,
+          "winner": "away"
+        },
+        {
+          "id": "8983",
+          "startTime": "2026-11-01T01:35:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 53,
+          "awayScore": 62,
+          "winner": "away"
+        },
+        {
+          "id": "8986",
+          "startTime": "2026-11-01T02:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Windy Hill · Melbourne",
+          "home": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 38,
+          "awayScore": 31,
+          "winner": "home"
+        },
+        {
+          "id": "8985",
+          "startTime": "2026-11-01T04:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Unley Oval · Adelaide",
+          "home": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 29,
+          "awayScore": 47,
+          "winner": "away"
+        },
+        {
+          "id": "8987",
+          "startTime": "2026-11-01T06:05:00.000Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cockburn ARC Oval · Perth",
+          "home": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "homeScore": 36,
+          "awayScore": 37,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "label": "Qualifying & Elimination Finals",
+      "startDate": "2026-11-07T02:05:00.000Z",
+      "endDate": "2026-11-08T04:05:00.000Z",
+      "matches": [
+        {
+          "id": "9074",
+          "startTime": "2026-11-07T02:05:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "9073",
+          "startTime": "2026-11-07T05:05:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "IKON Park · Melbourne",
+          "home": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "9075",
+          "startTime": "2026-11-08T02:05:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Henson Park · Sydney",
+          "home": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "9077",
+          "startTime": "2026-11-08T04:05:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "People First Stadium · Gold Coast",
+          "home": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "label": "Semi Finals",
+      "startDate": "2026-11-09T01:00:00.000Z",
+      "endDate": "2026-11-09T01:00:00.000Z",
+      "matches": [
+        {
+          "id": "9076",
+          "startTime": null,
+          "status": "scheduled",
+          "statusDetail": "Date and time TBC",
+          "venue": "To Be Confirmed · Victoria",
+          "home": {
+            "id": "168",
+            "name": "Loser of QF1",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "167",
+            "name": "Winner of EF1",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "9078",
+          "startTime": null,
+          "status": "scheduled",
+          "statusDetail": "Date and time TBC",
+          "venue": "To Be Confirmed · Victoria",
+          "home": {
+            "id": "164",
+            "name": "Loser of QF2",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "170",
+            "name": "Winner of EF2",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "label": "Preliminary Finals",
+      "startDate": "2026-11-16T01:00:00.000Z",
+      "endDate": "2026-11-16T01:00:00.000Z",
+      "matches": [
+        {
+          "id": "9080",
+          "startTime": null,
+          "status": "scheduled",
+          "statusDetail": "Date and time TBC",
+          "venue": "To Be Confirmed · Victoria",
+          "home": {
+            "id": "174",
+            "name": "Winner of QF1",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "169",
+            "name": "Winner of SF2",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "9079",
+          "startTime": null,
+          "status": "scheduled",
+          "statusDetail": "Date and time TBC",
+          "venue": "To Be Confirmed · Victoria",
+          "home": {
+            "id": "162",
+            "name": "Winner of QF2",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "172",
+            "name": "Winner of SF1",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "label": "Grand Final",
+      "startDate": "2026-11-23T01:00:00.000Z",
+      "endDate": "2026-11-23T01:00:00.000Z",
+      "matches": [
+        {
+          "id": "9081",
+          "startTime": null,
+          "status": "scheduled",
+          "statusDetail": "Date and time TBC",
+          "venue": "To Be Confirmed · Victoria",
+          "home": {
+            "id": "171",
+            "name": "Winner of PF1",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "173",
+            "name": "Winner of PF2",
+            "abbreviation": "TBD",
+            "logo": "",
+            "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    }
+  ],
+  "standings": [
+    {
+      "id": "overall",
+      "label": "AFLW Ladder",
+      "rows": [
+        {
+          "rank": 1,
+          "team": {
+            "id": "30",
+            "name": "North Melbourne",
+            "abbreviation": "NMFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 11,
+          "losses": 1,
+          "draws": 0,
+          "points": 44,
+          "percentage": 246.6,
+          "for": 789,
+          "against": 320,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": "26",
+            "name": "Geelong Cats",
+            "abbreviation": "GEEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 11,
+          "losses": 1,
+          "draws": 0,
+          "points": 44,
+          "percentage": 180,
+          "for": 871,
+          "against": 484,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": "29",
+            "name": "Melbourne",
+            "abbreviation": "MELB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 10,
+          "losses": 2,
+          "draws": 0,
+          "points": 40,
+          "percentage": 176.5,
+          "for": 715,
+          "against": 405,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": "22",
+            "name": "Carlton",
+            "abbreviation": "CARL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 9,
+          "losses": 3,
+          "draws": 0,
+          "points": 36,
+          "percentage": 133.2,
+          "for": 554,
+          "against": 416,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 5,
+          "team": {
+            "id": "33",
+            "name": "Gold Coast SUNS",
+            "abbreviation": "GCFC",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 9,
+          "losses": 3,
+          "draws": 0,
+          "points": 36,
+          "percentage": 133,
+          "for": 609,
+          "against": 458,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 6,
+          "team": {
+            "id": "121",
+            "name": "Sydney Swans",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 9,
+          "losses": 3,
+          "draws": 0,
+          "points": 36,
+          "percentage": 115,
+          "for": 606,
+          "against": 527,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 7,
+          "team": {
+            "id": "32",
+            "name": "Western Bulldogs",
+            "abbreviation": "WB",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 8,
+          "losses": 4,
+          "draws": 0,
+          "points": 32,
+          "percentage": 110.5,
+          "for": 495,
+          "against": 448,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 8,
+          "team": {
+            "id": "119",
+            "name": "Hawthorn",
+            "abbreviation": "HAW",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 7,
+          "losses": 5,
+          "draws": 0,
+          "points": 28,
+          "percentage": 113.1,
+          "for": 580,
+          "against": 513,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 9,
+          "team": {
+            "id": "120",
+            "name": "Port Adelaide",
+            "abbreviation": "PORT",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/port.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 6,
+          "losses": 6,
+          "draws": 0,
+          "points": 24,
+          "percentage": 93,
+          "for": 422,
+          "against": 454,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 10,
+          "team": {
+            "id": "25",
+            "name": "Fremantle",
+            "abbreviation": "FRE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 5,
+          "losses": 7,
+          "draws": 0,
+          "points": 20,
+          "percentage": 97.5,
+          "for": 477,
+          "against": 489,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 11,
+          "team": {
+            "id": "19",
+            "name": "Adelaide Crows",
+            "abbreviation": "ADEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 5,
+          "losses": 7,
+          "draws": 0,
+          "points": 20,
+          "percentage": 97.1,
+          "for": 528,
+          "against": 544,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 12,
+          "team": {
+            "id": "21",
+            "name": "Brisbane Lions",
+            "abbreviation": "BL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 4,
+          "losses": 8,
+          "draws": 0,
+          "points": 16,
+          "percentage": 100.4,
+          "for": 504,
+          "against": 502,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 13,
+          "team": {
+            "id": "35",
+            "name": "West Coast Eagles",
+            "abbreviation": "WCE",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 4,
+          "losses": 8,
+          "draws": 0,
+          "points": 16,
+          "percentage": 70,
+          "for": 459,
+          "against": 656,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 14,
+          "team": {
+            "id": "34",
+            "name": "Richmond",
+            "abbreviation": "RICH",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 4,
+          "losses": 8,
+          "draws": 0,
+          "points": 16,
+          "percentage": 65.5,
+          "for": 468,
+          "against": 714,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 15,
+          "team": {
+            "id": "28",
+            "name": "GWS GIANTS",
+            "abbreviation": "GWS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 2,
+          "losses": 10,
+          "draws": 0,
+          "points": 8,
+          "percentage": 69.3,
+          "for": 479,
+          "against": 691,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 16,
+          "team": {
+            "id": "118",
+            "name": "Essendon",
+            "abbreviation": "ESS",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 2,
+          "losses": 10,
+          "draws": 0,
+          "points": 8,
+          "percentage": 59.8,
+          "for": 386,
+          "against": 646,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 17,
+          "team": {
+            "id": "24",
+            "name": "Collingwood",
+            "abbreviation": "COLL",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 1,
+          "losses": 11,
+          "draws": 0,
+          "points": 4,
+          "percentage": 54.2,
+          "for": 350,
+          "against": 646,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 18,
+          "team": {
+            "id": "36",
+            "name": "St Kilda",
+            "abbreviation": "STK",
+            "logo": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png",
+            "color": "#073d2e"
+          },
+          "played": 12,
+          "wins": 1,
+          "losses": 11,
+          "draws": 0,
+          "points": 4,
+          "percentage": 46.7,
+          "for": 332,
+          "against": 711,
+          "winPct": null,
+          "gamesBehind": null
+        }
+      ]
+    }
+  ]
+}

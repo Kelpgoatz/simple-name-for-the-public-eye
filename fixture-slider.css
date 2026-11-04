@@ -1,0 +1,14 @@
+.round-slider[type="range"] { display: block; appearance: none; -webkit-appearance: none; width: 100%; height: 28px; margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent; cursor: pointer; accent-color: var(--accent-ink); }
+.round-slider[type="range"]::-webkit-slider-runnable-track { height: 6px; border: 1px solid var(--rule); border-radius: 3px; background: linear-gradient(to right, var(--accent-ink) 0 var(--fill, 0%), var(--rule) var(--fill, 0%) 100%); }
+.round-slider[type="range"]::-moz-range-track { height: 6px; border: 1px solid var(--rule); border-radius: 3px; background: var(--rule); }
+.round-slider[type="range"]::-moz-range-progress { height: 6px; border-radius: 3px; background: var(--accent-ink); }
+.round-slider[type="range"]::-webkit-slider-thumb { appearance: none; -webkit-appearance: none; width: 18px; height: 18px; margin-top: -7px; border: 2px solid var(--surface); border-radius: 50%; background: var(--accent-ink); cursor: grab; }
+.round-slider[type="range"]::-moz-range-thumb { width: 15px; height: 15px; border: 2px solid var(--surface); border-radius: 50%; background: var(--accent-ink); cursor: grab; }
+.round-slider[type="range"]:disabled { opacity: .45; cursor: default; }
+.fixture-slider-markers { position: relative; height: 32px; margin: 0 9px 10px; }
+.fixture-slider-markers button { position: absolute; top: 0; transform: translateX(-50%); padding: 7px 2px 3px; border: 0; border-radius: 0; background: transparent; color: var(--muted); font: 600 .58rem/1.2 var(--font-sans); white-space: nowrap; cursor: pointer; }
+.fixture-slider-markers button::before { content: ''; position: absolute; width: 1px; height: 4px; background: var(--rule); top: 0; left: 50%; }
+.fixture-slider-markers .fixture-slider-marker--first { transform: none; }
+.fixture-slider-markers .fixture-slider-marker--last { transform: translateX(-100%); }
+.fixture-slider-markers button[aria-pressed="true"], .fixture-slider-markers button:hover { color: var(--accent-ink); }
+.fixtures-card, .fixtures-list { overflow-anchor: none; }

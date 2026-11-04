@@ -1,0 +1,42 @@
+name: Update AFL round player leaders
+on:
+  schedule:
+    - cron: '13,43 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-afl-player-stats.mjs'
+      - 'scripts/lib/afl-player-stats.mjs'
+      - '.github/workflows/update-afl-player-stats.yml'
+permissions:
+  contents: write
+concurrency:
+  group: update-afl-player-stats
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch individual match statistics and calculate round totals
+        id: refresh
+        continue-on-error: true
+        run: node scripts/update-afl-player-stats.mjs
+      - name: Save available updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add afl-player-stats.json sports-data/afl-player-matches.json
+          if ! git diff --quiet --cached; then
+            git commit -m "Update AFL round player statistics"
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Report incomplete statistics refresh
+        if: steps.refresh.outcome == 'failure'
+        run: exit 1

@@ -37,13 +37,22 @@
     const previous = document.querySelector("[data-round-prev]");
     const next = document.querySelector("[data-round-next]");
     const params = new URLSearchParams(location.search);
-    const { definitions: sessionDefinitions, keysForWeekend, intervalFor } = F1SessionUtils;
+    const { definitions: sessionDefinitions, keysForWeekend, defaultGapMode, resultGapFor, fastestLapOrder, fastestLapGapFor } = F1SessionUtils;
     let currentTab = params.get("tab") === "constructors" ? "constructors" : "drivers";
     let selectedSession = Object.hasOwn(sessionDefinitions, params.get("session")) ? params.get("session") : "race";
     let sessionWeekends = {};
     let drivers = [], constructors = [], races = [], circuitData = {}, penaltyData = {}, penaltyCoverage = {};
     let driverSeason, constructorSeason, season, updatedAt, selectedIndex = 0;
     let driverById = new Map();
+    let profileSelection = params.get("driver") ? {kind: "driver", id: params.get("driver")} : params.get("team") ? {kind: "team", id: params.get("team")} : null;
+    let profileMode = "total";
+    let profileScope = params.get("scope") === "all" ? "all" : "season";
+    let careerData = {};
+    const profilePanel = document.createElement("section");
+    profilePanel.className = "f1-profile";
+    profilePanel.hidden = true;
+    profilePanel.setAttribute("aria-label", "Season performance dashboard");
+    slider.before(profilePanel);
     const number = value => Number.isFinite(Number(value)) ? Number(value) : 0;
     const text = (tag, className, value, parent) => {
         const element = document.createElement(tag);
@@ -69,10 +78,12 @@
             teamId: entry.teamId || standing?.teamId
         };
     };
-    const badge = (parent, value, teamId) => {
+    const badge = (parent, value, teamId, driverId) => {
         const element = text("span", "ladder-row__logo", String(value), parent);
         element.setAttribute("aria-hidden", "true");
         applyColors(element, teamId);
+        if (driverId) SportIdentity.driver(element, driverId);
+        else SportIdentity.team(element, teamId);
     };
     const link = (parent, label, href) => {
         const element = text("a", "", label, parent);
@@ -84,8 +95,68 @@
         if (races[selectedIndex]) query.set("round", races[selectedIndex].round);
         query.set("tab", currentTab);
         query.set("session", selectedSession);
+        query.delete("driver");
+        query.delete("team");
+        if (profileSelection) query.set(profileSelection.kind, profileSelection.id);
+        if (profileSelection && profileScope === "all") query.set("scope", "all");
+        else query.delete("scope");
         history.replaceState(null, "", `${location.pathname}?${query}${location.hash}`);
     };
+    const profileHref = (kind, id) => F1Profile.href(kind, id, {round: races[selectedIndex]?.round, session: selectedSession, tab: currentTab, scope: profileScope});
+    const profileLink = (parent, kind, id, label, className = "f1-profile-link") => {
+        const element = text("a", className, label, parent);
+        element.href = profileHref(kind, id);
+        element.dataset.f1ProfileLink = "";
+        element.title = `Open ${label} season dashboard`;
+        return element;
+    };
+    function renderProfile() {
+        profilePanel.hidden = !profileSelection;
+        if (!profileSelection) { profilePanel.replaceChildren(); return; }
+        const profile = F1Profile.build({...profileSelection, season, races, weekends: sessionWeekends, drivers, constructors, teamName: id => getTeam(id).display});
+        const career=careerData[profileSelection.kind === "driver" ? "drivers" : "teams"]?.[profileSelection.id];
+        profilePanel.innerHTML = F1Profile.renderMarkup(profile, profileMode, {round: races[selectedIndex]?.round, session: selectedSession, tab: currentTab, scope: profileScope, career, teamName: id=>getTeam(id).display});
+        profilePanel.querySelectorAll("[data-profile-identity]").forEach(element => {
+            if (element.dataset.profileKind === "driver") SportIdentity.driver(element, element.dataset.profileIdentity);
+            else SportIdentity.team(element, element.dataset.profileIdentity);
+        });
+    }
+    document.addEventListener("click", event => {
+        const scope = event.target.closest("[data-profile-scope]");
+        if (scope) { profileScope=scope.dataset.profileScope;setQuery();renderProfile();profilePanel.querySelector(`[data-profile-scope="${profileScope}"]`)?.focus();return; }
+        const mode = event.target.closest("[data-profile-mode]");
+        if (mode) { profileMode = mode.dataset.profileMode; renderProfile(); profilePanel.querySelector(`[data-profile-mode="${profileMode}"]`)?.focus(); return; }
+        const anchor = event.target.closest("[data-f1-profile-link], [data-f1-profile-close]");
+        if (!anchor || event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        const query = new URL(anchor.href, location.href).searchParams;
+        event.preventDefault();
+        profileSelection = query.get("driver") ? {kind:"driver",id:query.get("driver")} : query.get("team") ? {kind:"team",id:query.get("team")} : null;
+        profileMode = "total";
+        const url = new URL(location.href);
+        url.searchParams.delete("driver");
+        url.searchParams.delete("team");
+        if (profileSelection) url.searchParams.set(profileSelection.kind, profileSelection.id);
+        else url.searchParams.delete("scope");
+        history.pushState(null, "", url);
+        renderRace();
+        renderLadder();
+        if (profileSelection) {
+            profilePanel.querySelector("h2")?.focus({preventScroll:true});
+            profilePanel.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start"});
+        }
+    });
+    window.addEventListener("popstate", () => {
+        if (!races.length) return;
+        const query = new URLSearchParams(location.search);
+        profileSelection = query.get("driver") ? {kind:"driver",id:query.get("driver")} : query.get("team") ? {kind:"team",id:query.get("team")} : null;
+        const index = races.findIndex(race => Number(race.round) === Number(query.get("round")));
+        if (index >= 0) selectedIndex = index;
+        if (Object.hasOwn(sessionDefinitions, query.get("session"))) selectedSession = query.get("session");
+        currentTab = query.get("tab") === "constructors" ? "constructors" : "drivers";
+        profileScope=query.get("scope")==="all"?"all":"season";
+        renderRace();
+        renderLadder();
+    });
 
     function renderLadder() {
         const isDrivers = currentTab === "drivers";
@@ -105,20 +176,25 @@
             ladderNote.textContent = "Please try again later.";
             return;
         }
-        [...standings].sort((a, b) => number(a.position) - number(b.position)).forEach(standing => {
+        const ordered = [...standings].sort((a, b) => number(a.position) - number(b.position));
+        const rows = ordered.map(standing => {
             const team = getTeam(standing.teamId);
             const info = driverInfo(standing);
-            const row = text("div", "ladder-row", "", ladder);
-            applyColors(row, standing.teamId);
-            text("span", "ladder-row__pos", standing.position, row);
-            badge(row, isDrivers ? info.number : team.abbr, standing.teamId);
-            text("span", "ladder-row__team", isDrivers ? info.name : team.display, row);
-            const stats = text("span", "ladder-row__stats", "", row);
-            text("strong", "", `${number(standing.points)} pts`, stats);
-            text("span", "", `${number(standing.wins)} ${number(standing.wins) === 1 ? "win" : "wins"}`, stats);
+            return { rank: standing.position, team: { name: isDrivers ? info.name : team.display, abbreviation: String(isDrivers ? info.number : team.abbr), color: team.colors[0] }, points: standing.points, wins: standing.wins };
+        });
+        ladder.innerHTML = SportsUI.renderStandings({ label: ladderTitle.textContent, rows }, isDrivers ? "f1-drivers" : "f1-constructors");
+        ladder.querySelectorAll("tbody tr").forEach((row, index) => {
+            const standing = ordered[index], badge = row.querySelector(".sports-identity");
+            if (isDrivers) SportIdentity.driver(badge, driverInfo(standing).id);
+            else SportIdentity.team(badge, standing.teamId);
+            const name = row.querySelector(".sports-table__team > span:last-child");
+            if (name) {
+                const anchor = profileLink(null, isDrivers ? "driver" : "team", isDrivers ? driverInfo(standing).id : standing.teamId, name.textContent);
+                name.replaceWith(anchor);
+            }
         });
         ladder.scrollTop = 0;
-        ladderNote.textContent = "Season standings · refreshed hourly from F1 API.";
+        ladderNote.textContent = "Select a name for the season dashboard. Season standings · refreshed hourly from F1 API.";
     }
 
     function switchTab(tab, focus = false) {
@@ -182,10 +258,10 @@
         const result = race.results?.find(item => item.driverId === race.fastestLap.driverId);
         const info = driverInfo({ ...result, ...race.fastestLap });
         const row = text("div", "fastest-lap__driver", "", section);
-        badge(row, info.number, info.teamId);
+        badge(row, info.number, info.teamId, info.id);
         const identity = text("div", "race-driver", "", row);
-        text("strong", "race-driver__name", info.name, identity);
-        text("span", "race-driver__team", getTeam(info.teamId).display, identity);
+        profileLink(identity, "driver", info.id, info.name, "race-driver__name race-driver__profile-link");
+        SportIdentity.inline(profileLink(identity, "team", info.teamId, getTeam(info.teamId).display, "race-driver__team race-driver__profile-link"), "constructors", info.teamId);
         text("strong", "fastest-lap__time fastest-lap-badge", race.fastestLap.time, row);
     }
 
@@ -207,6 +283,66 @@
             return;
         }
         text("span", "race-results__count", `${session.results.length} drivers`, heading);
+        text("p", "race-empty", "Select a driver or constructor name for their season dashboard and individual session performance.", section);
+        const resultRows = new Map();
+        let fastestOrder = false;
+        if (isRace) {
+            const sorting = text("div", "result-gap-toggle result-order-toggle", "", section);
+            sorting.setAttribute("role", "group");
+            sorting.setAttribute("aria-label", "Results order");
+            const finishButton = text("button", "", "Finishing order", sorting);
+            const lapButton = text("button", "result-order-toggle__fastest", "Fastest lap order", sorting);
+            const orderNote = text("p", "race-empty result-order-note", "", section);
+            orderNote.setAttribute("role", "status");
+            const sort = fastest => {
+                fastestOrder = fastest;
+                title.textContent = fastest ? "Fastest lap order" : sessionKey === "race" ? "Finishing order" : `${definition.title} results`;
+                title.classList.toggle("race-section-title--fastest", fastest);
+                finishButton.setAttribute("aria-pressed", String(!fastest));
+                lapButton.setAttribute("aria-pressed", String(fastest));
+                const displayed = fastest ? fastestLapOrder(ordered) : ordered;
+                displayed.forEach(result => tbody.appendChild(resultRows.get(result)));
+                orderNote.textContent = fastest
+                    ? "Sorted by fastest lap; missing lap times appear last. Positions and points still refer to the finishing classification."
+                    : "";
+                updateGaps();
+            };
+            finishButton.type = lapButton.type = "button";
+            finishButton.setAttribute("aria-pressed", "true");
+            lapButton.setAttribute("aria-pressed", "false");
+            finishButton.addEventListener("click", () => sort(false));
+            lapButton.addEventListener("click", () => sort(true));
+        }
+        let gapMode = defaultGapMode(sessionKey);
+        const gapCells = [];
+        let gapHeader, gapNote;
+        const controls = text("div", "result-gap-toggle", "", section);
+        controls.setAttribute("role", "group");
+        controls.setAttribute("aria-label", "Results gap display");
+        const modeButtons = [ ["leader", "Gap from leader"], ["interval", "Interval"] ].map(([mode, label]) => {
+            const button = text("button", "", label, controls);
+            button.type = "button";
+            button.setAttribute("aria-pressed", String(mode === gapMode));
+            button.addEventListener("click", () => { gapMode = mode; updateGaps(); });
+            return { button, mode };
+        });
+        const updateGaps = () => {
+            modeButtons.forEach(({ button, mode }) => button.setAttribute("aria-pressed", String(mode === gapMode)));
+            gapHeader.textContent = gapMode === "leader" ? "Gap from leader" : "Interval";
+            gapHeader.title = fastestOrder
+                ? gapMode === "leader" ? "Best-lap gap to the fastest car" : "Best-lap gap to the car above in fastest lap order"
+                : gapMode === "leader" ? "Gap to the session leader" : "Gap to the driver immediately ahead in the finishing classification";
+            const fastest = fastestOrder ? fastestLapOrder(ordered) : [];
+            const lapIndices = new Map(fastest.map((result, index) => [result, index]));
+            gapCells.forEach((cell, index) => { cell.textContent = fastestOrder
+                ? fastestLapGapFor(fastest, lapIndices.get(ordered[index]), gapMode)
+                : resultGapFor(ordered, index, isRace, gapMode); });
+            gapNote.textContent = fastestOrder
+                ? gapMode === "leader" ? "Lap-time gaps are measured from the fastest car; a dash means no recorded fastest lap." : "Lap-time intervals compare each car with the one above; a dash means no recorded fastest lap."
+                : isRace
+                ? "The winner’s total time and retirement/lapped statuses are retained. Intervals are calculated where comparable race times are available."
+                : `${gapMode === "leader" ? "Gap is to the session leader" : "Interval is to the driver ahead"}. Only laps from the same session phase are compared; a dash means no comparable timed lap.`;
+        };
         text("p", "table-scroll-hint", "Scroll sideways for all columns.", section);
         const scroll = text("div", "race-results__scroll", "", section);
         scroll.tabIndex = 0;
@@ -222,7 +358,7 @@
             const cell = text("th", "", value, head);
             cell.scope = "col";
             if (value === "Grid") cell.title = "Starting grid position";
-            if (value === "Gap") cell.title = "Gap to the driver ahead, comparing times from the same session phase";
+            if (value === "Gap" || value === "Time / status") gapHeader = cell;
         });
         thead.appendChild(head);
         table.appendChild(thead);
@@ -236,13 +372,14 @@
             const podium = isRace && { 1: "gold", 2: "silver", 3: "bronze" }[Number(result.position)];
             if (podium) row.classList.add(`race-results__podium--${podium}`);
             if (isRace && info.id === session.fastestLap?.driverId) row.classList.add("race-results__fastest");
+            if (profileSelection && F1Profile.includes(profileSelection, result)) row.classList.add("race-results__selected");
             text("td", "race-results__position", result.position || "–", row);
             const driverCell = text("td", "race-results__driver", "", row);
             const identity = text("div", "race-results__identity", "", driverCell);
-            badge(identity, info.number, info.teamId);
+            badge(identity, info.number, info.teamId, info.id);
             const names = text("div", "race-driver", "", identity);
-            text("strong", "race-driver__name", info.name, names);
-            text("span", "race-driver__team", getTeam(info.teamId).display, names);
+            profileLink(names, "driver", info.id, info.name, "race-driver__name race-driver__profile-link");
+            SportIdentity.inline(profileLink(names, "team", info.teamId, getTeam(info.teamId).display, "race-driver__team race-driver__profile-link"), "constructors", info.teamId);
             const penalties = sessionKey === "race" ? penaltyData[race.raceId]?.[info.id] || [] : [];
             penalties.forEach(penalty => {
                 const note = text("span", "race-penalty", `Penalty: ${penalty.note} `, names);
@@ -256,17 +393,14 @@
                 const grid = /^(?:pit[ -]lane|pl)$/i.test(rawGrid) ? "Pit lane" : /^(?:not available|n\/a|unknown|[-–]|0)?$/i.test(rawGrid) ? "–" : rawGrid;
                 const gridCell = text("td", "race-results__grid", grid, row);
                 if (result.gridSource) gridCell.title = "Confirmed against the official F1 starting grid";
-                const retired = result.retired && result.retired !== "0" && result.retired !== "false";
-                const status = retired ? (typeof result.retired === "string" && !["1", "true"].includes(result.retired) ? result.retired : "DNF") : result.time || "–";
-                text("td", "race-results__time", status, row);
+                gapCells.push(text("td", "race-results__time", "", row));
                 const lap = text("td", "race-results__lap", "", row);
                 const isFastest = result.fastLap && info.id === session.fastestLap?.driverId;
                 text("span", isFastest ? "fastest-lap-badge" : "", result.fastLap || "–", lap);
                 if (isFastest) text("span", "sr-only", " (race fastest lap)", lap);
                 text("td", "race-results__points", number(result.points), row);
             } else {
-                const gap = text("td", "race-results__time", intervalFor(ordered, index), row);
-                if (index > 0 && (result.timingSegment || "") !== (ordered[index - 1].timingSegment || "")) gap.title = "Times are from different qualifying phases and cannot be compared directly";
+                gapCells.push(text("td", "race-results__time", "", row));
                 const lap = text("td", "race-results__lap", "", row);
                 text("span", index === 0 && result.bestLap ? "fastest-lap-badge" : "", result.bestLap || "–", lap);
                 if (/^(?:SQ|Q)[123]$/.test(result.timingSegment || "")) text("span", "session-phase", result.timingSegment, lap);
@@ -274,14 +408,11 @@
                 if (result.lapsCompleted == null) laps.title = "Lap count not supplied by the session source";
             }
             tbody.appendChild(row);
+            resultRows.set(result, row);
         });
         table.appendChild(tbody);
-        if (!isRace) {
-            const note = sessionKey === "qualifying" || sessionKey === "sq"
-                ? "Gap is to the driver ahead. Qualifying gaps compare laps from the same phase; a dash means there is no comparable timed lap."
-                : "Gap is to the driver ahead; a dash means there is no comparable timed lap.";
-            text("p", "race-empty session-interval-note", note, section);
-        }
+        gapNote = text("p", "race-empty session-interval-note", "", section);
+        updateGaps();
         if (sessionKey === "race" && Object.keys(penaltyData[race.raceId] || {}).length) {
             text("p", "race-empty", "Positions and times show the published classification, including applied penalties.", section);
         }
@@ -335,6 +466,10 @@
         panel.setAttribute("aria-labelledby", `session-tab-${selectedSession}`);
         panel.tabIndex = 0;
         const session = weekendSession(race, selectedSession);
+        if (profileSelection) {
+            const performance = text("div", "", "", panel);
+            performance.innerHTML = F1Profile.renderSessionMarkup(profileSelection, race, selectedSession, session, id=>getTeam(id).display);
+        }
         if (selectedSession !== "race") {
             const time = new Date(session.startTime || "");
             if (Number.isFinite(time.getTime())) {
@@ -358,6 +493,7 @@
         slider.value = String(selectedIndex);
         slider.style.setProperty("--fill", `${selectedIndex / Math.max(races.length - 1, 1) * 100}%`);
         slider.setAttribute("aria-valuetext", `Round ${race.round}: ${race.name}`);
+        FixtureSlider.update(slider, races.map((item, value) => ({value, label:`Round ${item.round}`, shortLabel:`R${item.round}`})));
         previous.disabled = selectedIndex === 0;
         next.disabled = selectedIndex === races.length - 1;
         fixtures.replaceChildren();
@@ -395,6 +531,12 @@
             if (Number.isFinite(date.getTime())) fixturesNote.append(` · Updated ${date.toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" })}`);
         }
         setQuery();
+        renderProfile();
+        ladder.querySelectorAll("[data-f1-profile-link]").forEach(anchor => {
+            const query = new URL(anchor.href, location.href).searchParams;
+            const kind = query.has("driver") ? "driver" : "team";
+            anchor.href = profileHref(kind, query.get(kind));
+        });
     }
     const selectRace = index => {
         selectedIndex = Math.max(0, Math.min(races.length - 1, index));
@@ -413,7 +555,7 @@
         const data = await Promise.allSettled([
             loadJSON("f1-fixtures.json"), loadJSON("drivers-championship.json"),
             loadJSON("constructors-championship.json"), loadJSON("f1-circuits.json"),
-            loadJSON("f1-penalties.json"), loadJSON("f1-sessions.json")
+            loadJSON("f1-penalties.json"), loadJSON("f1-sessions.json"), loadJSON("f1-careers.json")
         ]);
         const value = index => data[index].status === "fulfilled" ? data[index].value : null;
         const calendar = value(0);
@@ -434,6 +576,7 @@
         penaltyData = value(4)?.season === season ? value(4).races || {} : {};
         penaltyCoverage = value(4)?.season === season ? value(4).coverage || {} : {};
         sessionWeekends = Number(value(5)?.season) === Number(season) ? value(5).races || {} : {};
+        careerData=value(6)||{};
         renderLadder();
         if (!races.length) {
             fixtures.replaceChildren();

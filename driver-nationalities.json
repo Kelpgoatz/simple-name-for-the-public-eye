@@ -1,0 +1,12 @@
+{
+  "note": "Officially verified reserve drivers absent from current championship nationality feeds. Matched by full name; never infer nationality from team or birthplace.",
+  "drivers": {
+    "Jak Crawford": { "nationality": "United States", "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U" },
+    "Leonardo Fornaroli": { "nationality": "Italy", "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U" },
+    "Paul Aron": { "nationality": "Estonia", "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U" },
+    "Ayumu Iwasa": { "nationality": "Japan", "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U" },
+    "Frederik Vesti": { "nationality": "Denmark", "source": "https://www.mercedesamgf1.com/drivers/driver/fred-vesti" },
+    "Luke Browning": { "nationality": "Great Britain", "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U" },
+    "Freddie Slater": { "nationality": "Great Britain", "source": "https://contenthub.audif1.com/en/releases/freddie-slater-to-make-fp1-debut-with-audi-revolut-f1-team-in-mexico-and-brazil-346" }
+  }
+}

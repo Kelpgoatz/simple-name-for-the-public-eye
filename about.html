@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <script src="team-names.js"></script>
+    <script src="viewer-favourites.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="cgrillo is a sports viewer for fixtures, results, ladders and individual performances across Australian and international competitions.">
+    <meta name="theme-color" content="#073d2e">
+    <title>About | cgrillo sports viewer</title>
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('cgrillo-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
+    <link rel="stylesheet" href="editorial.css">
+    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="viewer-experience.css">
+    <script src="editorial.js" defer></script>
+    <script src="viewer-experience.js" defer></script>
+    <link rel="stylesheet" href="sport-view.css">
+    <script src="sport-view.js"></script>
+    <link rel="stylesheet" href="viewer-favourites.css">
+</head>
+<body id="top" class="about-page">
+    <main class="page">
+        <div class="frame">
+            <header class="masthead">
+                <div class="site-banner">
+                    <div class="masthead-meta"><span class="edition-label">The sporting companion</span><time data-edition-date></time></div>
+                    <h1><a class="site-wordmark" href="index.html" aria-label="cgrillo home">cgrillo</a></h1>
+                    <p class="masthead-caption">Sports viewer</p>
+                </div>
+                <div class="topbar">
+                    <nav class="nav nav--permanent" aria-label="Primary">
+                        <a href="index.html">Home</a>
+                        <div class="sport-family" data-league-group="afl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="afl-menu afl-subnav">AFL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="afl-menu" data-league-menu hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
+                            <div class="sport-family__subnav" id="afl-subnav" data-league-subnav role="group" aria-label="AFL competitions" hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
+                        </div>
+                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html">F2</a></div></div>
+                        <div class="sport-family" data-league-group="nrl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nrl-menu nrl-subnav">NRL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nrl-menu" data-league-menu hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                            <div class="sport-family__subnav" id="nrl-subnav" data-league-subnav role="group" aria-label="NRL competitions" hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                        </div>
+                        <div class="sport-family" data-league-group="nba">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nba-menu nba-subnav">NBA <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nba-menu" data-league-menu hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                            <div class="sport-family__subnav" id="nba-subnav" data-league-subnav role="group" aria-label="NBA competitions" hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                        </div>
+                        <a href="nbl.html">NBL</a>
+                        <a href="nfl.html">NFL</a>
+                        <a href="tennis.html">Tennis</a>
+                        <a href="about.html" aria-current="page">About</a>
+                    </nav>
+                    <div class="topbar-actions"><button class="theme-toggle" type="button" data-about-theme aria-label="Toggle dark mode">Dark mode</button></div>
+                </div>
+            </header>
+            <section class="hero about-hero" aria-labelledby="about-title">
+                <p class="about-kicker">A place for the sport itself.</p>
+                <div class="about-hero__grid">
+                    <div>
+                        <h2 id="about-title">Follow the game.<br><em>See the whole picture.</em></h2>
+                        <p class="about-lede">cgrillo is a sports viewer: a place to follow fixtures, check results, read the ladder and explore the performances behind the score. Your competitions, brought together with room to breathe.</p>
+                        <div class="about-actions"><a class="about-button" href="index.html">See what’s on →</a><a class="about-button about-button--quiet" href="#competitions">Find your competition</a></div>
+                    </div>
+                    <aside class="about-scoreboard" aria-label="What cgrillo brings together">
+                        <div class="about-scoreboard__top"><span>cgrillo</span><span>Sports viewer</span></div>
+                        <p class="about-scoreboard__title">From the first bounce<br>to the final lap.</p>
+                        <p class="about-scoreboard__caption">The schedule. The score. The story in the numbers.</p>
+                        <dl><div><dt>Before it starts</dt><dd>The fixture</dd></div><div><dt>When it counts</dt><dd>The result</dd></div><div><dt>Across the season</dt><dd>The ladder</dd></div><div><dt>Beyond the score</dt><dd>The performance</dd></div></dl>
+                        <p class="about-scoreboard__foot">Australian favourites · International competitions</p>
+                    </aside>
+                </div>
+            </section>
+            <section class="about-section" aria-labelledby="about-purpose">
+                <div class="about-section__heading"><h2 id="about-purpose">Made for following along.</h2><p>At a glance, then a little deeper.</p></div>
+                <div class="about-pillars">
+                    <article><span class="about-number">01 / The overview</span><h3>Know what’s happening.</h3><p>Start with the homepage for games nearby in time, recent results and a selection of season ladders. Move into a competition to browse its full fixture.</p></article>
+                    <article><span class="about-number">02 / The detail</span><h3>Look beyond the score.</h3><p>Explore race sessions, results and player performances where the source provides them. Compare totals, follow a team and see how a season takes shape.</p></article>
+                    <article><span class="about-number">03 / The experience</span><h3>Keep the sport in focus.</h3><p>A clear layout, a familiar green masthead and fixtures that work on a phone. Times are shown in Sydney time, so following overseas competitions feels closer to home.</p></article>
+                </div>
+            </section>
+            <section class="about-section" id="competitions" aria-labelledby="about-competitions">
+                <div class="about-section__heading"><h2 id="about-competitions">Choose your competition.</h2><p>One place. Ten ways to follow.</p></div>
+                <div class="about-leagues">
+                    <a href="afl.html"><strong>AFL</strong><span>Australian football →</span></a>
+                    <a href="aflw.html"><strong>AFLW</strong><span>Australian football →</span></a>
+                    <a href="f1.html"><strong>Formula 1</strong><span>Motor racing →</span></a>
+                    <a href="nrl.html"><strong>NRL</strong><span>Rugby league →</span></a>
+                    <a href="nrlw.html"><strong>NRLW</strong><span>Rugby league →</span></a>
+                    <a href="nba.html"><strong>NBA</strong><span>Basketball →</span></a>
+                    <a href="wnba.html"><strong>WNBA</strong><span>Basketball →</span></a>
+                    <a href="nbl.html"><strong>NBL</strong><span>Basketball →</span></a>
+                    <a href="nfl.html"><strong>NFL</strong><span>American football →</span></a>
+                    <a href="tennis.html"><strong>Tennis</strong><span>Grand Slam singles →</span></a>
+                </div>
+            </section>
+            <section class="about-section" aria-labelledby="about-data">
+                <div class="about-section__heading"><h2 id="about-data">A little about the numbers.</h2><p>Clear sources. Honest gaps.</p></div>
+                <div class="about-method">
+                    <article><h3>From the source</h3><p>Fixtures and results come from public sports data feeds, including <a href="https://www.afl.com.au/">AFL</a>, <a href="https://www.nrl.com/">NRL</a>, <a href="https://www.espn.com/">ESPN</a> and <a href="https://f1api.dev/">F1 API</a>. Competition pages link to their sources. Coverage varies by sport and season.</p></article>
+                    <article><h3>Updates, with context</h3><p>Data is refreshed automatically and served from saved snapshots. An update time helps you judge freshness. Provider delays can affect scores, session results, penalties and player statistics; the viewer labels unavailable or incomplete data where known.</p></article>
+                    <article><h3>Built around the season</h3><p>Schedules and ladders follow the season released by each provider. Future draws, playoff opponents and next-season information appear when published. A confirmed result can change after an official correction.</p></article>
+                    <article><h3>An independent companion</h3><p>cgrillo is an independent sports viewer. Team names, competition names and logos belong to their respective owners. For official decisions or the latest competition announcements, follow the relevant organiser’s source.</p></article>
+                    <article><h3>Your sport, on your device</h3><p>Star a competition, team or driver to shape your homepage. These preferences stay in this browser on this device using local storage; cgrillo does not send them to a server. You can unstar an item or reset your selection from the homepage. With no favourites, the usual overview appears.</p></article>
+                </div>
+            </section>
+            <footer class="about-signoff"><strong>cgrillo</strong><p>For the fixture, the final score, and everything the numbers can tell you.</p></footer>
+        </div>
+    </main>
+</body>
+</html>

@@ -86,3 +86,75 @@ test("unknown timing segments and negative differences do not produce misleading
     ], 1), "–");
     assert.equal(intervalFor([{ bestLap: "1:22.500" }, { bestLap: "1:22.100" }], 1), "–");
 });
+
+
+test("gap defaults follow the session type", () => {
+    const { defaultGapMode } = require('../f1-session-utils.js');
+    for (const key of ['fp1','fp2','fp3','qualifying','sq']) assert.equal(defaultGapMode(key), 'leader');
+    for (const key of ['race','sprint']) assert.equal(defaultGapMode(key), 'interval');
+});
+
+test("practice switches between leader gap and driver-ahead interval", () => {
+    const { resultGapFor } = require('../f1-session-utils.js');
+    const rows = [{bestLap:'1:20.000'},{bestLap:'1:20.300'},{bestLap:'1:20.800'}];
+    assert.equal(resultGapFor(rows,2,false,'leader'), '+0.800');
+    assert.equal(resultGapFor(rows,2,false,'interval'), '+0.500');
+    assert.equal(resultGapFor(rows,0,false,'leader'), 'Leader');
+    assert.equal(resultGapFor([{bestLap:'1:20.000',timingSegment:'Q3'},{bestLap:'1:20.300',timingSegment:'Q2'}],1,false,'leader'), '–');
+});
+
+test("race intervals subtract published cumulative gaps, including sprint suffixes and minutes", () => {
+    const { resultGapFor } = require('../f1-session-utils.js');
+    const rows = [{time:'1:30:00.000'},{time:'+0.674s'},{time:'+2.554s'},{time:'+1:02.554'}];
+    assert.equal(resultGapFor(rows,2,true,'interval'), '+1.880');
+    assert.equal(resultGapFor(rows,2,true,'leader'), '+2.554s');
+    assert.equal(resultGapFor(rows,3,true,'interval'), '+60.000');
+    assert.equal(resultGapFor(rows,0,true,'interval'), '1:30:00.000');
+});
+
+test("retirements, lapped cars and missing race gaps do not produce false intervals", () => {
+    const { resultGapFor } = require('../f1-session-utils.js');
+    const rows = [{time:'1:30:00.000'},{time:'+1 lap'},{time:'+1 lap'},{time:'+8.000',retired:'DNF'},{time:'+9.000'}];
+    assert.equal(resultGapFor(rows,1,true,'interval'), '+1 lap');
+    assert.equal(resultGapFor(rows,2,true,'interval'), '+1 lap');
+    assert.equal(resultGapFor(rows,3,true,'interval'), 'DNF');
+    assert.equal(resultGapFor(rows,4,true,'interval'), '–');
+});
+
+
+test('fastest lap order sorts times without changing race positions or points', () => {
+ const {fastestLapOrder}=require('../f1-session-utils.js');
+ const race=[{position:1,points:25,fastLap:'1:21.100'},{position:2,points:18,fastLap:'1:20.900'},{position:3,points:15,fastLap:'1:20.900'}];
+ const original=JSON.stringify(race), sorted=fastestLapOrder(race);
+ assert.deepEqual(sorted.map(r=>r.position),[2,3,1]);
+ assert.deepEqual(sorted.map(r=>r.points),[18,15,25]);
+ assert.equal(sorted[0],race[1]);
+ assert.equal(JSON.stringify(race),original);
+});
+
+test('missing and invalid fastest laps sort last, preserving their classified order', () => {
+ const {fastestLapOrder}=require('../f1-session-utils.js');
+ const race=[{position:1,fastLap:null},{position:2,fastLap:'0:00.000'},{position:3,fastLap:'DNF'},{position:4,fastLap:'1:19.999'}];
+ assert.deepEqual(fastestLapOrder(race).map(r=>r.position),[4,1,2,3]);
+ assert.deepEqual(fastestLapOrder(race.slice(0,3)),race.slice(0,3));
+});
+
+
+test('fastest lap gaps follow sorted lap times rather than race classification', () => {
+ const {fastestLapOrder,fastestLapGapFor}=require('../f1-session-utils.js');
+ const sorted=fastestLapOrder([{position:1,fastLap:'1:20.800'},{position:2,fastLap:'1:20.000'},{position:3,fastLap:'1:20.300'}]);
+ assert.equal(fastestLapGapFor(sorted,2,'interval'),'+0.500');
+ assert.equal(fastestLapGapFor(sorted,2,'leader'),'+0.800');
+ assert.equal(fastestLapGapFor(sorted,0,'interval'),'Interval');
+ assert.equal(fastestLapGapFor(sorted,0,'leader'),'Leader');
+ assert.equal(sorted[2].position,1);
+});
+
+test('fastest lap gaps handle ties, missing laps and timed retired drivers', () => {
+ const {fastestLapGapFor}=require('../f1-session-utils.js');
+ const sorted=[{fastLap:'1:20.000'},{fastLap:'1:20.000',retired:'DNF'},{fastLap:null}];
+ assert.equal(fastestLapGapFor(sorted,1,'interval'),'+0.000');
+ assert.equal(fastestLapGapFor(sorted,2,'interval'),'–');
+ assert.equal(fastestLapGapFor(sorted,2,'leader'),'–');
+ assert.equal(fastestLapGapFor([{fastLap:null}],0,'leader'),'–');
+});

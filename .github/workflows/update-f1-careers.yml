@@ -1,0 +1,42 @@
+name: Update F1 career dashboards
+on:
+  schedule:
+    - cron: '17 19 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-f1-careers.mjs'
+      - 'scripts/lib/f1-career-data.mjs'
+      - '.github/workflows/update-f1-careers.yml'
+permissions:
+  contents: write
+concurrency:
+  group: update-f1-careers
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Import public Jolpica career records
+        id: refresh
+        continue-on-error: true
+        run: node scripts/update-f1-careers.mjs
+      - name: Save available history updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add f1-careers.json sports-data/f1-career-cache.json
+          if ! git diff --quiet --cached; then
+            git commit -m "Update F1 driver and constructor career records"
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Report incomplete history import
+        if: steps.refresh.outcome == 'failure'
+        run: exit 1

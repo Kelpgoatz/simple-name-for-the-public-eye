@@ -1,0 +1,15 @@
+.viewer-star { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; flex: 0 0 30px; padding: 5px; margin-left: 5px; vertical-align: middle; border: 0; border-radius: 50%; background: transparent; color: var(--muted); cursor: pointer; line-height: 1; }
+.viewer-star svg { width: 20px; height: 20px; fill: transparent; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+.viewer-star:hover { color: var(--accent-ink); background: var(--surface-4); }
+.viewer-star[aria-pressed="true"] { color: #9b761e; }
+.viewer-star[aria-pressed="true"] svg { fill: #e7cb77; }
+:root[data-theme="dark"] .viewer-star[aria-pressed="true"] { color: #ead38d; }
+.viewer-star:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+.viewer-favourite-link { display: inline-flex; min-width: 0; align-items: center; gap: 0; max-width: 100%; }
+.viewer-favourite-link > a { min-width: 0; }
+.viewer-favourite-link .viewer-star { width: 26px; height: 26px; flex-basis: 26px; padding: 4px; margin-left: 2px; }
+.viewer-favourite-link .viewer-star svg { width: 17px; height: 17px; }
+.home-league-heading { display: flex; align-items: center; gap: 5px; }
+.viewer-favourites-toast { position: fixed; z-index: 90; bottom: 20px; left: 50%; transform: translateX(-50%); width: max-content; max-width: calc(100% - 28px); margin: 0; padding: 12px 18px; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); font: 600 .7rem/1.5 var(--font-sans); }
+.viewer-favourites-toast[hidden] { display: none; }
+@media(max-width:720px){.viewer-star{width:44px;height:44px;flex-basis:44px;}.viewer-favourite-link .viewer-star{width:36px;height:44px;flex-basis:36px;}.viewer-favourites-toast{bottom:calc(82px + env(safe-area-inset-bottom));}}

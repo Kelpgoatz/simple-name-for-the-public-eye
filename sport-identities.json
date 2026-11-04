@@ -1,0 +1,303 @@
+{
+  "afl": {
+    "adelaidecrows": {
+      "name": "Adelaide Crows",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/adel.png"
+    },
+    "brisbanelions": {
+      "name": "Brisbane Lions",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/bl.png"
+    },
+    "carlton": {
+      "name": "Carlton",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/carl.png"
+    },
+    "collingwood": {
+      "name": "Collingwood",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/coll.png"
+    },
+    "essendon": {
+      "name": "Essendon",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/ess.png"
+    },
+    "fremantle": {
+      "name": "Fremantle",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/fre.png"
+    },
+    "gwsgiants": {
+      "name": "GWS GIANTS",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/gws.png"
+    },
+    "geelongcats": {
+      "name": "Geelong Cats",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/geel.png"
+    },
+    "goldcoastsuns": {
+      "name": "Gold Coast SUNS",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/suns.png"
+    },
+    "hawthorn": {
+      "name": "Hawthorn",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/haw.png"
+    },
+    "melbourne": {
+      "name": "Melbourne",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/melb.png"
+    },
+    "northmelbourne": {
+      "name": "North Melbourne",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/nmfc.png"
+    },
+    "portadelaide": {
+      "name": "Port Adelaide",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/port.png"
+    },
+    "richmond": {
+      "name": "Richmond",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/rich.png"
+    },
+    "stkilda": {
+      "name": "St Kilda",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/stk.png"
+    },
+    "sydneyswans": {
+      "name": "Sydney Swans",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/syd.png"
+    },
+    "westcoasteagles": {
+      "name": "West Coast Eagles",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/wce.png"
+    },
+    "westernbulldogs": {
+      "name": "Western Bulldogs",
+      "image": "https://a.espncdn.com/i/teamlogos/afl/500/wb.png"
+    }
+  },
+  "drivers": {
+    "antonelli": {
+      "nationality": "Italy",
+      "image": "https://flagcdn.com/w40/it.png"
+    },
+    "max_verstappen": {
+      "nationality": "Netherlands",
+      "image": "https://flagcdn.com/w40/nl.png"
+    },
+    "hamilton": {
+      "nationality": "Great Britain",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "russell": {
+      "nationality": "Great Britain",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "leclerc": {
+      "nationality": "Monaco",
+      "image": "https://flagcdn.com/w40/mc.png"
+    },
+    "norris": {
+      "nationality": "Great Britain",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "piastri": {
+      "nationality": "Australia",
+      "image": "https://flagcdn.com/w40/au.png"
+    },
+    "hadjar": {
+      "nationality": "France",
+      "image": "https://flagcdn.com/w40/fx.png"
+    },
+    "lawson": {
+      "nationality": "New Zealand",
+      "image": "https://flagcdn.com/w40/nz.png"
+    },
+    "gasly": {
+      "nationality": "France",
+      "image": "https://flagcdn.com/w40/fx.png"
+    },
+    "lindblad": {
+      "nationality": "Great Britain",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "colapinto": {
+      "nationality": "Argentina",
+      "image": "https://flagcdn.com/w40/ar.png"
+    },
+    "bearman": {
+      "nationality": "Great Britain",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "bortoleto": {
+      "nationality": "Brazil",
+      "image": "https://flagcdn.com/w40/br.png"
+    },
+    "hulkenberg": {
+      "nationality": "Germany",
+      "image": "https://flagcdn.com/w40/de.png"
+    },
+    "ocon": {
+      "nationality": "France",
+      "image": "https://flagcdn.com/w40/fx.png"
+    },
+    "alonso": {
+      "nationality": "Spain",
+      "image": "https://flagcdn.com/w40/es.png"
+    },
+    "sainz": {
+      "nationality": "Spain",
+      "image": "https://flagcdn.com/w40/es.png"
+    },
+    "albon": {
+      "nationality": "Thailand",
+      "image": "https://flagcdn.com/w40/th.png"
+    },
+    "stroll": {
+      "nationality": "Canada",
+      "image": "https://flagcdn.com/w40/ca.png"
+    },
+    "bottas": {
+      "nationality": "Finland",
+      "image": "https://flagcdn.com/w40/fi.png"
+    },
+    "perez": {
+      "nationality": "Mexico",
+      "image": "https://flagcdn.com/w40/mx.png"
+    },
+    "tsunoda": {
+      "nationality": "JPN",
+      "image": "https://flagcdn.com/w40/jp.png"
+    },
+    "hirakawa": {
+      "nationality": "JPN",
+      "image": "https://flagcdn.com/w40/jp.png"
+    },
+    "ryo_hirakawa": {
+      "nationality": "JPN",
+      "image": "https://flagcdn.com/w40/jp.png"
+    },
+    "beganovic": {
+      "nationality": "Sweden",
+      "image": "https://flagcdn.com/w40/se.png",
+      "source": "https://www.fiaformula2.com/en/drivers/dino-beganovic"
+    },
+    "herta": {
+      "nationality": "United States of America",
+      "image": "https://flagcdn.com/w40/us.png",
+      "source": "https://www.fiaformula2.com/en/drivers/colton-herta"
+    },
+    "tsolov": {
+      "nationality": "Bulgaria",
+      "image": "https://flagcdn.com/w40/bg.png",
+      "source": "https://www.fiaformula2.com/en/drivers/nikola-tsolov"
+    },
+    "mini": {
+      "nationality": "Italy",
+      "image": "https://flagcdn.com/w40/it.png",
+      "source": "https://www.fiaformula2.com/en/drivers/gabriele-mini"
+    },
+    "jak_crawford": {
+      "nationality": "United States",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/us.png"
+    },
+    "fornaroli": {
+      "nationality": "Italy",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/it.png"
+    },
+    "aron": {
+      "nationality": "Estonia",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/ee.png"
+    },
+    "ayumu_iwasa": {
+      "nationality": "Japan",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/jp.png"
+    },
+    "vesti": {
+      "nationality": "Denmark",
+      "source": "https://www.mercedesamgf1.com/drivers/driver/fred-vesti",
+      "image": "https://flagcdn.com/w40/dk.png"
+    },
+    "browning": {
+      "nationality": "Great Britain",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "iwasa": {
+      "nationality": "Japan",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/jp.png"
+    },
+    "luke_browning": {
+      "nationality": "Great Britain",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "paul_aron": {
+      "nationality": "Estonia",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/ee.png"
+    },
+    "slater": {
+      "nationality": "Great Britain",
+      "source": "https://contenthub.audif1.com/en/releases/freddie-slater-to-make-fp1-debut-with-audi-revolut-f1-team-in-mexico-and-brazil-346",
+      "image": "https://flagcdn.com/w40/gb.png"
+    }
+  },
+  "constructors": {
+    "mercedes": {
+      "name": "Mercedes Formula 1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/mercedes/2026mercedeslogowhite.webp"
+    },
+    "ferrari": {
+      "name": "Scuderia Ferrari",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/ferrari/2026ferrarilogowhite.webp"
+    },
+    "red_bull": {
+      "name": "Red Bull Racing",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/redbullracing/2026redbullracinglogowhite.webp"
+    },
+    "mclaren": {
+      "name": "McLaren Formula 1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/mclaren/2026mclarenlogowhite.webp"
+    },
+    "rb": {
+      "name": "RB F1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/racingbulls/2026racingbullslogowhite.webp"
+    },
+    "alpine": {
+      "name": "Alpine F1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/alpine/2026alpinelogowhite.webp"
+    },
+    "haas": {
+      "name": "Haas F1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/haasf1team/2026haasf1teamlogowhite.webp"
+    },
+    "audi": {
+      "name": "Audi Revolut F1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/audi/2026audilogowhite.webp"
+    },
+    "williams": {
+      "name": "Williams Racing",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/williams/2026williamslogowhite.webp"
+    },
+    "aston_martin": {
+      "name": "Aston Martin F1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/astonmartin/2026astonmartinlogowhite.webp"
+    },
+    "cadillac": {
+      "name": "Cadillac Formula 1 Team",
+      "image": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000001/common/f1/2026/cadillac/2026cadillaclogowhite.webp"
+    }
+  },
+  "sources": {
+    "afl": "https://site.api.espn.com/apis/site/v2/sports/australian-football/afl/teams?limit=100",
+    "drivers": "drivers-championship.json",
+    "constructors": "https://www.formula1.com/en/teams",
+    "flags": "https://flagcdn.com/",
+    "driverResults": "https://www.formula1.com/en/results/2026/drivers"
+  },
+  "constructorsUpdatedAt": "2026-11-04T08:20:02.142Z",
+  "aflUpdatedAt": "2026-11-04T08:20:02.141Z"
+}

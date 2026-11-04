@@ -1,0 +1,82 @@
+.viewer-back { display: inline-block; margin: 0 0 24px; color: var(--accent-ink); font-size: .75rem; font-weight: 700; text-decoration: none; }
+.viewer-section-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 22px 0 12px; }
+.viewer-section-head h2, .viewer-section-head h3 { margin: 0; color: var(--accent-ink); font-family: var(--font-serif); }
+.viewer-section-head > span { color: var(--muted); font-size: .65rem; }
+.viewer-note { color: var(--muted); font-size: .7rem; line-height: 1.7; }
+.viewer-round-tallies { margin-top: 24px; padding-top: 18px; border-top: 3px solid var(--accent); }
+.viewer-round-tallies > h3 { color: var(--accent-ink); font-family: var(--font-serif); }
+.viewer-leaders { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }
+.viewer-round-tallies .viewer-leaders { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.viewer-leader { min-width: 0; border: 1px solid var(--rule); border-top: 2px solid var(--accent); background: var(--surface); padding: 12px; }
+.viewer-leader h4 { font: 700 1.05rem var(--font-serif); color: var(--accent-ink); margin: 0 0 10px; }
+.viewer-leader ol { padding: 0; margin: 0; list-style: none; }
+.viewer-leader li { display: grid; grid-template-columns: 12px minmax(0,1fr) auto; align-items: center; gap: 7px; border-top: 1px solid var(--rule); min-height: 44px; padding: 7px 0; font-size: .65rem; }
+.viewer-leader li strong { display: block; font-weight: 600; overflow-wrap: anywhere; }
+.viewer-leader li small { display: block; color: var(--muted); margin-top: 2px; font-size: .56rem; }
+.viewer-leader li b { font-variant-numeric: tabular-nums; color: var(--accent-ink); }
+.viewer-rank { color: var(--muted); font-size: .56rem; }
+.viewer-profile-head { display: flex; gap: 20px; align-items: center; }
+.viewer-profile-head > .sports-identity { width: 96px; height: 96px; border: 0; background: transparent; font-size: 1rem; flex: 0 0 96px; }
+.viewer-profile-head > .sports-identity img { width: 100%; height: 100%; background: transparent; }
+.viewer-profile-head h2 { font: 700 clamp(1.7rem,4vw,2.8rem)/1.1 var(--font-serif); color: var(--accent-ink); margin: 6px 0; }
+.viewer-dashboard { padding: 24px; background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--accent); }
+.viewer-metrics { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); margin: 24px 0 18px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.viewer-metrics > div { padding: 16px 8px; }
+.viewer-metrics dt { font-size: .62rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.viewer-metrics dd { margin: 8px 0 0; color: var(--accent-ink); font: 700 1.8rem var(--font-serif); font-variant-numeric: tabular-nums; }
+.viewer-form { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; font-size: .68rem; }
+.viewer-form > span:first-child { color: var(--muted); margin-right: 7px; }
+.viewer-form b { display: inline-grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--rule); background: var(--paper); }
+.viewer-form b[data-result="W"] { background: var(--accent); color: #fff; }
+.viewer-best { font-size: .75rem; line-height: 1.7; margin: 18px 0 0; }
+.viewer-best strong { display: block; color: var(--accent-ink); }
+.viewer-best a { color: var(--ink); text-underline-offset: 3px; }
+.viewer-mode { margin-bottom: 0; }
+.viewer-scope { display: inline-flex; gap: 4px; padding: 4px; margin: 0 0 16px; border: 1px solid var(--rule); background: var(--surface); }
+.viewer-scope button { padding: 11px 16px; min-height: 44px; border: 0; background: transparent; color: var(--muted); font: 700 .72rem var(--font-sans); cursor: pointer; }
+.viewer-scope button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.viewer-history-coverage { margin: 20px 0 8px; color: var(--accent-ink); font-size: .75rem; font-weight: 700; }
+.viewer-achievements { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 12px; }
+.viewer-achievements article { padding: 18px; border: 1px solid var(--rule); border-top: 3px solid #b49a58; background: var(--paper); }
+.viewer-achievements p { font-size: .65rem; line-height: 1.5; color: var(--muted); margin: 0 0 8px; }
+.viewer-achievements h4 { margin: 0 0 8px; color: var(--accent-ink); font: 700 1.2rem var(--font-serif); }
+.viewer-achievements strong { color: var(--ink); font-size: .8rem; }
+.viewer-achievements a { font-size: .65rem; color: var(--accent-ink); }
+.viewer-history { margin-top: 20px; }
+.viewer-history summary { cursor: pointer; padding: 12px 0; color: var(--accent-ink); font-size: .75rem; font-weight: 700; }
+.viewer-team-fixtures[hidden], .viewer-section-head[hidden] { display: none; }
+.viewer-team-fixtures { margin-top: 28px; }
+.viewer-team-fixtures .round-slider { margin-top: 20px; }
+.viewer-team-fixtures .sports-fixture { padding: 20px 0; }
+.viewer-section { margin-top: 28px; }
+.viewer-section > h3 { font: 700 1.5rem var(--font-serif); color: var(--accent-ink); }
+.viewer-game-centre { padding: 22px; border: 1px solid var(--rule); background: var(--surface); }
+.viewer-game-centre .viewer-game-link { display: none; }
+.viewer-table-wrap { overflow: auto; max-width: 100%; border: 1px solid var(--rule); background: var(--surface); }
+.viewer-performance { border-collapse: collapse; width: 100%; font-size: .72rem; font-variant-numeric: tabular-nums; }
+.viewer-performance caption { text-align: left; padding: 14px; color: var(--accent-ink); font-weight: 700; }
+.viewer-performance th, .viewer-performance td { padding: 12px; border-top: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+.viewer-performance th:first-child, .viewer-performance td:nth-child(2) { text-align: left; }
+.viewer-performance thead { color: var(--accent-ink); background: var(--surface-4); }
+.viewer-sort { display: inline-flex; align-items: center; gap: 10px; font-size: .7rem; color: var(--muted); }
+.viewer-sort select { min-height: 44px; padding: 8px 30px 8px 10px; border: 1px solid var(--rule); border-radius: 2px; color: var(--ink); background: var(--surface); font: inherit; }
+.viewer-stat-selected { background: var(--surface-4); color: var(--accent-ink); font-weight: 700; }
+.viewer-table-hint { font-size: .62rem; color: var(--muted); }
+.sports-competitor a, .sports-table__team a { color: inherit; text-decoration: none; text-underline-offset: 3px; }
+.sports-competitor a:hover, .sports-table__team a:hover { text-decoration: underline; }
+.home-ladder a.ladder-row__team { color: var(--ink); text-decoration: none; }
+.home-ladder a.ladder-row__team:hover { text-decoration: underline; text-underline-offset: 3px; }
+.sports-fixture__head > span:first-child { font-weight: 700; color: var(--ink); }
+.viewer-game-link { font-weight: 700; margin-right: 12px; }
+.viewer-source-link { color: var(--muted); }
+.afl-game__name, a.f1-game__driver { text-decoration: none; }
+a.f1-game__driver:hover, a.afl-game__name:hover { text-decoration: underline; text-underline-offset: 3px; }
+.home-game-centre { color: var(--accent-ink); font-size: .62rem; font-weight: 700; text-decoration: none; }
+.home-game-centre:hover { text-decoration: underline; }
+.home-match-date { color: var(--ink); text-decoration: none; text-underline-offset: 3px; }
+a.home-match-date:hover { text-decoration: underline; }
+.viewer-afl-link { grid-column: 1 / -1; font-size: .62rem; color: var(--accent-ink); font-weight: 700; text-underline-offset: 3px; }
+.afl-round-games a.fixture__name { color: inherit; text-decoration: none; }
+.afl-round-games a.fixture__name:hover { text-decoration: underline; }
+@media (max-width: 850px) { .viewer-leaders { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 500px) { .viewer-dashboard { padding: 16px; } .viewer-metrics { grid-template-columns: repeat(2,minmax(0,1fr)); } .viewer-profile-head { gap: 12px; } .viewer-profile-head > .sports-identity { width: 64px; height: 64px; flex-basis: 64px; } .viewer-profile-head h2 { font-size: 1.5rem; } .viewer-leader { padding: 10px 8px; } .viewer-game-centre { padding: 14px; } .viewer-performance th, .viewer-performance td { padding: 12px 9px; } }

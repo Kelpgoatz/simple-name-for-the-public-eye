@@ -1,0 +1,19 @@
+.sports-identity { position: relative; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 28px; border: 1px solid var(--rule); border-left: 3px solid var(--team-color, var(--accent)); background: var(--surface-4); border-radius: 2px; color: var(--ink); font-size: .53rem; font-weight: 700; overflow: hidden; }
+.sports-identity img { position: absolute; width: 23px; height: 23px; object-fit: contain; background: var(--surface-4); }
+.sports-empty { margin: 18px 0; color: var(--muted); font-size: .79rem; line-height: 1.7; }
+.sports-table-wrap { overflow-x: auto; }
+.sports-table { width: 100%; border-collapse: collapse; font-size: .7rem; font-variant-numeric: tabular-nums; }
+.sports-table th { padding: 0 5px 10px; border-bottom: 1px solid var(--rule); text-align: right; color: var(--muted); font-size: .56rem; letter-spacing: .03em; text-transform: uppercase; white-space: nowrap; }
+.sports-table td { padding: 10px 5px; border-bottom: 1px solid var(--rule); text-align: right; }
+.sports-table tr:last-child td { border-bottom: 0; }
+.sports-table th:first-child, .sports-table td:first-child { padding-left: 0; text-align: left; color: var(--muted); }
+.sports-table th:nth-child(2), .sports-table td:nth-child(2) { text-align: left; }
+.sports-table td:last-child, .sports-table th:last-child { padding-right: 0; }
+.sports-table__team { display: flex; align-items: center; gap: 8px; min-width: 130px; font-size: .71rem; font-weight: 600; }
+.sports-table .sports-identity { width: 24px; height: 24px; flex-basis: 24px; }
+.sports-table .sports-identity img { width: 20px; height: 20px; }
+.sports-table__primary { font-weight: 700; color: var(--accent-ink); }
+.sports-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.standings-panel { display: block; max-height: none; padding: 0; overflow: visible; }
+.standings-panel .sports-identity .sport-identity__image { width: 100%; height: 100%; }
+.standings-panel .sports-identity.sport-identity--constructors .sport-identity__image { background: #073d2e; }

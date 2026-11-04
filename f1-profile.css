@@ -1,0 +1,55 @@
+.f1-profile { margin: 16px 0 24px; padding: 20px; background: var(--paper); border: 1px solid var(--rule); border-top: 3px solid var(--accent); }
+.f1-profile__top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.f1-profile__eyebrow { color: var(--muted); font: 700 .62rem var(--font-sans); letter-spacing: .08em; text-transform: uppercase; }
+.f1-profile a, .f1-profile-session a, .race-driver__profile-link { color: var(--accent-ink); text-decoration: none; }
+.f1-profile a:hover, .f1-profile-session a:hover, .race-driver__profile-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.f1-profile__close { font: 700 .7rem var(--font-sans); white-space: nowrap; }
+.f1-profile__identity { display: flex; align-items: center; gap: 14px; margin: 18px 0; }
+.f1-profile__identity h2 { margin: 0; color: var(--accent-ink); font: 700 1.9rem/1.1 var(--font-serif); letter-spacing: -.03em; }
+.f1-profile__identity p { margin: 6px 0 0; color: var(--muted); font-size: .7rem; line-height: 1.6; }
+.f1-profile__badge { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 96px; height: 68px; flex: 0 0 96px; font: 700 1.4rem var(--font-sans); background: transparent; }
+.f1-profile__badge .sport-identity__image { padding: 0; background: transparent; }
+.f1-profile__badge.sport-identity--constructors { background: #073d2e; padding: 6px; }
+.f1-profile__badge.sport-identity--constructors .sport-identity__image { padding: 5px; }
+.f1-profile__mode { display: flex; gap: 6px; }
+.f1-profile__mode button { min-height: 36px; padding: 6px 14px; border: 1px solid var(--rule); border-radius: 2px; color: var(--accent-ink); background: var(--surface); font: 700 .7rem var(--font-sans); cursor: pointer; }
+.f1-profile__mode button[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
+.f1-profile__scope { display: flex; gap: 0; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid var(--rule); }
+.f1-profile__scope button { min-height: 40px; padding: 7px 18px; font: 700 .75rem var(--font-sans); border: 1px solid var(--rule); border-radius: 0; background: var(--surface); color: var(--accent-ink); cursor: pointer; }
+.f1-profile__scope button[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
+.f1-profile__achievements-title { margin: 22px 0 10px; color: var(--accent-ink); font: 700 1.25rem var(--font-serif); }
+.f1-profile__achievements { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.f1-profile__achievements > div { padding: 14px; border: 1px solid var(--rule); border-top: 2px solid #b08b36; background: color-mix(in srgb,#d4af37 7%,var(--surface)); }
+.f1-profile__achievements span { display: block; color: var(--muted); font: 700 .61rem/1.5 var(--font-sans); }
+.f1-profile__achievements strong { display: block; margin-top: 5px; color: var(--accent-ink); font: 700 1.8rem var(--font-serif); }
+.f1-profile__achievements p { margin: 6px 0 0; font-size: .7rem; line-height: 1.7; }
+.f1-profile__history summary { color: var(--accent-ink); cursor: pointer; padding: 12px 0; font-size: .75rem; font-weight: 700; }
+.f1-profile__history > div { overflow-x: auto; }
+.f1-profile__history table { width: 100%; border-collapse: collapse; font-size: .72rem; font-variant-numeric: tabular-nums; }
+.f1-profile__history th, .f1-profile__history td { padding: 10px 8px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+.f1-profile__history th:first-child { text-align: left; }
+.f1-profile__history thead th { color: var(--muted); font-size: .62rem; }
+.f1-profile__metrics { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+.f1-profile__metrics:has(> div:nth-child(4):last-child) { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.f1-profile__metrics div { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.f1-profile__metrics dt { color: var(--muted); font: 600 .65rem/1.5 var(--font-sans); }
+.f1-profile__metrics dd { margin: 4px 0 0; color: var(--accent-ink); font: 700 1.8rem/1.1 var(--font-serif); font-variant-numeric: tabular-nums; }
+.f1-profile__coverage, .f1-profile__hint, .f1-profile__empty { color: var(--muted); font-size: .68rem; line-height: 1.7; }
+.f1-profile__best { display: grid; gap: 5px; padding: 14px; border-left: 3px solid #b08b36; background: color-mix(in srgb, #d4af37 9%, var(--surface)); }
+.f1-profile__best span { color: var(--muted); font: 700 .6rem var(--font-sans); text-transform: uppercase; letter-spacing: .05em; }
+.f1-profile__best strong { font: 700 1rem/1.4 var(--font-serif); }
+.f1-profile__best small { color: var(--muted); font-size: .65rem; }
+.f1-profile__roster h3 { color: var(--accent-ink); font: 700 1rem var(--font-serif); margin: 18px 0 6px; }
+.f1-profile__roster > div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: .74rem; }
+.f1-profile-session { margin: 16px 0; padding: 16px; border: 1px solid var(--rule); border-top: 2px solid var(--accent); background: var(--paper); }
+.f1-profile-session h3 { margin: 0 0 12px; color: var(--accent-ink); font: 700 1.15rem var(--font-serif); }
+.f1-profile-session p { color: var(--muted); font-size: .75rem; line-height: 1.6; }
+.f1-profile-session__driver > a { font-weight: 700; font-size: .8rem; }
+.f1-profile-session__driver + .f1-profile-session__driver { padding-top: 14px; border-top: 1px solid var(--rule); }
+.f1-profile-session dl { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+.f1-profile-session dt { color: var(--muted); font-size: .62rem; }
+.f1-profile-session dd { margin: 5px 0 0; color: var(--ink); font-size: .85rem; font-weight: 700; overflow-wrap: anywhere; }
+.race-results__selected { outline: 2px solid var(--accent); outline-offset: -2px; }
+.f1-profile-link { color: inherit; text-decoration: none; }
+.f1-profile-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 600px) { .f1-profile { padding: 15px 12px; } .f1-profile__badge { width: 72px; height: 54px; flex-basis: 72px; } .f1-profile__identity h2 { font-size: 1.6rem; } .f1-profile__metrics { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 14px; } .f1-profile__achievements { gap: 8px; } .f1-profile__achievements > div { padding: 10px; } .f1-profile-session { padding: 13px 10px; } .f1-profile-session dl { grid-template-columns: repeat(2,minmax(0,1fr)); } }

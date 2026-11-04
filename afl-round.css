@@ -1,0 +1,34 @@
+.afl-round-games.fixtures-list { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; overflow: visible; padding-right: 0; gap: 12px; scrollbar-gutter: auto; }
+.afl-round-games .fixture { padding: 12px; border: 1px solid var(--rule); border-radius: 0; background: var(--paper); align-content: start; }
+.afl-round-games .fixture--prime { grid-column: 1 / -1; background: var(--surface); border-top: 3px solid var(--accent); padding: 16px 12px; }
+.afl-round-games .fixture--expanded { grid-column: 1 / -1; background: var(--surface); padding: 16px 12px; }
+.fixture__prime-label { grid-column: 1 / -1; margin-bottom: 5px; color: var(--accent-ink); font: 700 .6rem var(--font-sans); letter-spacing: .09em; text-transform: uppercase; }
+.afl-round-games .fixture:not(.fixture--prime) { gap: 9px 5px; }
+.afl-round-games .fixture:not(.fixture--prime) .fixture__team { gap: 5px; }
+.afl-round-games .fixture .fixture__logo { width: 38px; height: 38px; font-size: .5rem; background: transparent; border: 0; border-radius: 0; box-shadow: none; text-shadow: none; }
+.afl-round-games .fixture__logo .sport-identity__image, .afl-stat-club .sport-identity__image { padding: 0; background: transparent; }
+.afl-round-games .fixture:not(.fixture--prime):not(.fixture--expanded) .fixture__name { font-size: .68rem; white-space: normal; line-height: 1.4; }
+.afl-round-games .fixture:not(.fixture--prime) .fixture__score { font-size: .95rem; gap: 4px; }
+.afl-round-games .fixture:not(.fixture--prime) .fixture__vs { font-size: .55rem; }
+.afl-round-games .fixture__meta { gap: 5px 8px; font-size: .61rem; }
+.afl-round-games .fixture__meta-item:first-child { font-weight: 700; color: var(--ink); }
+.afl-round-games .fixture__meta .fixture__date { font-weight: 800; color: var(--ink); font-size: .7rem; }
+.afl-round-tallies { margin-top: 26px; padding-top: 20px; border-top: 3px solid var(--accent); }
+.afl-round-tallies__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.afl-round-tallies__head h2 { margin: 0; color: var(--accent-ink); font: 700 1.6rem var(--font-serif); letter-spacing: -.025em; }
+.afl-round-tallies__head > span { color: var(--muted); font-size: .65rem; }
+.afl-round-tallies__note, .afl-round-tallies__source { color: var(--muted); font-size: .68rem; line-height: 1.6; }
+.afl-round-tallies__source a { color: var(--accent-ink); }
+.afl-round-tallies__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.afl-stat-card { min-width: 0; padding: 13px 10px; background: var(--surface); border: 1px solid var(--rule); border-top: 2px solid var(--accent); }
+.afl-stat-card h3 { margin: 0 0 8px; color: var(--accent-ink); font: 700 1.05rem var(--font-serif); }
+.afl-stat-card ol { margin: 0; padding: 0; list-style: none; }
+.afl-stat-card li { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 5px; align-items: center; padding: 8px 0; border-top: 1px solid var(--rule); font-size: .65rem; }
+.afl-stat-rank { color: var(--muted); font-size: .6rem; }
+.afl-stat-club { display: inline-flex; position: relative; width: 36px; height: 36px; align-items: center; justify-content: center; background: transparent; font-size: .5rem; border: 0; border-radius: 0; }
+.afl-stat-player { grid-column: 1 / -1; grid-row: 2; min-width: 0; overflow-wrap: anywhere; font-weight: 600; line-height: 1.4; }
+.afl-stat-player small { display: block; color: var(--muted); overflow: hidden; text-overflow: ellipsis; font-size: .55rem; font-weight: 400; }
+.afl-stat-card li > strong { color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+.afl-stat-empty { color: var(--muted); font-size: .68rem; line-height: 1.6; }
+@media (max-width: 800px) { .afl-round-tallies__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 500px) { .afl-round-games.fixtures-list { grid-template-columns: 1fr; } .afl-round-tallies__head { display: block; } .afl-stat-card { padding: 10px 7px; } }

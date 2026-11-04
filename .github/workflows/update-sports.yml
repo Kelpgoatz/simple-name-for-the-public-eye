@@ -1,0 +1,46 @@
+name: Update men's and women's sports fixtures and ladders
+
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-sports.mjs'
+      - 'scripts/lib/**'
+      - '.github/workflows/update-sports.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-sports
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Refresh all eight sports from their current-season APIs
+        id: refresh
+        continue-on-error: true
+        run: node scripts/update-sports.mjs
+      - name: Save successfully refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sports-data/*.json
+          if ! git diff --quiet --cached; then
+            git commit -m "Update sports fixtures and standings"
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Report upstream failures after preserving successful updates
+        if: steps.refresh.outcome == 'failure'
+        run: exit 1

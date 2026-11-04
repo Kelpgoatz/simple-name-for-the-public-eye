@@ -1,0 +1,2337 @@
+{
+  "sport": "nrlw",
+  "season": 2026,
+  "seasonLabel": "2026",
+  "updatedAt": "2026-11-04T09:28:18.865Z",
+  "fixturesUpdatedAt": "2026-11-04T09:28:18.865Z",
+  "standingsUpdatedAt": "2026-11-04T09:28:18.865Z",
+  "source": {
+    "name": "NRL.com",
+    "url": "https://www.nrl.com/draw/?competition=161&season=2026"
+  },
+  "sources": [
+    {
+      "name": "Official NRLW draw",
+      "url": "https://www.nrl.com/draw/data?competition=161&season=2026"
+    },
+    {
+      "name": "Official NRLW ladder",
+      "url": "https://www.nrl.com/ladder/data?competition=161&season=2026"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "label": "Round 1",
+      "startDate": "2026-07-02T09:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-1/sharks-v-knights/",
+          "startTime": "2026-07-02T09:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Ocean Protect Stadium · Sydney",
+          "home": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 4,
+          "awayScore": 18,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-1/sharks-v-knights/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-1/titans-v-roosters/",
+          "startTime": "2026-07-04T02:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cbus Super Stadium · Gold Coast",
+          "home": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 34,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-1/titans-v-roosters/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-1/dragons-v-raiders/",
+          "startTime": "2026-07-04T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "St George Venues Jubilee Stadium · Kogarah",
+          "home": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 4,
+          "awayScore": 20,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-1/dragons-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-1/broncos-v-cowboys/",
+          "startTime": "2026-07-04T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Suncorp Stadium · Brisbane",
+          "home": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 50,
+          "awayScore": 4,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-1/broncos-v-cowboys/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-1/eels-v-wests-tigers/",
+          "startTime": "2026-07-05T01:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "CommBank Stadium · Sydney",
+          "home": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 28,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-1/eels-v-wests-tigers/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-1/warriors-v-bulldogs/",
+          "startTime": "2026-07-05T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "FMG Stadium Waikato · Hamilton",
+          "home": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 32,
+          "awayScore": 10,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-1/warriors-v-bulldogs/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "2",
+      "label": "Round 2",
+      "startDate": "2026-07-09T09:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-2/sharks-v-broncos/",
+          "startTime": "2026-07-09T09:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Ocean Protect Stadium · Sydney",
+          "home": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 22,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-2/sharks-v-broncos/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-2/cowboys-v-wests-tigers/",
+          "startTime": "2026-07-11T02:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Queensland Country Bank Stadium · Townsville",
+          "home": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 18,
+          "awayScore": 30,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-2/cowboys-v-wests-tigers/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-2/bulldogs-v-titans/",
+          "startTime": "2026-07-11T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Accor Stadium · Sydney",
+          "home": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 36,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-2/bulldogs-v-titans/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-2/roosters-v-knights/",
+          "startTime": "2026-07-11T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 12,
+          "awayScore": 10,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-2/roosters-v-knights/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-2/raiders-v-warriors/",
+          "startTime": "2026-07-12T01:55:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GIO Stadium · Canberra",
+          "home": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 42,
+          "awayScore": 16,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-2/raiders-v-warriors/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-2/dragons-v-eels/",
+          "startTime": "2026-07-12T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "WIN Stadium · Wollongong",
+          "home": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 22,
+          "awayScore": 8,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-2/dragons-v-eels/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "3",
+      "label": "Round 3",
+      "startDate": "2026-07-18T02:40:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-3/raiders-v-roosters/",
+          "startTime": "2026-07-18T02:40:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GIO Stadium · Canberra",
+          "home": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 18,
+          "awayScore": 22,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-3/raiders-v-roosters/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-3/warriors-v-cowboys/",
+          "startTime": "2026-07-18T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Go Media Stadium · Auckland",
+          "home": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 42,
+          "awayScore": 4,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-3/warriors-v-cowboys/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-3/bulldogs-v-sharks/",
+          "startTime": "2026-07-18T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Accor Stadium · Sydney",
+          "home": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 24,
+          "awayScore": 18,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-3/bulldogs-v-sharks/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-3/titans-v-eels/",
+          "startTime": "2026-07-19T01:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cbus Super Stadium · Gold Coast",
+          "home": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 50,
+          "awayScore": 12,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-3/titans-v-eels/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-3/broncos-v-wests-tigers/",
+          "startTime": "2026-07-19T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Totally Workwear Stadium · Brisbane",
+          "home": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 40,
+          "awayScore": 12,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-3/broncos-v-wests-tigers/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-3/knights-v-dragons/",
+          "startTime": "2026-07-19T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "McDonald Jones Stadium · Newcastle",
+          "home": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 38,
+          "awayScore": 0,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-3/knights-v-dragons/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "4",
+      "label": "Round 4",
+      "startDate": "2026-07-25T02:40:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-4/raiders-v-sharks/",
+          "startTime": "2026-07-25T02:40:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GIO Stadium · Canberra",
+          "home": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 22,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-4/raiders-v-sharks/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-4/bulldogs-v-dragons/",
+          "startTime": "2026-07-25T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Accor Stadium · Sydney",
+          "home": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 28,
+          "awayScore": 8,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-4/bulldogs-v-dragons/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-4/cowboys-v-titans/",
+          "startTime": "2026-07-25T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Queensland Country Bank Stadium · Townsville",
+          "home": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 6,
+          "awayScore": 34,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-4/cowboys-v-titans/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-4/eels-v-warriors/",
+          "startTime": "2026-07-26T02:00:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Eric Tweedale Stadium · Sydney",
+          "home": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 12,
+          "awayScore": 14,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-4/eels-v-warriors/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-4/broncos-v-knights/",
+          "startTime": "2026-07-26T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Totally Workwear Stadium · Brisbane",
+          "home": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 12,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-4/broncos-v-knights/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-4/wests-tigers-v-roosters/",
+          "startTime": "2026-07-26T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Leichhardt Oval · Sydney",
+          "home": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 48,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-4/wests-tigers-v-roosters/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "5",
+      "label": "Round 5",
+      "startDate": "2026-08-01T01:35:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-5/sharks-v-wests-tigers/",
+          "startTime": "2026-08-01T01:35:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Geohex Park · Wagga Wagga",
+          "home": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 32,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-5/sharks-v-wests-tigers/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-5/dragons-v-roosters/",
+          "startTime": "2026-08-01T03:25:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Geohex Park · Wagga Wagga",
+          "home": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 8,
+          "awayScore": 38,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-5/dragons-v-roosters/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-5/raiders-v-cowboys/",
+          "startTime": "2026-08-01T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Geohex Park · Wagga Wagga",
+          "home": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 18,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-5/raiders-v-cowboys/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-5/bulldogs-v-broncos/",
+          "startTime": "2026-08-02T01:35:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Geohex Park · Wagga Wagga",
+          "home": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 4,
+          "awayScore": 34,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-5/bulldogs-v-broncos/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-5/warriors-v-titans/",
+          "startTime": "2026-08-02T03:25:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Geohex Park · Wagga Wagga",
+          "home": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 18,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-5/warriors-v-titans/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-5/eels-v-knights/",
+          "startTime": "2026-08-02T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Geohex Park · Wagga Wagga",
+          "home": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 12,
+          "awayScore": 32,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-5/eels-v-knights/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "6",
+      "label": "Round 6",
+      "startDate": "2026-08-08T02:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-6/bulldogs-v-cowboys/",
+          "startTime": "2026-08-08T02:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Belmore Sports Ground · Sydney",
+          "home": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 28,
+          "awayScore": 26,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-6/bulldogs-v-cowboys/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-6/sharks-v-titans/",
+          "startTime": "2026-08-08T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Ocean Protect Stadium · Sydney",
+          "home": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 24,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-6/sharks-v-titans/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-6/warriors-v-knights/",
+          "startTime": "2026-08-08T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "FMG Stadium Waikato · Hamilton",
+          "home": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 22,
+          "awayScore": 14,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-6/warriors-v-knights/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-6/raiders-v-broncos/",
+          "startTime": "2026-08-09T01:35:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GIO Stadium · Canberra",
+          "home": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 28,
+          "awayScore": 4,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-6/raiders-v-broncos/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-6/dragons-v-wests-tigers/",
+          "startTime": "2026-08-09T03:35:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "St George Venues Jubilee Stadium · Kogarah",
+          "home": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 12,
+          "awayScore": 16,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-6/dragons-v-wests-tigers/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-6/roosters-v-eels/",
+          "startTime": "2026-08-09T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Polytec Stadium · Gosford",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 46,
+          "awayScore": 6,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-6/roosters-v-eels/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "7",
+      "label": "Round 7",
+      "startDate": "2026-08-15T02:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-7/titans-v-dragons/",
+          "startTime": "2026-08-15T02:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cbus Super Stadium · Gold Coast",
+          "home": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 26,
+          "awayScore": 10,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-7/titans-v-dragons/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-7/eels-v-bulldogs/",
+          "startTime": "2026-08-15T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "CommBank Stadium · Sydney",
+          "home": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 18,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-7/eels-v-bulldogs/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-7/broncos-v-roosters/",
+          "startTime": "2026-08-15T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Suncorp Stadium · Brisbane",
+          "home": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 34,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-7/broncos-v-roosters/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-7/knights-v-raiders/",
+          "startTime": "2026-08-16T01:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "McDonald Jones Stadium · Newcastle",
+          "home": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 18,
+          "awayScore": 25,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-7/knights-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-7/wests-tigers-v-warriors/",
+          "startTime": "2026-08-16T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "CommBank Stadium · Sydney",
+          "home": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 22,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-7/wests-tigers-v-warriors/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-7/cowboys-v-sharks/",
+          "startTime": "2026-08-16T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Queensland Country Bank Stadium · Townsville",
+          "home": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 18,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-7/cowboys-v-sharks/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "8",
+      "label": "Round 8",
+      "startDate": "2026-08-22T02:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-8/knights-v-wests-tigers/",
+          "startTime": "2026-08-22T02:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "McDonald Jones Stadium · Newcastle",
+          "home": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 26,
+          "awayScore": 27,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-8/knights-v-wests-tigers/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-8/bulldogs-v-raiders/",
+          "startTime": "2026-08-22T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Belmore Sports Ground · Sydney",
+          "home": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 4,
+          "awayScore": 48,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-8/bulldogs-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-8/dragons-v-cowboys/",
+          "startTime": "2026-08-22T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 28,
+          "awayScore": 32,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-8/dragons-v-cowboys/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-8/titans-v-broncos/",
+          "startTime": "2026-08-23T01:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cbus Super Stadium · Gold Coast",
+          "home": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 28,
+          "awayScore": 20,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-8/titans-v-broncos/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-8/roosters-v-warriors/",
+          "startTime": "2026-08-23T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 66,
+          "awayScore": 8,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-8/roosters-v-warriors/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-8/sharks-v-eels/",
+          "startTime": "2026-08-23T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Ocean Protect Stadium · Sydney",
+          "home": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 42,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-8/sharks-v-eels/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "9",
+      "label": "Round 9",
+      "startDate": "2026-08-29T02:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-9/titans-v-raiders/",
+          "startTime": "2026-08-29T02:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cbus Super Stadium · Gold Coast",
+          "home": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 26,
+          "awayScore": 20,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-9/titans-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-9/roosters-v-sharks/",
+          "startTime": "2026-08-29T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 36,
+          "awayScore": 8,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-9/roosters-v-sharks/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-9/cowboys-v-knights/",
+          "startTime": "2026-08-29T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Queensland Country Bank Stadium · Townsville",
+          "home": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 6,
+          "awayScore": 40,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-9/cowboys-v-knights/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-9/warriors-v-dragons/",
+          "startTime": "2026-08-30T01:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Go Media Stadium · Auckland",
+          "home": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 18,
+          "awayScore": 22,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-9/warriors-v-dragons/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-9/eels-v-broncos/",
+          "startTime": "2026-08-30T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "CommBank Stadium · Sydney",
+          "home": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 44,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-9/eels-v-broncos/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-9/wests-tigers-v-bulldogs/",
+          "startTime": "2026-08-30T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Campbelltown Sports Stadium · Sydney",
+          "home": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 44,
+          "awayScore": 14,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-9/wests-tigers-v-bulldogs/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "10",
+      "label": "Round 10",
+      "startDate": "2026-09-05T02:30:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-10/warriors-v-sharks/",
+          "startTime": "2026-09-05T02:30:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Go Media Stadium · Auckland",
+          "home": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 32,
+          "awayScore": 40,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-10/warriors-v-sharks/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-10/cowboys-v-roosters/",
+          "startTime": "2026-09-05T05:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Queensland Country Bank Stadium · Townsville",
+          "home": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 6,
+          "awayScore": 56,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-10/cowboys-v-roosters/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-10/knights-v-bulldogs/",
+          "startTime": "2026-09-05T07:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "McDonald Jones Stadium · Newcastle",
+          "home": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 56,
+          "awayScore": 22,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-10/knights-v-bulldogs/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-10/dragons-v-broncos/",
+          "startTime": "2026-09-06T01:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "WIN Stadium · Wollongong",
+          "home": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 24,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-10/dragons-v-broncos/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-10/wests-tigers-v-titans/",
+          "startTime": "2026-09-06T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Campbelltown Sports Stadium · Sydney",
+          "home": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 0,
+          "awayScore": 58,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-10/wests-tigers-v-titans/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-10/raiders-v-eels/",
+          "startTime": "2026-09-06T08:15:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "GIO Stadium · Canberra",
+          "home": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 17,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-10/raiders-v-eels/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "11",
+      "label": "Round 11",
+      "startDate": "2026-09-10T09:45:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/round-11/roosters-v-bulldogs/",
+          "startTime": "2026-09-10T09:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 42,
+          "awayScore": 12,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-11/roosters-v-bulldogs/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-11/wests-tigers-v-raiders/",
+          "startTime": "2026-09-11T07:40:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Leichhardt Oval · Sydney",
+          "home": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 10,
+          "awayScore": 22,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-11/wests-tigers-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-11/eels-v-cowboys/",
+          "startTime": "2026-09-12T02:00:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "CommBank Stadium · Sydney",
+          "home": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 33,
+          "awayScore": 28,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-11/eels-v-cowboys/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-11/sharks-v-dragons/",
+          "startTime": "2026-09-12T07:10:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 16,
+          "awayScore": 8,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-11/sharks-v-dragons/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-11/broncos-v-warriors/",
+          "startTime": "2026-09-13T02:00:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Totally Workwear Stadium · Brisbane",
+          "home": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 52,
+          "awayScore": 18,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-11/broncos-v-warriors/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/round-11/knights-v-titans/",
+          "startTime": "2026-09-13T03:45:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "McDonald Jones Stadium · Newcastle",
+          "home": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 32,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/round-11/knights-v-titans/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "12",
+      "label": "Finals Week 1",
+      "startDate": "2026-09-18T09:50:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/finals-week-1/wests-tigers-v-raiders/",
+          "startTime": "2026-09-18T09:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Campbelltown Sports Stadium · Sydney",
+          "home": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 0,
+          "awayScore": 6,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/finals-week-1/wests-tigers-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/finals-week-1/broncos-v-knights/",
+          "startTime": "2026-09-19T06:05:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Totally Workwear Stadium · Brisbane",
+          "home": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 40,
+          "awayScore": 16,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/finals-week-1/broncos-v-knights/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "13",
+      "label": "Finals Week 2",
+      "startDate": "2026-09-26T09:50:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/finals-week-2/roosters-v-raiders/",
+          "startTime": "2026-09-26T09:50:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Allianz Stadium · Sydney",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 20,
+          "awayScore": 10,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/finals-week-2/roosters-v-raiders/"
+        },
+        {
+          "id": "/draw/womens-premiership/2026/finals-week-2/titans-v-broncos/",
+          "startTime": "2026-09-27T03:05:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Cbus Super Stadium · Gold Coast",
+          "home": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 8,
+          "awayScore": 20,
+          "winner": "away",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/finals-week-2/titans-v-broncos/"
+        }
+      ],
+      "byes": []
+    },
+    {
+      "id": "14",
+      "label": "Grand Final",
+      "startDate": "2026-10-04T05:00:00Z",
+      "matches": [
+        {
+          "id": "/draw/womens-premiership/2026/grand-final/game-1/",
+          "startTime": "2026-10-04T05:00:00Z",
+          "status": "final",
+          "statusDetail": "Full time",
+          "venue": "Accor Stadium · Sydney",
+          "home": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "away": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "homeScore": 30,
+          "awayScore": 6,
+          "winner": "home",
+          "url": "https://www.nrl.com/draw/womens-premiership/2026/grand-final/game-1/"
+        }
+      ],
+      "byes": []
+    }
+  ],
+  "standings": [
+    {
+      "id": "overall",
+      "label": "NRLW Ladder",
+      "rows": [
+        {
+          "rank": 1,
+          "team": {
+            "id": "500469",
+            "key": "roosters",
+            "name": "Roosters",
+            "abbreviation": "Roosters",
+            "logo": "https://www.nrl.com/.theme/roosters/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 11,
+          "losses": 0,
+          "draws": 0,
+          "points": 22,
+          "for": 434,
+          "against": 116,
+          "difference": 318,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": "500690",
+            "key": "titans",
+            "name": "Titans",
+            "abbreviation": "Titans",
+            "logo": "https://www.nrl.com/.theme/titans/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 10,
+          "losses": 1,
+          "draws": 0,
+          "points": 20,
+          "for": 342,
+          "against": 158,
+          "difference": 184,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": "500470",
+            "key": "broncos",
+            "name": "Brisbane Broncos Women",
+            "abbreviation": "Broncos",
+            "logo": "https://www.nrl.com/.theme/broncos/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 8,
+          "losses": 3,
+          "draws": 0,
+          "points": 16,
+          "for": 340,
+          "against": 182,
+          "difference": 158,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": "500788",
+            "key": "wests-tigers",
+            "name": "Wests Tigers Women",
+            "abbreviation": "Wests Tigers",
+            "logo": "https://www.nrl.com/.theme/wests-tigers/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 7,
+          "losses": 4,
+          "draws": 0,
+          "points": 14,
+          "for": 239,
+          "against": 296,
+          "difference": -57,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 5,
+          "team": {
+            "id": "500785",
+            "key": "raiders",
+            "name": "Canberra Raiders Women",
+            "abbreviation": "Raiders",
+            "logo": "https://www.nrl.com/.theme/raiders/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 6,
+          "losses": 5,
+          "draws": 0,
+          "points": 12,
+          "for": 265,
+          "against": 161,
+          "difference": 104,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 6,
+          "team": {
+            "id": "500691",
+            "key": "knights",
+            "name": "Newcastle Knights Women",
+            "abbreviation": "Knights",
+            "logo": "https://www.nrl.com/.theme/knights/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 5,
+          "losses": 6,
+          "draws": 0,
+          "points": 10,
+          "for": 284,
+          "against": 192,
+          "difference": 92,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 7,
+          "team": {
+            "id": "500472",
+            "key": "warriors",
+            "name": "Warriors",
+            "abbreviation": "Warriors",
+            "logo": "https://www.nrl.com/.theme/warriors/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 4,
+          "losses": 7,
+          "draws": 0,
+          "points": 8,
+          "for": 240,
+          "against": 310,
+          "difference": -70,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 8,
+          "team": {
+            "id": "500692",
+            "key": "eels",
+            "name": "Eels",
+            "abbreviation": "Eels",
+            "logo": "https://www.nrl.com/.theme/eels/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 4,
+          "losses": 7,
+          "draws": 0,
+          "points": 8,
+          "for": 198,
+          "against": 314,
+          "difference": -116,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 9,
+          "team": {
+            "id": "500786",
+            "key": "sharks",
+            "name": "Sharks",
+            "abbreviation": "Sharks",
+            "logo": "https://www.nrl.com/.theme/sharks/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 3,
+          "losses": 8,
+          "draws": 0,
+          "points": 6,
+          "for": 188,
+          "against": 278,
+          "difference": -90,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 10,
+          "team": {
+            "id": "500787",
+            "key": "cowboys",
+            "name": "Cowboys",
+            "abbreviation": "Cowboys",
+            "logo": "https://www.nrl.com/.theme/cowboys/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 3,
+          "losses": 8,
+          "draws": 0,
+          "points": 6,
+          "for": 178,
+          "against": 375,
+          "difference": -197,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 11,
+          "team": {
+            "id": "500904",
+            "key": "bulldogs",
+            "name": "Bulldogs",
+            "abbreviation": "Bulldogs",
+            "logo": "https://www.nrl.com/.theme/bulldogs/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 3,
+          "losses": 8,
+          "draws": 0,
+          "points": 6,
+          "for": 174,
+          "against": 374,
+          "difference": -200,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        },
+        {
+          "rank": 12,
+          "team": {
+            "id": "500471",
+            "key": "dragons",
+            "name": "Dragons",
+            "abbreviation": "Dragons",
+            "logo": "https://www.nrl.com/.theme/dragons/badge.svg",
+            "color": "#073d2e"
+          },
+          "played": 11,
+          "wins": 2,
+          "losses": 9,
+          "draws": 0,
+          "points": 4,
+          "for": 138,
+          "against": 264,
+          "difference": -126,
+          "byes": 0,
+          "percentage": null,
+          "winPct": null,
+          "gamesBehind": null
+        }
+      ]
+    }
+  ]
+}

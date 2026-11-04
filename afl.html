@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="team-names.js"></script>
+    <script src="viewer-favourites.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>AFL Ladder</title>
     <style>
         :root {
@@ -853,7 +855,19 @@
     </style>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
     <link rel="stylesheet" href="editorial.css">
+    <link rel="stylesheet" href="standings.css">
+    <link rel="stylesheet" href="afl-round.css">
+    <script src="afl-round.js"></script>
     <script src="editorial.js" defer></script>
+    <script src="fixture-slider.js"></script>
+    <script src="sport-identities.js"></script>
+    <script src="sports.js"></script>
+    <link rel="stylesheet" href="sport-view.css">
+    <script src="sport-view.js"></script>
+    <link rel="stylesheet" href="viewer-experience.css">
+    <script src="viewer-experience.js" defer></script>
+    <meta name="theme-color" content="#073d2e">
+    <link rel="stylesheet" href="viewer-favourites.css">
 </head>
 <body id="top">
     <main class="page">
@@ -862,13 +876,31 @@
                 <div class="site-banner">
                     <div class="masthead-meta"><span class="edition-label">Australian football</span><time data-edition-date></time></div>
                     <h1><a class="site-wordmark" href="index.html" aria-label="cgrillo home">cgrillo</a></h1>
-                    <p class="masthead-caption">Sport &amp; perspective</p>
+                    <p class="masthead-caption">Sports viewer</p>
                 </div>
                 <div class="topbar">
-                    <nav class="nav" aria-label="Primary">
+                    <nav class="nav nav--permanent" aria-label="Primary">
                         <a href="index.html">Home</a>
-                        <a href="f1.html">F1</a>
-                        <a href="afl.html" aria-current="page">AFL</a>
+                        <div class="sport-family" data-league-group="afl" data-current="true">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="afl-menu afl-subnav">AFL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="afl-menu" data-league-menu hidden><a href="afl.html" aria-current="page">AFL</a><a href="aflw.html">AFLW</a></div>
+                            <div class="sport-family__subnav" id="afl-subnav" data-league-subnav role="group" aria-label="AFL competitions" hidden><a href="afl.html" aria-current="page">AFL</a><a href="aflw.html">AFLW</a></div>
+                        </div>
+                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html">F2</a></div></div>
+                        <div class="sport-family" data-league-group="nrl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nrl-menu nrl-subnav">NRL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nrl-menu" data-league-menu hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                            <div class="sport-family__subnav" id="nrl-subnav" data-league-subnav role="group" aria-label="NRL competitions" hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                        </div>
+                        <div class="sport-family" data-league-group="nba">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nba-menu nba-subnav">NBA <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nba-menu" data-league-menu hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                            <div class="sport-family__subnav" id="nba-subnav" data-league-subnav role="group" aria-label="NBA competitions" hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                        </div>
+                        <a href="nbl.html">NBL</a>
+                        <a href="nfl.html">NFL</a>
+                        <a href="tennis.html">Tennis</a>
+                        <a href="about.html">About</a>
                     </nav>
                     <div class="topbar-actions">
                         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark mode</button>
@@ -891,22 +923,21 @@
                             </div>
                         </div>
                         <input class="round-slider" type="range" min="0" max="29" step="1" value="0" data-round-slider aria-label="Select round">
-                        <div class="fixtures-list" data-fixtures-list>
+                        <div class="fixtures-list afl-round-games" data-fixtures-list>
                             <p class="fixtures-empty">Loading fixtures...</p>
                         </div>
                         <p class="fixtures-note" data-fixtures-note hidden></p>
+                        <section class="afl-round-tallies" aria-labelledby="afl-round-tallies-title" data-round-tallies>
+                            <h2 id="afl-round-tallies-title">Round player leaders</h2>
+                            <p class="afl-round-tallies__note">Loading player statistics…</p>
+                        </section>
                     </section>
                     <aside class="ladder-card" aria-labelledby="afl-ladder-title">
                         <div class="ladder-card__head">
                             <h3 id="afl-ladder-title">AFL Ladder</h3>
                         </div>
-                        <div class="ladder-list" data-ladder-list>
-                            <div class="ladder-row" style="--logo-from:#002b5c;--logo-mid:#e31b23;--logo-to:#ffcc00;">
-                                <div class="ladder-row__pos">1</div>
-                                <div class="ladder-row__logo" aria-hidden="true">AC</div>
-                                <div class="ladder-row__team">Adelaide Crows</div>
-                                <div class="ladder-row__stats">14-2-0 · 56 pts · 136.4%</div>
-                            </div>
+                        <div class="standings-panel" data-ladder-list>
+                            <p class="sports-empty">Loading AFL ladder…</p>
                         </div>
                         <p class="ladder-note" data-ladder-note></p>
                     </aside>
@@ -973,52 +1004,28 @@
                 return Number.isFinite(number) ? number : fallback;
             };
 
-            const formatPercentage = (value) => formatNumber(value).toFixed(1);
-
-            const addText = (className, text, parent) => {
-                const element = document.createElement("div");
-                element.className = className;
-                element.textContent = text;
-                parent.appendChild(element);
-                return element;
-            };
-
-            const applyColors = (row, colors) => {
-                row.style.setProperty("--logo-from", colors[0]);
-                row.style.setProperty("--logo-to", colors[colors.length - 1]);
-                if (colors.length > 2) {
-                    row.style.setProperty("--logo-mid", colors[1]);
-                } else {
-                    row.style.removeProperty("--logo-mid");
-                }
-            };
-
             const renderStandings = (data, sourceText) => {
                 const sortedStandings = [...data].sort((first, second) => formatNumber(first.rank) - formatNumber(second.rank));
-                ladderList.replaceChildren();
-
-                sortedStandings.forEach((standing, index) => {
+                const rows = sortedStandings.map((standing, index) => {
                     const team = teams[teamByName.get(standing.name.toLowerCase())] || {
                         display: standing.name,
                         initials: standing.name.slice(0, 2).toUpperCase(),
                         colors: ["#0f5a6d", "#79d7ec"]
                     };
-                    const row = document.createElement("div");
-                    row.className = "ladder-row";
-                    applyColors(row, team.colors);
-
-                    addText("ladder-row__pos", String(formatNumber(standing.rank, index + 1)), row);
-                    const logo = addText("ladder-row__logo", team.initials, row);
-                    logo.setAttribute("aria-hidden", "true");
-                    addText("ladder-row__team", team.display, row);
-
-                    addText(
-                        "ladder-row__stats",
-                        `${formatNumber(standing.wins)}-${formatNumber(standing.losses)}-${formatNumber(standing.draws)} · ${formatNumber(standing.pts)} pts · ${formatPercentage(standing.percentage)}%`,
-                        row
-                    );
-
-                    ladderList.appendChild(row);
+                    return {
+                        rank: formatNumber(standing.rank, index + 1),
+                        team: { name: team.display, abbreviation: team.initials, color: team.colors[0] },
+                        played: standing.played,
+                        wins: standing.wins,
+                        losses: standing.losses,
+                        draws: standing.draws,
+                        percentage: standing.percentage,
+                        points: standing.pts
+                    };
+                });
+                ladderList.innerHTML = SportsUI.renderStandings({ label: "AFL Ladder", rows }, "afl");
+                ladderList.querySelectorAll("tbody tr").forEach((row, index) => {
+                    SportIdentity.afl(row.querySelector(".sports-identity"), rows[index].team.name);
                 });
 
                 if (ladderNote) {
@@ -1056,6 +1063,13 @@
 
             let currentRound = MIN_ROUND;
             let fixturesData = null;
+            let roundStatsData = null;
+            const tallies = document.querySelector("[data-round-tallies]");
+            const renderTallies = () => {
+                const firstDate = (fixturesData || []).flatMap(round => round.matches || []).map(match => parseStartTime(match.startTime)).find(Boolean);
+                AFLRoundView.render(tallies, roundStatsData, currentRound, firstDate?.getUTCFullYear());
+            };
+            const countdownTimers = [];
 
             const statusLabels = {
                 SCHEDULED: "Scheduled",
@@ -1146,6 +1160,8 @@
 
             const render = () => {
                 if (!fixturesList) return;
+                countdownTimers.splice(0).forEach(clearInterval);
+                renderTallies();
                 const isFinalsRound = currentRound >= 25;
                 if (roundLabel) roundLabel.textContent = finalsNames[currentRound] || "Round";
                 if (roundValue) roundValue.textContent = String(currentRound);
@@ -1153,6 +1169,8 @@
                     roundSlider.max = String(maxRound);
                     roundSlider.value = String(currentRound);
                     roundSlider.style.setProperty("--fill", `${((currentRound - MIN_ROUND) / Math.max(maxRound - MIN_ROUND, 1)) * 100}%`);
+                    roundSlider.setAttribute("aria-valuetext", `${finalsNames[currentRound] || "Round"} ${currentRound}`);
+                    FixtureSlider.update(roundSlider, Array.from({length: maxRound - MIN_ROUND + 1}, (_, index) => { const value = MIN_ROUND + index; return {value, label:finalsNames[value] || `Round ${value}`, shortLabel:finalsNames[value] ? value === maxRound ? "Final" : `F${value - 24}` : `R${value}`}; }));
                 }
                 if (fixturesNote) {
                     fixturesNote.hidden = !isFinalsRound;
@@ -1171,7 +1189,9 @@
                     return;
                 }
 
-                round.matches.forEach(match => {
+                const orderedMatches = AFLRoundView.sortMatches(round.matches);
+                const closestFinal = AFLRoundView.closestFinal(orderedMatches, isFinalsRound);
+                orderedMatches.forEach((match, index) => {
                     const home = resolveTeam(match.homeTeam);
                     const away = resolveTeam(match.awayTeam);
                     const status = String(match.status || "SCHEDULED").toUpperCase();
@@ -1212,7 +1232,13 @@
                     const isScheduled = !(isLive || isCountdown || isFinished || isPending || isTbc);
 
                     const card = document.createElement("div");
-                    card.className = "fixture";
+                    card.className = `fixture${index === 0 ? " fixture--prime" : index === closestFinal ? " fixture--expanded" : ""}`;
+                    if (index === 0) {
+                        const prime = document.createElement("div");
+                        prime.className = "fixture__prime-label";
+                        prime.textContent = "Prime time · First game of the round";
+                        card.appendChild(prime);
+                    }
                     applyMatchColors(card, home.colors);
 
                     const homeTeam = document.createElement("div");
@@ -1220,6 +1246,7 @@
                     const homeLogo = document.createElement("span");
                     homeLogo.className = "fixture__logo";
                     homeLogo.textContent = home.initials;
+                    SportIdentity.afl(homeLogo, home.display);
                     homeLogo.setAttribute("aria-hidden", "true");
                     applyMatchColors(homeLogo, home.colors);
                     homeTeam.appendChild(homeLogo);
@@ -1243,22 +1270,31 @@
                     const awayLogo = document.createElement("span");
                     awayLogo.className = "fixture__logo";
                     awayLogo.textContent = away.initials;
+                    SportIdentity.afl(awayLogo, away.display);
                     awayLogo.setAttribute("aria-hidden", "true");
                     applyMatchColors(awayLogo, away.colors);
                     awayTeam.appendChild(awayLogo);
+                    [[homeTeam, match.homeTeam], [awayTeam, match.awayTeam]].forEach(([element, teamName]) => {
+                        const old = element.querySelector('.fixture__name');
+                        const link = document.createElement('a');
+                        link.className = 'fixture__name';
+                        link.href = SportView.teamUrl('afl', {name:teamName});
+                        link.textContent = old.textContent;
+                        old.replaceWith(link);
+                    });
 
                     const meta = document.createElement("div");
                     meta.className = "fixture__meta";
 
                     const isUnassignedFinal = isFinalsRound && (status === "PLACEHOLDER" || !startTime);
                     if (isUnassignedFinal && startTime) {
-                        meta.appendChild(addText("fixture__meta-item", formatWeekOf(startTime), meta));
+                        meta.appendChild(addText("fixture__meta-item fixture__date", formatWeekOf(startTime), meta));
                     } else if (startTime) {
                         const datePart = startTime.toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short" });
                         const timePart = startTime.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
-                        meta.appendChild(addText("fixture__meta-item", `${datePart} · ${timePart}`, meta));
+                        meta.appendChild(addText("fixture__meta-item fixture__date", `${datePart} · ${timePart}`, meta));
                     } else if (isUnassignedFinal) {
-                        meta.appendChild(addText("fixture__meta-item", "Week to be confirmed", meta));
+                        meta.appendChild(addText("fixture__meta-item fixture__date", "Week to be confirmed", meta));
                     }
                     if (match.venue && match.venue !== "To Be Confirmed") {
                         meta.appendChild(addText("fixture__meta-item", match.venue, meta));
@@ -1288,6 +1324,7 @@
                                 statusBadge.textContent = formatCountdown();
                             }
                         }, 1000);
+                        countdownTimers.push(timer);
                     } else if (isPending) {
                         statusBadge.appendChild(document.createTextNode("Pending"));
                     } else {
@@ -1299,6 +1336,11 @@
                     card.appendChild(score);
                     card.appendChild(awayTeam);
                     card.appendChild(meta);
+                    const gameLink = document.createElement('a');
+                    gameLink.className = 'viewer-afl-link';
+                    gameLink.href = SportView.matchUrl('afl', match);
+                    gameLink.textContent = 'Game centre & player performances →';
+                    card.appendChild(gameLink);
                     fixturesList.appendChild(card);
                 });
             };
@@ -1315,8 +1357,10 @@
             Promise.all([
                 fetch("afl-fixtures.json").then(response => (response.ok ? response.json() : Promise.reject())),
                 fetch("standings.json").then(response => (response.ok ? response.json() : Promise.reject())).catch(() => null),
-                fetch("team-colors.json").then(response => (response.ok ? response.json() : Promise.reject())).catch(() => null)
-            ]).then(([data, standings, colorData]) => {
+                fetch("team-colors.json").then(response => (response.ok ? response.json() : Promise.reject())).catch(() => null),
+                fetch("afl-player-stats.json", {cache: "no-cache"}).then(response => response.ok ? response.json() : Promise.reject()).catch(() => null)
+            ]).then(([data, standings, colorData, playerStats]) => {
+                roundStatsData = playerStats;
                 if (colorData) {
                     Object.entries(colorData).forEach(([name, entry]) => {
                         if (entry && Array.isArray(entry.colors)) {
@@ -1351,6 +1395,12 @@
                 }
                 goToRound(defaultRound);
             }).catch(() => goToRound(MIN_ROUND));
+            setInterval(() => {
+                fetch("afl-player-stats.json", {cache: "no-cache"}).then(response => response.ok ? response.json() : Promise.reject()).then(data => {
+                    roundStatsData = data;
+                    renderTallies();
+                }).catch(() => {});
+            }, 15 * 60000);
         })();
 
         (() => {

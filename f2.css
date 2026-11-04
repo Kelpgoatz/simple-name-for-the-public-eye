@@ -1,0 +1,27 @@
+.f2-page .sports-grid { grid-template-columns: minmax(0,1.8fr) minmax(290px,1fr); }
+[data-f2-view][hidden] { display: none; }
+.f2-page .fixtures-list { max-height: none; overflow: visible; }
+.f2-race { padding: 18px 0; border-top: 1px solid var(--rule); }
+.f2-race h3 { margin: 10px 0; color: var(--accent-ink); font: 700 1.8rem/1.2 var(--font-serif); letter-spacing: -.03em; }
+.f2-race > p:last-child { font-size: .72rem; color: var(--muted); line-height: 1.7; }
+.f2-identity { width: 44px; height: 44px; flex: 0 0 44px; object-fit: contain; }
+.f2-identity--team { background: #073d2e; padding: 5px; }
+.f2-identity--flag { height: 30px; object-fit: contain; background: transparent; }
+.f2-identity--fallback { display: inline-grid; place-items: center; font: 700 .7rem var(--font-sans); color: var(--accent-ink); }
+.f2-identity-link { display: inline-flex; align-items: center; gap: 9px; color: inherit; text-decoration: none; text-underline-offset: 3px; }
+.f2-identity-link:hover { text-decoration: underline; }
+.f2-identity-link small { display: block; margin-top: 3px; color: var(--muted); font-size: .58rem; font-weight: 400; }
+.f2-results .viewer-performance { font-size: .69rem; }
+.f2-results th, .f2-results td { text-align: right; padding: 10px 9px; }
+.f2-results th:nth-child(2), .f2-results td:nth-child(3) { text-align: left; }
+.f2-results tr[data-podium="1"] { background: color-mix(in srgb,#d4af37 20%,var(--surface)); }
+.f2-results tr[data-podium="2"] { background: color-mix(in srgb,#a7b0ba 25%,var(--surface)); }
+.f2-results tr[data-podium="3"] { background: color-mix(in srgb,#cd7f32 20%,var(--surface)); }
+.f2-results .f2-selected { outline: 2px solid var(--accent-ink); outline-offset: -2px; }
+.f2-profile { margin-bottom: 28px; }
+.f2-profile[hidden] { display: none; }
+.f2-profile .viewer-profile-head > .f2-identity { width: 110px; height: 110px; flex-basis: 110px; }
+.f2-profile .viewer-profile-head > .f2-identity--flag { width: 110px; height: 74px; }
+.f2-profile .viewer-metrics { grid-template-columns: repeat(5,minmax(0,1fr)); }
+@media(max-width:900px){.f2-page .sports-grid { grid-template-columns: minmax(0,1fr); }}
+@media(max-width:500px){.f2-profile .viewer-profile-head > .f2-identity { width: 76px; height: 76px; flex-basis: 76px; }.f2-profile .viewer-profile-head > .f2-identity--flag { height: 51px; }.f2-profile .viewer-metrics { grid-template-columns: repeat(2,minmax(0,1fr)); }.f2-race h3 { font-size: 1.45rem; }}

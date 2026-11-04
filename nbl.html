@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <script src="team-names.js"></script>
+    <script src="viewer-favourites.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="NBL fixtures, results and standings at cgrillo.">
+    <title>NBL Fixtures & Ladder | cgrillo</title>
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('cgrillo-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
+    <link rel="stylesheet" href="editorial.css">
+    <link rel="stylesheet" href="sports.css">
+    <script src="editorial.js" defer></script>
+    <script src="fixture-slider.js"></script>
+    <script src="sports.js" defer></script>
+    <link rel="stylesheet" href="sport-view.css">
+    <script src="sport-view.js"></script>
+    <link rel="stylesheet" href="viewer-experience.css">
+    <script src="viewer-experience.js" defer></script>
+    <meta name="theme-color" content="#073d2e">
+    <link rel="stylesheet" href="viewer-favourites.css">
+</head>
+<body id="top" class="sports-page" data-sport="nbl">
+    <main class="page">
+        <div class="frame">
+            <header class="masthead">
+                <div class="site-banner">
+                    <div class="masthead-meta"><span class="edition-label">Australian basketball</span><time data-edition-date></time></div>
+                    <h1><a class="site-wordmark" href="index.html" aria-label="cgrillo home">cgrillo</a></h1>
+                    <p class="masthead-caption">Sports viewer</p>
+                </div>
+                <div class="topbar">
+                    <nav class="nav nav--permanent" aria-label="Primary">
+                        <a href="index.html">Home</a>
+                        <div class="sport-family" data-league-group="afl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="afl-menu afl-subnav">AFL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="afl-menu" data-league-menu hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
+                            <div class="sport-family__subnav" id="afl-subnav" data-league-subnav role="group" aria-label="AFL competitions" hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
+                        </div>
+                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html">F2</a></div></div>
+                        <div class="sport-family" data-league-group="nrl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nrl-menu nrl-subnav">NRL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nrl-menu" data-league-menu hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                            <div class="sport-family__subnav" id="nrl-subnav" data-league-subnav role="group" aria-label="NRL competitions" hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                        </div>
+                        <div class="sport-family" data-league-group="nba">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nba-menu nba-subnav">NBA <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nba-menu" data-league-menu hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                            <div class="sport-family__subnav" id="nba-subnav" data-league-subnav role="group" aria-label="NBA competitions" hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                        </div>
+                        <a href="nbl.html" aria-current="page">NBL</a>
+                        <a href="nfl.html">NFL</a>
+                        <a href="tennis.html">Tennis</a>
+                        <a href="about.html">About</a>
+                    </nav>
+                    <div class="topbar-actions"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">Dark mode</button></div>
+                </div>
+            </header>
+            <section class="hero" aria-label="NBL fixtures and ladder">
+                <div class="sports-heading"><div><p class="sports-kicker" data-season-label>Current season</p><h2>NBL</h2></div><p class="sports-timezone">All match times in Sydney time</p></div>
+                <p class="sports-notice" data-sports-notice hidden role="status"></p>
+                <div class="hero-grid sports-grid">
+                    <section class="fixtures-card" aria-labelledby="sports-fixtures-title">
+                        <div class="fixtures-card__head"><h3 id="sports-fixtures-title">Fixtures & results</h3><div class="round-selector"><button type="button" data-round-prev aria-label="Previous date" disabled>‹</button><div class="round-selector__display"><span class="round-selector__label">Date</span><span class="round-selector__value" data-round-value>—</span></div><button type="button" data-round-next aria-label="Next date" disabled>›</button></div></div>
+                        <div class="sports-tabs" data-fixture-tabs aria-label="Competition" hidden></div>
+                        <input class="round-slider" type="range" min="0" max="0" value="0" step="1" data-round-slider aria-label="Select date" disabled>
+                        <div class="fixtures-list" data-fixtures-list aria-live="polite"><p class="sports-empty">Loading NBL fixtures…</p></div>
+                        <p class="sports-footnote" data-fixtures-note></p>
+                    </section>
+                    <aside class="ladder-card" aria-labelledby="sports-ladder-title">
+                        <div class="ladder-card__head"><h3 id="sports-ladder-title">NBL ladder</h3></div>
+                        <div class="sports-tabs" data-standing-tabs aria-label="Standings group" hidden></div>
+                        <div data-standings aria-live="polite"><p class="sports-empty">Loading standings…</p></div>
+                        <p class="sports-footnote" data-ladder-note></p>
+                    </aside>
+                </div>
+                <footer class="sports-source"><p data-source>Fixtures and results are refreshed automatically.</p><p data-updated></p></footer>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

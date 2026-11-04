@@ -1,0 +1,5508 @@
+{
+  "sport": "nbl",
+  "season": 2027,
+  "seasonLabel": "2026-27",
+  "updatedAt": "2026-11-04T08:50:35.267Z",
+  "fixturesUpdatedAt": "2026-11-04T08:50:35.267Z",
+  "standingsUpdatedAt": "2026-11-04T08:50:35.267Z",
+  "seasonStart": "2026-07-25T07:00Z",
+  "seasonEnd": "2027-06-01T06:59Z",
+  "source": {
+    "name": "ESPN",
+    "url": "https://www.espn.com/nbl/scoreboard",
+    "fixtures": "https://site.api.espn.com/apis/site/v2/sports/basketball/nbl/scoreboard",
+    "standings": "https://site.api.espn.com/apis/v2/sports/basketball/nbl/standings?season=2027"
+  },
+  "groups": [
+    {
+      "id": "2026-08-22",
+      "label": "Sat, 22 Aug 2026",
+      "startDate": "2026-08-22T00:00:00Z",
+      "matches": [
+        {
+          "id": "401881692",
+          "startTime": "2026-08-22T04:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 102,
+          "awayScore": 87,
+          "winner": "home"
+        },
+        {
+          "id": "401885159",
+          "startTime": "2026-08-22T09:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 91,
+          "awayScore": 89,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-25",
+      "label": "Tue, 25 Aug 2026",
+      "startDate": "2026-08-25T00:00:00Z",
+      "matches": [
+        {
+          "id": "401901559",
+          "startTime": "2026-08-25T08:30:00.000Z",
+          "status": "live",
+          "statusDetail": "3:24 - 2nd",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 27,
+          "awayScore": 32,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-08-27",
+      "label": "Thu, 27 Aug 2026",
+      "startDate": "2026-08-27T00:00:00Z",
+      "matches": [
+        {
+          "id": "401885515",
+          "startTime": "2026-08-27T09:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 95,
+          "awayScore": 99,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-29",
+      "label": "Sat, 29 Aug 2026",
+      "startDate": "2026-08-29T00:00:00Z",
+      "matches": [
+        {
+          "id": "401881691",
+          "startTime": "2026-08-29T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 113,
+          "awayScore": 97,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-02",
+      "label": "Wed, 2 Sept 2026",
+      "startDate": "2026-09-02T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875415",
+          "startTime": "2026-09-02T07:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": 85,
+          "awayScore": 82,
+          "winner": "home"
+        },
+        {
+          "id": "401875411",
+          "startTime": "2026-09-02T10:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": 84,
+          "awayScore": 101,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-03",
+      "label": "Thu, 3 Sept 2026",
+      "startDate": "2026-09-03T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875413",
+          "startTime": "2026-09-03T07:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": 112,
+          "awayScore": 91,
+          "winner": "home"
+        },
+        {
+          "id": "401875414",
+          "startTime": "2026-09-03T10:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 100,
+          "awayScore": 99,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-04",
+      "label": "Fri, 4 Sept 2026",
+      "startDate": "2026-09-04T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875406",
+          "startTime": "2026-09-04T07:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 74,
+          "awayScore": 95,
+          "winner": "away"
+        },
+        {
+          "id": "401875405",
+          "startTime": "2026-09-04T10:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 82,
+          "awayScore": 97,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-05",
+      "label": "Sat, 5 Sept 2026",
+      "startDate": "2026-09-05T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875410",
+          "startTime": "2026-09-05T07:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": 113,
+          "awayScore": 105,
+          "winner": "home"
+        },
+        {
+          "id": "401875412",
+          "startTime": "2026-09-05T10:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 112,
+          "awayScore": 86,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-06",
+      "label": "Sun, 6 Sept 2026",
+      "startDate": "2026-09-06T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875409",
+          "startTime": "2026-09-06T04:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 103,
+          "awayScore": 98,
+          "winner": "home"
+        },
+        {
+          "id": "401875404",
+          "startTime": "2026-09-06T07:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 86,
+          "awayScore": 96,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-08",
+      "label": "Tue, 8 Sept 2026",
+      "startDate": "2026-09-08T00:00:00Z",
+      "matches": [
+        {
+          "id": "401912367",
+          "startTime": "2026-09-08T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 100,
+          "awayScore": 103,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-10",
+      "label": "Thu, 10 Sept 2026",
+      "startDate": "2026-09-10T00:00:00Z",
+      "matches": [
+        {
+          "id": "401913070",
+          "startTime": "2026-09-10T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 86,
+          "awayScore": 90,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12",
+      "label": "Sat, 12 Sept 2026",
+      "startDate": "2026-09-12T00:00:00Z",
+      "matches": [
+        {
+          "id": "401915913",
+          "startTime": "2026-09-12T08:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 98,
+          "awayScore": 98,
+          "winner": null
+        },
+        {
+          "id": "401907769",
+          "startTime": "2026-09-12T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "roundLabel": "Preseason",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 98,
+          "awayScore": 129,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-19",
+      "label": "Sat, 19 Sept 2026",
+      "startDate": "2026-09-19T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875251",
+          "startTime": "2026-09-19T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 95,
+          "awayScore": 97,
+          "winner": "away"
+        },
+        {
+          "id": "401875243",
+          "startTime": "2026-09-19T11:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": 79,
+          "awayScore": 100,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-20",
+      "label": "Sun, 20 Sept 2026",
+      "startDate": "2026-09-20T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875263",
+          "startTime": "2026-09-20T05:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 95,
+          "awayScore": 81,
+          "winner": "home"
+        },
+        {
+          "id": "401875242",
+          "startTime": "2026-09-20T07:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 111,
+          "awayScore": 90,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-21",
+      "label": "Mon, 21 Sept 2026",
+      "startDate": "2026-09-21T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875253",
+          "startTime": "2026-09-21T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": 96,
+          "awayScore": 91,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-22",
+      "label": "Tue, 22 Sept 2026",
+      "startDate": "2026-09-22T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875244",
+          "startTime": "2026-09-22T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 88,
+          "awayScore": 85,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-23",
+      "label": "Wed, 23 Sept 2026",
+      "startDate": "2026-09-23T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875241",
+          "startTime": "2026-09-23T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": 93,
+          "awayScore": 87,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-24",
+      "label": "Thu, 24 Sept 2026",
+      "startDate": "2026-09-24T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875267",
+          "startTime": "2026-09-24T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 61,
+          "awayScore": 86,
+          "winner": "away"
+        },
+        {
+          "id": "401875245",
+          "startTime": "2026-09-24T11:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 98,
+          "awayScore": 97,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-25",
+      "label": "Fri, 25 Sept 2026",
+      "startDate": "2026-09-25T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875252",
+          "startTime": "2026-09-25T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 103,
+          "awayScore": 95,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-26",
+      "label": "Sat, 26 Sept 2026",
+      "startDate": "2026-09-26T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875254",
+          "startTime": "2026-09-26T11:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 97,
+          "awayScore": 93,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-27",
+      "label": "Sun, 27 Sept 2026",
+      "startDate": "2026-09-27T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875257",
+          "startTime": "2026-09-27T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 83,
+          "awayScore": 69,
+          "winner": "home"
+        },
+        {
+          "id": "401875277",
+          "startTime": "2026-09-27T08:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 121,
+          "awayScore": 100,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-30",
+      "label": "Wed, 30 Sept 2026",
+      "startDate": "2026-09-30T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875246",
+          "startTime": "2026-09-30T07:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 98,
+          "awayScore": 75,
+          "winner": "home"
+        },
+        {
+          "id": "401875279",
+          "startTime": "2026-09-30T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": 93,
+          "awayScore": 78,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-01",
+      "label": "Thu, 1 Oct 2026",
+      "startDate": "2026-10-01T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875255",
+          "startTime": "2026-10-01T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 84,
+          "awayScore": 82,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-02",
+      "label": "Fri, 2 Oct 2026",
+      "startDate": "2026-10-02T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875256",
+          "startTime": "2026-10-02T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 114,
+          "awayScore": 92,
+          "winner": "home"
+        },
+        {
+          "id": "401875287",
+          "startTime": "2026-10-02T11:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": 92,
+          "awayScore": 88,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03",
+      "label": "Sat, 3 Oct 2026",
+      "startDate": "2026-10-03T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875250",
+          "startTime": "2026-10-03T07:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final/OT",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": 99,
+          "awayScore": 109,
+          "winner": "away"
+        },
+        {
+          "id": "401875260",
+          "startTime": "2026-10-03T09:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 95,
+          "awayScore": 107,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-04",
+      "label": "Sun, 4 Oct 2026",
+      "startDate": "2026-10-04T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875262",
+          "startTime": "2026-10-04T04:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 113,
+          "awayScore": 96,
+          "winner": "home"
+        },
+        {
+          "id": "401875248",
+          "startTime": "2026-10-04T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 72,
+          "awayScore": 88,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-07",
+      "label": "Wed, 7 Oct 2026",
+      "startDate": "2026-10-07T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875259",
+          "startTime": "2026-10-07T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 91,
+          "awayScore": 96,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-08",
+      "label": "Thu, 8 Oct 2026",
+      "startDate": "2026-10-08T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875265",
+          "startTime": "2026-10-08T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": 97,
+          "awayScore": 91,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-09",
+      "label": "Fri, 9 Oct 2026",
+      "startDate": "2026-10-09T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875247",
+          "startTime": "2026-10-09T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": 112,
+          "awayScore": 122,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-10",
+      "label": "Sat, 10 Oct 2026",
+      "startDate": "2026-10-10T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875266",
+          "startTime": "2026-10-10T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 99,
+          "awayScore": 104,
+          "winner": "away"
+        },
+        {
+          "id": "401875268",
+          "startTime": "2026-10-10T10:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 100,
+          "awayScore": 84,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-11",
+      "label": "Sun, 11 Oct 2026",
+      "startDate": "2026-10-11T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875249",
+          "startTime": "2026-10-11T04:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 78,
+          "awayScore": 84,
+          "winner": "away"
+        },
+        {
+          "id": "401875258",
+          "startTime": "2026-10-11T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 100,
+          "awayScore": 110,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14",
+      "label": "Wed, 14 Oct 2026",
+      "startDate": "2026-10-14T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875269",
+          "startTime": "2026-10-14T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 101,
+          "awayScore": 102,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-15",
+      "label": "Thu, 15 Oct 2026",
+      "startDate": "2026-10-15T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875261",
+          "startTime": "2026-10-15T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": 115,
+          "awayScore": 105,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-16",
+      "label": "Fri, 16 Oct 2026",
+      "startDate": "2026-10-16T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875264",
+          "startTime": "2026-10-16T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 88,
+          "awayScore": 94,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-17",
+      "label": "Sat, 17 Oct 2026",
+      "startDate": "2026-10-17T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875270",
+          "startTime": "2026-10-17T06:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 115,
+          "awayScore": 83,
+          "winner": "home"
+        },
+        {
+          "id": "401875271",
+          "startTime": "2026-10-17T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": 102,
+          "awayScore": 81,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-18",
+      "label": "Sun, 18 Oct 2026",
+      "startDate": "2026-10-18T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875281",
+          "startTime": "2026-10-18T04:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 98,
+          "awayScore": 92,
+          "winner": "home"
+        },
+        {
+          "id": "401875272",
+          "startTime": "2026-10-18T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 89,
+          "awayScore": 91,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-21",
+      "label": "Wed, 21 Oct 2026",
+      "startDate": "2026-10-21T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875282",
+          "startTime": "2026-10-21T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": 106,
+          "awayScore": 85,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-22",
+      "label": "Thu, 22 Oct 2026",
+      "startDate": "2026-10-22T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875283",
+          "startTime": "2026-10-22T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 82,
+          "awayScore": 108,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-23",
+      "label": "Fri, 23 Oct 2026",
+      "startDate": "2026-10-23T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875274",
+          "startTime": "2026-10-23T10:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 103,
+          "awayScore": 102,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-24",
+      "label": "Sat, 24 Oct 2026",
+      "startDate": "2026-10-24T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875273",
+          "startTime": "2026-10-24T06:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": 81,
+          "awayScore": 98,
+          "winner": "away"
+        },
+        {
+          "id": "401875275",
+          "startTime": "2026-10-24T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 108,
+          "awayScore": 94,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-25",
+      "label": "Sun, 25 Oct 2026",
+      "startDate": "2026-10-25T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875276",
+          "startTime": "2026-10-25T04:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 86,
+          "awayScore": 84,
+          "winner": "home"
+        },
+        {
+          "id": "401875284",
+          "startTime": "2026-10-25T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 105,
+          "awayScore": 95,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28",
+      "label": "Wed, 28 Oct 2026",
+      "startDate": "2026-10-28T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875292",
+          "startTime": "2026-10-28T10:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 91,
+          "awayScore": 99,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-29",
+      "label": "Thu, 29 Oct 2026",
+      "startDate": "2026-10-29T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875280",
+          "startTime": "2026-10-29T09:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": 85,
+          "awayScore": 107,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-30",
+      "label": "Fri, 30 Oct 2026",
+      "startDate": "2026-10-30T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875293",
+          "startTime": "2026-10-30T06:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": 101,
+          "awayScore": 108,
+          "winner": "away"
+        },
+        {
+          "id": "401875278",
+          "startTime": "2026-10-30T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": 68,
+          "awayScore": 71,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-31",
+      "label": "Sat, 31 Oct 2026",
+      "startDate": "2026-10-31T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875291",
+          "startTime": "2026-10-31T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": 97,
+          "awayScore": 113,
+          "winner": "away"
+        },
+        {
+          "id": "401875285",
+          "startTime": "2026-10-31T10:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": 98,
+          "awayScore": 105,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-01",
+      "label": "Sun, 1 Nov 2026",
+      "startDate": "2026-11-01T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875313",
+          "startTime": "2026-11-01T04:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": 89,
+          "awayScore": 98,
+          "winner": "away"
+        },
+        {
+          "id": "401875288",
+          "startTime": "2026-11-01T06:00:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": 89,
+          "awayScore": 96,
+          "winner": "away"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-02",
+      "label": "Mon, 2 Nov 2026",
+      "startDate": "2026-11-02T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875301",
+          "startTime": "2026-11-02T08:30:00.000Z",
+          "status": "final",
+          "statusDetail": "Final",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": 94,
+          "awayScore": 74,
+          "winner": "home"
+        }
+      ]
+    },
+    {
+      "id": "2026-11-04",
+      "label": "Wed, 4 Nov 2026",
+      "startDate": "2026-11-04T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875290",
+          "startTime": "2026-11-04T09:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-05",
+      "label": "Thu, 5 Nov 2026",
+      "startDate": "2026-11-05T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875295",
+          "startTime": "2026-11-05T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-06",
+      "label": "Fri, 6 Nov 2026",
+      "startDate": "2026-11-06T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875294",
+          "startTime": "2026-11-06T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-07",
+      "label": "Sat, 7 Nov 2026",
+      "startDate": "2026-11-07T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875289",
+          "startTime": "2026-11-07T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875286",
+          "startTime": "2026-11-07T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-08",
+      "label": "Sun, 8 Nov 2026",
+      "startDate": "2026-11-08T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875307",
+          "startTime": "2026-11-08T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875296",
+          "startTime": "2026-11-08T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11",
+      "label": "Wed, 11 Nov 2026",
+      "startDate": "2026-11-11T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875326",
+          "startTime": "2026-11-11T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12",
+      "label": "Thu, 12 Nov 2026",
+      "startDate": "2026-11-12T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875328",
+          "startTime": "2026-11-12T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875297",
+          "startTime": "2026-11-12T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-13",
+      "label": "Fri, 13 Nov 2026",
+      "startDate": "2026-11-13T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875310",
+          "startTime": "2026-11-13T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875299",
+          "startTime": "2026-11-13T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-14",
+      "label": "Sat, 14 Nov 2026",
+      "startDate": "2026-11-14T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875356",
+          "startTime": "2026-11-14T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875302",
+          "startTime": "2026-11-14T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-15",
+      "label": "Sun, 15 Nov 2026",
+      "startDate": "2026-11-15T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875298",
+          "startTime": "2026-11-15T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875300",
+          "startTime": "2026-11-15T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18",
+      "label": "Wed, 18 Nov 2026",
+      "startDate": "2026-11-18T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875306",
+          "startTime": "2026-11-18T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19",
+      "label": "Thu, 19 Nov 2026",
+      "startDate": "2026-11-19T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875305",
+          "startTime": "2026-11-19T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-20",
+      "label": "Fri, 20 Nov 2026",
+      "startDate": "2026-11-20T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875351",
+          "startTime": "2026-11-20T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21",
+      "label": "Sat, 21 Nov 2026",
+      "startDate": "2026-11-21T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875338",
+          "startTime": "2026-11-21T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875314",
+          "startTime": "2026-11-21T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-22",
+      "label": "Sun, 22 Nov 2026",
+      "startDate": "2026-11-22T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875315",
+          "startTime": "2026-11-22T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875309",
+          "startTime": "2026-11-22T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-02",
+      "label": "Wed, 2 Dec 2026",
+      "startDate": "2026-12-02T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875308",
+          "startTime": "2026-12-02T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-03",
+      "label": "Thu, 3 Dec 2026",
+      "startDate": "2026-12-03T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875304",
+          "startTime": "2026-12-03T09:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-04",
+      "label": "Fri, 4 Dec 2026",
+      "startDate": "2026-12-04T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875321",
+          "startTime": "2026-12-04T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875323",
+          "startTime": "2026-12-04T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-05",
+      "label": "Sat, 5 Dec 2026",
+      "startDate": "2026-12-05T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875340",
+          "startTime": "2026-12-05T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875311",
+          "startTime": "2026-12-05T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-06",
+      "label": "Sun, 6 Dec 2026",
+      "startDate": "2026-12-06T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875312",
+          "startTime": "2026-12-06T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875325",
+          "startTime": "2026-12-06T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-09",
+      "label": "Wed, 9 Dec 2026",
+      "startDate": "2026-12-09T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875303",
+          "startTime": "2026-12-09T07:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-10",
+      "label": "Thu, 10 Dec 2026",
+      "startDate": "2026-12-10T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875339",
+          "startTime": "2026-12-10T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-11",
+      "label": "Fri, 11 Dec 2026",
+      "startDate": "2026-12-11T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875346",
+          "startTime": "2026-12-11T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-12",
+      "label": "Sat, 12 Dec 2026",
+      "startDate": "2026-12-12T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875322",
+          "startTime": "2026-12-12T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875316",
+          "startTime": "2026-12-12T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-13",
+      "label": "Sun, 13 Dec 2026",
+      "startDate": "2026-12-13T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875332",
+          "startTime": "2026-12-13T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875324",
+          "startTime": "2026-12-13T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-16",
+      "label": "Wed, 16 Dec 2026",
+      "startDate": "2026-12-16T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875318",
+          "startTime": "2026-12-16T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-17",
+      "label": "Thu, 17 Dec 2026",
+      "startDate": "2026-12-17T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875317",
+          "startTime": "2026-12-17T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-18",
+      "label": "Fri, 18 Dec 2026",
+      "startDate": "2026-12-18T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875330",
+          "startTime": "2026-12-18T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-19",
+      "label": "Sat, 19 Dec 2026",
+      "startDate": "2026-12-19T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875329",
+          "startTime": "2026-12-19T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875341",
+          "startTime": "2026-12-19T09:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-20",
+      "label": "Sun, 20 Dec 2026",
+      "startDate": "2026-12-20T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875334",
+          "startTime": "2026-12-20T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875327",
+          "startTime": "2026-12-20T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-21",
+      "label": "Mon, 21 Dec 2026",
+      "startDate": "2026-12-21T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875319",
+          "startTime": "2026-12-21T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-22",
+      "label": "Tue, 22 Dec 2026",
+      "startDate": "2026-12-22T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875331",
+          "startTime": "2026-12-22T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-23",
+      "label": "Wed, 23 Dec 2026",
+      "startDate": "2026-12-23T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875320",
+          "startTime": "2026-12-23T09:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-24",
+      "label": "Thu, 24 Dec 2026",
+      "startDate": "2026-12-24T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875347",
+          "startTime": "2026-12-24T08:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-25",
+      "label": "Fri, 25 Dec 2026",
+      "startDate": "2026-12-25T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875333",
+          "startTime": "2026-12-25T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-26",
+      "label": "Sat, 26 Dec 2026",
+      "startDate": "2026-12-26T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875342",
+          "startTime": "2026-12-26T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-27",
+      "label": "Sun, 27 Dec 2026",
+      "startDate": "2026-12-27T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875337",
+          "startTime": "2026-12-27T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875383",
+          "startTime": "2026-12-27T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-29",
+      "label": "Tue, 29 Dec 2026",
+      "startDate": "2026-12-29T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875343",
+          "startTime": "2026-12-29T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-30",
+      "label": "Wed, 30 Dec 2026",
+      "startDate": "2026-12-30T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875335",
+          "startTime": "2026-12-30T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-31",
+      "label": "Thu, 31 Dec 2026",
+      "startDate": "2026-12-31T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875336",
+          "startTime": "2026-12-31T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875344",
+          "startTime": "2026-12-31T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-01",
+      "label": "Fri, 1 Jan 2027",
+      "startDate": "2027-01-01T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875371",
+          "startTime": "2027-01-01T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-02",
+      "label": "Sat, 2 Jan 2027",
+      "startDate": "2027-01-02T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875382",
+          "startTime": "2027-01-02T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875345",
+          "startTime": "2027-01-02T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-03",
+      "label": "Sun, 3 Jan 2027",
+      "startDate": "2027-01-03T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875353",
+          "startTime": "2027-01-03T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875355",
+          "startTime": "2027-01-03T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-04",
+      "label": "Mon, 4 Jan 2027",
+      "startDate": "2027-01-04T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875352",
+          "startTime": "2027-01-04T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-06",
+      "label": "Wed, 6 Jan 2027",
+      "startDate": "2027-01-06T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875354",
+          "startTime": "2027-01-06T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875358",
+          "startTime": "2027-01-06T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-07",
+      "label": "Thu, 7 Jan 2027",
+      "startDate": "2027-01-07T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875357",
+          "startTime": "2027-01-07T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-08",
+      "label": "Fri, 8 Jan 2027",
+      "startDate": "2027-01-08T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875360",
+          "startTime": "2027-01-08T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875359",
+          "startTime": "2027-01-08T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-09",
+      "label": "Sat, 9 Jan 2027",
+      "startDate": "2027-01-09T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875361",
+          "startTime": "2027-01-09T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875348",
+          "startTime": "2027-01-09T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-10",
+      "label": "Sun, 10 Jan 2027",
+      "startDate": "2027-01-10T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875364",
+          "startTime": "2027-01-10T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875362",
+          "startTime": "2027-01-10T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-13",
+      "label": "Wed, 13 Jan 2027",
+      "startDate": "2027-01-13T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875394",
+          "startTime": "2027-01-13T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-14",
+      "label": "Thu, 14 Jan 2027",
+      "startDate": "2027-01-14T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875369",
+          "startTime": "2027-01-14T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-15",
+      "label": "Fri, 15 Jan 2027",
+      "startDate": "2027-01-15T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875397",
+          "startTime": "2027-01-15T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-16",
+      "label": "Sat, 16 Jan 2027",
+      "startDate": "2027-01-16T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875395",
+          "startTime": "2027-01-16T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-17",
+      "label": "Sun, 17 Jan 2027",
+      "startDate": "2027-01-17T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875363",
+          "startTime": "2027-01-17T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-20",
+      "label": "Wed, 20 Jan 2027",
+      "startDate": "2027-01-20T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875396",
+          "startTime": "2027-01-20T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875350",
+          "startTime": "2027-01-20T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-21",
+      "label": "Thu, 21 Jan 2027",
+      "startDate": "2027-01-21T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875400",
+          "startTime": "2027-01-21T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-22",
+      "label": "Fri, 22 Jan 2027",
+      "startDate": "2027-01-22T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875367",
+          "startTime": "2027-01-22T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875402",
+          "startTime": "2027-01-22T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-23",
+      "label": "Sat, 23 Jan 2027",
+      "startDate": "2027-01-23T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875366",
+          "startTime": "2027-01-23T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875384",
+          "startTime": "2027-01-23T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-24",
+      "label": "Sun, 24 Jan 2027",
+      "startDate": "2027-01-24T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875368",
+          "startTime": "2027-01-24T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875349",
+          "startTime": "2027-01-24T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-25",
+      "label": "Mon, 25 Jan 2027",
+      "startDate": "2027-01-25T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875398",
+          "startTime": "2027-01-25T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-27",
+      "label": "Wed, 27 Jan 2027",
+      "startDate": "2027-01-27T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875365",
+          "startTime": "2027-01-27T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875370",
+          "startTime": "2027-01-27T07:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-28",
+      "label": "Thu, 28 Jan 2027",
+      "startDate": "2027-01-28T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875375",
+          "startTime": "2027-01-28T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875399",
+          "startTime": "2027-01-28T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-29",
+      "label": "Fri, 29 Jan 2027",
+      "startDate": "2027-01-29T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875373",
+          "startTime": "2027-01-29T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-30",
+      "label": "Sat, 30 Jan 2027",
+      "startDate": "2027-01-30T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875381",
+          "startTime": "2027-01-30T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875372",
+          "startTime": "2027-01-30T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-01-31",
+      "label": "Sun, 31 Jan 2027",
+      "startDate": "2027-01-31T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875376",
+          "startTime": "2027-01-31T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875374",
+          "startTime": "2027-01-31T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-04",
+      "label": "Thu, 4 Feb 2027",
+      "startDate": "2027-02-04T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875390",
+          "startTime": "2027-02-04T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875385",
+          "startTime": "2027-02-04T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-05",
+      "label": "Fri, 5 Feb 2027",
+      "startDate": "2027-02-05T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875386",
+          "startTime": "2027-02-05T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875380",
+          "startTime": "2027-02-05T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-06",
+      "label": "Sat, 6 Feb 2027",
+      "startDate": "2027-02-06T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875403",
+          "startTime": "2027-02-06T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875392",
+          "startTime": "2027-02-06T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-07",
+      "label": "Sun, 7 Feb 2027",
+      "startDate": "2027-02-07T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875378",
+          "startTime": "2027-02-07T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875389",
+          "startTime": "2027-02-07T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-10",
+      "label": "Wed, 10 Feb 2027",
+      "startDate": "2027-02-10T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875388",
+          "startTime": "2027-02-10T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "away": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-11",
+      "label": "Thu, 11 Feb 2027",
+      "startDate": "2027-02-11T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875379",
+          "startTime": "2027-02-11T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "away": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875377",
+          "startTime": "2027-02-11T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-12",
+      "label": "Fri, 12 Feb 2027",
+      "startDate": "2027-02-12T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875387",
+          "startTime": "2027-02-12T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "away": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875407",
+          "startTime": "2027-02-12T10:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-13",
+      "label": "Sat, 13 Feb 2027",
+      "startDate": "2027-02-13T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875391",
+          "startTime": "2027-02-13T06:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "away": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875408",
+          "startTime": "2027-02-13T08:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2027-02-14",
+      "label": "Sun, 14 Feb 2027",
+      "startDate": "2027-02-14T00:00:00Z",
+      "matches": [
+        {
+          "id": "401875401",
+          "startTime": "2027-02-14T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "away": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401875393",
+          "startTime": "2027-02-14T06:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "",
+          "home": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "away": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    }
+  ],
+  "standings": [
+    {
+      "id": "1",
+      "label": "National Basketball League",
+      "rows": [
+        {
+          "rank": 1,
+          "team": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "wins": 7,
+          "losses": 3,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.7,
+          "gamesBehind": 0,
+          "for": 979,
+          "against": 881
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "wins": 7,
+          "losses": 3,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.7,
+          "gamesBehind": 0,
+          "for": 956,
+          "against": 908
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "wins": 5,
+          "losses": 4,
+          "draws": 0,
+          "played": 9,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.5555556,
+          "gamesBehind": 1.5,
+          "for": 839,
+          "against": 870
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": "5",
+            "name": "Melbourne United",
+            "abbreviation": "MEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
+            "color": "#4370b7"
+          },
+          "wins": 6,
+          "losses": 5,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.54545456,
+          "gamesBehind": 1.5,
+          "for": 1061,
+          "against": 999
+        },
+        {
+          "rank": 5,
+          "team": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "wins": 6,
+          "losses": 5,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.54545456,
+          "gamesBehind": 1.5,
+          "for": 1014,
+          "against": 1062
+        },
+        {
+          "rank": 6,
+          "team": {
+            "id": "2",
+            "name": "Brisbane Bullets",
+            "abbreviation": "BRI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
+            "color": "#1f4fa2"
+          },
+          "wins": 5,
+          "losses": 5,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.5,
+          "gamesBehind": 2,
+          "for": 938,
+          "against": 967
+        },
+        {
+          "rank": 7,
+          "team": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "wins": 5,
+          "losses": 6,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.45454547,
+          "gamesBehind": 2.5,
+          "for": 1001,
+          "against": 1031
+        },
+        {
+          "rank": 8,
+          "team": {
+            "id": "8",
+            "name": "South East Melbourne Phoenix",
+            "abbreviation": "PNX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
+            "color": "#69bf29"
+          },
+          "wins": 4,
+          "losses": 6,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.4,
+          "gamesBehind": 3,
+          "for": 969,
+          "against": 943
+        },
+        {
+          "rank": 9,
+          "team": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "wins": 4,
+          "losses": 7,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.36363637,
+          "gamesBehind": 3.5,
+          "for": 996,
+          "against": 1000
+        },
+        {
+          "rank": 10,
+          "team": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "wins": 3,
+          "losses": 8,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.27272728,
+          "gamesBehind": 4.5,
+          "for": 1057,
+          "against": 1149
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+@import url('fixture-slider.css');
 @font-face {
     font-family: "Bodoni Moda";
     src: url("fonts/bodoni-moda-latin.woff2") format("woff2");
@@ -85,7 +86,7 @@ body, :root[data-theme="dark"] body {
 body::before, .frame::before, .frame::after { display: none; }
 .page { width: min(1280px, calc(100% - 64px)); padding: 0 0 32px; }
 .frame { border: 0; border-radius: 0; background: transparent; overflow: visible; }
-.masthead { padding: 0; }
+.masthead { position: relative; z-index: 10; padding: 0; overflow: visible; }
 .site-banner { padding: 0 0 17px; margin: 0; border: 0; border-radius: 0; background: transparent; }
 .masthead-meta { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 0 11px; border-bottom: 1px solid var(--rule); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .edition-label { color: var(--accent-ink); }
@@ -93,11 +94,74 @@ body::before, .frame::before, .frame::after { display: none; }
 .site-wordmark { display: inline-block; color: var(--accent-ink); text-decoration: none; }
 .masthead-caption { margin: 0; color: var(--muted); font-size: 0.62rem; line-height: 1.5; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 47px; padding: 0 16px; background: var(--header-bg); border-top: 1px solid var(--header-bg); border-bottom: 1px solid var(--header-bg); }
-.nav { display: flex; gap: 0; }
+.nav { display: flex; gap: 0; align-items: stretch; }
 .nav a { min-height: 46px; padding: 13px 20px 10px; background: transparent; border: 0; border-bottom: 3px solid transparent; border-radius: 0; color: var(--header-ink); font: 700 0.72rem/1.4 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; }
 .nav a[aria-current="page"] { background: transparent; color: #fff; border-color: #fff; }
 .nav a:hover { background: #12513d; transform: none; }
-.topbar-actions { width: auto; margin-left: auto; gap: 8px; }
+.sport-family { position: relative; align-self: stretch; display: flex; max-width: 100%; }
+.nav.nav--permanent { display: flex; flex: 1; flex-wrap: wrap; min-width: 0; gap: 0; }
+.nav--permanent > a, .nav--permanent .sport-nav__toggle { padding-left: 13px; padding-right: 13px; white-space: nowrap; }
+.sport-nav__toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 13px 20px 10px; background: transparent; border: 0; border-bottom: 3px solid transparent; border-radius: 0; color: var(--header-ink); font: 700 0.72rem/1.4 var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+.sport-nav__toggle:hover, .sport-nav__toggle[aria-expanded="true"] { background: #12513d; }
+.sport-family[data-current="true"] .sport-nav__toggle { border-bottom-color: #fff; }
+.sport-family .sport-nav__toggle { flex-shrink: 0; }
+.sport-nav__chevron { display: inline-grid; place-items: center; width: 17px; height: 17px; flex: 0 0 17px; border: 0; border-radius: 50%; background: #f0f2ec; color: #073d2e; transition: transform 220ms ease; }
+.sport-nav__chevron::before { content: ""; width: 5px; height: 5px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-1px) rotate(45deg); }
+.sport-nav__toggle[aria-expanded="true"] .sport-nav__chevron { transform: rotate(180deg); }
+.sport-nav__dropdown { position: absolute; top: 100%; left: 0; z-index: 20; min-width: 160px; padding: 5px 0; border: 1px solid var(--rule); border-top: 3px solid var(--accent); background: var(--surface); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-6px); transition: opacity 180ms ease, transform 180ms ease, visibility 180ms; }
+.sport-nav__dropdown[data-open="true"] { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+.nav .sport-nav__dropdown a { display: block; min-height: 38px; padding: 10px 16px; border: 0; color: var(--ink); }
+.nav .sport-nav__dropdown a:hover, .nav .sport-nav__dropdown a[aria-current="page"] { color: var(--accent-ink); background: var(--surface-4); }
+.sport-family__subnav { display: flex; align-items: center; flex: 0 1 auto; max-width: 0; min-width: 0; overflow: hidden; opacity: 0; visibility: hidden; background: var(--header-bg); transition: max-width 260ms ease, opacity 200ms ease, visibility 260ms; }
+.sport-family__subnav[data-open="true"] { max-width: 180px; opacity: 1; visibility: visible; }
+.nav .sport-family__subnav a { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-height: 32px; margin: 6px 4px; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); color: var(--accent-ink); text-decoration: none; white-space: nowrap; transition: background 150ms ease, border-color 150ms ease; }
+.nav .sport-family__subnav a:hover, .nav .sport-family__subnav a[aria-current="page"] { background: var(--surface-4); color: var(--accent-ink); border-color: var(--accent-ink); }
+.topbar .sport-family__subnav a:focus-visible { outline-color: var(--accent-ink); outline-offset: -3px; }
+.sport-family__subnav[hidden], .sport-nav__dropdown[hidden] { display: none; }
+.result-gap-toggle { display: flex; flex-wrap: wrap; gap: 5px; margin: 12px 0; }
+.result-gap-toggle button { padding: 7px 12px; border: 1px solid var(--rule); border-radius: 2px; background: var(--paper); color: var(--accent-ink); font: 700 .7rem var(--font-sans); cursor: pointer; }
+.result-gap-toggle button[aria-pressed="true"] { background: var(--header-bg); color: #fff; border-color: var(--header-bg); }
+.result-order-toggle .result-order-toggle__fastest { color: #6a3897; background: #f0e8f7; border-color: #cdb5e0; }
+.result-order-toggle .result-order-toggle__fastest[aria-pressed="true"] { color: #fff; background: #6a3897; border-color: #6a3897; }
+.result-order-note { margin: 8px 0; }
+.result-order-note:empty { display: none; }
+.home-league-heading { margin: 18px 0 3px; color: var(--accent-ink); font: 700 .72rem var(--font-sans); letter-spacing: .05em; }
+.home-league-heading:first-child { margin-top: 0; }
+.home-league-heading a { color: inherit; text-decoration: none; }
+.home-league-heading a:hover { text-decoration: underline; }
+.home-sport-game .afl-game__name { text-decoration: none; }
+.home-sport-game .afl-game__name:hover { text-decoration: underline; }
+.home-sport-game .afl-game__meta-item { white-space: normal; }
+.home-match-date, .f1-game__next a { font-weight: 700; color: var(--ink); }
+[data-home-ladders].hero-sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start; }
+[data-home-ladders] .home-ladder { min-width: 0; padding: 12px 9px; }
+[data-home-ladders] .ladder-card__head { padding-bottom: 7px; margin-bottom: 5px; gap: 4px; }
+[data-home-ladders] .ladder-card__head h3 { font-size: 1.05rem; }
+.home-ladder__season { margin: 0 0 6px; font-size: .55rem; color: var(--muted); }
+[data-home-ladders] .ladder-list { height: 260px; max-height: 260px; gap: 0; padding-right: 2px; scrollbar-gutter: auto; align-content: start; }
+.home-ladder__switch { display: inline-block; align-self: start; margin: 0 0 8px; padding: 5px 7px; border: 1px solid var(--rule); border-radius: 2px; color: var(--accent-ink); background: var(--surface-4); font: 700 .59rem var(--font-sans); cursor: pointer; text-decoration: none; }
+.home-ladder__controls { min-height: 32px; }
+[data-home-ladders] .ladder-arrow { padding: 2px 4px; color: var(--accent-ink); text-decoration: none; }
+[data-home-ladders] .ladder-row { grid-template-columns: 13px 19px minmax(0, 1fr) auto; gap: 4px; padding: 6px 0; }
+[data-home-ladders] .ladder-row__logo { width: 19px; height: 19px; font-size: .45rem; }
+[data-home-ladders] .ladder-row__team { font-size: .61rem; }
+[data-home-ladders] .ladder-row__stats, [data-home-ladders] .ladder-row__pos { font-size: .56rem; }
+[data-home-ladders] > .ladder-note { grid-column: 1 / -1; }
+.race-section-title.race-section-title--fastest { color: #6a3897; }
+:root[data-theme="dark"] .race-section-title.race-section-title--fastest { color: #cda5ee; }
+.sport-identity { position: relative; overflow: hidden; }
+.sport-identity__image { position: absolute; inset: 0; width: 100%; height: 100%; padding: 2px; object-fit: contain; background: var(--surface-4); border-radius: inherit; }
+.sport-identity--constructors .sport-identity__image { background: #073d2e; padding: 4px; }
+.sport-identity--drivers .sport-identity__image { padding: 3px; }
+.sport-identity-inline { display: inline-block; vertical-align: middle; }
+.sport-identity-inline[data-identity-loaded="true"] { width: 18px; height: 13px; margin-right: 5px; }
+.sport-identity-inline .sport-identity__image { padding: 0; }
+.sport-identity-inline.sport-identity--constructors { width: 20px; height: 16px; }
+.sport-identity-inline.sport-identity--constructors .sport-identity__image { padding: 2px; }
+@media (prefers-reduced-motion: reduce) {
+    .sport-family__subnav, .sport-nav__dropdown, .sport-nav__chevron { transition: none; }
+}
+.topbar-actions { width: auto; margin-left: auto; gap: 8px; flex-shrink: 0; align-self: start; padding-top: 7px; }
 .theme-toggle { min-height: 30px; padding: 0 12px; border: 0; border-left: 1px solid #4a7763; border-radius: 0; background: transparent; color: #fff; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
 .theme-toggle:hover { transform: none; background: #12513d; }
 .hero { padding: 30px 0 0; }
@@ -140,9 +204,73 @@ body::before, .frame::before, .frame::after { display: none; }
 .fixtures-note { border-radius: 0; background: transparent; border: 0; border-top: 1px solid var(--rule); padding: 12px 0 0; }
 .afl-games__heading { color: var(--accent-ink); font-size: 0.7rem; letter-spacing: 0.12em; }
 .afl-games__list, .fixtures-list { gap: 0; }
+.home-league-games { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.home-league-games > .afl-game { min-width: 0; border-bottom: 1px solid var(--rule); }
+.home-league-games > .home-game--expanded { grid-column: 1 / -1; }
+.home-league-games .afl-game:not(.home-game--expanded) { gap: 9px 5px; }
+.home-league-games .afl-game:not(.home-game--expanded) .afl-game__team { min-width: 0; gap: 5px; }
+.home-league-games .afl-game:not(.home-game--expanded) .afl-game__name { font-size: .7rem; white-space: normal; overflow-wrap: anywhere; line-height: 1.4; }
+.home-league-games .afl-game:not(.home-game--expanded) .afl-game__logo { width: 24px; height: 24px; font-size: .5rem; }
+.home-league-games .afl-game:not(.home-game--expanded) .afl-game__score { font-size: .95rem; gap: 4px; }
+.home-league-games .afl-game:not(.home-game--expanded) .afl-game__meta { font-size: .63rem; gap: 6px; }
+@media (max-width: 500px) { .home-league-games { grid-template-columns: 1fr; } }
 .afl-games__section + .afl-games__section { border-top: 1px solid var(--rule); padding-top: 20px; }
 .afl-game, .fixture { border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: transparent; padding: 17px 0; }
 .afl-game:last-child, .fixture:last-child { border-bottom: 0; }
+.afl-game.f1-game { grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: 10px 12px; }
+.f1-game__head { grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 12px; }
+.f1-game__fastest { flex-shrink: 0; display: inline-flex; align-items: center; padding: 4px 9px; border: 0; border-radius: 999px; color: #6a3897; background: #f0e8f7; font-size: 0.7rem; font-weight: 600; line-height: 1.3; font-variant-numeric: tabular-nums; white-space: nowrap; }
+:root[data-theme="dark"] .f1-game__fastest { color: #dec7f3; background: #32233e; }
+.f1-game__fastest.f1-game__fastest--empty { color: var(--muted); background: var(--surface-4); }
+.f1-game__name { flex: 1; min-width: 0; color: var(--accent-ink); font: 700 1.25rem/1.25 var(--font-serif); text-decoration: none; }
+.f1-game__name:hover { text-decoration: underline; text-underline-offset: 3px; }
+.f1-game__podium { min-width: 0; display: flex; align-items: baseline; gap: 6px; }
+.f1-game__place { flex-shrink: 0; padding-left: 5px; border-left: 2px solid #d4af37; color: var(--muted); font-size: 0.65rem; font-weight: 700; }
+.f1-game__podium--2 .f1-game__place { border-color: #a7b0ba; }
+.f1-game__podium--3 .f1-game__place { border-color: #cd7f32; }
+.f1-game__driver { min-width: 0; color: var(--ink); font-size: 0.75rem; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.f1-game__driver--fastest::after { content: ""; display: inline-block; width: 5px; height: 5px; margin-left: 5px; border-radius: 50%; background: #9157dc; vertical-align: middle; }
+.f1-game__winner { padding: 6px; background: color-mix(in srgb, #d4af37 18%, var(--surface)); border-left: 3px solid #d4af37; }
+.f1-game__winner .f1-game__driver { font-weight: 800; font-size: 0.83rem; }
+.f1-game__winner .f1-game__place { border: 0; padding-left: 0; color: var(--ink); }
+.f1-game__winner-label { display: block; margin-top: 3px; color: var(--muted); font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.f1-game__more { align-self: center; padding: 5px; color: var(--accent-ink); border: 1px solid var(--rule); font-size: 0.7rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.f1-game__more:hover { background: var(--surface-4); }
+.f1-game__meta { justify-content: space-between; font-size: 0.68rem; }
+.afl-game.f1-game--upcoming { grid-template-columns: 130px minmax(0, 1fr); gap: 6px 12px; padding: 12px; margin: 6px 0 12px; border: 1px solid var(--rule); background: var(--surface); overflow: hidden; }
+.afl-game.f1-game--upcoming:last-child { border-bottom: 1px solid var(--rule); }
+.f1-race-visual { grid-column: 1; grid-row: 1 / span 4; align-self: stretch; position: relative; display: grid; grid-template-columns: minmax(0, 1fr); align-content: center; gap: 5px; padding: 10px 8px; color: #f5f2e9; background: radial-gradient(ellipse at 60% 45%, #195b45, transparent 65%), #073d2e; }
+.f1-race-visual::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(110deg, #d8d4bd 0 10px, #073d2e 10px 20px); }
+.f1-race-visual__round { font: 700 .5rem var(--font-sans); letter-spacing: .06em; }
+.f1-race-visual svg { grid-column: 1 / -1; width: 100%; height: 65px; overflow: visible; margin: 0; }
+.f1-race-visual__edge, .f1-race-visual__track { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.f1-race-visual__edge { stroke: #02271c; stroke-width: 12; }
+.f1-race-visual__track { stroke: #f1eddd; stroke-width: 5; }
+.f1-race-visual__start { fill: #c6ad68; stroke: #073d2e; stroke-width: 2; }
+.f1-race-visual__credit { grid-column: 1; color: #cbdcd2; font-size: .5rem; text-decoration: none; }
+.f1-race-visual__date { grid-column: 1 / -1; font: 700 .55rem var(--font-sans); line-height: 1.5; }
+.f1-race-visual__location { grid-column: 1 / -1; padding: 10px 0; font: 700 1rem var(--font-serif); }
+.f1-game--upcoming .f1-game__name { font-size: 1.1rem; line-height: 1.2; }
+.f1-game--upcoming .f1-game__head { grid-column: 2; align-items: flex-start; flex-wrap: wrap; gap: 5px; }
+.f1-game--upcoming .f1-game__circuit, .f1-game--upcoming .f1-game__facts { grid-column: 2; font-size: .63rem; }
+.f1-game--upcoming .f1-game__next { grid-column: 2; display: block; padding: 6px 8px; margin: 0; font-size: .66rem; }
+.f1-game--upcoming .f1-game__next > span { display: block; font-size: .55rem; }
+.f1-game--upcoming .f1-game__schedule { grid-column: 1 / -1; }
+.f1-game--upcoming .f1-game__weekend-link { grid-column: 1 / -1; font-size: .63rem; padding: 0; }
+@media (max-width: 500px) { .afl-game.f1-game--upcoming { grid-template-columns: 95px minmax(0, 1fr); gap: 6px 9px; padding: 10px; } .f1-game--upcoming .f1-game__name { font-size: .95rem; } .f1-race-visual { padding: 8px 6px; } }
+.f1-game--upcoming .afl-game__status { flex-shrink: 0; margin-top: 3px; }
+.f1-game__circuit { margin: 0; color: var(--ink); font-size: 0.76rem; line-height: 1.5; }
+.f1-game__facts { margin: 0; color: var(--muted); font-size: 0.68rem; line-height: 1.5; }
+.f1-game__next { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; padding: 10px 12px; margin-top: 3px; background: var(--surface-4); border-left: 3px solid var(--accent-ink); font-size: 0.73rem; line-height: 1.5; }
+.f1-game__next > span { color: var(--muted); font-size: 0.62rem; font-weight: 700; text-transform: uppercase; align-self: center; }
+.f1-game__next a, .f1-game__weekend-link { color: var(--accent-ink); font-weight: 700; text-decoration: none; }
+.f1-game__schedule { min-width: 0; font-size: 0.7rem; }
+.f1-game__schedule summary { cursor: pointer; color: var(--muted); padding: 5px 0; }
+.f1-game__sessions { display: grid; gap: 7px; padding: 8px 0; }
+.f1-game__sessions a { display: flex; justify-content: space-between; gap: 10px; color: var(--ink); text-decoration: none; line-height: 1.5; }
+.f1-game__sessions a span { color: var(--muted); text-align: right; }
+.f1-game__weekend-link { font-size: 0.7rem; justify-self: start; padding: 3px 0; }
+.f1-game__next a:hover, .f1-game__sessions a:hover, .f1-game__weekend-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .afl-game__name, .fixture__name { color: var(--ink); font-weight: 600; }
 .afl-game__score, .fixture__score { font-family: var(--font-serif); font-weight: 700; }
 .afl-game__meta, .fixture__meta { font-size: 0.74rem; font-weight: 400; }
@@ -176,7 +304,7 @@ body::before, .frame::before, .frame::after { display: none; }
 .race-circuit { color: var(--ink); font-weight: 600; }
 .race-section-title { font-family: var(--font-serif); font-size: 1.22rem; font-weight: 700; color: var(--accent-ink); }
 .race-driver__name { color: var(--ink); font-weight: 600; }
-.race-results__scroll { border-radius: 0; }
+.race-results__scroll { position: relative; border-radius: 0; }
 .race-results__table th { color: var(--accent-ink); background: var(--surface-4); font-weight: 700; }
 .race-results__table tbody tr { background: var(--surface); }
 .race-results__table tbody .race-results__podium--gold { background: color-mix(in srgb, #d4af37 20%, var(--surface)); }
@@ -198,12 +326,18 @@ body::before, .frame::before, .frame::after { display: none; }
 .dev-note__send { border: 1px solid var(--accent); border-radius: 2px; background: var(--accent); color: #fff; }
 button, input, textarea { font-family: var(--font-sans); }
 :is(a, button, input, textarea, [tabindex]):focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+.dev-note__form :is(input, textarea):focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
 .topbar :is(a, button):focus-visible { outline-color: #fff; outline-offset: -5px; }
+.topbar .sport-nav__dropdown a:focus-visible { outline-color: var(--accent-ink); outline-offset: -3px; }
 
 @media (max-width: 980px) {
     .page { width: calc(100% - 40px); }
     .hero-grid { gap: 24px; }
     .hero-sidebar { gap: 20px; }
+}
+@media (max-width: 800px) {
+    .topbar { align-items: start; }
+    .nav--permanent > a, .nav--permanent .sport-nav__toggle { padding-left: 10px; padding-right: 10px; }
 }
 @media (max-width: 640px) {
     .page { width: calc(100% - 28px); padding: 0 0 20px; }
@@ -214,6 +348,8 @@ button, input, textarea { font-family: var(--font-sans); }
     .masthead-caption { font-size: 0.54rem; letter-spacing: 0.2em; }
     .topbar { display: flex; gap: 4px; padding: 0 5px; min-height: 43px; }
     .nav a { min-height: 42px; padding: 12px 10px 8px; font-size: 0.62rem; letter-spacing: 0.04em; }
+    .sport-nav__toggle { min-height: 42px; padding: 12px 10px 8px; font-size: 0.62rem; letter-spacing: 0.04em; }
+    .nav .sport-family__subnav a { padding-left: 8px; padding-right: 8px; }
     .topbar-actions { width: auto; }
     .theme-toggle { min-height: 28px; padding: 0 7px; font-size: 0.56rem; letter-spacing: 0; }
     .hero { padding-top: 22px; }
@@ -226,6 +362,17 @@ button, input, textarea { font-family: var(--font-sans); }
     .afl-game__name, .fixture__name { font-size: 0.75rem; white-space: normal; line-height: 1.4; }
     .afl-game__meta, .fixture__meta { font-size: 0.65rem; gap: 7px; }
     .afl-game__meta-item, .fixture__meta-item { white-space: normal; }
+    .afl-game.f1-game { gap: 9px 6px; }
+    .f1-game__head { gap: 8px; }
+    .f1-game__name { font-size: 1.05rem; }
+    .f1-game__fastest { font-size: 0.63rem; padding: 4px 7px; }
+    .f1-game__podium { gap: 4px; }
+    .f1-game__driver { font-size: 0.68rem; }
+    .f1-game__winner { padding: 5px 3px; }
+    .f1-game__winner .f1-game__driver { font-size: 0.72rem; }
+    .f1-game__more { font-size: 0.62rem; padding: 5px 3px; }
+    .f1-game__next { grid-template-columns: 1fr; gap: 3px; padding: 8px 10px; }
+    .f1-game__place { font-size: 0.58rem; }
     .race-name { font-size: 1.65rem; }
     .session-tabs .tab { font-size: 0.65rem; min-height: 34px; padding: 7px 8px; }
     .circuit-map svg { max-height: 190px; }
