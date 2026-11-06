@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-05T21:29:44.514Z",
-  "fixturesUpdatedAt": "2026-11-05T21:29:44.514Z",
-  "standingsUpdatedAt": "2026-11-05T21:29:44.514Z",
+  "updatedAt": "2026-11-06T01:45:51.922Z",
+  "fixturesUpdatedAt": "2026-11-06T01:45:51.922Z",
+  "standingsUpdatedAt": "2026-11-06T01:45:51.922Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4235,8 +4235,8 @@
         {
           "id": "401873037",
           "startTime": "2026-11-06T01:15:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "2:00 - 1st",
           "venue": "M&T Bank Stadium",
           "home": {
             "id": "33",
@@ -4252,8 +4252,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
             "color": "#007487"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 10,
           "winner": null
         },
         {
