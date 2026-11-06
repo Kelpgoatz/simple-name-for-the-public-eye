@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "source": "https://f1api.dev/api/2026?limit=100",
+  "source": "https://api.jolpi.ca/ergast/f1/2026/",
   "races": [
     {
       "round": 1,
@@ -12,6 +12,28 @@
       "date": "2026-03-08",
       "startTime": "2026-03-08T04:00:00Z",
       "laps": 58,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-03-08",
+          "time": "04:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-03-06",
+          "time": "01:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-03-06",
+          "time": "05:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-03-07",
+          "time": "01:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-03-07",
+          "time": "05:00:00Z"
+        }
+      },
       "lengthKm": 5.278,
       "corners": 14,
       "status": "CONCLUDED",
@@ -34,7 +56,9 @@
           "points": 25,
           "time": "1:23:06.801",
           "retired": null,
-          "fastLap": "1:22.670"
+          "fastLap": "1:22.670",
+          "lapsCompleted": 58,
+          "fastestLapRank": 6
         },
         {
           "position": "2",
@@ -49,7 +73,9 @@
           "points": 18,
           "time": "+2.974",
           "retired": null,
-          "fastLap": "1:22.417"
+          "fastLap": "1:22.417",
+          "lapsCompleted": 58,
+          "fastestLapRank": 3
         },
         {
           "position": "3",
@@ -64,7 +90,9 @@
           "points": 15,
           "time": "+15.519",
           "retired": null,
-          "fastLap": "1:22.579"
+          "fastLap": "1:22.579",
+          "lapsCompleted": 58,
+          "fastestLapRank": 5
         },
         {
           "position": "4",
@@ -79,7 +107,9 @@
           "points": 12,
           "time": "+16.144",
           "retired": null,
-          "fastLap": "1:22.423"
+          "fastLap": "1:22.423",
+          "lapsCompleted": 58,
+          "fastestLapRank": 4
         },
         {
           "position": "5",
@@ -94,7 +124,9 @@
           "points": 10,
           "time": "+51.741",
           "retired": null,
-          "fastLap": "1:22.358"
+          "fastLap": "1:22.358",
+          "lapsCompleted": 58,
+          "fastestLapRank": 2
         },
         {
           "position": "6",
@@ -109,7 +141,9 @@
           "points": 8,
           "time": "+54.617",
           "retired": null,
-          "fastLap": "1:22.091"
+          "fastLap": "1:22.091",
+          "lapsCompleted": 58,
+          "fastestLapRank": 1
         },
         {
           "position": "7",
@@ -124,7 +158,9 @@
           "points": 6,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.020"
+          "fastLap": "1:24.020",
+          "lapsCompleted": 57,
+          "fastestLapRank": 11
         },
         {
           "position": "8",
@@ -139,7 +175,9 @@
           "points": 4,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.182"
+          "fastLap": "1:24.182",
+          "lapsCompleted": 57,
+          "fastestLapRank": 12
         },
         {
           "position": "9",
@@ -154,7 +192,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:23.257"
+          "fastLap": "1:23.257",
+          "lapsCompleted": 57,
+          "fastestLapRank": 8
         },
         {
           "position": "10",
@@ -169,7 +209,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.486"
+          "fastLap": "1:24.486",
+          "lapsCompleted": 57,
+          "fastestLapRank": 15
         },
         {
           "position": "11",
@@ -184,7 +226,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.424"
+          "fastLap": "1:24.424",
+          "lapsCompleted": 57,
+          "fastestLapRank": 14
         },
         {
           "position": "12",
@@ -199,7 +243,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.375"
+          "fastLap": "1:24.375",
+          "lapsCompleted": 57,
+          "fastestLapRank": 13
         },
         {
           "position": "13",
@@ -214,7 +260,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:23.783"
+          "fastLap": "1:23.783",
+          "lapsCompleted": 57,
+          "fastestLapRank": 10
         },
         {
           "position": "14",
@@ -229,7 +277,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:22.926"
+          "fastLap": "1:22.926",
+          "lapsCompleted": 56,
+          "fastestLapRank": 7
         },
         {
           "position": "15",
@@ -244,7 +294,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:23.590"
+          "fastLap": "1:23.590",
+          "lapsCompleted": 56,
+          "fastestLapRank": 9
         },
         {
           "position": "16",
@@ -259,10 +311,12 @@
           "points": 0,
           "time": "+3 laps",
           "retired": null,
-          "fastLap": "1:26.070"
+          "fastLap": "1:26.070",
+          "lapsCompleted": 55,
+          "fastestLapRank": 19
         },
         {
-          "position": "-",
+          "position": "17",
           "grid": "22",
           "driverId": "stroll",
           "driver": {
@@ -272,12 +326,14 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "+15 laps",
-          "retired": null,
-          "fastLap": "1:25.410"
+          "time": null,
+          "retired": "Lapped",
+          "fastLap": "1:25.410",
+          "lapsCompleted": 43,
+          "fastestLapRank": 17
         },
         {
-          "position": "NC",
+          "position": "18",
           "grid": "17",
           "driverId": "alonso",
           "driver": {
@@ -287,12 +343,14 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (21)",
-          "retired": null,
-          "fastLap": "1:25.713"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:25.713",
+          "lapsCompleted": 21,
+          "fastestLapRank": 18
         },
         {
-          "position": "NC",
+          "position": "19",
           "grid": "19",
           "driverId": "bottas",
           "driver": {
@@ -302,12 +360,14 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (15)",
-          "retired": null,
-          "fastLap": "1:27.364"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:27.364",
+          "lapsCompleted": 15,
+          "fastestLapRank": 20
         },
         {
-          "position": "NC",
+          "position": "20",
           "grid": "3",
           "driverId": "hadjar",
           "driver": {
@@ -317,12 +377,14 @@
           },
           "teamId": "red_bull",
           "points": 0,
-          "time": "DNF (10)",
-          "retired": null,
-          "fastLap": "1:25.239"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:25.239",
+          "lapsCompleted": 10,
+          "fastestLapRank": 16
         },
         {
-          "position": "NC",
+          "position": "21",
           "grid": "5",
           "driverId": "piastri",
           "driver": {
@@ -332,12 +394,14 @@
           },
           "teamId": "mclaren",
           "points": 0,
-          "time": "DNF (0)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         },
         {
-          "position": "NC",
+          "position": "22",
           "grid": "11",
           "driverId": "hulkenberg",
           "driver": {
@@ -347,12 +411,14 @@
           },
           "teamId": "audi",
           "points": 0,
-          "time": "DNF (0)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/1/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/1/results/?limit=100"
     },
     {
       "round": 2,
@@ -364,6 +430,28 @@
       "date": "2026-03-15",
       "startTime": "2026-03-15T07:00:00Z",
       "laps": 56,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-03-15",
+          "time": "07:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-03-13",
+          "time": "03:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-03-14",
+          "time": "07:00:00Z"
+        },
+        "sprintRace": {
+          "date": "2026-03-14",
+          "time": "03:00:00Z"
+        },
+        "sprintQualy": {
+          "date": "2026-03-13",
+          "time": "07:30:00Z"
+        }
+      },
       "lengthKm": 5.451,
       "corners": 16,
       "status": "CONCLUDED",
@@ -386,7 +474,9 @@
           "points": 25,
           "time": "1:33:15.607",
           "retired": null,
-          "fastLap": "1:35.275"
+          "fastLap": "1:35.275",
+          "lapsCompleted": 56,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -401,7 +491,9 @@
           "points": 18,
           "time": "+5.515",
           "retired": null,
-          "fastLap": "1:35.400"
+          "fastLap": "1:35.400",
+          "lapsCompleted": 56,
+          "fastestLapRank": 2
         },
         {
           "position": "3",
@@ -416,7 +508,9 @@
           "points": 15,
           "time": "+25.267",
           "retired": null,
-          "fastLap": "1:36.092"
+          "fastLap": "1:36.092",
+          "lapsCompleted": 56,
+          "fastestLapRank": 5
         },
         {
           "position": "4",
@@ -431,7 +525,9 @@
           "points": 12,
           "time": "+28.894",
           "retired": null,
-          "fastLap": "1:36.011"
+          "fastLap": "1:36.011",
+          "lapsCompleted": 56,
+          "fastestLapRank": 4
         },
         {
           "position": "5",
@@ -446,7 +542,9 @@
           "points": 10,
           "time": "+57.268",
           "retired": null,
-          "fastLap": "1:36.429"
+          "fastLap": "1:36.429",
+          "lapsCompleted": 56,
+          "fastestLapRank": 8
         },
         {
           "position": "6",
@@ -461,7 +559,9 @@
           "points": 8,
           "time": "+59.647",
           "retired": null,
-          "fastLap": "1:36.505"
+          "fastLap": "1:36.505",
+          "lapsCompleted": 56,
+          "fastestLapRank": 9
         },
         {
           "position": "7",
@@ -476,7 +576,9 @@
           "points": 6,
           "time": "+1:20.588",
           "retired": null,
-          "fastLap": "1:37.096"
+          "fastLap": "1:37.096",
+          "lapsCompleted": 56,
+          "fastestLapRank": 12
         },
         {
           "position": "8",
@@ -491,7 +593,9 @@
           "points": 4,
           "time": "+1:27.247",
           "retired": null,
-          "fastLap": "1:37.311"
+          "fastLap": "1:37.311",
+          "lapsCompleted": 56,
+          "fastestLapRank": 13
         },
         {
           "position": "9",
@@ -506,7 +610,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.981"
+          "fastLap": "1:37.981",
+          "lapsCompleted": 55,
+          "fastestLapRank": 14
         },
         {
           "position": "10",
@@ -521,7 +627,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:36.783"
+          "fastLap": "1:36.783",
+          "lapsCompleted": 55,
+          "fastestLapRank": 10
         },
         {
           "position": "11",
@@ -536,7 +644,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:36.180"
+          "fastLap": "1:36.180",
+          "lapsCompleted": 55,
+          "fastestLapRank": 7
         },
         {
           "position": "12",
@@ -551,7 +661,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:36.099"
+          "fastLap": "1:36.099",
+          "lapsCompleted": 55,
+          "fastestLapRank": 6
         },
         {
           "position": "13",
@@ -566,7 +678,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.393"
+          "fastLap": "1:38.393",
+          "lapsCompleted": 55,
+          "fastestLapRank": 15
         },
         {
           "position": "14",
@@ -581,7 +695,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:35.964"
+          "fastLap": "1:35.964",
+          "lapsCompleted": 55,
+          "fastestLapRank": 3
         },
         {
           "position": "15",
@@ -596,10 +712,12 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.523"
+          "fastLap": "1:38.523",
+          "lapsCompleted": 55,
+          "fastestLapRank": 16
         },
         {
-          "position": "NC",
+          "position": "16",
           "grid": "8",
           "driverId": "max_verstappen",
           "driver": {
@@ -609,12 +727,14 @@
           },
           "teamId": "red_bull",
           "points": 0,
-          "time": "DNF (45)",
-          "retired": null,
-          "fastLap": "1:37.046"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:37.046",
+          "lapsCompleted": 45,
+          "fastestLapRank": 11
         },
         {
-          "position": "NC",
+          "position": "17",
           "grid": "18",
           "driverId": "alonso",
           "driver": {
@@ -624,12 +744,14 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (32)",
-          "retired": null,
-          "fastLap": "1:39.721"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:39.721",
+          "lapsCompleted": 32,
+          "fastestLapRank": 17
         },
         {
-          "position": "NC",
+          "position": "18",
           "grid": "20",
           "driverId": "stroll",
           "driver": {
@@ -639,12 +761,14 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (9)",
-          "retired": null,
-          "fastLap": "1:40.883"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:40.883",
+          "lapsCompleted": 9,
+          "fastestLapRank": 18
         },
         {
-          "position": "NC",
+          "position": "19",
           "grid": "5",
           "driverId": "piastri",
           "driver": {
@@ -654,12 +778,14 @@
           },
           "teamId": "mclaren",
           "points": 0,
-          "time": "DNF (0)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         },
         {
-          "position": "NC",
+          "position": "20",
           "grid": "6",
           "driverId": "norris",
           "driver": {
@@ -669,12 +795,14 @@
           },
           "teamId": "mclaren",
           "points": 0,
-          "time": "DNF (0)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         },
         {
-          "position": "NC",
+          "position": "21",
           "grid": "16",
           "driverId": "bortoleto",
           "driver": {
@@ -684,14 +812,15 @@
           },
           "teamId": "audi",
           "points": 0,
-          "time": "DNF (0)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         },
         {
-          "position": "NC",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1280/china/starting-grid",
+          "position": "22",
+          "grid": "22",
           "driverId": "albon",
           "driver": {
             "name": "Alex",
@@ -700,12 +829,14 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (0)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/2/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/2/results/?limit=100"
     },
     {
       "round": 3,
@@ -717,6 +848,28 @@
       "date": "2026-03-29",
       "startTime": "2026-03-29T05:00:00Z",
       "laps": 53,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-03-29",
+          "time": "05:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-03-27",
+          "time": "02:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-03-27",
+          "time": "06:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-03-28",
+          "time": "02:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-03-28",
+          "time": "06:00:00Z"
+        }
+      },
       "lengthKm": 5.807,
       "corners": 18,
       "status": "CONCLUDED",
@@ -739,7 +892,9 @@
           "points": 25,
           "time": "1:28:03.403",
           "retired": null,
-          "fastLap": "1:32.432"
+          "fastLap": "1:32.432",
+          "lapsCompleted": 53,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -754,7 +909,9 @@
           "points": 18,
           "time": "+13.722",
           "retired": null,
-          "fastLap": "1:32.996"
+          "fastLap": "1:32.996",
+          "lapsCompleted": 53,
+          "fastestLapRank": 5
         },
         {
           "position": "3",
@@ -769,7 +926,9 @@
           "points": 15,
           "time": "+15.270",
           "retired": null,
-          "fastLap": "1:32.634"
+          "fastLap": "1:32.634",
+          "lapsCompleted": 53,
+          "fastestLapRank": 3
         },
         {
           "position": "4",
@@ -784,7 +943,9 @@
           "points": 12,
           "time": "+15.754",
           "retired": null,
-          "fastLap": "1:32.549"
+          "fastLap": "1:32.549",
+          "lapsCompleted": 53,
+          "fastestLapRank": 2
         },
         {
           "position": "5",
@@ -799,7 +960,9 @@
           "points": 10,
           "time": "+23.479",
           "retired": null,
-          "fastLap": "1:33.208"
+          "fastLap": "1:33.208",
+          "lapsCompleted": 53,
+          "fastestLapRank": 6
         },
         {
           "position": "6",
@@ -814,7 +977,9 @@
           "points": 8,
           "time": "+25.037",
           "retired": null,
-          "fastLap": "1:32.777"
+          "fastLap": "1:32.777",
+          "lapsCompleted": 53,
+          "fastestLapRank": 4
         },
         {
           "position": "7",
@@ -829,7 +994,9 @@
           "points": 6,
           "time": "+32.340",
           "retired": null,
-          "fastLap": "1:33.691"
+          "fastLap": "1:33.691",
+          "lapsCompleted": 53,
+          "fastestLapRank": 9
         },
         {
           "position": "8",
@@ -844,7 +1011,9 @@
           "points": 4,
           "time": "+32.677",
           "retired": null,
-          "fastLap": "1:33.552"
+          "fastLap": "1:33.552",
+          "lapsCompleted": 53,
+          "fastestLapRank": 8
         },
         {
           "position": "9",
@@ -859,7 +1028,9 @@
           "points": 2,
           "time": "+50.180",
           "retired": null,
-          "fastLap": "1:34.230"
+          "fastLap": "1:34.230",
+          "lapsCompleted": 53,
+          "fastestLapRank": 13
         },
         {
           "position": "10",
@@ -874,7 +1045,9 @@
           "points": 1,
           "time": "+51.216",
           "retired": null,
-          "fastLap": "1:34.256"
+          "fastLap": "1:34.256",
+          "lapsCompleted": 53,
+          "fastestLapRank": 14
         },
         {
           "position": "11",
@@ -889,7 +1062,9 @@
           "points": 0,
           "time": "+52.280",
           "retired": null,
-          "fastLap": "1:33.732"
+          "fastLap": "1:33.732",
+          "lapsCompleted": 53,
+          "fastestLapRank": 10
         },
         {
           "position": "12",
@@ -904,7 +1079,9 @@
           "points": 0,
           "time": "+56.154",
           "retired": null,
-          "fastLap": "1:33.837"
+          "fastLap": "1:33.837",
+          "lapsCompleted": 53,
+          "fastestLapRank": 11
         },
         {
           "position": "13",
@@ -919,7 +1096,9 @@
           "points": 0,
           "time": "+59.078",
           "retired": null,
-          "fastLap": "1:34.164"
+          "fastLap": "1:34.164",
+          "lapsCompleted": 53,
+          "fastestLapRank": 12
         },
         {
           "position": "14",
@@ -934,7 +1113,9 @@
           "points": 0,
           "time": "+59.848",
           "retired": null,
-          "fastLap": "1:34.314"
+          "fastLap": "1:34.314",
+          "lapsCompleted": 53,
+          "fastestLapRank": 15
         },
         {
           "position": "15",
@@ -949,7 +1130,9 @@
           "points": 0,
           "time": "+1:05.008",
           "retired": null,
-          "fastLap": "1:34.514"
+          "fastLap": "1:34.514",
+          "lapsCompleted": 53,
+          "fastestLapRank": 17
         },
         {
           "position": "16",
@@ -964,7 +1147,9 @@
           "points": 0,
           "time": "+1:05.773",
           "retired": null,
-          "fastLap": "1:34.512"
+          "fastLap": "1:34.512",
+          "lapsCompleted": 53,
+          "fastestLapRank": 16
         },
         {
           "position": "17",
@@ -979,7 +1164,9 @@
           "points": 0,
           "time": "+1:32.453",
           "retired": null,
-          "fastLap": "1:35.637"
+          "fastLap": "1:35.637",
+          "lapsCompleted": 53,
+          "fastestLapRank": 19
         },
         {
           "position": "18",
@@ -994,7 +1181,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:36.221"
+          "fastLap": "1:36.221",
+          "lapsCompleted": 52,
+          "fastestLapRank": 20
         },
         {
           "position": "19",
@@ -1009,7 +1198,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:36.269"
+          "fastLap": "1:36.269",
+          "lapsCompleted": 52,
+          "fastestLapRank": 21
         },
         {
           "position": "20",
@@ -1024,25 +1215,12 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:33.427"
+          "fastLap": "1:33.427",
+          "lapsCompleted": 51,
+          "fastestLapRank": 7
         },
         {
-          "position": "-",
-          "grid": "18",
-          "driverId": "bearman",
-          "driver": {
-            "name": "Oliver",
-            "surname": "Bearman",
-            "number": 87
-          },
-          "teamId": "haas",
-          "points": 0,
-          "time": "DNF (53)",
-          "retired": null,
-          "fastLap": "1:35.604"
-        },
-        {
-          "position": "-",
+          "position": "21",
           "grid": "22",
           "driverId": "stroll",
           "driver": {
@@ -1052,12 +1230,31 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (53)",
-          "retired": null,
-          "fastLap": "1:37.217"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:37.217",
+          "lapsCompleted": 30,
+          "fastestLapRank": 22
+        },
+        {
+          "position": "22",
+          "grid": "18",
+          "driverId": "bearman",
+          "driver": {
+            "name": "Oliver",
+            "surname": "Bearman",
+            "number": 87
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:35.604",
+          "lapsCompleted": 20,
+          "fastestLapRank": 18
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/3/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/3/results/?limit=100"
     },
     {
       "round": 4,
@@ -1065,10 +1262,32 @@
       "name": "Formula 1 Crypto.com Miami Grand Prix 2026",
       "circuitId": "miami",
       "circuit": "Miami International Autodrome",
-      "location": "Miami, United States",
+      "location": "Miami, USA",
       "date": "2026-05-03",
       "startTime": "2026-05-03T20:00:00Z",
       "laps": 57,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-05-03",
+          "time": "20:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-05-01",
+          "time": "16:00:00Z"
+        },
+        "qualy": {
+          "date": "2026-05-02",
+          "time": "20:00:00Z"
+        },
+        "sprintRace": {
+          "date": "2026-05-02",
+          "time": "16:00:00Z"
+        },
+        "sprintQualy": {
+          "date": "2026-05-01",
+          "time": "20:30:00Z"
+        }
+      },
       "lengthKm": 5.412,
       "corners": 19,
       "status": "CONCLUDED",
@@ -1089,9 +1308,11 @@
           },
           "teamId": "mercedes",
           "points": 25,
-          "time": "-",
+          "time": "1:33:19.273",
           "retired": null,
-          "fastLap": "1:31.968"
+          "fastLap": "1:31.968",
+          "lapsCompleted": 57,
+          "fastestLapRank": 3
         },
         {
           "position": "2",
@@ -1106,7 +1327,9 @@
           "points": 18,
           "time": "+3.264",
           "retired": null,
-          "fastLap": "1:31.869"
+          "fastLap": "1:31.869",
+          "lapsCompleted": 57,
+          "fastestLapRank": 1
         },
         {
           "position": "3",
@@ -1121,7 +1344,9 @@
           "points": 15,
           "time": "+27.092",
           "retired": null,
-          "fastLap": "1:31.949"
+          "fastLap": "1:31.949",
+          "lapsCompleted": 57,
+          "fastestLapRank": 2
         },
         {
           "position": "4",
@@ -1136,7 +1361,9 @@
           "points": 12,
           "time": "+43.051",
           "retired": null,
-          "fastLap": "1:32.446"
+          "fastLap": "1:32.446",
+          "lapsCompleted": 57,
+          "fastestLapRank": 4
         },
         {
           "position": "5",
@@ -1149,9 +1376,11 @@
           },
           "teamId": "red_bull",
           "points": 10,
-          "time": "+43.949",
+          "time": "+48.949",
           "retired": null,
-          "fastLap": "1:33.110"
+          "fastLap": "1:33.110",
+          "lapsCompleted": 57,
+          "fastestLapRank": 9
         },
         {
           "position": "6",
@@ -1166,7 +1395,9 @@
           "points": 8,
           "time": "+53.753",
           "retired": null,
-          "fastLap": "1:32.676"
+          "fastLap": "1:32.676",
+          "lapsCompleted": 57,
+          "fastestLapRank": 6
         },
         {
           "position": "7",
@@ -1181,7 +1412,9 @@
           "points": 6,
           "time": "+1:01.871",
           "retired": null,
-          "fastLap": "1:33.035"
+          "fastLap": "1:33.035",
+          "lapsCompleted": 57,
+          "fastestLapRank": 8
         },
         {
           "position": "8",
@@ -1193,10 +1426,12 @@
             "number": 16
           },
           "teamId": "ferrari",
-          "points": 2,
+          "points": 4,
           "time": "+1:04.245",
           "retired": null,
-          "fastLap": "1:32.515"
+          "fastLap": "1:32.515",
+          "lapsCompleted": 57,
+          "fastestLapRank": 5
         },
         {
           "position": "9",
@@ -1211,7 +1446,9 @@
           "points": 2,
           "time": "+1:22.072",
           "retired": null,
-          "fastLap": "1:33.026"
+          "fastLap": "1:33.026",
+          "lapsCompleted": 57,
+          "fastestLapRank": 7
         },
         {
           "position": "10",
@@ -1226,7 +1463,9 @@
           "points": 1,
           "time": "+1:30.972",
           "retired": null,
-          "fastLap": "1:33.784"
+          "fastLap": "1:33.784",
+          "lapsCompleted": 57,
+          "fastestLapRank": 13
         },
         {
           "position": "11",
@@ -1241,7 +1480,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:33.744"
+          "fastLap": "1:33.744",
+          "lapsCompleted": 56,
+          "fastestLapRank": 12
         },
         {
           "position": "12",
@@ -1256,7 +1497,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:33.500"
+          "fastLap": "1:33.500",
+          "lapsCompleted": 56,
+          "fastestLapRank": 10
         },
         {
           "position": "13",
@@ -1271,7 +1514,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:33.712"
+          "fastLap": "1:33.712",
+          "lapsCompleted": 56,
+          "fastestLapRank": 11
         },
         {
           "position": "14",
@@ -1286,7 +1531,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:34.058"
+          "fastLap": "1:34.058",
+          "lapsCompleted": 56,
+          "fastestLapRank": 14
         },
         {
           "position": "15",
@@ -1301,7 +1548,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:34.594"
+          "fastLap": "1:34.594",
+          "lapsCompleted": 56,
+          "fastestLapRank": 16
         },
         {
           "position": "16",
@@ -1316,7 +1565,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:34.895"
+          "fastLap": "1:34.895",
+          "lapsCompleted": 56,
+          "fastestLapRank": 21
         },
         {
           "position": "17",
@@ -1331,7 +1582,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:34.716"
+          "fastLap": "1:34.716",
+          "lapsCompleted": 56,
+          "fastestLapRank": 17
         },
         {
           "position": "18",
@@ -1346,41 +1599,12 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:36.080"
+          "fastLap": "1:36.080",
+          "lapsCompleted": 55,
+          "fastestLapRank": 22
         },
         {
-          "position": "-",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid",
-          "driverId": "hadjar",
-          "driver": {
-            "name": "Isack",
-            "surname": "Hadjar",
-            "number": 6
-          },
-          "teamId": "red_bull",
-          "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
-          "grid": "9",
-          "driverId": "gasly",
-          "driver": {
-            "name": "Pierre",
-            "surname": "Gasly",
-            "number": 10
-          },
-          "teamId": "alpine",
-          "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
+          "position": "19",
           "grid": "10",
           "driverId": "hulkenberg",
           "driver": {
@@ -1390,12 +1614,14 @@
           },
           "teamId": "audi",
           "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:34.523",
+          "lapsCompleted": 7,
+          "fastestLapRank": 15
         },
         {
-          "position": "-",
+          "position": "20",
           "grid": "11",
           "driverId": "lawson",
           "driver": {
@@ -1405,12 +1631,48 @@
           },
           "teamId": "rb",
           "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:34.814",
+          "lapsCompleted": 6,
+          "fastestLapRank": 18
+        },
+        {
+          "position": "21",
+          "grid": "9",
+          "driverId": "gasly",
+          "driver": {
+            "name": "Pierre",
+            "surname": "Gasly",
+            "number": 10
+          },
+          "teamId": "alpine",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:34.856",
+          "lapsCompleted": 4,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "22",
+          "grid": "22",
+          "driverId": "hadjar",
+          "driver": {
+            "name": "Isack",
+            "surname": "Hadjar",
+            "number": 6
+          },
+          "teamId": "red_bull",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:34.833",
+          "lapsCompleted": 4,
+          "fastestLapRank": 19
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/4/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/4/results/?limit=100"
     },
     {
       "round": 5,
@@ -1420,8 +1682,30 @@
       "circuit": "Circuit Gilles Villeneuve",
       "location": "Montreal, Canada",
       "date": "2026-05-24",
-      "startTime": "2026-05-24T18:00:00Z",
-      "laps": 70,
+      "startTime": "2026-05-24T20:00:00Z",
+      "laps": 68,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-05-24",
+          "time": "20:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-05-22",
+          "time": "16:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-05-23",
+          "time": "20:00:00Z"
+        },
+        "sprintRace": {
+          "date": "2026-05-23",
+          "time": "16:00:00Z"
+        },
+        "sprintQualy": {
+          "date": "2026-05-22",
+          "time": "20:30:00Z"
+        }
+      },
       "lengthKm": 4.361,
       "corners": 14,
       "status": "CONCLUDED",
@@ -1444,7 +1728,9 @@
           "points": 25,
           "time": "1:28:15.758",
           "retired": null,
-          "fastLap": "1:14.210"
+          "fastLap": "1:14.210",
+          "lapsCompleted": 68,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -1459,7 +1745,9 @@
           "points": 18,
           "time": "+10.768",
           "retired": null,
-          "fastLap": "1:14.573"
+          "fastLap": "1:14.573",
+          "lapsCompleted": 68,
+          "fastestLapRank": 3
         },
         {
           "position": "3",
@@ -1474,7 +1762,9 @@
           "points": 15,
           "time": "+11.276",
           "retired": null,
-          "fastLap": "1:14.398"
+          "fastLap": "1:14.398",
+          "lapsCompleted": 68,
+          "fastestLapRank": 2
         },
         {
           "position": "4",
@@ -1489,7 +1779,9 @@
           "points": 12,
           "time": "+44.151",
           "retired": null,
-          "fastLap": "1:15.297"
+          "fastLap": "1:15.297",
+          "lapsCompleted": 68,
+          "fastestLapRank": 5
         },
         {
           "position": "5",
@@ -1504,11 +1796,13 @@
           "points": 10,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:14.578"
+          "fastLap": "1:14.578",
+          "lapsCompleted": 67,
+          "fastestLapRank": 4
         },
         {
           "position": "6",
-          "grid": "9",
+          "grid": "10",
           "driverId": "colapinto",
           "driver": {
             "name": "Franco",
@@ -1519,11 +1813,13 @@
           "points": 8,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:15.462"
+          "fastLap": "1:15.462",
+          "lapsCompleted": 67,
+          "fastestLapRank": 8
         },
         {
           "position": "7",
-          "grid": "11",
+          "grid": "12",
           "driverId": "lawson",
           "driver": {
             "name": "Liam",
@@ -1534,11 +1830,13 @@
           "points": 6,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:15.604"
+          "fastLap": "1:15.604",
+          "lapsCompleted": 67,
+          "fastestLapRank": 10
         },
         {
           "position": "8",
-          "grid": "13",
+          "grid": "14",
           "driverId": "gasly",
           "driver": {
             "name": "Pierre",
@@ -1549,11 +1847,13 @@
           "points": 4,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:15.390"
+          "fastLap": "1:15.390",
+          "lapsCompleted": 67,
+          "fastestLapRank": 6
         },
         {
           "position": "9",
-          "grid": "14",
+          "grid": "15",
           "driverId": "sainz",
           "driver": {
             "name": "Carlos",
@@ -1564,11 +1864,13 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:15.852"
+          "fastLap": "1:15.852",
+          "lapsCompleted": 67,
+          "fastestLapRank": 12
         },
         {
           "position": "10",
-          "grid": "15",
+          "grid": "16",
           "driverId": "bearman",
           "driver": {
             "name": "Oliver",
@@ -1579,7 +1881,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:16.002"
+          "fastLap": "1:16.002",
+          "lapsCompleted": 67,
+          "fastestLapRank": 13
         },
         {
           "position": "11",
@@ -1594,11 +1898,13 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:15.456"
+          "fastLap": "1:15.456",
+          "lapsCompleted": 66,
+          "fastestLapRank": 7
         },
         {
           "position": "12",
-          "grid": "10",
+          "grid": "11",
           "driverId": "hulkenberg",
           "driver": {
             "name": "Nico",
@@ -1609,11 +1915,13 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:16.275"
+          "fastLap": "1:16.275",
+          "lapsCompleted": 66,
+          "fastestLapRank": 15
         },
         {
           "position": "13",
-          "grid": "12",
+          "grid": "13",
           "driverId": "bortoleto",
           "driver": {
             "name": "Gabriel",
@@ -1624,11 +1932,13 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:16.221"
+          "fastLap": "1:16.221",
+          "lapsCompleted": 66,
+          "fastestLapRank": 14
         },
         {
           "position": "14",
-          "grid": "16",
+          "grid": "17",
           "driverId": "ocon",
           "driver": {
             "name": "Esteban",
@@ -1639,12 +1949,13 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:16.577"
+          "fastLap": "1:16.577",
+          "lapsCompleted": 66,
+          "fastestLapRank": 16
         },
         {
           "position": "15",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid",
+          "grid": "22",
           "driverId": "stroll",
           "driver": {
             "name": "Lance",
@@ -1655,7 +1966,9 @@
           "points": 0,
           "time": "+4 laps",
           "retired": null,
-          "fastLap": "1:18.721"
+          "fastLap": "1:18.721",
+          "lapsCompleted": 64,
+          "fastestLapRank": 20
         },
         {
           "position": "16",
@@ -1670,25 +1983,29 @@
           "points": 0,
           "time": "+4 laps",
           "retired": null,
-          "fastLap": "1:17.725"
+          "fastLap": "1:17.725",
+          "lapsCompleted": 64,
+          "fastestLapRank": 19
         },
         {
-          "position": "-",
-          "grid": "1",
-          "driverId": "russell",
+          "position": "17",
+          "grid": "20",
+          "driverId": "perez",
           "driver": {
-            "name": "George",
-            "surname": "Russell",
-            "number": 63
+            "name": "Sergio",
+            "surname": "Pérez",
+            "number": 11
           },
-          "teamId": "mercedes",
+          "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (68)",
-          "retired": null,
-          "fastLap": "1:15.477"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:16.915",
+          "lapsCompleted": 39,
+          "fastestLapRank": 17
         },
         {
-          "position": "-",
+          "position": "18",
           "grid": "3",
           "driverId": "norris",
           "driver": {
@@ -1698,44 +2015,32 @@
           },
           "teamId": "mclaren",
           "points": 0,
-          "time": "DNF (68)",
-          "retired": null,
-          "fastLap": "1:15.845"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:15.845",
+          "lapsCompleted": 38,
+          "fastestLapRank": 11
         },
         {
-          "position": "-",
-          "grid": "9",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1285/canada/starting-grid",
-          "driverId": "lindblad",
+          "position": "19",
+          "grid": "1",
+          "driverId": "russell",
           "driver": {
-            "name": "Arvid",
-            "surname": "Lindblad",
-            "number": 41
+            "name": "George",
+            "surname": "Russell",
+            "number": 63
           },
-          "teamId": "rb",
+          "teamId": "mercedes",
           "points": 0,
-          "time": "DNF (68)",
-          "retired": null,
-          "fastLap": null
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:15.477",
+          "lapsCompleted": 29,
+          "fastestLapRank": 9
         },
         {
-          "position": "-",
-          "grid": "17",
-          "driverId": "albon",
-          "driver": {
-            "name": "Alex",
-            "surname": "Albon",
-            "number": 23
-          },
-          "teamId": "williams",
-          "points": 0,
-          "time": "DNF (68)",
-          "retired": null,
-          "fastLap": "1:17.221"
-        },
-        {
-          "position": "-",
-          "grid": "18",
+          "position": "20",
+          "grid": "19",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -1744,27 +2049,48 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (68)",
-          "retired": null,
-          "fastLap": "1:19.635"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:19.635",
+          "lapsCompleted": 23,
+          "fastestLapRank": 21
         },
         {
-          "position": "-",
-          "grid": "19",
-          "driverId": "perez",
+          "position": "21",
+          "grid": "18",
+          "driverId": "albon",
           "driver": {
-            "name": "Sergio",
-            "surname": "Pérez",
-            "number": 11
+            "name": "Alex",
+            "surname": "Albon",
+            "number": 23
           },
-          "teamId": "cadillac",
+          "teamId": "williams",
           "points": 0,
-          "time": "DNF (68)",
-          "retired": null,
-          "fastLap": "1:16.915"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:17.221",
+          "lapsCompleted": 11,
+          "fastestLapRank": 18
+        },
+        {
+          "position": "22",
+          "grid": "9",
+          "driverId": "lindblad",
+          "driver": {
+            "name": "Arvid",
+            "surname": "Lindblad",
+            "number": 41
+          },
+          "teamId": "rb",
+          "points": 0,
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/5/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/5/results/?limit=100"
     },
     {
       "round": 6,
@@ -1776,6 +2102,28 @@
       "date": "2026-06-07",
       "startTime": "2026-06-07T13:00:00Z",
       "laps": 78,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-06-07",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-06-05",
+          "time": "11:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-06-05",
+          "time": "15:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-06-06",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-06-06",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 3.337,
       "corners": 19,
       "status": "CONCLUDED",
@@ -1798,7 +2146,9 @@
           "points": 25,
           "time": "2:23:31.243",
           "retired": null,
-          "fastLap": "1:13.481"
+          "fastLap": "1:13.481",
+          "lapsCompleted": 78,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -1813,7 +2163,9 @@
           "points": 18,
           "time": "+6.271",
           "retired": null,
-          "fastLap": "1:14.643"
+          "fastLap": "1:14.643",
+          "lapsCompleted": 78,
+          "fastestLapRank": 2
         },
         {
           "position": "3",
@@ -1828,7 +2180,9 @@
           "points": 15,
           "time": "+23.394",
           "retired": null,
-          "fastLap": "1:15.669"
+          "fastLap": "1:15.669",
+          "lapsCompleted": 78,
+          "fastestLapRank": 4
         },
         {
           "position": "4",
@@ -1843,7 +2197,9 @@
           "points": 12,
           "time": "+24.261",
           "retired": null,
-          "fastLap": "1:15.816"
+          "fastLap": "1:15.816",
+          "lapsCompleted": 78,
+          "fastestLapRank": 7
         },
         {
           "position": "5",
@@ -1858,7 +2214,9 @@
           "points": 10,
           "time": "+26.553",
           "retired": null,
-          "fastLap": "1:15.754"
+          "fastLap": "1:15.754",
+          "lapsCompleted": 78,
+          "fastestLapRank": 5
         },
         {
           "position": "6",
@@ -1873,7 +2231,9 @@
           "points": 8,
           "time": "+29.010",
           "retired": null,
-          "fastLap": "1:15.908"
+          "fastLap": "1:15.908",
+          "lapsCompleted": 78,
+          "fastestLapRank": 8
         },
         {
           "position": "7",
@@ -1888,7 +2248,9 @@
           "points": 6,
           "time": "+30.369",
           "retired": null,
-          "fastLap": "1:15.497"
+          "fastLap": "1:15.497",
+          "lapsCompleted": 78,
+          "fastestLapRank": 3
         },
         {
           "position": "8",
@@ -1903,7 +2265,9 @@
           "points": 4,
           "time": "+33.413",
           "retired": null,
-          "fastLap": "1:16.393"
+          "fastLap": "1:16.393",
+          "lapsCompleted": 78,
+          "fastestLapRank": 12
         },
         {
           "position": "9",
@@ -1918,7 +2282,9 @@
           "points": 2,
           "time": "+37.140",
           "retired": null,
-          "fastLap": "1:16.914"
+          "fastLap": "1:16.914",
+          "lapsCompleted": 78,
+          "fastestLapRank": 15
         },
         {
           "position": "10",
@@ -1933,7 +2299,9 @@
           "points": 1,
           "time": "+41.899",
           "retired": null,
-          "fastLap": "1:17.120"
+          "fastLap": "1:17.120",
+          "lapsCompleted": 78,
+          "fastestLapRank": 16
         },
         {
           "position": "11",
@@ -1948,7 +2316,9 @@
           "points": 0,
           "time": "+42.748",
           "retired": null,
-          "fastLap": "1:16.803"
+          "fastLap": "1:16.803",
+          "lapsCompleted": 78,
+          "fastestLapRank": 13
         },
         {
           "position": "12",
@@ -1963,7 +2333,9 @@
           "points": 0,
           "time": "+43.353",
           "retired": null,
-          "fastLap": "1:15.773"
+          "fastLap": "1:15.773",
+          "lapsCompleted": 78,
+          "fastestLapRank": 6
         },
         {
           "position": "13",
@@ -1978,7 +2350,9 @@
           "points": 0,
           "time": "+44.102",
           "retired": null,
-          "fastLap": "1:16.332"
+          "fastLap": "1:16.332",
+          "lapsCompleted": 78,
+          "fastestLapRank": 11
         },
         {
           "position": "14",
@@ -1993,7 +2367,9 @@
           "points": 0,
           "time": "+48.964",
           "retired": null,
-          "fastLap": "1:16.316"
+          "fastLap": "1:16.316",
+          "lapsCompleted": 78,
+          "fastestLapRank": 10
         },
         {
           "position": "15",
@@ -2008,7 +2384,9 @@
           "points": 0,
           "time": "+49.153",
           "retired": null,
-          "fastLap": "1:16.891"
+          "fastLap": "1:16.891",
+          "lapsCompleted": 78,
+          "fastestLapRank": 14
         },
         {
           "position": "16",
@@ -2021,27 +2399,14 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (78)",
+          "time": "+8 laps",
           "retired": null,
-          "fastLap": "1:18.022"
+          "fastLap": "1:18.022",
+          "lapsCompleted": 70,
+          "fastestLapRank": 18
         },
         {
-          "position": "-",
-          "grid": "2",
-          "driverId": "max_verstappen",
-          "driver": {
-            "name": "Max",
-            "surname": "Verstappen",
-            "number": 3
-          },
-          "teamId": "red_bull",
-          "points": 0,
-          "time": "DNF (78)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
+          "position": "17",
           "grid": "4",
           "driverId": "leclerc",
           "driver": {
@@ -2051,57 +2416,14 @@
           },
           "teamId": "ferrari",
           "points": 0,
-          "time": "DNF (78)",
-          "retired": null,
-          "fastLap": "1:15.964"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:15.964",
+          "lapsCompleted": 64,
+          "fastestLapRank": 9
         },
         {
-          "position": "-",
-          "grid": "8",
-          "driverId": "norris",
-          "driver": {
-            "name": "Lando",
-            "surname": "Norris",
-            "number": 1
-          },
-          "teamId": "mclaren",
-          "points": 0,
-          "time": "DNF (78)",
-          "retired": null,
-          "fastLap": "1:17.670"
-        },
-        {
-          "position": "-",
-          "grid": "19",
-          "driverId": "bearman",
-          "driver": {
-            "name": "Oliver",
-            "surname": "Bearman",
-            "number": 87
-          },
-          "teamId": "haas",
-          "points": 0,
-          "time": "DNF (78)",
-          "retired": null,
-          "fastLap": "1:18.475"
-        },
-        {
-          "position": "-",
-          "grid": "20",
-          "driverId": "bottas",
-          "driver": {
-            "name": "Valtteri",
-            "surname": "Bottas",
-            "number": 77
-          },
-          "teamId": "cadillac",
-          "points": 0,
-          "time": "DNF (78)",
-          "retired": null,
-          "fastLap": "1:20.494"
-        },
-        {
-          "position": "-",
+          "position": "18",
           "grid": "22",
           "driverId": "stroll",
           "driver": {
@@ -2111,12 +2433,82 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (78)",
-          "retired": null,
-          "fastLap": "1:18.845"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:18.845",
+          "lapsCompleted": 56,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "19",
+          "grid": "8",
+          "driverId": "norris",
+          "driver": {
+            "name": "Lando",
+            "surname": "Norris",
+            "number": 1
+          },
+          "teamId": "mclaren",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:17.670",
+          "lapsCompleted": 43,
+          "fastestLapRank": 17
+        },
+        {
+          "position": "20",
+          "grid": "19",
+          "driverId": "bearman",
+          "driver": {
+            "name": "Oliver",
+            "surname": "Bearman",
+            "number": 87
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:18.475",
+          "lapsCompleted": 27,
+          "fastestLapRank": 19
+        },
+        {
+          "position": "21",
+          "grid": "20",
+          "driverId": "bottas",
+          "driver": {
+            "name": "Valtteri",
+            "surname": "Bottas",
+            "number": 77
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:20.494",
+          "lapsCompleted": 15,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "22",
+          "grid": "2",
+          "driverId": "max_verstappen",
+          "driver": {
+            "name": "Max",
+            "surname": "Verstappen",
+            "number": 3
+          },
+          "teamId": "red_bull",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/6/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/6/results/?limit=100"
     },
     {
       "round": 7,
@@ -2128,6 +2520,28 @@
       "date": "2026-06-14",
       "startTime": "2026-06-14T13:00:00Z",
       "laps": 66,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-06-14",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-06-12",
+          "time": "11:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-06-12",
+          "time": "15:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-06-13",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-06-13",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 4.657,
       "corners": 14,
       "status": "CONCLUDED",
@@ -2150,7 +2564,9 @@
           "points": 25,
           "time": "1:32:28.105",
           "retired": null,
-          "fastLap": "1:20.122"
+          "fastLap": "1:20.122",
+          "lapsCompleted": 66,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -2165,7 +2581,9 @@
           "points": 18,
           "time": "+19.561",
           "retired": null,
-          "fastLap": "1:20.640"
+          "fastLap": "1:20.640",
+          "lapsCompleted": 66,
+          "fastestLapRank": 6
         },
         {
           "position": "3",
@@ -2180,7 +2598,9 @@
           "points": 15,
           "time": "+23.719",
           "retired": null,
-          "fastLap": "1:20.232"
+          "fastLap": "1:20.232",
+          "lapsCompleted": 66,
+          "fastestLapRank": 4
         },
         {
           "position": "4",
@@ -2195,7 +2615,9 @@
           "points": 12,
           "time": "+40.497",
           "retired": null,
-          "fastLap": "1:20.230"
+          "fastLap": "1:20.230",
+          "lapsCompleted": 66,
+          "fastestLapRank": 3
         },
         {
           "position": "5",
@@ -2210,7 +2632,9 @@
           "points": 10,
           "time": "+58.661",
           "retired": null,
-          "fastLap": "1:20.835"
+          "fastLap": "1:20.835",
+          "lapsCompleted": 66,
+          "fastestLapRank": 8
         },
         {
           "position": "6",
@@ -2225,7 +2649,9 @@
           "points": 8,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:20.150"
+          "fastLap": "1:20.150",
+          "lapsCompleted": 65,
+          "fastestLapRank": 2
         },
         {
           "position": "7",
@@ -2240,25 +2666,12 @@
           "points": 6,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:21.960"
+          "fastLap": "1:21.960",
+          "lapsCompleted": 65,
+          "fastestLapRank": 13
         },
         {
           "position": "8",
-          "grid": "13",
-          "driverId": "colapinto",
-          "driver": {
-            "name": "Franco",
-            "surname": "Colapinto",
-            "number": 43
-          },
-          "teamId": "alpine",
-          "points": 1,
-          "time": "+1 lap",
-          "retired": null,
-          "fastLap": "1:22.449"
-        },
-        {
-          "position": "9",
           "grid": "8",
           "driverId": "lawson",
           "driver": {
@@ -2270,10 +2683,12 @@
           "points": 4,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:22.691"
+          "fastLap": "1:22.691",
+          "lapsCompleted": 65,
+          "fastestLapRank": 17
         },
         {
-          "position": "10",
+          "position": "9",
           "grid": "11",
           "driverId": "lindblad",
           "driver": {
@@ -2285,7 +2700,26 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:21.914"
+          "fastLap": "1:21.914",
+          "lapsCompleted": 65,
+          "fastestLapRank": 12
+        },
+        {
+          "position": "10",
+          "grid": "13",
+          "driverId": "colapinto",
+          "driver": {
+            "name": "Franco",
+            "surname": "Colapinto",
+            "number": 43
+          },
+          "teamId": "alpine",
+          "points": 1,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": "1:22.449",
+          "lapsCompleted": 65,
+          "fastestLapRank": 16
         },
         {
           "position": "11",
@@ -2300,7 +2734,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:21.446"
+          "fastLap": "1:21.446",
+          "lapsCompleted": 64,
+          "fastestLapRank": 9
         },
         {
           "position": "12",
@@ -2315,7 +2751,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:22.061"
+          "fastLap": "1:22.061",
+          "lapsCompleted": 64,
+          "fastestLapRank": 14
         },
         {
           "position": "13",
@@ -2330,7 +2768,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:21.643"
+          "fastLap": "1:21.643",
+          "lapsCompleted": 64,
+          "fastestLapRank": 10
         },
         {
           "position": "14",
@@ -2345,40 +2785,12 @@
           "points": 0,
           "time": "+3 laps",
           "retired": null,
-          "fastLap": "1:22.820"
+          "fastLap": "1:22.820",
+          "lapsCompleted": 63,
+          "fastestLapRank": 18
         },
         {
-          "position": "-",
-          "grid": "3",
-          "driverId": "antonelli",
-          "driver": {
-            "name": "Andrea",
-            "surname": "Kimi Antonelli",
-            "number": 12
-          },
-          "teamId": "mercedes",
-          "points": 0,
-          "time": "DNF (66)",
-          "retired": null,
-          "fastLap": "1:20.704"
-        },
-        {
-          "position": "-",
-          "grid": "9",
-          "driverId": "hulkenberg",
-          "driver": {
-            "name": "Nico",
-            "surname": "Hulkenberg",
-            "number": 27
-          },
-          "teamId": "audi",
-          "points": 0,
-          "time": "DNF (66)",
-          "retired": null,
-          "fastLap": "1:23.447"
-        },
-        {
-          "position": "-",
+          "position": "15",
           "grid": "10",
           "driverId": "leclerc",
           "driver": {
@@ -2388,12 +2800,31 @@
           },
           "teamId": "ferrari",
           "points": 0,
-          "time": "DNF (66)",
+          "time": "+4 laps",
           "retired": null,
-          "fastLap": "1:20.379"
+          "fastLap": "1:20.379",
+          "lapsCompleted": 62,
+          "fastestLapRank": 5
         },
         {
-          "position": "-",
+          "position": "16",
+          "grid": "3",
+          "driverId": "antonelli",
+          "driver": {
+            "name": "Andrea",
+            "surname": "Kimi Antonelli",
+            "number": 12
+          },
+          "teamId": "mercedes",
+          "points": 0,
+          "time": "+5 laps",
+          "retired": null,
+          "fastLap": "1:20.704",
+          "lapsCompleted": 61,
+          "fastestLapRank": 7
+        },
+        {
+          "position": "17",
           "grid": "15",
           "driverId": "bearman",
           "driver": {
@@ -2403,12 +2834,14 @@
           },
           "teamId": "haas",
           "points": 0,
-          "time": "DNF (66)",
+          "time": "+6 laps",
           "retired": null,
-          "fastLap": "1:22.419"
+          "fastLap": "1:22.419",
+          "lapsCompleted": 60,
+          "fastestLapRank": 15
         },
         {
-          "position": "-",
+          "position": "18",
           "grid": "18",
           "driverId": "albon",
           "driver": {
@@ -2418,12 +2851,48 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (66)",
-          "retired": null,
-          "fastLap": "1:21.744"
+          "time": null,
+          "retired": "Lapped",
+          "fastLap": "1:21.744",
+          "lapsCompleted": 55,
+          "fastestLapRank": 11
         },
         {
-          "position": "-",
+          "position": "19",
+          "grid": "22",
+          "driverId": "alonso",
+          "driver": {
+            "name": "Fernando",
+            "surname": "Alonso",
+            "number": 14
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:25.366",
+          "lapsCompleted": 37,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "20",
+          "grid": "9",
+          "driverId": "hulkenberg",
+          "driver": {
+            "name": "Nico",
+            "surname": "Hulkenberg",
+            "number": 27
+          },
+          "teamId": "audi",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:23.447",
+          "lapsCompleted": 29,
+          "fastestLapRank": 19
+        },
+        {
+          "position": "21",
           "grid": "20",
           "driverId": "bottas",
           "driver": {
@@ -2433,12 +2902,14 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (66)",
-          "retired": null,
-          "fastLap": "1:25.745"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:25.745",
+          "lapsCompleted": 15,
+          "fastestLapRank": 21
         },
         {
-          "position": "-",
+          "position": "22",
           "grid": "21",
           "driverId": "stroll",
           "driver": {
@@ -2448,28 +2919,14 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (66)",
-          "retired": null,
-          "fastLap": "1:25.904"
-        },
-        {
-          "position": "-",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/starting-grid",
-          "driverId": "alonso",
-          "driver": {
-            "name": "Fernando",
-            "surname": "Alonso",
-            "number": 14
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (66)",
-          "retired": null,
-          "fastLap": "1:25.366"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:25.904",
+          "lapsCompleted": 5,
+          "fastestLapRank": 22
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/7/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/7/results/?limit=100"
     },
     {
       "round": 8,
@@ -2481,6 +2938,28 @@
       "date": "2026-06-28",
       "startTime": "2026-06-28T13:00:00Z",
       "laps": 71,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-06-28",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-06-26",
+          "time": "11:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-06-26",
+          "time": "15:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-06-27",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-06-27",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 4.318,
       "corners": 10,
       "status": "CONCLUDED",
@@ -2503,7 +2982,9 @@
           "points": 25,
           "time": "1:26:37.979",
           "retired": null,
-          "fastLap": "1:10.683"
+          "fastLap": "1:10.683",
+          "lapsCompleted": 71,
+          "fastestLapRank": 6
         },
         {
           "position": "2",
@@ -2518,7 +2999,9 @@
           "points": 18,
           "time": "+1.611",
           "retired": null,
-          "fastLap": "1:10.483"
+          "fastLap": "1:10.483",
+          "lapsCompleted": 71,
+          "fastestLapRank": 2
         },
         {
           "position": "3",
@@ -2533,7 +3016,9 @@
           "points": 15,
           "time": "+1.986",
           "retired": null,
-          "fastLap": "1:10.374"
+          "fastLap": "1:10.374",
+          "lapsCompleted": 71,
+          "fastestLapRank": 1
         },
         {
           "position": "4",
@@ -2548,7 +3033,9 @@
           "points": 12,
           "time": "+21.809",
           "retired": null,
-          "fastLap": "1:10.595"
+          "fastLap": "1:10.595",
+          "lapsCompleted": 71,
+          "fastestLapRank": 3
         },
         {
           "position": "5",
@@ -2563,7 +3050,9 @@
           "points": 10,
           "time": "+26.393",
           "retired": null,
-          "fastLap": "1:10.946"
+          "fastLap": "1:10.946",
+          "lapsCompleted": 71,
+          "fastestLapRank": 7
         },
         {
           "position": "6",
@@ -2578,7 +3067,9 @@
           "points": 8,
           "time": "+29.399",
           "retired": null,
-          "fastLap": "1:10.947"
+          "fastLap": "1:10.947",
+          "lapsCompleted": 71,
+          "fastestLapRank": 8
         },
         {
           "position": "7",
@@ -2593,7 +3084,9 @@
           "points": 6,
           "time": "+31.505",
           "retired": null,
-          "fastLap": "1:10.652"
+          "fastLap": "1:10.652",
+          "lapsCompleted": 71,
+          "fastestLapRank": 5
         },
         {
           "position": "8",
@@ -2608,7 +3101,9 @@
           "points": 4,
           "time": "+45.659",
           "retired": null,
-          "fastLap": "1:10.606"
+          "fastLap": "1:10.606",
+          "lapsCompleted": 71,
+          "fastestLapRank": 4
         },
         {
           "position": "9",
@@ -2623,7 +3118,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:11.547"
+          "fastLap": "1:11.547",
+          "lapsCompleted": 70,
+          "fastestLapRank": 10
         },
         {
           "position": "10",
@@ -2638,7 +3135,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:11.587"
+          "fastLap": "1:11.587",
+          "lapsCompleted": 70,
+          "fastestLapRank": 11
         },
         {
           "position": "11",
@@ -2653,7 +3152,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:11.866"
+          "fastLap": "1:11.866",
+          "lapsCompleted": 70,
+          "fastestLapRank": 14
         },
         {
           "position": "12",
@@ -2668,7 +3169,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:11.634"
+          "fastLap": "1:11.634",
+          "lapsCompleted": 70,
+          "fastestLapRank": 12
         },
         {
           "position": "13",
@@ -2683,7 +3186,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:11.466"
+          "fastLap": "1:11.466",
+          "lapsCompleted": 70,
+          "fastestLapRank": 9
         },
         {
           "position": "14",
@@ -2698,7 +3203,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:12.207"
+          "fastLap": "1:12.207",
+          "lapsCompleted": 70,
+          "fastestLapRank": 15
         },
         {
           "position": "15",
@@ -2713,7 +3220,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:11.795"
+          "fastLap": "1:11.795",
+          "lapsCompleted": 70,
+          "fastestLapRank": 13
         },
         {
           "position": "16",
@@ -2728,7 +3237,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:12.979"
+          "fastLap": "1:12.979",
+          "lapsCompleted": 69,
+          "fastestLapRank": 17
         },
         {
           "position": "17",
@@ -2743,7 +3254,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:13.137"
+          "fastLap": "1:13.137",
+          "lapsCompleted": 69,
+          "fastestLapRank": 18
         },
         {
           "position": "18",
@@ -2758,55 +3271,12 @@
           "points": 0,
           "time": "+3 laps",
           "retired": null,
-          "fastLap": "1:12.501"
+          "fastLap": "1:12.501",
+          "lapsCompleted": 68,
+          "fastestLapRank": 16
         },
         {
-          "position": "-",
-          "grid": "17",
-          "driverId": "sainz",
-          "driver": {
-            "name": "Carlos",
-            "surname": "Sainz",
-            "number": 55
-          },
-          "teamId": "williams",
-          "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:13.694"
-        },
-        {
-          "position": "-",
-          "grid": "19",
-          "driverId": "perez",
-          "driver": {
-            "name": "Sergio",
-            "surname": "Pérez",
-            "number": 11
-          },
-          "teamId": "cadillac",
-          "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:14.448"
-        },
-        {
-          "position": "-",
-          "grid": "20",
-          "driverId": "bottas",
-          "driver": {
-            "name": "Valtteri",
-            "surname": "Bottas",
-            "number": 77
-          },
-          "teamId": "cadillac",
-          "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
+          "position": "19",
           "grid": "22",
           "driverId": "stroll",
           "driver": {
@@ -2816,12 +3286,65 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:13.796"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:13.796",
+          "lapsCompleted": 45,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "20",
+          "grid": "17",
+          "driverId": "sainz",
+          "driver": {
+            "name": "Carlos",
+            "surname": "Sainz",
+            "number": 55
+          },
+          "teamId": "williams",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:13.694",
+          "lapsCompleted": 23,
+          "fastestLapRank": 19
+        },
+        {
+          "position": "21",
+          "grid": "19",
+          "driverId": "perez",
+          "driver": {
+            "name": "Sergio",
+            "surname": "Pérez",
+            "number": 11
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:14.448",
+          "lapsCompleted": 4,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "22",
+          "grid": "20",
+          "driverId": "bottas",
+          "driver": {
+            "name": "Valtteri",
+            "surname": "Bottas",
+            "number": 77
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 2,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/8/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/8/results/?limit=100"
     },
     {
       "round": 9,
@@ -2829,10 +3352,32 @@
       "name": "Formula 1 Pirelli British Grand Prix 2026",
       "circuitId": "silverstone",
       "circuit": "Silverstone Circuit",
-      "location": "Silverstone, Great Britain",
+      "location": "Silverstone, UK",
       "date": "2026-07-05",
       "startTime": "2026-07-05T14:00:00Z",
       "laps": 52,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-07-05",
+          "time": "14:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-07-03",
+          "time": "11:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-07-04",
+          "time": "15:00:00Z"
+        },
+        "sprintRace": {
+          "date": "2026-07-04",
+          "time": "11:00:00Z"
+        },
+        "sprintQualy": {
+          "date": "2026-07-03",
+          "time": "15:30:00Z"
+        }
+      },
       "lengthKm": 5.891,
       "corners": 18,
       "status": "CONCLUDED",
@@ -2855,7 +3400,9 @@
           "points": 25,
           "time": "1:27:11.335",
           "retired": null,
-          "fastLap": "1:32.871"
+          "fastLap": "1:32.871",
+          "lapsCompleted": 52,
+          "fastestLapRank": 8
         },
         {
           "position": "2",
@@ -2870,7 +3417,9 @@
           "points": 18,
           "time": "+0.427",
           "retired": null,
-          "fastLap": "1:32.489"
+          "fastLap": "1:32.489",
+          "lapsCompleted": 52,
+          "fastestLapRank": 5
         },
         {
           "position": "3",
@@ -2885,7 +3434,9 @@
           "points": 15,
           "time": "+0.772",
           "retired": null,
-          "fastLap": "1:32.309"
+          "fastLap": "1:32.309",
+          "lapsCompleted": 52,
+          "fastestLapRank": 4
         },
         {
           "position": "4",
@@ -2900,7 +3451,9 @@
           "points": 12,
           "time": "+1.149",
           "retired": null,
-          "fastLap": "1:32.625"
+          "fastLap": "1:32.625",
+          "lapsCompleted": 52,
+          "fastestLapRank": 6
         },
         {
           "position": "5",
@@ -2915,7 +3468,9 @@
           "points": 10,
           "time": "+1.598",
           "retired": null,
-          "fastLap": "1:32.268"
+          "fastLap": "1:32.268",
+          "lapsCompleted": 52,
+          "fastestLapRank": 3
         },
         {
           "position": "6",
@@ -2930,7 +3485,9 @@
           "points": 8,
           "time": "+2.023",
           "retired": null,
-          "fastLap": "1:33.648"
+          "fastLap": "1:33.648",
+          "lapsCompleted": 52,
+          "fastestLapRank": 12
         },
         {
           "position": "7",
@@ -2945,7 +3502,9 @@
           "points": 6,
           "time": "+2.214",
           "retired": null,
-          "fastLap": "1:33.632"
+          "fastLap": "1:33.632",
+          "lapsCompleted": 52,
+          "fastestLapRank": 11
         },
         {
           "position": "8",
@@ -2960,7 +3519,9 @@
           "points": 4,
           "time": "+2.413",
           "retired": null,
-          "fastLap": "1:33.650"
+          "fastLap": "1:33.650",
+          "lapsCompleted": 52,
+          "fastestLapRank": 13
         },
         {
           "position": "9",
@@ -2975,7 +3536,9 @@
           "points": 2,
           "time": "+3.229",
           "retired": null,
-          "fastLap": "1:34.281"
+          "fastLap": "1:34.281",
+          "lapsCompleted": 52,
+          "fastestLapRank": 16
         },
         {
           "position": "10",
@@ -2990,7 +3553,9 @@
           "points": 1,
           "time": "+3.445",
           "retired": null,
-          "fastLap": "1:34.179"
+          "fastLap": "1:34.179",
+          "lapsCompleted": 52,
+          "fastestLapRank": 15
         },
         {
           "position": "11",
@@ -3005,7 +3570,9 @@
           "points": 0,
           "time": "+4.014",
           "retired": null,
-          "fastLap": "1:32.917"
+          "fastLap": "1:32.917",
+          "lapsCompleted": 52,
+          "fastestLapRank": 9
         },
         {
           "position": "12",
@@ -3020,7 +3587,9 @@
           "points": 0,
           "time": "+5.245",
           "retired": null,
-          "fastLap": "1:34.455"
+          "fastLap": "1:34.455",
+          "lapsCompleted": 52,
+          "fastestLapRank": 17
         },
         {
           "position": "13",
@@ -3035,7 +3604,9 @@
           "points": 0,
           "time": "+5.512",
           "retired": null,
-          "fastLap": "1:34.792"
+          "fastLap": "1:34.792",
+          "lapsCompleted": 52,
+          "fastestLapRank": 18
         },
         {
           "position": "14",
@@ -3050,7 +3621,9 @@
           "points": 0,
           "time": "+7.403",
           "retired": null,
-          "fastLap": "1:35.520"
+          "fastLap": "1:35.520",
+          "lapsCompleted": 52,
+          "fastestLapRank": 19
         },
         {
           "position": "15",
@@ -3065,7 +3638,9 @@
           "points": 0,
           "time": "+8.005",
           "retired": null,
-          "fastLap": "1:31.777"
+          "fastLap": "1:31.777",
+          "lapsCompleted": 52,
+          "fastestLapRank": 1
         },
         {
           "position": "16",
@@ -3080,7 +3655,9 @@
           "points": 0,
           "time": "+8.162",
           "retired": null,
-          "fastLap": "1:35.893"
+          "fastLap": "1:35.893",
+          "lapsCompleted": 52,
+          "fastestLapRank": 21
         },
         {
           "position": "17",
@@ -3093,14 +3670,15 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (52)",
+          "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:32.734"
+          "fastLap": "1:32.734",
+          "lapsCompleted": 51,
+          "fastestLapRank": 7
         },
         {
           "position": "18",
           "grid": "21",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1289/great-britain/starting-grid",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -3111,7 +3689,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:35.827"
+          "fastLap": "1:35.827",
+          "lapsCompleted": 51,
+          "fastestLapRank": 20
         },
         {
           "position": "19",
@@ -3126,7 +3706,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.232"
+          "fastLap": "1:37.232",
+          "lapsCompleted": 51,
+          "fastestLapRank": 22
         },
         {
           "position": "20",
@@ -3139,27 +3721,14 @@
           },
           "teamId": "red_bull",
           "points": 0,
-          "time": "DNF (52)",
+          "time": "+6 laps",
           "retired": null,
-          "fastLap": "1:32.101"
+          "fastLap": "1:32.101",
+          "lapsCompleted": 46,
+          "fastestLapRank": 2
         },
         {
-          "position": "-",
-          "grid": "12",
-          "driverId": "hulkenberg",
-          "driver": {
-            "name": "Nico",
-            "surname": "Hulkenberg",
-            "number": 27
-          },
-          "teamId": "audi",
-          "points": 0,
-          "time": "DNF (52)",
-          "retired": null,
-          "fastLap": "1:33.433"
-        },
-        {
-          "position": "-",
+          "position": "21",
           "grid": "16",
           "driverId": "albon",
           "driver": {
@@ -3169,12 +3738,31 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (52)",
-          "retired": null,
-          "fastLap": "1:33.867"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:33.867",
+          "lapsCompleted": 43,
+          "fastestLapRank": 14
+        },
+        {
+          "position": "22",
+          "grid": "12",
+          "driverId": "hulkenberg",
+          "driver": {
+            "name": "Nico",
+            "surname": "Hulkenberg",
+            "number": 27
+          },
+          "teamId": "audi",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:33.433",
+          "lapsCompleted": 36,
+          "fastestLapRank": 10
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/9/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/9/results/?limit=100"
     },
     {
       "round": 10,
@@ -3182,10 +3770,32 @@
       "name": "Formula 1 Belgian Grand Prix 2026",
       "circuitId": "spa",
       "circuit": "Circuit de Spa-Francorchamps",
-      "location": "Stavelot, Belgium",
+      "location": "Spa, Belgium",
       "date": "2026-07-19",
       "startTime": "2026-07-19T13:00:00Z",
       "laps": 44,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-07-19",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-07-17",
+          "time": "11:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-07-17",
+          "time": "15:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-07-18",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-07-18",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 7.004,
       "corners": 20,
       "status": "CONCLUDED",
@@ -3208,7 +3818,9 @@
           "points": 25,
           "time": "1:24:42.479",
           "retired": null,
-          "fastLap": "1:49.098"
+          "fastLap": "1:49.098",
+          "lapsCompleted": 44,
+          "fastestLapRank": 2
         },
         {
           "position": "2",
@@ -3223,7 +3835,9 @@
           "points": 18,
           "time": "+1.952",
           "retired": null,
-          "fastLap": "1:49.333"
+          "fastLap": "1:49.333",
+          "lapsCompleted": 44,
+          "fastestLapRank": 4
         },
         {
           "position": "3",
@@ -3238,7 +3852,9 @@
           "points": 15,
           "time": "+11.586",
           "retired": null,
-          "fastLap": "1:49.618"
+          "fastLap": "1:49.618",
+          "lapsCompleted": 44,
+          "fastestLapRank": 7
         },
         {
           "position": "4",
@@ -3253,7 +3869,9 @@
           "points": 12,
           "time": "+17.245",
           "retired": null,
-          "fastLap": "1:49.454"
+          "fastLap": "1:49.454",
+          "lapsCompleted": 44,
+          "fastestLapRank": 5
         },
         {
           "position": "5",
@@ -3268,7 +3886,9 @@
           "points": 10,
           "time": "+18.988",
           "retired": null,
-          "fastLap": "1:49.562"
+          "fastLap": "1:49.562",
+          "lapsCompleted": 44,
+          "fastestLapRank": 6
         },
         {
           "position": "6",
@@ -3283,7 +3903,9 @@
           "points": 8,
           "time": "+23.307",
           "retired": null,
-          "fastLap": "1:49.298"
+          "fastLap": "1:49.298",
+          "lapsCompleted": 44,
+          "fastestLapRank": 3
         },
         {
           "position": "7",
@@ -3298,7 +3920,9 @@
           "points": 6,
           "time": "+24.014",
           "retired": null,
-          "fastLap": "1:48.890"
+          "fastLap": "1:48.890",
+          "lapsCompleted": 44,
+          "fastestLapRank": 1
         },
         {
           "position": "8",
@@ -3313,7 +3937,9 @@
           "points": 4,
           "time": "+49.140",
           "retired": null,
-          "fastLap": "1:50.334"
+          "fastLap": "1:50.334",
+          "lapsCompleted": 44,
+          "fastestLapRank": 8
         },
         {
           "position": "9",
@@ -3328,7 +3954,9 @@
           "points": 2,
           "time": "+50.406",
           "retired": null,
-          "fastLap": "1:50.536"
+          "fastLap": "1:50.536",
+          "lapsCompleted": 44,
+          "fastestLapRank": 10
         },
         {
           "position": "10",
@@ -3343,7 +3971,9 @@
           "points": 1,
           "time": "+1:16.037",
           "retired": null,
-          "fastLap": "1:51.162"
+          "fastLap": "1:51.162",
+          "lapsCompleted": 44,
+          "fastestLapRank": 14
         },
         {
           "position": "11",
@@ -3358,7 +3988,9 @@
           "points": 0,
           "time": "+1:16.991",
           "retired": null,
-          "fastLap": "1:51.101"
+          "fastLap": "1:51.101",
+          "lapsCompleted": 44,
+          "fastestLapRank": 12
         },
         {
           "position": "12",
@@ -3373,7 +4005,9 @@
           "points": 0,
           "time": "+1:17.523",
           "retired": null,
-          "fastLap": "1:51.075"
+          "fastLap": "1:51.075",
+          "lapsCompleted": 44,
+          "fastestLapRank": 11
         },
         {
           "position": "13",
@@ -3388,7 +4022,9 @@
           "points": 0,
           "time": "+1:18.348",
           "retired": null,
-          "fastLap": "1:50.503"
+          "fastLap": "1:50.503",
+          "lapsCompleted": 44,
+          "fastestLapRank": 9
         },
         {
           "position": "14",
@@ -3403,7 +4039,9 @@
           "points": 0,
           "time": "+1:34.465",
           "retired": null,
-          "fastLap": "1:51.109"
+          "fastLap": "1:51.109",
+          "lapsCompleted": 44,
+          "fastestLapRank": 13
         },
         {
           "position": "15",
@@ -3418,7 +4056,9 @@
           "points": 0,
           "time": "+1:44.684",
           "retired": null,
-          "fastLap": "1:51.894"
+          "fastLap": "1:51.894",
+          "lapsCompleted": 44,
+          "fastestLapRank": 16
         },
         {
           "position": "16",
@@ -3433,7 +4073,9 @@
           "points": 0,
           "time": "+1:45.856",
           "retired": null,
-          "fastLap": "1:51.363"
+          "fastLap": "1:51.363",
+          "lapsCompleted": 44,
+          "fastestLapRank": 15
         },
         {
           "position": "17",
@@ -3448,7 +4090,9 @@
           "points": 0,
           "time": "+1:50.925",
           "retired": null,
-          "fastLap": "1:51.900"
+          "fastLap": "1:51.900",
+          "lapsCompleted": 44,
+          "fastestLapRank": 17
         },
         {
           "position": "18",
@@ -3463,7 +4107,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:52.011"
+          "fastLap": "1:52.011",
+          "lapsCompleted": 43,
+          "fastestLapRank": 18
         },
         {
           "position": "19",
@@ -3478,40 +4124,12 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:52.948"
+          "fastLap": "1:52.948",
+          "lapsCompleted": 42,
+          "fastestLapRank": 19
         },
         {
-          "position": "-",
-          "grid": "3",
-          "driverId": "russell",
-          "driver": {
-            "name": "George",
-            "surname": "Russell",
-            "number": 63
-          },
-          "teamId": "mercedes",
-          "points": 0,
-          "time": "DNF (44)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
-          "grid": "18",
-          "driverId": "perez",
-          "driver": {
-            "name": "Sergio",
-            "surname": "Pérez",
-            "number": 11
-          },
-          "teamId": "cadillac",
-          "points": 0,
-          "time": "DNF (44)",
-          "retired": null,
-          "fastLap": "1:53.520"
-        },
-        {
-          "position": "-",
+          "position": "20",
           "grid": "20",
           "driverId": "stroll",
           "driver": {
@@ -3521,12 +4139,48 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (44)",
-          "retired": null,
-          "fastLap": "1:53.980"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:53.980",
+          "lapsCompleted": 25,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "21",
+          "grid": "18",
+          "driverId": "perez",
+          "driver": {
+            "name": "Sergio",
+            "surname": "Pérez",
+            "number": 11
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:53.520",
+          "lapsCompleted": 13,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "22",
+          "grid": "3",
+          "driverId": "russell",
+          "driver": {
+            "name": "George",
+            "surname": "Russell",
+            "number": 63
+          },
+          "teamId": "mercedes",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/10/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/10/results/?limit=100"
     },
     {
       "round": 11,
@@ -3534,10 +4188,32 @@
       "name": "Formula 1 AWS Hungarian Grand Prix 2026",
       "circuitId": "hungaroring",
       "circuit": "Hungaroring",
-      "location": "Mogyorod, Hungary",
+      "location": "Budapest, Hungary",
       "date": "2026-07-26",
       "startTime": "2026-07-26T13:00:00Z",
       "laps": 70,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-07-26",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-07-24",
+          "time": "11:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-07-24",
+          "time": "15:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-07-25",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-07-25",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 4.381,
       "corners": 14,
       "status": "CONCLUDED",
@@ -3560,7 +4236,9 @@
           "points": 25,
           "time": "1:39:56.180",
           "retired": null,
-          "fastLap": "1:22.491"
+          "fastLap": "1:22.491",
+          "lapsCompleted": 70,
+          "fastestLapRank": 4
         },
         {
           "position": "2",
@@ -3575,7 +4253,9 @@
           "points": 18,
           "time": "+15.080",
           "retired": null,
-          "fastLap": "1:23.433"
+          "fastLap": "1:23.433",
+          "lapsCompleted": 70,
+          "fastestLapRank": 8
         },
         {
           "position": "3",
@@ -3590,7 +4270,9 @@
           "points": 15,
           "time": "+18.728",
           "retired": null,
-          "fastLap": "1:22.415"
+          "fastLap": "1:22.415",
+          "lapsCompleted": 70,
+          "fastestLapRank": 3
         },
         {
           "position": "4",
@@ -3605,7 +4287,9 @@
           "points": 12,
           "time": "+23.840",
           "retired": null,
-          "fastLap": "1:22.000"
+          "fastLap": "1:22.000",
+          "lapsCompleted": 70,
+          "fastestLapRank": 1
         },
         {
           "position": "5",
@@ -3620,7 +4304,9 @@
           "points": 10,
           "time": "+24.540",
           "retired": null,
-          "fastLap": "1:22.300"
+          "fastLap": "1:22.300",
+          "lapsCompleted": 70,
+          "fastestLapRank": 2
         },
         {
           "position": "6",
@@ -3635,7 +4321,9 @@
           "points": 8,
           "time": "+55.488",
           "retired": null,
-          "fastLap": "1:23.218"
+          "fastLap": "1:23.218",
+          "lapsCompleted": 70,
+          "fastestLapRank": 7
         },
         {
           "position": "7",
@@ -3650,7 +4338,9 @@
           "points": 6,
           "time": "+57.503",
           "retired": null,
-          "fastLap": "1:22.589"
+          "fastLap": "1:22.589",
+          "lapsCompleted": 70,
+          "fastestLapRank": 5
         },
         {
           "position": "8",
@@ -3665,7 +4355,9 @@
           "points": 4,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:23.900"
+          "fastLap": "1:23.900",
+          "lapsCompleted": 69,
+          "fastestLapRank": 11
         },
         {
           "position": "9",
@@ -3680,7 +4372,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:23.964"
+          "fastLap": "1:23.964",
+          "lapsCompleted": 69,
+          "fastestLapRank": 12
         },
         {
           "position": "10",
@@ -3695,7 +4389,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:25.931"
+          "fastLap": "1:25.931",
+          "lapsCompleted": 69,
+          "fastestLapRank": 20
         },
         {
           "position": "11",
@@ -3710,7 +4406,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.783"
+          "fastLap": "1:24.783",
+          "lapsCompleted": 69,
+          "fastestLapRank": 15
         },
         {
           "position": "12",
@@ -3725,7 +4423,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:22.871"
+          "fastLap": "1:22.871",
+          "lapsCompleted": 69,
+          "fastestLapRank": 6
         },
         {
           "position": "13",
@@ -3740,7 +4440,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:24.718"
+          "fastLap": "1:24.718",
+          "lapsCompleted": 69,
+          "fastestLapRank": 14
         },
         {
           "position": "14",
@@ -3755,7 +4457,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:23.679"
+          "fastLap": "1:23.679",
+          "lapsCompleted": 69,
+          "fastestLapRank": 9
         },
         {
           "position": "15",
@@ -3770,7 +4474,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:24.624"
+          "fastLap": "1:24.624",
+          "lapsCompleted": 68,
+          "fastestLapRank": 13
         },
         {
           "position": "16",
@@ -3785,7 +4491,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:25.889"
+          "fastLap": "1:25.889",
+          "lapsCompleted": 68,
+          "fastestLapRank": 19
         },
         {
           "position": "17",
@@ -3800,7 +4508,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:25.403"
+          "fastLap": "1:25.403",
+          "lapsCompleted": 68,
+          "fastestLapRank": 17
         },
         {
           "position": "18",
@@ -3815,7 +4525,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:24.864"
+          "fastLap": "1:24.864",
+          "lapsCompleted": 68,
+          "fastestLapRank": 16
         },
         {
           "position": "19",
@@ -3830,10 +4542,12 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:25.884"
+          "fastLap": "1:25.884",
+          "lapsCompleted": 68,
+          "fastestLapRank": 18
         },
         {
-          "position": "-",
+          "position": "20",
           "grid": "3",
           "driverId": "piastri",
           "driver": {
@@ -3843,12 +4557,31 @@
           },
           "teamId": "mclaren",
           "points": 0,
-          "time": "DNF (70)",
-          "retired": null,
-          "fastLap": "1:23.896"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:23.896",
+          "lapsCompleted": 55,
+          "fastestLapRank": 10
         },
         {
-          "position": "-",
+          "position": "21",
+          "grid": "22",
+          "driverId": "perez",
+          "driver": {
+            "name": "Sergio",
+            "surname": "Pérez",
+            "number": 11
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:26.342",
+          "lapsCompleted": 48,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "22",
           "grid": "21",
           "driverId": "bottas",
           "driver": {
@@ -3858,28 +4591,14 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (70)",
-          "retired": null,
-          "fastLap": "1:27.959"
-        },
-        {
-          "position": "-",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1291/hungary/starting-grid",
-          "driverId": "perez",
-          "driver": {
-            "name": "Sergio",
-            "surname": "Pérez",
-            "number": 11
-          },
-          "teamId": "cadillac",
-          "points": 0,
-          "time": "DNF (70)",
-          "retired": null,
-          "fastLap": "1:26.342"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:27.959",
+          "lapsCompleted": 13,
+          "fastestLapRank": 22
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/11/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/11/results/?limit=100"
     },
     {
       "round": 12,
@@ -3891,6 +4610,28 @@
       "date": "2026-08-23",
       "startTime": "2026-08-23T13:00:00Z",
       "laps": 72,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-08-23",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-08-21",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-08-22",
+          "time": "14:00:00Z"
+        },
+        "sprintRace": {
+          "date": "2026-08-22",
+          "time": "10:00:00Z"
+        },
+        "sprintQualy": {
+          "date": "2026-08-21",
+          "time": "14:30:00Z"
+        }
+      },
       "lengthKm": 4.259,
       "corners": 14,
       "status": "CONCLUDED",
@@ -3913,7 +4654,9 @@
           "points": 25,
           "time": "2:04:44.859",
           "retired": null,
-          "fastLap": "1:14.321"
+          "fastLap": "1:14.321",
+          "lapsCompleted": 72,
+          "fastestLapRank": 3
         },
         {
           "position": "2",
@@ -3928,7 +4671,9 @@
           "points": 18,
           "time": "+11.536",
           "retired": null,
-          "fastLap": "1:14.571"
+          "fastLap": "1:14.571",
+          "lapsCompleted": 72,
+          "fastestLapRank": 5
         },
         {
           "position": "3",
@@ -3943,7 +4688,9 @@
           "points": 15,
           "time": "+15.906",
           "retired": null,
-          "fastLap": "1:15.393"
+          "fastLap": "1:15.393",
+          "lapsCompleted": 72,
+          "fastestLapRank": 6
         },
         {
           "position": "4",
@@ -3958,7 +4705,9 @@
           "points": 12,
           "time": "+16.755",
           "retired": null,
-          "fastLap": "1:14.566"
+          "fastLap": "1:14.566",
+          "lapsCompleted": 72,
+          "fastestLapRank": 4
         },
         {
           "position": "5",
@@ -3973,7 +4722,9 @@
           "points": 10,
           "time": "+17.258",
           "retired": null,
-          "fastLap": "1:14.230"
+          "fastLap": "1:14.230",
+          "lapsCompleted": 72,
+          "fastestLapRank": 1
         },
         {
           "position": "6",
@@ -3988,7 +4739,9 @@
           "points": 8,
           "time": "+32.332",
           "retired": null,
-          "fastLap": "1:14.303"
+          "fastLap": "1:14.303",
+          "lapsCompleted": 72,
+          "fastestLapRank": 2
         },
         {
           "position": "7",
@@ -4003,7 +4756,9 @@
           "points": 6,
           "time": "+1:19.915",
           "retired": null,
-          "fastLap": "1:15.435"
+          "fastLap": "1:15.435",
+          "lapsCompleted": 72,
+          "fastestLapRank": 7
         },
         {
           "position": "8",
@@ -4018,7 +4773,9 @@
           "points": 4,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:16.048"
+          "fastLap": "1:16.048",
+          "lapsCompleted": 71,
+          "fastestLapRank": 10
         },
         {
           "position": "9",
@@ -4033,7 +4790,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:16.946"
+          "fastLap": "1:16.946",
+          "lapsCompleted": 71,
+          "fastestLapRank": 14
         },
         {
           "position": "10",
@@ -4048,7 +4807,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:16.220"
+          "fastLap": "1:16.220",
+          "lapsCompleted": 71,
+          "fastestLapRank": 11
         },
         {
           "position": "11",
@@ -4063,7 +4824,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:16.639"
+          "fastLap": "1:16.639",
+          "lapsCompleted": 71,
+          "fastestLapRank": 12
         },
         {
           "position": "12",
@@ -4078,7 +4841,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:16.653"
+          "fastLap": "1:16.653",
+          "lapsCompleted": 71,
+          "fastestLapRank": 13
         },
         {
           "position": "13",
@@ -4093,7 +4858,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:15.515"
+          "fastLap": "1:15.515",
+          "lapsCompleted": 71,
+          "fastestLapRank": 8
         },
         {
           "position": "14",
@@ -4108,12 +4875,13 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:15.578"
+          "fastLap": "1:15.578",
+          "lapsCompleted": 70,
+          "fastestLapRank": 9
         },
         {
           "position": "15",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1292/netherlands/starting-grid",
+          "grid": "22",
           "driverId": "perez",
           "driver": {
             "name": "Sergio",
@@ -4124,7 +4892,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:17.523"
+          "fastLap": "1:17.523",
+          "lapsCompleted": 70,
+          "fastestLapRank": 17
         },
         {
           "position": "16",
@@ -4139,7 +4909,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:17.328"
+          "fastLap": "1:17.328",
+          "lapsCompleted": 70,
+          "fastestLapRank": 16
         },
         {
           "position": "17",
@@ -4152,72 +4924,14 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (72)",
+          "time": "+6 laps",
           "retired": null,
-          "fastLap": "1:17.147"
+          "fastLap": "1:17.147",
+          "lapsCompleted": 66,
+          "fastestLapRank": 15
         },
         {
-          "position": "-",
-          "grid": "7",
-          "driverId": "max_verstappen",
-          "driver": {
-            "name": "Max",
-            "surname": "Verstappen",
-            "number": 3
-          },
-          "teamId": "red_bull",
-          "points": 0,
-          "time": "DNF (72)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
-          "grid": "15",
-          "driverId": "ocon",
-          "driver": {
-            "name": "Esteban",
-            "surname": "Ocon",
-            "number": 31
-          },
-          "teamId": "haas",
-          "points": 0,
-          "time": "DNF (72)",
-          "retired": null,
-          "fastLap": "1:17.588"
-        },
-        {
-          "position": "-",
-          "grid": "19",
-          "driverId": "stroll",
-          "driver": {
-            "name": "Lance",
-            "surname": "Stroll",
-            "number": 18
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (72)",
-          "retired": null,
-          "fastLap": "1:17.883"
-        },
-        {
-          "position": "-",
-          "grid": "20",
-          "driverId": "bearman",
-          "driver": {
-            "name": "Oliver",
-            "surname": "Bearman",
-            "number": 87
-          },
-          "teamId": "haas",
-          "points": 0,
-          "time": "DNF (72)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
+          "position": "18",
           "grid": "21",
           "driverId": "bottas",
           "driver": {
@@ -4227,12 +4941,82 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (72)",
-          "retired": null,
-          "fastLap": "1:17.822"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:17.822",
+          "lapsCompleted": 61,
+          "fastestLapRank": 19
+        },
+        {
+          "position": "19",
+          "grid": "15",
+          "driverId": "ocon",
+          "driver": {
+            "name": "Esteban",
+            "surname": "Ocon",
+            "number": 31
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:17.588",
+          "lapsCompleted": 52,
+          "fastestLapRank": 18
+        },
+        {
+          "position": "20",
+          "grid": "19",
+          "driverId": "stroll",
+          "driver": {
+            "name": "Lance",
+            "surname": "Stroll",
+            "number": 18
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:17.883",
+          "lapsCompleted": 45,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "21",
+          "grid": "20",
+          "driverId": "bearman",
+          "driver": {
+            "name": "Oliver",
+            "surname": "Bearman",
+            "number": 87
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 2,
+          "fastestLapRank": null
+        },
+        {
+          "position": "22",
+          "grid": "7",
+          "driverId": "max_verstappen",
+          "driver": {
+            "name": "Max",
+            "surname": "Verstappen",
+            "number": 3
+          },
+          "teamId": "red_bull",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/12/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/12/results/?limit=100"
     },
     {
       "round": 13,
@@ -4244,6 +5028,28 @@
       "date": "2026-09-06",
       "startTime": "2026-09-06T13:00:00Z",
       "laps": 53,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-09-06",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-09-04",
+          "time": "10:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-09-04",
+          "time": "14:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-09-05",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-09-05",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 5.793,
       "corners": 11,
       "status": "CONCLUDED",
@@ -4266,7 +5072,9 @@
           "points": 25,
           "time": "1:51:15.281",
           "retired": null,
-          "fastLap": "1:23.504"
+          "fastLap": "1:23.504",
+          "lapsCompleted": 53,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -4281,7 +5089,9 @@
           "points": 18,
           "time": "+3.857",
           "retired": null,
-          "fastLap": "1:24.390"
+          "fastLap": "1:24.390",
+          "lapsCompleted": 53,
+          "fastestLapRank": 4
         },
         {
           "position": "3",
@@ -4296,7 +5106,9 @@
           "points": 15,
           "time": "+14.718",
           "retired": null,
-          "fastLap": "1:24.242"
+          "fastLap": "1:24.242",
+          "lapsCompleted": 53,
+          "fastestLapRank": 2
         },
         {
           "position": "4",
@@ -4311,7 +5123,9 @@
           "points": 12,
           "time": "+19.056",
           "retired": null,
-          "fastLap": "1:24.864"
+          "fastLap": "1:24.864",
+          "lapsCompleted": 53,
+          "fastestLapRank": 5
         },
         {
           "position": "5",
@@ -4326,7 +5140,9 @@
           "points": 10,
           "time": "+19.253",
           "retired": null,
-          "fastLap": "1:25.125"
+          "fastLap": "1:25.125",
+          "lapsCompleted": 53,
+          "fastestLapRank": 8
         },
         {
           "position": "6",
@@ -4341,7 +5157,9 @@
           "points": 8,
           "time": "+24.655",
           "retired": null,
-          "fastLap": "1:25.300"
+          "fastLap": "1:25.300",
+          "lapsCompleted": 53,
+          "fastestLapRank": 9
         },
         {
           "position": "7",
@@ -4356,7 +5174,9 @@
           "points": 6,
           "time": "+27.351",
           "retired": null,
-          "fastLap": "1:24.927"
+          "fastLap": "1:24.927",
+          "lapsCompleted": 53,
+          "fastestLapRank": 6
         },
         {
           "position": "8",
@@ -4371,7 +5191,9 @@
           "points": 4,
           "time": "+45.136",
           "retired": null,
-          "fastLap": "1:26.028"
+          "fastLap": "1:26.028",
+          "lapsCompleted": 53,
+          "fastestLapRank": 14
         },
         {
           "position": "9",
@@ -4386,7 +5208,9 @@
           "points": 2,
           "time": "+47.353",
           "retired": null,
-          "fastLap": "1:24.933"
+          "fastLap": "1:24.933",
+          "lapsCompleted": 53,
+          "fastestLapRank": 7
         },
         {
           "position": "10",
@@ -4401,7 +5225,9 @@
           "points": 1,
           "time": "+58.187",
           "retired": null,
-          "fastLap": "1:26.320"
+          "fastLap": "1:26.320",
+          "lapsCompleted": 53,
+          "fastestLapRank": 16
         },
         {
           "position": "11",
@@ -4416,7 +5242,9 @@
           "points": 0,
           "time": "+1:05.187",
           "retired": null,
-          "fastLap": "1:26.188"
+          "fastLap": "1:26.188",
+          "lapsCompleted": 53,
+          "fastestLapRank": 15
         },
         {
           "position": "12",
@@ -4431,7 +5259,9 @@
           "points": 0,
           "time": "+1:06.187",
           "retired": null,
-          "fastLap": "1:24.364"
+          "fastLap": "1:24.364",
+          "lapsCompleted": 53,
+          "fastestLapRank": 3
         },
         {
           "position": "13",
@@ -4446,12 +5276,13 @@
           "points": 0,
           "time": "+1:14.117",
           "retired": null,
-          "fastLap": "1:25.683"
+          "fastLap": "1:25.683",
+          "lapsCompleted": 53,
+          "fastestLapRank": 12
         },
         {
           "position": "14",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid",
+          "grid": "22",
           "driverId": "lawson",
           "driver": {
             "name": "Liam",
@@ -4462,7 +5293,9 @@
           "points": 0,
           "time": "+1:15.609",
           "retired": null,
-          "fastLap": "1:25.578"
+          "fastLap": "1:25.578",
+          "lapsCompleted": 53,
+          "fastestLapRank": 11
         },
         {
           "position": "15",
@@ -4477,7 +5310,9 @@
           "points": 0,
           "time": "+1:18.958",
           "retired": null,
-          "fastLap": "1:26.356"
+          "fastLap": "1:26.356",
+          "lapsCompleted": 53,
+          "fastestLapRank": 17
         },
         {
           "position": "16",
@@ -4492,7 +5327,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:25.711"
+          "fastLap": "1:25.711",
+          "lapsCompleted": 52,
+          "fastestLapRank": 13
         },
         {
           "position": "17",
@@ -4507,7 +5344,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:25.341"
+          "fastLap": "1:25.341",
+          "lapsCompleted": 52,
+          "fastestLapRank": 10
         },
         {
           "position": "18",
@@ -4522,7 +5361,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:26.914"
+          "fastLap": "1:26.914",
+          "lapsCompleted": 52,
+          "fastestLapRank": 18
         },
         {
           "position": "19",
@@ -4537,41 +5378,12 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:27.325"
+          "fastLap": "1:27.325",
+          "lapsCompleted": 51,
+          "fastestLapRank": 19
         },
         {
-          "position": "-",
-          "grid": "3",
-          "driverId": "leclerc",
-          "driver": {
-            "name": "Charles",
-            "surname": "Leclerc",
-            "number": 16
-          },
-          "teamId": "ferrari",
-          "points": 0,
-          "time": "DNF (53)",
-          "retired": null,
-          "fastLap": null
-        },
-        {
-          "position": "-",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1293/italy/starting-grid",
-          "driverId": "alonso",
-          "driver": {
-            "name": "Fernando",
-            "surname": "Alonso",
-            "number": 14
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (53)",
-          "retired": null,
-          "fastLap": "1:27.961"
-        },
-        {
-          "position": "-",
+          "position": "20",
           "grid": "18",
           "driverId": "stroll",
           "driver": {
@@ -4581,12 +5393,48 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (53)",
-          "retired": null,
-          "fastLap": "1:28.415"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:28.415",
+          "lapsCompleted": 26,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "21",
+          "grid": "21",
+          "driverId": "alonso",
+          "driver": {
+            "name": "Fernando",
+            "surname": "Alonso",
+            "number": 14
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:27.961",
+          "lapsCompleted": 23,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "22",
+          "grid": "3",
+          "driverId": "leclerc",
+          "driver": {
+            "name": "Charles",
+            "surname": "Leclerc",
+            "number": 16
+          },
+          "teamId": "ferrari",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 1,
+          "fastestLapRank": null
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/13/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/13/results/?limit=100"
     },
     {
       "round": 14,
@@ -4597,7 +5445,29 @@
       "location": "Madrid, Spain",
       "date": "2026-09-13",
       "startTime": "2026-09-13T13:00:00Z",
-      "laps": null,
+      "laps": 57,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-09-13",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-09-11",
+          "time": "11:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-09-11",
+          "time": "15:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-09-12",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-09-12",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 5.474,
       "corners": 22,
       "status": "CONCLUDED",
@@ -4620,7 +5490,9 @@
           "points": 25,
           "time": "1:34:23.754",
           "retired": null,
-          "fastLap": "1:36.030"
+          "fastLap": "1:36.030",
+          "lapsCompleted": 57,
+          "fastestLapRank": 2
         },
         {
           "position": "2",
@@ -4635,7 +5507,9 @@
           "points": 18,
           "time": "+4.351",
           "retired": null,
-          "fastLap": "1:36.760"
+          "fastLap": "1:36.760",
+          "lapsCompleted": 57,
+          "fastestLapRank": 5
         },
         {
           "position": "3",
@@ -4650,7 +5524,9 @@
           "points": 15,
           "time": "+5.089",
           "retired": null,
-          "fastLap": "1:36.680"
+          "fastLap": "1:36.680",
+          "lapsCompleted": 57,
+          "fastestLapRank": 4
         },
         {
           "position": "4",
@@ -4665,7 +5541,9 @@
           "points": 12,
           "time": "+29.116",
           "retired": null,
-          "fastLap": "1:36.063"
+          "fastLap": "1:36.063",
+          "lapsCompleted": 57,
+          "fastestLapRank": 3
         },
         {
           "position": "5",
@@ -4680,7 +5558,9 @@
           "points": 10,
           "time": "+29.829",
           "retired": null,
-          "fastLap": "1:35.587"
+          "fastLap": "1:35.587",
+          "lapsCompleted": 57,
+          "fastestLapRank": 1
         },
         {
           "position": "6",
@@ -4695,7 +5575,9 @@
           "points": 8,
           "time": "+1:26.746",
           "retired": null,
-          "fastLap": "1:36.846"
+          "fastLap": "1:36.846",
+          "lapsCompleted": 57,
+          "fastestLapRank": 6
         },
         {
           "position": "7",
@@ -4710,7 +5592,9 @@
           "points": 6,
           "time": "+1:34.281",
           "retired": null,
-          "fastLap": "1:37.321"
+          "fastLap": "1:37.321",
+          "lapsCompleted": 57,
+          "fastestLapRank": 9
         },
         {
           "position": "8",
@@ -4725,7 +5609,9 @@
           "points": 4,
           "time": "+1:35.839",
           "retired": null,
-          "fastLap": "1:37.226"
+          "fastLap": "1:37.226",
+          "lapsCompleted": 57,
+          "fastestLapRank": 7
         },
         {
           "position": "9",
@@ -4740,7 +5626,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.211"
+          "fastLap": "1:38.211",
+          "lapsCompleted": 56,
+          "fastestLapRank": 14
         },
         {
           "position": "10",
@@ -4755,7 +5643,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.114"
+          "fastLap": "1:38.114",
+          "lapsCompleted": 56,
+          "fastestLapRank": 11
         },
         {
           "position": "11",
@@ -4770,7 +5660,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.119"
+          "fastLap": "1:38.119",
+          "lapsCompleted": 56,
+          "fastestLapRank": 12
         },
         {
           "position": "12",
@@ -4785,7 +5677,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.141"
+          "fastLap": "1:38.141",
+          "lapsCompleted": 56,
+          "fastestLapRank": 13
         },
         {
           "position": "13",
@@ -4800,7 +5694,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.837"
+          "fastLap": "1:37.837",
+          "lapsCompleted": 56,
+          "fastestLapRank": 10
         },
         {
           "position": "14",
@@ -4815,7 +5711,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.396"
+          "fastLap": "1:38.396",
+          "lapsCompleted": 56,
+          "fastestLapRank": 15
         },
         {
           "position": "15",
@@ -4830,12 +5728,13 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:39.397"
+          "fastLap": "1:39.397",
+          "lapsCompleted": 56,
+          "fastestLapRank": 18
         },
         {
           "position": "16",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1294/spain/starting-grid",
+          "grid": "22",
           "driverId": "bearman",
           "driver": {
             "name": "Oliver",
@@ -4846,7 +5745,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.308"
+          "fastLap": "1:37.308",
+          "lapsCompleted": 56,
+          "fastestLapRank": 8
         },
         {
           "position": "17",
@@ -4861,7 +5762,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:39.003"
+          "fastLap": "1:39.003",
+          "lapsCompleted": 55,
+          "fastestLapRank": 16
         },
         {
           "position": "18",
@@ -4876,25 +5779,12 @@
           "points": 0,
           "time": "+3 laps",
           "retired": null,
-          "fastLap": "1:39.130"
+          "fastLap": "1:39.130",
+          "lapsCompleted": 54,
+          "fastestLapRank": 17
         },
         {
-          "position": "-",
-          "grid": "4",
-          "driverId": "hamilton",
-          "driver": {
-            "name": "Lewis",
-            "surname": "Hamilton",
-            "number": 44
-          },
-          "teamId": "ferrari",
-          "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": "1:39.839"
-        },
-        {
-          "position": "-",
+          "position": "19",
           "grid": "20",
           "driverId": "sainz",
           "driver": {
@@ -4904,12 +5794,14 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": "1:40.195"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:40.195",
+          "lapsCompleted": 43,
+          "fastestLapRank": 20
         },
         {
-          "position": "-",
+          "position": "20",
           "grid": "18",
           "driverId": "perez",
           "driver": {
@@ -4919,12 +5811,14 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": "1:41.116"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:41.116",
+          "lapsCompleted": 31,
+          "fastestLapRank": 21
         },
         {
-          "position": "-",
+          "position": "21",
           "grid": "21",
           "driverId": "stroll",
           "driver": {
@@ -4934,12 +5828,31 @@
           },
           "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (57)",
-          "retired": null,
-          "fastLap": "1:43.462"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:43.462",
+          "lapsCompleted": 12,
+          "fastestLapRank": 22
+        },
+        {
+          "position": "22",
+          "grid": "4",
+          "driverId": "hamilton",
+          "driver": {
+            "name": "Lewis",
+            "surname": "Hamilton",
+            "number": 44
+          },
+          "teamId": "ferrari",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:39.839",
+          "lapsCompleted": 6,
+          "fastestLapRank": 19
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/14/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/14/results/?limit=100"
     },
     {
       "round": 15,
@@ -4951,6 +5864,28 @@
       "date": "2026-09-26",
       "startTime": "2026-09-26T11:00:00Z",
       "laps": 51,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-09-26",
+          "time": "11:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-09-24",
+          "time": "08:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-09-24",
+          "time": "12:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-09-25",
+          "time": "08:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-09-25",
+          "time": "12:00:00Z"
+        }
+      },
       "lengthKm": 6.003,
       "corners": 20,
       "status": "CONCLUDED",
@@ -4973,7 +5908,9 @@
           "points": 25,
           "time": "1:38:02.143",
           "retired": null,
-          "fastLap": "1:44.916"
+          "fastLap": "1:44.916",
+          "lapsCompleted": 51,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -4988,7 +5925,9 @@
           "points": 18,
           "time": "+0.196",
           "retired": null,
-          "fastLap": "1:44.993"
+          "fastLap": "1:44.993",
+          "lapsCompleted": 51,
+          "fastestLapRank": 2
         },
         {
           "position": "3",
@@ -5003,7 +5942,9 @@
           "points": 15,
           "time": "+10.704",
           "retired": null,
-          "fastLap": "1:45.618"
+          "fastLap": "1:45.618",
+          "lapsCompleted": 51,
+          "fastestLapRank": 4
         },
         {
           "position": "4",
@@ -5018,7 +5959,9 @@
           "points": 12,
           "time": "+14.136",
           "retired": null,
-          "fastLap": "1:45.784"
+          "fastLap": "1:45.784",
+          "lapsCompleted": 51,
+          "fastestLapRank": 5
         },
         {
           "position": "5",
@@ -5033,7 +5976,9 @@
           "points": 10,
           "time": "+14.512",
           "retired": null,
-          "fastLap": "1:45.413"
+          "fastLap": "1:45.413",
+          "lapsCompleted": 51,
+          "fastestLapRank": 3
         },
         {
           "position": "6",
@@ -5048,7 +5993,9 @@
           "points": 8,
           "time": "+22.382",
           "retired": null,
-          "fastLap": "1:46.170"
+          "fastLap": "1:46.170",
+          "lapsCompleted": 51,
+          "fastestLapRank": 6
         },
         {
           "position": "7",
@@ -5063,7 +6010,9 @@
           "points": 6,
           "time": "+31.159",
           "retired": null,
-          "fastLap": "1:46.849"
+          "fastLap": "1:46.849",
+          "lapsCompleted": 51,
+          "fastestLapRank": 10
         },
         {
           "position": "8",
@@ -5078,7 +6027,9 @@
           "points": 4,
           "time": "+31.189",
           "retired": null,
-          "fastLap": "1:47.068"
+          "fastLap": "1:47.068",
+          "lapsCompleted": 51,
+          "fastestLapRank": 14
         },
         {
           "position": "9",
@@ -5093,7 +6044,9 @@
           "points": 2,
           "time": "+31.929",
           "retired": null,
-          "fastLap": "1:46.978"
+          "fastLap": "1:46.978",
+          "lapsCompleted": 51,
+          "fastestLapRank": 13
         },
         {
           "position": "10",
@@ -5108,7 +6061,9 @@
           "points": 1,
           "time": "+32.416",
           "retired": null,
-          "fastLap": "1:46.737"
+          "fastLap": "1:46.737",
+          "lapsCompleted": 51,
+          "fastestLapRank": 9
         },
         {
           "position": "11",
@@ -5123,7 +6078,9 @@
           "points": 0,
           "time": "+33.231",
           "retired": null,
-          "fastLap": "1:46.850"
+          "fastLap": "1:46.850",
+          "lapsCompleted": 51,
+          "fastestLapRank": 11
         },
         {
           "position": "12",
@@ -5138,7 +6095,9 @@
           "points": 0,
           "time": "+34.013",
           "retired": null,
-          "fastLap": "1:46.906"
+          "fastLap": "1:46.906",
+          "lapsCompleted": 51,
+          "fastestLapRank": 12
         },
         {
           "position": "13",
@@ -5153,7 +6112,9 @@
           "points": 0,
           "time": "+36.401",
           "retired": null,
-          "fastLap": "1:46.602"
+          "fastLap": "1:46.602",
+          "lapsCompleted": 51,
+          "fastestLapRank": 8
         },
         {
           "position": "14",
@@ -5168,7 +6129,9 @@
           "points": 0,
           "time": "+41.400",
           "retired": null,
-          "fastLap": "1:47.363"
+          "fastLap": "1:47.363",
+          "lapsCompleted": 51,
+          "fastestLapRank": 15
         },
         {
           "position": "15",
@@ -5183,100 +6146,12 @@
           "points": 0,
           "time": "+44.230",
           "retired": null,
-          "fastLap": "1:46.336"
+          "fastLap": "1:46.336",
+          "lapsCompleted": 51,
+          "fastestLapRank": 7
         },
         {
-          "position": "-",
-          "grid": "5",
-          "driverId": "norris",
-          "driver": {
-            "name": "Lando",
-            "surname": "Norris",
-            "number": 1
-          },
-          "teamId": "mclaren",
-          "points": 0,
-          "time": "DNF (51)",
-          "retired": null,
-          "fastLap": "1:47.761"
-        },
-        {
-          "position": "-",
-          "grid": "7",
-          "driverId": "gasly",
-          "driver": {
-            "name": "Pierre",
-            "surname": "Gasly",
-            "number": 10
-          },
-          "teamId": "alpine",
-          "points": 0,
-          "time": "DNF (51)",
-          "retired": null,
-          "fastLap": "1:47.822"
-        },
-        {
-          "position": "-",
-          "grid": "9",
-          "driverId": "colapinto",
-          "driver": {
-            "name": "Franco",
-            "surname": "Colapinto",
-            "number": 43
-          },
-          "teamId": "alpine",
-          "points": 0,
-          "time": "DNF (51)",
-          "retired": null,
-          "fastLap": "1:48.484"
-        },
-        {
-          "position": "-",
-          "grid": "12",
-          "driverId": "albon",
-          "driver": {
-            "name": "Alex",
-            "surname": "Albon",
-            "number": 23
-          },
-          "teamId": "williams",
-          "points": 0,
-          "time": "DNF (51)",
-          "retired": null,
-          "fastLap": "1:48.443"
-        },
-        {
-          "position": "-",
-          "grid": "21",
-          "driverId": "alonso",
-          "driver": {
-            "name": "Fernando",
-            "surname": "Alonso",
-            "number": 14
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (51)",
-          "retired": null,
-          "fastLap": "1:50.968"
-        },
-        {
-          "position": "-",
-          "grid": "22",
-          "driverId": "stroll",
-          "driver": {
-            "name": "Lance",
-            "surname": "Stroll",
-            "number": 18
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (51)",
-          "retired": null,
-          "fastLap": "1:51.723"
-        },
-        {
-          "position": "-",
+          "position": "16",
           "grid": "19",
           "driverId": "bottas",
           "driver": {
@@ -5286,12 +6161,116 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (51)",
+          "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:48.852"
+          "fastLap": "1:48.852",
+          "lapsCompleted": 49,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "17",
+          "grid": "9",
+          "driverId": "colapinto",
+          "driver": {
+            "name": "Franco",
+            "surname": "Colapinto",
+            "number": 43
+          },
+          "teamId": "alpine",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:48.484",
+          "lapsCompleted": 36,
+          "fastestLapRank": 19
+        },
+        {
+          "position": "18",
+          "grid": "7",
+          "driverId": "gasly",
+          "driver": {
+            "name": "Pierre",
+            "surname": "Gasly",
+            "number": 10
+          },
+          "teamId": "alpine",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:47.822",
+          "lapsCompleted": 35,
+          "fastestLapRank": 17
+        },
+        {
+          "position": "19",
+          "grid": "5",
+          "driverId": "norris",
+          "driver": {
+            "name": "Lando",
+            "surname": "Norris",
+            "number": 1
+          },
+          "teamId": "mclaren",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:47.761",
+          "lapsCompleted": 35,
+          "fastestLapRank": 16
+        },
+        {
+          "position": "20",
+          "grid": "12",
+          "driverId": "albon",
+          "driver": {
+            "name": "Alex",
+            "surname": "Albon",
+            "number": 23
+          },
+          "teamId": "williams",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:48.443",
+          "lapsCompleted": 29,
+          "fastestLapRank": 18
+        },
+        {
+          "position": "21",
+          "grid": "21",
+          "driverId": "alonso",
+          "driver": {
+            "name": "Fernando",
+            "surname": "Alonso",
+            "number": 14
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:50.968",
+          "lapsCompleted": 20,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "22",
+          "grid": "22",
+          "driverId": "stroll",
+          "driver": {
+            "name": "Lance",
+            "surname": "Stroll",
+            "number": 18
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:51.723",
+          "lapsCompleted": 7,
+          "fastestLapRank": 22
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/15/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/15/results/?limit=100"
     },
     {
       "round": 16,
@@ -5301,8 +6280,30 @@
       "circuit": "Sepang International Circuit",
       "location": "Kuala Lumpur, Malaysia",
       "date": "2026-10-04",
-      "startTime": null,
-      "laps": 56,
+      "startTime": "2026-10-04T07:00:00Z",
+      "laps": 55,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-10-04",
+          "time": "07:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-10-02",
+          "time": "04:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-10-02",
+          "time": "08:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-10-03",
+          "time": "04:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-10-03",
+          "time": "08:00:00Z"
+        }
+      },
       "lengthKm": null,
       "corners": null,
       "status": "CONCLUDED",
@@ -5325,7 +6326,9 @@
           "points": 25,
           "time": "1:47:14.808",
           "retired": null,
-          "fastLap": "1:38.220"
+          "fastLap": "1:38.220",
+          "lapsCompleted": 55,
+          "fastestLapRank": 1
         },
         {
           "position": "2",
@@ -5340,7 +6343,9 @@
           "points": 18,
           "time": "+2.307",
           "retired": null,
-          "fastLap": "1:38.589"
+          "fastLap": "1:38.589",
+          "lapsCompleted": 55,
+          "fastestLapRank": 2
         },
         {
           "position": "3",
@@ -5355,7 +6360,9 @@
           "points": 15,
           "time": "+4.919",
           "retired": null,
-          "fastLap": "1:38.610"
+          "fastLap": "1:38.610",
+          "lapsCompleted": 55,
+          "fastestLapRank": 3
         },
         {
           "position": "4",
@@ -5370,7 +6377,9 @@
           "points": 12,
           "time": "+7.258",
           "retired": null,
-          "fastLap": "1:39.336"
+          "fastLap": "1:39.336",
+          "lapsCompleted": 55,
+          "fastestLapRank": 4
         },
         {
           "position": "5",
@@ -5385,7 +6394,9 @@
           "points": 10,
           "time": "+8.571",
           "retired": null,
-          "fastLap": "1:39.792"
+          "fastLap": "1:39.792",
+          "lapsCompleted": 55,
+          "fastestLapRank": 6
         },
         {
           "position": "6",
@@ -5400,7 +6411,9 @@
           "points": 8,
           "time": "+9.454",
           "retired": null,
-          "fastLap": "1:39.485"
+          "fastLap": "1:39.485",
+          "lapsCompleted": 55,
+          "fastestLapRank": 5
         },
         {
           "position": "7",
@@ -5415,7 +6428,9 @@
           "points": 6,
           "time": "+12.753",
           "retired": null,
-          "fastLap": "1:40.254"
+          "fastLap": "1:40.254",
+          "lapsCompleted": 55,
+          "fastestLapRank": 8
         },
         {
           "position": "8",
@@ -5430,7 +6445,9 @@
           "points": 4,
           "time": "+13.372",
           "retired": null,
-          "fastLap": "1:40.353"
+          "fastLap": "1:40.353",
+          "lapsCompleted": 55,
+          "fastestLapRank": 10
         },
         {
           "position": "9",
@@ -5445,7 +6462,9 @@
           "points": 2,
           "time": "+13.993",
           "retired": null,
-          "fastLap": "1:39.970"
+          "fastLap": "1:39.970",
+          "lapsCompleted": 55,
+          "fastestLapRank": 7
         },
         {
           "position": "10",
@@ -5460,7 +6479,9 @@
           "points": 1,
           "time": "+15.928",
           "retired": null,
-          "fastLap": "1:40.315"
+          "fastLap": "1:40.315",
+          "lapsCompleted": 55,
+          "fastestLapRank": 9
         },
         {
           "position": "11",
@@ -5475,7 +6496,9 @@
           "points": 0,
           "time": "+17.404",
           "retired": null,
-          "fastLap": "1:41.394"
+          "fastLap": "1:41.394",
+          "lapsCompleted": 55,
+          "fastestLapRank": 16
         },
         {
           "position": "12",
@@ -5490,7 +6513,9 @@
           "points": 0,
           "time": "+18.052",
           "retired": null,
-          "fastLap": "1:41.248"
+          "fastLap": "1:41.248",
+          "lapsCompleted": 55,
+          "fastestLapRank": 14
         },
         {
           "position": "13",
@@ -5505,7 +6530,9 @@
           "points": 0,
           "time": "+18.997",
           "retired": null,
-          "fastLap": "1:40.988"
+          "fastLap": "1:40.988",
+          "lapsCompleted": 55,
+          "fastestLapRank": 13
         },
         {
           "position": "14",
@@ -5520,7 +6547,9 @@
           "points": 0,
           "time": "+22.305",
           "retired": null,
-          "fastLap": "1:40.366"
+          "fastLap": "1:40.366",
+          "lapsCompleted": 55,
+          "fastestLapRank": 11
         },
         {
           "position": "15",
@@ -5535,7 +6564,9 @@
           "points": 0,
           "time": "+22.532",
           "retired": null,
-          "fastLap": "1:42.062"
+          "fastLap": "1:42.062",
+          "lapsCompleted": 55,
+          "fastestLapRank": 19
         },
         {
           "position": "16",
@@ -5550,7 +6581,9 @@
           "points": 0,
           "time": "+23.315",
           "retired": null,
-          "fastLap": "1:41.514"
+          "fastLap": "1:41.514",
+          "lapsCompleted": 55,
+          "fastestLapRank": 17
         },
         {
           "position": "17",
@@ -5565,7 +6598,9 @@
           "points": 0,
           "time": "+25.431",
           "retired": null,
-          "fastLap": "1:41.738"
+          "fastLap": "1:41.738",
+          "lapsCompleted": 55,
+          "fastestLapRank": 18
         },
         {
           "position": "18",
@@ -5580,7 +6615,9 @@
           "points": 0,
           "time": "+28.233",
           "retired": null,
-          "fastLap": "1:41.382"
+          "fastLap": "1:41.382",
+          "lapsCompleted": 55,
+          "fastestLapRank": 15
         },
         {
           "position": "19",
@@ -5595,7 +6632,9 @@
           "points": 0,
           "time": "+29.310",
           "retired": null,
-          "fastLap": "1:42.688"
+          "fastLap": "1:42.688",
+          "lapsCompleted": 55,
+          "fastestLapRank": 21
         },
         {
           "position": "20",
@@ -5608,12 +6647,14 @@
           },
           "teamId": "mercedes",
           "points": 0,
-          "time": "DNF (55)",
+          "time": "+6 laps",
           "retired": null,
-          "fastLap": "1:40.715"
+          "fastLap": "1:40.715",
+          "lapsCompleted": 49,
+          "fastestLapRank": 12
         },
         {
-          "position": "-",
+          "position": "21",
           "grid": "18",
           "driverId": "albon",
           "driver": {
@@ -5623,12 +6664,14 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (55)",
-          "retired": null,
-          "fastLap": "1:42.284"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:42.284",
+          "lapsCompleted": 41,
+          "fastestLapRank": 20
         },
         {
-          "position": "-",
+          "position": "22",
           "grid": "19",
           "driverId": "bottas",
           "driver": {
@@ -5638,12 +6681,14 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (55)",
-          "retired": null,
-          "fastLap": "1:59.953"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:59.953",
+          "lapsCompleted": 7,
+          "fastestLapRank": 22
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/16/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/16/results/?limit=100"
     },
     {
       "round": 17,
@@ -5651,10 +6696,32 @@
       "name": "Formula 1 Singapore Airlanes Singapore Grand Prix 2026",
       "circuitId": "marina_bay",
       "circuit": "Marina Bay Street Circuit",
-      "location": "Singapore, Singapore",
+      "location": "Marina Bay, Singapore",
       "date": "2026-10-11",
       "startTime": "2026-10-11T12:00:00Z",
       "laps": 62,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-10-11",
+          "time": "12:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-10-09",
+          "time": "08:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-10-10",
+          "time": "13:00:00Z"
+        },
+        "sprintRace": {
+          "date": "2026-10-10",
+          "time": "09:00:00Z"
+        },
+        "sprintQualy": {
+          "date": "2026-10-09",
+          "time": "12:30:00Z"
+        }
+      },
       "lengthKm": 4.94,
       "corners": 19,
       "status": "CONCLUDED",
@@ -5677,7 +6744,9 @@
           "points": 25,
           "time": "1:42:00.785",
           "retired": null,
-          "fastLap": "1:36.201"
+          "fastLap": "1:36.201",
+          "lapsCompleted": 62,
+          "fastestLapRank": 5
         },
         {
           "position": "2",
@@ -5692,7 +6761,9 @@
           "points": 18,
           "time": "+7.335",
           "retired": null,
-          "fastLap": "1:35.202"
+          "fastLap": "1:35.202",
+          "lapsCompleted": 62,
+          "fastestLapRank": 1
         },
         {
           "position": "3",
@@ -5707,7 +6778,9 @@
           "points": 15,
           "time": "+24.573",
           "retired": null,
-          "fastLap": "1:35.589"
+          "fastLap": "1:35.589",
+          "lapsCompleted": 62,
+          "fastestLapRank": 2
         },
         {
           "position": "4",
@@ -5722,7 +6795,9 @@
           "points": 12,
           "time": "+40.506",
           "retired": null,
-          "fastLap": "1:36.282"
+          "fastLap": "1:36.282",
+          "lapsCompleted": 62,
+          "fastestLapRank": 6
         },
         {
           "position": "5",
@@ -5737,7 +6812,9 @@
           "points": 10,
           "time": "+49.644",
           "retired": null,
-          "fastLap": "1:35.665"
+          "fastLap": "1:35.665",
+          "lapsCompleted": 62,
+          "fastestLapRank": 3
         },
         {
           "position": "6",
@@ -5752,7 +6829,9 @@
           "points": 8,
           "time": "+53.188",
           "retired": null,
-          "fastLap": "1:36.922"
+          "fastLap": "1:36.922",
+          "lapsCompleted": 62,
+          "fastestLapRank": 8
         },
         {
           "position": "7",
@@ -5767,7 +6846,9 @@
           "points": 6,
           "time": "+1:21.666",
           "retired": null,
-          "fastLap": "1:37.193"
+          "fastLap": "1:37.193",
+          "lapsCompleted": 62,
+          "fastestLapRank": 10
         },
         {
           "position": "8",
@@ -5782,7 +6863,9 @@
           "points": 4,
           "time": "+1:23.386",
           "retired": null,
-          "fastLap": "1:37.055"
+          "fastLap": "1:37.055",
+          "lapsCompleted": 62,
+          "fastestLapRank": 9
         },
         {
           "position": "9",
@@ -5797,12 +6880,13 @@
           "points": 2,
           "time": "+1:24.677",
           "retired": null,
-          "fastLap": "1:36.722"
+          "fastLap": "1:36.722",
+          "lapsCompleted": 62,
+          "fastestLapRank": 7
         },
         {
           "position": "10",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
+          "grid": "22",
           "driverId": "hadjar",
           "driver": {
             "name": "Isack",
@@ -5813,7 +6897,9 @@
           "points": 1,
           "time": "+1:30.862",
           "retired": null,
-          "fastLap": "1:35.917"
+          "fastLap": "1:35.917",
+          "lapsCompleted": 62,
+          "fastestLapRank": 4
         },
         {
           "position": "11",
@@ -5828,7 +6914,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.390"
+          "fastLap": "1:37.390",
+          "lapsCompleted": 61,
+          "fastestLapRank": 11
         },
         {
           "position": "12",
@@ -5843,7 +6931,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:37.556"
+          "fastLap": "1:37.556",
+          "lapsCompleted": 61,
+          "fastestLapRank": 13
         },
         {
           "position": "13",
@@ -5858,7 +6948,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.129"
+          "fastLap": "1:38.129",
+          "lapsCompleted": 61,
+          "fastestLapRank": 15
         },
         {
           "position": "14",
@@ -5873,7 +6965,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.326"
+          "fastLap": "1:38.326",
+          "lapsCompleted": 61,
+          "fastestLapRank": 17
         },
         {
           "position": "15",
@@ -5888,12 +6982,13 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.154"
+          "fastLap": "1:38.154",
+          "lapsCompleted": 61,
+          "fastestLapRank": 16
         },
         {
           "position": "16",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
+          "grid": "20",
           "driverId": "alonso",
           "driver": {
             "name": "Fernando",
@@ -5904,7 +6999,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.032"
+          "fastLap": "1:38.032",
+          "lapsCompleted": 61,
+          "fastestLapRank": 14
         },
         {
           "position": "17",
@@ -5919,7 +7016,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": "1:38.574"
+          "fastLap": "1:38.574",
+          "lapsCompleted": 60,
+          "fastestLapRank": 18
         },
         {
           "position": "18",
@@ -5932,9 +7031,11 @@
           },
           "teamId": "williams",
           "points": 0,
-          "time": "DNF (62)",
+          "time": "+3 laps",
           "retired": null,
-          "fastLap": "1:37.436"
+          "fastLap": "1:37.436",
+          "lapsCompleted": 59,
+          "fastestLapRank": 12
         },
         {
           "position": "19",
@@ -5949,25 +7050,29 @@
           "points": 0,
           "time": "+3 laps",
           "retired": null,
-          "fastLap": "1:40.171"
+          "fastLap": "1:40.171",
+          "lapsCompleted": 59,
+          "fastestLapRank": 21
         },
         {
-          "position": "-",
-          "grid": "14",
-          "driverId": "bortoleto",
+          "position": "20",
+          "grid": "21",
+          "driverId": "stroll",
           "driver": {
-            "name": "Gabriel",
-            "surname": "Bortoleto",
-            "number": 5
+            "name": "Lance",
+            "surname": "Stroll",
+            "number": 18
           },
-          "teamId": "audi",
+          "teamId": "aston_martin",
           "points": 0,
-          "time": "DNF (62)",
-          "retired": null,
-          "fastLap": "1:40.486"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:39.137",
+          "lapsCompleted": 36,
+          "fastestLapRank": 19
         },
         {
-          "position": "-",
+          "position": "21",
           "grid": "15",
           "driverId": "colapinto",
           "driver": {
@@ -5977,28 +7082,31 @@
           },
           "teamId": "alpine",
           "points": 0,
-          "time": "DNF (62)",
-          "retired": null,
-          "fastLap": "1:39.265"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:39.265",
+          "lapsCompleted": 29,
+          "fastestLapRank": 20
         },
         {
-          "position": "-",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
-          "driverId": "stroll",
+          "position": "22",
+          "grid": "14",
+          "driverId": "bortoleto",
           "driver": {
-            "name": "Lance",
-            "surname": "Stroll",
-            "number": 18
+            "name": "Gabriel",
+            "surname": "Bortoleto",
+            "number": 5
           },
-          "teamId": "aston_martin",
+          "teamId": "audi",
           "points": 0,
-          "time": "DNF (62)",
-          "retired": null,
-          "fastLap": "1:39.137"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:40.486",
+          "lapsCompleted": 7,
+          "fastestLapRank": 22
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/17/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/17/results/?limit=100"
     },
     {
       "round": 18,
@@ -6006,10 +7114,32 @@
       "name": "Formula 1 MSC Cruises United States Grand Prix 2026",
       "circuitId": "austin",
       "circuit": "Circuit of The Americas",
-      "location": "Austin, United States",
+      "location": "Austin, USA",
       "date": "2026-10-25",
-      "startTime": "2026-10-25T19:00:00Z",
+      "startTime": "2026-10-25T20:00:00Z",
       "laps": 56,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-10-25",
+          "time": "20:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-10-23",
+          "time": "17:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-10-23",
+          "time": "21:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-10-24",
+          "time": "17:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-10-24",
+          "time": "21:00:00Z"
+        }
+      },
       "lengthKm": 3.426,
       "corners": 20,
       "status": "CONCLUDED",
@@ -6032,7 +7162,9 @@
           "points": 25,
           "time": "1:35:16.650",
           "retired": null,
-          "fastLap": "1:39.086"
+          "fastLap": "1:39.086",
+          "lapsCompleted": 56,
+          "fastestLapRank": 4
         },
         {
           "position": "2",
@@ -6047,7 +7179,9 @@
           "points": 18,
           "time": "+13.078",
           "retired": null,
-          "fastLap": "1:37.976"
+          "fastLap": "1:37.976",
+          "lapsCompleted": 56,
+          "fastestLapRank": 1
         },
         {
           "position": "3",
@@ -6062,7 +7196,9 @@
           "points": 15,
           "time": "+17.485",
           "retired": null,
-          "fastLap": "1:39.231"
+          "fastLap": "1:39.231",
+          "lapsCompleted": 56,
+          "fastestLapRank": 5
         },
         {
           "position": "4",
@@ -6077,7 +7213,9 @@
           "points": 12,
           "time": "+18.515",
           "retired": null,
-          "fastLap": "1:38.457"
+          "fastLap": "1:38.457",
+          "lapsCompleted": 56,
+          "fastestLapRank": 3
         },
         {
           "position": "5",
@@ -6092,7 +7230,9 @@
           "points": 10,
           "time": "+30.521",
           "retired": null,
-          "fastLap": "1:39.811"
+          "fastLap": "1:39.811",
+          "lapsCompleted": 56,
+          "fastestLapRank": 9
         },
         {
           "position": "6",
@@ -6107,7 +7247,9 @@
           "points": 8,
           "time": "+34.373",
           "retired": null,
-          "fastLap": "1:39.399"
+          "fastLap": "1:39.399",
+          "lapsCompleted": 56,
+          "fastestLapRank": 6
         },
         {
           "position": "7",
@@ -6122,7 +7264,9 @@
           "points": 6,
           "time": "+52.674",
           "retired": null,
-          "fastLap": "1:40.328"
+          "fastLap": "1:40.328",
+          "lapsCompleted": 56,
+          "fastestLapRank": 15
         },
         {
           "position": "8",
@@ -6137,7 +7281,9 @@
           "points": 4,
           "time": "+54.303",
           "retired": null,
-          "fastLap": "1:39.928"
+          "fastLap": "1:39.928",
+          "lapsCompleted": 56,
+          "fastestLapRank": 11
         },
         {
           "position": "9",
@@ -6152,7 +7298,9 @@
           "points": 2,
           "time": "+1:19.183",
           "retired": null,
-          "fastLap": "1:39.652"
+          "fastLap": "1:39.652",
+          "lapsCompleted": 56,
+          "fastestLapRank": 8
         },
         {
           "position": "10",
@@ -6167,7 +7315,9 @@
           "points": 1,
           "time": "+1:27.516",
           "retired": null,
-          "fastLap": "1:40.193"
+          "fastLap": "1:40.193",
+          "lapsCompleted": 56,
+          "fastestLapRank": 13
         },
         {
           "position": "11",
@@ -6182,7 +7332,9 @@
           "points": 0,
           "time": "+1:34.945",
           "retired": null,
-          "fastLap": "1:40.323"
+          "fastLap": "1:40.323",
+          "lapsCompleted": 56,
+          "fastestLapRank": 14
         },
         {
           "position": "12",
@@ -6197,7 +7349,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:39.422"
+          "fastLap": "1:39.422",
+          "lapsCompleted": 55,
+          "fastestLapRank": 7
         },
         {
           "position": "13",
@@ -6212,7 +7366,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:38.393"
+          "fastLap": "1:38.393",
+          "lapsCompleted": 55,
+          "fastestLapRank": 2
         },
         {
           "position": "14",
@@ -6227,12 +7383,13 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:41.418"
+          "fastLap": "1:41.418",
+          "lapsCompleted": 55,
+          "fastestLapRank": 19
         },
         {
           "position": "15",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1297/united-states/starting-grid",
+          "grid": "22",
           "driverId": "stroll",
           "driver": {
             "name": "Lance",
@@ -6243,7 +7400,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:40.189"
+          "fastLap": "1:40.189",
+          "lapsCompleted": 55,
+          "fastestLapRank": 12
         },
         {
           "position": "16",
@@ -6258,7 +7417,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:39.841"
+          "fastLap": "1:39.841",
+          "lapsCompleted": 55,
+          "fastestLapRank": 10
         },
         {
           "position": "17",
@@ -6273,7 +7434,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:41.132"
+          "fastLap": "1:41.132",
+          "lapsCompleted": 55,
+          "fastestLapRank": 18
         },
         {
           "position": "18",
@@ -6288,7 +7451,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:40.353"
+          "fastLap": "1:40.353",
+          "lapsCompleted": 55,
+          "fastestLapRank": 16
         },
         {
           "position": "19",
@@ -6303,40 +7468,12 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": "1:41.680"
+          "fastLap": "1:41.680",
+          "lapsCompleted": 55,
+          "fastestLapRank": 20
         },
         {
-          "position": "-",
-          "grid": "20",
-          "driverId": "colapinto",
-          "driver": {
-            "name": "Franco",
-            "surname": "Colapinto",
-            "number": 43
-          },
-          "teamId": "alpine",
-          "points": 0,
-          "time": "DNF (56)",
-          "retired": null,
-          "fastLap": "1:41.087"
-        },
-        {
-          "position": "-",
-          "grid": "13",
-          "driverId": "bearman",
-          "driver": {
-            "name": "Oliver",
-            "surname": "Bearman",
-            "number": 87
-          },
-          "teamId": "haas",
-          "points": 0,
-          "time": "DNF (56)",
-          "retired": null,
-          "fastLap": "1:42.107"
-        },
-        {
-          "position": "-",
+          "position": "20",
           "grid": "19",
           "driverId": "bottas",
           "driver": {
@@ -6346,12 +7483,48 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (56)",
-          "retired": null,
-          "fastLap": "1:42.012"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:42.012",
+          "lapsCompleted": 48,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "21",
+          "grid": "20",
+          "driverId": "colapinto",
+          "driver": {
+            "name": "Franco",
+            "surname": "Colapinto",
+            "number": 43
+          },
+          "teamId": "alpine",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:41.087",
+          "lapsCompleted": 35,
+          "fastestLapRank": 17
+        },
+        {
+          "position": "22",
+          "grid": "13",
+          "driverId": "bearman",
+          "driver": {
+            "name": "Oliver",
+            "surname": "Bearman",
+            "number": 87
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:42.107",
+          "lapsCompleted": 24,
+          "fastestLapRank": 22
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/18/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/18/results/?limit=100"
     },
     {
       "round": 19,
@@ -6363,6 +7536,28 @@
       "date": "2026-11-01",
       "startTime": "2026-11-01T20:00:00Z",
       "laps": 71,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-11-01",
+          "time": "20:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-10-30",
+          "time": "18:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-10-30",
+          "time": "22:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-10-31",
+          "time": "17:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-10-31",
+          "time": "21:00:00Z"
+        }
+      },
       "lengthKm": 4.304,
       "corners": 17,
       "status": "CONCLUDED",
@@ -6385,7 +7580,9 @@
           "points": 25,
           "time": "2:20:28.772",
           "retired": null,
-          "fastLap": "1:19.328"
+          "fastLap": "1:19.328",
+          "lapsCompleted": 71,
+          "fastestLapRank": 2
         },
         {
           "position": "2",
@@ -6400,7 +7597,9 @@
           "points": 18,
           "time": "+0.799",
           "retired": null,
-          "fastLap": "1:19.268"
+          "fastLap": "1:19.268",
+          "lapsCompleted": 71,
+          "fastestLapRank": 1
         },
         {
           "position": "3",
@@ -6415,7 +7614,9 @@
           "points": 15,
           "time": "+4.006",
           "retired": null,
-          "fastLap": "1:19.427"
+          "fastLap": "1:19.427",
+          "lapsCompleted": 71,
+          "fastestLapRank": 3
         },
         {
           "position": "4",
@@ -6430,7 +7631,9 @@
           "points": 12,
           "time": "+10.707",
           "retired": null,
-          "fastLap": "1:19.851"
+          "fastLap": "1:19.851",
+          "lapsCompleted": 71,
+          "fastestLapRank": 5
         },
         {
           "position": "5",
@@ -6445,7 +7648,9 @@
           "points": 10,
           "time": "+11.778",
           "retired": null,
-          "fastLap": "1:19.800"
+          "fastLap": "1:19.800",
+          "lapsCompleted": 71,
+          "fastestLapRank": 4
         },
         {
           "position": "6",
@@ -6460,12 +7665,13 @@
           "points": 8,
           "time": "+12.263",
           "retired": null,
-          "fastLap": "1:20.147"
+          "fastLap": "1:20.147",
+          "lapsCompleted": 71,
+          "fastestLapRank": 6
         },
         {
           "position": "7",
-          "grid": "Pit lane",
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid",
+          "grid": "22",
           "driverId": "lawson",
           "driver": {
             "name": "Liam",
@@ -6476,7 +7682,9 @@
           "points": 6,
           "time": "+20.899",
           "retired": null,
-          "fastLap": "1:20.713"
+          "fastLap": "1:20.713",
+          "lapsCompleted": 71,
+          "fastestLapRank": 10
         },
         {
           "position": "8",
@@ -6491,7 +7699,9 @@
           "points": 4,
           "time": "+22.041",
           "retired": null,
-          "fastLap": "1:20.872"
+          "fastLap": "1:20.872",
+          "lapsCompleted": 71,
+          "fastestLapRank": 14
         },
         {
           "position": "9",
@@ -6506,7 +7716,9 @@
           "points": 2,
           "time": "+22.503",
           "retired": null,
-          "fastLap": "1:20.244"
+          "fastLap": "1:20.244",
+          "lapsCompleted": 71,
+          "fastestLapRank": 7
         },
         {
           "position": "10",
@@ -6515,13 +7727,15 @@
           "driver": {
             "name": "Ryo",
             "surname": "Hirakawa",
-            "number": null
+            "number": 50
           },
           "teamId": "haas",
           "points": 1,
           "time": "+25.373",
           "retired": null,
-          "fastLap": "1:20.984"
+          "fastLap": "1:20.984",
+          "lapsCompleted": 71,
+          "fastestLapRank": 15
         },
         {
           "position": "11",
@@ -6536,7 +7750,9 @@
           "points": 0,
           "time": "+27.562",
           "retired": null,
-          "fastLap": "1:21.114"
+          "fastLap": "1:21.114",
+          "lapsCompleted": 71,
+          "fastestLapRank": 17
         },
         {
           "position": "12",
@@ -6551,7 +7767,9 @@
           "points": 0,
           "time": "+28.638",
           "retired": null,
-          "fastLap": "1:21.339"
+          "fastLap": "1:21.339",
+          "lapsCompleted": 71,
+          "fastestLapRank": 19
         },
         {
           "position": "13",
@@ -6566,7 +7784,9 @@
           "points": 0,
           "time": "+29.475",
           "retired": null,
-          "fastLap": "1:20.690"
+          "fastLap": "1:20.690",
+          "lapsCompleted": 71,
+          "fastestLapRank": 9
         },
         {
           "position": "14",
@@ -6581,7 +7801,9 @@
           "points": 0,
           "time": "+29.977",
           "retired": null,
-          "fastLap": "1:20.732"
+          "fastLap": "1:20.732",
+          "lapsCompleted": 71,
+          "fastestLapRank": 11
         },
         {
           "position": "15",
@@ -6596,7 +7818,9 @@
           "points": 0,
           "time": "+30.204",
           "retired": null,
-          "fastLap": "1:20.750"
+          "fastLap": "1:20.750",
+          "lapsCompleted": 71,
+          "fastestLapRank": 12
         },
         {
           "position": "16",
@@ -6611,7 +7835,9 @@
           "points": 0,
           "time": "+30.695",
           "retired": null,
-          "fastLap": "1:21.256"
+          "fastLap": "1:21.256",
+          "lapsCompleted": 71,
+          "fastestLapRank": 18
         },
         {
           "position": "17",
@@ -6626,10 +7852,12 @@
           "points": 0,
           "time": "+51.483",
           "retired": null,
-          "fastLap": "1:20.754"
+          "fastLap": "1:20.754",
+          "lapsCompleted": 71,
+          "fastestLapRank": 13
         },
         {
-          "position": "-",
+          "position": "18",
           "grid": "8",
           "driverId": "lindblad",
           "driver": {
@@ -6639,12 +7867,14 @@
           },
           "teamId": "rb",
           "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:20.555"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:20.555",
+          "lapsCompleted": 58,
+          "fastestLapRank": 8
         },
         {
-          "position": "-",
+          "position": "19",
           "grid": "14",
           "driverId": "bearman",
           "driver": {
@@ -6654,42 +7884,14 @@
           },
           "teamId": "haas",
           "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:21.068"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:21.068",
+          "lapsCompleted": 47,
+          "fastestLapRank": 16
         },
         {
-          "position": "-",
-          "grid": "17",
-          "driverId": "alonso",
-          "driver": {
-            "name": "Fernando",
-            "surname": "Alonso",
-            "number": 14
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:23.544"
-        },
-        {
-          "position": "-",
-          "grid": "19",
-          "driverId": "stroll",
-          "driver": {
-            "name": "Lance",
-            "surname": "Stroll",
-            "number": 18
-          },
-          "teamId": "aston_martin",
-          "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:23.696"
-        },
-        {
-          "position": "-",
+          "position": "20",
           "grid": "21",
           "driverId": "bottas",
           "driver": {
@@ -6699,12 +7901,48 @@
           },
           "teamId": "cadillac",
           "points": 0,
-          "time": "DNF (71)",
-          "retired": null,
-          "fastLap": "1:22.487"
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:22.487",
+          "lapsCompleted": 42,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "21",
+          "grid": "19",
+          "driverId": "stroll",
+          "driver": {
+            "name": "Lance",
+            "surname": "Stroll",
+            "number": 18
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:23.696",
+          "lapsCompleted": 5,
+          "fastestLapRank": 22
+        },
+        {
+          "position": "22",
+          "grid": "17",
+          "driverId": "alonso",
+          "driver": {
+            "name": "Fernando",
+            "surname": "Alonso",
+            "number": 14
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:23.544",
+          "lapsCompleted": 5,
+          "fastestLapRank": 21
         }
       ],
-      "resultsSource": "https://f1api.dev/api/2026/19/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/19/results/?limit=100"
     },
     {
       "round": 20,
@@ -6712,16 +7950,38 @@
       "name": "Formula 1 MSC Cruises Grande Premio de Sao Paulo 2026",
       "circuitId": "interlagos",
       "circuit": "Autodromo José Carlos Pace | Interlagos",
-      "location": "Sao Paulo, Brazil",
+      "location": "São Paulo, Brazil",
       "date": "2026-11-08",
       "startTime": "2026-11-08T17:00:00Z",
       "laps": 71,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-11-08",
+          "time": "17:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-11-06",
+          "time": "15:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-11-06",
+          "time": "19:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-11-07",
+          "time": "14:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-11-07",
+          "time": "18:00:00Z"
+        }
+      },
       "lengthKm": 4.309,
       "corners": 15,
       "status": "SCHEDULED",
       "fastestLap": null,
       "results": [],
-      "resultsSource": "https://f1api.dev/api/2026/20/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/20/results/?limit=100"
     },
     {
       "round": 21,
@@ -6729,16 +7989,38 @@
       "name": "Formula 1 Heineken Las Vegas Grand Prix 2026",
       "circuitId": "vegas",
       "circuit": "Las Vegas Strip Circuit",
-      "location": "Las Vegas, United States",
+      "location": "Las Vegas, USA",
       "date": "2026-11-22",
       "startTime": "2026-11-22T04:00:00Z",
       "laps": 50,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-11-22",
+          "time": "04:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-11-20",
+          "time": "00:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-11-20",
+          "time": "04:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-11-21",
+          "time": "00:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-11-21",
+          "time": "04:00:00Z"
+        }
+      },
       "lengthKm": 3.853,
       "corners": 17,
       "status": "SCHEDULED",
       "fastestLap": null,
       "results": [],
-      "resultsSource": "https://f1api.dev/api/2026/21/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/21/results/?limit=100"
     },
     {
       "round": 22,
@@ -6750,12 +8032,34 @@
       "date": "2026-11-29",
       "startTime": "2026-11-29T16:00:00Z",
       "laps": 57,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-11-29",
+          "time": "16:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-11-27",
+          "time": "13:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-11-27",
+          "time": "17:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-11-28",
+          "time": "14:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-11-28",
+          "time": "18:00:00Z"
+        }
+      },
       "lengthKm": 5.419,
       "corners": 16,
       "status": "SCHEDULED",
       "fastestLap": null,
       "results": [],
-      "resultsSource": "https://f1api.dev/api/2026/22/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/22/results/?limit=100"
     },
     {
       "round": 23,
@@ -6763,17 +8067,39 @@
       "name": "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2026",
       "circuitId": "yas_marina",
       "circuit": "Yas Marina Circuit",
-      "location": "Abu Dhabi, United Arab Emirates",
+      "location": "Abu Dhabi, UAE",
       "date": "2026-12-06",
       "startTime": "2026-12-06T13:00:00Z",
       "laps": 58,
+      "sessionSchedule": {
+        "race": {
+          "date": "2026-12-06",
+          "time": "13:00:00Z"
+        },
+        "fp1": {
+          "date": "2026-12-04",
+          "time": "09:30:00Z"
+        },
+        "fp2": {
+          "date": "2026-12-04",
+          "time": "13:00:00Z"
+        },
+        "fp3": {
+          "date": "2026-12-05",
+          "time": "10:30:00Z"
+        },
+        "qualy": {
+          "date": "2026-12-05",
+          "time": "14:00:00Z"
+        }
+      },
       "lengthKm": 5.281,
       "corners": 16,
       "status": "SCHEDULED",
       "fastestLap": null,
       "results": [],
-      "resultsSource": "https://f1api.dev/api/2026/23/race?limit=100"
+      "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/23/results/?limit=100"
     }
   ],
-  "updatedAt": "2026-11-03T10:46:32.589Z"
+  "updatedAt": "2026-11-06T12:07:37.020Z"
 }
