@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "createdAt": "2026-11-06T02:27:12.623Z",
+  "mode": "facts_only",
+  "reviewRequired": true,
+  "items": [
+    {
+      "sport": "afl",
+      "status": "no_events",
+      "events": 0
+    },
+    {
+      "sport": "aflw",
+      "status": "facts_ready",
+      "events": 9,
+      "factsHash": "bbcdc79b992c6744013f14d405c4042396f7760e9fdc680a350ec8730606179c"
+    },
+    {
+      "sport": "f1",
+      "status": "facts_ready",
+      "events": 5,
+      "factsHash": "f830440a9fb7e8ec3927dd2f8f45f3888e3426b8a0c12f742624c0068c843b7d"
+    },
+    {
+      "sport": "f2",
+      "status": "no_events",
+      "events": 0
+    },
+    {
+      "sport": "f3",
+      "status": "no_events",
+      "events": 0
+    },
+    {
+      "sport": "nrl",
+      "status": "no_events",
+      "events": 0
+    },
+    {
+      "sport": "nrlw",
+      "status": "no_events",
+      "events": 0
+    },
+    {
+      "sport": "nba",
+      "status": "facts_ready",
+      "events": 49,
+      "factsHash": "43f176a78dcf0ea91db33310b2679404abcfe1099a57622b0b28dcbc403d67ad"
+    },
+    {
+      "sport": "wnba",
+      "status": "facts_ready",
+      "events": 3,
+      "factsHash": "aa3ca32f2e2664374d0d17fa696dba1eb76853855f4e736030674e0fce65e3fb"
+    },
+    {
+      "sport": "nbl",
+      "status": "facts_ready",
+      "events": 8,
+      "factsHash": "031046991a25429a46e2eb9dde20ddce98a75cb5307661d27f8923959e27875d"
+    },
+    {
+      "sport": "nfl",
+      "status": "facts_ready",
+      "events": 14,
+      "factsHash": "bb888806132b788dc7ccd329654d8ab038faff4fa1a6cd1a0d2baf35f44bf726"
+    },
+    {
+      "sport": "tennis",
+      "status": "no_events",
+      "events": 0
+    }
+  ],
+  "failures": 0,
+  "warnings": 0
+}

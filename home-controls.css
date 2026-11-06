@@ -1,0 +1,19 @@
+.home-controls { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 9px 12px; margin: 14px 0 5px; padding: 0 0 12px; border-bottom: 1px solid var(--rule); }
+.home-controls__tabs { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4px; align-items: end; }
+.home-controls__tabs button { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; min-width: 0; padding: 9px 8px; border: 1px solid var(--rule); background: var(--surface); color: var(--muted); font: 700 .62rem var(--font-sans); cursor: pointer; }
+.home-controls__tabs button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+.home-controls__tabs b { font-size: .55rem; font-weight: 600; opacity: .72; font-variant-numeric: tabular-nums; }
+.home-controls__league { display: flex; flex-direction: column; gap: 4px; min-width: 125px; color: var(--muted); font-size: .55rem; }
+.home-controls__league select { min-height: 40px; width: 100%; padding: 7px 20px 7px 8px; border: 1px solid var(--rule); border-radius: 0; color: var(--ink); background: var(--surface); font: 600 .62rem var(--font-sans); }
+.home-controls__status { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .56rem; line-height: 1.5; }
+.home-controls-empty { padding: 24px 14px; margin: 14px 0; background: var(--surface-4); border: 1px solid var(--rule); text-align: center; }
+.home-controls-empty p { margin: 0 0 12px; color: var(--muted); font-size: .72rem; line-height: 1.7; }
+.home-controls-empty button { min-height: 44px; padding: 10px 14px; border: 1px solid var(--rule); color: var(--accent-ink); background: var(--surface); font: 700 .7rem var(--font-sans); cursor: pointer; }
+.home-controls-empty[hidden], [data-afl-games] .afl-game[hidden], [data-afl-games] .home-league-games[hidden], [data-afl-games] .home-league-heading[hidden], [data-afl-games] .afl-games__section[hidden], [data-afl-games] > .afl-games__empty[hidden] { display: none !important; }
+.home-league-games > .afl-game.home-controls-wide { grid-column: 1 / -1; }
+.home-window-note{grid-column:1/-1;color:var(--muted);font:400 .65rem/1.6 var(--font-sans);}
+.home-window-note summary{display:inline-block;min-height:32px;padding:6px 0;color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
+.home-window-note p{margin:4px 0 0;max-width:80ch;}
+.home-controls-empty a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent-ink);font:700 .7rem var(--font-sans);text-underline-offset:3px;}
+@media(max-width:600px){.home-controls{grid-template-columns:minmax(0,1fr);gap:8px;}.home-controls__tabs button{min-height:44px;padding:9px 5px;gap:4px;}.home-controls__league{flex-direction:row;align-items:center;gap:8px;}.home-controls__league select{min-height:40px;flex:1;min-width:0;}.home-controls__status{font-size:.58rem;}}
+@media(max-width:600px){.home-controls__tabs button{font-size:.7rem;}.home-controls__league{font-size:.68rem;}.home-controls__league select{font-size:16px;min-height:44px;}.home-controls__status{font-size:.65rem;}.home-window-note{font-size:.7rem;}}

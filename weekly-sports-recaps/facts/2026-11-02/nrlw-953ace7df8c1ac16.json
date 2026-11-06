@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "sport": "nrlw",
+  "name": "NRLW",
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "coverage": {
+    "status": "no_events",
+    "totalEvents": 0,
+    "includedEvents": 0,
+    "truncated": false,
+    "omittedEvents": 0,
+    "excludedUnfinished": 0,
+    "completedWithoutTime": 0,
+    "incompleteEvents": 0,
+    "duplicateEvents": 0,
+    "conflictingEventIds": [],
+    "missingSources": [],
+    "statistics": {
+      "status": "no_events",
+      "eventsWithStats": 0,
+      "eventsWithoutStats": 0
+    },
+    "notes": [],
+    "partial": false,
+    "sourceErrors": []
+  },
+  "sources": [
+    {
+      "id": "generic",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nrlw.json",
+      "label": "NRLW saved fixtures and results",
+      "retrievedAt": "2026-11-06T02:27:12.686Z",
+      "updatedAt": "2026-11-04T09:28:18.865Z"
+    }
+  ],
+  "events": []
+}

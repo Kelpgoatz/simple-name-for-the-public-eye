@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "sourceRepository": "Kelpgoatz/simple-name-for-the-public-eye",
+  "sourceBranch": "main",
+  "timeZone": "Australia/Sydney",
+  "weekEndingHour": 18,
+  "model": "gpt-6-luna",
+  "maxEvents": 200,
+  "maxFactsBytes": 180000,
+  "optionalSports": ["f3"],
+  "sports": ["afl", "aflw", "f1", "f2", "f3", "nrl", "nrlw", "nba", "wnba", "nbl", "nfl", "tennis"]
+}

@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.source/
+.tmp/
+*.log
+.DS_Store
+Thumbs.db
+
+# facts/, drafts/ and public/ are intentionally tracked as review archives.

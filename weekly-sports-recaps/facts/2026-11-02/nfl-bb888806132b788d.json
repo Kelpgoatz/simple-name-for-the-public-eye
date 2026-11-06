@@ -1,0 +1,1498 @@
+{
+  "schemaVersion": 1,
+  "sport": "nfl",
+  "name": "NFL",
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "coverage": {
+    "status": "ready",
+    "totalEvents": 14,
+    "includedEvents": 14,
+    "truncated": false,
+    "omittedEvents": 0,
+    "excludedUnfinished": 0,
+    "completedWithoutTime": 0,
+    "incompleteEvents": 0,
+    "duplicateEvents": 0,
+    "conflictingEventIds": [],
+    "missingSources": [],
+    "statistics": {
+      "status": "available",
+      "eventsWithStats": 14,
+      "eventsWithoutStats": 0
+    },
+    "notes": [],
+    "partial": false,
+    "sourceErrors": []
+  },
+  "sources": [
+    {
+      "id": "generic",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nfl.json",
+      "label": "NFL saved fixtures and results",
+      "retrievedAt": "2026-11-06T02:27:12.733Z",
+      "updatedAt": "2026-11-04T08:50:35.267Z"
+    },
+    {
+      "id": "players",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nfl-players.json",
+      "label": "NFL saved individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z",
+      "updatedAt": "2026-11-04T10:47:28.509Z"
+    },
+    {
+      "id": "primary-3",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873009",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-4",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873023",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-5",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873024",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-6",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873025",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-7",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873026",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-8",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873027",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-9",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873028",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-10",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873029",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-11",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873030",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-12",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873031",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-13",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873032",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-14",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873033",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-15",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873034",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    },
+    {
+      "id": "primary-16",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401873035",
+      "label": "NFL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.733Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "nfl:401873009",
+      "startTime": "2026-10-27T00:15:00.000Z",
+      "kind": "match",
+      "label": "Philadelphia Eagles v Dallas Cowboys",
+      "home": {
+        "id": "21",
+        "name": "Philadelphia Eagles"
+      },
+      "away": {
+        "id": "6",
+        "name": "Dallas Cowboys"
+      },
+      "scores": {
+        "home": 21,
+        "away": 38,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 7",
+      "venue": "Lincoln Financial Field",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "6",
+        "name": "Dallas Cowboys"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 64,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 212,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2577417",
+                "name": "Dak Prescott",
+                "teamId": "6",
+                "team": "Dallas Cowboys"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 155,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4361579",
+                "name": "Javonte Williams",
+                "teamId": "6",
+                "team": "Dallas Cowboys"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 74,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4241389",
+                "name": "CeeDee Lamb",
+                "teamId": "6",
+                "team": "Dallas Cowboys"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873023",
+      "startTime": "2026-10-30T00:15:00.000Z",
+      "kind": "match",
+      "label": "Green Bay Packers v Carolina Panthers",
+      "home": {
+        "id": "9",
+        "name": "Green Bay Packers"
+      },
+      "away": {
+        "id": "29",
+        "name": "Carolina Panthers"
+      },
+      "scores": {
+        "home": 27,
+        "away": 19,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Lambeau Field",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "9",
+        "name": "Green Bay Packers"
+      },
+      "stats": {
+        "sourceId": "primary-4",
+        "playersRecorded": 62,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 288,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4036378",
+                "name": "Jordan Love",
+                "teamId": "9",
+                "team": "Green Bay Packers"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 81,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4241416",
+                "name": "Chuba Hubbard",
+                "teamId": "29",
+                "team": "Carolina Panthers"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 113,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4248528",
+                "name": "Christian Watson",
+                "teamId": "9",
+                "team": "Green Bay Packers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873024",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Dallas Cowboys v Arizona Cardinals",
+      "home": {
+        "id": "6",
+        "name": "Dallas Cowboys"
+      },
+      "away": {
+        "id": "22",
+        "name": "Arizona Cardinals"
+      },
+      "scores": {
+        "home": 30,
+        "away": 33,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "AT&T Stadium",
+      "statusDetail": "Final/OT",
+      "winner": {
+        "side": "away",
+        "id": "22",
+        "name": "Arizona Cardinals"
+      },
+      "stats": {
+        "sourceId": "primary-5",
+        "playersRecorded": 66,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 195,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2577417",
+                "name": "Dak Prescott",
+                "teamId": "6",
+                "team": "Dallas Cowboys"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 147,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4373626",
+                "name": "Tyler Allgeier",
+                "teamId": "22",
+                "team": "Arizona Cardinals"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 111,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4360761",
+                "name": "Michael Wilson",
+                "teamId": "22",
+                "team": "Arizona Cardinals"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873025",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Tampa Bay Buccaneers v Atlanta Falcons",
+      "home": {
+        "id": "27",
+        "name": "Tampa Bay Buccaneers"
+      },
+      "away": {
+        "id": "1",
+        "name": "Atlanta Falcons"
+      },
+      "scores": {
+        "home": 16,
+        "away": 0,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Raymond James Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "27",
+        "name": "Tampa Bay Buccaneers"
+      },
+      "stats": {
+        "sourceId": "primary-6",
+        "playersRecorded": 51,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 125,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4360423",
+                "name": "Michael Penix Jr.",
+                "teamId": "1",
+                "team": "Atlanta Falcons"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 170,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4596448",
+                "name": "Bucky Irving",
+                "teamId": "27",
+                "team": "Tampa Bay Buccaneers"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 95,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4361409",
+                "name": "Jahan Dotson",
+                "teamId": "1",
+                "team": "Atlanta Falcons"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873026",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Buffalo Bills v Baltimore Ravens",
+      "home": {
+        "id": "2",
+        "name": "Buffalo Bills"
+      },
+      "away": {
+        "id": "33",
+        "name": "Baltimore Ravens"
+      },
+      "scores": {
+        "home": 36,
+        "away": 10,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Highmark Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "2",
+        "name": "Buffalo Bills"
+      },
+      "stats": {
+        "sourceId": "primary-7",
+        "playersRecorded": 70,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 289,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3918298",
+                "name": "Josh Allen",
+                "teamId": "2",
+                "team": "Buffalo Bills"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 80,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4379399",
+                "name": "James Cook III",
+                "teamId": "2",
+                "team": "Buffalo Bills"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 86,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4385690",
+                "name": "Dalton Kincaid",
+                "teamId": "2",
+                "team": "Buffalo Bills"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873027",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Pittsburgh Steelers v Cleveland Browns",
+      "home": {
+        "id": "23",
+        "name": "Pittsburgh Steelers"
+      },
+      "away": {
+        "id": "5",
+        "name": "Cleveland Browns"
+      },
+      "scores": {
+        "home": 27,
+        "away": 6,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Acrisure Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "23",
+        "name": "Pittsburgh Steelers"
+      },
+      "stats": {
+        "sourceId": "primary-8",
+        "playersRecorded": 61,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 324,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3122840",
+                "name": "Deshaun Watson",
+                "teamId": "5",
+                "team": "Cleveland Browns"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 143,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4569987",
+                "name": "Jaylen Warren",
+                "teamId": "23",
+                "team": "Pittsburgh Steelers"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 154,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5083076",
+                "name": "Harold Fannin Jr.",
+                "teamId": "5",
+                "team": "Cleveland Browns"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873028",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Jacksonville Jaguars v Indianapolis Colts",
+      "home": {
+        "id": "30",
+        "name": "Jacksonville Jaguars"
+      },
+      "away": {
+        "id": "11",
+        "name": "Indianapolis Colts"
+      },
+      "scores": {
+        "home": 42,
+        "away": 7,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "EverBank Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "30",
+        "name": "Jacksonville Jaguars"
+      },
+      "stats": {
+        "sourceId": "primary-9",
+        "playersRecorded": 67,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 210,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4360310",
+                "name": "Trevor Lawrence",
+                "teamId": "30",
+                "team": "Jacksonville Jaguars"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 104,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4882093",
+                "name": "Bhayshul Tuten",
+                "teamId": "30",
+                "team": "Jacksonville Jaguars"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 67,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "15818",
+                "name": "Keenan Allen",
+                "teamId": "11",
+                "team": "Indianapolis Colts"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873029",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "New York Jets v Las Vegas Raiders",
+      "home": {
+        "id": "20",
+        "name": "New York Jets"
+      },
+      "away": {
+        "id": "13",
+        "name": "Las Vegas Raiders"
+      },
+      "scores": {
+        "home": 33,
+        "away": 38,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "MetLife Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "13",
+        "name": "Las Vegas Raiders"
+      },
+      "stats": {
+        "sourceId": "primary-10",
+        "playersRecorded": 53,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 290,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "15864",
+                "name": "Geno Smith",
+                "teamId": "20",
+                "team": "New York Jets"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 147,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4685247",
+                "name": "Braelon Allen",
+                "teamId": "20",
+                "team": "New York Jets"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 142,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4597500",
+                "name": "Adonai Mitchell",
+                "teamId": "20",
+                "team": "New York Jets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873030",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Detroit Lions v Minnesota Vikings",
+      "home": {
+        "id": "8",
+        "name": "Detroit Lions"
+      },
+      "away": {
+        "id": "16",
+        "name": "Minnesota Vikings"
+      },
+      "scores": {
+        "home": 19,
+        "away": 15,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Ford Field",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "8",
+        "name": "Detroit Lions"
+      },
+      "stats": {
+        "sourceId": "primary-11",
+        "playersRecorded": 59,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 210,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3917315",
+                "name": "Kyler Murray",
+                "teamId": "16",
+                "team": "Minnesota Vikings"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 153,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4429795",
+                "name": "Jahmyr Gibbs",
+                "teamId": "8",
+                "team": "Detroit Lions"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 70,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4426388",
+                "name": "Jameson Williams",
+                "teamId": "8",
+                "team": "Detroit Lions"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873031",
+      "startTime": "2026-11-01T18:00:00.000Z",
+      "kind": "match",
+      "label": "Cincinnati Bengals v Tennessee Titans",
+      "home": {
+        "id": "4",
+        "name": "Cincinnati Bengals"
+      },
+      "away": {
+        "id": "10",
+        "name": "Tennessee Titans"
+      },
+      "scores": {
+        "home": 43,
+        "away": 36,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Paycor Stadium",
+      "statusDetail": "Final/OT",
+      "winner": {
+        "side": "home",
+        "id": "4",
+        "name": "Cincinnati Bengals"
+      },
+      "stats": {
+        "sourceId": "primary-12",
+        "playersRecorded": 60,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 462,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3915511",
+                "name": "Joe Burrow",
+                "teamId": "4",
+                "team": "Cincinnati Bengals"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 117,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3916148",
+                "name": "Tony Pollard",
+                "teamId": "10",
+                "team": "Tennessee Titans"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 155,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4239993",
+                "name": "Tee Higgins",
+                "teamId": "4",
+                "team": "Cincinnati Bengals"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873032",
+      "startTime": "2026-11-01T21:05:00.000Z",
+      "kind": "match",
+      "label": "Los Angeles Rams v Los Angeles Chargers",
+      "home": {
+        "id": "14",
+        "name": "Los Angeles Rams"
+      },
+      "away": {
+        "id": "24",
+        "name": "Los Angeles Chargers"
+      },
+      "scores": {
+        "home": 24,
+        "away": 9,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "SoFi Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "14",
+        "name": "Los Angeles Rams"
+      },
+      "stats": {
+        "sourceId": "primary-13",
+        "playersRecorded": 57,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 257,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4038941",
+                "name": "Justin Herbert",
+                "teamId": "24",
+                "team": "Los Angeles Chargers"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 73,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4429096",
+                "name": "Blake Corum",
+                "teamId": "14",
+                "team": "Los Angeles Rams"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 86,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4612826",
+                "name": "Ladd McConkey",
+                "teamId": "24",
+                "team": "Los Angeles Chargers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873033",
+      "startTime": "2026-11-01T21:25:00.000Z",
+      "kind": "match",
+      "label": "Denver Broncos v Kansas City Chiefs",
+      "home": {
+        "id": "7",
+        "name": "Denver Broncos"
+      },
+      "away": {
+        "id": "12",
+        "name": "Kansas City Chiefs"
+      },
+      "scores": {
+        "home": 28,
+        "away": 24,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Empower Field at Mile High",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "7",
+        "name": "Denver Broncos"
+      },
+      "stats": {
+        "sourceId": "primary-14",
+        "playersRecorded": 63,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 321,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3139477",
+                "name": "Patrick Mahomes",
+                "teamId": "12",
+                "team": "Kansas City Chiefs"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 69,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4567048",
+                "name": "Kenneth Walker III",
+                "teamId": "12",
+                "team": "Kansas City Chiefs"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 128,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4832955",
+                "name": "Emmett Johnson",
+                "teamId": "12",
+                "team": "Kansas City Chiefs"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873034",
+      "startTime": "2026-11-01T21:25:00.000Z",
+      "kind": "match",
+      "label": "Miami Dolphins v New England Patriots",
+      "home": {
+        "id": "15",
+        "name": "Miami Dolphins"
+      },
+      "away": {
+        "id": "17",
+        "name": "New England Patriots"
+      },
+      "scores": {
+        "home": 19,
+        "away": 24,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Hard Rock Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "17",
+        "name": "New England Patriots"
+      },
+      "stats": {
+        "sourceId": "primary-15",
+        "playersRecorded": 60,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 211,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4242512",
+                "name": "Malik Willis",
+                "teamId": "15",
+                "team": "Miami Dolphins"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 82,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4569173",
+                "name": "Rhamondre Stevenson",
+                "teamId": "17",
+                "team": "New England Patriots"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 76,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4427095",
+                "name": "DeMario Douglas",
+                "teamId": "17",
+                "team": "New England Patriots"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nfl:401873035",
+      "startTime": "2026-11-02T01:20:00.000Z",
+      "kind": "match",
+      "label": "Washington Commanders v Philadelphia Eagles",
+      "home": {
+        "id": "28",
+        "name": "Washington Commanders"
+      },
+      "away": {
+        "id": "21",
+        "name": "Philadelphia Eagles"
+      },
+      "scores": {
+        "home": 27,
+        "away": 10,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Week 8",
+      "venue": "Northwest Stadium",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "28",
+        "name": "Washington Commanders"
+      },
+      "stats": {
+        "sourceId": "primary-16",
+        "playersRecorded": 57,
+        "leaders": [
+          {
+            "key": "passingYards",
+            "label": "Passing yards",
+            "value": 217,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4426348",
+                "name": "Jayden Daniels",
+                "teamId": "28",
+                "team": "Washington Commanders"
+              }
+            ]
+          },
+          {
+            "key": "rushingYards",
+            "label": "Rushing yards",
+            "value": 55,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4697815",
+                "name": "Rachaad White",
+                "teamId": "28",
+                "team": "Washington Commanders"
+              }
+            ]
+          },
+          {
+            "key": "receivingYards",
+            "label": "Receiving yards",
+            "value": 81,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4567156",
+                "name": "Treylon Burks",
+                "teamId": "28",
+                "team": "Washington Commanders"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "weeklyLeaders": [
+    {
+      "key": "passingYards",
+      "label": "Passing yards",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3915511",
+          "name": "Joe Burrow",
+          "teamId": "4",
+          "team": "Cincinnati Bengals",
+          "total": 462,
+          "gamesWithStatistic": 1,
+          "average": 462
+        },
+        {
+          "id": "4685201",
+          "name": "Tanner McKee",
+          "teamId": "21",
+          "team": "Philadelphia Eagles",
+          "total": 423,
+          "gamesWithStatistic": 2,
+          "average": 211.5
+        },
+        {
+          "id": "2577417",
+          "name": "Dak Prescott",
+          "teamId": "6",
+          "team": "Dallas Cowboys",
+          "total": 407,
+          "gamesWithStatistic": 2,
+          "average": 203.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "passingTouchdowns",
+      "label": "Passing touchdowns",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3915511",
+          "name": "Joe Burrow",
+          "teamId": "4",
+          "team": "Cincinnati Bengals",
+          "total": 5,
+          "gamesWithStatistic": 1,
+          "average": 5
+        },
+        {
+          "id": "2577417",
+          "name": "Dak Prescott",
+          "teamId": "6",
+          "team": "Dallas Cowboys",
+          "total": 4,
+          "gamesWithStatistic": 2,
+          "average": 2
+        },
+        {
+          "id": "4038524",
+          "name": "Gardner Minshew II",
+          "teamId": "22",
+          "team": "Arizona Cardinals",
+          "total": 3,
+          "gamesWithStatistic": 1,
+          "average": 3
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "rushingYards",
+      "label": "Rushing yards",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4361579",
+          "name": "Javonte Williams",
+          "teamId": "6",
+          "team": "Dallas Cowboys",
+          "total": 211,
+          "gamesWithStatistic": 2,
+          "average": 105.5
+        },
+        {
+          "id": "4596448",
+          "name": "Bucky Irving",
+          "teamId": "27",
+          "team": "Tampa Bay Buccaneers",
+          "total": 170,
+          "gamesWithStatistic": 1,
+          "average": 170
+        },
+        {
+          "id": "4429795",
+          "name": "Jahmyr Gibbs",
+          "teamId": "8",
+          "team": "Detroit Lions",
+          "total": 153,
+          "gamesWithStatistic": 1,
+          "average": 153
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "rushingTouchdowns",
+      "label": "Rushing touchdowns",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3929630",
+          "name": "Saquon Barkley",
+          "teamId": "21",
+          "team": "Philadelphia Eagles",
+          "total": 2,
+          "gamesWithStatistic": 2,
+          "average": 1
+        },
+        {
+          "id": "3916148",
+          "name": "Tony Pollard",
+          "teamId": "10",
+          "team": "Tennessee Titans",
+          "total": 2,
+          "gamesWithStatistic": 1,
+          "average": 2
+        },
+        {
+          "id": "4882093",
+          "name": "Bhayshul Tuten",
+          "teamId": "30",
+          "team": "Jacksonville Jaguars",
+          "total": 1,
+          "gamesWithStatistic": 1,
+          "average": 1
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "receivingYards",
+      "label": "Receiving yards",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4239993",
+          "name": "Tee Higgins",
+          "teamId": "4",
+          "team": "Cincinnati Bengals",
+          "total": 155,
+          "gamesWithStatistic": 1,
+          "average": 155
+        },
+        {
+          "id": "5083076",
+          "name": "Harold Fannin Jr.",
+          "teamId": "5",
+          "team": "Cleveland Browns",
+          "total": 154,
+          "gamesWithStatistic": 1,
+          "average": 154
+        },
+        {
+          "id": "4597500",
+          "name": "Adonai Mitchell",
+          "teamId": "20",
+          "team": "New York Jets",
+          "total": 142,
+          "gamesWithStatistic": 1,
+          "average": 142
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "receptions",
+      "label": "Receptions",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4870795",
+          "name": "Makai Lemon",
+          "teamId": "21",
+          "team": "Philadelphia Eagles",
+          "total": 13,
+          "gamesWithStatistic": 2,
+          "average": 6.5
+        },
+        {
+          "id": "4241389",
+          "name": "CeeDee Lamb",
+          "teamId": "6",
+          "team": "Dallas Cowboys",
+          "total": 12,
+          "gamesWithStatistic": 2,
+          "average": 6
+        },
+        {
+          "id": "4362628",
+          "name": "Ja'Marr Chase",
+          "teamId": "4",
+          "team": "Cincinnati Bengals",
+          "total": 11,
+          "gamesWithStatistic": 1,
+          "average": 11
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "totalTackles",
+      "label": "Tackles",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4602197",
+          "name": "Andrew Mukuba",
+          "teamId": "21",
+          "team": "Philadelphia Eagles",
+          "total": 16,
+          "gamesWithStatistic": 2,
+          "average": 8
+        },
+        {
+          "id": "3917657",
+          "name": "Zack Baun",
+          "teamId": "21",
+          "team": "Philadelphia Eagles",
+          "total": 16,
+          "gamesWithStatistic": 2,
+          "average": 8
+        },
+        {
+          "id": "4432777",
+          "name": "Jeremiah Trotter Jr.",
+          "teamId": "21",
+          "team": "Philadelphia Eagles",
+          "total": 15,
+          "gamesWithStatistic": 2,
+          "average": 7.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "sacks",
+      "label": "Sacks",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3138764",
+          "name": "Jacob Martin",
+          "teamId": "10",
+          "team": "Tennessee Titans",
+          "total": 3,
+          "gamesWithStatistic": 1,
+          "average": 3
+        },
+        {
+          "id": "4040982",
+          "name": "Quinnen Williams",
+          "teamId": "6",
+          "team": "Dallas Cowboys",
+          "total": 3,
+          "gamesWithStatistic": 2,
+          "average": 1.5
+        },
+        {
+          "id": "3133487",
+          "name": "Andrew Van Ginkel",
+          "teamId": "16",
+          "team": "Minnesota Vikings",
+          "total": 2.5,
+          "gamesWithStatistic": 1,
+          "average": 2.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    }
+  ]
+}

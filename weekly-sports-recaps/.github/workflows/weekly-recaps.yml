@@ -1,0 +1,115 @@
+name: Weekly sports recap drafts
+
+on:
+  schedule:
+    # Monday after the 18:00 Sydney cutoff, including during daylight saving.
+    - cron: '15 8 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Collect facts only (no OpenAI request)
+        type: boolean
+        required: true
+        default: true
+      sports:
+        description: Comma-separated sports, for example afl,f1 (blank uses config)
+        type: string
+        required: false
+      week_ending:
+        description: Cutoff date YYYY-MM-DD at 18:00 Sydney (blank uses latest completed Monday)
+        type: string
+        required: false
+      force:
+        description: Explicitly regenerate existing drafts (may make new API requests)
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-sports-recaps
+  cancel-in-progress: false
+
+env:
+  RECAP_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+  RECAP_SPORTS: ${{ inputs.sports || '' }}
+  RECAP_WEEK_ENDING: ${{ inputs.week_ending || '' }}
+  RECAP_FORCE: ${{ inputs.force || false }}
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out recap archive
+        uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Read configured source
+        id: source
+        run: |
+          node --input-type=module <<'NODE'
+          import {readFile, appendFile} from 'node:fs/promises';
+          const config = JSON.parse(await readFile('recaps.config.json', 'utf8'));
+          if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(config.sourceRepository || '')) throw new Error('Invalid source repository');
+          if (!/^[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(config.sourceBranch || '')) throw new Error('Invalid source branch');
+          await appendFile(process.env.GITHUB_OUTPUT, `repository=${config.sourceRepository}\nbranch=${config.sourceBranch}\n`);
+          NODE
+      - name: Check out saved sports data
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ steps.source.outputs.repository }}
+          ref: ${{ steps.source.outputs.branch }}
+          path: .source/cgrillo
+          persist-credentials: false
+      - name: Collect facts and prepare review drafts
+        id: recap
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-6-luna' }}
+        run: |
+          node --input-type=module <<'NODE'
+          import {spawnSync} from 'node:child_process';
+          const args = ['src/cli.mjs', 'run', '--source-dir', '.source/cgrillo'];
+          if (process.env.RECAP_DRY_RUN === 'true') args.push('--dry-run');
+          if (process.env.RECAP_SPORTS.trim()) args.push('--sports', process.env.RECAP_SPORTS.trim());
+          if (process.env.RECAP_WEEK_ENDING.trim()) args.push('--week-ending', process.env.RECAP_WEEK_ENDING.trim());
+          if (process.env.RECAP_FORCE === 'true') args.push('--force');
+          const result = spawnSync(process.execPath, args, {stdio: 'inherit', env: process.env});
+          if (result.error) throw result.error;
+          process.exitCode = result.status ?? 1;
+          NODE
+      - name: Archive available facts and drafts
+        if: ${{ !cancelled() && env.RECAP_DRY_RUN != 'true' && steps.recap.outcome != 'skipped' }}
+        run: node src/save-drafts.mjs
+      - name: Upload files for review
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: weekly-recap-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            facts/
+            drafts/
+            public/recaps.json
+            reports/
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Explain the review state
+        if: ${{ !cancelled() }}
+        run: |
+          node --input-type=module <<'NODE'
+          import {appendFile} from 'node:fs/promises';
+          const dryRun = process.env.RECAP_DRY_RUN === 'true';
+          const lines = [
+            '## Weekly recap review',
+            dryRun ? 'Facts-only run: no OpenAI request was requested by this workflow.' : 'Available outputs were prepared for human review. Check any failed steps before retrying.',
+            'Download the review artifact or browse committed facts/ and drafts/ files.',
+            'Every generated article is a draft. This workflow does not publish to the sports viewer.',
+            'Artifacts are retained for seven days; live-run archives remain in the repository.'
+          ];
+          await appendFile(process.env.GITHUB_STEP_SUMMARY, lines.join('\n\n') + '\n');
+          NODE

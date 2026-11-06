@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <script src="team-names.js"></script>
+    <script src="viewer-favourites.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Formula 3 race weekends, session classifications and championship standings.">
+    <title>F3 Fixtures & Standings | cgrillo</title>
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('cgrillo-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
+    <link rel="stylesheet" href="editorial.css">
+    <link rel="stylesheet" href="sports.css">
+    <script src="editorial.js" defer></script>
+    <script src="fixture-slider.js"></script>
+    <script src="sports.js" defer></script>
+    <script src="feeder-results.js"></script>
+    <script src="weekend-progress.js" defer></script>
+    <script src="f3.js" defer></script>
+    <link rel="stylesheet" href="sport-view.css">
+    <script src="sport-view.js"></script>
+    <link rel="stylesheet" href="f3.css">
+    <link rel="stylesheet" href="feeder-results.css">
+    <link rel="stylesheet" href="viewer-experience.css">
+    <script src="viewer-experience.js" defer></script>
+    <meta name="theme-color" content="#073d2e">
+    <link rel="stylesheet" href="viewer-favourites.css">
+    <link rel="stylesheet" href="viewer-discovery.css">
+    <script src="viewer-discovery.js" defer></script>
+</head>
+<body id="top" class="sports-page f3-page">
+    <main class="page">
+        <div class="frame">
+            <header class="masthead">
+                <div class="site-banner">
+                    <div class="masthead-meta"><span class="edition-label">Formula 3</span><time data-edition-date></time></div>
+                    <h1><a class="site-wordmark" href="index.html" aria-label="cgrillo home">cgrillo</a></h1>
+                    <p class="masthead-caption">Sports viewer</p>
+                </div>
+                <div class="topbar">
+                    <nav class="nav nav--permanent" aria-label="Primary">
+                        <a href="index.html">Home</a>
+                        <div class="sport-family" data-league-group="afl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="afl-menu afl-subnav">AFL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="afl-menu" data-league-menu hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
+                            <div class="sport-family__subnav" id="afl-subnav" data-league-subnav role="group" aria-label="AFL competitions" hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
+                        </div>
+                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html">F2</a><a href="f3.html" aria-current="page">F3</a></div></div>
+                        <div class="sport-family" data-league-group="nrl">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nrl-menu nrl-subnav">NRL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nrl-menu" data-league-menu hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                            <div class="sport-family__subnav" id="nrl-subnav" data-league-subnav role="group" aria-label="NRL competitions" hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
+                        </div>
+                        <div class="sport-family" data-league-group="nba">
+                            <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nba-menu nba-subnav">NBA <span class="sport-nav__chevron" aria-hidden="true"></span></button>
+                            <div class="sport-nav__dropdown" id="nba-menu" data-league-menu hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                            <div class="sport-family__subnav" id="nba-subnav" data-league-subnav role="group" aria-label="NBA competitions" hidden><a href="nba.html">NBA</a><a href="wnba.html">WNBA</a></div>
+                        </div>
+                        <a href="nbl.html">NBL</a>
+                        <a href="nfl.html">NFL</a>
+                        <a href="tennis.html">Tennis</a>
+                        <a href="about.html">About</a>
+                    </nav>
+                    <div class="topbar-actions"><button class="theme-toggle" type="button" data-about-theme aria-label="Toggle dark mode">Dark mode</button></div>
+                </div>
+            </header>
+            <section class="hero" aria-labelledby="f3-heading">
+                <div class="sports-heading"><div><p class="sports-kicker" data-f3-season>Current season</p><h2 id="f3-heading">Formula 3</h2></div><p class="sports-timezone">All session times in Sydney time</p></div>
+                <p class="sports-notice" data-f3-notice hidden role="status"></p>
+                <p class="sports-empty" data-f3-loading>Loading official F3 fixtures and results…</p>
+                <section class="viewer-dashboard f3-profile" data-f3-profile hidden aria-label="Current season profile"></section>
+                <div class="hero-grid sports-grid" data-f3-view hidden>
+                    <section class="fixtures-card" aria-labelledby="f3-fixtures-title">
+                        <div class="fixtures-card__head"><h3 id="f3-fixtures-title">Race weekends</h3><div class="round-selector"><button type="button" data-f3-prev aria-label="Previous F3 round">‹</button><span class="round-selector__value" data-f3-round></span><button type="button" data-f3-next aria-label="Next F3 round">›</button></div></div>
+                        <input type="range" class="round-slider" min="0" max="0" step="1" value="0" data-f3-slider aria-label="Select F3 round">
+                        <div class="f3-race" data-f3-race></div>
+                        <div class="sports-tabs session-tabs" data-f3-sessions role="group" aria-label="F3 sessions"></div>
+                        <div data-f3-results></div>
+                        <p class="sports-footnote">Classifications come from official F3 timing, with FIA lap-time records where available. Grid positions and penalty explanations appear only when supplied by the source. Select a driver or team to view their season profile.</p>
+                    </section>
+                    <aside class="ladder-card" aria-labelledby="f3-ladder-title"><div class="ladder-card__head"><h3 id="f3-ladder-title">Championship</h3></div><div class="sports-tabs" role="group" aria-label="F3 standings"><button type="button" data-f3-standing="drivers" aria-pressed="true">Drivers</button><button type="button" data-f3-standing="teams" aria-pressed="false">Teams</button></div><div data-f3-standings></div></aside>
+                </div>
+                <footer class="sports-source"><p><a data-f3-source href="https://www.fiaformula3.com/en/racing/2026" rel="noopener noreferrer" target="_blank">Official FIA Formula 3 calendar & results ↗</a></p><p data-f3-updated></p></footer>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

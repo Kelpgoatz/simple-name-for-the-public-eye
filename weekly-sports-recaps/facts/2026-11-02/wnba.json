@@ -1,0 +1,597 @@
+{
+  "schemaVersion": 1,
+  "sport": "wnba",
+  "name": "WNBA",
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "coverage": {
+    "status": "ready",
+    "totalEvents": 3,
+    "includedEvents": 3,
+    "truncated": false,
+    "omittedEvents": 0,
+    "excludedUnfinished": 0,
+    "completedWithoutTime": 0,
+    "incompleteEvents": 0,
+    "duplicateEvents": 0,
+    "conflictingEventIds": [],
+    "missingSources": [],
+    "statistics": {
+      "status": "available",
+      "eventsWithStats": 3,
+      "eventsWithoutStats": 0
+    },
+    "notes": [],
+    "partial": false,
+    "sourceErrors": []
+  },
+  "sources": [
+    {
+      "id": "generic",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/wnba.json",
+      "label": "WNBA saved fixtures and results",
+      "retrievedAt": "2026-11-06T02:27:12.714Z",
+      "updatedAt": "2026-11-04T09:33:01.588Z"
+    },
+    {
+      "id": "players",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/wnba-players.json",
+      "label": "WNBA saved individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.714Z",
+      "updatedAt": "2026-11-04T10:47:28.509Z"
+    },
+    {
+      "id": "primary-3",
+      "url": "https://www.espn.com/wnba/game/_/gameId/401918309",
+      "label": "WNBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.714Z"
+    },
+    {
+      "id": "primary-4",
+      "url": "https://www.espn.com/wnba/game/_/gameId/401918310",
+      "label": "WNBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.714Z"
+    },
+    {
+      "id": "primary-5",
+      "url": "https://www.espn.com/wnba/game/_/gameId/401918311",
+      "label": "WNBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.714Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "wnba:401918309",
+      "startTime": "2026-10-27T00:00:00.000Z",
+      "kind": "match",
+      "label": "Golden State Valkyries v Atlanta Dream",
+      "home": {
+        "id": "129689",
+        "name": "Golden State Valkyries"
+      },
+      "away": {
+        "id": "20",
+        "name": "Atlanta Dream"
+      },
+      "scores": {
+        "home": 64,
+        "away": 55,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Postseason",
+      "venue": "Chase Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "129689",
+        "name": "Golden State Valkyries"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 17,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 20,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4398674",
+                "name": "Rhyne Howard",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 15,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433402",
+                "name": "Angel Reese",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 5,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4433402",
+                "name": "Angel Reese",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              },
+              {
+                "id": "3142250",
+                "name": "Jordin Canada",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "wnba:401918310",
+      "startTime": "2026-10-29T16:30:00.000Z",
+      "kind": "match",
+      "label": "Atlanta Dream v Golden State Valkyries",
+      "home": {
+        "id": "20",
+        "name": "Atlanta Dream"
+      },
+      "away": {
+        "id": "129689",
+        "name": "Golden State Valkyries"
+      },
+      "scores": {
+        "home": 80,
+        "away": 69,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Postseason",
+      "venue": "State Farm Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "20",
+        "name": "Atlanta Dream"
+      },
+      "stats": {
+        "sourceId": "primary-4",
+        "playersRecorded": 16,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 26,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3142328",
+                "name": "Gabby Williams",
+                "teamId": "129689",
+                "team": "Golden State Valkyries"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433402",
+                "name": "Angel Reese",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 6,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433402",
+                "name": "Angel Reese",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "wnba:401918311",
+      "startTime": "2026-11-01T00:00:00.000Z",
+      "kind": "match",
+      "label": "Golden State Valkyries v Atlanta Dream",
+      "home": {
+        "id": "129689",
+        "name": "Golden State Valkyries"
+      },
+      "away": {
+        "id": "20",
+        "name": "Atlanta Dream"
+      },
+      "scores": {
+        "home": 68,
+        "away": 63,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Postseason",
+      "venue": "Chase Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "129689",
+        "name": "Golden State Valkyries"
+      },
+      "stats": {
+        "sourceId": "primary-5",
+        "playersRecorded": 15,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 30,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3142328",
+                "name": "Gabby Williams",
+                "teamId": "129689",
+                "team": "Golden State Valkyries"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2590093",
+                "name": "Kiah Stokes",
+                "teamId": "129689",
+                "team": "Golden State Valkyries"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 5,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3142250",
+                "name": "Jordin Canada",
+                "teamId": "20",
+                "team": "Atlanta Dream"
+              },
+              {
+                "id": "4398935",
+                "name": "Veronica Burton",
+                "teamId": "129689",
+                "team": "Golden State Valkyries"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "weeklyLeaders": [
+    {
+      "key": "points",
+      "label": "Points",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3142328",
+          "name": "Gabby Williams",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 65,
+          "gamesWithStatistic": 3,
+          "average": 21.667
+        },
+        {
+          "id": "3058901",
+          "name": "Allisha Gray",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 49,
+          "gamesWithStatistic": 3,
+          "average": 16.333
+        },
+        {
+          "id": "4398674",
+          "name": "Rhyne Howard",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 47,
+          "gamesWithStatistic": 3,
+          "average": 15.667
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "rebounds",
+      "label": "Rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4433402",
+          "name": "Angel Reese",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 41,
+          "gamesWithStatistic": 3,
+          "average": 13.667
+        },
+        {
+          "id": "2590093",
+          "name": "Kiah Stokes",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 28,
+          "gamesWithStatistic": 3,
+          "average": 9.333
+        },
+        {
+          "id": "4398935",
+          "name": "Veronica Burton",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 24,
+          "gamesWithStatistic": 3,
+          "average": 8
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "assists",
+      "label": "Assists",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4433402",
+          "name": "Angel Reese",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 12,
+          "gamesWithStatistic": 3,
+          "average": 4
+        },
+        {
+          "id": "3142250",
+          "name": "Jordin Canada",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 12,
+          "gamesWithStatistic": 3,
+          "average": 4
+        },
+        {
+          "id": "4398935",
+          "name": "Veronica Burton",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 12,
+          "gamesWithStatistic": 3,
+          "average": 4
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "steals",
+      "label": "Steals",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3142328",
+          "name": "Gabby Williams",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 8,
+          "gamesWithStatistic": 3,
+          "average": 2.667
+        },
+        {
+          "id": "3142250",
+          "name": "Jordin Canada",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 6,
+          "gamesWithStatistic": 3,
+          "average": 2
+        },
+        {
+          "id": "1054",
+          "name": "Tiffany Hayes",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 5,
+          "gamesWithStatistic": 3,
+          "average": 1.667
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "blocks",
+      "label": "Blocks",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3142328",
+          "name": "Gabby Williams",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 5,
+          "gamesWithStatistic": 3,
+          "average": 1.667
+        },
+        {
+          "id": "2590093",
+          "name": "Kiah Stokes",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 5,
+          "gamesWithStatistic": 3,
+          "average": 1.667
+        },
+        {
+          "id": "4398935",
+          "name": "Veronica Burton",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 5,
+          "gamesWithStatistic": 3,
+          "average": 1.667
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "threePointFieldGoalsMade",
+      "label": "Three-pointers",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3058901",
+          "name": "Allisha Gray",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 8,
+          "gamesWithStatistic": 3,
+          "average": 2.667
+        },
+        {
+          "id": "3142328",
+          "name": "Gabby Williams",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 7,
+          "gamesWithStatistic": 3,
+          "average": 2.333
+        },
+        {
+          "id": "4398674",
+          "name": "Rhyne Howard",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 7,
+          "gamesWithStatistic": 3,
+          "average": 2.333
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "offensiveRebounds",
+      "label": "Offensive rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4433402",
+          "name": "Angel Reese",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 10,
+          "gamesWithStatistic": 3,
+          "average": 3.333
+        },
+        {
+          "id": "4398915",
+          "name": "Naz Hillmon",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 8,
+          "gamesWithStatistic": 3,
+          "average": 2.667
+        },
+        {
+          "id": "4398935",
+          "name": "Veronica Burton",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 7,
+          "gamesWithStatistic": 3,
+          "average": 2.333
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "defensiveRebounds",
+      "label": "Defensive rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4433402",
+          "name": "Angel Reese",
+          "teamId": "20",
+          "team": "Atlanta Dream",
+          "total": 31,
+          "gamesWithStatistic": 3,
+          "average": 10.333
+        },
+        {
+          "id": "2590093",
+          "name": "Kiah Stokes",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 22,
+          "gamesWithStatistic": 3,
+          "average": 7.333
+        },
+        {
+          "id": "4398935",
+          "name": "Veronica Burton",
+          "teamId": "129689",
+          "team": "Golden State Valkyries",
+          "total": 17,
+          "gamesWithStatistic": 3,
+          "average": 5.667
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    }
+  ]
+}

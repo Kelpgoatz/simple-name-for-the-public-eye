@@ -1,0 +1,1022 @@
+{
+  "schemaVersion": 1,
+  "sport": "nbl",
+  "name": "NBL",
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "coverage": {
+    "status": "ready",
+    "totalEvents": 8,
+    "includedEvents": 8,
+    "truncated": false,
+    "omittedEvents": 0,
+    "excludedUnfinished": 0,
+    "completedWithoutTime": 0,
+    "incompleteEvents": 0,
+    "duplicateEvents": 0,
+    "conflictingEventIds": [],
+    "missingSources": [],
+    "statistics": {
+      "status": "available",
+      "eventsWithStats": 8,
+      "eventsWithoutStats": 0
+    },
+    "notes": [],
+    "partial": false,
+    "sourceErrors": []
+  },
+  "sources": [
+    {
+      "id": "generic",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nbl.json",
+      "label": "NBL saved fixtures and results",
+      "retrievedAt": "2026-11-06T02:27:12.726Z",
+      "updatedAt": "2026-11-04T08:50:35.267Z"
+    },
+    {
+      "id": "players",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nbl-players.json",
+      "label": "NBL saved individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z",
+      "updatedAt": "2026-11-04T10:47:28.509Z"
+    },
+    {
+      "id": "primary-3",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875292",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-4",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875280",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-5",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875293",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-6",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875278",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-7",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875291",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-8",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875285",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-9",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875313",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    },
+    {
+      "id": "primary-10",
+      "url": "https://www.espn.com/nbl/game/_/gameId/401875288",
+      "label": "NBL individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.726Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "nbl:401875292",
+      "startTime": "2026-10-28T10:30:00.000Z",
+      "kind": "match",
+      "label": "Perth Wildcats v Sydney Kings",
+      "home": {
+        "id": "7",
+        "name": "Perth Wildcats"
+      },
+      "away": {
+        "id": "9",
+        "name": "Sydney Kings"
+      },
+      "scores": {
+        "home": 91,
+        "away": 99,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Wed, 28 Oct 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "9",
+        "name": "Sydney Kings"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5454075",
+                "name": "Brandon Knight",
+                "teamId": "7",
+                "team": "Perth Wildcats"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 15,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5173762",
+                "name": "Kristian Doolittle",
+                "teamId": "7",
+                "team": "Perth Wildcats"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397066",
+                "name": "Kendric Davis",
+                "teamId": "9",
+                "team": "Sydney Kings"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875280",
+      "startTime": "2026-10-29T09:00:00.000Z",
+      "kind": "match",
+      "label": "Brisbane Bullets v Cairns Taipans",
+      "home": {
+        "id": "2",
+        "name": "Brisbane Bullets"
+      },
+      "away": {
+        "id": "3",
+        "name": "Cairns Taipans"
+      },
+      "scores": {
+        "home": 85,
+        "away": 107,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "3",
+        "name": "Cairns Taipans"
+      },
+      "stats": {
+        "sourceId": "primary-4",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 23,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3911893",
+                "name": "Jack McVeigh",
+                "teamId": "3",
+                "team": "Cairns Taipans"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3155533",
+                "name": "Jonah Bolden",
+                "teamId": "3",
+                "team": "Cairns Taipans"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 5,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5447257",
+                "name": "Jaylon Brown",
+                "teamId": "3",
+                "team": "Cairns Taipans"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875293",
+      "startTime": "2026-10-30T06:30:00.000Z",
+      "kind": "match",
+      "label": "New Zealand Breakers v Adelaide 36ers",
+      "home": {
+        "id": "6",
+        "name": "New Zealand Breakers"
+      },
+      "away": {
+        "id": "1",
+        "name": "Adelaide 36ers"
+      },
+      "scores": {
+        "home": 101,
+        "away": 108,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Fri, 30 Oct 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "1",
+        "name": "Adelaide 36ers"
+      },
+      "stats": {
+        "sourceId": "primary-5",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 31,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2531054",
+                "name": "Bryce Cotton",
+                "teamId": "1",
+                "team": "Adelaide 36ers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4066437",
+                "name": "Nick Rakocevic",
+                "teamId": "1",
+                "team": "Adelaide 36ers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5166764",
+                "name": "Carlin Davison",
+                "teamId": "6",
+                "team": "New Zealand Breakers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875278",
+      "startTime": "2026-10-30T08:30:00.000Z",
+      "kind": "match",
+      "label": "Tasmania JackJumpers v Sydney Kings",
+      "home": {
+        "id": "10",
+        "name": "Tasmania JackJumpers"
+      },
+      "away": {
+        "id": "9",
+        "name": "Sydney Kings"
+      },
+      "scores": {
+        "home": 68,
+        "away": 71,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Fri, 30 Oct 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "9",
+        "name": "Sydney Kings"
+      },
+      "stats": {
+        "sourceId": "primary-6",
+        "playersRecorded": 18,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 20,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3136991",
+                "name": "Dakota Mathias",
+                "teamId": "10",
+                "team": "Tasmania JackJumpers"
+              },
+              {
+                "id": "4397066",
+                "name": "Kendric Davis",
+                "teamId": "9",
+                "team": "Sydney Kings"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4066480",
+                "name": "Will Magnay",
+                "teamId": "10",
+                "team": "Tasmania JackJumpers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397066",
+                "name": "Kendric Davis",
+                "teamId": "9",
+                "team": "Sydney Kings"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875291",
+      "startTime": "2026-10-31T08:30:00.000Z",
+      "kind": "match",
+      "label": "Cairns Taipans v Melbourne United",
+      "home": {
+        "id": "3",
+        "name": "Cairns Taipans"
+      },
+      "away": {
+        "id": "5",
+        "name": "Melbourne United"
+      },
+      "scores": {
+        "home": 97,
+        "away": 113,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "5",
+        "name": "Melbourne United"
+      },
+      "stats": {
+        "sourceId": "primary-7",
+        "playersRecorded": 23,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 26,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5402939",
+                "name": "Josh Oduro",
+                "teamId": "5",
+                "team": "Melbourne United"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 7,
+            "tiedPlayers": 3,
+            "players": [
+              {
+                "id": "5443472",
+                "name": "Cole Anthony",
+                "teamId": "5",
+                "team": "Melbourne United"
+              },
+              {
+                "id": "3155533",
+                "name": "Jonah Bolden",
+                "teamId": "3",
+                "team": "Cairns Taipans"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3911893",
+                "name": "Jack McVeigh",
+                "teamId": "3",
+                "team": "Cairns Taipans"
+              },
+              {
+                "id": "5447257",
+                "name": "Jaylon Brown",
+                "teamId": "3",
+                "team": "Cairns Taipans"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875285",
+      "startTime": "2026-10-31T10:30:00.000Z",
+      "kind": "match",
+      "label": "Perth Wildcats v Illawarra Hawks",
+      "home": {
+        "id": "7",
+        "name": "Perth Wildcats"
+      },
+      "away": {
+        "id": "4",
+        "name": "Illawarra Hawks"
+      },
+      "scores": {
+        "home": 98,
+        "away": 105,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "4",
+        "name": "Illawarra Hawks"
+      },
+      "stats": {
+        "sourceId": "primary-8",
+        "playersRecorded": 21,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 23,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5447958",
+                "name": "Kelan Martin",
+                "teamId": "4",
+                "team": "Illawarra Hawks"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3906786",
+                "name": "Dylan Windler",
+                "teamId": "7",
+                "team": "Perth Wildcats"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5090847",
+                "name": "William Hickey",
+                "teamId": "4",
+                "team": "Illawarra Hawks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875313",
+      "startTime": "2026-11-01T04:00:00.000Z",
+      "kind": "match",
+      "label": "South East Melbourne Phoenix v Tasmania JackJumpers",
+      "home": {
+        "id": "8",
+        "name": "South East Melbourne Phoenix"
+      },
+      "away": {
+        "id": "10",
+        "name": "Tasmania JackJumpers"
+      },
+      "scores": {
+        "home": 89,
+        "away": 98,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "10",
+        "name": "Tasmania JackJumpers"
+      },
+      "stats": {
+        "sourceId": "primary-9",
+        "playersRecorded": 17,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5402935",
+                "name": "D'Shawn Schwartz",
+                "teamId": "8",
+                "team": "South East Melbourne Phoenix"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 7,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3136991",
+                "name": "Dakota Mathias",
+                "teamId": "10",
+                "team": "Tasmania JackJumpers"
+              },
+              {
+                "id": "5090851",
+                "name": "Nick Marshall",
+                "teamId": "10",
+                "team": "Tasmania JackJumpers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 6,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3136991",
+                "name": "Dakota Mathias",
+                "teamId": "10",
+                "team": "Tasmania JackJumpers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nbl:401875288",
+      "startTime": "2026-11-01T06:00:00.000Z",
+      "kind": "match",
+      "label": "Adelaide 36ers v Brisbane Bullets",
+      "home": {
+        "id": "1",
+        "name": "Adelaide 36ers"
+      },
+      "away": {
+        "id": "2",
+        "name": "Brisbane Bullets"
+      },
+      "scores": {
+        "home": 89,
+        "away": 96,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "2",
+        "name": "Brisbane Bullets"
+      },
+      "stats": {
+        "sourceId": "primary-10",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2531054",
+                "name": "Bryce Cotton",
+                "teamId": "1",
+                "team": "Adelaide 36ers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4278785",
+                "name": "Tyrell Harrison",
+                "teamId": "2",
+                "team": "Brisbane Bullets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "2531054",
+                "name": "Bryce Cotton",
+                "teamId": "1",
+                "team": "Adelaide 36ers"
+              },
+              {
+                "id": "3137713",
+                "name": "Zylan Cheatham",
+                "teamId": "1",
+                "team": "Adelaide 36ers"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "weeklyLeaders": [
+    {
+      "key": "points",
+      "label": "Points",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "2531054",
+          "name": "Bryce Cotton",
+          "teamId": "1",
+          "team": "Adelaide 36ers",
+          "total": 58,
+          "gamesWithStatistic": 2,
+          "average": 29
+        },
+        {
+          "id": "4397066",
+          "name": "Kendric Davis",
+          "teamId": "9",
+          "team": "Sydney Kings",
+          "total": 44,
+          "gamesWithStatistic": 2,
+          "average": 22
+        },
+        {
+          "id": "3136991",
+          "name": "Dakota Mathias",
+          "teamId": "10",
+          "team": "Tasmania JackJumpers",
+          "total": 42,
+          "gamesWithStatistic": 2,
+          "average": 21
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "rebounds",
+      "label": "Rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3155533",
+          "name": "Jonah Bolden",
+          "teamId": "3",
+          "team": "Cairns Taipans",
+          "total": 20,
+          "gamesWithStatistic": 2,
+          "average": 10
+        },
+        {
+          "id": "5173762",
+          "name": "Kristian Doolittle",
+          "teamId": "7",
+          "team": "Perth Wildcats",
+          "total": 20,
+          "gamesWithStatistic": 2,
+          "average": 10
+        },
+        {
+          "id": "4066480",
+          "name": "Will Magnay",
+          "teamId": "10",
+          "team": "Tasmania JackJumpers",
+          "total": 20,
+          "gamesWithStatistic": 2,
+          "average": 10
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "assists",
+      "label": "Assists",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4397066",
+          "name": "Kendric Davis",
+          "teamId": "9",
+          "team": "Sydney Kings",
+          "total": 18,
+          "gamesWithStatistic": 2,
+          "average": 9
+        },
+        {
+          "id": "2531054",
+          "name": "Bryce Cotton",
+          "teamId": "1",
+          "team": "Adelaide 36ers",
+          "total": 15,
+          "gamesWithStatistic": 2,
+          "average": 7.5
+        },
+        {
+          "id": "5447257",
+          "name": "Jaylon Brown",
+          "teamId": "3",
+          "team": "Cairns Taipans",
+          "total": 12,
+          "gamesWithStatistic": 2,
+          "average": 6
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "steals",
+      "label": "Steals",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "5447894",
+          "name": "Nate Hinton",
+          "teamId": "2",
+          "team": "Brisbane Bullets",
+          "total": 7,
+          "gamesWithStatistic": 2,
+          "average": 3.5
+        },
+        {
+          "id": "3906786",
+          "name": "Dylan Windler",
+          "teamId": "7",
+          "team": "Perth Wildcats",
+          "total": 6,
+          "gamesWithStatistic": 2,
+          "average": 3
+        },
+        {
+          "id": "3155533",
+          "name": "Jonah Bolden",
+          "teamId": "3",
+          "team": "Cairns Taipans",
+          "total": 6,
+          "gamesWithStatistic": 2,
+          "average": 3
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "blocks",
+      "label": "Blocks",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "5448475",
+          "name": "Charles Bediako",
+          "teamId": "6",
+          "team": "New Zealand Breakers",
+          "total": 5,
+          "gamesWithStatistic": 1,
+          "average": 5
+        },
+        {
+          "id": "3155533",
+          "name": "Jonah Bolden",
+          "teamId": "3",
+          "team": "Cairns Taipans",
+          "total": 5,
+          "gamesWithStatistic": 2,
+          "average": 2.5
+        },
+        {
+          "id": "4066480",
+          "name": "Will Magnay",
+          "teamId": "10",
+          "team": "Tasmania JackJumpers",
+          "total": 5,
+          "gamesWithStatistic": 2,
+          "average": 2.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "threePointFieldGoalsMade",
+      "label": "Three-pointers",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4692906",
+          "name": "Taine Murray",
+          "teamId": "2",
+          "team": "Brisbane Bullets",
+          "total": 9,
+          "gamesWithStatistic": 2,
+          "average": 4.5
+        },
+        {
+          "id": "3136991",
+          "name": "Dakota Mathias",
+          "teamId": "10",
+          "team": "Tasmania JackJumpers",
+          "total": 7,
+          "gamesWithStatistic": 2,
+          "average": 3.5
+        },
+        {
+          "id": "3911893",
+          "name": "Jack McVeigh",
+          "teamId": "3",
+          "team": "Cairns Taipans",
+          "total": 7,
+          "gamesWithStatistic": 2,
+          "average": 3.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "offensiveRebounds",
+      "label": "Offensive rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4066437",
+          "name": "Nick Rakocevic",
+          "teamId": "1",
+          "team": "Adelaide 36ers",
+          "total": 10,
+          "gamesWithStatistic": 2,
+          "average": 5
+        },
+        {
+          "id": "4278785",
+          "name": "Tyrell Harrison",
+          "teamId": "2",
+          "team": "Brisbane Bullets",
+          "total": 10,
+          "gamesWithStatistic": 2,
+          "average": 5
+        },
+        {
+          "id": "4702058",
+          "name": "Josh Bannan",
+          "teamId": "10",
+          "team": "Tasmania JackJumpers",
+          "total": 7,
+          "gamesWithStatistic": 2,
+          "average": 3.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "defensiveRebounds",
+      "label": "Defensive rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "5173762",
+          "name": "Kristian Doolittle",
+          "teamId": "7",
+          "team": "Perth Wildcats",
+          "total": 17,
+          "gamesWithStatistic": 2,
+          "average": 8.5
+        },
+        {
+          "id": "3155533",
+          "name": "Jonah Bolden",
+          "teamId": "3",
+          "team": "Cairns Taipans",
+          "total": 16,
+          "gamesWithStatistic": 2,
+          "average": 8
+        },
+        {
+          "id": "4066480",
+          "name": "Will Magnay",
+          "teamId": "10",
+          "team": "Tasmania JackJumpers",
+          "total": 16,
+          "gamesWithStatistic": 2,
+          "average": 8
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    }
+  ]
+}

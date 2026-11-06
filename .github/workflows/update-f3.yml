@@ -1,0 +1,42 @@
+name: Update Formula 3
+on:
+  schedule:
+    - cron: '21,51 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/save-data.mjs'
+      - 'scripts/update-f3.mjs'
+      - 'scripts/lib/f3-source.mjs'
+      - 'scripts/lib/f2-source.mjs'
+      - 'scripts/lib/fia-feeder-classifications.mjs'
+      - 'scripts/lib/fia-feeder-pdf.mjs'
+      - 'scripts/package.json'
+      - 'scripts/package-lock.json'
+      - '.github/workflows/update-f3.yml'
+permissions:
+  contents: write
+concurrency:
+  group: update-f3
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install PDF timing reader
+        run: npm ci --prefix scripts
+      - name: Import official calendar, sessions and standings
+        id: refresh
+        continue-on-error: true
+        run: node scripts/update-f3.mjs
+      - name: Save available updates
+        run: node scripts/save-data.mjs "Update F3 fixtures and standings" f3-data.json
+      - name: Report incomplete import
+        if: steps.refresh.outcome == 'failure'
+        run: exit 1

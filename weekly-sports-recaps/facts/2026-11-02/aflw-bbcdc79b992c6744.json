@@ -1,0 +1,1065 @@
+{
+  "schemaVersion": 1,
+  "sport": "aflw",
+  "name": "AFLW",
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "coverage": {
+    "status": "ready",
+    "totalEvents": 9,
+    "includedEvents": 9,
+    "truncated": false,
+    "omittedEvents": 0,
+    "excludedUnfinished": 0,
+    "completedWithoutTime": 0,
+    "incompleteEvents": 0,
+    "duplicateEvents": 0,
+    "conflictingEventIds": [],
+    "missingSources": [],
+    "statistics": {
+      "status": "available",
+      "eventsWithStats": 9,
+      "eventsWithoutStats": 0
+    },
+    "notes": [],
+    "partial": false,
+    "sourceErrors": []
+  },
+  "sources": [
+    {
+      "id": "generic",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/aflw.json",
+      "label": "AFLW saved fixtures and results",
+      "retrievedAt": "2026-11-06T02:27:12.640Z",
+      "updatedAt": "2026-11-04T09:33:01.588Z"
+    },
+    {
+      "id": "players",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/aflw-players.json",
+      "label": "AFLW saved individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.640Z",
+      "updatedAt": "2026-11-04T10:47:28.509Z"
+    },
+    {
+      "id": "primary-3",
+      "url": "https://www.afl.com.au/aflw/stats",
+      "label": "AFLW individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.640Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "aflw:8978",
+      "startTime": "2026-10-30T08:15:00.000Z",
+      "kind": "match",
+      "label": "Geelong Cats v Western Bulldogs",
+      "home": {
+        "id": "26",
+        "name": "Geelong Cats"
+      },
+      "away": {
+        "id": "32",
+        "name": "Western Bulldogs"
+      },
+      "scores": {
+        "home": 88,
+        "away": 20,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "GMHBA Stadium · Geelong",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "home",
+        "id": "26",
+        "name": "Geelong Cats"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 30,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I997709",
+                "name": "Amy McDonald",
+                "teamId": "26",
+                "team": "Geelong Cats"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 5,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1018405",
+                "name": "Jacqueline Parry",
+                "teamId": "26",
+                "team": "Geelong Cats"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1009863",
+                "name": "Nina Morrison",
+                "teamId": "26",
+                "team": "Geelong Cats"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8984",
+      "startTime": "2026-10-31T02:05:00.000Z",
+      "kind": "match",
+      "label": "St Kilda v Port Adelaide",
+      "home": {
+        "id": "36",
+        "name": "St Kilda"
+      },
+      "away": {
+        "id": "120",
+        "name": "Port Adelaide"
+      },
+      "scores": {
+        "home": 45,
+        "away": 51,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "RSEA Park · Melbourne",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "120",
+        "name": "Port Adelaide"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 22,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1012987",
+                "name": "Serene Watson",
+                "teamId": "36",
+                "team": "St Kilda"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 3,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1015060",
+                "name": "Nicola Xenos",
+                "teamId": "36",
+                "team": "St Kilda"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 9,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "CD_I1026239",
+                "name": "Maya Louvel-Finn",
+                "teamId": "36",
+                "team": "St Kilda"
+              },
+              {
+                "id": "CD_I1022196",
+                "name": "Piper Window",
+                "teamId": "120",
+                "team": "Port Adelaide"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8980",
+      "startTime": "2026-10-31T04:05:00.000Z",
+      "kind": "match",
+      "label": "Richmond v North Melbourne",
+      "home": {
+        "id": "34",
+        "name": "Richmond"
+      },
+      "away": {
+        "id": "30",
+        "name": "North Melbourne"
+      },
+      "scores": {
+        "home": 33,
+        "away": 101,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Windy Hill · Melbourne",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "30",
+        "name": "North Melbourne"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 33,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1010104",
+                "name": "Monique Conti",
+                "teamId": "34",
+                "team": "Richmond"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 3,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1003023",
+                "name": "Tahlia Randall",
+                "teamId": "30",
+                "team": "North Melbourne"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 6,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1022885",
+                "name": "Taylah Gatt",
+                "teamId": "30",
+                "team": "North Melbourne"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8981",
+      "startTime": "2026-10-31T06:05:00.000Z",
+      "kind": "match",
+      "label": "Brisbane Lions v Carlton",
+      "home": {
+        "id": "21",
+        "name": "Brisbane Lions"
+      },
+      "away": {
+        "id": "22",
+        "name": "Carlton"
+      },
+      "scores": {
+        "home": 35,
+        "away": 40,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Brighton Homes Arena · Ipswich",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "22",
+        "name": "Carlton"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 28,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1013027",
+                "name": "Abbie McKay",
+                "teamId": "22",
+                "team": "Carlton"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 3,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1025677",
+                "name": "Sophie McKay",
+                "teamId": "22",
+                "team": "Carlton"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 7,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1005630",
+                "name": "Alexandra Anderson",
+                "teamId": "21",
+                "team": "Brisbane Lions"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8982",
+      "startTime": "2026-10-31T08:15:00.000Z",
+      "kind": "match",
+      "label": "West Coast Eagles v Hawthorn",
+      "home": {
+        "id": "35",
+        "name": "West Coast Eagles"
+      },
+      "away": {
+        "id": "119",
+        "name": "Hawthorn"
+      },
+      "scores": {
+        "home": 39,
+        "away": 94,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Sullivan Logistics Stadium · Perth",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "119",
+        "name": "Hawthorn"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1026929",
+                "name": "Lucy Wales",
+                "teamId": "119",
+                "team": "Hawthorn"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 3,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "CD_I1029626",
+                "name": "Aine McDonagh",
+                "teamId": "119",
+                "team": "Hawthorn"
+              },
+              {
+                "id": "CD_I1021417",
+                "name": "Poppy Stockwell",
+                "teamId": "119",
+                "team": "Hawthorn"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1025671",
+                "name": "Daisy Flockart",
+                "teamId": "119",
+                "team": "Hawthorn"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8983",
+      "startTime": "2026-11-01T01:35:00.000Z",
+      "kind": "match",
+      "label": "GWS GIANTS v Gold Coast SUNS",
+      "home": {
+        "id": "28",
+        "name": "GWS GIANTS"
+      },
+      "away": {
+        "id": "33",
+        "name": "Gold Coast SUNS"
+      },
+      "scores": {
+        "home": 53,
+        "away": 62,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Henson Park · Sydney",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "33",
+        "name": "Gold Coast SUNS"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 33,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1015068",
+                "name": "Charlie Rowbottom",
+                "teamId": "33",
+                "team": "Gold Coast SUNS"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 3,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1009822",
+                "name": "Georgia Garnett",
+                "teamId": "28",
+                "team": "GWS GIANTS"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 7,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1009799",
+                "name": "Alyce Parker",
+                "teamId": "28",
+                "team": "GWS GIANTS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8986",
+      "startTime": "2026-11-01T02:05:00.000Z",
+      "kind": "match",
+      "label": "Essendon v Collingwood",
+      "home": {
+        "id": "118",
+        "name": "Essendon"
+      },
+      "away": {
+        "id": "24",
+        "name": "Collingwood"
+      },
+      "scores": {
+        "home": 38,
+        "away": 31,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Windy Hill · Melbourne",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "home",
+        "id": "118",
+        "name": "Essendon"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 34,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1009885",
+                "name": "Madison Prespakis",
+                "teamId": "118",
+                "team": "Essendon"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 1,
+            "tiedPlayers": 8,
+            "players": [
+              {
+                "id": "CD_I1025419",
+                "name": "Ashley Centra",
+                "teamId": "24",
+                "team": "Collingwood"
+              },
+              {
+                "id": "CD_I1010690",
+                "name": "Bonnie Toogood",
+                "teamId": "118",
+                "team": "Essendon"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 6,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "CD_I1013522",
+                "name": "Georgia Nanscawen",
+                "teamId": "118",
+                "team": "Essendon"
+              },
+              {
+                "id": "CD_I1009831",
+                "name": "Tarni White",
+                "teamId": "24",
+                "team": "Collingwood"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8985",
+      "startTime": "2026-11-01T04:05:00.000Z",
+      "kind": "match",
+      "label": "Adelaide Crows v Melbourne",
+      "home": {
+        "id": "19",
+        "name": "Adelaide Crows"
+      },
+      "away": {
+        "id": "29",
+        "name": "Melbourne"
+      },
+      "scores": {
+        "home": 29,
+        "away": 47,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Unley Oval · Adelaide",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "29",
+        "name": "Melbourne"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 33,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1005279",
+                "name": "Ebony Marinoff",
+                "teamId": "19",
+                "team": "Adelaide Crows"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 3,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1035371",
+                "name": "Ryleigh Wotherspoon",
+                "teamId": "29",
+                "team": "Melbourne"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1005279",
+                "name": "Ebony Marinoff",
+                "teamId": "19",
+                "team": "Adelaide Crows"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aflw:8987",
+      "startTime": "2026-11-01T06:05:00.000Z",
+      "kind": "match",
+      "label": "Fremantle v Sydney Swans",
+      "home": {
+        "id": "25",
+        "name": "Fremantle"
+      },
+      "away": {
+        "id": "121",
+        "name": "Sydney Swans"
+      },
+      "scores": {
+        "home": 36,
+        "away": 37,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Round 12",
+      "venue": "Cockburn ARC Oval · Perth",
+      "statusDetail": "Full time",
+      "winner": {
+        "side": "away",
+        "id": "121",
+        "name": "Sydney Swans"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 42,
+        "leaders": [
+          {
+            "key": "disposals",
+            "label": "Disposals",
+            "value": 27,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "CD_I1014359",
+                "name": "Laura Gardiner",
+                "teamId": "121",
+                "team": "Sydney Swans"
+              },
+              {
+                "id": "CD_I1017347",
+                "name": "Mim Strom",
+                "teamId": "25",
+                "team": "Fremantle"
+              }
+            ]
+          },
+          {
+            "key": "goals",
+            "label": "Goals",
+            "value": 4,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1010263",
+                "name": "Chloe Molloy",
+                "teamId": "121",
+                "team": "Sydney Swans"
+              }
+            ]
+          },
+          {
+            "key": "tackles",
+            "label": "Tackles",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "CD_I1033348",
+                "name": "Imogen Brown",
+                "teamId": "121",
+                "team": "Sydney Swans"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "weeklyLeaders": [
+    {
+      "key": "disposals",
+      "label": "Disposals",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1009885",
+          "name": "Madison Prespakis",
+          "teamId": "118",
+          "team": "Essendon",
+          "total": 34,
+          "gamesWithStatistic": 1,
+          "average": 34
+        },
+        {
+          "id": "CD_I1015068",
+          "name": "Charlie Rowbottom",
+          "teamId": "33",
+          "team": "Gold Coast SUNS",
+          "total": 33,
+          "gamesWithStatistic": 1,
+          "average": 33
+        },
+        {
+          "id": "CD_I1005279",
+          "name": "Ebony Marinoff",
+          "teamId": "19",
+          "team": "Adelaide Crows",
+          "total": 33,
+          "gamesWithStatistic": 1,
+          "average": 33
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "handballs",
+      "label": "Handballs",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1022111",
+          "name": "Eliza West",
+          "teamId": "119",
+          "team": "Hawthorn",
+          "total": 21,
+          "gamesWithStatistic": 1,
+          "average": 21
+        },
+        {
+          "id": "CD_I1009906",
+          "name": "Mikayla Bowen",
+          "teamId": "26",
+          "team": "Geelong Cats",
+          "total": 20,
+          "gamesWithStatistic": 1,
+          "average": 20
+        },
+        {
+          "id": "CD_I1010104",
+          "name": "Monique Conti",
+          "teamId": "34",
+          "team": "Richmond",
+          "total": 18,
+          "gamesWithStatistic": 1,
+          "average": 18
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "kicks",
+      "label": "Kicks",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1015068",
+          "name": "Charlie Rowbottom",
+          "teamId": "33",
+          "team": "Gold Coast SUNS",
+          "total": 22,
+          "gamesWithStatistic": 1,
+          "average": 22
+        },
+        {
+          "id": "CD_I1005279",
+          "name": "Ebony Marinoff",
+          "teamId": "19",
+          "team": "Adelaide Crows",
+          "total": 22,
+          "gamesWithStatistic": 1,
+          "average": 22
+        },
+        {
+          "id": "CD_I1010263",
+          "name": "Chloe Molloy",
+          "teamId": "121",
+          "team": "Sydney Swans",
+          "total": 21,
+          "gamesWithStatistic": 1,
+          "average": 21
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "goals",
+      "label": "Goals",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1018405",
+          "name": "Jacqueline Parry",
+          "teamId": "26",
+          "team": "Geelong Cats",
+          "total": 5,
+          "gamesWithStatistic": 1,
+          "average": 5
+        },
+        {
+          "id": "CD_I1010263",
+          "name": "Chloe Molloy",
+          "teamId": "121",
+          "team": "Sydney Swans",
+          "total": 4,
+          "gamesWithStatistic": 1,
+          "average": 4
+        },
+        {
+          "id": "CD_I1029626",
+          "name": "Aine McDonagh",
+          "teamId": "119",
+          "team": "Hawthorn",
+          "total": 3,
+          "gamesWithStatistic": 1,
+          "average": 3
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "marks",
+      "label": "Marks",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1025525",
+          "name": "Amy Gaylor",
+          "teamId": "118",
+          "team": "Essendon",
+          "total": 9,
+          "gamesWithStatistic": 1,
+          "average": 9
+        },
+        {
+          "id": "CD_I1022736",
+          "name": "Jessica Doyle",
+          "teamId": "28",
+          "team": "GWS GIANTS",
+          "total": 9,
+          "gamesWithStatistic": 1,
+          "average": 9
+        },
+        {
+          "id": "CD_I1009836",
+          "name": "Natalie Grider",
+          "teamId": "21",
+          "team": "Brisbane Lions",
+          "total": 8,
+          "gamesWithStatistic": 1,
+          "average": 8
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "tackles",
+      "label": "Tackles",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1009863",
+          "name": "Nina Morrison",
+          "teamId": "26",
+          "team": "Geelong Cats",
+          "total": 14,
+          "gamesWithStatistic": 1,
+          "average": 14
+        },
+        {
+          "id": "CD_I1005279",
+          "name": "Ebony Marinoff",
+          "teamId": "19",
+          "team": "Adelaide Crows",
+          "total": 12,
+          "gamesWithStatistic": 1,
+          "average": 12
+        },
+        {
+          "id": "CD_I1025671",
+          "name": "Daisy Flockart",
+          "teamId": "119",
+          "team": "Hawthorn",
+          "total": 11,
+          "gamesWithStatistic": 1,
+          "average": 11
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "clearances",
+      "label": "Clearances",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1022111",
+          "name": "Eliza West",
+          "teamId": "119",
+          "team": "Hawthorn",
+          "total": 14,
+          "gamesWithStatistic": 1,
+          "average": 14
+        },
+        {
+          "id": "CD_I1015068",
+          "name": "Charlie Rowbottom",
+          "teamId": "33",
+          "team": "Gold Coast SUNS",
+          "total": 12,
+          "gamesWithStatistic": 1,
+          "average": 12
+        },
+        {
+          "id": "CD_I1009799",
+          "name": "Alyce Parker",
+          "teamId": "28",
+          "team": "GWS GIANTS",
+          "total": 9,
+          "gamesWithStatistic": 1,
+          "average": 9
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "hitouts",
+      "label": "Hitouts",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "CD_I1023943",
+          "name": "Matilda Scholz",
+          "teamId": "120",
+          "team": "Port Adelaide",
+          "total": 37,
+          "gamesWithStatistic": 1,
+          "average": 37
+        },
+        {
+          "id": "CD_I1012694",
+          "name": "Alice Edmonds",
+          "teamId": "32",
+          "team": "Western Bulldogs",
+          "total": 31,
+          "gamesWithStatistic": 1,
+          "average": 31
+        },
+        {
+          "id": "CD_I1026929",
+          "name": "Lucy Wales",
+          "teamId": "119",
+          "team": "Hawthorn",
+          "total": 27,
+          "gamesWithStatistic": 1,
+          "average": 27
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    }
+  ]
+}

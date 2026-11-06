@@ -1,0 +1,4553 @@
+{
+  "schemaVersion": 1,
+  "sport": "nba",
+  "name": "NBA",
+  "week": {
+    "id": "2026-11-02",
+    "start": "2026-10-26T07:00:00.000Z",
+    "end": "2026-11-02T07:00:00.000Z",
+    "timeZone": "Australia/Sydney",
+    "startLocalDate": "2026-10-26",
+    "endLocalDate": "2026-11-02",
+    "endingHour": 18,
+    "label": "Week ending Monday 2 November 2026, 6 pm Sydney time"
+  },
+  "coverage": {
+    "status": "ready",
+    "totalEvents": 49,
+    "includedEvents": 49,
+    "truncated": false,
+    "omittedEvents": 0,
+    "excludedUnfinished": 0,
+    "completedWithoutTime": 0,
+    "incompleteEvents": 0,
+    "duplicateEvents": 0,
+    "conflictingEventIds": [],
+    "missingSources": [],
+    "statistics": {
+      "status": "available",
+      "eventsWithStats": 49,
+      "eventsWithoutStats": 0
+    },
+    "notes": [],
+    "partial": false,
+    "sourceErrors": []
+  },
+  "sources": [
+    {
+      "id": "generic",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nba.json",
+      "label": "NBA saved fixtures and results",
+      "retrievedAt": "2026-11-06T02:27:12.695Z",
+      "updatedAt": "2026-11-04T08:50:35.267Z"
+    },
+    {
+      "id": "players",
+      "url": "https://raw.githubusercontent.com/Kelpgoatz/simple-name-for-the-public-eye/main/sports-data/nba-players.json",
+      "label": "NBA saved individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z",
+      "updatedAt": "2026-11-04T10:47:28.509Z"
+    },
+    {
+      "id": "primary-3",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909868",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-4",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909869",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-5",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909870",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-6",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909871",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-7",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909872",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-8",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909873",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-9",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909874",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-10",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909875",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-11",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909876",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-12",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909877",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-13",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909878",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-14",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909879",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-15",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909880",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-16",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909881",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-17",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909882",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-18",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909883",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-19",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909884",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-20",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909885",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-21",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909886",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-22",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909887",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-23",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909888",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-24",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909889",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-25",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909890",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-26",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909891",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-27",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909892",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-28",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909893",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-29",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909894",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-30",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909895",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-31",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909277",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-32",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909278",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-33",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909279",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-34",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909280",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-35",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909281",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-36",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909282",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-37",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909283",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-38",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909284",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-39",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909285",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-40",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909286",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-41",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909896",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-42",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909897",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-43",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909898",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-44",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909899",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-45",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909900",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-46",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909901",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-47",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909902",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-48",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909903",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-49",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909904",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-50",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909905",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    },
+    {
+      "id": "primary-51",
+      "url": "https://www.espn.com/nba/game/_/gameId/401909906",
+      "label": "NBA individual match statistics",
+      "retrievedAt": "2026-11-06T02:27:12.695Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "nba:401909868",
+      "startTime": "2026-10-26T23:00:00.000Z",
+      "kind": "match",
+      "label": "Charlotte Hornets v Washington Wizards",
+      "home": {
+        "id": "30",
+        "name": "Charlotte Hornets"
+      },
+      "away": {
+        "id": "27",
+        "name": "Washington Wizards"
+      },
+      "scores": {
+        "home": 110,
+        "away": 103,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Spectrum Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "30",
+        "name": "Charlotte Hornets"
+      },
+      "stats": {
+        "sourceId": "primary-3",
+        "playersRecorded": 21,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 39,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433287",
+                "name": "Brandon Miller",
+                "teamId": "30",
+                "team": "Charlotte Hornets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 17,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433249",
+                "name": "Moussa Diabate",
+                "teamId": "30",
+                "team": "Charlotte Hornets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4277905",
+                "name": "Trae Young",
+                "teamId": "27",
+                "team": "Washington Wizards"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909869",
+      "startTime": "2026-10-26T23:00:00.000Z",
+      "kind": "match",
+      "label": "Cleveland Cavaliers v Minnesota Timberwolves",
+      "home": {
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "away": {
+        "id": "16",
+        "name": "Minnesota Timberwolves"
+      },
+      "scores": {
+        "home": 127,
+        "away": 125,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Rocket Arena",
+      "statusDetail": "Final/OT",
+      "winner": {
+        "side": "home",
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "stats": {
+        "sourceId": "primary-4",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 47,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4594268",
+                "name": "Anthony Edwards",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 20,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3032976",
+                "name": "Rudy Gobert",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3992",
+                "name": "James Harden",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909870",
+      "startTime": "2026-10-26T23:30:00.000Z",
+      "kind": "match",
+      "label": "Boston Celtics v Chicago Bulls",
+      "home": {
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "away": {
+        "id": "4",
+        "name": "Chicago Bulls"
+      },
+      "scores": {
+        "home": 134,
+        "away": 99,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "TD Garden",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "stats": {
+        "sourceId": "primary-5",
+        "playersRecorded": 29,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 28,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4066354",
+                "name": "Payton Pritchard",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5044385",
+                "name": "Leonard Miller",
+                "teamId": "4",
+                "team": "Chicago Bulls"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 6,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4065648",
+                "name": "Jayson Tatum",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909871",
+      "startTime": "2026-10-26T23:30:00.000Z",
+      "kind": "match",
+      "label": "Miami Heat v Dallas Mavericks",
+      "home": {
+        "id": "14",
+        "name": "Miami Heat"
+      },
+      "away": {
+        "id": "6",
+        "name": "Dallas Mavericks"
+      },
+      "scores": {
+        "home": 109,
+        "away": 113,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Kaseya Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "6",
+        "name": "Dallas Mavericks"
+      },
+      "stats": {
+        "sourceId": "primary-6",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 29,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "5041939",
+                "name": "Cooper Flagg",
+                "teamId": "6",
+                "team": "Dallas Mavericks"
+              },
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "5041939",
+                "name": "Cooper Flagg",
+                "teamId": "6",
+                "team": "Dallas Mavericks"
+              },
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909872",
+      "startTime": "2026-10-27T00:00:00.000Z",
+      "kind": "match",
+      "label": "Milwaukee Bucks v Indiana Pacers",
+      "home": {
+        "id": "15",
+        "name": "Milwaukee Bucks"
+      },
+      "away": {
+        "id": "11",
+        "name": "Indiana Pacers"
+      },
+      "scores": {
+        "home": 110,
+        "away": 102,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Fiserv Forum",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "15",
+        "name": "Milwaukee Bucks"
+      },
+      "stats": {
+        "sourceId": "primary-7",
+        "playersRecorded": 23,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 23,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4395725",
+                "name": "Tyler Herro",
+                "teamId": "15",
+                "team": "Milwaukee Bucks"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5105623",
+                "name": "Kel'el Ware",
+                "teamId": "15",
+                "team": "Milwaukee Bucks"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4396993",
+                "name": "Tyrese Haliburton",
+                "teamId": "11",
+                "team": "Indiana Pacers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909873",
+      "startTime": "2026-10-27T00:00:00.000Z",
+      "kind": "match",
+      "label": "Oklahoma City Thunder v Phoenix Suns",
+      "home": {
+        "id": "25",
+        "name": "Oklahoma City Thunder"
+      },
+      "away": {
+        "id": "21",
+        "name": "Phoenix Suns"
+      },
+      "scores": {
+        "home": 125,
+        "away": 114,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Paycom Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "25",
+        "name": "Oklahoma City Thunder"
+      },
+      "stats": {
+        "sourceId": "primary-8",
+        "playersRecorded": 24,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 30,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4900671",
+                "name": "Ajay Mitchell",
+                "teamId": "25",
+                "team": "Oklahoma City Thunder"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4222252",
+                "name": "Isaiah Hartenstein",
+                "teamId": "25",
+                "team": "Oklahoma City Thunder"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3136193",
+                "name": "Devin Booker",
+                "teamId": "21",
+                "team": "Phoenix Suns"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909874",
+      "startTime": "2026-10-27T00:30:00.000Z",
+      "kind": "match",
+      "label": "Houston Rockets v Atlanta Hawks",
+      "home": {
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "away": {
+        "id": "1",
+        "name": "Atlanta Hawks"
+      },
+      "scores": {
+        "home": 120,
+        "away": 110,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Toyota Center (Houston)",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "stats": {
+        "sourceId": "primary-9",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 29,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4871144",
+                "name": "Alperen Sengun",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432639",
+                "name": "Jabari Smith Jr.",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4871144",
+                "name": "Alperen Sengun",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909875",
+      "startTime": "2026-10-27T01:00:00.000Z",
+      "kind": "match",
+      "label": "Utah Jazz v Memphis Grizzlies",
+      "home": {
+        "id": "26",
+        "name": "Utah Jazz"
+      },
+      "away": {
+        "id": "29",
+        "name": "Memphis Grizzlies"
+      },
+      "scores": {
+        "home": 105,
+        "away": 110,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Delta Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "29",
+        "name": "Memphis Grizzlies"
+      },
+      "stats": {
+        "sourceId": "primary-10",
+        "playersRecorded": 24,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 26,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433627",
+                "name": "Keyonte George",
+                "teamId": "26",
+                "team": "Utah Jazz"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4903027",
+                "name": "Cedric Coward",
+                "teamId": "29",
+                "team": "Memphis Grizzlies"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4683766",
+                "name": "Isaiah Collier",
+                "teamId": "26",
+                "team": "Utah Jazz"
+              },
+              {
+                "id": "4065733",
+                "name": "Ty Jerome",
+                "teamId": "29",
+                "team": "Memphis Grizzlies"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909876",
+      "startTime": "2026-10-27T02:00:00.000Z",
+      "kind": "match",
+      "label": "Denver Nuggets v Golden State Warriors",
+      "home": {
+        "id": "7",
+        "name": "Denver Nuggets"
+      },
+      "away": {
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "scores": {
+        "home": 114,
+        "away": 134,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Tue, 27 Oct 2026",
+      "venue": "Ball Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "stats": {
+        "sourceId": "primary-11",
+        "playersRecorded": 28,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 31,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5175737",
+                "name": "Yaxel Lendeborg",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5175737",
+                "name": "Yaxel Lendeborg",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3112335",
+                "name": "Nikola Jokic",
+                "teamId": "7",
+                "team": "Denver Nuggets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909877",
+      "startTime": "2026-10-27T23:30:00.000Z",
+      "kind": "match",
+      "label": "Boston Celtics v Brooklyn Nets",
+      "home": {
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "away": {
+        "id": "17",
+        "name": "Brooklyn Nets"
+      },
+      "scores": {
+        "home": 125,
+        "away": 124,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Wed, 28 Oct 2026",
+      "venue": "TD Garden",
+      "statusDetail": "Final/OT",
+      "winner": {
+        "side": "home",
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "stats": {
+        "sourceId": "primary-12",
+        "playersRecorded": 22,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 40,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4065648",
+                "name": "Jayson Tatum",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4278104",
+                "name": "Michael Porter Jr.",
+                "teamId": "17",
+                "team": "Brooklyn Nets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4065648",
+                "name": "Jayson Tatum",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909878",
+      "startTime": "2026-10-28T00:00:00.000Z",
+      "kind": "match",
+      "label": "New York Knicks v Detroit Pistons",
+      "home": {
+        "id": "18",
+        "name": "New York Knicks"
+      },
+      "away": {
+        "id": "8",
+        "name": "Detroit Pistons"
+      },
+      "scores": {
+        "home": 111,
+        "away": 97,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Wed, 28 Oct 2026",
+      "venue": "Madison Square Garden",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "18",
+        "name": "New York Knicks"
+      },
+      "stats": {
+        "sourceId": "primary-13",
+        "playersRecorded": 28,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3136195",
+                "name": "Karl-Anthony Towns",
+                "teamId": "18",
+                "team": "New York Knicks"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 20,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3136195",
+                "name": "Karl-Anthony Towns",
+                "teamId": "18",
+                "team": "New York Knicks"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432166",
+                "name": "Cade Cunningham",
+                "teamId": "8",
+                "team": "Detroit Pistons"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909879",
+      "startTime": "2026-10-28T00:00:00.000Z",
+      "kind": "match",
+      "label": "San Antonio Spurs v Sacramento Kings",
+      "home": {
+        "id": "24",
+        "name": "San Antonio Spurs"
+      },
+      "away": {
+        "id": "23",
+        "name": "Sacramento Kings"
+      },
+      "scores": {
+        "home": 130,
+        "away": 103,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Wed, 28 Oct 2026",
+      "venue": "Frost Bank Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "24",
+        "name": "San Antonio Spurs"
+      },
+      "stats": {
+        "sourceId": "primary-14",
+        "playersRecorded": 24,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 29,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5104157",
+                "name": "Victor Wembanyama",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3155942",
+                "name": "Domantas Sabonis",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4395630",
+                "name": "Devin Vassell",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              },
+              {
+                "id": "3155942",
+                "name": "Domantas Sabonis",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909880",
+      "startTime": "2026-10-28T03:00:00.000Z",
+      "kind": "match",
+      "label": "Los Angeles Lakers v Portland Trail Blazers",
+      "home": {
+        "id": "13",
+        "name": "Los Angeles Lakers"
+      },
+      "away": {
+        "id": "22",
+        "name": "Portland Trail Blazers"
+      },
+      "scores": {
+        "home": 129,
+        "away": 136,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Wed, 28 Oct 2026",
+      "venue": "crypto.com Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "22",
+        "name": "Portland Trail Blazers"
+      },
+      "stats": {
+        "sourceId": "primary-15",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 41,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3945274",
+                "name": "Luka Doncic",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "5105565",
+                "name": "Donovan Clingan",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              },
+              {
+                "id": "4066211",
+                "name": "Robert Williams III",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4683021",
+                "name": "Deni Avdija",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              },
+              {
+                "id": "3945274",
+                "name": "Luka Doncic",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909881",
+      "startTime": "2026-10-28T23:00:00.000Z",
+      "kind": "match",
+      "label": "Atlanta Hawks v Miami Heat",
+      "home": {
+        "id": "1",
+        "name": "Atlanta Hawks"
+      },
+      "away": {
+        "id": "14",
+        "name": "Miami Heat"
+      },
+      "scores": {
+        "home": 117,
+        "away": 129,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "State Farm Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "14",
+        "name": "Miami Heat"
+      },
+      "stats": {
+        "sourceId": "primary-16",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 24,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4066261",
+                "name": "Bam Adebayo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              },
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 18,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4701230",
+                "name": "Jalen Johnson",
+                "teamId": "1",
+                "team": "Atlanta Hawks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909882",
+      "startTime": "2026-10-28T23:00:00.000Z",
+      "kind": "match",
+      "label": "Cleveland Cavaliers v Washington Wizards",
+      "home": {
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "away": {
+        "id": "27",
+        "name": "Washington Wizards"
+      },
+      "scores": {
+        "home": 121,
+        "away": 111,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Rocket Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "stats": {
+        "sourceId": "primary-17",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 24,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432158",
+                "name": "Evan Mobley",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4432158",
+                "name": "Evan Mobley",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              },
+              {
+                "id": "4066328",
+                "name": "Jarrett Allen",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5174563",
+                "name": "Kyshawn George",
+                "teamId": "27",
+                "team": "Washington Wizards"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909883",
+      "startTime": "2026-10-28T23:00:00.000Z",
+      "kind": "match",
+      "label": "Detroit Pistons v Charlotte Hornets",
+      "home": {
+        "id": "8",
+        "name": "Detroit Pistons"
+      },
+      "away": {
+        "id": "30",
+        "name": "Charlotte Hornets"
+      },
+      "scores": {
+        "home": 97,
+        "away": 89,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Little Caesars Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "8",
+        "name": "Detroit Pistons"
+      },
+      "stats": {
+        "sourceId": "primary-18",
+        "playersRecorded": 21,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 31,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433287",
+                "name": "Brandon Miller",
+                "teamId": "30",
+                "team": "Charlotte Hornets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433287",
+                "name": "Brandon Miller",
+                "teamId": "30",
+                "team": "Charlotte Hornets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4684742",
+                "name": "Ausar Thompson",
+                "teamId": "8",
+                "team": "Detroit Pistons"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909884",
+      "startTime": "2026-10-28T23:00:00.000Z",
+      "kind": "match",
+      "label": "Indiana Pacers v Philadelphia 76ers",
+      "home": {
+        "id": "11",
+        "name": "Indiana Pacers"
+      },
+      "away": {
+        "id": "20",
+        "name": "Philadelphia 76ers"
+      },
+      "scores": {
+        "home": 109,
+        "away": 114,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Gainbridge Fieldhouse",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "20",
+        "name": "Philadelphia 76ers"
+      },
+      "stats": {
+        "sourceId": "primary-19",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4431678",
+                "name": "Tyrese Maxey",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 11,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3059318",
+                "name": "Joel Embiid",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              },
+              {
+                "id": "3149673",
+                "name": "Pascal Siakam",
+                "teamId": "11",
+                "team": "Indiana Pacers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4395712",
+                "name": "Andrew Nembhard",
+                "teamId": "11",
+                "team": "Indiana Pacers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909885",
+      "startTime": "2026-10-28T23:30:00.000Z",
+      "kind": "match",
+      "label": "Toronto Raptors v Orlando Magic",
+      "home": {
+        "id": "28",
+        "name": "Toronto Raptors"
+      },
+      "away": {
+        "id": "19",
+        "name": "Orlando Magic"
+      },
+      "scores": {
+        "home": 129,
+        "away": 99,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Scotiabank Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "28",
+        "name": "Toronto Raptors"
+      },
+      "stats": {
+        "sourceId": "primary-20",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 28,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433134",
+                "name": "Scottie Barnes",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4431684",
+                "name": "Trayce Jackson-Davis",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4395724",
+                "name": "Immanuel Quickley",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              },
+              {
+                "id": "4432241",
+                "name": "Jamal Shead",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909886",
+      "startTime": "2026-10-29T00:00:00.000Z",
+      "kind": "match",
+      "label": "Chicago Bulls v New York Knicks",
+      "home": {
+        "id": "4",
+        "name": "Chicago Bulls"
+      },
+      "away": {
+        "id": "18",
+        "name": "New York Knicks"
+      },
+      "scores": {
+        "home": 127,
+        "away": 133,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "United Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "18",
+        "name": "New York Knicks"
+      },
+      "stats": {
+        "sourceId": "primary-21",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 38,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3934672",
+                "name": "Jalen Brunson",
+                "teamId": "18",
+                "team": "New York Knicks"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3136195",
+                "name": "Karl-Anthony Towns",
+                "teamId": "18",
+                "team": "New York Knicks"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4871145",
+                "name": "Josh Giddey",
+                "teamId": "4",
+                "team": "Chicago Bulls"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909887",
+      "startTime": "2026-10-29T00:00:00.000Z",
+      "kind": "match",
+      "label": "Milwaukee Bucks v Houston Rockets",
+      "home": {
+        "id": "15",
+        "name": "Milwaukee Bucks"
+      },
+      "away": {
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "scores": {
+        "home": 100,
+        "away": 132,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Fiserv Forum",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "stats": {
+        "sourceId": "primary-22",
+        "playersRecorded": 26,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 24,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2991230",
+                "name": "Fred VanVleet",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433192",
+                "name": "Tari Eason",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 6,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5214640",
+                "name": "Kasparas Jakucionis",
+                "teamId": "15",
+                "team": "Milwaukee Bucks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909888",
+      "startTime": "2026-10-29T00:00:00.000Z",
+      "kind": "match",
+      "label": "Minnesota Timberwolves v Golden State Warriors",
+      "home": {
+        "id": "16",
+        "name": "Minnesota Timberwolves"
+      },
+      "away": {
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "scores": {
+        "home": 114,
+        "away": 119,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Target Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "stats": {
+        "sourceId": "primary-23",
+        "playersRecorded": 21,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 44,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3975",
+                "name": "Stephen Curry",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5279133",
+                "name": "Joan Beringer",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432816",
+                "name": "LaMelo Ball",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909889",
+      "startTime": "2026-10-29T00:00:00.000Z",
+      "kind": "match",
+      "label": "New Orleans Pelicans v Denver Nuggets",
+      "home": {
+        "id": "3",
+        "name": "New Orleans Pelicans"
+      },
+      "away": {
+        "id": "7",
+        "name": "Denver Nuggets"
+      },
+      "scores": {
+        "home": 91,
+        "away": 104,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Smoothie King Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "7",
+        "name": "Denver Nuggets"
+      },
+      "stats": {
+        "sourceId": "primary-24",
+        "playersRecorded": 21,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 25,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4395628",
+                "name": "Zion Williamson",
+                "teamId": "3",
+                "team": "New Orleans Pelicans"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3112335",
+                "name": "Nikola Jokic",
+                "teamId": "7",
+                "team": "Denver Nuggets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3112335",
+                "name": "Nikola Jokic",
+                "teamId": "7",
+                "team": "Denver Nuggets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909890",
+      "startTime": "2026-10-29T01:00:00.000Z",
+      "kind": "match",
+      "label": "Utah Jazz v San Antonio Spurs",
+      "home": {
+        "id": "26",
+        "name": "Utah Jazz"
+      },
+      "away": {
+        "id": "24",
+        "name": "San Antonio Spurs"
+      },
+      "scores": {
+        "home": 111,
+        "away": 117,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Delta Center",
+      "statusDetail": "Final/OT",
+      "winner": {
+        "side": "away",
+        "id": "24",
+        "name": "San Antonio Spurs"
+      },
+      "stats": {
+        "sourceId": "primary-25",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 36,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5104157",
+                "name": "Victor Wembanyama",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5104157",
+                "name": "Victor Wembanyama",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "5037871",
+                "name": "Dylan Harper",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              },
+              {
+                "id": "4845367",
+                "name": "Stephon Castle",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909891",
+      "startTime": "2026-10-29T01:30:00.000Z",
+      "kind": "match",
+      "label": "Dallas Mavericks v Oklahoma City Thunder",
+      "home": {
+        "id": "6",
+        "name": "Dallas Mavericks"
+      },
+      "away": {
+        "id": "25",
+        "name": "Oklahoma City Thunder"
+      },
+      "scores": {
+        "home": 120,
+        "away": 96,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "American Airlines Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "6",
+        "name": "Dallas Mavericks"
+      },
+      "stats": {
+        "sourceId": "primary-26",
+        "playersRecorded": 24,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 29,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4900671",
+                "name": "Ajay Mitchell",
+                "teamId": "25",
+                "team": "Oklahoma City Thunder"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4222252",
+                "name": "Isaiah Hartenstein",
+                "teamId": "25",
+                "team": "Oklahoma City Thunder"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5041939",
+                "name": "Cooper Flagg",
+                "teamId": "6",
+                "team": "Dallas Mavericks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909892",
+      "startTime": "2026-10-29T02:30:00.000Z",
+      "kind": "match",
+      "label": "LA Clippers v Los Angeles Lakers",
+      "home": {
+        "id": "12",
+        "name": "LA Clippers"
+      },
+      "away": {
+        "id": "13",
+        "name": "Los Angeles Lakers"
+      },
+      "scores": {
+        "home": 87,
+        "away": 103,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Thu, 29 Oct 2026",
+      "venue": "Intuit Dome",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "13",
+        "name": "Los Angeles Lakers"
+      },
+      "stats": {
+        "sourceId": "primary-27",
+        "playersRecorded": 21,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 23,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397014",
+                "name": "Quentin Grimes",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4592691",
+                "name": "Jake LaRavia",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 5,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4396907",
+                "name": "Darius Garland",
+                "teamId": "12",
+                "team": "LA Clippers"
+              },
+              {
+                "id": "4397014",
+                "name": "Quentin Grimes",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909893",
+      "startTime": "2026-10-30T00:00:00.000Z",
+      "kind": "match",
+      "label": "Atlanta Hawks v Cleveland Cavaliers",
+      "home": {
+        "id": "1",
+        "name": "Atlanta Hawks"
+      },
+      "away": {
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "scores": {
+        "home": 114,
+        "away": 111,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Fri, 30 Oct 2026",
+      "venue": "State Farm Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "1",
+        "name": "Atlanta Hawks"
+      },
+      "stats": {
+        "sourceId": "primary-28",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 29,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4431680",
+                "name": "Onyeka Okongwu",
+                "teamId": "1",
+                "team": "Atlanta Hawks"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4431680",
+                "name": "Onyeka Okongwu",
+                "teamId": "1",
+                "team": "Atlanta Hawks"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "2490149",
+                "name": "CJ McCollum",
+                "teamId": "1",
+                "team": "Atlanta Hawks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909894",
+      "startTime": "2026-10-30T00:00:00.000Z",
+      "kind": "match",
+      "label": "New Orleans Pelicans v Sacramento Kings",
+      "home": {
+        "id": "3",
+        "name": "New Orleans Pelicans"
+      },
+      "away": {
+        "id": "23",
+        "name": "Sacramento Kings"
+      },
+      "scores": {
+        "home": 132,
+        "away": 120,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Fri, 30 Oct 2026",
+      "venue": "Smoothie King Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "3",
+        "name": "New Orleans Pelicans"
+      },
+      "stats": {
+        "sourceId": "primary-29",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 34,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5142620",
+                "name": "Darius Acuff Jr.",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 15,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3155942",
+                "name": "Domantas Sabonis",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5142620",
+                "name": "Darius Acuff Jr.",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909895",
+      "startTime": "2026-10-30T02:00:00.000Z",
+      "kind": "match",
+      "label": "Portland Trail Blazers v Memphis Grizzlies",
+      "home": {
+        "id": "22",
+        "name": "Portland Trail Blazers"
+      },
+      "away": {
+        "id": "29",
+        "name": "Memphis Grizzlies"
+      },
+      "scores": {
+        "home": 103,
+        "away": 124,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Fri, 30 Oct 2026",
+      "venue": "Moda Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "29",
+        "name": "Memphis Grizzlies"
+      },
+      "stats": {
+        "sourceId": "primary-30",
+        "playersRecorded": 28,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 24,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4683021",
+                "name": "Deni Avdija",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5041935",
+                "name": "Cameron Boozer",
+                "teamId": "29",
+                "team": "Memphis Grizzlies"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5041935",
+                "name": "Cameron Boozer",
+                "teamId": "29",
+                "team": "Memphis Grizzlies"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909277",
+      "startTime": "2026-10-30T23:00:00.000Z",
+      "kind": "match",
+      "label": "Washington Wizards v Charlotte Hornets",
+      "home": {
+        "id": "27",
+        "name": "Washington Wizards"
+      },
+      "away": {
+        "id": "30",
+        "name": "Charlotte Hornets"
+      },
+      "scores": {
+        "home": 95,
+        "away": 79,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Capital One Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "27",
+        "name": "Washington Wizards"
+      },
+      "stats": {
+        "sourceId": "primary-31",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 25,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "6583",
+                "name": "Anthony Davis",
+                "teamId": "27",
+                "team": "Washington Wizards"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "6583",
+                "name": "Anthony Davis",
+                "teamId": "27",
+                "team": "Washington Wizards"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4277905",
+                "name": "Trae Young",
+                "teamId": "27",
+                "team": "Washington Wizards"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909278",
+      "startTime": "2026-10-30T23:30:00.000Z",
+      "kind": "match",
+      "label": "Boston Celtics v Chicago Bulls",
+      "home": {
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "away": {
+        "id": "4",
+        "name": "Chicago Bulls"
+      },
+      "scores": {
+        "home": 125,
+        "away": 111,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "TD Garden",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "stats": {
+        "sourceId": "primary-32",
+        "playersRecorded": 27,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 30,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4066354",
+                "name": "Payton Pritchard",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397189",
+                "name": "Jalen Smith",
+                "teamId": "4",
+                "team": "Chicago Bulls"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4251",
+                "name": "Paul George",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909279",
+      "startTime": "2026-10-30T23:30:00.000Z",
+      "kind": "match",
+      "label": "Brooklyn Nets v Detroit Pistons",
+      "home": {
+        "id": "17",
+        "name": "Brooklyn Nets"
+      },
+      "away": {
+        "id": "8",
+        "name": "Detroit Pistons"
+      },
+      "scores": {
+        "home": 94,
+        "away": 110,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Barclays Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "8",
+        "name": "Detroit Pistons"
+      },
+      "stats": {
+        "sourceId": "primary-33",
+        "playersRecorded": 26,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 20,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432166",
+                "name": "Cade Cunningham",
+                "teamId": "8",
+                "team": "Detroit Pistons"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3908845",
+                "name": "John Collins",
+                "teamId": "8",
+                "team": "Detroit Pistons"
+              },
+              {
+                "id": "4712896",
+                "name": "Noah Clowney",
+                "teamId": "17",
+                "team": "Brooklyn Nets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 6,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4684742",
+                "name": "Ausar Thompson",
+                "teamId": "8",
+                "team": "Detroit Pistons"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909280",
+      "startTime": "2026-10-30T23:30:00.000Z",
+      "kind": "match",
+      "label": "Philadelphia 76ers v New York Knicks",
+      "home": {
+        "id": "20",
+        "name": "Philadelphia 76ers"
+      },
+      "away": {
+        "id": "18",
+        "name": "New York Knicks"
+      },
+      "scores": {
+        "home": 98,
+        "away": 93,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Xfinity Mobile Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "20",
+        "name": "Philadelphia 76ers"
+      },
+      "stats": {
+        "sourceId": "primary-34",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4431678",
+                "name": "Tyrese Maxey",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3136195",
+                "name": "Karl-Anthony Towns",
+                "teamId": "18",
+                "team": "New York Knicks"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "1966",
+                "name": "LeBron James",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909281",
+      "startTime": "2026-10-30T23:30:00.000Z",
+      "kind": "match",
+      "label": "Toronto Raptors v Orlando Magic",
+      "home": {
+        "id": "28",
+        "name": "Toronto Raptors"
+      },
+      "away": {
+        "id": "19",
+        "name": "Orlando Magic"
+      },
+      "scores": {
+        "home": 114,
+        "away": 121,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Scotiabank Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "19",
+        "name": "Orlando Magic"
+      },
+      "stats": {
+        "sourceId": "primary-35",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 41,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433134",
+                "name": "Scottie Barnes",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3134908",
+                "name": "Jakob Poeltl",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4566434",
+                "name": "Franz Wagner",
+                "teamId": "19",
+                "team": "Orlando Magic"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909282",
+      "startTime": "2026-10-31T00:00:00.000Z",
+      "kind": "match",
+      "label": "Miami Heat v Indiana Pacers",
+      "home": {
+        "id": "14",
+        "name": "Miami Heat"
+      },
+      "away": {
+        "id": "11",
+        "name": "Indiana Pacers"
+      },
+      "scores": {
+        "home": 145,
+        "away": 125,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Kaseya Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "14",
+        "name": "Miami Heat"
+      },
+      "stats": {
+        "sourceId": "primary-36",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 31,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 18,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3032977",
+                "name": "Giannis Antetokounmpo",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 11,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4278053",
+                "name": "Davion Mitchell",
+                "teamId": "14",
+                "team": "Miami Heat"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909283",
+      "startTime": "2026-10-31T00:00:00.000Z",
+      "kind": "match",
+      "label": "Dallas Mavericks v Houston Rockets",
+      "home": {
+        "id": "6",
+        "name": "Dallas Mavericks"
+      },
+      "away": {
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "scores": {
+        "home": 116,
+        "away": 111,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "American Airlines Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "6",
+        "name": "Dallas Mavericks"
+      },
+      "stats": {
+        "sourceId": "primary-37",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 35,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "6442",
+                "name": "Kyrie Irving",
+                "teamId": "6",
+                "team": "Dallas Mavericks"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433192",
+                "name": "Tari Eason",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "6442",
+                "name": "Kyrie Irving",
+                "teamId": "6",
+                "team": "Dallas Mavericks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909284",
+      "startTime": "2026-10-31T00:00:00.000Z",
+      "kind": "match",
+      "label": "Minnesota Timberwolves v LA Clippers",
+      "home": {
+        "id": "16",
+        "name": "Minnesota Timberwolves"
+      },
+      "away": {
+        "id": "12",
+        "name": "LA Clippers"
+      },
+      "scores": {
+        "home": 127,
+        "away": 101,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Target Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "16",
+        "name": "Minnesota Timberwolves"
+      },
+      "stats": {
+        "sourceId": "primary-38",
+        "playersRecorded": 26,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 24,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4396907",
+                "name": "Darius Garland",
+                "teamId": "12",
+                "team": "LA Clippers"
+              },
+              {
+                "id": "4432816",
+                "name": "LaMelo Ball",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3032976",
+                "name": "Rudy Gobert",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4592492",
+                "name": "Bones Hyland",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909285",
+      "startTime": "2026-10-31T02:00:00.000Z",
+      "kind": "match",
+      "label": "Golden State Warriors v Los Angeles Lakers",
+      "home": {
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "away": {
+        "id": "13",
+        "name": "Los Angeles Lakers"
+      },
+      "scores": {
+        "home": 112,
+        "away": 95,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Chase Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "stats": {
+        "sourceId": "primary-39",
+        "playersRecorded": 26,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 37,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3945274",
+                "name": "Luka Doncic",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433136",
+                "name": "Walker Kessler",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "6589",
+                "name": "Draymond Green",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909286",
+      "startTime": "2026-10-31T02:00:00.000Z",
+      "kind": "match",
+      "label": "Phoenix Suns v Denver Nuggets",
+      "home": {
+        "id": "21",
+        "name": "Phoenix Suns"
+      },
+      "away": {
+        "id": "7",
+        "name": "Denver Nuggets"
+      },
+      "scores": {
+        "home": 120,
+        "away": 127,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sat, 31 Oct 2026",
+      "venue": "Mortgage Matchup Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "7",
+        "name": "Denver Nuggets"
+      },
+      "stats": {
+        "sourceId": "primary-40",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 39,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3936299",
+                "name": "Jamal Murray",
+                "teamId": "7",
+                "team": "Denver Nuggets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4066383",
+                "name": "Miles Bridges",
+                "teamId": "21",
+                "team": "Phoenix Suns"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 10,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4278585",
+                "name": "Collin Gillespie",
+                "teamId": "21",
+                "team": "Phoenix Suns"
+              },
+              {
+                "id": "3112335",
+                "name": "Nikola Jokic",
+                "teamId": "7",
+                "team": "Denver Nuggets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909896",
+      "startTime": "2026-10-31T19:00:00.000Z",
+      "kind": "match",
+      "label": "Utah Jazz v Portland Trail Blazers",
+      "home": {
+        "id": "26",
+        "name": "Utah Jazz"
+      },
+      "away": {
+        "id": "22",
+        "name": "Portland Trail Blazers"
+      },
+      "scores": {
+        "home": 90,
+        "away": 112,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "Delta Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "22",
+        "name": "Portland Trail Blazers"
+      },
+      "stats": {
+        "sourceId": "primary-41",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 24,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4683021",
+                "name": "Deni Avdija",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5105565",
+                "name": "Donovan Clingan",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 4,
+            "tiedPlayers": 4,
+            "players": [
+              {
+                "id": "6606",
+                "name": "Damian Lillard",
+                "teamId": "22",
+                "team": "Portland Trail Blazers"
+              },
+              {
+                "id": "5041955",
+                "name": "Darryn Peterson",
+                "teamId": "26",
+                "team": "Utah Jazz"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909897",
+      "startTime": "2026-10-31T22:00:00.000Z",
+      "kind": "match",
+      "label": "Charlotte Hornets v Philadelphia 76ers",
+      "home": {
+        "id": "30",
+        "name": "Charlotte Hornets"
+      },
+      "away": {
+        "id": "20",
+        "name": "Philadelphia 76ers"
+      },
+      "scores": {
+        "home": 104,
+        "away": 109,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "Spectrum Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "20",
+        "name": "Philadelphia 76ers"
+      },
+      "stats": {
+        "sourceId": "primary-42",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 38,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4431678",
+                "name": "Tyrese Maxey",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 8,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4433249",
+                "name": "Moussa Diabate",
+                "teamId": "30",
+                "team": "Charlotte Hornets"
+              },
+              {
+                "id": "5124612",
+                "name": "VJ Edgecombe",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3912848",
+                "name": "Dean Wade",
+                "teamId": "20",
+                "team": "Philadelphia 76ers"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909898",
+      "startTime": "2026-10-31T23:00:00.000Z",
+      "kind": "match",
+      "label": "New Orleans Pelicans v Atlanta Hawks",
+      "home": {
+        "id": "3",
+        "name": "New Orleans Pelicans"
+      },
+      "away": {
+        "id": "1",
+        "name": "Atlanta Hawks"
+      },
+      "scores": {
+        "home": 121,
+        "away": 99,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "Smoothie King Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "3",
+        "name": "New Orleans Pelicans"
+      },
+      "stats": {
+        "sourceId": "primary-43",
+        "playersRecorded": 24,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 25,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397136",
+                "name": "Saddiq Bey",
+                "teamId": "3",
+                "team": "New Orleans Pelicans"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4997538",
+                "name": "Karlo Matkovic",
+                "teamId": "3",
+                "team": "New Orleans Pelicans"
+              },
+              {
+                "id": "4431680",
+                "name": "Onyeka Okongwu",
+                "teamId": "1",
+                "team": "Atlanta Hawks"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5144091",
+                "name": "Jeremiah Fears",
+                "teamId": "3",
+                "team": "New Orleans Pelicans"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909899",
+      "startTime": "2026-11-01T00:00:00.000Z",
+      "kind": "match",
+      "label": "Memphis Grizzlies v Sacramento Kings",
+      "home": {
+        "id": "29",
+        "name": "Memphis Grizzlies"
+      },
+      "away": {
+        "id": "23",
+        "name": "Sacramento Kings"
+      },
+      "scores": {
+        "home": 136,
+        "away": 105,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "FedExForum",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "29",
+        "name": "Memphis Grizzlies"
+      },
+      "stats": {
+        "sourceId": "primary-44",
+        "playersRecorded": 26,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 38,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5142620",
+                "name": "Darius Acuff Jr.",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 14,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3155942",
+                "name": "Domantas Sabonis",
+                "teamId": "23",
+                "team": "Sacramento Kings"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4433083",
+                "name": "Cam Spencer",
+                "teamId": "29",
+                "team": "Memphis Grizzlies"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909900",
+      "startTime": "2026-11-01T00:00:00.000Z",
+      "kind": "match",
+      "label": "Milwaukee Bucks v Cleveland Cavaliers",
+      "home": {
+        "id": "15",
+        "name": "Milwaukee Bucks"
+      },
+      "away": {
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "scores": {
+        "home": 111,
+        "away": 136,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "Fiserv Forum",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "5",
+        "name": "Cleveland Cavaliers"
+      },
+      "stats": {
+        "sourceId": "primary-45",
+        "playersRecorded": 25,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 27,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432158",
+                "name": "Evan Mobley",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 11,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4066328",
+                "name": "Jarrett Allen",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              },
+              {
+                "id": "2995706",
+                "name": "Mario Hezonja",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3992",
+                "name": "James Harden",
+                "teamId": "5",
+                "team": "Cleveland Cavaliers"
+              },
+              {
+                "id": "4591725",
+                "name": "Ryan Rollins",
+                "teamId": "15",
+                "team": "Milwaukee Bucks"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909901",
+      "startTime": "2026-11-01T00:00:00.000Z",
+      "kind": "match",
+      "label": "San Antonio Spurs v Minnesota Timberwolves",
+      "home": {
+        "id": "24",
+        "name": "San Antonio Spurs"
+      },
+      "away": {
+        "id": "16",
+        "name": "Minnesota Timberwolves"
+      },
+      "scores": {
+        "home": 121,
+        "away": 111,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "Frost Bank Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "24",
+        "name": "San Antonio Spurs"
+      },
+      "stats": {
+        "sourceId": "primary-46",
+        "playersRecorded": 18,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 43,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5104157",
+                "name": "Victor Wembanyama",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397002",
+                "name": "Ayo Dosunmu",
+                "teamId": "16",
+                "team": "Minnesota Timberwolves"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4066259",
+                "name": "De'Aaron Fox",
+                "teamId": "24",
+                "team": "San Antonio Spurs"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909902",
+      "startTime": "2026-11-01T00:30:00.000Z",
+      "kind": "match",
+      "label": "Houston Rockets v Oklahoma City Thunder",
+      "home": {
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "away": {
+        "id": "25",
+        "name": "Oklahoma City Thunder"
+      },
+      "scores": {
+        "home": 119,
+        "away": 98,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Sun, 1 Nov 2026",
+      "venue": "Toyota Center (Houston)",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "10",
+        "name": "Houston Rockets"
+      },
+      "stats": {
+        "sourceId": "primary-47",
+        "playersRecorded": 23,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 30,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432639",
+                "name": "Jabari Smith Jr.",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 9,
+            "tiedPlayers": 3,
+            "players": [
+              {
+                "id": "5174983",
+                "name": "Aday Mara",
+                "teamId": "25",
+                "team": "Oklahoma City Thunder"
+              },
+              {
+                "id": "4871144",
+                "name": "Alperen Sengun",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 9,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4871144",
+                "name": "Alperen Sengun",
+                "teamId": "10",
+                "team": "Houston Rockets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909903",
+      "startTime": "2026-11-01T20:30:00.000Z",
+      "kind": "match",
+      "label": "Orlando Magic v Boston Celtics",
+      "home": {
+        "id": "19",
+        "name": "Orlando Magic"
+      },
+      "away": {
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "scores": {
+        "home": 97,
+        "away": 108,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Mon, 2 Nov 2026",
+      "venue": "Kia Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "2",
+        "name": "Boston Celtics"
+      },
+      "stats": {
+        "sourceId": "primary-48",
+        "playersRecorded": 19,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 32,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4065648",
+                "name": "Jayson Tatum",
+                "teamId": "2",
+                "team": "Boston Celtics"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4702382",
+                "name": "Tristan da Silva",
+                "teamId": "19",
+                "team": "Orlando Magic"
+              },
+              {
+                "id": "4277847",
+                "name": "Wendell Carter Jr.",
+                "teamId": "19",
+                "team": "Orlando Magic"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 12,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4566434",
+                "name": "Franz Wagner",
+                "teamId": "19",
+                "team": "Orlando Magic"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909904",
+      "startTime": "2026-11-01T22:00:00.000Z",
+      "kind": "match",
+      "label": "Indiana Pacers v Brooklyn Nets",
+      "home": {
+        "id": "11",
+        "name": "Indiana Pacers"
+      },
+      "away": {
+        "id": "17",
+        "name": "Brooklyn Nets"
+      },
+      "scores": {
+        "home": 90,
+        "away": 98,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Mon, 2 Nov 2026",
+      "venue": "Gainbridge Fieldhouse",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "away",
+        "id": "17",
+        "name": "Brooklyn Nets"
+      },
+      "stats": {
+        "sourceId": "primary-49",
+        "playersRecorded": 20,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 23,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "4395712",
+                "name": "Andrew Nembhard",
+                "teamId": "11",
+                "team": "Indiana Pacers"
+              },
+              {
+                "id": "4278104",
+                "name": "Michael Porter Jr.",
+                "teamId": "17",
+                "team": "Brooklyn Nets"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 13,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4432194",
+                "name": "Day'Ron Sharpe",
+                "teamId": "17",
+                "team": "Brooklyn Nets"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 6,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3064514",
+                "name": "Julius Randle",
+                "teamId": "17",
+                "team": "Brooklyn Nets"
+              },
+              {
+                "id": "5279130",
+                "name": "Nolan Traore",
+                "teamId": "17",
+                "team": "Brooklyn Nets"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909905",
+      "startTime": "2026-11-02T01:30:00.000Z",
+      "kind": "match",
+      "label": "Golden State Warriors v LA Clippers",
+      "home": {
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "away": {
+        "id": "12",
+        "name": "LA Clippers"
+      },
+      "scores": {
+        "home": 124,
+        "away": 112,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Mon, 2 Nov 2026",
+      "venue": "Chase Center",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "9",
+        "name": "Golden State Warriors"
+      },
+      "stats": {
+        "sourceId": "primary-50",
+        "playersRecorded": 26,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 37,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "5175737",
+                "name": "Yaxel Lendeborg",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 10,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4397886",
+                "name": "Charles Bassey",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 8,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4709138",
+                "name": "Brandin Podziemski",
+                "teamId": "9",
+                "team": "Golden State Warriors"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "nba:401909906",
+      "startTime": "2026-11-02T02:00:00.000Z",
+      "kind": "match",
+      "label": "Los Angeles Lakers v Toronto Raptors",
+      "home": {
+        "id": "13",
+        "name": "Los Angeles Lakers"
+      },
+      "away": {
+        "id": "28",
+        "name": "Toronto Raptors"
+      },
+      "scores": {
+        "home": 131,
+        "away": 125,
+        "unit": "points"
+      },
+      "sourceId": "generic",
+      "snapshotSourceId": "generic",
+      "round": "Mon, 2 Nov 2026",
+      "venue": "crypto.com Arena",
+      "statusDetail": "Final",
+      "winner": {
+        "side": "home",
+        "id": "13",
+        "name": "Los Angeles Lakers"
+      },
+      "stats": {
+        "sourceId": "primary-51",
+        "playersRecorded": 24,
+        "leaders": [
+          {
+            "key": "points",
+            "label": "Points",
+            "value": 45,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "3945274",
+                "name": "Luka Doncic",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "rebounds",
+            "label": "Rebounds",
+            "value": 15,
+            "tiedPlayers": 2,
+            "players": [
+              {
+                "id": "3945274",
+                "name": "Luka Doncic",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              },
+              {
+                "id": "4433136",
+                "name": "Walker Kessler",
+                "teamId": "13",
+                "team": "Los Angeles Lakers"
+              }
+            ]
+          },
+          {
+            "key": "assists",
+            "label": "Assists",
+            "value": 7,
+            "tiedPlayers": 1,
+            "players": [
+              {
+                "id": "4395724",
+                "name": "Immanuel Quickley",
+                "teamId": "28",
+                "team": "Toronto Raptors"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "weeklyLeaders": [
+    {
+      "key": "points",
+      "label": "Points",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3945274",
+          "name": "Luka Doncic",
+          "teamId": "13",
+          "team": "Los Angeles Lakers",
+          "total": 123,
+          "gamesWithStatistic": 3,
+          "average": 41
+        },
+        {
+          "id": "4065648",
+          "name": "Jayson Tatum",
+          "teamId": "2",
+          "team": "Boston Celtics",
+          "total": 121,
+          "gamesWithStatistic": 4,
+          "average": 30.25
+        },
+        {
+          "id": "4433287",
+          "name": "Brandon Miller",
+          "teamId": "30",
+          "team": "Charlotte Hornets",
+          "total": 113,
+          "gamesWithStatistic": 4,
+          "average": 28.25
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "rebounds",
+      "label": "Rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3032977",
+          "name": "Giannis Antetokounmpo",
+          "teamId": "14",
+          "team": "Miami Heat",
+          "total": 50,
+          "gamesWithStatistic": 3,
+          "average": 16.667
+        },
+        {
+          "id": "4433249",
+          "name": "Moussa Diabate",
+          "teamId": "30",
+          "team": "Charlotte Hornets",
+          "total": 46,
+          "gamesWithStatistic": 4,
+          "average": 11.5
+        },
+        {
+          "id": "3136195",
+          "name": "Karl-Anthony Towns",
+          "teamId": "18",
+          "team": "New York Knicks",
+          "total": 45,
+          "gamesWithStatistic": 3,
+          "average": 15
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "assists",
+      "label": "Assists",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3112335",
+          "name": "Nikola Jokic",
+          "teamId": "7",
+          "team": "Denver Nuggets",
+          "total": 31,
+          "gamesWithStatistic": 3,
+          "average": 10.333
+        },
+        {
+          "id": "4566434",
+          "name": "Franz Wagner",
+          "teamId": "19",
+          "team": "Orlando Magic",
+          "total": 28,
+          "gamesWithStatistic": 3,
+          "average": 9.333
+        },
+        {
+          "id": "4065648",
+          "name": "Jayson Tatum",
+          "teamId": "2",
+          "team": "Boston Celtics",
+          "total": 28,
+          "gamesWithStatistic": 4,
+          "average": 7
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "steals",
+      "label": "Steals",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4395628",
+          "name": "Zion Williamson",
+          "teamId": "3",
+          "team": "New Orleans Pelicans",
+          "total": 11,
+          "gamesWithStatistic": 3,
+          "average": 3.667
+        },
+        {
+          "id": "4431767",
+          "name": "Christian Braun",
+          "teamId": "7",
+          "team": "Denver Nuggets",
+          "total": 9,
+          "gamesWithStatistic": 3,
+          "average": 3
+        },
+        {
+          "id": "4397002",
+          "name": "Ayo Dosunmu",
+          "teamId": "16",
+          "team": "Minnesota Timberwolves",
+          "total": 8,
+          "gamesWithStatistic": 4,
+          "average": 2
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "blocks",
+      "label": "Blocks",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "5104157",
+          "name": "Victor Wembanyama",
+          "teamId": "24",
+          "team": "San Antonio Spurs",
+          "total": 13,
+          "gamesWithStatistic": 3,
+          "average": 4.333
+        },
+        {
+          "id": "4433136",
+          "name": "Walker Kessler",
+          "teamId": "13",
+          "team": "Los Angeles Lakers",
+          "total": 11,
+          "gamesWithStatistic": 4,
+          "average": 2.75
+        },
+        {
+          "id": "3202",
+          "name": "Kevin Durant",
+          "teamId": "10",
+          "team": "Houston Rockets",
+          "total": 10,
+          "gamesWithStatistic": 4,
+          "average": 2.5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "threePointFieldGoalsMade",
+      "label": "Three-pointers",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3945274",
+          "name": "Luka Doncic",
+          "teamId": "13",
+          "team": "Los Angeles Lakers",
+          "total": 20,
+          "gamesWithStatistic": 3,
+          "average": 6.667
+        },
+        {
+          "id": "3975",
+          "name": "Stephen Curry",
+          "teamId": "9",
+          "team": "Golden State Warriors",
+          "total": 17,
+          "gamesWithStatistic": 3,
+          "average": 5.667
+        },
+        {
+          "id": "4351851",
+          "name": "Anfernee Simons",
+          "teamId": "20",
+          "team": "Philadelphia 76ers",
+          "total": 16,
+          "gamesWithStatistic": 3,
+          "average": 5.333
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "offensiveRebounds",
+      "label": "Offensive rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "4433249",
+          "name": "Moussa Diabate",
+          "teamId": "30",
+          "team": "Charlotte Hornets",
+          "total": 26,
+          "gamesWithStatistic": 4,
+          "average": 6.5
+        },
+        {
+          "id": "4431680",
+          "name": "Onyeka Okongwu",
+          "teamId": "1",
+          "team": "Atlanta Hawks",
+          "total": 17,
+          "gamesWithStatistic": 4,
+          "average": 4.25
+        },
+        {
+          "id": "3032977",
+          "name": "Giannis Antetokounmpo",
+          "teamId": "14",
+          "team": "Miami Heat",
+          "total": 15,
+          "gamesWithStatistic": 3,
+          "average": 5
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    },
+    {
+      "key": "defensiveRebounds",
+      "label": "Defensive rebounds",
+      "sourceId": "players",
+      "leaders": [
+        {
+          "id": "3032977",
+          "name": "Giannis Antetokounmpo",
+          "teamId": "14",
+          "team": "Miami Heat",
+          "total": 35,
+          "gamesWithStatistic": 3,
+          "average": 11.667
+        },
+        {
+          "id": "3136195",
+          "name": "Karl-Anthony Towns",
+          "teamId": "18",
+          "team": "New York Knicks",
+          "total": 34,
+          "gamesWithStatistic": 3,
+          "average": 11.333
+        },
+        {
+          "id": "4701230",
+          "name": "Jalen Johnson",
+          "teamId": "1",
+          "team": "Atlanta Hawks",
+          "total": 31,
+          "gamesWithStatistic": 4,
+          "average": 7.75
+        }
+      ],
+      "scope": "Totals from recorded completed matches in this weekly window only. Averages divide by games with this statistic recorded."
+    }
+  ]
+}
