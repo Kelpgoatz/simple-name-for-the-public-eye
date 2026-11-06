@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-06T01:45:51.922Z",
-  "fixturesUpdatedAt": "2026-11-06T01:45:51.922Z",
-  "standingsUpdatedAt": "2026-11-06T01:45:51.922Z",
+  "updatedAt": "2026-11-06T08:32:17.182Z",
+  "fixturesUpdatedAt": "2026-11-06T08:32:17.182Z",
+  "standingsUpdatedAt": "2026-11-06T08:32:17.182Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4235,8 +4235,8 @@
         {
           "id": "401873037",
           "startTime": "2026-11-06T01:15:00.000Z",
-          "status": "live",
-          "statusDetail": "2:00 - 1st",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "M&T Bank Stadium",
           "home": {
             "id": "33",
@@ -4252,9 +4252,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
             "color": "#007487"
           },
-          "homeScore": 3,
-          "awayScore": 10,
-          "winner": null
+          "homeScore": 10,
+          "awayScore": 33,
+          "winner": "away"
         },
         {
           "id": "401873038",
@@ -8323,6 +8323,26 @@
         {
           "rank": 3,
           "team": {
+            "id": "30",
+            "name": "Jacksonville Jaguars",
+            "abbreviation": "JAX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+            "color": "#007487"
+          },
+          "wins": 6,
+          "losses": 2,
+          "draws": 0,
+          "played": 8,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.75,
+          "gamesBehind": 0.5,
+          "for": 229,
+          "against": 121
+        },
+        {
+          "rank": 4,
+          "team": {
             "id": "23",
             "name": "Pittsburgh Steelers",
             "abbreviation": "PIT",
@@ -8339,26 +8359,6 @@
           "gamesBehind": 0.5,
           "for": 180,
           "against": 144
-        },
-        {
-          "rank": 4,
-          "team": {
-            "id": "30",
-            "name": "Jacksonville Jaguars",
-            "abbreviation": "JAX",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
-            "color": "#007487"
-          },
-          "wins": 5,
-          "losses": 2,
-          "draws": 0,
-          "played": 7,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.71428573,
-          "gamesBehind": 1,
-          "for": 196,
-          "against": 111
         },
         {
           "rank": 5,
@@ -8470,15 +8470,15 @@
             "color": "#29126f"
           },
           "wins": 4,
-          "losses": 4,
+          "losses": 5,
           "draws": 0,
-          "played": 8,
+          "played": 9,
           "points": null,
           "percentage": null,
-          "winPct": 0.5,
-          "gamesBehind": 2.5,
-          "for": 179,
-          "against": 203
+          "winPct": 0.44444445,
+          "gamesBehind": 3,
+          "for": 189,
+          "against": 236
         },
         {
           "rank": 11,
