@@ -1,5 +1,6 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
 import {canonicalName,normalizeRaces,summarizeCareer} from './lib/f1-career-data.mjs';
+import {createJolpicaClient} from './lib/jolpica-client.mjs';
 const base='https://api.jolpi.ca/ergast/f1/';
 const file=path=>new URL(`../${path}`,import.meta.url);
 const read=async path=>{try{return JSON.parse(await readFile(file(path),'utf8'));}catch{return null;}};
@@ -9,16 +10,7 @@ const now=new Date(),refresh=process.argv.includes('--refresh-all');
 const old=await read('f1-careers.json');
 const cache=await read('sports-data/f1-career-cache.json')||{histories:{},championships:{}};
 cache.histories||={};cache.championships||={};
-let nextRequest=0;
-async function request(path){
-    const url=new URL(path,base);
-    for(let attempt=0;attempt<3;attempt++){
-        const delay=Math.max(0,nextRequest-Date.now());if(delay)await new Promise(resolve=>setTimeout(resolve,delay));
-        nextRequest=Date.now()+360;
-        try{const response=await fetch(url,{signal:AbortSignal.timeout(25000)});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();if(!data.MRData)throw new Error('Invalid Jolpica response');return data;}
-        catch(error){if(attempt===2)throw new Error(`${path}: ${error.message}`);await new Promise(resolve=>setTimeout(resolve,2000*(attempt+1)));}
-    }
-}
+const request=createJolpicaClient();
 async function racesFor(kind,id,prefix=''){
     const results=[];let offset=0,total;
     do{const data=await request(`${prefix}${kind==='driver'?'drivers':'constructors'}/${id}/results/?limit=100&offset=${offset}`);

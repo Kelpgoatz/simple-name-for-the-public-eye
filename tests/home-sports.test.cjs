@@ -37,6 +37,14 @@ test('old provider live flags cannot pull archived games into Today', () => {
     assert.equal(game.active,false);
     assert.match(renderCard(game),/Update pending/);
 });
+
+test('a stale scheduled game is labelled awaiting an update without inventing a result',()=>{
+    const game=summaries(snapshot({...match,startTime:'2026-11-04T00:00:00Z'}),Date.parse('2026-11-04T12:00:00Z'))[0];
+    assert.equal(game.state.isPending,true);
+    assert.equal(game.state.isFinished,false);
+    assert.match(renderCard(game),/Update pending/);
+    assert.doesNotMatch(renderCard(game),/score-value--win/);
+});
 test('league cards share AFL layout and link to the exact fixture group', () => {
     const card=renderCard(summaries(snapshot(match))[0]);
     assert.match(card,/class="afl-game home-sport-game"/);

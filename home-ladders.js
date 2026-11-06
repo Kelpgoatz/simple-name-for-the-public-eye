@@ -42,16 +42,21 @@
                     group.rows.map(row => ({ rank: row.rank, name: row.team.name, teamId:row.team.id, image: row.team.logo, fallback: row.team.abbreviation, stat: ['aflw', 'nrl', 'nrlw'].includes(slug) ? `${row.points ?? '–'} pts` : `${row.wins ?? '–'}–${row.losses ?? '–'}${row.draws ? '–' + row.draws : ''}` })), data.seasonLabel, 'team', data);
             }
         }
-        if (sources.f2 && includeSports.includes('f2')) {
-            const data=sources.f2,calendar={seasonStart:data.races?.[0]?.startDate,seasonEnd:data.races?.at(-1)?.endDate};
-            add('f2-drivers','F2 Drivers','f2.html',data.drivers?.map(row=>({rank:row.rank,name:row.name,identity:row.id,driverId:row.id,image:row.flagUrl,stat:`${row.points} pts`,href:`f2.html?driver=${encodeURIComponent(row.id)}`})),data.season,'f2-driver',calendar);
-            add('f2-teams','F2 Teams','f2.html?standing=teams',data.teams?.map(row=>({rank:row.rank,name:row.name,teamId:row.id,image:row.teamImage,stat:`${row.points} pts`,href:`f2.html?team=${encodeURIComponent(row.id)}`})),data.season,'f2-team',calendar);
+        for(const series of ['f2','f3'])if (sources[series] && includeSports.includes(series)) {
+            const data=sources[series],calendar={seasonStart:data.races?.[0]?.startDate,seasonEnd:data.races?.at(-1)?.endDate};
+            add(`${series}-drivers`,`${series.toUpperCase()} Drivers`,`${series}.html`,data.drivers?.map(row=>({rank:row.rank,name:row.name,identity:row.id,driverId:row.id,image:row.flagUrl,stat:`${row.points} pts`,href:`${series}.html?driver=${encodeURIComponent(row.id)}`})),data.season,`${series}-driver`,calendar);
+            add(`${series}-teams`,`${series.toUpperCase()} Teams`,`${series}.html?standing=teams`,data.teams?.map(row=>({rank:row.rank,name:row.name,teamId:row.id,image:row.teamImage,stat:`${row.points} pts`,href:`${series}.html?team=${encodeURIComponent(row.id)}`})),data.season,`${series}-team`,calendar);
+        }
+        if(sources.tennis?.tournament?.name&&includeSports.includes('tennis')){
+            const data=sources.tennis,tournament=data.tournament;
+            add('tennis','Tennis · Grand Slam','tennis.html',[{name:tournament.name}],data.seasonLabel||data.season,'tournament',{seasonStart:tournament.startDate,seasonEnd:tournament.endDate});
+            const card=cards.find(card=>card.id==='tennis');if(card)card.tournament=tournament;
         }
         return cards;
     }
     function rowFollowed(card,row,prefs) {
-        const clean=value=>String(value||'').toLowerCase().replace(/[^a-z0-9]/g,'');
-        const target=card.type==='drivers'||card.type==='f2-driver'?prefs.drivers||[]:prefs.teams||[];
+        const clean=value=>{const key=String(value||'').toLowerCase().replace(/[^a-z0-9]/g,'');return ({adelaide:'adelaidecrows',geelong:'geelongcats',goldcoast:'goldcoastsuns',greaterwesternsydney:'gwsgiants',sydney:'sydneyswans',westcoast:'westcoasteagles',fremantledockers:'fremantle'})[key]||key;};
+        const target=['drivers','f2-driver','f3-driver'].includes(card.type)?prefs.drivers||[]:prefs.teams||[];
         return target.some(item=>item.sport===card.sport&&[row.teamId,row.driverId,row.identity,row.name].filter(Boolean).some(value=>clean(value)===clean(item.id)));
     }
     function preferredLadders(cards,prefs={},now=Date.now()) {
@@ -72,15 +77,40 @@
         return [...sports.values()].sort((a, b) => women(a.sport) - women(b.sport) || Math.abs(a.seasonEnd - now) - Math.abs(b.seasonEnd - now) || a.sport.localeCompare(b.sport)).slice(0, limit);
     }
     const randomView = (views, random = Math.random) => views[Math.min(views.length - 1, Math.floor(random() * views.length))];
+    const preferencesForScope = (prefs,scope) => scope==='all'?{leagues:[],teams:[],drivers:[]}:prefs;
+    function validSource(key,data){
+        if(key==='aflStandings')return Array.isArray(data)&&data.every(row=>typeof row?.name==='string');
+        if(key==='aflFixtures')return Array.isArray(data)&&data.every(group=>Array.isArray(group?.matches));
+        if(!data||typeof data!=='object'||Array.isArray(data))return false;
+        if(key==='f1')return Array.isArray(data.races);
+        if(key==='drivers')return Array.isArray(data.drivers_championship)&&data.drivers_championship.every(row=>typeof row?.driver?.name==='string');
+        if(key==='constructors')return Array.isArray(data.constructors_championship)&&data.constructors_championship.every(row=>typeof row?.team?.teamName==='string');
+        if(['f2','f3'].includes(key))return Array.isArray(data.races)&&Array.isArray(data.drivers)&&Array.isArray(data.teams);
+        if(key==='tennis')return Array.isArray(data.groups)&&data.tournament!=null&&typeof data.tournament==='object';
+        return (!data.sport||data.sport===key)&&Array.isArray(data.groups)&&Array.isArray(data.standings)&&data.standings.every(group=>Array.isArray(group?.rows)&&group.rows.every(row=>typeof row?.team?.name==='string'));
+    }
+    function loadNotice({loading=false,loaded=false,failures=[],cards=0,following=false,saved=false}={}){
+        if(loading&&!loaded&&!cards)return{message:'Loading competition ladders…',retry:false};
+        if(failures.length){
+            const names=[...new Set(failures)].join(', ');
+            return{message:cards?`${names} ladder updates are unavailable.${saved?' Showing saved standings where available.':''}`:`Standings are temporarily unavailable for ${names}. Try again to check for an update.`,retry:true};
+        }
+        if(!cards)return{message:following?'No standings have been published for your starred selections yet. Open a competition to see its fixtures.':'No season ladders are active right now. Open a competition for its latest published standings.',retry:false,browse:true};
+        return null;
+    }
     function init(doc) {
         const sidebar = doc.querySelector('[data-home-ladders]');
         if (!sidebar) return;
-        const files = { aflStandings: 'standings.json', aflFixtures: 'afl-fixtures.json', f1: 'f1-fixtures.json', f2:'f2-data.json', drivers: 'drivers-championship.json', constructors: 'constructors-championship.json', aflw: 'sports-data/aflw.json', nrl: 'sports-data/nrl.json', nrlw: 'sports-data/nrlw.json', nba: 'sports-data/nba.json', wnba: 'sports-data/wnba.json', nbl: 'sports-data/nbl.json', nfl: 'sports-data/nfl.json' };
-        let sources = {};
+        const files = { aflStandings: 'standings.json', aflFixtures: 'afl-fixtures.json', f1: 'f1-fixtures.json', f2:'f2-data.json', f3:'f3-data.json', tennis:'sports-data/tennis.json', drivers: 'drivers-championship.json', constructors: 'constructors-championship.json', aflw: 'sports-data/aflw.json', nrl: 'sports-data/nrl.json', nrlw: 'sports-data/nrlw.json', nba: 'sports-data/nba.json', wnba: 'sports-data/wnba.json', nbl: 'sports-data/nbl.json', nfl: 'sports-data/nfl.json' };
+        const sources = {},failed = new Set();
+        let loading=false,loaded=false,refreshPending=false;
+        const sourceSport=key=>['aflStandings','aflFixtures'].includes(key)?'afl':['drivers','constructors','f1'].includes(key)?'f1':key;
+        const sourceLabel=key=>({afl:'AFL',f1:'F1',f2:'F2',f3:'F3',aflw:'AFLW',nrl:'NRL',nrlw:'NRLW',nba:'NBA',wnba:'WNBA',nbl:'NBL',nfl:'NFL',tennis:'Tennis'})[sourceSport(key)]||key;
+        const preferences=()=>preferencesForScope(typeof ViewerFavourites!=='undefined'?ViewerFavourites.get():{leagues:[],teams:[],drivers:[]},typeof window!=='undefined'?window.HomeWelcome?.getScope?.():null);
         const selectedViews = new Map();
         const text = (tag, cls, value, parent) => { const node = doc.createElement(tag); node.className = cls; node.textContent = value; parent.appendChild(node); return node; };
         const render = () => {
-            const prefs=typeof ViewerFavourites!=='undefined'?ViewerFavourites.get():{leagues:[],teams:[],drivers:[]};
+            const prefs=preferences();
             const wanted=[...(prefs.leagues||[]),...(prefs.teams||[]).map(item=>item.sport),...(prefs.drivers||[]).map(item=>item.sport)];
             const cards = preferredLadders(cardsFor(sources,Date.now(),wanted),prefs);
             sidebar.replaceChildren();
@@ -98,6 +128,15 @@
                 arrow.setAttribute('aria-label', `Open ${card.title} standings`);
                 const followedRows=card.rows.some(row=>rowFollowed(card,row,prefs));
                 text('p', 'home-ladder__season', `${card.season || ''}${card.ended ? ' · Final' : ''}${followedRows?' · Starred teams/drivers first':''}`, link);
+                if(card.type==='tournament'){
+                    const tournament=card.tournament;
+                    text('h4','home-tournament__title',tournament.name,link);
+                    const date=input=>new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Sydney',day:'numeric',month:'short',year:'numeric'}).format(new Date(input));
+                    text('p','ladder-note',tournament.startDate&&tournament.endDate?`${date(tournament.startDate)} – ${date(tournament.endDate)}`:'Dates to be confirmed',link);
+                    text('p','ladder-note',[tournament.venue,tournament.surface].filter(Boolean).join(' · '),link);
+                    text('p','ladder-note','Men’s and women’s singles · Draws and scores appear when published.',link);
+                    const draw=text('a','home-ladder__switch','Open draw & results →',link);draw.href='tennis.html';return;
+                }
                 const switching = text('div', 'home-ladder__controls', '', link);
                 if (choice.views.length > 1) {
                     const opposite = choice.views[(choice.views.indexOf(card) + 1) % choice.views.length];
@@ -125,18 +164,35 @@
                 paint();
                 sidebar.appendChild(link);
             }
-            if (!cards.length) text('p', 'ladder-note', 'Season ladders will appear when competitions begin.', sidebar);
+            const relevant=[...failed].filter(key=>(!['f2','f3','tennis'].includes(sourceSport(key))||wanted.includes(sourceSport(key)))&&(!wanted.length||wanted.includes(sourceSport(key))));
+            const notice=loadNotice({loading,loaded,failures:relevant.map(sourceLabel),cards:cards.length,following:Boolean(wanted.length),saved:relevant.some(key=>sources[key])});
+            if(notice){
+                const status=text('div','home-ladders-notice','',sidebar);
+                const copy=text('p','ladder-note home-ladders-notice__copy',notice.message,status);copy.setAttribute('role','status');copy.setAttribute('aria-live','polite');
+                if(notice.retry){const retry=text('button','home-data-retry',loading?'Checking ladders…':'Retry ladders',status);retry.type='button';retry.disabled=loading;retry.addEventListener('click',refresh);}
+                if(notice.browse){const browse=text('a','home-ladder__switch','Browse competitions →',status);browse.href='about.html#competitions';}
+            }
         };
         const refresh = async () => {
+            if(loading){refreshPending=true;return;}
+            const retryFocus=doc.activeElement?.classList?.contains('home-data-retry')&&sidebar.contains(doc.activeElement)?doc.activeElement:null;
+            loading=true;sidebar.setAttribute('aria-busy','true');
+            if(!loaded)render();
+            else if(retryFocus){retryFocus.disabled=true;retryFocus.textContent='Checking ladders…';}
             await Promise.all(Object.entries(files).map(async ([key, file]) => {
-                if(key==='f2' && typeof ViewerFavourites!=='undefined'){const prefs=ViewerFavourites.get();if(!prefs.leagues.includes('f2')&&!prefs.teams.some(team=>team.sport==='f2')&&!prefs.drivers?.some(driver=>driver.sport==='f2'))return;}
-                try { const response = await fetch(file, { cache: 'no-cache' }); if (response.ok) sources[key] = await response.json(); } catch {}
+                if(['f2','f3'].includes(key)){const prefs=preferences();if(!prefs.leagues.includes(key)&&!prefs.teams.some(team=>team.sport===key)&&!prefs.drivers?.some(driver=>driver.sport===key))return;}
+                try { const response = await fetch(file, { cache: 'no-cache' });if(!response.ok)throw new Error('Saved standings unavailable');const data=await response.json();if(!validSource(key,data))throw new Error('Invalid saved standings');sources[key]=data;failed.delete(key); } catch {failed.add(key);}
             }));
+            loading=false;loaded=true;sidebar.setAttribute('aria-busy','false');
+            const keepRetryFocus=retryFocus&&(doc.activeElement===retryFocus||doc.activeElement===doc.body);
             render();
+            if(keepRetryFocus){const target=sidebar.querySelector('.home-data-retry')||sidebar;if(target===sidebar)target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
+            if(refreshPending){refreshPending=false;refresh();}
         };
         refresh();
         window.addEventListener('viewer-favourites-change',refresh);
+        window.addEventListener('viewer-home-scope-change',()=>{render();const prefs=preferences();if(['f2','f3'].some(sport=>!sources[sport]&&(prefs.leagues.includes(sport)||prefs.teams.some(team=>team.sport===sport)||prefs.drivers?.some(driver=>driver.sport===sport))))refresh();});
         setInterval(refresh, 15 * 60000);
     }
-    return { seasonWindow, isSeasonVisible, cardsFor, chooseLadders, preferredLadders, rowFollowed, randomView, init };
+    return { seasonWindow, isSeasonVisible, cardsFor, chooseLadders, preferredLadders, rowFollowed, randomView, preferencesForScope, validSource, loadNotice, init };
 });

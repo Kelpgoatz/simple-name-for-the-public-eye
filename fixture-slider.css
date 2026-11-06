@@ -12,3 +12,15 @@
 .fixture-slider-markers .fixture-slider-marker--last { transform: translateX(-100%); }
 .fixture-slider-markers button[aria-pressed="true"], .fixture-slider-markers button:hover { color: var(--accent-ink); }
 .fixtures-card, .fixtures-list { overflow-anchor: none; }
+.fixture-slider-context { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 32px; margin: 2px 0; font: 600 .65rem/1.35 var(--font-sans); }
+.fixture-slider-context[hidden], .fixture-slider-context [hidden] { display: none; }
+.fixture-slider-context__summary { display: flex; align-items: baseline; flex-wrap: wrap; gap: 3px 10px; min-width: 0; color: var(--muted); }
+.fixture-slider-context__date { color: var(--ink); font-weight: 700; }
+.fixture-slider-current { flex: 0 0 auto; min-height: 32px; padding: 5px 9px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); color: var(--accent-ink); font: inherit; cursor: pointer; }
+.fixture-slider-current:hover { border-color: var(--accent-ink); background: var(--surface); }
+.fixture-slider-current:disabled { opacity: .45; cursor: default; }
+.fixture-slider-current:focus-visible, .fixture-slider-markers button:focus-visible, .round-slider[type="range"]:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+@media (max-width: 480px) {
+    .fixture-slider-context { font-size: .62rem; }
+    .fixture-slider-current { min-height: 36px; padding-inline: 8px; }
+}

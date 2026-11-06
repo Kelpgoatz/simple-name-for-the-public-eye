@@ -15,6 +15,12 @@
     const teamUrl = (sport, team) => url(sport, 'team', team?.id || team?.name || '');
     const matchUrl = (sport, match) => url(sport, 'match', match?.id || match?.matchId || '');
     const allMatches = data => (data.groups || []).flatMap(group => (group.matches || []).map(match => ({...match,groupId:group.id,groupLabel:group.label})));
+    function scopeLabel(data) {
+        if(data.sport!=='tennis')return String(data.seasonLabel||data.season||'Published season');
+        const yearFormat=new Intl.DateTimeFormat('en',{timeZone:'Australia/Sydney',year:'numeric'});
+        const years=[...new Set(allMatches(data).map(match=>Date.parse(match.startTime)).filter(Number.isFinite).map(time=>Number(yearFormat.format(new Date(time)))))].sort((a,b)=>a-b);
+        return years.length?`${years[0]}${years.length>1?`–${years.at(-1)}`:''} published singles draw${years.length>1?'s':''}`:'Published singles draw';
+    }
     const matchesTeam = (team, id) => String(team?.id) === String(id) || canonical(team?.name) === canonical(id);
     const numeric = value => value !== '' && value != null && Number.isFinite(Number(value));
     const identityMarkup = team => typeof SportsUI!=='undefined' ? SportsUI.identity(team) : '';
@@ -34,6 +40,116 @@
             return match.winner === side ? 'W' : match.winner ? 'L' : numeric(match.homeScore) && numeric(match.awayScore) && Number(match.homeScore) === Number(match.awayScore) ? 'D' : '—';
         });
         return {played:played.length,wins,losses,draws,scored,conceded,scoredGames,best,form};
+    }
+    const phaseLabels={all:'All games',regular:'Regular season',preseason:'Preseason',postseason:'Finals / playoffs'};
+    function matchPhase(match,sport) {
+        if(sport==='tennis')return 'regular';
+        const label=[match.roundLabel,match.groupLabel].filter(Boolean).join(' ');
+        if(/\bpre[ -]?season\b|practice match|community series/i.test(label))return 'preseason';
+        if(/\bpost[ -]?season\b|\bplay[ -]?offs?\b|\bfinals?\b|wild\s*card|super bowl|divisional round|conference championship/i.test(label))return 'postseason';
+        return 'regular';
+    }
+    const filterPhase=(matches,phase,sport)=>phase==='all'?matches:matches.filter(match=>matchPhase(match,sport)===phase);
+    function availablePhases(matches,sport) {
+        if(sport==='tennis')return [];
+        const present=new Set(matches.map(match=>matchPhase(match,sport)));
+        return present.size>1?['all','regular','preseason','postseason'].filter(phase=>phase==='all'||present.has(phase)):[];
+    }
+    function recentGames(matches,teamId,limit=5) {
+        return matches.filter(match=>match.status==='final'&&(matchesTeam(match.home,teamId)||matchesTeam(match.away,teamId)))
+            .sort((a,b)=>(Date.parse(b.startTime)||0)-(Date.parse(a.startTime)||0)||String(b.id).localeCompare(String(a.id))).slice(0,limit);
+    }
+    const shortDate=input=>input&&Number.isFinite(Date.parse(input))?new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Sydney',day:'numeric',month:'short'}).format(new Date(input)):'Date TBC';
+    function recentMarkup(matches,team,sport) {
+        const recent=recentGames(matches,team.id||team.name);
+        return `<section class="viewer-recent"><div class="viewer-section-head"><h3>Recent results</h3><span>${recent.length?'Latest completed games':'No completed games in this selection'}</span></div>${recent.length?`<div class="viewer-recent__list">${recent.map(match=>{
+            const home=matchesTeam(match.home,team.id||team.name),opponent=home?match.away:match.home,own=home?match.homeScore:match.awayScore,against=home?match.awayScore:match.homeScore;
+            const result=match.winner===(home?'home':'away')?'W':match.winner?'L':numeric(own)&&numeric(against)&&Number(own)===Number(against)?'D':'—';
+            return `<a href="${matchUrl(sport,match)}"><span class="viewer-result" data-result="${result}" aria-label="${result==='W'?'Win':result==='L'?'Loss':result==='D'?'Draw':'Result unavailable'}">${result}</span><span class="viewer-recent__opponent"><strong>${esc(teamNames.label(sport,opponent))}</strong><small>${esc(shortDate(match.startTime))} · ${home?'Home':'Away'}${match.groupLabel?` · ${esc(match.groupLabel)}`:''}</small></span><b>${numeric(own)?esc(own):'—'}<span>–</span>${numeric(against)?esc(against):'—'}</b><span aria-hidden="true">↗</span></a>`;
+        }).join('')}</div>`:'<p class="viewer-note">Completed games will appear here as results are published.</p>'}</section>`;
+    }
+    function matchDetails(data,match,now=Date.now()){
+        const start=Date.parse(match.startTime),dated=Number.isFinite(start),format=options=>new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Sydney',...options}).format(new Date(start));
+        const group=match.groupLabel||allMatches(data).find(game=>String(game.id)===String(match.id))?.groupLabel;
+        const basketball=['nba','wnba','nbl'].includes(data.sport);
+        const tennisRound=data.sport==='tennis'&&/round|qualif|semi|quarter|final/i.test(match.statusDetail||'')?String(match.statusDetail).split(' · ')[0]:null;
+        const round=(basketball?(group||(dated?format({weekday:'short',day:'numeric',month:'short',year:'numeric'}):null)):match.roundLabel||(tennisRound&&!/^(?:final|live)$/i.test(tennisRound)?tennisRound:null)||group)||'To be confirmed';
+        const roundLabel=basketball?'Match day':data.sport==='tennis'?'Draw / round':'Round / stage';
+        let note=data.sport==='tennis'?'Set scores appear as play progresses. Point-by-point statistics are not supplied by this feed.':'Scores and available player performances appear once play begins.';
+        if(match.status==='final')note=data.sport==='tennis'?'Published final result. Select a player name to explore their tournament.':'Published final result. Select a team name to explore their season.';
+        else if(match.status==='live')note='Score from the latest saved update. The published status and score may change.';
+        else if(match.status==='postponed')note='This game has been postponed. Check the source for a confirmed replacement time.';
+        else if(match.status==='cancelled')note='This game has been cancelled. No final score is assumed.';
+        else if(dated&&start<=now)note='The scheduled start has passed. Awaiting a confirmed status from the latest saved feed.';
+        if(match.status==='live'&&dated&&(now-start>48*3600000||start-now>24*3600000))note='Awaiting a fresh status update. The last reported score may be out of date.';
+        const scored=numeric(match.homeScore)&&numeric(match.awayScore),difference=scored?Math.abs(Number(match.homeScore)-Number(match.awayScore)):null;
+        const winner=match.winner==='home'?match.home:match.winner==='away'?match.away:null;
+        let outcome=null;
+        if(match.status==='final'&&data.sport!=='tennis'&&scored){
+            if(difference===0)outcome={label:data.sport==='nfl'?'Tied game':'Drawn game',detail:'Level scores at full time'};
+            else if(winner&&((match.winner==='home')===(Number(match.homeScore)>Number(match.awayScore))))outcome={label:`${difference} ${difference===1?'point':'points'}`,detail:`Winning margin · ${teamNames.label(data.sport,winner)}`};
+        }
+        return{competition:labels[data.sport]||data.sport,round,roundLabel,roundDetail:basketball?match.roundLabel||'':'',date:dated?format({weekday:'short',day:'numeric',month:'short',year:'numeric'}):'Date to be confirmed',time:dated?format({hour:'numeric',minute:'2-digit'}):'Time to be confirmed',zone:dated?new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Sydney',timeZoneName:'short'}).formatToParts(new Date(start)).find(part=>part.type==='timeZoneName')?.value||'Sydney':'Sydney',venue:match.venue||'Venue to be confirmed',note,outcome};
+    }
+    function matchDetailsMarkup(data,match,now=Date.now()){
+        const detail=matchDetails(data,match,now);
+        const fact=(label,value,small='')=>`<div><dt>${esc(label)}</dt><dd>${esc(value)}${small?`<small>${esc(small)}</small>`:''}</dd></div>`;
+        return `<div class="viewer-game-details"><p class="viewer-game-details__competition">${esc(detail.competition)} · ${esc(scopeLabel(data))}${match.tour?` · ${esc(match.tour==='wta'?'Women’s singles':match.tour==='atp'?'Men’s singles':match.tour)}`:''}</p><dl class="viewer-game-facts">${fact(detail.roundLabel,detail.round,detail.roundDetail)}${fact('Start · Sydney time',detail.time,`${detail.date} · ${detail.zone}`)}${fact('Venue',detail.venue)}</dl></div>`;
+    }
+    function matchContextMarkup(data,match,now=Date.now()){
+        const detail=matchDetails(data,match,now);
+        return `<div class="viewer-game-context">${detail.outcome?`<div class="viewer-game-margin"><strong>${esc(detail.outcome.label)}</strong><span>${esc(detail.outcome.detail)}</span></div>`:''}<p class="viewer-note">${esc(detail.note)}</p></div>`;
+    }
+    function recentFormMarkup(matches,team,sport){
+        const recent=recentGames(matches,team.id||team.name).reverse(),name=teamNames.label(sport,team);
+        const badges=recent.map(match=>{
+            const home=matchesTeam(match.home,team.id||team.name),side=home?'home':'away',opponent=home?match.away:match.home;
+            const tied=numeric(match.homeScore)&&numeric(match.awayScore)&&Number(match.homeScore)===Number(match.awayScore);
+            const result=match.winner===side?'W':match.winner?'L':tied?(sport==='nfl'?'T':'D'):'—';
+            const word={W:'Win',L:'Loss',D:'Draw',T:'Tie','—':'Result unavailable'}[result],description=`${word} against ${teamNames.label(sport,opponent)} · ${shortDate(match.startTime)}`;
+            return `<a href="${matchUrl(sport,match)}" data-result="${result}" aria-label="${esc(description)}" title="${esc(description)}">${result}</a>`;
+        }).join('');
+        return `<div class="viewer-matchup-form__team"><a class="viewer-matchup-form__name" href="${teamUrl(sport,team)}">${esc(name)}</a><div class="viewer-matchup-form__results" aria-label="${esc(name)} recent results, oldest to newest">${badges||'<span>No completed games before this one.</span>'}</div></div>`;
+    }
+    function matchupSummary(data,match) {
+        const games=allMatches(data),homeId=match.home.id||match.home.name,awayId=match.away.id||match.away.name,phase=matchPhase(match,data.sport);
+        const selectedTime=Date.parse(match.startTime);
+        const before=games.filter(game=>game.status==='final'&&Number.isFinite(selectedTime)&&Number.isFinite(Date.parse(game.startTime))&&Date.parse(game.startTime)<selectedTime);
+        const meetings=before.filter(game=>String(game.id)!==String(match.id)&&matchPhase(game,data.sport)===phase&&
+            ((matchesTeam(game.home,homeId)&&matchesTeam(game.away,awayId))||(matchesTeam(game.home,awayId)&&matchesTeam(game.away,homeId))));
+        const selected=filterPhase(before,phase,data.sport);
+        return {phase,dated:Number.isFinite(selectedTime),home:teamSummary(selected,homeId),away:teamSummary(selected,awayId),homeRecent:recentGames(selected,homeId),awayRecent:recentGames(selected,awayId),meetings:[...meetings].sort((a,b)=>Date.parse(b.startTime)-Date.parse(a.startTime)),headToHead:teamSummary(meetings,homeId)};
+    }
+    function matchupMarkup(data,match) {
+        const summary=matchupSummary(data,match),home=teamNames.label(data.sport,match.home),away=teamNames.label(data.sport,match.away);
+        const showDraws=Boolean(summary.home.draws||summary.away.draws);
+        const drawColumn=data.sport==='nfl'?'T':'D';
+        const record=team=>`${team.wins}–${team.losses}${showDraws?`–${team.draws}`:''}`;
+        const average=(team,key)=>team.scoredGames?(team[key]/team.scoredGames).toFixed(1):'—';
+        const scoreLabel=data.sport==='tennis'?'Sets':'Points';
+        const comparison=(label,left,right)=>`<div class="viewer-comparison__row"><strong>${esc(left)}</strong><span>${label}</span><strong>${esc(right)}</strong></div>`;
+        const form=`<div class="viewer-matchup-form"><div class="viewer-matchup-form__heading"><h4>Form coming into this game</h4><p>Oldest → newest · Select a result to open that game.</p></div><div class="viewer-matchup-form__grid">${recentFormMarkup(summary.homeRecent,match.home,data.sport)}${recentFormMarkup(summary.awayRecent,match.away,data.sport)}</div><p class="viewer-matchup-form__key">W win · L loss${data.sport==='tennis'?'':data.sport==='nfl'?' · T tie':' · D draw'} · — result unavailable</p></div>`;
+        if(!summary.dated)return '<section class="viewer-matchup"><div class="viewer-section-head"><h3>The matchup</h3></div><p class="viewer-note">Previous meetings and pregame records will appear once a start time is confirmed.</p></section>';
+        return `<section class="viewer-matchup"><div class="viewer-section-head"><h3>The matchup</h3><span>${esc(scopeLabel(data))}${data.sport==='tennis'?'':` · ${esc(phaseLabels[summary.phase])}`}</span></div><p class="viewer-note">Completed games before this game, in the same phase of the published fixture.</p><div class="viewer-comparison"><div class="viewer-comparison__teams"><a href="${teamUrl(data.sport,match.home)}">${esc(home)}</a><span>Before this game</span><a href="${teamUrl(data.sport,match.away)}">${esc(away)}</a></div>${comparison('W–L'+(showDraws?`–${drawColumn}`:''),record(summary.home),record(summary.away))}${comparison('Completed games',summary.home.played,summary.away.played)}${comparison(`${scoreLabel} scored / game`,average(summary.home,'scored'),average(summary.away,'scored'))}${comparison(`${scoreLabel} conceded / game`,average(summary.home,'conceded'),average(summary.away,'conceded'))}</div>${form}<div class="viewer-meetings"><h4>Previous meetings</h4>${summary.meetings.length?`<p class="viewer-note">Before this game, in the same phase of the ${esc(scopeLabel(data))} fixture: <strong>${esc(home)} ${summary.headToHead.wins}–${summary.headToHead.losses}${summary.headToHead.draws?`–${summary.headToHead.draws}`:''} ${esc(away)}</strong>.</p><div class="viewer-meetings__list">${summary.meetings.slice(0,3).map(game=>`<a href="${matchUrl(data.sport,game)}"><span>${esc(shortDate(game.startTime))}</span><strong>${esc(teamNames.label(data.sport,game.home))} ${numeric(game.homeScore)?esc(game.homeScore):'—'}–${numeric(game.awayScore)?esc(game.awayScore):'—'} ${esc(teamNames.label(data.sport,game.away))}</strong><span aria-hidden="true">→</span></a>`).join('')}</div>`:'<p class="viewer-note">No earlier completed meeting is available in this phase of the published fixture.</p>'}</div></section>`;
+    }
+    function gameLeaders(data,match,limit=4) {
+        const players=data?.matches?.[match.id]?.players||[];
+        return (data?.categories||[]).flatMap(category=>{
+            const ranked=players.filter(player=>numeric(player.stats?.[category.key])&&Number(player.stats[category.key])>0).sort((a,b)=>Number(b.stats[category.key])-Number(a.stats[category.key])||a.name.localeCompare(b.name));
+            if(!ranked.length)return [];
+            const value=Number(ranked[0].stats[category.key]);return [{...category,player:ranked[0],value,tied:ranked.filter(player=>Number(player.stats[category.key])===value).length}];
+        }).slice(0,limit);
+    }
+    function gameLeadersMarkup(data,match) {
+        const leaders=gameLeaders(data,match);
+        if(!leaders.length)return '';
+        return `<section class="viewer-game-leaders"><div class="viewer-section-head"><h3>Leading performances</h3><span>Recorded box score</span></div><div class="viewer-game-leaders__grid">${leaders.map(leader=>`<article><p>${esc(leader.label)}</p><strong class="viewer-game-leaders__value">${esc(leader.value)}</strong><h4>${esc(leader.player.name)}</h4><small>${esc(teamNames.label(data.sport,leader.player.teamName))}${leader.tied>1?` · Shared lead with ${leader.tied-1} other${leader.tied>2?'s':''}`:''}</small></article>`).join('')}</div></section>`;
+    }
+    function freshnessMarkup(data) {
+        const time=data.fixturesUpdatedAt||data.updatedAt;
+        if(!time||!Number.isFinite(Date.parse(time)))return '';
+        const label=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Sydney',year:'numeric',day:'numeric',month:'short',hour:'numeric',minute:'2-digit'}).format(new Date(time));
+        return `<p class="viewer-note viewer-freshness">Fixtures updated <time datetime="${esc(time)}">${esc(label)} Sydney time</time>${Date.now()-Date.parse(time)>48*3600000?' · Showing a saved update; later results may be missing':''}.</p>`;
     }
     function aggregate(records, categories, options = {}) {
         const players = new Map();
@@ -113,11 +229,11 @@
         const source=typeof record.source==='string'?record.source:data.source?.url;
         return `<p class="viewer-note">${esc(coverage(data,[match],[record]))}${source && /^https:\/\//.test(source)?` <a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Statistics source ↗</a>`:''}</p><p class="viewer-table-hint">Scroll across to compare all statistics →</p><div class="viewer-table-wrap" tabindex="0" role="region" aria-label="Player performance table"><table class="viewer-performance"><caption>Individual performances${validSort?` · ${esc(categories.find(category=>category.key===sortKey).label)} order`:''}</caption><thead><tr><th scope="col">Player</th><th scope="col">Team</th>${categories.map(category=>`<th scope="col"${category.key===sortKey?' aria-sort="descending"':''}>${esc(category.label)}</th>`).join('')}</tr></thead><tbody>${players.map(player=>`<tr><th scope="row">${esc(player.name)}</th><td>${esc(teamNames.label(data.sport,player.teamName))}</td>${categories.map(category=>`<td${category.key===sortKey?' class="viewer-stat-selected"':''}>${numeric(player.stats?.[category.key])?esc(player.stats[category.key]):'—'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     }
-    function dashboard(data, team, mode='total') {
-        const summary=teamSummary(allMatches(data),team.id||team.name);
+    function dashboard(data, team, mode='total',matches=allMatches(data),phase='all') {
+        const summary=teamSummary(matches,team.id||team.name);
         const metric=(label,value)=>`<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`;
         const isTennis=data.sport==='tennis';
-        return `<div class="viewer-profile-head">${identityMarkup(team)}<div><p class="sports-kicker">${esc(labels[data.sport])} · ${esc(data.seasonLabel||data.season)}</p><h2>${esc(teamNames.label(data.sport,team))}</h2><p class="viewer-note">${isTennis?'Tournament':'Season'} overview · ${summary.played} completed games in the published fixture</p></div></div><dl class="viewer-metrics">${metric('Wins',summary.wins)}${metric('Losses',summary.losses)}${!isTennis?metric('Draws / ties',summary.draws):''}${metric(mode==='average'?'Scored / game':isTennis?'Sets won':'Points scored',mode==='average'?(summary.scoredGames? (summary.scored/summary.scoredGames).toFixed(1):'—'):summary.scoredGames?summary.scored:'—')}</dl><div class="viewer-form"><span>Recent form</span>${summary.form.length?summary.form.map(result=>`<b data-result="${result}">${result}</b>`).join(''):'<span>No completed games yet</span>'}</div>${summary.best?`<p class="viewer-best"><strong>Biggest win · +${summary.best.margin}</strong> <a href="${matchUrl(data.sport,summary.best.match)}">${esc(teamNames.label(data.sport,summary.best.match.home))} ${summary.best.match.homeScore}–${summary.best.match.awayScore} ${esc(teamNames.label(data.sport,summary.best.match.away))} →</a></p>`:''}`;
+        return `<div class="viewer-profile-head">${identityMarkup(team)}<div><p class="sports-kicker">${esc(labels[data.sport])} · ${esc(scopeLabel(data))}</p><h2>${esc(teamNames.label(data.sport,team))}</h2><p class="viewer-note">${isTennis?'Tournament':phase==='all'?'Season':phaseLabels[phase]} overview · ${summary.played} completed games in this selection</p></div></div><dl class="viewer-metrics">${metric('Wins',summary.wins)}${metric('Losses',summary.losses)}${!isTennis?metric('Draws / ties',summary.draws):''}${metric(mode==='average'?'Scored / game':isTennis?'Sets won':'Points scored',mode==='average'?(summary.scoredGames? (summary.scored/summary.scoredGames).toFixed(1):'—'):summary.scoredGames?summary.scored:'—')}</dl><div class="viewer-form"><span>Recent form</span>${summary.form.length?summary.form.map(result=>`<b data-result="${result}">${result}</b>`).join(''):'<span>No completed games yet</span>'}</div>${summary.best?`<p class="viewer-best"><strong>Biggest win · +${summary.best.margin}</strong> <a href="${matchUrl(data.sport,summary.best.match)}">${esc(teamNames.label(data.sport,summary.best.match.home))} ${summary.best.match.homeScore}–${summary.best.match.awayScore} ${esc(teamNames.label(data.sport,summary.best.match.away))} →</a></p>`:''}`;
     }
     function careerMarkup(data, team, archive) {
         const label=teamNames.label(data.sport,team);
@@ -147,7 +263,7 @@
                 const match=games.find(match=>String(match.id)===matchId);
                 if(!match)throw new Error('Game not in the latest published fixture.');
                 doc.title=`${match.home.name} v ${match.away.name} | cgrillo`;
-                host.innerHTML=`${back}<div class="viewer-section-head"><h2>Game centre</h2><span>${esc(match.groupLabel)}</span></div><div class="viewer-game-centre">${SportsUI.renderMatch(match,sport)}</div><section class="viewer-section"><h3>Player performances</h3>${stats?.matches?.[match.id]?.players?.length?`<label class="viewer-sort">Order by <select data-player-sort><option value="">Team & player</option>${(stats.categories||[]).map(category=>`<option value="${esc(category.key)}">${esc(category.label)}</option>`).join('')}</select></label>`:''}<div data-player-performances>${matchPerformance(stats,match)}</div></section><p class="viewer-note">${sport==='tennis'?'Set scores appear above; point-by-point player statistics are not supplied by this feed.':''}</p>`;
+                host.innerHTML=`${back}<div class="viewer-section-head"><h2>Game centre</h2></div><div class="viewer-game-centre">${matchDetailsMarkup(data,match)}${SportsUI.renderMatch(match,sport)}${matchContextMarkup(data,match)}</div>${freshnessMarkup(data)}${matchupMarkup(data,match)}${gameLeadersMarkup(stats,match)}<section class="viewer-section"><h3>Player performances</h3>${stats?.matches?.[match.id]?.players?.length?`<label class="viewer-sort">Order by <select data-player-sort><option value="">Team & player</option>${(stats.categories||[]).map(category=>`<option value="${esc(category.key)}">${esc(category.label)}</option>`).join('')}</select></label>`:''}<div data-player-performances>${matchPerformance(stats,match)}</div></section><p class="viewer-note">${sport==='tennis'?'Set scores appear above; point-by-point player statistics are not supplied by this feed.':''}</p>`;
                 host.querySelector('[data-player-sort]')?.addEventListener('change',event=>{host.querySelector('[data-player-performances]').innerHTML=matchPerformance(stats,match,event.target.value);});
                 return;
             }
@@ -155,29 +271,47 @@
             if(!team)throw new Error('Team or player not in the latest published fixture.');
             doc.title=`${teamNames.label(sport,team)} | ${labels[sport]} | cgrillo`;
             const teamGames=games.filter(match=>matchesTeam(match.home,teamId)||matchesTeam(match.away,teamId));
-            const groups=(data.groups||[]).filter(group=>(group.matches||[]).some(match=>matchesTeam(match.home,teamId)||matchesTeam(match.away,teamId))).map(group=>({...group,matches:group.matches.filter(match=>matchesTeam(match.home,teamId)||matchesTeam(match.away,teamId))}));
-            let mode='total',scope='season',archive,archiveRequested=false,index=SportsUI.initialGroupIndex(groups);
+            const teamGroups=(data.groups||[]).filter(group=>(group.matches||[]).some(match=>matchesTeam(match.home,teamId)||matchesTeam(match.away,teamId))).map(group=>({...group,matches:group.matches.filter(match=>matchesTeam(match.home,teamId)||matchesTeam(match.away,teamId)).map(match=>({...match,groupLabel:group.label}))}));
+            let groups=teamGroups;
+            let mode='total',phase='all',scope='season',archive,archiveRequested=false,index=SportsUI.initialGroupIndex(groups);
             host.innerHTML=`${back}<section class="viewer-dashboard" data-team-dashboard></section><div class="viewer-section-head"><h3>Player performances</h3><div class="sports-tabs viewer-mode" role="group" aria-label="Player statistics calculation"><button type="button" data-mode="total" aria-pressed="true">Total</button><button type="button" data-mode="average" aria-pressed="false">Average</button></div></div><div data-team-leaders></div><section class="viewer-team-fixtures fixtures-card"><div class="fixtures-card__head"><h3>${sport==='tennis'?'Tournament games':'Team fixtures'}</h3><div class="round-selector"><button type="button" data-view-prev aria-label="Previous selection">‹</button><span class="round-selector__value" data-view-round></span><button type="button" data-view-next aria-label="Next selection">›</button></div></div><input type="range" class="round-slider" data-view-slider aria-label="Choose team round or date"><div data-view-games></div></section>`;
-            const records=stats?teamGames.map(match=>stats.matches?.[match.id]).filter(Boolean):[];
+            const recentHost=doc.createElement('div');recentHost.dataset.teamRecent='';host.querySelector('.viewer-team-fixtures').before(recentHost);
             const scopes=doc.createElement('div');scopes.className='viewer-scope';scopes.setAttribute('role','group');scopes.setAttribute('aria-label','Dashboard time range');
-            scopes.innerHTML=`<button type="button" data-scope="season" aria-pressed="true">${esc(data.seasonLabel||data.season)} season</button><button type="button" data-scope="career" aria-pressed="false">All time</button>`;
+            scopes.innerHTML=`<button type="button" data-scope="season" aria-pressed="true">${esc(scopeLabel(data))}${sport==='tennis'?'':' season'}</button><button type="button" data-scope="career" aria-pressed="false">All time</button>`;
             host.querySelector('[data-team-dashboard]').before(scopes);
+            const phases=availablePhases(teamGames,sport);
+            const phaseControls=doc.createElement('div');phaseControls.className='viewer-phase';phaseControls.setAttribute('role','group');phaseControls.setAttribute('aria-label','Season phase');
+            phaseControls.innerHTML=phases.map(value=>`<button type="button" data-phase="${value}" aria-pressed="${value===phase}">${phaseLabels[value]}</button>`).join('');
+            scopes.after(phaseControls);
             const renderSummary=()=>{
                 scopes.querySelectorAll('[data-scope]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.scope===scope)));
+                phaseControls.hidden=scope==='career'||!phases.length;
+                recentHost.hidden=scope==='career';
                 host.querySelector('[data-team-leaders]').hidden=scope==='career';
                 host.querySelector('.viewer-mode').parentElement.hidden=scope==='career';
                 host.querySelector('.viewer-team-fixtures').hidden=scope==='career';
                 if(scope==='career') {host.querySelector('[data-team-dashboard]').innerHTML=careerMarkup(data,team,archive);return;}
-                host.querySelector('[data-team-dashboard]').innerHTML=dashboard(data,team,mode) + '<p class="viewer-note">Scope: all published fixture games, including preseason and postseason where listed. This view may differ from the regular-season ladder.</p>';
-                host.querySelector('[data-team-leaders]').innerHTML=stats?`<p class="viewer-note">${esc(coverage(stats,teamGames,records))} ${mode==='average'?'Averages use each player’s recorded appearances for each statistic.':''}</p>${leadersMarkup(stats,records,{team:team.id||team.name,mode,sport})}`:'<p class="viewer-note">Individual statistics are not available for this competition. The dashboard uses published game results.</p>';
+                const selectedGames=filterPhase(teamGames,phase,sport),records=stats?selectedGames.map(match=>stats.matches?.[match.id]).filter(Boolean):[];
+                phaseControls.querySelectorAll('[data-phase]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.phase===phase)));
+                const scopeNote=phase==='all'?'Scope: all published fixture games, including preseason and postseason where listed. This view may differ from the regular-season ladder.':`Scope: ${phaseLabels[phase].toLowerCase()} games only. Results, player statistics and the fixture slider all use this selection.`;
+                host.querySelector('[data-team-dashboard]').innerHTML=dashboard(data,team,mode,selectedGames,phase) + `<p class="viewer-note">${scopeNote}</p>${freshnessMarkup(data)}`;
+                host.querySelector('[data-team-leaders]').innerHTML=stats?`<p class="viewer-note">${esc(coverage(stats,selectedGames,records))} ${mode==='average'?'Averages use each player’s recorded appearances for each statistic.':''}</p>${leadersMarkup(stats,records,{team:team.id||team.name,mode,sport})}`:'<p class="viewer-note">Individual statistics are not available for this competition. The dashboard uses published game results.</p>';
+                recentHost.innerHTML=recentMarkup(selectedGames,team,sport);
                 host.querySelectorAll('[data-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.mode===mode)));
             };
             const slider=host.querySelector('[data-view-slider]');slider.min='0';slider.max=String(Math.max(0,groups.length-1));slider.disabled=groups.length<2;
-            const renderGames=()=>{const group=groups[index];slider.value=String(index);host.querySelector('[data-view-round]').textContent=group?.label||'No fixtures';slider.setAttribute('aria-valuetext',group?.label||'No fixtures');host.querySelector('[data-view-prev]').disabled=index===0;host.querySelector('[data-view-next]').disabled=index>=groups.length-1;FixtureSlider.update(slider,groups.map((group,value)=>({value,label:group.label,date:group.startDate})));host.querySelector('[data-view-games]').innerHTML=(group?.matches||[]).map(match=>SportsUI.renderMatch(match,sport)).join('');};
+            const renderGames=()=>{const group=groups[index];slider.value=String(index);host.querySelector('[data-view-round]').textContent=group?.label||'No fixtures';slider.setAttribute('aria-valuetext',group?.label||'No fixtures');host.querySelector('[data-view-prev]').disabled=index===0;host.querySelector('[data-view-next]').disabled=index>=groups.length-1;FixtureSlider.update(slider,groups.map((group,value)=>({value,label:group.label,date:group.startDate,endDate:group.endDate||(group.matches||[]).map(match=>match.startTime).filter(time=>Number.isFinite(Date.parse(time))).sort((a,b)=>Date.parse(a)-Date.parse(b)).at(-1)})),{unit:sport==="nfl"?"weeks":["nba","wnba","nbl","tennis"].includes(sport)?"days":"rounds"});host.querySelector('[data-view-games]').innerHTML=(group?.matches||[]).map(match=>SportsUI.renderMatch(match,sport)).join('');};
             host.querySelector('[data-view-prev]').addEventListener('click',()=>{index=Math.max(0,index-1);renderGames();});
             host.querySelector('[data-view-next]').addEventListener('click',()=>{index=Math.min(groups.length-1,index+1);renderGames();});
             slider.addEventListener('input',()=>{index=Math.max(0,Math.min(groups.length-1,Number(slider.value)));renderGames();});
             host.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{mode=button.dataset.mode;renderSummary();}));
+            phaseControls.querySelectorAll('[data-phase]').forEach(button=>button.addEventListener('click',()=>{
+                const previous=groups[index]?.id;phase=button.dataset.phase;
+                groups=teamGroups.map(group=>({...group,matches:filterPhase(group.matches,phase,sport)})).filter(group=>group.matches.length);
+                const sameGroup=groups.findIndex(group=>group.id===previous);index=sameGroup>=0?sameGroup:SportsUI.initialGroupIndex(groups);
+                slider.max=String(Math.max(0,groups.length-1));slider.disabled=groups.length<2;
+                renderSummary();renderGames();
+            }));
             scopes.querySelectorAll('[data-scope]').forEach(button=>button.addEventListener('click',async()=>{
                 scope=button.dataset.scope;
                 if(scope==='career'&&!archiveRequested){archiveRequested=true;host.querySelector('[data-team-dashboard]').innerHTML='<p class="viewer-note">Loading historical records…</p>';archive=await json(`sports-data/${sport}-careers.json`).catch(()=>null);}
@@ -186,5 +320,5 @@
             renderSummary();renderGames();
         } catch(error) {host.innerHTML=`<h2>This view is unavailable</h2><p class="viewer-note">${esc(error.message)}</p><a href="${sport}.html">Return to ${labels[sport]} fixtures →</a>`;}
     }
-    return {labels,canonical,teamUrl,matchUrl,teamSummary,aggregate,normalizeAFL,leadersMarkup,matchPerformance,careerMarkup,load,statistics,roundTallies,initPage};
+    return {labels,scopeLabel,canonical,teamUrl,matchUrl,teamSummary,matchPhase,filterPhase,availablePhases,recentGames,recentMarkup,matchDetails,matchDetailsMarkup,matchContextMarkup,recentFormMarkup,matchupSummary,matchupMarkup,gameLeaders,gameLeadersMarkup,aggregate,normalizeAFL,leadersMarkup,matchPerformance,careerMarkup,load,statistics,roundTallies,initPage};
 });

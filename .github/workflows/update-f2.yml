@@ -6,8 +6,13 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/save-data.mjs'
       - 'scripts/update-f2.mjs'
       - 'scripts/lib/f2-source.mjs'
+      - 'scripts/lib/fia-feeder-classifications.mjs'
+      - 'scripts/lib/fia-feeder-pdf.mjs'
+      - 'scripts/package.json'
+      - 'scripts/package-lock.json'
       - '.github/workflows/update-f2.yml'
 permissions:
   contents: write
@@ -23,20 +28,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install PDF timing reader
+        run: npm ci --prefix scripts
       - name: Import official calendar, sessions and standings
         id: refresh
         continue-on-error: true
         run: node scripts/update-f2.mjs
       - name: Save available updates
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add f2-data.json
-          if ! git diff --quiet --cached; then
-            git commit -m "Update F2 fixtures and standings"
-            git pull --rebase origin main
-            git push
-          fi
+        run: node scripts/save-data.mjs "Update F2 fixtures and standings" f2-data.json
       - name: Report incomplete import
         if: steps.refresh.outcome == 'failure'
         run: exit 1

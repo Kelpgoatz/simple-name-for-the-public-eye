@@ -1,5 +1,7 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
 import {embeddedObjects,findObject,normalizeSession,image,officialNationality} from './lib/f2-source.mjs';
+import {enrichFiaSeason,canReuseSession} from './lib/fia-feeder-classifications.mjs';
+import {enrichFiaPdfSeason} from './lib/fia-feeder-pdf.mjs';
 const year=Number(process.argv.find(value=>/^20\d\d$/.test(value))||new Date().getUTCFullYear());
 const base='https://www.fiaformula2.com',output=new URL('../f2-data.json',import.meta.url),now=new Date();
 async function request(url,headers={}) {
@@ -26,7 +28,7 @@ await Promise.all(Array.from({length:3},async()=>{while(next<races.length){const
     for(const item of detail.meetingSessions)for(const row of item.results||[])if(row.driverReference)weekendIdentities.set(String(row.racingNumber),row);
     for(const session of detail.meetingSessions){
         const cached=previousRaces?.find(item=>item.id===race.id)?.sessions?.find(item=>item.id===session.value);
-        if(session.state==='completed'&&cached?.results?.length&&!process.argv.includes('--refresh-all')&&Date.parse(cached.updatedAt)>now.getTime()-7*86400000){race.sessions.push(cached);continue;}
+        if(!process.argv.includes('--refresh-all')&&canReuseSession(session,cached,now.getTime())){race.sessions.push(cached);continue;}
         let data=session;
         if(!session.results?.length&&session.state==='completed')try{
             if(!publicKey||!/^f2\/(practice|qualifying|race)\?meeting=\d+&session=\d+$/.test(session.value))throw new Error('Result endpoint not published');
@@ -51,6 +53,8 @@ const nationalities=new Map(drivers.map(driver=>[driver.id,driver]));
 for(const race of races)for(const session of race.sessions)for(const row of session.results){const driver=nationalities.get(row.driverId);if(driver?.flagUrl)Object.assign(row,{flagUrl:driver.flagUrl,nationality:driver.nationality,countryCode:driver.countryCode});}
 const teams=teamSource.standings.map(row=>({id:String(row.teamKey),name:row.teamName,rank:Number(row.displayPosition),points:Number(row.championshipPoints),teamImage:image(row.teamLogoImage)}));
 const data={season:year,updatedAt:now.toISOString(),source:{name:'FIA Formula 2',url:`${base}/en/racing/${year}`,drivers:`${base}/en/standings/${year}/drivers`,teams:`${base}/en/standings/${year}/teams`},coverage:{complete:failures.length===0,failed:failures},races,drivers,teams};
+await enrichFiaSeason(data,{series:'f2',refreshAll:process.argv.includes('--refresh-all')});
+await enrichFiaPdfSeason(data,{series:'f2',refreshAll:process.argv.includes('--refresh-all')});
 const temp=new URL('../f2-data.json.tmp',import.meta.url);await writeFile(temp,JSON.stringify(data,null,2)+'\n');await rename(temp,output);
 console.log(`F2 ${year}: ${races.length} rounds, ${races.flatMap(r=>r.sessions).filter(s=>s.results.length).length} classified sessions, ${drivers.length} drivers, ${teams.length} teams; ${failures.length} unavailable selections`);
 if(failures.length)process.exitCode=1;

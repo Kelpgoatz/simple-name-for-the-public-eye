@@ -1,19 +1,18 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { createJolpicaClient } from './lib/jolpica-client.mjs';
+import { createF1Identities, normalizeCalendar, normalizeResults } from './lib/f1-source.mjs';
 
 const output = new URL("../f1-fixtures.json", import.meta.url);
 const season = Number(process.argv[2] || new Date().getUTCFullYear());
 if (!Number.isInteger(season) || season < 1950) throw new Error("Invalid F1 season");
 
-async function fetchJSON(url) {
-    const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
-    if (!response.ok) throw new Error(`${response.status} fetching ${url}`);
-    return response.json();
-}
-
 let previous;
 try { previous = JSON.parse(await readFile(output, "utf8")); } catch {}
-const calendar = await fetchJSON(`https://f1api.dev/api/${season}?limit=100`);
+const saved = async file => { try { return JSON.parse(await readFile(new URL(`../${file}`, import.meta.url), 'utf8')); } catch { return null; } };
+const identities = createF1Identities({ fixtures: previous, drivers: await saved('drivers-championship.json'), constructors: await saved('constructors-championship.json') });
+const request = createJolpicaClient();
+const calendar = normalizeCalendar(await request(`${season}/?limit=100`), season, previous);
 if (!Array.isArray(calendar.races) || !calendar.races.length) throw new Error("Empty race calendar; retaining existing fixtures");
 
 const races = [];
@@ -30,6 +29,7 @@ for (const race of calendar.races) {
         circuitId: circuit.circuitId, circuit: circuit.circuitName,
         location: [circuit.city, circuit.country].filter(Boolean).join(", "),
         date: schedule?.date || null, startTime, laps: race.laps,
+        sessionSchedule: race.schedule,
         // The API expresses circuit lengths in metres with a "km" suffix.
         lengthKm: Number.parseFloat(circuit.circuitLength) > 100
             ? Number.parseFloat(circuit.circuitLength) / 1000
@@ -42,7 +42,7 @@ for (const race of calendar.races) {
             time: race.fast_lap.fast_lap
         } : null,
         results: [],
-        resultsSource: `https://f1api.dev/api/${season}/${race.round}/race?limit=100`
+        resultsSource: `https://api.jolpi.ca/ergast/f1/${season}/${race.round}/results/?limit=100`
     });
 }
 
@@ -55,25 +55,27 @@ await Promise.all(Array.from({ length: 3 }, async () => {
         const raceTime = Date.parse(race.startTime || race.date);
         if (race.status !== "CONCLUDED" && (!Number.isFinite(raceTime) || raceTime > Date.now())) continue;
         try {
-            const data = await fetchJSON(race.resultsSource);
-            const details = Array.isArray(data.races) ? data.races[0] : data.races;
-            if (Number(details?.round) !== race.round || !Array.isArray(details.results) || !details.results.length) {
-                throw new Error("Results not published yet");
-            }
-            race.results = details.results.map(result => {
-                if (!result.driver?.driverId || !result.team?.teamId) throw new Error("Invalid result identity");
-                const cachedRace = previous?.season === season && previous.races?.find(item => item.raceId === race.raceId);
-                const cached = cachedRace?.results?.find(item => item.driverId === result.driver.driverId);
+            const results = normalizeResults(await request(`${season}/${race.round}/results/?limit=100`), season, race.round, identities);
+            race.results = results.map(result => {
+                const cachedRace = Number(previous?.season) === season && previous.races?.find(item => item.raceId === race.raceId);
+                const cached = cachedRace?.results?.find(item => item.driverId === result.driverId);
                 const missingGrid = result.grid == null || /^(?:not available|n\/a|unknown|[-–]|0)?$/i.test(String(result.grid).trim());
                 const useCachedGrid = missingGrid && cached?.gridSource;
                 return {
                     position: result.position, grid: useCachedGrid ? cached.grid : result.grid ?? null,
-                    ...(useCachedGrid ? { gridSource: cached.gridSource } : {}), driverId: result.driver.driverId,
+                    ...(useCachedGrid ? { gridSource: cached.gridSource } : {}), driverId: result.driverId,
                     driver: { name: result.driver.name, surname: result.driver.surname, number: result.driver.number },
                     teamId: result.team.teamId, points: result.points,
-                    time: result.time, retired: result.retired, fastLap: result.fastLap
+                    time: result.time, retired: result.retired, fastLap: result.fastLap, lapsCompleted: result.lapsCompleted, fastestLapRank: result.fastestLapRank
                 };
             });
+            const timed = race.results.filter(row => /^\d+:\d{2}\.\d{3}$/.test(row.fastLap || '')).sort((a, b) => {
+                const seconds = value => Number(value.split(':')[0]) * 60 + Number(value.split(':')[1]);
+                return seconds(a.fastLap) - seconds(b.fastLap);
+            });
+            const fastest = timed.find(row => row.fastestLapRank === 1) || timed[0];
+            race.fastestLap = fastest ? { driverId: fastest.driverId, teamId: fastest.teamId, time: fastest.fastLap } : null;
+            race.laps = results.find(row => Number(row.position) === 1)?.lapsCompleted || race.laps;
             race.status = "CONCLUDED";
         } catch (error) {
             const cached = previous?.season === season && previous.races?.find(item => item.raceId === race.raceId);
@@ -81,6 +83,7 @@ await Promise.all(Array.from({ length: 3 }, async () => {
                 race.results = cached.results;
                 race.status = "CONCLUDED";
                 race.fastestLap ||= cached.fastestLap;
+                race.resultsSource = cached.resultsSource;
             }
             failures++;
             console.warn(`Round ${race.round}: ${error.message}${race.results.length ? "; retained cached results" : ""}`);

@@ -1,4 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { createJolpicaClient } from './lib/jolpica-client.mjs';
+import { createF1Identities, normalizeStandings } from './lib/f1-source.mjs';
 
 const kind = process.argv[2];
 if (!["drivers", "constructors"].includes(kind)) throw new Error("Choose drivers or constructors");
@@ -6,14 +8,9 @@ if (!["drivers", "constructors"].includes(kind)) throw new Error("Choose drivers
 const fixtures = JSON.parse(await readFile(new URL("../f1-fixtures.json", import.meta.url), "utf8"));
 const season = Number(fixtures.season);
 if (!Number.isInteger(season) || season < 1950) throw new Error("Invalid calendar season");
-const response = await fetch(`https://f1api.dev/api/${season}/${kind}-championship`, {
-    signal: AbortSignal.timeout(30000)
-});
-if (!response.ok) throw new Error(`Standings fetch failed (${response.status}); retaining previous snapshot`);
-const data = await response.json();
-const key = `${kind}_championship`;
-if (Number(data.season) !== season || !Array.isArray(data[key])) {
-    throw new Error("Invalid standings response; retaining previous snapshot");
-}
+const saved = async file => { try { return JSON.parse(await readFile(new URL(`../${file}`, import.meta.url), 'utf8')); } catch { return null; } };
+const identities = createF1Identities({ fixtures, drivers: await saved('drivers-championship.json'), constructors: await saved('constructors-championship.json') });
+const request = createJolpicaClient();
+const data = normalizeStandings(await request(`${season}/${kind === 'drivers' ? 'driverStandings' : 'constructorStandings'}/?limit=100`), season, kind, identities);
 await writeFile(new URL(`../${kind}-championship.json`, import.meta.url), JSON.stringify(data, null, 2) + "\n");
-console.log(`${season} ${kind}: ${data[key].length} standings`);
+console.log(`${season} ${kind}: ${data[`${kind}_championship`].length} standings (Jolpica F1)`);

@@ -78,15 +78,35 @@
         if (sport === "nfl") return [["wins", "W"], ["losses", "L"], ["draws", "T"], ["winPct", "%"]];
         return [["played", "P"], ["wins", "W"], ["losses", "L"], ["winPct", "%"]];
     }
+    function standingDefinitions(sport) {
+        const racing = sport === 'f1-drivers' || sport === 'f1-constructors';
+        const definitions = {
+            played: ['Games played', 'The number of games counted in this season’s record.'],
+            wins: racing ? ['Grand Prix wins', sport === 'f1-drivers' ? 'Grand Prix races won by this driver.' : 'Grand Prix races won by a driver for this constructor.'] : ['Wins', 'Games won.'],
+            losses: ['Losses', 'Games lost.'],
+            draws: sport === 'nfl' ? ['Ties', 'Games that finished tied. A tie counts as half a win in the NFL’s winning percentage.'] : ['Draws', 'Games that finished level.'],
+            percentage: ['Scoring percentage', 'Points scored ÷ points conceded × 100. A value of 130% means 130 points scored for every 100 conceded.'],
+            winPct: sport === 'nfl' ? ['Winning percentage', '(Wins + half of ties) ÷ games played × 100.'] : ['Winning percentage', 'Games won ÷ games played × 100. A value of 60% means six wins in every ten games.'],
+            gamesBehind: ['Games behind', 'The gap to the leader of this table. Half-games are possible when teams have played different numbers of games.'],
+            difference: ['Points difference', 'Points scored minus points conceded. A positive number means the team has scored more than it conceded.'],
+            points: racing ? ['Championship points', 'Published championship points, including sprint points when awarded.'] : ['Competition points', 'Points awarded under the competition’s rules, including bye points where awarded.']
+        };
+        return standingColumns(sport).map(([key, label]) => ({ key, label, title: definitions[key][0], meaning: definitions[key][1] }));
+    }
+    function renderTableKey(sport) {
+        const guideSport = sport === 'f1-drivers' || sport === 'f1-constructors' ? 'f1' : sport;
+        return `<details class="sports-table-key"><summary><span class="sports-table-key__icon" aria-hidden="true">+</span><strong>Table key</strong><span class="sports-table-key__hint">What the columns mean</span></summary><div class="sports-table-key__body"><dl><div><dt><b>#</b><span>Position</span></dt><dd>Position in the published standings, including the competition’s tie-breaking rules.</dd></div>${standingDefinitions(sport).map(column => `<div><dt><b>${escape(column.label)}</b><span>${escape(column.title)}</span></dt><dd>${escape(column.meaning)}</dd></div>`).join('')}</dl><p><span><b>—</b> The source has not supplied a verified value.</span><button type="button" data-viewer-guide data-guide-sport="${escape(guideSport)}" aria-haspopup="dialog">Quick guide ↗</button></p></div></details>`;
+    }
     function renderStandings(group = {}, sport) {
         if (!Array.isArray(group.rows) || !group.rows.length) return '<p class="sports-empty">The ladder has not been published for this season yet.</p>';
         const columns = standingColumns(sport);
-        return `<div class="sports-table-wrap"><table class="sports-table"><caption class="sports-visually-hidden">${escape(group.label || "Standings")}</caption><thead><tr><th scope="col">#</th><th scope="col">${sport === "f1-drivers" ? "Driver" : "Team"}</th>${columns.map(([, label]) => `<th scope="col">${label}</th>`).join("")}</tr></thead><tbody>${group.rows.map(row => `<tr><td>${value(row.rank)}</td><td><span class="sports-table__team">${identity(row.team)}${sport.startsWith('f1-') ? `<span>${escape(row.team?.name || "To be confirmed")}</span>` : `<a href="${teamLink(sport,row.team)}">${escape(teamNames.label(sport,row.team))}</a>`}</span></td>${columns.map(([key]) => {
+        const definitions = standingDefinitions(sport);
+        return `<div class="sports-table-wrap"><table class="sports-table"><caption class="sports-visually-hidden">${escape(group.label || "Standings")}</caption><thead><tr><th scope="col" title="Published position">#</th><th scope="col">${sport === "f1-drivers" ? "Driver" : "Team"}</th>${definitions.map(({ label, title }) => `<th scope="col" title="${escape(title)}" abbr="${escape(title)}">${label}</th>`).join("")}</tr></thead><tbody>${group.rows.map(row => `<tr><td>${value(row.rank)}</td><td><span class="sports-table__team">${identity(row.team)}${sport.startsWith('f1-') ? `<span>${escape(row.team?.name || "To be confirmed")}</span>` : `<a href="${teamLink(sport,row.team)}">${escape(teamNames.label(sport,row.team))}</a>`}</span></td>${columns.map(([key]) => {
             let stat = row[key];
             if (key === "difference") stat = number(row.for) !== null && number(row.against) !== null ? Number(row.for) - Number(row.against) : null;
             const formatted = key === "winPct" ? percent(stat) : key === "percentage" ? (number(stat) === null ? "—" : `${Number(stat).toFixed(1)}%`) : value(stat);
             return `<td${key === "points" || key === "winPct" ? ' class="sports-table__primary"' : ""}>${formatted}</td>`;
-        }).join("")}</tr>`).join("")}</tbody></table></div>`;
+        }).join("")}</tr>`).join("")}</tbody></table></div>${renderTableKey(sport)}`;
     }
     function renderTournament(tournament = {}, now = Date.now()) {
         if (!tournament.name) return '<p class="sports-empty">The nearest Grand Slam will appear when its calendar is available.</p>';
@@ -132,6 +152,13 @@
         let data, index = 0, standingIndex = 0, tour = "";
         const notice = select("[data-sports-notice]");
         const slider = select("[data-round-slider]"), prev = select("[data-round-prev]"), next = select("[data-round-next]");
+        const rememberView=()=>{
+            const url=new URL(location.href),group=data?.groups?.[index],standing=data?.standings?.[standingIndex];
+            if(group?.id!=null)url.searchParams.set('group',String(group.id));
+            if(standing?.id!=null)url.searchParams.set('standing',String(standing.id));
+            if(tour)url.searchParams.set('tour',tour);
+            history.replaceState(null,'',url);
+        };
         const updateFixtures = () => {
             const groups = data.groups || [], group = groups[index];
             slider.max = String(Math.max(0, groups.length - 1));
@@ -141,7 +168,8 @@
             next.disabled = index >= groups.length - 1;
             select("[data-round-value]").textContent = group?.label || "Awaiting draw";
             slider.setAttribute("aria-valuetext", group?.label || "Awaiting draw");
-            FixtureSlider.update(slider, groups.map((item, value) => ({value, label:item.label, date:item.startDate})));
+            rememberView();
+            FixtureSlider.update(slider, groups.map((item, value) => ({value, label:item.label, date:item.startDate,endDate:item.endDate||(item.matches||[]).map(match=>match.startTime).filter(time=>Number.isFinite(Date.parse(time))).sort((a,b)=>Date.parse(a)-Date.parse(b)).at(-1)})),{unit:sport==="nfl"?"weeks":["nba","wnba","nbl","tennis"].includes(sport)?"days":"rounds"});
             const matches = filteredMatches(group, tour);
             const releasedTour = groups.some(item => filteredMatches(item, tour).length);
             const tennisEmpty = releasedTour ? `No ${tour === "wta" ? "women’s" : "men’s"} singles matches on this date. Use the day slider to view the rest of the tournament.` : "Matches will appear once the tournament draw is released. You can switch between the men’s and women’s singles above.";
@@ -155,6 +183,7 @@
             select("[data-fixtures-note]").textContent = [group?.note || data.fixturesNote, byes].filter(Boolean).join(" ");
         };
         const updateLadder = () => {
+            rememberView();
             ladder.innerHTML = sport === "tennis" ? renderTournament(data.tournament) : renderStandings(data.standings?.[standingIndex], sport);
             const key = data.standingsNote || (sport === "aflw" ? "P played · W wins · L losses · D draws · % points for divided by points against · Pts competition points" : sport === "nrl" || sport === "nrlw" ? "P played · W wins · L losses · D draws · +/− points difference · Pts competition points" : sport === "nba" || sport === "wnba" ? "W wins · L losses · % win percentage · GB games behind" : sport === "nfl" ? "W wins · L losses · T ties · % win percentage" : sport === "nbl" ? "P played · W wins · L losses · % win percentage" : "");
             const standingsDate = new Date(data.standingsUpdatedAt).getTime();
@@ -207,5 +236,5 @@
             ladder.innerHTML = '<p class="sports-empty">Standings are temporarily unavailable.</p>';
         });
     }
-    return { escape, safeUrl, identity, teamLink, filteredMatches, initialGroupIndex, renderMatch, standingColumns, renderStandings, renderTournament, dataNotices, init };
+    return { escape, safeUrl, identity, teamLink, filteredMatches, initialGroupIndex, renderMatch, standingColumns, standingDefinitions, renderTableKey, renderStandings, renderTournament, dataNotices, init };
 });

@@ -11,11 +11,18 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-afl-fixtures
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
       - name: Get current AFL season ID
         run: |
@@ -78,11 +85,4 @@ jobs:
           jq '[group_by(.round)[] | { round: .[0].round, matches: . }] | sort_by(.round)' /tmp/all.json > afl-fixtures.json
 
       - name: Commit and push if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add afl-fixtures.json
-          if ! git diff --quiet --cached; then
-            git commit -m "Update AFL fixtures"
-            git push
-          fi
+        run: node scripts/save-data.mjs "Update AFL fixtures" afl-fixtures.json

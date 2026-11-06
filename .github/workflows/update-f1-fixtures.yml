@@ -8,6 +8,9 @@ on:
     branches:
       - main
     paths:
+      - 'scripts/lib/f1-source.mjs'
+      - 'scripts/lib/jolpica-client.mjs'
+      - 'scripts/save-data.mjs'
       - scripts/update-f1-fixtures.mjs
       - scripts/update-f1-penalties.mjs
       - scripts/update-f1-grids.mjs
@@ -24,6 +27,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,12 +42,4 @@ jobs:
       - name: Confirm missing grids and pit-lane starts against official F1 starting grids
         run: node scripts/update-f1-grids.mjs
       - name: Commit and push if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add f1-fixtures.json f1-penalties.json f1-sessions.json
-          if ! git diff --quiet --cached; then
-            git commit -m "Update F1 fixtures and results"
-            git pull --rebase origin main
-            git push
-          fi
+        run: node scripts/save-data.mjs "Update F1 fixtures and results" f1-fixtures.json f1-penalties.json f1-sessions.json

@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
-const pages = ['index', 'article', 'melbourne', 'afl', 'aflw', 'f1', 'f2', 'nrl', 'nrlw', 'nba', 'wnba', 'nbl', 'nfl', 'tennis', 'about', 'sport-view'];
+const pages = ['index', 'article', 'melbourne', 'afl', 'aflw', 'f1', 'f2', 'f3', 'nrl', 'nrlw', 'nba', 'wnba', 'nbl', 'nfl', 'tennis', 'about', 'sport-view'];
 const families = { afl: [['afl', 'AFL'], ['aflw', 'AFLW']], nrl: [['nrl', 'NRL'], ['nrlw', 'NRLW']], nba: [['nba', 'NBA'], ['wnba', 'WNBA']] };
 for (const page of pages) {
     const anchor = (slug, label) => `<a href="${slug}.html"${page === slug ? ' aria-current="page"' : ''}>${label}</a>`;
@@ -16,7 +16,7 @@ for (const page of pages) {
     const nav = `<nav class="nav nav--permanent" aria-label="Primary">
                         ${anchor('index', 'Home')}
                         ${family('afl')}
-                        <div class="f1-nav-family">${anchor('f1', 'F1')}<div class="f1-nav-family__menu">${anchor('f2', 'F2')}</div></div>
+                        <div class="f1-nav-family">${anchor('f1', 'F1')}<div class="f1-nav-family__menu">${anchor('f2', 'F2')}${anchor('f3', 'F3')}</div></div>
                         ${family('nrl')}
                         ${family('nba')}
                         ${anchor('nbl', 'NBL')}

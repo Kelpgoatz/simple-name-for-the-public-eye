@@ -1,4 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { createJolpicaClient } from './lib/jolpica-client.mjs';
+import { createF1Identities, normalizeCalendar, normalizeResults, normalizeQualifying } from './lib/f1-source.mjs';
 
 const fixtures = JSON.parse(await readFile(new URL("../f1-fixtures.json", import.meta.url), "utf8"));
 const season = Number(fixtures.season);
@@ -130,7 +132,12 @@ function mergeOfficial(html, key, apiRows) {
     return [...merged, ...apiRows.filter(row => !officialNumbers.has(String(row.driver.number)))];
 }
 
-const calendar = await fetchData(`https://f1api.dev/api/${season}?limit=100`);
+const request = createJolpicaClient();
+const saved = async name => { try { return JSON.parse(await readFile(new URL(`../${name}`, import.meta.url), 'utf8')); } catch { return null; } };
+const identities = createF1Identities({ fixtures, drivers: await saved('drivers-championship.json'), constructors: await saved('constructors-championship.json') });
+const calendar = fixtures.races.every(race => race.sessionSchedule)
+    ? { races: fixtures.races.map(race => ({ raceId: race.raceId, round: race.round, schedule: race.sessionSchedule })) }
+    : normalizeCalendar(await request(`${season}/?limit=100`), season, fixtures);
 if (!Array.isArray(calendar.races) || !calendar.races.length) throw new Error("Calendar unavailable; retaining previous sessions");
 let officialPaths = [];
 try {
@@ -152,7 +159,7 @@ for (const fixture of fixtures.races) {
         const schedule = race.schedule?.[definition.schedule];
         const date = schedule?.date || null;
         const startTime = date && schedule?.time ? `${date}T${schedule.time.replace(/Z$/, "")}Z` : null;
-        const source = `https://f1api.dev/api/${season}/${fixture.round}/${definition.endpoint}?limit=100`;
+        const source = key === 'qualifying' || key === 'sprint' ? `https://api.jolpi.ca/ergast/f1/${season}/${fixture.round}/${key === 'qualifying' ? 'qualifying' : 'sprint'}/?limit=100` : null;
         const session = { label: definition.label, date, startTime, source, status: "SCHEDULED", results: [] };
         sessions[key] = session;
         const start = Date.parse(startTime || date);
@@ -176,11 +183,8 @@ await Promise.all(Array.from({ length: 3 }, async () => {
         const definition = definitions[key];
         let apiRows = [];
         try {
-            const api = await fetchData(session.source);
-            const details = Array.isArray(api.races) ? api.races[0] : api.races;
-            if (Number(details?.round) !== Number(fixture.round) || details.raceId !== fixture.raceId) throw new Error("API session race identity mismatch");
-            if (!Array.isArray(details[definition.field]) || !details[definition.field].length) throw new Error("Session results not published");
-            apiRows = normalizeAPI(details[definition.field], key);
+            if (key === 'qualifying') apiRows = normalizeQualifying(await request(`${season}/${fixture.round}/qualifying/?limit=100`), season, Number(fixture.round), identities);
+            if (key === 'sprint') apiRows = normalizeResults(await request(`${season}/${fixture.round}/sprint/?limit=100`), season, Number(fixture.round), identities, 'SprintResults');
         } catch (error) { console.warn(`Round ${fixture.round} ${key}: API ${error.message}`); }
         try {
             if (!official) throw new Error("No matching official race page");
@@ -197,6 +201,15 @@ await Promise.all(Array.from({ length: 3 }, async () => {
             if (cached?.results?.length) Object.assign(session, cached, { date: session.date, startTime: session.startTime });
             failures++;
             continue;
+        }
+        // Jolpica qualifying has no lap counts; retain verified counts from the
+        // same completed session if the official timing page is unavailable.
+        for (const row of session.results) if (row.lapsCompleted == null) {
+            const known = cached?.results?.find(item => item.driverId === row.driverId);
+            if (known?.lapsCompleted != null) {
+                row.lapsCompleted = known.lapsCompleted;
+                row.lapsSource = known.lapsSource || cached.source;
+            }
         }
         if (key === "sprint" && official) {
             try {
@@ -222,6 +235,11 @@ await Promise.all(Array.from({ length: 3 }, async () => {
             } catch (error) { console.warn(`Round ${fixture.round} sprint grid: ${error.message}`); }
         }
         session.status = "CONCLUDED";
+        if (key === 'sprint') {
+            const timed = session.results.filter(row => lapMillis(row.fastLap) > 0).sort((a, b) => lapMillis(a.fastLap) - lapMillis(b.fastLap));
+            const fastest = timed.find(row => row.fastestLapRank === 1) || timed[0];
+            session.fastestLap = fastest ? { driverId: fastest.driverId, teamId: fastest.teamId, time: fastest.fastLap } : null;
+        }
         session.checkedDate = today;
         successes++;
         if (successes % 10 === 0) console.log(`Loaded ${successes}/${jobs.length} weekend sessions`);

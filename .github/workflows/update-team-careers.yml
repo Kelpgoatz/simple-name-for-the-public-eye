@@ -6,6 +6,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/save-data.mjs'
       - 'scripts/update-team-careers.mjs'
       - 'scripts/lib/team-careers.mjs'
       - '.github/workflows/update-team-careers.yml'
@@ -28,15 +29,7 @@ jobs:
         continue-on-error: true
         run: node scripts/update-team-careers.mjs
       - name: Save successful archives
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sports-data/*-careers.json
-          if ! git diff --quiet --cached; then
-            git commit -m "Update historical sports records"
-            git pull --rebase origin main
-            git push
-          fi
+        run: node scripts/save-data.mjs "Update historical sports records" sports-data/*-careers.json
       - name: Report unavailable archive
         if: steps.refresh.outcome == 'failure'
         run: exit 1

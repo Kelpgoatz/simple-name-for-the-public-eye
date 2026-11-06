@@ -1,5 +1,6 @@
 import {readFile, writeFile, rename} from 'node:fs/promises';
 import {categories, normalizeEspnPlayers, normalizeAflPlayers, normalizeNrlPlayers, parseNrlMatch} from './lib/player-performance.mjs';
+import {HttpStatusError, isUnpublishedBoxScore, unavailableBoxScore, shouldRetryBoxScore} from './lib/boxscore-availability.mjs';
 
 const paths = {nba:'basketball/nba',wnba:'basketball/wnba',nbl:'basketball/nbl',nfl:'football/nfl'};
 const now = new Date();
@@ -15,9 +16,9 @@ async function request(url, options = {}, json = true) {
     for (let attempt=0;attempt<3;attempt++) {
         try {
             const response = await fetch(url,{...options,signal:AbortSignal.timeout(25000)});
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            if (!response.ok) throw new HttpStatusError(response.status);
             return json ? await response.json() : await response.text();
-        } catch(error) {failure=error;}
+        } catch(error) {if (isUnpublishedBoxScore(error)) throw error; failure=error;}
     }
     throw failure;
 }
@@ -47,10 +48,14 @@ async function importSport(sport) {
     if (!snapshot?.season || !snapshot.groups) throw new Error('Fixture snapshot unavailable');
     const previous=await read(`${sport}-players.json`);
     const matches=previous?.season===snapshot.season ? {...previous.matches} : {};
+    const unavailable=previous?.season===snapshot.season ? {...previous.unavailableMatches} : {};
     const played=snapshot.groups.flatMap(group=>group.matches.filter(match=>['final','live'].includes(match.status)).map(match=>({...match,groupId:String(group.id)})));
     const expectedIds=new Set(played.map(match=>String(match.id)));
     for(const key of Object.keys(matches)) if(!expectedIds.has(key)) delete matches[key];
-    const pending=played.filter(match=>refresh || !matches[match.id] || matches[match.id].status!=='final' || Date.parse(matches[match.id].updatedAt)<now.getTime()-7*86400000);
+    for(const key of Object.keys(unavailable)) if(!expectedIds.has(key)) delete unavailable[key];
+    const pending=played.filter(match=>
+        (refresh || unavailable[match.id] || !matches[match.id] || matches[match.id].status!=='final' || Date.parse(matches[match.id].updatedAt)<now.getTime()-7*86400000) &&
+        shouldRetryBoxScore(match,unavailable[match.id],now,refresh));
     let rawAfl,token;
     if(sport==='aflw' && pending.length) {
         rawAfl=new Map();
@@ -89,13 +94,23 @@ async function importSport(sport) {
                     source=url.href;
                 }
                 matches[match.id]={id:String(match.id),groupId:match.groupId,startTime:match.startTime,status:match.status,updatedAt:now.toISOString(),source,players};
-            } catch(error) { failed.add(String(match.id)); console.error(`${sport.toUpperCase()} ${match.id}: ${error.message}; saved data retained`); }
+                delete unavailable[match.id];
+            } catch(error) {
+                if (isUnpublishedBoxScore(error)) {
+                    unavailable[match.id]=unavailableBoxScore(match,now);
+                    console.warn(`${sport.toUpperCase()} ${match.id}: box score not published (HTTP 404); retry after ${unavailable[match.id].nextRetryAt}; saved data retained`);
+                } else {
+                    delete unavailable[match.id];
+                    failed.add(String(match.id));
+                    console.error(`${sport.toUpperCase()} ${match.id}: ${error.message}; saved data retained`);
+                }
+            }
         }
     }));
     const available=played.filter(match=>matches[match.id]).length;
     const source=paths[sport]?{name:'ESPN',url:`https://www.espn.com/${sport}/scoreboard`}:sport==='aflw'?{name:'AFL.com.au',url:'https://www.afl.com.au/aflw/stats'}:{name:'NRL.com',url:'https://www.nrl.com/stats/'};
-    await save(sport,{sport,season:snapshot.season,updatedAt:now.toISOString(),source,categories:categories(sport),coverage:{expected:played.length,available,complete:available===played.length && !failed.size,failedMatchIds:[...failed]},matches});
-    console.log(`${sport.toUpperCase()}: ${available}/${played.length} box scores; refreshed ${pending.length-failed.size}, unavailable ${failed.size}`);
+    await save(sport,{sport,season:snapshot.season,updatedAt:now.toISOString(),source,categories:categories(sport),coverage:{expected:played.length,available,complete:available===played.length && !failed.size && !Object.keys(unavailable).length,failedMatchIds:[...failed],unavailableMatchIds:Object.keys(unavailable)},unavailableMatches:unavailable,matches});
+    console.log(`${sport.toUpperCase()}: ${available}/${played.length} box scores; refreshed ${pending.length-failed.size-pending.filter(match=>unavailable[match.id]).length}, unpublished ${Object.keys(unavailable).length}, failed ${failed.size}`);
     if(failed.size) process.exitCode=1;
 }
 for(const sport of sports) {

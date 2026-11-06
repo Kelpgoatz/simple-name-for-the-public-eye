@@ -1,7 +1,8 @@
-Yap yap yap, cool website lads
+cgrillo is an independent sports viewer for fixtures, results, ladders and
+individual performances. It uses a royal-green, paper-and-serif visual style.
 
 The shared newspaper design lives in `editorial.css`, with the article reading
-layout in `editorial-articles.css`. All thirteen pages use the same cgrillo wordmark,
+layout in `editorial-articles.css`. All seventeen pages use the same cgrillo wordmark,
 royal-green navigation, solid paper surfaces and local fonts from `fonts/`.
 `editorial.js` displays the masthead date in Sydney time. Theme switching keeps
 the shared typography and solid surfaces, including the new lowercase-c favicon.
@@ -11,6 +12,24 @@ links, or click to expand them inside the bar. Expanded families suppress their
 hover preview until closed. Touch, keyboard and reduced-motion settings are
 supported. `node scripts/update-navigation.mjs` regenerates consistent static
 navigation on all pages, including each page’s active link.
+
+The homepage has a compact welcome panel with direct team/driver search and star
+management. Readers can hide the introduction on their device and switch between
+All sport and Following without deleting their stars. `home-welcome.js` also
+keeps overdue or stale AFL updates distinct from confirmed live play and results.
+The shared Quick guide (`viewer-guide.js` / `.css`) explains navigation, colours,
+missing data and searchable terms for each competition. It is available from
+desktop navigation, the phone Sports menu and the footer without opening on its
+own. Fixture sliders show their date range and offer a current/next/latest jump
+while preserving the reader's chosen or linked round. Failed homepage sources
+retain any previously loaded data and offer retry controls with clear messages.
+The welcome panel also points to the next published start in the current view,
+including practice sessions, with Sydney time and a short countdown. Standings
+include a tap-to-open Table key; game centres show the match's round/day, venue,
+start and form coming into that game. F1, F2 and F3 session tabs show weekend
+progress, upcoming sessions and pending classifications. Published timetable
+ambiguities are marked as provisional. F2/F3 session links retain the exact source
+session identifier, so a shared link returns to the chosen session.
 Full ladder tables share `standings.css` and `SportsUI.renderStandings` from
 `sports.js`. AFL uses the same columns as AFLW; F1’s WDC/WCC tables show points
 and wins with driver flags or constructor logos, while preserving their selector.
@@ -51,7 +70,13 @@ official starting-grid tables and notes after penalty imports. Confirmed pit-lan
 starts display "Pit lane"; other gaps remain a dash rather than being assumed to
 be pit-lane starts.
 
-Race data comes from [F1 API](https://f1api.dev/docs). Run
+Race calendars, classifications, qualifying, sprint results and championship
+standings come from [Jolpica F1](https://github.com/jolpica/jolpica-f1/tree/main/docs).
+The former F1 API source began returning HTTP 402; imports no longer depend on it.
+Saved driver identities, circuit IDs and full race names are preserved during the
+source change so flags, team logos, profiles and penalty notes continue to match.
+Practice and sprint qualifying results use official Formula 1 timing tables.
+Run
 `node scripts/update-f1-fixtures.mjs` to refresh the current season, or pass a year
 as the first argument. The fixtures workflow refreshes the calendar and results
 twice an hour; the existing championship workflows refresh standings hourly.
@@ -65,13 +90,22 @@ calendar is unavailable, the last valid calendar is retained until a later refre
 
 Penalty notes are imported from the official Formula 1 race-result pages by
 `node scripts/update-f1-penalties.mjs`, which runs after fixture updates twice an
-hour. The F1 API does not supply penalty explanations. Notes are matched to driver
+hour. The results feed does not supply penalty explanations. Notes are matched to driver
 IDs and stored in `f1-penalties.json` with source links and per-race coverage.
 Failed downloads retain cached notes and display an incomplete-data message;
 unmatched notes mark the race for review. The official result notes may describe
 time penalties without specifying when they were served; the site preserves that
 distinction and never adds penalty seconds a second time. Coverage is limited to
 penalties published in those official result notes, rather than all FIA decisions.
+
+All update workflows save through `scripts/save-data.mjs`, which fetches and
+rebases before pushing and retries an advancing remote branch up to five times.
+Conflicting edits and permission errors still fail. The Jolpica client identifies
+the application, spaces requests below the published sustained limit and honors
+`Retry-After` on rate limits. An unpublished individual player box score (HTTP
+404) is recorded as incomplete coverage and retried after six hours, or 15
+minutes for a live game. Provider outages and invalid statistics still fail the
+import while preserving saved data; a missing box score never becomes zero stats.
 
 Circuit images are SVG paths projected from the coordinates in
 [bacinger/f1-circuits](https://github.com/bacinger/f1-circuits), licensed under MIT
@@ -166,3 +200,101 @@ shown for new-season fixtures.
 `.github/workflows/update-afl-player-stats.yml` refreshes the player snapshots
 every half hour once published to main, saving successful updates before
 reporting any incomplete imports.
+
+Team names in fixtures, ladders and homepage cards open `sport-view.html`.
+The dashboard shows published season results, recent form, the biggest win and
+top-six player totals or averages, followed by the team's own round/date slider.
+Game centres show individual performances, with a statistic-order selector and
+a horizontally scrollable table on phones. Missing values remain unavailable;
+averages use recorded values for each statistic rather than treating gaps as zero.
+Season dashboards include all published fixture phases, clearly labelled when
+preseason or postseason games differ from regular-season ladders.
+
+`node scripts/update-player-stats.mjs` imports AFL, AFLW, NRL, NRLW, NBA, WNBA,
+NBL and NFL player performances into `sports-data/*-players.json`. Its half-hourly
+workflow refreshes live games and caches completed box scores for seven days.
+The initial import contains 1,396 games; two WNBA box scores are unavailable at
+the provider and are explicitly listed as incomplete coverage. Tennis keeps its
+published set scores; serve/return statistics are not invented.
+
+F1 driver and constructor names open season dashboards in `f1.html`, retaining
+the round and session. Separate season/All time controls show current-year
+performances versus sourced career totals and best achievements. Career data
+comes from Jolpica via `node scripts/update-f1-careers.mjs`, with a daily workflow,
+compact `f1-careers.json` and reusable `sports-data/f1-career-cache.json`.
+Constructor history follows exact provider identities; predecessor teams are
+not silently merged. Completed-season titles are kept separate from an ongoing
+championship. The initial snapshot covers 39 drivers and 11 constructors.
+
+Other team/player dashboards also have a distinct All time view. Run
+`node scripts/update-team-careers.mjs` to refresh historical archive records and
+sourced honours daily. Each profile states its actual archive coverage. Available
+regular-season records begin in 2012 for AFL, 2017 for AFLW, 1998 for NRL, 2018
+for NRLW, 1947 for NBA, 2001 for WNBA, 2023 for NBL and 1922 for NFL. Some team
+archives have gaps or start later. Tennis uses the available Grand Slam singles
+archive, rather than claiming complete ATP/WTA career statistics. Verified title
+tables may extend beyond those game-record windows; missing honours are not
+inferred from a first-place regular-season finish.
+
+F2 is a small hover/focus sublink beneath the direct F1 navigation link. Its
+current-year fixtures, session classifications, standings, driver/team profiles
+and national flags come from official Formula 2 calendar/timing/profile data.
+`node scripts/update-f2.mjs` refreshes `f2-data.json`; its workflow runs every half
+hour. The initial import has 14 rounds, 51 classified sessions, 23 drivers and
+11 teams. F2 profiles cover the current season. Grid positions and penalty
+explanations appear only when directly supplied by the source.
+
+`viewer-favourites.js` stores starred leagues, teams and racing drivers only in
+the browser's local storage (`cgrillo-favourites-v1`). Nothing is sent to a
+server. `home-following.js` filters homepage games, retains a next/latest game
+outside the default window, and adds F2 only when explicitly followed. Side
+ladders choose the followed conference and put followed entries first while
+preserving their actual ranks. Tennis uses a tournament card instead of an
+invented league ladder. With no stars, the original homepage selection returns;
+the homepage reset button clears preferences. Blocked browser storage falls
+back to preferences for the current visit, with a clear notice.
+
+`about.html` introduces the sports viewer and its sources. Shared
+`viewer-experience.css/js` adds phone-friendly navigation, an accessible sports
+drawer, larger touch targets, safe-area spacing, reduced-motion support and
+table scrolling. `team-names.js` consistently labels women's teams in displays
+without changing provider IDs. Scheduled GitHub updates take effect when these
+changes are on the default branch; local edits alone do not publish the site.
+
+The F1 hover menu also includes F3, with the same current-year driver/team
+profiles, flags, weekend slider, standings and session classifications. F3 has
+its own updater and half-hourly workflow. It follows the same default-homepage
+exclusion and device-only favourite opt-in as F2. The initial F3 import contains
+nine rounds, 40 classified sessions, 34 drivers and ten teams.
+
+F2 and F3 share `feeder-results.js` for lap parsing and gap/interval calculation.
+Races default to intervals; practice and qualifying default to gaps from the
+leader. Purple fastest-lap ordering preserves the original race positions and
+points, with timing gaps calculated from the fastest laps. Supplementary FIA
+HTML classification tables supply individual best laps. The PDF fallback reads
+explicit classification columns when a table is unavailable, including Monza's
+F2 races, while preserving corrected positions and points from the primary feed.
+All 25 completed F2 races and 19 F3 races in the initial snapshot have recorded
+best laps; individual DNS/no-time rows stay unavailable. Starting grids are
+never inferred from qualifying or reversed-grid rules.
+Classifications from the last 72 hours refresh on every import to pick up
+official corrections; older completed sessions use the seven-day cache.
+
+Install the pinned importer dependency with `npm ci --prefix scripts` before
+running the F2/F3 updaters locally. PDF.js is used only by the importers; it is not
+downloaded by the website. Both GitHub workflows install it from the lockfile.
+
+`viewer-discovery.js/css` adds an accessible search dialog for competitions,
+teams and F1/F2/F3 drivers, plus a Following manager. Its static-data index loads
+on first use; queries are filtered on the device and are not sent to a search
+service. The keyboard shortcut is `/` outside form fields. Phone users can open
+Search or Manage stars from the sports drawer.
+
+The homepage toolbar in `home-controls.js/css` filters the existing overview by
+All, Live, Upcoming or Results and competition, with counts and an empty-state
+reset. It preserves the established time windows and favourite settings.
+Team dashboards now include linked recent results and fixture-phase filters;
+the selected phase applies to records, player leaders and the round slider.
+Game centres include pregame records, earlier head-to-head meetings in the same
+phase and leading recorded performances. No later result is used in a pregame
+comparison. Tennis labels retained draws by their actual match years.

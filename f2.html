@@ -14,6 +14,9 @@
     <script src="editorial.js" defer></script>
     <script src="fixture-slider.js"></script>
     <script src="sports.js" defer></script>
+    <script src="feeder-results.js"></script>
+    <link rel="stylesheet" href="feeder-results.css">
+    <script src="weekend-progress.js" defer></script>
     <script src="f2.js" defer></script>
     <link rel="stylesheet" href="sport-view.css">
     <script src="sport-view.js"></script>
@@ -22,6 +25,8 @@
     <script src="viewer-experience.js" defer></script>
     <meta name="theme-color" content="#073d2e">
     <link rel="stylesheet" href="viewer-favourites.css">
+    <link rel="stylesheet" href="viewer-discovery.css">
+    <script src="viewer-discovery.js" defer></script>
 </head>
 <body id="top" class="sports-page f2-page">
     <main class="page">
@@ -40,7 +45,7 @@
                             <div class="sport-nav__dropdown" id="afl-menu" data-league-menu hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
                             <div class="sport-family__subnav" id="afl-subnav" data-league-subnav role="group" aria-label="AFL competitions" hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
                         </div>
-                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html" aria-current="page">F2</a></div></div>
+                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html" aria-current="page">F2</a><a href="f3.html">F3</a></div></div>
                         <div class="sport-family" data-league-group="nrl">
                             <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nrl-menu nrl-subnav">NRL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
                             <div class="sport-nav__dropdown" id="nrl-menu" data-league-menu hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
@@ -71,7 +76,7 @@
                         <div class="f2-race" data-f2-race></div>
                         <div class="sports-tabs session-tabs" data-f2-sessions role="group" aria-label="F2 sessions"></div>
                         <div data-f2-results></div>
-                        <p class="sports-footnote">Classifications come from official F2 timing. Grid positions, race fastest laps and post-race penalty explanations are not supplied by this feed. Select a driver or team to view their season profile.</p>
+                        <p class="sports-footnote">Classifications come from official F2 timing. Best lap times are enriched from official FIA classifications. Grid positions and post-race penalty explanations are shown only when supplied. Select a driver or team to view their season profile.</p>
                     </section>
                     <aside class="ladder-card" aria-labelledby="f2-ladder-title"><div class="ladder-card__head"><h3 id="f2-ladder-title">Championship</h3></div><div class="sports-tabs" role="group" aria-label="F2 standings"><button type="button" data-f2-standing="drivers" aria-pressed="true">Drivers</button><button type="button" data-f2-standing="teams" aria-pressed="false">Teams</button></div><div data-f2-standings></div></aside>
                 </div>

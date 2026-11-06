@@ -6,9 +6,15 @@
     const leagues = [['afl','AFL','Australian football'],['aflw','AFLW','Australian football'],['f1','Formula 1','Motor racing'],['nrl','NRL','Rugby league'],['nrlw','NRLW','Rugby league'],['nba','NBA','Basketball'],['wnba','WNBA','Basketball'],['nbl','NBL','Basketball'],['nfl','NFL','American football'],['tennis','Tennis','Grand Slam singles']];
     function init(doc) {
         if (!doc.body || doc.querySelector('.viewer-mobile-nav')) return;
+        if (!doc.querySelector('script[data-viewer-guide-script]')) {
+            const guide = doc.createElement('script');guide.src='viewer-guide.js';guide.dataset.viewerGuideScript='true';doc.head.appendChild(guide);
+        }
+        const guideButton=doc.createElement('button');guideButton.type='button';guideButton.className='viewer-guide-trigger';guideButton.dataset.viewerGuide='';guideButton.textContent='Quick guide';guideButton.setAttribute('aria-haspopup','dialog');
+        doc.querySelector('.topbar-actions')?.prepend(guideButton);
         const current = location.pathname.split('/').pop() || 'index.html';
         const requestedSport = new URLSearchParams(location.search).get('sport');
-        const activeSport = current === 'f2.html' ? 'f1' : leagues.find(([slug]) => current === `${slug}.html` || requestedSport === slug)?.[0];
+        const feederPage=['f2.html','f3.html'].includes(current);
+        const activeSport = feederPage ? 'f1' : leagues.find(([slug]) => current === `${slug}.html` || requestedSport === slug)?.[0];
         const nav = doc.createElement('nav');
         nav.className = 'viewer-mobile-nav';
         nav.setAttribute('aria-label','Quick navigation');
@@ -27,12 +33,12 @@
         leagues.forEach(([slug,label,description]) => {
             const link = doc.createElement('a');
             link.href = `${slug}.html`;
-            if (activeSport === slug && current!=='f2.html') link.setAttribute('aria-current','page');
+            if (activeSport === slug && !feederPage) link.setAttribute('aria-current','page');
             const name = doc.createElement('strong'); name.textContent = label;
             const detail = doc.createElement('span'); detail.textContent = description;
             link.append(name,detail); links.appendChild(link);
             if(slug==='f1'){
-                const f2=doc.createElement('a');f2.href='f2.html';f2.className='viewer-f2-link';f2.textContent='↳ Formula 2';if(current==='f2.html')f2.setAttribute('aria-current','page');links.appendChild(f2);
+                for(const [page,label] of [['f2','Formula 2'],['f3','Formula 3']]){const feeder=doc.createElement('a');feeder.href=`${page}.html`;feeder.className='viewer-f2-link';feeder.textContent=`↳ ${label}`;if(current===`${page}.html`)feeder.setAttribute('aria-current','page');links.appendChild(feeder);}
             }
         });
         const theme = doc.createElement('button');
@@ -55,7 +61,8 @@
             updateTheme();
         });
         const footer = doc.createElement('p'); footer.className = 'viewer-sports-drawer__foot'; footer.textContent = 'Fixtures. Results. The performances behind them.';
-        drawer.append(heading,links,theme,footer);
+        const guideMobile=guideButton.cloneNode(true);guideMobile.className='viewer-drawer-guide';guideMobile.textContent='Quick guide & sports terms';
+        drawer.append(heading,links,guideMobile,theme,footer);
         doc.body.append(drawer,nav);
         const trigger = nav.querySelector('button');
         const close = () => drawer.close();
@@ -71,7 +78,7 @@
         if (!doc.body.classList.contains('about-page') && !doc.querySelector('.viewer-site-footer')) {
             const siteFooter = doc.createElement('footer');
             siteFooter.className = 'viewer-site-footer';
-            siteFooter.innerHTML = '<div><a class="viewer-site-footer__brand" href="index.html">cgrillo</a><p>Fixtures. Results. Performances.</p></div><nav aria-label="About this viewer"><a href="about.html">About the viewer</a><a href="about.html#competitions">All competitions</a><a href="about.html#about-data">Data &amp; sources</a></nav><a class="viewer-site-footer__top" href="#top">Back to top ↑</a>';
+            siteFooter.innerHTML = '<div><a class="viewer-site-footer__brand" href="index.html">cgrillo</a><p>Fixtures. Results. Performances.</p></div><nav aria-label="About this viewer"><a href="about.html">About the viewer</a><a href="about.html#competitions">All competitions</a><button type="button" data-viewer-guide>Quick guide</button><a href="about.html#about-data">Data &amp; sources</a></nav><a class="viewer-site-footer__top" href="#top">Back to top ↑</a>';
             (doc.querySelector('main.page') || doc.body).appendChild(siteFooter);
         }
         const aboutTheme = doc.querySelector('[data-about-theme]');

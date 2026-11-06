@@ -1,7 +1,7 @@
 (function(root,factory){const api=factory(root);if(typeof module==='object'&&module.exports)module.exports=api;else{root.ViewerFavourites=api;if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>api.init(document));else api.init(document);}})(typeof globalThis!=='undefined'?globalThis:this,function(root){
     const key='cgrillo-favourites-v1';
-    const sports=['afl','aflw','f1','f2','nrl','nrlw','nba','wnba','nbl','nfl','tennis'];
-    const labels={afl:'AFL',aflw:'AFLW',f1:'Formula 1',f2:'Formula 2',nrl:'NRL',nrlw:'NRLW',nba:'NBA',wnba:'WNBA',nbl:'NBL',nfl:'NFL',tennis:'Tennis'};
+    const sports=['afl','aflw','f1','f2','f3','nrl','nrlw','nba','wnba','nbl','nfl','tennis'];
+    const labels={afl:'AFL',aflw:'AFLW',f1:'Formula 1',f2:'Formula 2',f3:'Formula 3',nrl:'NRL',nrlw:'NRLW',nba:'NBA',wnba:'WNBA',nbl:'NBL',nfl:'NFL',tennis:'Tennis'};
     const empty=()=>({leagues:[],teams:[],drivers:[]});let memory=empty(),persisted=true,memoryOnly=false;
     function clean(input){
         if(!input||typeof input!=='object'||Array.isArray(input))return empty();
@@ -20,8 +20,25 @@
     const toggleDriver=(sport,id,name)=>toggleIdentity('drivers',sport,id,name);
     const hasAny=()=>{const value=get();return Boolean(value.leagues.length||value.teams.length||value.drivers.length);};
     const clear=()=>save(empty());
+    function restoreStarFocus(doc,request,now=Date.now()){
+        if(!request||now>request.expiresAt)return false;
+        const active=doc.activeElement;
+        // A later keyboard or pointer action owns focus. Never pull it back.
+        if(active&&active!==doc.body&&active!==request.source&&!request.source?.contains?.(active))return false;
+        if(request.source?.isConnected&&active===request.source&&request.source.dataset?.favouriteKind)return true;
+        const matches=[...doc.querySelectorAll('[data-favourite-kind]')].filter(node=>
+            node.dataset.favouriteKind===request.kind&&node.dataset.favouriteSport===request.sport&&node.dataset.favouriteId===request.id&&
+            !node.closest?.('[hidden]')&&(!node.getClientRects||node.getClientRects().length));
+        const replacement=matches.find(node=>request.region?.contains(node))||matches[0];
+        if(replacement){replacement.focus({preventScroll:true});request.source=replacement;return true;}
+        if(request.source?.isConnected&&active===request.source)return true;
+        const fallback=request.region?.isConnected?request.region:doc.querySelector('#afl-games-title, [data-home-ladders], main h2, main');
+        if(!fallback)return false;
+        fallback.setAttribute('tabindex','-1');fallback.focus({preventScroll:true});request.source=fallback;return true;
+    }
     function init(doc){
         if(!doc.body||doc.body.dataset.favouritesReady)return;doc.body.dataset.favouritesReady='true';
+        let pendingFocus=null;
         const route=()=>{const slug=location.pathname.split('/').pop()?.replace(/\.html$/,'');const query=new URLSearchParams(location.search);return{sport:sports.includes(slug)?slug:sports.includes(query.get('sport'))?query.get('sport'):null,query};};
         const button=(kind,sport,id,name)=>{const node=doc.createElement('button');node.type='button';node.className='viewer-star';node.dataset.favouriteKind=kind;node.dataset.favouriteSport=sport;node.dataset.favouriteId=id||'';node.dataset.favouriteName=name;node.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg>';return node;};
         const updateButtons=()=>{const snapshot=get();doc.querySelectorAll('[data-favourite-kind]').forEach(node=>{const {favouriteKind:kind,favouriteSport:sport,favouriteId:id,favouriteName:name}=node.dataset;const selected=kind==='league'?snapshot.leagues.includes(sport):snapshot[kind==='driver'?'drivers':'teams'].some(item=>item.sport===sport&&item.id===id);node.setAttribute('aria-pressed',String(selected));const label=`${selected?'Unstar':'Star'} ${name}`;node.setAttribute('aria-label',label);node.title=label+' · Saved on this device only';});};
@@ -37,18 +54,24 @@
                 if(anchor.dataset.favouriteDecorated||anchor.closest('.viewer-star'))return;
                 let target;try{target=new URL(anchor.href,location.href);}catch{return;}
                 const targetSlug=target.pathname.split('/').pop();const team=target.searchParams.get('team');const driver=target.searchParams.get('driver');
-                const targetSport=targetSlug==='sport-view.html'?target.searchParams.get('sport'):targetSlug==='f1.html'?'f1':targetSlug==='f2.html'?'f2':null;
+                const targetSport=targetSlug==='sport-view.html'?target.searchParams.get('sport'):targetSlug==='f1.html'?'f1':targetSlug==='f2.html'?'f2':targetSlug==='f3.html'?'f3':null;
                 if(!sports.includes(targetSport)||(!team&&!driver))return;
-                const name=anchor.title||anchor.textContent.trim().replace(/\s+/g,' ');if(!name)return;
+                const label=anchor.cloneNode(true);label.querySelectorAll('small').forEach(node=>node.remove());
+                const name=anchor.title||label.textContent.trim().replace(/\s+/g,' ');if(!name)return;
                 anchor.dataset.favouriteDecorated='true';const wrap=doc.createElement('span');wrap.className='viewer-favourite-link';anchor.before(wrap);wrap.appendChild(anchor);wrap.appendChild(button(team?'team':'driver',targetSport,team||driver,name));
             });
             updateButtons();
+            if(pendingFocus&&!restoreStarFocus(doc,pendingFocus))pendingFocus=null;
         }
         const toast=doc.createElement('p');toast.className='viewer-favourites-toast';toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');toast.hidden=true;doc.body.appendChild(toast);let timer;
-        doc.addEventListener('click',event=>{const target=event.target.closest?.('[data-favourite-kind]');if(!target)return;const {favouriteKind:kind,favouriteSport:sport,favouriteId:id,favouriteName:name}=target.dataset;event.preventDefault();if(kind==='league')toggleLeague(sport);else if(kind==='driver')toggleDriver(sport,id,name);else toggleTeam(sport,id,name);clearTimeout(timer);toast.textContent=persisted?'Preferences saved on this device only.':'Preferences are kept for this visit; browser storage is unavailable.';toast.hidden=false;timer=setTimeout(()=>{toast.hidden=true;},3200);});
+        doc.addEventListener('click',event=>{const target=event.target.closest?.('[data-favourite-kind]');if(!target)return;const {favouriteKind:kind,favouriteSport:sport,favouriteId:id,favouriteName:name}=target.dataset;
+            pendingFocus=doc.activeElement===target?{kind,sport,id,source:target,region:target.closest('[data-home-ladders], [data-afl-games], .standings-panel, .f2-results, .viewer-profile-head'),expiresAt:Date.now()+10000}:null;
+            event.preventDefault();if(kind==='league')toggleLeague(sport);else if(kind==='driver')toggleDriver(sport,id,name);else toggleTeam(sport,id,name);clearTimeout(timer);toast.textContent=persisted?'Preferences saved on this device only.':'Preferences are kept for this visit; browser storage is unavailable.';toast.hidden=false;timer=setTimeout(()=>{toast.hidden=true;},3200);});
+        doc.addEventListener('pointerdown',()=>{pendingFocus=null;});
+        doc.addEventListener('keydown',()=>{pendingFocus=null;});
         root.addEventListener('viewer-favourites-change',updateButtons);
         root.addEventListener('storage',event=>{if(event.key===key||event.key===null){memory=empty();memoryOnly=false;const snapshot=get();root.dispatchEvent(new root.CustomEvent('viewer-favourites-change',{detail:snapshot}));}});
         let pending=false;const observer=new MutationObserver(()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;decorate();});});observer.observe(doc.body,{childList:true,subtree:true});decorate();
     }
-    return{get,toggleLeague,toggleTeam,toggleDriver,isLeague,isTeam,isDriver,hasAny,clear,init,clean,storageKey:key};
+    return{get,toggleLeague,toggleTeam,toggleDriver,isLeague,isTeam,isDriver,hasAny,clear,init,clean,restoreStarFocus,storageKey:key};
 });

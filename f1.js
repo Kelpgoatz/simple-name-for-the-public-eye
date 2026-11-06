@@ -194,7 +194,7 @@
             }
         });
         ladder.scrollTop = 0;
-        ladderNote.textContent = "Select a name for the season dashboard. Season standings · refreshed hourly from F1 API.";
+        ladderNote.textContent = "Select a name for the season dashboard. Season standings · refreshed hourly from Jolpica F1.";
     }
 
     function switchTab(tab, focus = false) {
@@ -431,17 +431,24 @@
         const weekend = sessionWeekends[race.raceId];
         const keys = weekend ? keysForWeekend(Boolean(weekend.isSprint)) : ["race"];
         if (!keys.includes(selectedSession)) selectedSession = "race";
-        const group = text("div", "tab-group session-tabs", "", parent);
+        const progress = WeekendProgress.build(keys.map(key => ({ ...weekendSession(race, key), key, label: sessionDefinitions[key].label, title: sessionDefinitions[key].title })), { selected: selectedSession });
+        const overview = text("div", "", "", parent);
+        overview.innerHTML = WeekendProgress.overviewMarkup(progress);
+        const group = text("div", "tab-group session-tabs weekend-tabs", "", parent);
+        group.style.setProperty("--weekend-session-count", keys.length);
         group.setAttribute("role", "tablist");
         group.setAttribute("aria-label", "Weekend session");
         keys.forEach((key, index) => {
             const definition = sessionDefinitions[key];
-            const button = text("button", `tab${selectedSession === key ? " tab--active" : ""}`, definition.label, group);
+            const item = progress.items[index];
+            const button = text("button", `tab${selectedSession === key ? " tab--active" : ""}`, "", group);
+            button.innerHTML = WeekendProgress.tabMarkup(item);
+            button.dataset.weekendState = item.state;
             button.type = "button";
             button.id = `session-tab-${key}`;
             button.dataset.session = key;
             button.setAttribute("role", "tab");
-            button.setAttribute("aria-label", definition.title);
+            button.setAttribute("aria-label", `${definition.title} · ${WeekendProgress.stateLabel(item.state)} · ${WeekendProgress.formatStart(item)}`);
             button.setAttribute("aria-selected", String(selectedSession === key));
             button.setAttribute("aria-controls", "race-session-panel");
             button.tabIndex = selectedSession === key ? 0 : -1;
@@ -493,7 +500,7 @@
         slider.value = String(selectedIndex);
         slider.style.setProperty("--fill", `${selectedIndex / Math.max(races.length - 1, 1) * 100}%`);
         slider.setAttribute("aria-valuetext", `Round ${race.round}: ${race.name}`);
-        FixtureSlider.update(slider, races.map((item, value) => ({value, label:`Round ${item.round}`, shortLabel:`R${item.round}`})));
+        FixtureSlider.update(slider, races.map((item,value)=>{const dates=Object.values(sessionWeekends[item.raceId]?.sessions||{}).map(session=>session.startTime||session.date).filter(date=>Number.isFinite(Date.parse(date))).sort((a,b)=>Date.parse(a)-Date.parse(b));return{value,label:`Round ${item.round}`,shortLabel:`R${item.round}`,date:dates[0]||item.startTime||item.date,endDate:item.startTime||item.date};}),{unit:"weekends"});
         previous.disabled = selectedIndex === 0;
         next.disabled = selectedIndex === races.length - 1;
         fixtures.replaceChildren();
@@ -525,7 +532,7 @@
         fixturesNote.hidden = false;
         fixturesNote.replaceChildren();
         const session = weekendSession(race, selectedSession);
-        link(fixturesNote, selectedSession === "race" ? "Race data: F1 API" : `${sessionDefinitions[selectedSession].title} data`, session.source || "https://f1api.dev");
+        link(fixturesNote, selectedSession === "race" ? `Race data: ${/jolpi\.ca/.test(session.source || '') ? 'Jolpica F1' : 'F1 API'}` : `${sessionDefinitions[selectedSession].title} data`, session.source || "https://www.formula1.com");
         if (updatedAt) {
             const date = new Date(updatedAt);
             if (Number.isFinite(date.getTime())) fixturesNote.append(` · Updated ${date.toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" })}`);

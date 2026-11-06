@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="sport-view.css">
     <script src="sport-view.js"></script>
     <link rel="stylesheet" href="viewer-favourites.css">
+    <link rel="stylesheet" href="viewer-discovery.css">
+    <script src="viewer-discovery.js" defer></script>
 </head>
 <body id="top" class="about-page">
     <main class="page">
@@ -36,7 +38,7 @@
                             <div class="sport-nav__dropdown" id="afl-menu" data-league-menu hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
                             <div class="sport-family__subnav" id="afl-subnav" data-league-subnav role="group" aria-label="AFL competitions" hidden><a href="afl.html">AFL</a><a href="aflw.html">AFLW</a></div>
                         </div>
-                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html">F2</a></div></div>
+                        <div class="f1-nav-family"><a href="f1.html">F1</a><div class="f1-nav-family__menu"><a href="f2.html">F2</a><a href="f3.html">F3</a></div></div>
                         <div class="sport-family" data-league-group="nrl">
                             <button class="sport-nav__toggle" type="button" data-league-toggle aria-expanded="false" aria-controls="nrl-menu nrl-subnav">NRL <span class="sport-nav__chevron" aria-hidden="true"></span></button>
                             <div class="sport-nav__dropdown" id="nrl-menu" data-league-menu hidden><a href="nrl.html">NRL</a><a href="nrlw.html">NRLW</a></div>
@@ -98,7 +100,7 @@
             <section class="about-section" aria-labelledby="about-data">
                 <div class="about-section__heading"><h2 id="about-data">A little about the numbers.</h2><p>Clear sources. Honest gaps.</p></div>
                 <div class="about-method">
-                    <article><h3>From the source</h3><p>Fixtures and results come from public sports data feeds, including <a href="https://www.afl.com.au/">AFL</a>, <a href="https://www.nrl.com/">NRL</a>, <a href="https://www.espn.com/">ESPN</a> and <a href="https://f1api.dev/">F1 API</a>. Competition pages link to their sources. Coverage varies by sport and season.</p></article>
+                    <article><h3>From the source</h3><p>Fixtures and results come from public sports data feeds, including <a href="https://www.afl.com.au/">AFL</a>, <a href="https://www.nrl.com/">NRL</a>, <a href="https://www.espn.com/">ESPN</a>, <a href="https://www.formula1.com/">Formula 1</a>, <a href="https://api.jolpi.ca/">Jolpica</a> and <a href="https://www.fiaformula2.com/">Formula 2</a> and <a href="https://www.fiaformula3.com/">Formula 3</a>. Competition pages link to their sources. Coverage varies by sport and season; historical views state the years available rather than assuming a complete lifetime record.</p></article>
                     <article><h3>Updates, with context</h3><p>Data is refreshed automatically and served from saved snapshots. An update time helps you judge freshness. Provider delays can affect scores, session results, penalties and player statistics; the viewer labels unavailable or incomplete data where known.</p></article>
                     <article><h3>Built around the season</h3><p>Schedules and ladders follow the season released by each provider. Future draws, playoff opponents and next-season information appear when published. A confirmed result can change after an official correction.</p></article>
                     <article><h3>An independent companion</h3><p>cgrillo is an independent sports viewer. Team names, competition names and logos belong to their respective owners. For official decisions or the latest competition announcements, follow the relevant organiser’s source.</p></article>
