@@ -75,99 +75,99 @@
   },
   "drivers": {
     "antonelli": {
-      "nationality": "Italy",
+      "nationality": "Italian",
       "image": "https://flagcdn.com/w40/it.png"
     },
     "max_verstappen": {
-      "nationality": "Netherlands",
+      "nationality": "Dutch",
       "image": "https://flagcdn.com/w40/nl.png"
     },
     "hamilton": {
-      "nationality": "Great Britain",
+      "nationality": "British",
       "image": "https://flagcdn.com/w40/gb.png"
     },
     "russell": {
-      "nationality": "Great Britain",
+      "nationality": "British",
       "image": "https://flagcdn.com/w40/gb.png"
     },
     "leclerc": {
-      "nationality": "Monaco",
+      "nationality": "Monegasque",
       "image": "https://flagcdn.com/w40/mc.png"
     },
     "norris": {
-      "nationality": "Great Britain",
+      "nationality": "British",
       "image": "https://flagcdn.com/w40/gb.png"
     },
     "piastri": {
-      "nationality": "Australia",
+      "nationality": "Australian",
       "image": "https://flagcdn.com/w40/au.png"
     },
     "hadjar": {
-      "nationality": "France",
-      "image": "https://flagcdn.com/w40/fx.png"
+      "nationality": "French",
+      "image": "https://flagcdn.com/w40/fr.png"
     },
     "lawson": {
-      "nationality": "New Zealand",
+      "nationality": "New Zealander",
       "image": "https://flagcdn.com/w40/nz.png"
     },
     "gasly": {
-      "nationality": "France",
-      "image": "https://flagcdn.com/w40/fx.png"
+      "nationality": "French",
+      "image": "https://flagcdn.com/w40/fr.png"
     },
     "lindblad": {
-      "nationality": "Great Britain",
+      "nationality": "British",
       "image": "https://flagcdn.com/w40/gb.png"
     },
     "colapinto": {
-      "nationality": "Argentina",
+      "nationality": "Argentine",
       "image": "https://flagcdn.com/w40/ar.png"
     },
     "bearman": {
-      "nationality": "Great Britain",
+      "nationality": "British",
       "image": "https://flagcdn.com/w40/gb.png"
     },
     "bortoleto": {
-      "nationality": "Brazil",
+      "nationality": "Brazilian",
       "image": "https://flagcdn.com/w40/br.png"
     },
     "hulkenberg": {
-      "nationality": "Germany",
+      "nationality": "German",
       "image": "https://flagcdn.com/w40/de.png"
     },
     "ocon": {
-      "nationality": "France",
-      "image": "https://flagcdn.com/w40/fx.png"
+      "nationality": "French",
+      "image": "https://flagcdn.com/w40/fr.png"
     },
     "alonso": {
-      "nationality": "Spain",
+      "nationality": "Spanish",
       "image": "https://flagcdn.com/w40/es.png"
     },
     "sainz": {
-      "nationality": "Spain",
+      "nationality": "Spanish",
       "image": "https://flagcdn.com/w40/es.png"
     },
     "albon": {
-      "nationality": "Thailand",
+      "nationality": "Thai",
       "image": "https://flagcdn.com/w40/th.png"
     },
     "stroll": {
-      "nationality": "Canada",
+      "nationality": "Canadian",
       "image": "https://flagcdn.com/w40/ca.png"
     },
     "bottas": {
-      "nationality": "Finland",
+      "nationality": "Finnish",
       "image": "https://flagcdn.com/w40/fi.png"
     },
     "perez": {
-      "nationality": "Mexico",
+      "nationality": "Mexican",
       "image": "https://flagcdn.com/w40/mx.png"
     },
     "tsunoda": {
-      "nationality": "JPN",
+      "nationality": "Japanese",
       "image": "https://flagcdn.com/w40/jp.png"
     },
     "hirakawa": {
-      "nationality": "JPN",
+      "nationality": "Japanese",
       "image": "https://flagcdn.com/w40/jp.png"
     },
     "ryo_hirakawa": {
@@ -243,6 +243,46 @@
       "nationality": "Great Britain",
       "source": "https://contenthub.audif1.com/en/releases/freddie-slater-to-make-fp1-debut-with-audi-revolut-f1-team-in-mexico-and-brazil-346",
       "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "leonardo_fornaroli": {
+      "nationality": "Italy",
+      "source": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U.Ce8YvwuVJGLkVNgERX21U",
+      "image": "https://flagcdn.com/w40/it.png"
+    },
+    "frederik_vesti": {
+      "nationality": "Denmark",
+      "source": "https://www.mercedesamgf1.com/drivers/driver/fred-vesti",
+      "image": "https://flagcdn.com/w40/dk.png"
+    },
+    "freddie_slater": {
+      "nationality": "Great Britain",
+      "source": "https://contenthub.audif1.com/en/releases/freddie-slater-to-make-fp1-debut-with-audi-revolut-f1-team-in-mexico-and-brazil-346",
+      "image": "https://flagcdn.com/w40/gb.png"
+    },
+    "dino_beganovic": {
+      "nationality": "Sweden",
+      "image": "https://flagcdn.com/w40/se.png",
+      "source": "https://www.fiaformula2.com/en/drivers/dino-beganovic"
+    },
+    "colton_herta": {
+      "nationality": "United States of America",
+      "image": "https://flagcdn.com/w40/us.png",
+      "source": "https://www.fiaformula2.com/en/drivers/colton-herta"
+    },
+    "gabriele_mini": {
+      "nationality": "Italy",
+      "image": "https://flagcdn.com/w40/it.png",
+      "source": "https://www.fiaformula2.com/en/drivers/gabriele-mini"
+    },
+    "rafael_camara": {
+      "nationality": "Brazil",
+      "image": "https://flagcdn.com/w40/br.png",
+      "source": "https://www.fiaformula2.com/en/drivers/rafael-camara"
+    },
+    "nikola_tsolov": {
+      "nationality": "Bulgaria",
+      "image": "https://flagcdn.com/w40/bg.png",
+      "source": "https://www.fiaformula2.com/en/drivers/nikola-tsolov"
     }
   },
   "constructors": {
@@ -298,6 +338,6 @@
     "flags": "https://flagcdn.com/",
     "driverResults": "https://www.formula1.com/en/results/2026/drivers"
   },
-  "constructorsUpdatedAt": "2026-11-06T07:22:32.511Z",
-  "aflUpdatedAt": "2026-11-06T07:22:32.573Z"
+  "constructorsUpdatedAt": "2026-11-06T19:40:19.742Z",
+  "aflUpdatedAt": "2026-11-06T19:40:19.722Z"
 }

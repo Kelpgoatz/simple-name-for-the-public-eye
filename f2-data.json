@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-06T08:35:46.124Z",
+  "updatedAt": "2026-11-07T01:18:23.367Z",
   "source": {
     "name": "FIA Formula 2",
     "url": "https://www.fiaformula2.com/en/racing/2026",
@@ -4465,7 +4465,7 @@
             "time": "1:55.796",
             "lap": 22
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:49.181Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:31.291Z"
         }
       ],
       "circuit": "Miami International Autodrome",
@@ -11057,7 +11057,7 @@
             "time": "1:29.478",
             "lap": 26
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:51.177Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:33.298Z"
         }
       ],
       "circuit": "Circuit de Barcelona-Catalunya",
@@ -12714,7 +12714,7 @@
             "time": "1:18.962",
             "lap": 7
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:53.191Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:34.746Z"
         },
         {
           "id": "f2/race?meeting=1288&session=2",
@@ -13261,7 +13261,7 @@
             "time": "1:18.384",
             "lap": 31
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:53.291Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:35.404Z"
         }
       ],
       "circuit": "Red Bull Ring",
@@ -14967,7 +14967,7 @@
             "time": "1:44.533",
             "lap": 9
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:54.474Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:36.636Z"
         },
         {
           "id": "f2/race?meeting=1289&session=2",
@@ -15563,7 +15563,7 @@
             "time": "1:43.021",
             "lap": 27
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:54.618Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:37.203Z"
         }
       ],
       "circuit": "Silverstone Circuit",
@@ -17769,7 +17769,7 @@
             "time": "1:59.308",
             "lap": 16
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:55.678Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:38.395Z"
         }
       ],
       "circuit": "Circuit de Spa-Francorchamps",
@@ -21452,7 +21452,7 @@
             }
           ],
           "updatedAt": "2026-11-04T11:15:07.036Z",
-          "pdfTimingCheckedAt": "2026-11-07T04:24:57.014Z",
+          "pdfTimingCheckedAt": "2026-11-06T12:05:39.431Z",
           "fastestLap": {
             "driverId": "JOSDUR01",
             "time": "1:33.616",
@@ -22006,7 +22006,7 @@
             }
           ],
           "updatedAt": "2026-11-04T11:15:07.036Z",
-          "pdfTimingCheckedAt": "2026-11-07T04:24:57.147Z",
+          "pdfTimingCheckedAt": "2026-11-06T12:05:39.650Z",
           "fastestLap": {
             "driverId": "RAFCAM01",
             "time": "1:32.884",
@@ -23132,7 +23132,7 @@
             "time": "1:44.331",
             "lap": 12
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:58.502Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:41.005Z"
         },
         {
           "id": "f2/race?meeting=1294&session=1",
@@ -23654,7 +23654,7 @@
             "time": "1:49.161",
             "lap": 21
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:58.619Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:41.480Z"
         },
         {
           "id": "f2/race?meeting=1294&session=2",
@@ -24178,7 +24178,7 @@
             "time": "1:46.257",
             "lap": 29
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:58.734Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:41.940Z"
         }
       ],
       "circuit": "Madring",
@@ -26385,7 +26385,7 @@
             "time": "1:56.855",
             "lap": 10
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:24:59.940Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:43.335Z"
         },
         {
           "id": "f2/race?meeting=1295&session=2",
@@ -26933,7 +26933,7 @@
             "time": "1:55.737",
             "lap": 23
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:25:00.038Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:43.881Z"
         },
         {
           "id": "f2/race?meeting=1295&session=3",
@@ -27481,7 +27481,7 @@
             "time": "1:55.494",
             "lap": 29
           },
-          "pdfTimingCheckedAt": "2026-11-07T04:25:00.135Z"
+          "pdfTimingCheckedAt": "2026-11-06T12:05:44.180Z"
         }
       ],
       "circuit": "Baku City Circuit",
@@ -27505,7 +27505,7 @@
           "startTime": "2026-11-27T09:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         },
         {
           "id": "f2/qualifying?meeting=1301&session=0",
@@ -27514,7 +27514,7 @@
           "startTime": "2026-11-27T13:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         },
         {
           "id": "f2/race?meeting=1301&session=1",
@@ -27523,7 +27523,7 @@
           "startTime": "2026-11-28T10:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         },
         {
           "id": "f2/race?meeting=1301&session=2",
@@ -27532,7 +27532,7 @@
           "startTime": "2026-11-29T09:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         }
       ],
       "circuit": "Lusail International Circuit",
@@ -27556,7 +27556,7 @@
           "startTime": "2026-12-03T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         },
         {
           "id": "f2/qualifying?meeting=1302&session=0",
@@ -27565,7 +27565,7 @@
           "startTime": "2026-12-03T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         },
         {
           "id": "f2/race?meeting=1302&session=1",
@@ -27574,7 +27574,7 @@
           "startTime": "2026-12-04T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         },
         {
           "id": "f2/race?meeting=1302&session=2",
@@ -27583,7 +27583,7 @@
           "startTime": "2026-12-05T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-06T08:35:46.124Z"
+          "updatedAt": "2026-11-07T01:18:23.367Z"
         }
       ],
       "circuit": "Yas Marina Circuit",
@@ -28021,16 +28021,14 @@
     "source": "https://www.fia.com/events/formula-2-championship/season-2026/fia-formula-2",
     "availableSessions": 49,
     "totalSessions": 51,
-    "requestedSessions": 51,
+    "requestedSessions": 2,
     "unavailable": [
       "R10 Practice",
-      "R10 Qualifying",
-      "R10 Sprint Race",
-      "R10 Feature Race"
+      "R10 Qualifying"
     ]
   },
   "pdfTimingCoverage": {
-    "enrichedSessions": 2,
+    "enrichedSessions": 0,
     "unavailable": []
   }
 }

@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-06T08:32:17.182Z",
-  "fixturesUpdatedAt": "2026-11-06T08:32:17.182Z",
-  "standingsUpdatedAt": "2026-11-06T08:32:17.182Z",
+  "updatedAt": "2026-11-07T01:09:52.918Z",
+  "fixturesUpdatedAt": "2026-11-07T01:09:52.918Z",
+  "standingsUpdatedAt": "2026-11-07T01:09:52.918Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2136,8 +2136,8 @@
         {
           "id": "401875294",
           "startTime": "2026-11-06T08:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "10",
@@ -2153,9 +2153,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
             "color": "#e33c95"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 79,
+          "awayScore": 77,
+          "winner": "home"
         }
       ]
     },
@@ -5305,6 +5305,26 @@
         {
           "rank": 1,
           "team": {
+            "id": "10",
+            "name": "Tasmania JackJumpers",
+            "abbreviation": "TAS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
+            "color": "#008b45"
+          },
+          "wins": 8,
+          "losses": 3,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.72727275,
+          "gamesBehind": 0,
+          "for": 1035,
+          "against": 985
+        },
+        {
+          "rank": 2,
+          "team": {
             "id": "9",
             "name": "Sydney Kings",
             "abbreviation": "SYD",
@@ -5318,29 +5338,9 @@
           "points": null,
           "percentage": null,
           "winPct": 0.7,
-          "gamesBehind": 0,
+          "gamesBehind": 0.5,
           "for": 979,
           "against": 881
-        },
-        {
-          "rank": 2,
-          "team": {
-            "id": "10",
-            "name": "Tasmania JackJumpers",
-            "abbreviation": "TAS",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
-            "color": "#008b45"
-          },
-          "wins": 7,
-          "losses": 3,
-          "draws": 0,
-          "played": 10,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.7,
-          "gamesBehind": 0,
-          "for": 956,
-          "against": 908
         },
         {
           "rank": 3,
@@ -5358,7 +5358,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.54545456,
-          "gamesBehind": 1.5,
+          "gamesBehind": 2,
           "for": 1061,
           "against": 999
         },
@@ -5378,7 +5378,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.54545456,
-          "gamesBehind": 1.5,
+          "gamesBehind": 2,
           "for": 1047,
           "against": 1071
         },
@@ -5398,7 +5398,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5,
-          "gamesBehind": 2,
+          "gamesBehind": 2.5,
           "for": 1109,
           "against": 1169
         },
@@ -5418,7 +5418,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5,
-          "gamesBehind": 2,
+          "gamesBehind": 2.5,
           "for": 943,
           "against": 979
         },
@@ -5438,7 +5438,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.45454547,
-          "gamesBehind": 2.5,
+          "gamesBehind": 3,
           "for": 1001,
           "against": 1031
         },
@@ -5458,7 +5458,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.4,
-          "gamesBehind": 3,
+          "gamesBehind": 3.5,
           "for": 969,
           "against": 943
         },
@@ -5472,15 +5472,15 @@
             "color": "#e33c95"
           },
           "wins": 4,
-          "losses": 7,
+          "losses": 8,
           "draws": 0,
-          "played": 11,
+          "played": 12,
           "points": null,
           "percentage": null,
-          "winPct": 0.36363637,
-          "gamesBehind": 3.5,
-          "for": 996,
-          "against": 1000
+          "winPct": 0.33333334,
+          "gamesBehind": 4.5,
+          "for": 1073,
+          "against": 1079
         },
         {
           "rank": 10,
@@ -5498,7 +5498,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.33333334,
-          "gamesBehind": 4,
+          "gamesBehind": 4.5,
           "for": 1164,
           "against": 1244
         }
