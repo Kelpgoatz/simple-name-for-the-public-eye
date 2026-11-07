@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-07T07:16:20.840Z",
-  "fixturesUpdatedAt": "2026-11-07T07:16:20.840Z",
-  "standingsUpdatedAt": "2026-11-07T07:16:20.840Z",
+  "updatedAt": "2026-11-07T14:08:16.782Z",
+  "fixturesUpdatedAt": "2026-11-07T14:08:16.782Z",
+  "standingsUpdatedAt": "2026-11-07T14:08:16.782Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2167,8 +2167,8 @@
         {
           "id": "401875289",
           "startTime": "2026-11-07T06:30:00.000Z",
-          "status": "live",
-          "statusDetail": "3:59 - 2nd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "1",
@@ -2184,15 +2184,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
             "color": "#ce202f"
           },
-          "homeScore": 44,
-          "awayScore": 32,
-          "winner": null
+          "homeScore": 106,
+          "awayScore": 78,
+          "winner": "home"
         },
         {
           "id": "401875286",
           "startTime": "2026-11-07T08:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "5",
@@ -2208,9 +2208,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
             "color": "#1f4fa2"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 120,
+          "awayScore": 92,
+          "winner": "home"
         }
       ]
     },
@@ -5351,19 +5351,39 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/mel.png",
             "color": "#4370b7"
           },
-          "wins": 6,
+          "wins": 7,
           "losses": 5,
           "draws": 0,
-          "played": 11,
+          "played": 12,
           "points": null,
           "percentage": null,
-          "winPct": 0.54545456,
-          "gamesBehind": 2,
-          "for": 1061,
-          "against": 999
+          "winPct": 0.5833333,
+          "gamesBehind": 1.5,
+          "for": 1181,
+          "against": 1091
         },
         {
           "rank": 4,
+          "team": {
+            "id": "1",
+            "name": "Adelaide 36ers",
+            "abbreviation": "ADL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
+            "color": "#ed302e"
+          },
+          "wins": 6,
+          "losses": 6,
+          "draws": 0,
+          "played": 12,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.5,
+          "gamesBehind": 2.5,
+          "for": 1107,
+          "against": 1109
+        },
+        {
+          "rank": 5,
           "team": {
             "id": "2",
             "name": "Brisbane Bullets",
@@ -5372,18 +5392,18 @@
             "color": "#1f4fa2"
           },
           "wins": 6,
-          "losses": 5,
+          "losses": 6,
           "draws": 0,
-          "played": 11,
+          "played": 12,
           "points": null,
           "percentage": null,
-          "winPct": 0.54545456,
-          "gamesBehind": 2,
-          "for": 1047,
-          "against": 1071
+          "winPct": 0.5,
+          "gamesBehind": 2.5,
+          "for": 1139,
+          "against": 1191
         },
         {
-          "rank": 5,
+          "rank": 6,
           "team": {
             "id": "3",
             "name": "Cairns Taipans",
@@ -5403,7 +5423,7 @@
           "against": 1169
         },
         {
-          "rank": 6,
+          "rank": 7,
           "team": {
             "id": "7",
             "name": "Perth Wildcats",
@@ -5421,26 +5441,6 @@
           "gamesBehind": 2.5,
           "for": 943,
           "against": 979
-        },
-        {
-          "rank": 7,
-          "team": {
-            "id": "1",
-            "name": "Adelaide 36ers",
-            "abbreviation": "ADL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/adl.png",
-            "color": "#ed302e"
-          },
-          "wins": 5,
-          "losses": 6,
-          "draws": 0,
-          "played": 11,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.45454547,
-          "gamesBehind": 3,
-          "for": 1001,
-          "against": 1031
         },
         {
           "rank": 8,
@@ -5492,15 +5492,15 @@
             "color": "#ce202f"
           },
           "wins": 4,
-          "losses": 8,
+          "losses": 9,
           "draws": 0,
-          "played": 12,
+          "played": 13,
           "points": null,
           "percentage": null,
-          "winPct": 0.33333334,
-          "gamesBehind": 4.5,
-          "for": 1164,
-          "against": 1244
+          "winPct": 0.30769232,
+          "gamesBehind": 5,
+          "for": 1242,
+          "against": 1350
         }
       ]
     }
