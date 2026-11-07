@@ -79,8 +79,10 @@
             rail.replaceChildren();
             for (const entry of markers(entries)) {
                 const button = doc.createElement('button'); button.type = 'button';
-                button.textContent = shortLabel(entry); button.title = entry.label;
-                button.setAttribute('aria-label', `View ${entry.label}`);
+                const visible = shortLabel(entry);
+                button.textContent = visible;
+                button.title = entry.label;
+                if (visible !== entry.label) button.setAttribute('aria-label', `${visible} · ${entry.label}`);
                 button.dataset.value = entry.value;
                 const position = (Number(entry.value) - min) / Math.max(1, max - min) * 100;
                 button.style.left = `${position}%`;

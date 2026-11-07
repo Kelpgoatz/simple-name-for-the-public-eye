@@ -1,13 +1,15 @@
 (function(root,factory){const api=factory(root);if(typeof module==='object'&&module.exports)module.exports=api;else{root.HomeWelcome=api;if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>api.init(document));else api.init(document);}})(typeof globalThis!=='undefined'?globalThis:this,function(root){
     'use strict';
-    let choice=null;
+    const scopeKey = 'cgrillo-home-scope-v1';
+    let choice = null;
+    try { choice = root.localStorage?.getItem(scopeKey); } catch {}
     let events=[],weekends={};
     const empty=()=>({leagues:[],teams:[],drivers:[]});
     const snapshot=()=>root.ViewerFavourites?.get()||empty();
     function selectionCount(prefs={}){return ['leagues','teams','drivers'].reduce((sum,key)=>sum+(Array.isArray(prefs[key])?prefs[key].length:0),0);}
     function scopeFor(prefs,preferred){return selectionCount(prefs)&&preferred!=='all'?'following':'all';}
     function getScope(){return scopeFor(snapshot(),choice);}
-    function setScope(value){if(!['all','following'].includes(value))return getScope();choice=value;const scope=getScope();if(root.dispatchEvent&&root.CustomEvent)root.dispatchEvent(new root.CustomEvent('viewer-home-scope-change',{detail:{scope}}));return scope;}
+    function setScope(value){if(!['all','following'].includes(value))return getScope();choice=value;try{root.localStorage?.setItem(scopeKey,value);}catch{}const scope=getScope();if(root.dispatchEvent&&root.CustomEvent)root.dispatchEvent(new root.CustomEvent('viewer-home-scope-change',{detail:{scope}}));return scope;}
     function startsIn(timestamp,now=Date.now()){
         const minutes=Math.ceil((timestamp-now)/60000);if(!Number.isFinite(minutes)||minutes<=0)return '';
         if(minutes<60)return `In ${minutes} min`;
@@ -27,20 +29,21 @@
                 continue;
             }
             const match=game.match||{},status=String(match.status||'').toLowerCase(),timestamp=new Date(game.startTime||match.startTime).getTime();
-            if(!Number.isFinite(timestamp)||timestamp<=now||game.state?.isFinished||game.state?.isLive||game.state?.isTbc||/final|concluded|live|cancel|postpon/.test(status))continue;
+            if(!Number.isFinite(timestamp)||timestamp<=now||game.state?.isFinished||game.state?.isLive||game.state?.isTbc||/final|concluded|live|cancel|postpon|delay|suspend|abandon/.test(status))continue;
             const id=match.id??match.matchId;
             candidates.push({sport,timestamp,title:`${name(sport,match.home||match.homeTeam)} v ${name(sport,match.away||match.awayTeam)}`,detail:match.venue||'Scheduled fixture',href:id!=null?`sport-view.html?sport=${encodeURIComponent(sport)}&match=${encodeURIComponent(id)}`:`${sport}.html`});
         }
         return candidates.sort((a,b)=>a.timestamp-b.timestamp)[0]||null;
     }
     function setEvents(games,sessionWeekends={}){events=games||[];weekends=sessionWeekends;if(root.dispatchEvent&&root.CustomEvent)root.dispatchEvent(new root.CustomEvent('viewer-home-events-change'));}
-    function aflState(match={},startTime,now=Date.now()){
+    function aflState(match={},startTime,now=Date.now(),{stale=false}={}){
         const status=String(match.status||'SCHEDULED').toUpperCase();
         const start=startTime==null?NaN:new Date(startTime).getTime(),until=start-now;
-        const hasScores=match.homeScore!=null&&match.awayScore!=null;
+        const hasScore=value=>(typeof value==='number'||typeof value==='string'&&value.trim()!=='')&&Number.isFinite(Number(value));
+        const hasScores=hasScore(match.homeScore)&&hasScore(match.awayScore);
         const isFinished=['CONCLUDED','FINAL','FULL_TIME','COMPLETED'].includes(status);
-        const isTbc=['CANCELLED','CANCELED','POSTPONED','TBC','PLACEHOLDER','TO_BE_CONFIRMED'].includes(status);
-        const staleLive=Number.isFinite(start)&&now-start>8*3600000;
+        const isTbc=['CANCELLED','CANCELED','POSTPONED','DELAYED','SUSPENDED','ABANDONED','TBC','PLACEHOLDER','TO_BE_CONFIRMED'].includes(status);
+        const staleLive=stale||Number.isFinite(start)&&(until>0||now-start>4*3600000);
         const isLive=!isTbc&&!isFinished&&!staleLive&&['LIVE','IN_PROGRESS','PLAYING'].includes(status);
         const isPending=!isFinished&&!isLive&&!isTbc&&(status==='PENDING'||Number.isFinite(start)&&until<=0);
         const isCountdown=!isFinished&&!isLive&&!isTbc&&!isPending&&until>0&&until<=10*60000;
@@ -64,7 +67,7 @@
             summary.textContent=count?`${count} starred ${count===1?'selection':'selections'} · Saved only on this device.`:'No account needed. Your stars stay on this device.';
             doc.querySelectorAll('[data-home-scope]').forEach(button=>{button.setAttribute('aria-pressed',String(button.dataset.homeScope===scope));if(button.dataset.homeScope==='following')button.disabled=!count;});
             doc.querySelectorAll('[data-home-scope-count]').forEach(node=>{node.textContent=String(count);});
-            const note=doc.querySelector('[data-home-scope-note]');if(note)note.textContent=scope==='following'?'Games and ladders for your starred competitions, teams and drivers.':'A selection of current sport. Star a competition, team or driver to make it yours.';
+            const note=doc.querySelector('[data-home-scope-note]');if(note)note.hidden=scope!=='following';
         }
         toggle.addEventListener('click',()=>{collapsed=!collapsed;try{root.localStorage.setItem('cgrillo-home-intro-v1',collapsed?'hidden':'shown');}catch{}render();});
         doc.querySelectorAll('[data-home-scope]').forEach(button=>button.addEventListener('click',()=>setScope(button.dataset.homeScope)));

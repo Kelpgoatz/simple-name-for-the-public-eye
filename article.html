@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
     <script src="team-names.js"></script>
     <script src="viewer-favourites.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Morning Briefing</title>
+    <title>Morning Briefing | cgrillo</title>
+    <meta name="description" content="An absurd, fictional morning briefing from the cgrillo editorial archive.">
+    <link rel="canonical" href="https://www.cgrillo.com/article.html">
+    <script src="viewer-theme.js"></script>
     <style>
         :root {
             color-scheme: light;
@@ -450,16 +453,15 @@
     <link rel="stylesheet" href="editorial.css">
     <link rel="stylesheet" href="editorial-articles.css">
     <script src="editorial.js" defer></script>
-    <link rel="stylesheet" href="sport-view.css">
-    <script src="sport-view.js"></script>
     <link rel="stylesheet" href="viewer-experience.css">
     <script src="viewer-experience.js" defer></script>
     <meta name="theme-color" content="#073d2e">
     <link rel="stylesheet" href="viewer-favourites.css">
     <link rel="stylesheet" href="viewer-discovery.css">
+    <script src="snapshot-loader.js" defer></script>
     <script src="viewer-discovery.js" defer></script>
 </head>
-<body class="article-page">
+<body id="top" class="article-page">
     <main class="page">
         <div class="frame">
             <header class="masthead">
@@ -559,44 +561,5 @@
             </div>
         </div>
     </main>
-    <script>
-        (() => {
-            const storageKey = "cgrillo-theme";
-            const root = document.documentElement;
-            const toggleButton = document.querySelector("[data-theme-toggle]");
-
-            const getStoredTheme = () => {
-                try {
-                    return localStorage.getItem(storageKey);
-                } catch {
-                    return null;
-                }
-            };
-
-            const setTheme = (theme, persist = true) => {
-                root.dataset.theme = theme;
-                if (toggleButton) {
-                    toggleButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-                    toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
-                }
-                const favicon = document.getElementById("favicon");
-                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.svg" : "favicon.svg";
-                if (persist) {
-                    try {
-                        localStorage.setItem(storageKey, theme);
-                    } catch {
-                        // Ignore storage failures on file URLs or restricted environments.
-                    }
-                }
-            };
-
-            const initialTheme = getStoredTheme() || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-            setTheme(initialTheme, false);
-
-            toggleButton?.addEventListener("click", () => {
-                setTheme(root.dataset.theme === "dark" ? "light" : "dark");
-            });
-        })();
-    </script>
 </body>
 </html>

@@ -4,8 +4,11 @@
     <script src="team-names.js"></script>
     <script src="viewer-favourites.js"></script>
     <meta charset="UTF-8">
+    <script src="viewer-theme.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>AFL Ladder</title>
+    <title>AFL Fixtures, Results &amp; Ladder | cgrillo</title>
+    <meta name="description" content="AFL fixtures, match results, premiership ladder and player performances.">
+    <link rel="canonical" href="https://www.cgrillo.com/afl.html">
     <style>
         :root {
             color-scheme: light;
@@ -858,6 +861,7 @@
     <link rel="stylesheet" href="standings.css">
     <link rel="stylesheet" href="afl-round.css">
     <script src="afl-round.js"></script>
+    <script src="snapshot-loader.js"></script>
     <script src="editorial.js" defer></script>
     <script src="fixture-slider.js"></script>
     <script src="sport-identities.js"></script>
@@ -916,15 +920,15 @@
                         <div class="fixtures-card__head">
                             <h3 id="afl-fixtures-title">AFL Fixtures</h3>
                             <div class="round-selector">
-                                <button class="round-selector__btn" type="button" data-round-prev aria-label="Previous round">&#9664;</button>
+                                <button class="round-selector__btn" type="button" data-round-prev aria-label="Previous round" disabled>&#9664;</button>
                                 <div class="round-selector__display">
                                     <span class="round-selector__label" data-round-label>Round</span>
                                     <span class="round-selector__value" data-round-value>0</span>
                                 </div>
-                                <button class="round-selector__btn" type="button" data-round-next aria-label="Next round">&#9654;</button>
+                                <button class="round-selector__btn" type="button" data-round-next aria-label="Next round" disabled>&#9654;</button>
                             </div>
                         </div>
-                        <input class="round-slider" type="range" min="0" max="29" step="1" value="0" data-round-slider aria-label="Select round">
+                        <input class="round-slider" type="range" min="0" max="29" step="1" value="0" data-round-slider aria-label="Select round" disabled>
                         <div class="fixtures-list afl-round-games" data-fixtures-list>
                             <p class="fixtures-empty">Loading fixtures...</p>
                         </div>
@@ -970,6 +974,16 @@
             "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
         };
 
+        let savedStandings;
+        async function readStandings() {
+            const rows = await SportsSnapshots.read("standings.json");
+            if (!Array.isArray(rows) || rows.some(row => typeof row?.name !== "string" || !Number.isInteger(row.rank))) {
+                throw new Error("Invalid AFL ladder");
+            }
+            savedStandings = rows;
+            return rows;
+        }
+
         (() => {
             const ladderList = document.querySelector("[data-ladder-list]");
             const ladderNote = document.querySelector("[data-ladder-note]");
@@ -980,42 +994,16 @@
                 Object.entries(teams).map(([key, val]) => [val.display.toLowerCase(), key])
             );
 
-            const fallbackStandings = [
-                { rank: 1, name: "Fremantle", played: 16, wins: 14, losses: 2, draws: 0, pts: 56, percentage: 141.6, "for": 1579, against: 1115 },
-                { rank: 2, name: "Sydney Swans", played: 16, wins: 13, losses: 3, draws: 0, pts: 52, percentage: 136.9, "for": 1751, against: 1279 },
-                { rank: 3, name: "Hawthorn", played: 16, wins: 10, losses: 5, draws: 1, pts: 42, percentage: 110.0, "for": 1547, against: 1406 },
-                { rank: 4, name: "Brisbane Lions", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 111.7, "for": 1674, against: 1498 },
-                { rank: 5, name: "Adelaide Crows", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 111.4, "for": 1427, against: 1281 },
-                { rank: 6, name: "Melbourne", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 106.3, "for": 1555, against: 1463 },
-                { rank: 7, name: "Geelong Cats", played: 16, wins: 9, losses: 7, draws: 0, pts: 36, percentage: 117.1, "for": 1591, against: 1359 },
-                { rank: 8, name: "Western Bulldogs", played: 16, wins: 9, losses: 7, draws: 0, pts: 36, percentage: 90.8, "for": 1325, against: 1459 },
-                { rank: 9, name: "North Melbourne", played: 15, wins: 8, losses: 7, draws: 0, pts: 32, percentage: 92.2, "for": 1294, against: 1404 },
-                { rank: 10, name: "Collingwood", played: 15, wins: 7, losses: 7, draws: 1, pts: 30, percentage: 104.2, "for": 1253, against: 1202 },
-                { rank: 11, name: "Gold Coast SUNS", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 101.2, "for": 1359, against: 1343 },
-                { rank: 12, name: "GWS GIANTS", played: 16, wins: 7, losses: 9, draws: 0, pts: 28, percentage: 100.8, "for": 1471, against: 1460 },
-                { rank: 13, name: "Carlton", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 95.6, "for": 1254, against: 1312 },
-                { rank: 14, name: "St Kilda", played: 15, wins: 6, losses: 9, draws: 0, pts: 24, percentage: 100.6, "for": 1334, against: 1326 },
-                { rank: 15, name: "Port Adelaide", played: 15, wins: 5, losses: 10, draws: 0, pts: 20, percentage: 100.9, "for": 1222, against: 1211 },
-                { rank: 16, name: "West Coast Eagles", played: 16, wins: 4, losses: 12, draws: 0, pts: 16, percentage: 71.5, "for": 1161, against: 1623 },
-                { rank: 17, name: "Richmond", played: 15, wins: 2, losses: 13, draws: 0, pts: 8, percentage: 61.8, "for": 987, against: 1598 },
-                { rank: 18, name: "Essendon", played: 15, wins: 1, losses: 14, draws: 0, pts: 4, percentage: 71.0, "for": 1092, against: 1537 }
-            ];
-
-            const formatNumber = (value, fallback = 0) => {
-                const number = Number(value);
-                return Number.isFinite(number) ? number : fallback;
-            };
-
             const renderStandings = (data, sourceText) => {
-                const sortedStandings = [...data].sort((first, second) => formatNumber(first.rank) - formatNumber(second.rank));
-                const rows = sortedStandings.map((standing, index) => {
+                const sortedStandings = [...data].sort((first, second) => first.rank - second.rank);
+                const rows = sortedStandings.map(standing => {
                     const team = teams[teamByName.get(standing.name.toLowerCase())] || {
                         display: standing.name,
                         initials: standing.name.slice(0, 2).toUpperCase(),
                         colors: ["#0f5a6d", "#79d7ec"]
                     };
                     return {
-                        rank: formatNumber(standing.rank, index + 1),
+                        rank: standing.rank,
                         team: { name: team.display, abbreviation: team.initials, color: team.colors[0] },
                         played: standing.played,
                         wins: standing.wins,
@@ -1025,6 +1013,7 @@
                         points: standing.pts
                     };
                 });
+                ladderList.removeAttribute("aria-busy");
                 ladderList.innerHTML = SportsUI.renderStandings({ label: "AFL Ladder", rows }, "afl");
                 ladderList.querySelectorAll("tbody tr").forEach((row, index) => {
                     SportIdentity.afl(row.querySelector(".sports-identity"), rows[index].team.name);
@@ -1035,20 +1024,19 @@
                 }
             };
 
-            renderStandings(fallbackStandings, "Standings updated every 15 minutes via AFL API.");
-
-            fetch("standings.json")
-                .then(response => {
-                    if (!response.ok) throw new Error("Failed to load standings");
-                    return response.json();
-                })
-                .then(data => {
-                    if (!Array.isArray(data)) throw new Error("Invalid response");
-                    renderStandings(data, "Standings updated every 15 minutes via AFL API.");
-                })
-                .catch(() => {
-                    renderStandings(fallbackStandings, "Standings may not reflect most recent results.");
-                });
+            async function loadStandings() {
+                const focused = ladderList.contains(document.activeElement);
+                SportsUI.loadingPanel(ladderList, "Loading AFL ladder…", "table");
+                try {
+                    const data = await readStandings();
+                    renderStandings(data, data.length ? "Source: AFL · latest saved ladder." : "");
+                    document.dispatchEvent(new Event("afl-ladder-ready"));
+                } catch {
+                    SportsUI.retryPanel(ladderList, "The AFL ladder is temporarily unavailable.", loadStandings);
+                }
+                if (focused && document.activeElement === document.body) SportsUI.restorePanelFocus(ladderList);
+            }
+            loadStandings();
         })();
 
         (() => {
@@ -1061,27 +1049,37 @@
             const fixturesNote = document.querySelector("[data-fixtures-note]");
 
             const MIN_ROUND = 0;
-            let maxRound = 24;
+            let maxRound = MIN_ROUND;
 
             let currentRound = MIN_ROUND;
             let fixturesData = null;
             let roundStatsData = null;
+            let statsState = "loading";
+            let fixtureSeason;
             const tallies = document.querySelector("[data-round-tallies]");
             const renderTallies = () => {
-                const firstDate = (fixturesData || []).flatMap(round => round.matches || []).map(match => parseStartTime(match.startTime)).find(Boolean);
-                AFLRoundView.render(tallies, roundStatsData, currentRound, firstDate?.getUTCFullYear());
+                if (!fixturesData || !fixturesData.length) return;
+                tallies.hidden = false;
+                if (statsState === "loading" || statsState === "error" && !roundStatsData) {
+                    const heading = document.createElement("h2");
+                    heading.id = "afl-round-tallies-title";
+                    heading.textContent = "Round player leaders";
+                    const panel = document.createElement("div");
+                    tallies.replaceChildren(heading, panel);
+                    if (statsState === "loading") SportsUI.loadingPanel(panel, "Loading player statistics…");
+                    else SportsUI.retryPanel(panel, "AFL player statistics are temporarily unavailable.", loadStats);
+                    return;
+                }
+                AFLRoundView.render(tallies, roundStatsData, currentRound, fixtureSeason);
+                if (statsState === "error") {
+                    const note = document.createElement("div");
+                    SportsUI.retryPanel(note, "The player statistics could not be refreshed. Showing the saved update.", loadStats);
+                    tallies.append(note);
+                }
             };
             const countdownTimers = [];
 
-            const statusLabels = {
-                SCHEDULED: "Scheduled",
-                CONFIRMED_TEAMS: "Scheduled",
-                UNCONFIRMED_TEAMS: "Scheduled",
-                CONCLUDED: "Finished",
-                LIVE: "Live",
-                IN_PROGRESS: "Live",
-                PLACEHOLDER: "TBC"
-            };
+            const statusLabels = {scheduled:"Scheduled", finished:"Final", live:"Live", tbc:"TBC", pending:"Update pending", postponed:"Postponed", delayed:"Delayed", suspended:"Suspended", cancelled:"Cancelled", abandoned:"Abandoned"};
 
             const finalsNames = {
                 25: "Wildcard Finals",
@@ -1098,16 +1096,15 @@
 
             const parseStartTime = (value) => {
                 if (!value) return null;
-                const date = new Date(value.replace(/\+0000$/, "Z"));
+                const date = new Date(String(value).replace(/\+0000$/, "Z"));
                 return Number.isNaN(date.getTime()) ? null : date;
             };
 
             const formatWeekOf = (date) => {
-                const monday = new Date(date);
-                monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));
-                const weekday = monday.toLocaleDateString("en-AU", { weekday: "long" });
-                const datePart = monday.toLocaleDateString("en-AU", { day: "numeric", month: "long" });
-                return `Week of ${weekday} ${datePart}`;
+                const day = new Intl.DateTimeFormat("sv-SE", { timeZone:"Australia/Sydney", dateStyle:"short" }).format(date);
+                const monday = new Date(day + "T00:00:00Z");
+                monday.setUTCDate(monday.getUTCDate() - ((monday.getUTCDay() + 6) % 7));
+                return `Week of ${monday.toLocaleDateString("en-AU", { timeZone:"UTC", weekday:"long", day:"numeric", month:"long" })}`;
             };
 
             const resolveTeam = (name) => {
@@ -1160,26 +1157,30 @@
                 return element;
             };
 
-            const render = () => {
+            const render = (updateTallies = true) => {
                 if (!fixturesList) return;
                 countdownTimers.splice(0).forEach(clearInterval);
-                renderTallies();
+                if (updateTallies) renderTallies();
                 const isFinalsRound = currentRound >= 25;
                 if (roundLabel) roundLabel.textContent = finalsNames[currentRound] || "Round";
                 if (roundValue) roundValue.textContent = String(currentRound);
                 if (roundSlider) {
+                    roundSlider.disabled = maxRound === MIN_ROUND;
                     roundSlider.max = String(maxRound);
                     roundSlider.value = String(currentRound);
                     roundSlider.style.setProperty("--fill", `${((currentRound - MIN_ROUND) / Math.max(maxRound - MIN_ROUND, 1)) * 100}%`);
                     roundSlider.setAttribute("aria-valuetext", `${finalsNames[currentRound] || "Round"} ${currentRound}`);
                     FixtureSlider.update(roundSlider, Array.from({length: maxRound - MIN_ROUND + 1}, (_, index) => { const value = MIN_ROUND + index; const dates=(fixturesData?.find(round=>round.round===value)?.matches||[]).map(match=>parseStartTime(match.startTime)).filter(Boolean).sort((a,b)=>a-b); return {value, label:finalsNames[value] || `Round ${value}`, shortLabel:finalsNames[value] ? value === maxRound ? "Final" : `F${value - 24}` : `R${value}`,date:dates[0]?.toISOString(),endDate:dates.at(-1)?.toISOString()}; }));
                 }
+                prevBtn.disabled = currentRound <= MIN_ROUND;
+                nextBtn.disabled = currentRound >= maxRound;
                 if (fixturesNote) {
                     fixturesNote.hidden = !isFinalsRound;
                     if (isFinalsRound) {
                         fixturesNote.textContent = "Finals teams may change as results are confirmed.";
                     }
                 }
+                fixturesList.removeAttribute("aria-busy");
                 fixturesList.replaceChildren();
 
                 const round = (fixturesData || []).find(f => f.round === currentRound);
@@ -1198,40 +1199,13 @@
                     const away = resolveTeam(match.awayTeam);
                     const status = String(match.status || "SCHEDULED").toUpperCase();
                     const startTime = parseStartTime(match.startTime);
-                    const hasScores = match.homeScore != null && match.awayScore != null;
                     const now = Date.now();
-                    const PRE_START_WINDOW = 10 * 60 * 1000;
-                    const GAME_DURATION = (2 * 60 + 25) * 60 * 1000;
-
-                    let isLive = false;
-                    let isCountdown = false;
-                    let isFinished = false;
-                    let isPending = false;
-                    let isTbc = false;
-                    let countdownEnd = null;
-
-                    if (status === "CONCLUDED") {
-                        isFinished = true;
-                    } else if (statusLabels[status] === "TBC") {
-                        isTbc = true;
-                    } else if (startTime) {
-                        const diff = startTime.getTime() - now;
-                        if (diff > PRE_START_WINDOW) {
-                            // still scheduled
-                        } else if (diff > 0) {
-                            isCountdown = true;
-                            countdownEnd = startTime.getTime();
-                        } else if (now < startTime.getTime() + GAME_DURATION) {
-                            isLive = true;
-                        } else if (hasScores) {
-                            isFinished = true;
-                        } else {
-                            isPending = true;
-                        }
-                    } else if (/LIVE|IN_PROGRESS/.test(status)) {
-                        isLive = true;
-                    }
-                    const isScheduled = !(isLive || isCountdown || isFinished || isPending || isTbc);
+                    const state = AFLRoundView.matchState(match, now);
+                    const isLive = state === "live";
+                    const isFinished = state === "finished";
+                    const countdownEnd = startTime?.getTime();
+                    const isCountdown = state === "scheduled" && countdownEnd - now <= 10 * 60000;
+                    const hasScores = (isLive || isFinished) && Number.isFinite(match.homeScore) && Number.isFinite(match.awayScore);
 
                     const card = document.createElement("div");
                     card.className = `fixture${index === 0 ? " fixture--prime" : index === closestFinal ? " fixture--expanded" : ""}`;
@@ -1292,8 +1266,8 @@
                     if (isUnassignedFinal && startTime) {
                         meta.appendChild(addText("fixture__meta-item fixture__date", formatWeekOf(startTime), meta));
                     } else if (startTime) {
-                        const datePart = startTime.toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short" });
-                        const timePart = startTime.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
+                        const datePart = startTime.toLocaleDateString("en-AU", { timeZone:"Australia/Sydney", weekday:"short", day:"numeric", month:"short" });
+                        const timePart = startTime.toLocaleTimeString("en-AU", { timeZone:"Australia/Sydney", hour:"numeric", minute:"2-digit", timeZoneName:"short" });
                         meta.appendChild(addText("fixture__meta-item fixture__date", `${datePart} · ${timePart}`, meta));
                     } else if (isUnassignedFinal) {
                         meta.appendChild(addText("fixture__meta-item fixture__date", "Week to be confirmed", meta));
@@ -1303,8 +1277,8 @@
                     }
 
                     const statusBadge = document.createElement("span");
-                    statusBadge.className = "fixture__status" + (isLive || isCountdown ? " fixture__status--live" : isFinished ? " fixture__status--finished" : isPending || isTbc ? " fixture__status--tbc" : isScheduled ? " fixture__status--scheduled" : "");
-                    if (isLive || isPending) {
+                    statusBadge.className = "fixture__status" + (isLive ? " fixture__status--live" : isFinished ? " fixture__status--finished" : state === "scheduled" ? " fixture__status--scheduled" : " fixture__status--tbc");
+                    if (isLive) {
                         const dot = document.createElement("span");
                         dot.className = "live-dot";
                         dot.setAttribute("aria-hidden", "true");
@@ -1315,7 +1289,7 @@
                             const ms = Math.max(0, countdownEnd - Date.now());
                             const minutes = Math.floor(ms / 60000);
                             const seconds = Math.floor((ms % 60000) / 1000);
-                            return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+                            return `Starts in ${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
                         };
                         statusBadge.textContent = formatCountdown();
                         const timer = setInterval(() => {
@@ -1327,10 +1301,8 @@
                             }
                         }, 1000);
                         countdownTimers.push(timer);
-                    } else if (isPending) {
-                        statusBadge.appendChild(document.createTextNode("Pending"));
                     } else {
-                        statusBadge.appendChild(document.createTextNode(isLive ? "Live" : isFinished ? "Finished" : (statusLabels[status] || "Scheduled")));
+                        statusBadge.appendChild(document.createTextNode(statusLabels[state]));
                     }
                     meta.appendChild(statusBadge);
 
@@ -1350,91 +1322,76 @@
             const goToRound = (round) => {
                 currentRound = Math.min(maxRound, Math.max(MIN_ROUND, round));
                 render();
+                const url = new URL(location.href);
+                url.searchParams.set("round", currentRound);
+                history.replaceState(null, "", url);
             };
 
             prevBtn?.addEventListener("click", () => goToRound(currentRound - 1));
             nextBtn?.addEventListener("click", () => goToRound(currentRound + 1));
             roundSlider?.addEventListener("input", (event) => goToRound(Number(event.target.value)));
-
-            Promise.all([
-                fetch("afl-fixtures.json").then(response => (response.ok ? response.json() : Promise.reject())),
-                fetch("standings.json").then(response => (response.ok ? response.json() : Promise.reject())).catch(() => null),
-                fetch("team-colors.json").then(response => (response.ok ? response.json() : Promise.reject())).catch(() => null),
-                fetch("afl-player-stats.json", {cache: "no-cache"}).then(response => response.ok ? response.json() : Promise.reject()).catch(() => null)
-            ]).then(([data, standings, colorData, playerStats]) => {
-                roundStatsData = playerStats;
-                if (colorData) {
-                    Object.entries(colorData).forEach(([name, entry]) => {
-                        if (entry && Array.isArray(entry.colors)) {
-                            colorOverrides.set(String(name).toLowerCase(), entry.colors);
-                        }
-                    });
-                }
-                buildPositionTeams(standings);
-                if (!Array.isArray(data) || !data.length) { goToRound(MIN_ROUND); return; }
-                fixturesData = data;
-                const GAME_DURATION = (2 * 60 + 25) * 60 * 1000;
-                const isMatchLive = (m) => {
-                    const s = String(m.status || "").toUpperCase();
-                    if (/LIVE|IN_PROGRESS/.test(s)) return true;
-                    if (s === "CONCLUDED") return false;
-                    const st = parseStartTime(m.startTime);
-                    return !!st && st.getTime() <= Date.now() && Date.now() < st.getTime() + GAME_DURATION;
-                };
-                let defaultRound = MIN_ROUND;
-                data.forEach(round => {
-                    if (round.round > maxRound && Number.isInteger(round.round)) maxRound = round.round;
-                    if (Array.isArray(round.matches) && round.matches.some(isMatchLive)) {
-                        defaultRound = round.round;
+            async function loadFixtures() {
+                const focused = fixturesList.contains(document.activeElement);
+                tallies.hidden = true;
+                SportsUI.loadingPanel(fixturesList, "Loading AFL fixtures…", "fixtures");
+                try {
+                    const data = await SportsSnapshots.read("afl-fixtures.json");
+                    if (!Array.isArray(data) || data.some(round => !Number.isInteger(round?.round) || !Array.isArray(round.matches) || round.matches.some(match => !match || typeof match !== "object"))) {
+                        throw new Error("Invalid AFL fixtures");
                     }
-                });
-                if (defaultRound === MIN_ROUND) {
-                    data.forEach(round => {
-                        if (Array.isArray(round.matches) && round.matches.some(m => String(m.status || "").toUpperCase() === "CONCLUDED")) {
-                            defaultRound = round.round;
-                        }
-                    });
+                    if (!data.length) {
+                        fixturesList.removeAttribute("aria-busy");
+                        fixturesList.textContent = "AFL fixtures have not been published yet.";
+                    } else {
+                        fixturesData = [...data].sort((a, b) => a.round - b.round);
+                        maxRound = fixturesData.at(-1).round;
+                        const firstDate = fixturesData.flatMap(round => round.matches).map(match => parseStartTime(match.startTime)).find(Boolean);
+                        fixtureSeason = firstDate?.getUTCFullYear();
+                        buildPositionTeams(savedStandings);
+                        const requested = new URLSearchParams(location.search).get("round");
+                        const linkedRound = fixturesData.find(round => String(round.round) === requested);
+                        goToRound(linkedRound?.round ?? AFLRoundView.defaultRound(fixturesData));
+                    }
+                } catch {
+                    SportsUI.retryPanel(fixturesList, "AFL fixtures are temporarily unavailable.", loadFixtures);
                 }
-                goToRound(defaultRound);
-            }).catch(() => goToRound(MIN_ROUND));
-            setInterval(() => {
-                fetch("afl-player-stats.json", {cache: "no-cache"}).then(response => response.ok ? response.json() : Promise.reject()).then(data => {
-                    roundStatsData = data;
+                if (focused && document.activeElement === document.body) SportsUI.restorePanelFocus(fixturesList);
+            }
+            async function loadStats() {
+                const focused = tallies.contains(document.activeElement);
+                if (!roundStatsData) {
+                    statsState = "loading";
                     renderTallies();
-                }).catch(() => {});
+                }
+                try {
+                    const data = await SportsSnapshots.read("afl-player-stats.json");
+                    if (!Number.isInteger(data?.season) || !data.rounds || typeof data.rounds !== "object") {
+                        throw new Error("Invalid AFL player statistics");
+                    }
+                    roundStatsData = data;
+                    statsState = "ready";
+                } catch {
+                    statsState = "error";
+                }
+                renderTallies();
+                if (focused && document.activeElement === document.body && !tallies.hidden) SportsUI.restorePanelFocus(tallies);
+            }
+            function refreshTeams() {
+                buildPositionTeams(savedStandings);
+                if (fixturesData?.length && !fixturesList.contains(document.activeElement)) render(false);
+            }
+            document.addEventListener("afl-ladder-ready", refreshTeams);
+            loadFixtures();
+            loadStats();
+            SportsSnapshots.read("team-colors.json").then(colors => {
+                Object.entries(colors || {}).forEach(([name, entry]) => {
+                    if (Array.isArray(entry?.colors)) colorOverrides.set(name.toLowerCase(), entry.colors);
+                });
+                refreshTeams();
+            }).catch(() => {});
+            setInterval(() => {
+                if (!document.hidden) loadStats();
             }, 15 * 60000);
-        })();
-
-        (() => {
-            const storageKey = "cgrillo-theme";
-            const root = document.documentElement;
-            const toggleButton = document.querySelector("[data-theme-toggle]");
-
-            const getStoredTheme = () => {
-                try { return localStorage.getItem(storageKey); }
-                catch { return null; }
-            };
-
-            const setTheme = (theme, persist = true) => {
-                root.dataset.theme = theme;
-                if (toggleButton) {
-                    toggleButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-                    toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
-                }
-                const favicon = document.getElementById("favicon");
-                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.svg" : "favicon.svg";
-                if (persist) {
-                    try { localStorage.setItem(storageKey, theme); }
-                    catch { }
-                }
-            };
-
-            const initialTheme = getStoredTheme() || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-            setTheme(initialTheme, false);
-
-            toggleButton?.addEventListener("click", () => {
-                setTheme(root.dataset.theme === "dark" ? "light" : "dark");
-            });
         })();
     </script>
 </body>

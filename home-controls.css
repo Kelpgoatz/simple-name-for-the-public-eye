@@ -17,3 +17,20 @@
 .home-controls-empty a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent-ink);font:700 .7rem var(--font-sans);text-underline-offset:3px;}
 @media(max-width:600px){.home-controls{grid-template-columns:minmax(0,1fr);gap:8px;}.home-controls__tabs button{min-height:44px;padding:9px 5px;gap:4px;}.home-controls__league{flex-direction:row;align-items:center;gap:8px;}.home-controls__league select{min-height:40px;flex:1;min-width:0;}.home-controls__status{font-size:.58rem;}}
 @media(max-width:600px){.home-controls__tabs button{font-size:.7rem;}.home-controls__league{font-size:.68rem;}.home-controls__league select{font-size:16px;min-height:44px;}.home-controls__status{font-size:.65rem;}.home-window-note{font-size:.7rem;}}
+.home-week-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0 16px; color: var(--muted); font: 400 .75rem/1.5 var(--font-sans); }
+.home-week-controls p { margin: 0; }
+.home-week-controls label { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; color: var(--accent-ink); cursor: pointer; }
+.home-week-controls input { margin: 0; width: 16px; height: 16px; }
+.home-data-loading { display: grid; gap: 8px; color: var(--muted); font: 400 .75rem/1.6 var(--font-sans); }
+.home-game-skeleton { display: block; height: 68px; border: 1px solid var(--rule); background: linear-gradient(var(--rule) 0 0) 14px 18px / 36% 11px no-repeat, linear-gradient(var(--rule) 0 0) 14px 41px / 60% 8px no-repeat, var(--surface); }
+.home-data-notice[hidden] { display: none; }
+.home-data-notice button[aria-disabled="true"] { cursor: wait; }
+.home-controls { margin-top: 8px; gap: 6px 10px; padding-bottom: 5px; }
+.home-controls__status { grid-column: 1; align-self: center; }
+.home-window-note { grid-column: 2; justify-self: end; }
+.home-window-note[open] { grid-column: 1 / -1; justify-self: start; }
+@media (max-width: 600px) {
+    .home-controls { grid-template-columns: minmax(0, 1fr) auto; }
+    .home-controls__tabs, .home-controls__league { grid-column: 1 / -1; }
+    .home-week-controls { gap: 0 8px; }
+}

@@ -3,6 +3,23 @@ const assert = require('node:assert/strict');
 const view = require('../afl-round.js');
 const api = import('../scripts/lib/afl-player-stats.mjs');
 
+test('AFL uses reported states and never promotes elapsed games or placeholder scores', () => {
+    const now=Date.parse('2026-04-03T10:00:00Z');
+    const game={startTime:'2026-04-03T09:00:00+0000',homeScore:0,awayScore:0};
+    assert.equal(view.matchState({...game,status:'SCHEDULED'},now),'pending');
+    assert.equal(view.matchState({...game,status:'LIVE'},now),'live');
+    assert.equal(view.matchState({...game,status:'LIVE'},now+4*3600000),'pending');
+    assert.equal(view.matchState({...game,status:'POSTPONED'},now),'postponed');
+    assert.equal(view.matchState({...game,status:'CONCLUDED'},now),'finished');
+    const rounds=[
+        {round:0,matches:[{...game,status:'CONCLUDED'}]},
+        {round:1,matches:[{...game,status:'SCHEDULED'}]},
+        {round:2,matches:[{startTime:'2026-04-07T09:00:00Z',status:'CONFIRMED_TEAMS'}]}
+    ];
+    assert.equal(view.defaultRound(rounds,now),2);
+    assert.equal(view.defaultRound(rounds,Date.parse('2026-04-08')),0);
+});
+
 test('prime-time order follows kickoff times and leaves unknown times last without changing the source', () => {
     const matches = [{id:3,startTime:null},{id:2,startTime:'2026-04-03T09:00:00+0000'},{id:1,startTime:'2026-04-02T09:00:00Z'}];
     assert.deepEqual(view.sortMatches(matches).map(match=>match.id),[1,2,3]);

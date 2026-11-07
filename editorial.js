@@ -72,6 +72,7 @@
             if (event.key !== "ArrowDown") return;
             event.preventDefault();
             clearCloseTimer();
+            if (!expanded && menu.getClientRects().length === 0) toggle.click();
             if (expanded) subnav.querySelector("a")?.focus();
             else {
                 openPreview();
@@ -90,5 +91,68 @@
             toggle.focus();
         });
         render();
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && !event.defaultPrevented) families.forEach(family => family.closePreview());
+    });
+
+    document.querySelectorAll(".f1-nav-family").forEach(group => {
+        const primary = group.querySelector("a");
+        const menu = group.querySelector(".f1-nav-family__menu");
+        if (!primary || !menu) return;
+        const current = menu.querySelector('[aria-current="page"]')?.textContent;
+        const toggle = document.createElement("button");
+        toggle.type = "button";
+        toggle.className = "sport-nav__toggle f1-nav-family__toggle";
+        toggle.setAttribute("aria-label", current ? `More Formula racing, current page ${current}` : "More Formula racing");
+        menu.id = "formula-racing-menu";
+        toggle.setAttribute("aria-controls", menu.id);
+        if (current) toggle.append(current);
+        const chevron = document.createElement("span");
+        chevron.className = "sport-nav__chevron";
+        chevron.setAttribute("aria-hidden", "true");
+        toggle.append(chevron);
+        menu.before(toggle);
+        group.dataset.enhanced = "true";
+        if (current) group.dataset.current = "true";
+
+        let open = false;
+        function setOpen(value) {
+            open = value;
+            toggle.setAttribute("aria-expanded", String(open));
+            menu.dataset.open = String(open);
+            menu.inert = !open;
+            if (open) families.forEach(family => family.closePreview());
+        }
+
+        toggle.addEventListener("click", () => setOpen(!open));
+        toggle.addEventListener("keydown", event => {
+            if (event.key !== "ArrowDown") return;
+            event.preventDefault();
+            setOpen(true);
+            menu.querySelector("a")?.focus();
+        });
+        primary.addEventListener("pointerenter", event => {
+            if (event.pointerType === "mouse" && !group.contains(document.activeElement)) setOpen(true);
+        });
+        group.addEventListener("pointerleave", () => {
+            if (!group.contains(document.activeElement)) setOpen(false);
+        });
+        group.addEventListener("focusout", event => {
+            if (!group.contains(event.relatedTarget)) setOpen(false);
+        });
+        document.addEventListener("pointerdown", event => {
+            if (open && !group.contains(event.target)) setOpen(false);
+        });
+        document.addEventListener("keydown", event => {
+            if (event.key !== "Escape" || event.defaultPrevented || !open) return;
+            if (group.contains(document.activeElement)) {
+                event.preventDefault();
+                toggle.focus();
+            }
+            setOpen(false);
+        });
+        setOpen(false);
     });
 })();

@@ -7,7 +7,16 @@ const source = fs.readFileSync(require("node:path").join(__dirname, "../editoria
 function harness(stored = {}) {
     const timers = new Map(), microtasks = [], storage = new Map(Object.entries(stored));
     let clock = 0, timerId = 0;
-    const document = { activeElement: null };
+    const documentListeners = new Map();
+    const document = {
+        activeElement: null,
+        addEventListener(type, listener) {
+            const list = documentListeners.get(type) || [];
+            list.push(listener);
+            documentListeners.set(type, list);
+        },
+        emit(type, event) { for (const listener of documentListeners.get(type) || []) listener(event); }
+    };
     class Element {
         constructor(dataset = {}) { this.dataset = dataset; this.children = []; this.listeners = new Map(); this.attributes = {}; this.hidden = true; }
         append(...children) { children.forEach(child => { child.parent = this; this.children.push(child); }); }
@@ -16,6 +25,8 @@ function harness(stored = {}) {
         getAttribute(name) { return this.attributes[name]; }
         contains(target) { return target === this || this.children.some(child => child.contains(target)); }
         focus() { document.activeElement = this; }
+        click() { this.emit("click"); }
+        getClientRects() { return this.isUnrendered ? [] : [{}]; }
         querySelector(selector) {
             if (selector === "a") return this.children.find(child => child.isLink) || null;
             return this.parts?.[selector] || null;
@@ -181,4 +192,22 @@ test("Escape cancels a pending preview timer without affecting another expanded 
     family.group.emit("keydown", { key: "Escape" }); h.advance(300);
     assert.equal(family.menu.dataset.open, "false");
     assert.equal(h.families.nba.subnav.dataset.open, "true");
+});
+
+test("Escape outside a hover preview closes it without moving focus", () => {
+    const h = harness(), family = h.families.nrl;
+    const outside = {};
+    h.document.activeElement = outside;
+    family.group.emit("pointerenter");
+    h.document.emit("keydown", { key: "Escape", defaultPrevented: false });
+    assert.equal(family.menu.inert, true);
+    assert.equal(h.document.activeElement, outside);
+});
+
+test("ArrowDown uses the inline links when a small viewport hides the hover preview", () => {
+    const h = harness(), family = h.families.nba;
+    family.menu.isUnrendered = true;
+    family.toggle.emit("keydown", { key: "ArrowDown" });
+    assert.equal(family.subnav.inert, false);
+    assert.equal(h.document.activeElement, family.inlineLink);
 });

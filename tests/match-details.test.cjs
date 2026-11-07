@@ -63,7 +63,7 @@ test('game facts escape provider text and preserve tennis draw context',()=>{
     assert.match(html,/&lt;img src=x&gt;/);
     assert.doesNotMatch(html,/<img/);
     assert.equal(view.matchDetails({...data,sport:'tennis'},{...match,roundLabel:null}).round,'Qualifying 1st Round');
-    assert.match(view.matchDetails({...data,sport:'tennis'},target).note,/Point-by-point statistics are not supplied/);
+    assert.match(view.matchDetails({...data,sport:'tennis'},target,Date.parse('2026-11-06T00:00:00Z')).note,/Point-by-point statistics are not supplied/);
 });
 test('pregame form contains only earlier completed games in the same phase, with linked accessible outcomes',()=>{
     const game=(id,day,extra={})=>({...target,id,startTime:`2026-11-0${day}T10:00:00Z`,status:'final',homeScore:10,awayScore:5,winner:'home',...extra});

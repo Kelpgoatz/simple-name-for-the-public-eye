@@ -22,6 +22,7 @@
 }
 
 :root {
+    color-scheme: light;
     --paper: #f7f6f1;
     --surface: #ffffff;
     --ink: #202b25;
@@ -49,6 +50,7 @@
     --shadow: none;
 }
 :root[data-theme="dark"] {
+    color-scheme: dark;
     --paper: #111a16;
     --surface: #18241e;
     --ink: #e9eee9;
@@ -109,11 +111,11 @@ body::before, .frame::before, .frame::after { display: none; }
 .sport-nav__chevron::before { content: ""; width: 5px; height: 5px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-1px) rotate(45deg); }
 .sport-nav__toggle[aria-expanded="true"] .sport-nav__chevron { transform: rotate(180deg); }
 .sport-nav__dropdown { position: absolute; top: 100%; left: 0; z-index: 20; min-width: 160px; padding: 5px 0; border: 1px solid var(--rule); border-top: 3px solid var(--accent); background: var(--surface); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-6px); transition: opacity 180ms ease, transform 180ms ease, visibility 180ms; }
-.sport-nav__dropdown[data-open="true"] { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+.sport-nav__dropdown[data-open="true"] { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); transition-property: opacity, transform; }
 .nav .sport-nav__dropdown a { display: block; min-height: 38px; padding: 10px 16px; border: 0; color: var(--ink); }
 .nav .sport-nav__dropdown a:hover, .nav .sport-nav__dropdown a[aria-current="page"] { color: var(--accent-ink); background: var(--surface-4); }
 .sport-family__subnav { display: flex; align-items: center; flex: 0 1 auto; max-width: 0; min-width: 0; overflow: hidden; opacity: 0; visibility: hidden; background: var(--header-bg); transition: max-width 260ms ease, opacity 200ms ease, visibility 260ms; }
-.sport-family__subnav[data-open="true"] { max-width: 180px; opacity: 1; visibility: visible; }
+.sport-family__subnav[data-open="true"] { max-width: 180px; opacity: 1; visibility: visible; transition-property: max-width, opacity; }
 .nav .sport-family__subnav a { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-height: 32px; margin: 6px 4px; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); color: var(--accent-ink); text-decoration: none; white-space: nowrap; transition: background 150ms ease, border-color 150ms ease; }
 .nav .sport-family__subnav a:hover, .nav .sport-family__subnav a[aria-current="page"] { background: var(--surface-4); color: var(--accent-ink); border-color: var(--accent-ink); }
 .topbar .sport-family__subnav a:focus-visible { outline-color: var(--accent-ink); outline-offset: -3px; }
@@ -162,8 +164,9 @@ body::before, .frame::before, .frame::after { display: none; }
     .sport-family__subnav, .sport-nav__dropdown, .sport-nav__chevron { transition: none; }
 }
 .topbar-actions { width: auto; margin-left: auto; gap: 8px; flex-shrink: 0; align-self: start; padding-top: 7px; }
-.theme-toggle { min-height: 30px; padding: 0 12px; border: 0; border-left: 1px solid #4a7763; border-radius: 0; background: transparent; color: #fff; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.theme-toggle { min-height: 40px; padding: 0 12px; border: 0; border-left: 1px solid #4a7763; border-radius: 0; background: transparent; color: #fff; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
 .theme-toggle:hover { transform: none; background: #12513d; }
+.theme-toggle[aria-pressed="true"] { text-decoration: underline; text-underline-offset: 4px; }
 .hero { padding: 30px 0 0; }
 .hero-grid { gap: 28px; align-items: start; }
 .hero-sidebar { gap: 26px; }
@@ -325,7 +328,7 @@ body::before, .frame::before, .frame::after { display: none; }
 .dev-note__form input, .dev-note__form textarea { border: 1px solid var(--rule); border-radius: 2px; background: var(--paper); color: var(--ink); }
 .dev-note__send { border: 1px solid var(--accent); border-radius: 2px; background: var(--accent); color: #fff; }
 button, input, textarea { font-family: var(--font-sans); }
-:is(a, button, input, textarea, [tabindex]):focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+:is(a, button, input, select, textarea, [tabindex]):focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
 .dev-note__form :is(input, textarea):focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
 .topbar :is(a, button):focus-visible { outline-color: #fff; outline-offset: -5px; }
 .topbar .sport-nav__dropdown a:focus-visible { outline-color: var(--accent-ink); outline-offset: -3px; }

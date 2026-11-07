@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <script src="team-names.js"></script>
@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>cgrillo | Sports viewer</title>
     <meta name="description" content="Follow your sport with fixtures, results, ladders, team dashboards and individual performances. Star favourites on your device.">
+    <link rel="canonical" href="https://www.cgrillo.com/">
+    <script src="viewer-theme.js"></script>
     <style>
         :root {
             color-scheme: light;
@@ -1077,8 +1079,9 @@
     <link rel="stylesheet" href="editorial.css">
     <script src="editorial.js" defer></script>
     <script src="sport-identities.js"></script>
-    <script src="home-following.js"></script>
     <script src="home-sports.js"></script>
+    <script src="home-following.js"></script>
+    <script src="snapshot-loader.js"></script>
     <script src="home-ladders.js" defer></script>
     <link rel="stylesheet" href="sport-view.css">
     <script src="sport-view.js"></script>
@@ -1093,6 +1096,7 @@
     <link rel="stylesheet" href="home-welcome.css">
     <script src="weekend-progress.js"></script>
     <script src="home-welcome.js"></script>
+    <script src="home-scoreboard.js" defer></script>
 </head>
 <body id="top">
     <main class="page">
@@ -1136,10 +1140,10 @@
             <section class="hero">
                 <section class="home-welcome" data-home-welcome aria-label="Welcome to cgrillo">
                     <div class="home-welcome__intro" data-home-intro id="home-introduction">
-                        <div><p class="home-welcome__kicker">Welcome to cgrillo</p><h2>Your sport. At a glance.</h2><p class="home-welcome__copy">Games, races and the performances behind them. Find your team and make this your own.</p></div>
+                        <div><p class="home-welcome__kicker">Welcome to cgrillo</p><h2>Your sport at a glance</h2><p class="home-welcome__copy">Fixtures, scores and standings across your sports.</p></div>
                         <div class="home-welcome__actions">
-                            <button type="button" data-discovery-open="search">Find a team or driver <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button>
-                            <button type="button" data-discovery-open="following">Manage your stars <span aria-hidden="true">☆</span></button>
+                            <button type="button" data-discovery-open="search">Find teams or drivers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button>
+                            <button type="button" data-discovery-open="following">Manage stars <span aria-hidden="true">☆</span></button>
                             <button type="button" data-viewer-guide aria-haspopup="dialog">Quick guide <span aria-hidden="true">↗</span></button>
                         </div>
                     </div>
@@ -1148,14 +1152,17 @@
                 </section>
                 <div class="hero-grid">
                     <section class="top-story" id="world" aria-labelledby="afl-games-title">
-                        <h2 id="afl-games-title">This week in sport</h2>
-                        <div class="home-scope" role="group" aria-label="Homepage view"><span>Show</span><button type="button" data-home-scope="all" aria-pressed="true">All sport</button><button type="button" data-home-scope="following" aria-pressed="false" disabled>Following <b data-home-scope-count>0</b></button><a href="about.html#competitions">Browse competitions →</a></div>
-                        <p class="home-scope-note" data-home-scope-note>A selection of current sport. Star a competition, team or driver to make it yours.</p>
-                        <div class="afl-games" data-afl-games>
-                            <p class="afl-games__empty">Loading games and races...</p>
+                        <h2 id="afl-games-title" tabindex="-1">This week in sport</h2>
+                        <div class="home-week-controls"><p class="home-week-label" data-home-week></p><label><input type="checkbox" data-home-full-week> Show full week</label></div>
+                        <div class="home-scope" role="group" aria-label="Homepage view"><button type="button" data-home-scope="all" aria-pressed="true">All sport</button><button type="button" data-home-scope="following" aria-pressed="false" disabled>Following <b data-home-scope-count>0</b></button><a href="about.html#competitions">Competitions →</a></div>
+                        <p class="home-scope-note" data-home-scope-note hidden>Games and ladders for your starred competitions, teams and drivers.</p>
+                        <div class="home-data-notice" data-home-game-notice hidden><p role="status"></p><button type="button" class="home-data-retry">Retry summaries</button></div>
+                        <div class="afl-games" data-afl-games aria-busy="true">
+                            <div class="home-data-loading" role="status"><span>Loading games and races…</span><span aria-hidden="true" class="home-game-skeleton"></span><span aria-hidden="true" class="home-game-skeleton"></span></div>
                         </div>
+                        <noscript><p>Enable JavaScript to see games and results, or <a href="about.html#competitions">browse competitions</a>.</p></noscript>
                     </section>
-                    <aside class="hero-sidebar" data-home-ladders aria-label="Current season ladders"><p class="ladder-note">Loading season ladders…</p></aside>
+                    <aside class="hero-sidebar" data-home-ladders aria-label="Current season ladders" aria-busy="true"><p class="ladder-note">Loading season ladders…</p></aside>
                 </div>
             </section>
 
@@ -1167,21 +1174,22 @@
                 <section class="dev-note" id="dev-note" data-dev-note hidden>
                     <div class="dev-note__head">
                         <h2>Send a dev note</h2>
-                        <p>Your message is emailed to the developer. The date and time it was sent are logged below.</p>
+                        <p>Open a draft in your email app, then send it there. Draft history is stored in this browser.</p>
                     </div>
                     <div class="dev-note__grid">
-                        <form class="dev-note__form" data-dev-note-form novalidate>
+                        <form class="dev-note__form" data-dev-note-form>
                             <label>
-                                Name
-                                <input type="text" name="name" maxlength="60" placeholder="Your name">
+                                Name (optional)
+                                <input type="text" name="name" maxlength="60" placeholder="Your name" autocomplete="name">
                             </label>
                             <label>
                                 Message
                                 <textarea name="message" maxlength="2000" placeholder="What's on your mind?" required></textarea>
                             </label>
-                            <button class="dev-note__send" type="submit">Send</button>
+                            <button class="dev-note__send" type="submit">Open email draft</button>
+                            <p class="dev-note__empty" role="status" data-dev-note-status></p>
                         </form>
-                        <div class="dev-note__log" data-dev-note-log></div>
+                        <div class="dev-note__log" data-dev-note-log role="region" aria-label="Local draft history"></div>
                     </div>
                 </section>
 
@@ -1198,821 +1206,20 @@
     </main>
     <script>
         (() => {
-            const aflList = document.querySelector("[data-afl-list]");
-            const f1List = document.querySelector("[data-f1-list]");
-            const wccList = document.querySelector("[data-wcc-list]");
-
-            const formatNumber = (value, fallback = 0) => {
-                const number = Number(value);
-                return Number.isFinite(number) ? number : fallback;
-            };
-
-            const formatPercentage = (value) => formatNumber(value).toFixed(1);
-
-            const addText = (className, text, parent) => {
-                const element = document.createElement("div");
-                element.className = className;
-                element.textContent = text;
-                parent.appendChild(element);
-                return element;
-            };
-
-            const applyColors = (row, colors) => {
-                row.style.setProperty("--logo-from", colors[0]);
-                row.style.setProperty("--logo-to", colors[colors.length - 1]);
-                if (colors.length > 2) {
-                    row.style.setProperty("--logo-mid", colors[1]);
-                } else {
-                    row.style.removeProperty("--logo-mid");
-                }
-            };
-
-            const aflTeams = {
-                Adelaide: { display: "Adelaide Crows", initials: "AC", colors: ["#002b5c", "#e31b23", "#ffcc00"] },
-                "Brisbane Lions": { display: "Brisbane Lions", initials: "BL", colors: ["#7a003c", "#0047bb", "#ffcc00"] },
-                Carlton: { display: "Carlton", initials: "CA", colors: ["#002b5c", "#f7f8fb"] },
-                Collingwood: { display: "Collingwood", initials: "CW", colors: ["#111111", "#f5f5f5"] },
-                Essendon: { display: "Essendon", initials: "ES", colors: ["#111111", "#e31b23"] },
-                Fremantle: { display: "Fremantle", initials: "FR", colors: ["#5a2ca0", "#f1ebff"] },
-                Geelong: { display: "Geelong Cats", initials: "GC", colors: ["#002b5c", "#f4f7fb"] },
-                "Gold Coast": { display: "Gold Coast Suns", initials: "GS", colors: ["#e31b23", "#ffd300"] },
-                "Greater Western Sydney": { display: "GWS Giants", initials: "GW", colors: ["#ff6f00", "#3a3a3a", "#ffffff"] },
-                Hawthorn: { display: "Hawthorn", initials: "HW", colors: ["#6b3f1d", "#ffcc00"] },
-                Melbourne: { display: "Melbourne", initials: "ME", colors: ["#002b5c", "#e31b23"] },
-                "North Melbourne": { display: "North Melbourne", initials: "NM", colors: ["#0047bb", "#f7f8fb"] },
-                "Port Adelaide": { display: "Port Adelaide", initials: "PA", colors: ["#008c8c", "#111111", "#c0c0c0"] },
-                Richmond: { display: "Richmond", initials: "RI", colors: ["#111111", "#fdd000"] },
-                "St Kilda": { display: "St Kilda", initials: "ST", colors: ["#e31b23", "#f5f5f5", "#111111"] },
-                Sydney: { display: "Sydney Swans", initials: "SS", colors: ["#e31b23", "#f7f7fb"] },
-                "West Coast": { display: "West Coast Eagles", initials: "WC", colors: ["#0047bb", "#ffcc00"] },
-                "Western Bulldogs": { display: "Western Bulldogs", initials: "WB", colors: ["#0047bb", "#e31b23", "#f7f7fb"] }
-            };
-
-            const aflTeamByName = new Map(
-                Object.entries(aflTeams).map(([key, val]) => [val.display.toLowerCase(), key])
-            );
-
-            const f1Teams = {
-                mercedes: { display: "Mercedes", abbr: "MER", initials: "12", colors: ["#00d2be", "#000000"] },
-                ferrari: { display: "Ferrari", abbr: "FER", initials: "16", colors: ["#dc0000", "#fff200"] },
-                red_bull: { display: "Red Bull Racing", abbr: "RBR", initials: "33", colors: ["#1e41a0", "#e31b23"] },
-                mclaren: { display: "McLaren", abbr: "MCL", initials: "4", colors: ["#ff8700", "#000000"] },
-                alpine: { display: "Alpine", abbr: "ALP", initials: "10", colors: ["#0090ff", "#000000"] },
-                rb: { display: "Racing Bulls", abbr: "RB", initials: "30", colors: ["#e31b23", "#1e41a0"] },
-                haas: { display: "Haas", abbr: "HAA", initials: "87", colors: ["#ffffff", "#e31b23"] },
-                audi: { display: "Audi", abbr: "AUD", initials: "5", colors: ["#dc0000", "#000000"] },
-                williams: { display: "Williams", abbr: "WIL", initials: "55", colors: ["#005aff", "#ffffff"] },
-                aston_martin: { display: "Aston Martin", abbr: "AST", initials: "14", colors: ["#006f62", "#000000"] },
-                cadillac: { display: "Cadillac", abbr: "CAD", initials: "77", colors: ["#111111", "#666666"] }
-            };
-
-            const renderRow = (parent, pos, logoText, teamName, stats) => {
-                const row = document.createElement("div");
-                row.className = "ladder-row";
-                applyColors(row, []);
-                addText("ladder-row__pos", String(pos), row);
-                const logo = addText("ladder-row__logo", logoText, row);
-                logo.setAttribute("aria-hidden", "true");
-                addText("ladder-row__team", teamName, row);
-                addText("ladder-row__stats", stats, row);
-                parent.appendChild(row);
-                return row;
-            };
-
-            const renderAFL = (data) => {
-                if (!aflList) return;
-                const sorted = [...data].sort((a, b) => formatNumber(a.rank) - formatNumber(b.rank));
-                aflList.replaceChildren();
-                sorted.slice(0, 5).forEach((standing) => {
-                    const team = aflTeams[aflTeamByName.get(standing.name.toLowerCase())] || { display: standing.name, initials: standing.name.slice(0, 2).toUpperCase(), colors: ["#0f5a6d", "#79d7ec"] };
-                    const row = renderRow(aflList, formatNumber(standing.rank), team.initials, team.display, `${formatNumber(standing.wins)}-${formatNumber(standing.losses)}-${formatNumber(standing.draws)} · ${formatNumber(standing.pts)} pts · ${formatPercentage(standing.percentage)}%`);
-                    SportIdentity.afl(row.querySelector(".ladder-row__logo"), team.display);
-                    applyColors(row, team.colors);
-                });
-            };
-
-            const renderF1 = (data) => {
-                if (!f1List) return;
-                const standings = data.drivers_championship || data;
-                const sorted = [...standings].sort((a, b) => formatNumber(a.position) - formatNumber(b.position));
-                f1List.replaceChildren();
-                sorted.slice(0, 5).forEach((standing) => {
-                    const team = f1Teams[standing.teamId] || { display: standing.teamId, initials: "", colors: ["#0f5a6d", "#79d7ec"] };
-                    const driverName = `${standing.driver.name} ${standing.driver.surname}`;
-                    const driverNumber = String(standing.driver.number || "");
-                    const row = renderRow(f1List, formatNumber(standing.position), driverNumber, driverName, `${formatNumber(standing.points)} pts · ${formatNumber(standing.wins)} wins`);
-                    SportIdentity.driver(row.querySelector(".ladder-row__logo"), standing.driverId);
-                    applyColors(row, team.colors);
-                });
-            };
-
-            const renderWCC = (data) => {
-                if (!wccList) return;
-                const standings = data.constructors_championship || data;
-                const sorted = [...standings].sort((a, b) => formatNumber(a.position) - formatNumber(b.position));
-                wccList.replaceChildren();
-                sorted.slice(0, 5).forEach((standing) => {
-                    const team = f1Teams[standing.teamId] || { display: standing.teamId, abbr: "", colors: ["#0f5a6d", "#79d7ec"] };
-                    const row = renderRow(wccList, formatNumber(standing.position), team.abbr, team.display, `${formatNumber(standing.points)} pts · ${formatNumber(standing.wins)} wins`);
-                    SportIdentity.team(row.querySelector(".ladder-row__logo"), standing.teamId);
-                    applyColors(row, team.colors);
-                });
-            };
-
-            const fallbackAFL = [
-                { rank: 1, name: "Fremantle", played: 16, wins: 14, losses: 2, draws: 0, pts: 56, percentage: 141.6, "for": 1579, against: 1115 },
-                { rank: 2, name: "Sydney Swans", played: 16, wins: 13, losses: 3, draws: 0, pts: 52, percentage: 136.9, "for": 1751, against: 1279 },
-                { rank: 3, name: "Hawthorn", played: 16, wins: 10, losses: 5, draws: 1, pts: 42, percentage: 110.0, "for": 1547, against: 1406 },
-                { rank: 4, name: "Brisbane Lions", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 111.7, "for": 1674, against: 1498 },
-                { rank: 5, name: "Adelaide Crows", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 111.4, "for": 1427, against: 1281 },
-                { rank: 6, name: "Melbourne", played: 16, wins: 10, losses: 6, draws: 0, pts: 40, percentage: 106.3, "for": 1555, against: 1463 },
-                { rank: 7, name: "Geelong Cats", played: 16, wins: 9, losses: 7, draws: 0, pts: 36, percentage: 117.1, "for": 1591, against: 1359 },
-                { rank: 8, name: "Western Bulldogs", played: 16, wins: 9, losses: 7, draws: 0, pts: 36, percentage: 90.8, "for": 1325, against: 1459 },
-                { rank: 9, name: "North Melbourne", played: 15, wins: 8, losses: 7, draws: 0, pts: 32, percentage: 92.2, "for": 1294, against: 1404 },
-                { rank: 10, name: "Collingwood", played: 15, wins: 7, losses: 7, draws: 1, pts: 30, percentage: 104.2, "for": 1253, against: 1202 },
-                { rank: 11, name: "Gold Coast SUNS", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 101.2, "for": 1359, against: 1343 },
-                { rank: 12, name: "GWS GIANTS", played: 16, wins: 7, losses: 9, draws: 0, pts: 28, percentage: 100.8, "for": 1471, against: 1460 },
-                { rank: 13, name: "Carlton", played: 15, wins: 7, losses: 8, draws: 0, pts: 28, percentage: 95.6, "for": 1254, against: 1312 },
-                { rank: 14, name: "St Kilda", played: 15, wins: 6, losses: 9, draws: 0, pts: 24, percentage: 100.6, "for": 1334, against: 1326 },
-                { rank: 15, name: "Port Adelaide", played: 15, wins: 5, losses: 10, draws: 0, pts: 20, percentage: 100.9, "for": 1222, against: 1211 },
-                { rank: 16, name: "West Coast Eagles", played: 16, wins: 4, losses: 12, draws: 0, pts: 16, percentage: 71.5, "for": 1161, against: 1623 },
-                { rank: 17, name: "Richmond", played: 15, wins: 2, losses: 13, draws: 0, pts: 8, percentage: 61.8, "for": 987, against: 1598 },
-                { rank: 18, name: "Essendon", played: 15, wins: 1, losses: 14, draws: 0, pts: 4, percentage: 71.0, "for": 1092, against: 1537 }
-            ];
-
-            const fallbackF1 = {
-                drivers_championship: [
-                    { position: 1, points: 179, wins: 5, driver: { name: "Andrea", surname: "Kimi Antonelli", number: 12 }, teamId: "mercedes" },
-                    { position: 2, points: 154, wins: 2, driver: { name: "George", surname: "Russell", number: 63 }, teamId: "mercedes" },
-                    { position: 3, points: 147, wins: 1, driver: { name: "Lewis", surname: "Hamilton", number: 44 }, teamId: "ferrari" },
-                    { position: 4, points: 108, wins: 1, driver: { name: "Charles", surname: "Leclerc", number: 16 }, teamId: "ferrari" },
-                    { position: 5, points: 97, wins: 0, driver: { name: "Lando", surname: "Norris", number: 4 }, teamId: "mclaren" },
-                    { position: 6, points: 82, wins: 0, driver: { name: "Oscar", surname: "Piastri", number: 81 }, teamId: "mclaren" },
-                    { position: 7, points: 76, wins: 0, driver: { name: "Max", surname: "Verstappen", number: 33 }, teamId: "red_bull" },
-                    { position: 8, points: 52, wins: 0, driver: { name: "Isack", surname: "Hadjar", number: 6 }, teamId: "red_bull" }
-                ]
-            };
-
-            const fallbackWCC = {
-                constructors_championship: [
-                    { position: 1, teamId: "mercedes", points: 333, wins: 7 },
-                    { position: 2, teamId: "ferrari", points: 255, wins: 2 },
-                    { position: 3, teamId: "mclaren", points: 179, wins: 0 },
-                    { position: 4, teamId: "red_bull", points: 128, wins: 0 },
-                    { position: 5, teamId: "alpine", points: 78, wins: 0 },
-                    { position: 6, teamId: "haas", points: 46, wins: 0 },
-                    { position: 7, teamId: "aston_martin", points: 32, wins: 0 },
-                    { position: 8, teamId: "rb", points: 22, wins: 0 },
-                    { position: 9, teamId: "williams", points: 10, wins: 0 },
-                    { position: 10, teamId: "audi", points: 4, wins: 0 },
-                    { position: 11, teamId: "cadillac", points: 0, wins: 0 }
-                ]
-            };
-
-            renderAFL(fallbackAFL);
-            renderF1(fallbackF1);
-            renderWCC(fallbackWCC);
-
-            const aflGames = document.querySelector("[data-afl-games]");
-            const AFL_TIME_ZONE = "Australia/Sydney";
-            let f1FixtureRaces = [];
-            let f1PracticeWeekends = {};
-            let homeRounds = [], homeF2Data = null, homeF2Loading, homeF3Data = null, homeF3Loading;
-            const preferences = () => HomeWelcome.getScope()==='following' && typeof ViewerFavourites!=='undefined' ? ViewerFavourites.get() : {leagues:[],teams:[],drivers:[]};
-            let homeUnavailable=[],homeLoading=false,homeF1Season=null;
-            const otherHomeSnapshots={};
-            const feederUnavailable=new Set();
-            const loadFollowingF2 = () => {
-                const prefs=preferences();
-                if (!homeF2Data && !homeF2Loading && (prefs.leagues.includes('f2') || prefs.teams.some(team=>team.sport==='f2') || prefs.drivers?.some(driver=>driver.sport==='f2'))) {
-                    homeF2Loading=fetch('f2-data.json',{cache:'no-cache'}).then(response=>response.ok?response.json():Promise.reject()).then(data=>{homeF2Data=data;feederUnavailable.delete('Formula 2');renderAFLGames(homeRounds);}).catch(()=>{homeF2Loading=null;feederUnavailable.add('Formula 2');renderAFLGames(homeRounds);});
-                }
-                if (!homeF3Data && !homeF3Loading && (prefs.leagues.includes('f3') || prefs.teams.some(team=>team.sport==='f3') || prefs.drivers?.some(driver=>driver.sport==='f3'))) {
-                    homeF3Loading=fetch('f3-data.json',{cache:'no-cache'}).then(response=>response.ok?response.json():Promise.reject()).then(data=>{homeF3Data=data;feederUnavailable.delete('Formula 3');renderAFLGames(homeRounds);}).catch(()=>{homeF3Loading=null;feederUnavailable.add('Formula 3');renderAFLGames(homeRounds);});
-                }
-            };
-            let homeF1Circuits = {};
-            let otherSportGames = [];
-
-            const parseStartTime = (value) => {
-                if (!value) return null;
-                const date = new Date(String(value).replace(/\+0000$/, "Z"));
-                return Number.isNaN(date.getTime()) ? null : date;
-            };
-
-            const getSydneyDateKey = (date) => {
-                const parts = new Intl.DateTimeFormat("en-AU", {
-                    timeZone: AFL_TIME_ZONE,
-                    year: "numeric",
-                    month: "2-digit",
-                    day: "2-digit"
-                }).formatToParts(date);
-                const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
-                return `${values.year}-${values.month}-${values.day}`;
-            };
-
-            const addDays = (dateKey, days) => {
-                const [year, month, day] = dateKey.split("-").map(Number);
-                return new Date(Date.UTC(year, month - 1, day + days)).toISOString().slice(0, 10);
-            };
-
-            const formatMatchTime = (date) => date.toLocaleTimeString("en-AU", {
-                timeZone: AFL_TIME_ZONE,
-                hour: "numeric",
-                minute: "2-digit"
-            });
-
-            const formatMatchDate = (date) => date.toLocaleDateString("en-AU", {
-                timeZone: AFL_TIME_ZONE,
-                weekday: "short",
-                day: "numeric",
-                month: "short"
-            });
-
-            const formatWeekOf = (date) => {
-                const dateKey = getSydneyDateKey(date);
-                const [year, month, day] = dateKey.split("-").map(Number);
-                const monday = new Date(Date.UTC(year, month - 1, day - ((new Date(Date.UTC(year, month - 1, day)).getUTCDay() + 6) % 7), 12));
-                return `Week of ${monday.toLocaleDateString("en-AU", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" })}`;
-            };
-
-            const tbdAFLTeam = { display: "TBD", initials: "TBD", colors: ["#6b7b81", "#93a3a8"] };
-
-            const resolveAFLTeam = (name) => {
-                const normalizedName = String(name || "").trim();
-                if (!normalizedName) return tbdAFLTeam;
-                return aflTeams[normalizedName] || aflTeams[aflTeamByName.get(normalizedName.toLowerCase())] || tbdAFLTeam;
-            };
-
-            const statusLabels = {
-                SCHEDULED: "Scheduled",
-                CONFIRMED_TEAMS: "Scheduled",
-                UNCONFIRMED_TEAMS: "Scheduled",
-                CONCLUDED: "Finished",
-                LIVE: "Live",
-                IN_PROGRESS: "Live",
-                PENDING: "Update pending",
-                POSTPONED: "Postponed",
-                CANCELLED: "Cancelled",
-                CANCELED: "Cancelled",
-                PLACEHOLDER: "TBC"
-            };
-
-            let countdownTimers = [];
-
-            const clearCountdownTimers = () => {
-                countdownTimers.forEach(timer => clearInterval(timer));
-                countdownTimers = [];
-            };
-
-            const getMatchState = (match,startTime,now) => HomeWelcome.aflState(match,startTime,now);
-
-            const selectF1Summary = race => {
-                if (race.status === "CONCLUDED" || race.results?.length) {
-                    return { results: race.results || [], fastestLap: race.fastestLap, key: "race", label: "Race", startTime: race.startTime };
-                }
-                const practice = Object.entries(f1PracticeWeekends[race.raceId]?.sessions || {})
-                    .filter(([key, session]) => /^fp[123]$/.test(key) && session.results?.length && Date.parse(session.startTime || session.date) <= Date.now())
-                    .sort((a, b) => Date.parse(b[1].startTime || b[1].date) - Date.parse(a[1].startTime || a[1].date))[0];
-                if (!practice) return { results: [], key: "race", label: "Race", startTime: race.startTime };
-                const [key, session] = practice;
-                const leader = session.results.find(result => Number(result.position) === 1);
-                return { ...session, key, label: session.label || key.toUpperCase(), fastestLap: leader?.bestLap ? { time: leader.bestLap, driverId: leader.driverId } : null };
-            };
-
-            const renderF1Summary = (race, startTime) => {
-                const summary = selectF1Summary(race);
-                const detailsUrl = `f1.html?round=${race.round}&session=${summary.key}`;
-                const game = document.createElement("article");
-                game.className = "afl-game f1-game";
-                const header = document.createElement("div");
-                header.className = "f1-game__head";
-                const fastest = document.createElement("span");
-                fastest.className = "f1-game__fastest";
-                if (!summary.fastestLap?.time) fastest.classList.add("f1-game__fastest--empty");
-                fastest.textContent = summary.fastestLap?.time || "–";
-                fastest.setAttribute("aria-label", summary.fastestLap?.time ? `Fastest lap: ${summary.fastestLap.time}` : "Fastest lap not available yet");
-                fastest.title = summary.fastestLap?.time ? `${summary.label} fastest lap` : "Fastest lap not available yet";
-                const name = document.createElement("a");
-                name.className = "f1-game__name";
-                name.href = detailsUrl;
-                name.textContent = race.name;
-                header.appendChild(name);
-                if (summary.fastestLap?.time) header.appendChild(fastest);
-                game.appendChild(header);
-                if (!summary.results.length) {
-                    game.classList.add("f1-game--upcoming");
-                    const visual = document.createElement("div");
-                    visual.className = "f1-race-visual";
-                    const roundTag = document.createElement("span");
-                    roundTag.className = "f1-race-visual__round";
-                    roundTag.textContent = `FORMULA 1 · ROUND ${race.round}`;
-                    visual.appendChild(roundTag);
-                    const circuitMap = homeF1Circuits[race.circuitId];
-                    if (circuitMap?.path) {
-                        const ns = "http://www.w3.org/2000/svg";
-                        const svg = document.createElementNS(ns, "svg");
-                        svg.setAttribute("viewBox", "0 0 600 280");
-                        svg.setAttribute("role", "img");
-                        svg.setAttribute("aria-label", `${race.circuit} circuit layout`);
-                        for (const className of ["f1-race-visual__edge", "f1-race-visual__track"]) {
-                            const path = document.createElementNS(ns, "path");
-                            path.setAttribute("d", circuitMap.path);
-                            path.setAttribute("class", className);
-                            svg.appendChild(path);
-                        }
-                        if (Array.isArray(circuitMap.start)) {
-                            const start = document.createElementNS(ns, "circle");
-                            start.setAttribute("cx", circuitMap.start[0]);
-                            start.setAttribute("cy", circuitMap.start[1]);
-                            start.setAttribute("r", "5");
-                            start.setAttribute("class", "f1-race-visual__start");
-                            svg.appendChild(start);
-                        }
-                        visual.appendChild(svg);
-                        const credit = document.createElement("a");
-                        credit.className = "f1-race-visual__credit";
-                        credit.href = "https://github.com/bacinger/f1-circuits";
-                        credit.textContent = "Circuit map ↗";
-                        visual.appendChild(credit);
-                    } else {
-                        const location = document.createElement("strong");
-                        location.className = "f1-race-visual__location";
-                        location.textContent = race.location || race.circuit || "Race weekend";
-                        visual.appendChild(location);
-                    }
-                    const raceTime = parseStartTime(race.startTime);
-                    if (raceTime) {
-                        const date = document.createElement("span");
-                        date.className = "f1-race-visual__date";
-                        date.textContent = `Race · ${formatMatchDate(raceTime)} · ${formatMatchTime(raceTime)} Sydney`;
-                        visual.appendChild(date);
-                    }
-                    game.insertBefore(visual, header);
-                    const status = document.createElement("span");
-                    status.className = "afl-game__status afl-game__status--scheduled";
-                    status.textContent = "Upcoming";
-                    header.appendChild(status);
-                    const circuit = document.createElement("p");
-                    circuit.className = "f1-game__circuit";
-                    circuit.textContent = [race.circuit, race.location].filter(Boolean).join(" · ");
-                    game.appendChild(circuit);
-                    const facts = document.createElement("p");
-                    facts.className = "f1-game__facts";
-                    facts.textContent = [`Round ${race.round}`, f1PracticeWeekends[race.raceId]?.isSprint ? "Sprint weekend" : null,
-                        race.laps ? `${race.laps} laps` : null, race.lengthKm ? `${race.lengthKm.toFixed(3)} km` : null,
-                        race.corners ? `${race.corners} corners` : null].filter(Boolean).join(" · ");
-                    game.appendChild(facts);
-                    const labels = { fp1: "Practice 1", fp2: "Practice 2", fp3: "Practice 3", sq: "Sprint qualifying", sprint: "Sprint", qualifying: "Qualifying", race: "Race" };
-                    const sessions = [...Object.entries(f1PracticeWeekends[race.raceId]?.sessions || {}), ["race", race]]
-                        .map(([key, session]) => ({ key, session, time: parseStartTime(session.startTime) }))
-                        .filter(item => item.time && !item.session.results?.length)
-                        .sort((a, b) => a.time.getTime() - b.time.getTime());
-                    const next = sessions.find(item => item.time.getTime() > Date.now());
-                    const nextLine = document.createElement("div");
-                    nextLine.className = "f1-game__next";
-                    const nextLabel = document.createElement("span");
-                    nextLabel.textContent = next ? "Next session" : "Session updates";
-                    const nextInfo = document.createElement("a");
-                    nextInfo.href = `f1.html?round=${race.round}&session=${next?.key || "race"}`;
-                    nextInfo.textContent = next ? `${labels[next.key]} · ${formatMatchDate(next.time)} · ${formatMatchTime(next.time)}` : "Schedule or results awaiting confirmation";
-                    nextLine.append(nextLabel, nextInfo);
-                    game.appendChild(nextLine);
-                    if (sessions.length) {
-                        const schedule = document.createElement("details");
-                        schedule.className = "f1-game__schedule";
-                        const toggle = document.createElement("summary");
-                        toggle.textContent = "Weekend schedule · Sydney time";
-                        schedule.appendChild(toggle);
-                        const list = document.createElement("div");
-                        list.className = "f1-game__sessions";
-                        sessions.forEach(({ key, time }) => {
-                            const link = document.createElement("a");
-                            link.href = `f1.html?round=${race.round}&session=${key}`;
-                            const label = document.createElement("strong");
-                            label.textContent = labels[key];
-                            const date = document.createElement("span");
-                            date.className = "home-match-date";
-                            date.textContent = `${formatMatchDate(time)} · ${formatMatchTime(time)}`;
-                            link.append(label, date);
-                            list.appendChild(link);
-                        });
-                        schedule.appendChild(list);
-                        game.appendChild(schedule);
-                    }
-                    const more = document.createElement("a");
-                    more.className = "f1-game__weekend-link";
-                    more.href = detailsUrl;
-                    more.textContent = "Circuit & weekend details →";
-                    game.appendChild(more);
-                    return game;
-                }
-                [1, 2, 3].forEach(position => {
-                    const standing = summary.results.find(result => Number(result.position) === position);
-                    const podium = document.createElement("div");
-                    podium.className = `f1-game__podium f1-game__podium--${position}`;
-                    const place = document.createElement("span");
-                    place.className = "f1-game__place";
-                    place.textContent = `P${position}`;
-                    const driver = document.createElement(standing ? "a" : "span");
-                    driver.className = "f1-game__driver";
-                    if (standing) driver.href = `f1.html?driver=${encodeURIComponent(standing.driverId)}&round=${race.round}&session=${summary.key}`;
-                    driver.textContent = standing ? [standing.driver?.name, standing.driver?.surname].filter(Boolean).join(" ") : "TBC";
-                    if (standing && standing.driverId === summary.fastestLap?.driverId) {
-                        driver.classList.add("f1-game__driver--fastest");
-                        driver.setAttribute("aria-label", `${driver.textContent}, fastest lap`);
-                        driver.title = "Fastest lap";
-                    }
-                    if (standing && position === 1) {
-                        podium.classList.add("f1-game__winner");
-                        const label = document.createElement("small");
-                        label.className = "f1-game__winner-label";
-                        label.textContent = summary.key === "race" ? "Winner" : "Fastest in " + summary.label;
-                        driver.appendChild(label);
-                    }
-                    if (standing) SportIdentity.inline(driver, "drivers", standing.driverId);
-                    podium.append(place, driver);
-                    game.appendChild(podium);
-                });
-                const more = document.createElement("a");
-                more.className = "f1-game__more";
-                more.href = detailsUrl;
-                const remaining = Math.max(0, summary.results.length - 3);
-                more.textContent = remaining ? `+${remaining} →` : "View →";
-                more.setAttribute("aria-label", remaining ? `View ${remaining} more drivers and ${summary.label.toLowerCase()} details` : "View race details");
-                more.title = "See full results and race information";
-                game.appendChild(more);
-                const meta = document.createElement("div");
-                meta.className = "afl-game__meta f1-game__meta";
-                const details = document.createElement("span");
-                const summaryTime = parseStartTime(summary.startTime) || startTime;
-                details.textContent = `F1 · Round ${race.round} · ${summary.label} · `;
-                const stamp = document.createElement("span");
-                stamp.className = "home-match-date";
-                stamp.textContent = summaryTime ? `${formatMatchDate(summaryTime)} · ${formatMatchTime(summaryTime)}` : "Time TBC";
-                details.appendChild(stamp);
-                const status = document.createElement("span");
-                const finished = race.status === "CONCLUDED" || race.results?.length > 0;
-                status.className = `afl-game__status afl-game__status--${finished || summary.key !== "race" ? "finished" : "scheduled"}`;
-                status.textContent = summary.key !== "race" ? summary.label + " complete" : finished ? "Finished" : startTime && startTime.getTime() < Date.now() ? "Results pending" : "Scheduled";
-                meta.append(details, status);
-                game.appendChild(meta);
-                return game;
-            };
-
-            const renderAFLGames = (rounds) => {
-                if (!aflGames) return;
-                clearCountdownTimers();
-                const now = Date.now();
-                const today = getSydneyDateKey(new Date(now));
-                const threeDaysAgo = addDays(today, -3);
-                const fiveDaysAhead = addDays(today, 5);
-                const matches = rounds
-                    .flatMap(round => Array.isArray(round.matches) ? round.matches : [])
-                    .map(match => {
-                        const startTime = parseStartTime(match.startTime);
-                        const state = getMatchState(match, startTime, now);
-                        const dateKey = startTime ? getSydneyDateKey(startTime) : null;
-                        const active = state.isLive || state.isCountdown || state.isPending;
-                        return { match, startTime, state, dateKey, active };
-                    });
-
-                const prefs=preferences();
-                const followed=HomeFollowing.hasAny(prefs);
-                const f2Games=[...(homeF2Data?HomeFollowing.f2Summaries(homeF2Data,now):[]),...(homeF3Data?HomeFollowing.f2Summaries(homeF3Data,now,'f3'):[])];
-                const dailyGames = [...matches, ...otherSportGames, ...f2Games].filter(game=>HomeFollowing.follows(game,prefs));
-                const sections = [
-                    {
-                        title: "Today",
-                        empty: "No live games or games within three hours.",
-                        games: dailyGames.filter(game => HomeSports.dayCategory(game, now) === "today")
-                    },
-                    {
-                        title: "Upcoming",
-                        empty: "No games in the next 24 hours (16 hours for NBA).",
-                        games: dailyGames.filter(game => HomeSports.dayCategory(game, now) === "upcoming")
-                    },
-                    {
-                        title: "Yesterday & recent results",
-                        empty: "No games yesterday.",
-                        descending: true,
-                        games: dailyGames.filter(game => HomeSports.dayCategory(game, now) === "yesterday")
-                    }
-                ];
-
-                const f1Games = f1FixtureRaces.map(race => {
-                    const summary = selectF1Summary(race);
-                    const startTime = parseStartTime(summary.startTime || race.startTime);
-                    const dateKey = startTime ? getSydneyDateKey(startTime) : race.date || null;
-                    return { race, startTime, dateKey, finished: summary.key !== "race" || race.status === "CONCLUDED" || race.results?.length > 0 };
-                });
-                sections[0].games.push(...f1Games.filter(game => game.dateKey === today && (!game.startTime || game.startTime.getTime() <= now + 3 * 3600000)));
-                const recentF1 = f1Games.filter(game => game.finished && game.dateKey && game.dateKey >= threeDaysAgo && game.dateKey < today);
-                const upcomingF1 = f1Games.filter(game => game.race.status !== "CONCLUDED" && !game.race.results?.length && Date.parse(game.race.startTime || game.race.date) > now + 3 * 3600000 && game.race.date <= fiveDaysAhead);
-                sections[2].games.push(...recentF1);
-                sections[1].games.push(...upcomingF1);
-                sections.forEach(section=>{section.games=section.games.filter(game=>HomeFollowing.follows(game,prefs));});
-                const outside=HomeFollowing.outsideWindow([...matches,...otherSportGames,...f1Games,...f2Games],prefs,sections.flatMap(section=>section.games),now);
-                if (outside.length) sections.push({title:'Following · Next & latest',empty:'',games:outside});
-                // Keep recent results close to the top, ahead of upcoming fixtures.
-                sections.splice(1, 0, sections.splice(2, 1)[0]);
-                sections.forEach(section => section.games.sort((a, b) => (section.descending ? -1 : 1) * ((a.startTime?.getTime() || 0) - (b.startTime?.getTime() || 0))));
-                HomeWelcome.setEvents(sections.flatMap(section=>section.games),f1PracticeWeekends);
-                aflGames.replaceChildren();
-                const unavailable=[...homeUnavailable,...(followed?[...feederUnavailable]:[])];
-                if(unavailable.length){
-                    const note=document.createElement('div');note.className='home-data-notice';
-                    const copy=document.createElement('p');copy.textContent=`${unavailable.join(', ')} could not be refreshed. Any previously loaded results are still shown. Open a competition for its full fixtures, or try again.`;
-                    const retry=document.createElement('button');retry.type='button';retry.className='home-data-retry';retry.textContent=homeLoading?'Retrying…':'Retry summaries';retry.disabled=homeLoading;retry.addEventListener('click',()=>loadHomeGames());note.append(copy,retry);aflGames.appendChild(note);
-                }
-                sections.forEach(section => {
-                    if (followed && !section.games.length) return;
-                    const block = document.createElement("section");
-                    block.className = "afl-games__section";
-                    const heading = document.createElement("h3");
-                    heading.className = "afl-games__heading";
-                    heading.textContent = section.title;
-                    block.appendChild(heading);
-                    const list = document.createElement("div");
-                    list.className = "afl-games__list";
-
-                    if (!section.games.length) {
-                        const empty = document.createElement("p");
-                        empty.className = "afl-games__empty";
-                        empty.textContent = section.empty;
-                        list.appendChild(empty);
-                    } else {
-                        const sportOf = game => game.sport || (game.race ? "f1" : "afl");
-                        const leagues = section.title === "Upcoming" ? ["f1", "f2", "f3", "afl", "aflw", "nrl", "nrlw", "nba", "wnba", "nbl", "nfl", "tennis"] : [...Object.keys(HomeSports.labels),"f2","f3"];
-                        const layouts = new Map(leagues.map(sport => [sport, HomeSports.leagueLayout(section.games.filter(game => sportOf(game) === sport), sport, now)]));
-                        let currentLeague;
-                        let leagueList = list;
-                        leagues.flatMap(sport => layouts.get(sport).games).forEach(gameData => {
-                            const sport = sportOf(gameData);
-                            if (sport !== currentLeague) {
-                                currentLeague = sport;
-                                const title = document.createElement("h4");
-                                title.className = "home-league-heading";
-                                const link = document.createElement("a");
-                                link.href = `${sport}.html`;
-                                link.textContent = sport==='f2'?'F2':sport==='f3'?'F3':HomeSports.labels[sport];
-                                title.appendChild(link);
-                                list.appendChild(title);
-                                leagueList = list;
-                                if (sport !== "f1") {
-                                    leagueList = document.createElement("div");
-                                    leagueList.className = "home-league-games";
-                                    leagueList.dataset.league = sport;
-                                    list.appendChild(leagueList);
-                                }
-                            }
-                            if (gameData.f2Race) {
-                                const template=document.createElement('template');template.innerHTML=HomeFollowing.renderF2(gameData);
-                                if(layouts.get(sport).expanded===gameData)template.content.firstElementChild.classList.add('home-game--expanded');
-                                leagueList.appendChild(template.content);return;
-                            }
-                            if (gameData.sport) {
-                                const template = document.createElement("template");
-                                template.innerHTML = HomeSports.renderCard(gameData);
-                                if (layouts.get(sport).expanded === gameData) template.content.firstElementChild.classList.add("home-game--expanded");
-                                leagueList.appendChild(template.content);
-                                return;
-                            }
-                            if (gameData.race) {
-                                list.appendChild(renderF1Summary(gameData.race, gameData.startTime));
-                                return;
-                            }
-                            const { match, startTime, state } = gameData;
-                            const home = resolveAFLTeam(match.homeTeam);
-                            const away = resolveAFLTeam(match.awayTeam);
-                            const game = document.createElement("article");
-                            game.className = "afl-game";
-                            if (layouts.get(sport).expanded === gameData) game.classList.add("home-game--expanded");
-                            applyColors(game, home.colors);
-
-                            const homeTeam = document.createElement("div");
-                            homeTeam.className = "afl-game__team";
-                            const homeLogo = document.createElement("span");
-                            homeLogo.className = "afl-game__logo";
-                            homeLogo.textContent = home.initials;
-                            SportIdentity.afl(homeLogo, home.display);
-                            homeLogo.setAttribute("aria-hidden", "true");
-                            applyColors(homeLogo, home.colors);
-                            const homeName = document.createElement("a");
-                            homeName.href = SportView.teamUrl('afl', {name:match.homeTeam});
-                            homeName.className = "afl-game__name";
-                            homeName.textContent = home.display;
-                            homeTeam.append(homeLogo, homeName);
-
-                            const score = document.createElement("div");
-                            score.className = "afl-game__score";
-                            if (state.hasScores) {
-                                const homeScore = Number(match.homeScore);
-                                const awayScore = Number(match.awayScore);
-                                const homeValue = document.createElement("span");
-                                homeValue.className = homeScore >= awayScore ? "afl-game__score-value--win" : "afl-game__score-value--loss";
-                                homeValue.textContent = String(homeScore);
-                                const versus = document.createElement("span");
-                                versus.className = "afl-game__vs";
-                                versus.textContent = "vs";
-                                const awayValue = document.createElement("span");
-                                awayValue.className = awayScore >= homeScore ? "afl-game__score-value--win" : "afl-game__score-value--loss";
-                                awayValue.textContent = String(awayScore);
-                                score.append(homeValue, versus, awayValue);
-                            } else {
-                                const versus = document.createElement("span");
-                                versus.className = "afl-game__vs";
-                                versus.textContent = state.isLive ? "Live" : "vs";
-                                score.appendChild(versus);
-                            }
-
-                            const awayTeam = document.createElement("div");
-                            awayTeam.className = "afl-game__team afl-game__team--away";
-                            const awayName = document.createElement("a");
-                            awayName.href = SportView.teamUrl('afl', {name:match.awayTeam});
-                            awayName.className = "afl-game__name";
-                            awayName.textContent = away.display;
-                            const awayLogo = document.createElement("span");
-                            awayLogo.className = "afl-game__logo";
-                            awayLogo.textContent = away.initials;
-                            SportIdentity.afl(awayLogo, away.display);
-                            awayLogo.setAttribute("aria-hidden", "true");
-                            applyColors(awayLogo, away.colors);
-                            awayTeam.append(awayName, awayLogo);
-
-                            const meta = document.createElement("div");
-                            meta.className = "afl-game__meta";
-                            const addMeta = (text) => {
-                                const item = document.createElement("span");
-                                item.className = "afl-game__meta-item";
-                                item.textContent = text;
-                                meta.appendChild(item);
-                                return item;
-                            };
-                            if (startTime) {
-                                addMeta(state.isTbc ? formatWeekOf(startTime) : `${formatMatchDate(startTime)} · ${formatMatchTime(startTime)}`).classList.add("home-match-date");
-                            } else {
-                                addMeta("Time to be confirmed");
-                            }
-                            if (match.venue && match.venue !== "To Be Confirmed") addMeta(match.venue);
-
-                            const statusBadge = document.createElement("span");
-                            statusBadge.className = "afl-game__status" + (state.isLive || state.isCountdown ? " afl-game__status--live" : state.isFinished ? " afl-game__status--finished" : state.isPending || state.isTbc ? " afl-game__status--tbc" : " afl-game__status--scheduled");
-                            if (state.isLive || state.isPending) {
-                                const dot = document.createElement("span");
-                                dot.className = "afl-game__live-dot";
-                                dot.setAttribute("aria-hidden", "true");
-                                statusBadge.appendChild(dot);
-                            }
-                            if (state.isCountdown && startTime) {
-                                const formatCountdown = () => {
-                                    const ms = Math.max(0, startTime.getTime() - Date.now());
-                                    const minutes = Math.floor(ms / 60000);
-                                    const seconds = Math.floor((ms % 60000) / 1000);
-                                    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-                                };
-                                statusBadge.appendChild(document.createTextNode(formatCountdown()));
-                                const timer = setInterval(() => {
-                                    if (startTime.getTime() - Date.now() <= 0) {
-                                        clearInterval(timer);
-                                        if (statusBadge.isConnected) renderAFLGames(rounds);
-                                    } else {
-                                        statusBadge.lastChild.textContent = formatCountdown();
-                                    }
-                                }, 1000);
-                                countdownTimers.push(timer);
-                            } else {
-                                statusBadge.appendChild(document.createTextNode(state.isLive ? "Live" : state.isFinished ? "Finished" : state.isPending ? "Update pending" : (statusLabels[state.status] || "Scheduled")));
-                            }
-                            meta.appendChild(statusBadge);
-
-                            const gameCentre = document.createElement('a');
-                            gameCentre.className = 'home-game-centre';
-                            gameCentre.href = SportView.matchUrl('afl', match);
-                            gameCentre.textContent = 'Game centre →';
-                            meta.appendChild(gameCentre);
-
-                            game.append(homeTeam, score, awayTeam, meta);
-                            leagueList.appendChild(game);
-                        });
-                    }
-                    block.appendChild(list);
-                    aflGames.appendChild(block);
-                });
-                if(followed&&!sections.some(section=>section.games.length)){
-                    const empty=document.createElement('p');empty.className='afl-games__empty';empty.textContent='No games have been published for your starred selections yet. Their latest available standings or tournament information appear alongside.';aflGames.appendChild(empty);
-                }
-            };
-
-            async function loadHomeGames(){
-                if(homeLoading)return;homeLoading=true;aflGames?.setAttribute('aria-busy','true');
-                const retryOrigin=document.activeElement,retryFocused=retryOrigin?.classList.contains('home-data-retry');let focusMoved=false;
-                const cancelFocus=()=>{focusMoved=true;};
-                if(retryFocused){document.addEventListener('keydown',cancelFocus,true);document.addEventListener('pointerdown',cancelFocus,true);}
-                aflGames?.querySelectorAll('.home-data-retry').forEach(button=>{button.disabled=true;button.textContent='Retrying…';});
-                const object=value=>Boolean(value&&typeof value==='object'&&!Array.isArray(value));
-                const rows=value=>Array.isArray(value)&&value.every(object);
-                const json=(path,valid)=>fetch(path,{cache:'no-cache'}).then(response=>response.ok?response.json():Promise.reject()).then(value=>{if(!valid(value))throw new Error('Saved data is unavailable');return value;});
-                return Promise.allSettled([
-                json('afl-fixtures.json',value=>Array.isArray(value)&&value.every(round=>object(round)&&Array.isArray(round.matches)&&round.matches.every(object))),
-                json('f1-fixtures.json',value=>object(value)&&Number.isInteger(Number(value.season))&&rows(value.races)&&value.races.every(race=>race.results==null||rows(race.results))),
-                json('f1-sessions.json',value=>object(value)&&Number.isInteger(Number(value.season))&&object(value.races)&&Object.values(value.races).every(weekend=>object(weekend)&&object(weekend.sessions)&&Object.values(weekend.sessions).every(session=>object(session)&&(session.results==null||rows(session.results))))),
-                json('f1-circuits.json',value=>object(value)&&object(value.circuits)),
-                ...["aflw", "nrl", "nrlw", "nba", "wnba", "nbl", "nfl", "tennis"].map(sport=>json(`sports-data/${sport}.json`,value=>HomeSports.validSnapshot(value,sport)))
-            ]).then(([afl, f1, sessions, circuits, ...otherSports]) => {
-                if(afl.status==='fulfilled'&&Array.isArray(afl.value))homeRounds=afl.value;
-                if(f1.status==='fulfilled'&&Array.isArray(f1.value?.races)){if(homeF1Season!==f1.value.season)f1PracticeWeekends={};homeF1Season=f1.value.season;f1FixtureRaces=f1.value.races;}
-                if(sessions.status==='fulfilled'&&Number(sessions.value?.season)===Number(homeF1Season))f1PracticeWeekends=sessions.value.races||{};
-                if(circuits.status==='fulfilled')homeF1Circuits=circuits.value?.circuits||{};
-                const names=['AFLW','NRL','NRLW','NBA','WNBA','NBL','NFL','Tennis'];
-                otherSports.forEach((result,index)=>{if(result.status==='fulfilled')otherHomeSnapshots[names[index]]=result.value;});
-                otherSportGames=Object.values(otherHomeSnapshots).flatMap(value=>HomeSports.summaries(value));
-                homeUnavailable=[...(afl.status==='rejected'?['AFL']:[]),...(f1.status==='rejected'?['F1']:[]),...(sessions.status==='rejected'?['F1 sessions']:[]),...otherSports.flatMap((result,index)=>result.status==='rejected'?[names[index]]:[])];
-                renderAFLGames(homeRounds);
-                loadFollowingF2();
-            }).catch(()=>{
-                const note=document.createElement('div');note.className='home-data-notice';
-                const copy=document.createElement('p');copy.textContent='Game summaries could not be loaded. You can try again or browse a competition above.';
-                const retry=document.createElement('button');retry.type='button';retry.className='home-data-retry';retry.textContent='Retry summaries';retry.addEventListener('click',()=>loadHomeGames());note.append(copy,retry);aflGames?.prepend(note);
-            }).finally(()=>{
-                homeLoading=false;aflGames?.setAttribute('aria-busy','false');
-                aflGames?.querySelectorAll('.home-data-retry').forEach(button=>{button.disabled=false;button.textContent='Retry summaries';});
-                document.removeEventListener('keydown',cancelFocus,true);document.removeEventListener('pointerdown',cancelFocus,true);
-                if(retryFocused&&!focusMoved&&(document.activeElement===retryOrigin||document.activeElement===document.body)){const target=aflGames?.querySelector('.home-data-retry')||document.querySelector('#afl-games-title');if(target?.tagName!=='BUTTON')target?.setAttribute('tabindex','-1');target?.focus({preventScroll:true});}
-            });
-            }
-            loadHomeGames();
-            window.addEventListener('viewer-favourites-change',()=>{renderAFLGames(homeRounds);loadFollowingF2();});
-            window.addEventListener('viewer-home-scope-change',()=>{renderAFLGames(homeRounds);loadFollowingF2();});
-
-            fetch("standings.json")
-                .then(r => r.ok ? r.json() : Promise.reject())
-                .then(data => { if (Array.isArray(data)) renderAFL(data); })
-                .catch(() => {});
-
-            fetch("drivers-championship.json")
-                .then(r => r.ok ? r.json() : Promise.reject())
-                .then(data => { if (data?.drivers_championship) renderF1(data); })
-                .catch(() => {});
-
-            fetch("constructors-championship.json")
-                .then(r => r.ok ? r.json() : Promise.reject())
-                .then(data => { if (data?.constructors_championship) renderWCC(data); })
-                .catch(() => {});
-        })();
-
-        (() => {
-            const storageKey = "cgrillo-theme";
-            const root = document.documentElement;
-            const toggleButton = document.querySelector("[data-theme-toggle]");
-
-            const getStoredTheme = () => {
-                try {
-                    return localStorage.getItem(storageKey);
-                } catch {
-                    return null;
-                }
-            };
-
-            const setTheme = (theme, persist = true) => {
-                root.dataset.theme = theme;
-                if (toggleButton) {
-                    toggleButton.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-                    toggleButton.setAttribute("aria-pressed", String(theme === "dark"));
-                }
-                const favicon = document.getElementById("favicon");
-                if (favicon) favicon.href = theme === "dark" ? "favicon-dark.svg" : "favicon.svg";
-                if (persist) {
-                    try {
-                        localStorage.setItem(storageKey, theme);
-                    } catch {
-                        // Ignore storage failures on file URLs or restricted environments.
-                    }
-                }
-            };
-
-            const initialTheme = getStoredTheme() || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-            setTheme(initialTheme, false);
-
-            toggleButton?.addEventListener("click", () => {
-                setTheme(root.dataset.theme === "dark" ? "light" : "dark");
-            });
-        })();
-
-        (() => {
             const storageKey = "cgrillo-dev-notes";
             const recipient = "yb665uazc@mozmail.com";
             const toggle = document.querySelector("[data-dev-note-toggle]");
             const panel = document.querySelector("[data-dev-note]");
             const form = document.querySelector("[data-dev-note-form]");
             const log = document.querySelector("[data-dev-note-log]");
+            const status = document.querySelector("[data-dev-note-status]");
             const nameInput = form?.querySelector('[name="name"]');
             const messageInput = form?.querySelector('[name="message"]');
 
             const loadNotes = () => {
                 try {
                     const notes = JSON.parse(localStorage.getItem(storageKey) || "[]");
-                    return Array.isArray(notes) ? notes : [];
+                    return Array.isArray(notes) ? notes.filter(note => typeof note?.message === 'string' && typeof note.dateTime === 'string') : [];
                 } catch {
                     return [];
                 }
@@ -2041,11 +1248,11 @@
                 if (notes.length === 0) {
                     const empty = document.createElement("p");
                     empty.className = "dev-note__empty";
-                    empty.textContent = "No dev notes yet. Send one and it will appear here with the date and time.";
+                    empty.textContent = "No drafts have been prepared on this device yet.";
                     log.appendChild(empty);
                     return;
                 }
-                notes.forEach((note) => {
+                [...notes].reverse().forEach((note) => {
                     const entry = document.createElement("div");
                     entry.className = "dev-note__entry";
                     const time = document.createElement("div");
@@ -2076,31 +1283,37 @@
                 }
             });
 
+            messageInput?.addEventListener('input', () => {
+                messageInput.setCustomValidity('');
+                status.textContent = '';
+            });
+
             form?.addEventListener("submit", (event) => {
                 event.preventDefault();
                 const message = (messageInput?.value || "").trim();
                 if (!message) {
-                    messageInput?.focus();
+                    messageInput.setCustomValidity('Enter a message before opening a draft.');
+                    messageInput.reportValidity();
                     return;
                 }
                 const name = (nameInput?.value || "").trim();
                 const dateTime = formatDateTime(new Date());
                 const notes = loadNotes();
-                notes.push({ dateTime, name, message });
-                saveNotes(notes);
-                renderNotes(notes);
+                const latest = notes.at(-1);
+                if (latest?.name !== name || latest.message !== message) {
+                    notes.push({ dateTime, name, message });
+                    saveNotes(notes);
+                    renderNotes(notes);
+                }
 
                 const subject = "Dev note from cgrillo.com";
                 const body = [
-                    `Sent: ${dateTime}`,
                     `Name: ${name || "Anonymous"}`,
                     "",
                     message
                 ].join("\n");
+                status.textContent = 'Your draft is ready to open. Review and send it from your email app.';
                 window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-                form.reset();
-                messageInput?.focus();
             });
 
             renderNotes(loadNotes());
@@ -2112,6 +1325,7 @@
             const list = document.querySelector("[data-dev-updates-list]");
 
             const updates = [
+                { date: "7 Nov 2026", title: "A clearer sports scoreboard", text: "Find live events, upcoming fixtures and recent results separately, or switch to the full Sydney week. Available competitions load while slower sources catch up." },
                 { date: "15 Aug 2026", title: "Live game fix and colour correction", text: "We have fixed the live game issue, and also colour corrected unreadable text." },
                 { date: "15 Aug 2026", title: "Dev note added", text: "Visitors can now send notes straight to the developer from the bottom of the homepage." },
                 { date: "14 Aug 2026", title: "Homepage refresh", text: "New hero layout and live standings for AFL and F1." }

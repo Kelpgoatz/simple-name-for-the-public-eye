@@ -1,18 +1,4 @@
 (() => {
-    const root = document.documentElement;
-    const toggle = document.querySelector("[data-theme-toggle]");
-    const setTheme = (theme, persist = true) => {
-        root.dataset.theme = theme;
-        toggle.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-        toggle.setAttribute("aria-pressed", String(theme === "dark"));
-        document.getElementById("favicon").href = theme === "dark" ? "favicon-dark.svg" : "favicon.svg";
-        if (persist) { try { localStorage.setItem("cgrillo-theme", theme); } catch {} }
-    };
-    let stored;
-    try { stored = localStorage.getItem("cgrillo-theme"); } catch {}
-    setTheme(stored || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"), false);
-    toggle.addEventListener("click", () => setTheme(root.dataset.theme === "dark" ? "light" : "dark"));
-
     // Shared identity and badge rendering for the ladder, classification and fastest lap.
     const teams = {
         mercedes: { display: "Mercedes", abbr: "MER", colors: ["#00d2be", "#000000"] },
@@ -48,12 +34,20 @@
     let profileMode = "total";
     let profileScope = params.get("scope") === "all" ? "all" : "season";
     let careerData = {};
+    let resultView;
+    const championships = {
+        drivers: { path: "drivers-championship.json", key: "drivers_championship", state: "loading" },
+        constructors: { path: "constructors-championship.json", key: "constructors_championship", state: "loading" }
+    };
+    let sessionsState = "loading";
     const profilePanel = document.createElement("section");
     profilePanel.className = "f1-profile";
     profilePanel.hidden = true;
     profilePanel.setAttribute("aria-label", "Season performance dashboard");
     slider.before(profilePanel);
     const number = value => Number.isFinite(Number(value)) ? Number(value) : 0;
+    const isRecord = value => value !== null && typeof value === "object" && !Array.isArray(value);
+    const validResults = session => session.results == null || (Array.isArray(session.results) && session.results.every(isRecord));
     const text = (tag, className, value, parent) => {
         const element = document.createElement(tag);
         element.className = className;
@@ -61,7 +55,7 @@
         parent?.appendChild(element);
         return element;
     };
-    const getTeam = id => teams[id] || { display: id || "Team TBC", abbr: "F1", colors: ["#0f5a6d", "#79d7ec"] };
+    const getTeam = id => Object.hasOwn(teams, id) ? teams[id] : { display: id || "Team TBC", abbr: "F1", colors: ["#0f5a6d", "#79d7ec"] };
     const applyColors = (element, teamId) => {
         const team = getTeam(teamId);
         element.style.setProperty("--logo-from", team.colors[0]);
@@ -73,7 +67,7 @@
         const driver = standing?.driver || entry.driver || {};
         return {
             id,
-            name: [driver.name, driver.surname].filter(Boolean).join(" ") || id?.replaceAll("_", " ") || "Driver TBC",
+            name: [driver.name, driver.surname].filter(Boolean).join(" ") || (id && String(id).replaceAll("_", " ")) || "Driver TBC",
             number: driver.number ?? "–",
             teamId: entry.teamId || standing?.teamId
         };
@@ -113,7 +107,8 @@
     function renderProfile() {
         profilePanel.hidden = !profileSelection;
         if (!profileSelection) { profilePanel.replaceChildren(); return; }
-        const profile = F1Profile.build({...profileSelection, season, races, weekends: sessionWeekends, drivers, constructors, teamName: id => getTeam(id).display});
+        const profileSeason = season || (profileSelection.kind === "driver" ? driverSeason : constructorSeason);
+        const profile = F1Profile.build({...profileSelection, season: profileSeason, races, weekends: sessionWeekends, drivers, constructors, teamName: id => getTeam(id).display});
         const career=careerData[profileSelection.kind === "driver" ? "drivers" : "teams"]?.[profileSelection.id];
         profilePanel.innerHTML = F1Profile.renderMarkup(profile, profileMode, {round: races[selectedIndex]?.round, session: selectedSession, tab: currentTab, scope: profileScope, career, teamName: id=>getTeam(id).display});
         profilePanel.querySelectorAll("[data-profile-identity]").forEach(element => {
@@ -138,7 +133,8 @@
         if (profileSelection) url.searchParams.set(profileSelection.kind, profileSelection.id);
         else url.searchParams.delete("scope");
         history.pushState(null, "", url);
-        renderRace();
+        if (races.length) renderRace();
+        else renderProfile();
         renderLadder();
         if (profileSelection) {
             profilePanel.querySelector("h2")?.focus({preventScroll:true});
@@ -170,10 +166,23 @@
         });
         ladder.setAttribute("aria-labelledby", `tab-${currentTab}`);
         ladder.replaceChildren();
+        const championship = championships[currentTab];
+        if (championship.state === "loading") {
+            SportsUI.loadingPanel(ladder, "Loading championship standings…");
+            ladderNote.textContent = "";
+            return;
+        }
+        if (championship.state === "error") {
+            const tab = currentTab;
+            SportsUI.retryPanel(ladder, "Championship standings are temporarily unavailable.", () => loadStandings(tab));
+            ladderNote.textContent = "";
+            return;
+        }
+        ladder.removeAttribute("aria-busy");
         const standings = isDrivers ? drivers : constructors;
         if (!standings.length) {
             text("p", "fixtures-empty", `${season || "Season"} championship standings have not been published yet.`, ladder);
-            ladderNote.textContent = "Please try again later.";
+            ladderNote.textContent = "";
             return;
         }
         const ordered = [...standings].sort((a, b) => number(a.position) - number(b.position));
@@ -194,7 +203,9 @@
             }
         });
         ladder.scrollTop = 0;
-        ladderNote.textContent = "Select a name for the season dashboard. Season standings · refreshed hourly from Jolpica F1.";
+        const time = Date.parse(championship.data?.updatedAt);
+        ladderNote.textContent = "Select a name for the season dashboard. Source: Jolpica F1." +
+            (Number.isFinite(time) ? ` Saved ${new Date(time).toLocaleString("en-AU", {timeZoneName:"short"})}.` : "");
     }
 
     function switchTab(tab, focus = false) {
@@ -285,7 +296,10 @@
         text("span", "race-results__count", `${session.results.length} drivers`, heading);
         text("p", "race-empty", "Select a driver or constructor name for their season dashboard and individual session performance.", section);
         const resultRows = new Map();
-        let fastestOrder = false;
+        const resultKey = `${race.raceId}/${sessionKey}`;
+        if (resultView?.key !== resultKey) resultView = { key: resultKey, fastestOrder: false, gapMode: defaultGapMode(sessionKey) };
+        let { fastestOrder, gapMode } = resultView;
+        let sortResults;
         if (isRace) {
             const sorting = text("div", "result-gap-toggle result-order-toggle", "", section);
             sorting.setAttribute("role", "group");
@@ -294,8 +308,9 @@
             const lapButton = text("button", "result-order-toggle__fastest", "Fastest lap order", sorting);
             const orderNote = text("p", "race-empty result-order-note", "", section);
             orderNote.setAttribute("role", "status");
-            const sort = fastest => {
+            sortResults = fastest => {
                 fastestOrder = fastest;
+                resultView.fastestOrder = fastest;
                 title.textContent = fastest ? "Fastest lap order" : sessionKey === "race" ? "Finishing order" : `${definition.title} results`;
                 title.classList.toggle("race-section-title--fastest", fastest);
                 finishButton.setAttribute("aria-pressed", String(!fastest));
@@ -310,10 +325,9 @@
             finishButton.type = lapButton.type = "button";
             finishButton.setAttribute("aria-pressed", "true");
             lapButton.setAttribute("aria-pressed", "false");
-            finishButton.addEventListener("click", () => sort(false));
-            lapButton.addEventListener("click", () => sort(true));
+            finishButton.addEventListener("click", () => sortResults(false));
+            lapButton.addEventListener("click", () => sortResults(true));
         }
-        let gapMode = defaultGapMode(sessionKey);
         const gapCells = [];
         let gapHeader, gapNote;
         const controls = text("div", "result-gap-toggle", "", section);
@@ -323,7 +337,7 @@
             const button = text("button", "", label, controls);
             button.type = "button";
             button.setAttribute("aria-pressed", String(mode === gapMode));
-            button.addEventListener("click", () => { gapMode = mode; updateGaps(); });
+            button.addEventListener("click", () => { gapMode = mode; resultView.gapMode = mode; updateGaps(); });
             return { button, mode };
         });
         const updateGaps = () => {
@@ -380,8 +394,8 @@
             const names = text("div", "race-driver", "", identity);
             profileLink(names, "driver", info.id, info.name, "race-driver__name race-driver__profile-link");
             SportIdentity.inline(profileLink(names, "team", info.teamId, getTeam(info.teamId).display, "race-driver__team race-driver__profile-link"), "constructors", info.teamId);
-            const penalties = sessionKey === "race" ? penaltyData[race.raceId]?.[info.id] || [] : [];
-            penalties.forEach(penalty => {
+            const penalties = sessionKey === "race" ? penaltyData[race.raceId]?.[info.id] : null;
+            (Array.isArray(penalties) ? penalties.filter(isRecord) : []).forEach(penalty => {
                 const note = text("span", "race-penalty", `Penalty: ${penalty.note} `, names);
                 if (/^https:\/\//.test(penalty.source || "")) {
                     const source = link(note, "Source", penalty.source);
@@ -398,7 +412,8 @@
                 const isFastest = result.fastLap && info.id === session.fastestLap?.driverId;
                 text("span", isFastest ? "fastest-lap-badge" : "", result.fastLap || "–", lap);
                 if (isFastest) text("span", "sr-only", " (race fastest lap)", lap);
-                text("td", "race-results__points", number(result.points), row);
+                const points = typeof result.points === "number" || (typeof result.points === "string" && result.points.trim()) ? Number(result.points) : NaN;
+                text("td", "race-results__points", Number.isFinite(points) ? points : "–", row);
             } else {
                 gapCells.push(text("td", "race-results__time", "", row));
                 const lap = text("td", "race-results__lap", "", row);
@@ -412,7 +427,8 @@
         });
         table.appendChild(tbody);
         gapNote = text("p", "race-empty session-interval-note", "", section);
-        updateGaps();
+        if (fastestOrder) sortResults(true);
+        else updateGaps();
         if (sessionKey === "race" && Object.keys(penaltyData[race.raceId] || {}).length) {
             text("p", "race-empty", "Positions and times show the published classification, including applied penalties.", section);
         }
@@ -429,7 +445,7 @@
 
     function renderSessionSelector(race, parent) {
         const weekend = sessionWeekends[race.raceId];
-        const keys = weekend ? keysForWeekend(Boolean(weekend.isSprint)) : ["race"];
+        const keys = weekend ? keysForWeekend(Boolean(weekend.isSprint)) : selectedSession === "race" ? ["race"] : [selectedSession, "race"];
         if (!keys.includes(selectedSession)) selectedSession = "race";
         const progress = WeekendProgress.build(keys.map(key => ({ ...weekendSession(race, key), key, label: sessionDefinitions[key].label, title: sessionDefinitions[key].title })), { selected: selectedSession });
         const overview = text("div", "", "", parent);
@@ -448,7 +464,7 @@
             button.id = `session-tab-${key}`;
             button.dataset.session = key;
             button.setAttribute("role", "tab");
-            button.setAttribute("aria-label", `${definition.title} · ${WeekendProgress.stateLabel(item.state)} · ${WeekendProgress.formatStart(item)}`);
+            button.setAttribute("aria-description", definition.title);
             button.setAttribute("aria-selected", String(selectedSession === key));
             button.setAttribute("aria-controls", "race-session-panel");
             button.tabIndex = selectedSession === key ? 0 : -1;
@@ -466,7 +482,13 @@
                 change(keys[target]);
             });
         });
-        if (!weekend) text("p", "race-empty", "Other session data is currently unavailable. Please try again later.", parent);
+        if (!weekend) {
+            if (sessionsState === "error") {
+                SportsUI.retryPanel(text("div", "", "", parent), "The full session timetable is temporarily unavailable.", loadSessions);
+            } else {
+                text("p", "race-empty", sessionsState === "loading" ? "Loading the full session timetable…" : "The full session timetable has not been published for this weekend.", parent);
+            }
+        }
         const panel = text("div", "session-panel", "", parent);
         panel.id = "race-session-panel";
         panel.setAttribute("role", "tabpanel");
@@ -503,6 +525,7 @@
         FixtureSlider.update(slider, races.map((item,value)=>{const dates=Object.values(sessionWeekends[item.raceId]?.sessions||{}).map(session=>session.startTime||session.date).filter(date=>Number.isFinite(Date.parse(date))).sort((a,b)=>Date.parse(a)-Date.parse(b));return{value,label:`Round ${item.round}`,shortLabel:`R${item.round}`,date:dates[0]||item.startTime||item.date,endDate:item.startTime||item.date};}),{unit:"weekends"});
         previous.disabled = selectedIndex === 0;
         next.disabled = selectedIndex === races.length - 1;
+        fixtures.removeAttribute("aria-busy");
         fixtures.replaceChildren();
         const article = text("article", "race-info", "", fixtures);
         renderMap(race, article);
@@ -525,17 +548,17 @@
         text("span", "", dateLabel, detail);
         const facts = [];
         if (race.laps) facts.push(`${race.laps} laps`);
-        if (race.lengthKm) facts.push(`${race.lengthKm.toFixed(3)} km`);
+        if (Number(race.lengthKm) > 0) facts.push(`${Number(race.lengthKm).toFixed(3)} km`);
         if (race.corners) facts.push(`${race.corners} corners`);
         if (facts.length) text("p", "race-facts", facts.join(" · "), intro);
         renderSessionSelector(race, article);
         fixturesNote.hidden = false;
         fixturesNote.replaceChildren();
         const session = weekendSession(race, selectedSession);
-        link(fixturesNote, selectedSession === "race" ? `Race data: ${/jolpi\.ca/.test(session.source || '') ? 'Jolpica F1' : 'F1 API'}` : `${sessionDefinitions[selectedSession].title} data`, session.source || "https://www.formula1.com");
+        link(fixturesNote, selectedSession === "race" ? `Race data: ${/jolpi\.ca/.test(session.source || '') ? 'Jolpica F1' : 'F1 API'}` : `${sessionDefinitions[selectedSession].title} data`, SportsUI.safeUrl(session.source) || "https://www.formula1.com");
         if (updatedAt) {
             const date = new Date(updatedAt);
-            if (Number.isFinite(date.getTime())) fixturesNote.append(` · Updated ${date.toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" })}`);
+            if (Number.isFinite(date.getTime())) fixturesNote.append(` · Saved ${date.toLocaleString(undefined, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short" })}`);
         }
         setQuery();
         renderProfile();
@@ -553,48 +576,125 @@
     next.addEventListener("click", () => selectRace(selectedIndex + 1));
     slider.addEventListener("input", () => selectRace(Number(slider.value)));
 
-    async function loadJSON(path) {
-        const response = await fetch(path);
-        if (!response.ok) throw new Error(`Failed to load ${path}`);
-        return response.json();
+    function updateStandings() {
+        const wdc = championships.drivers.data;
+        const wcc = championships.constructors.data;
+        driverSeason = wdc?.season;
+        constructorSeason = wcc?.season;
+        drivers = wdc && (!season || Number(driverSeason) === Number(season)) ? wdc.drivers_championship : [];
+        constructors = wcc && (!season || Number(constructorSeason) === Number(season)) ? wcc.constructors_championship : [];
+        driverById = new Map(drivers.map(standing => [standing.driverId, standing]));
     }
-    async function load() {
-        const data = await Promise.allSettled([
-            loadJSON("f1-fixtures.json"), loadJSON("drivers-championship.json"),
-            loadJSON("constructors-championship.json"), loadJSON("f1-circuits.json"),
-            loadJSON("f1-penalties.json"), loadJSON("f1-sessions.json"), loadJSON("f1-careers.json")
-        ]);
-        const value = index => data[index].status === "fulfilled" ? data[index].value : null;
-        const calendar = value(0);
-        if (Array.isArray(calendar?.races)) {
-            races = calendar.races.filter(race => Number.isFinite(Number(race.round))).sort((a, b) => a.round - b.round);
+    async function loadStandings(tab) {
+        const championship = championships[tab];
+        const focused = ladder.contains(document.activeElement);
+        championship.state = "loading";
+        if (currentTab === tab) renderLadder();
+        try {
+            const data = await SportsSnapshots.read(championship.path);
+            if (!Number(data?.season) || !Array.isArray(data[championship.key]) || !data[championship.key].every(isRecord)) {
+                throw new Error("Invalid F1 championship snapshot");
+            }
+            championship.data = data;
+            championship.state = "ready";
+        } catch {
+            championship.state = "error";
+        }
+        updateStandings();
+        if (currentTab === tab) {
+            renderLadder();
+            if (focused && document.activeElement === document.body) SportsUI.restorePanelFocus(ladder);
+        }
+        if (profileSelection?.kind === (tab === "drivers" ? "driver" : "team")) refreshPanel(profilePanel, renderProfile);
+    }
+    let sessionsData, penalties;
+    function updateWeekend() {
+        sessionWeekends = Number(sessionsData?.season) === Number(season) ? sessionsData.races : {};
+        penaltyData = Number(penalties?.season) === Number(season) ? penalties.races || {} : {};
+        penaltyCoverage = Number(penalties?.season) === Number(season) ? penalties.coverage || {} : {};
+    }
+    function refreshPanel(panel, render) {
+        const active = document.activeElement;
+        const inside = panel.contains(active);
+        render();
+        if (!inside || active.isConnected) return;
+        const href = active.getAttribute("href");
+        const replacement = (active.id && document.getElementById(active.id)) ||
+            (href && [...panel.querySelectorAll("a")].find(anchor => anchor.getAttribute("href") === href)) ||
+            [...panel.querySelectorAll("button")].find(button => button.outerHTML === active.outerHTML);
+        if (replacement) replacement.focus({preventScroll:true});
+        else SportsUI.restorePanelFocus(panel);
+    }
+    function refreshRace() {
+        refreshPanel(fixtures, () => refreshPanel(profilePanel, renderRace));
+    }
+    async function loadSessions() {
+        const retry = fixtures.querySelector(".race-info .sports-retry");
+        if (retry) {
+            retry.disabled = true;
+            retry.textContent = "Trying again…";
+        }
+        sessionsState = "loading";
+        try {
+            const data = await SportsSnapshots.read("f1-sessions.json");
+            const validWeekend = weekend => isRecord(weekend) && isRecord(weekend.sessions) &&
+                Object.values(weekend.sessions).every(session => isRecord(session) && validResults(session));
+            if (!Number(data?.season) || !isRecord(data.races) || !Object.values(data.races).every(validWeekend)) {
+                throw new Error("Invalid F1 session snapshot");
+            }
+            sessionsData = data;
+            sessionsState = "ready";
+        } catch {
+            sessionsState = "error";
+        }
+        updateWeekend();
+        if (races.length) refreshRace();
+    }
+    async function loadCalendar() {
+        const focused = fixtures.contains(document.activeElement);
+        SportsUI.loadingPanel(fixtures, "Loading F1 fixtures…", "fixtures");
+        try {
+            const calendar = await SportsSnapshots.read("f1-fixtures.json");
+            const validRace = race => isRecord(race) && race.raceId && Number.isInteger(Number(race.round)) && Number(race.round) > 0 && validResults(race);
+            if (!Number(calendar?.season) || !Array.isArray(calendar.races) || !calendar.races.every(validRace)) {
+                throw new Error("Invalid F1 calendar snapshot");
+            }
+            races = calendar.races.map(race => ({ ...race, round: Number(race.round) })).sort((a, b) => a.round - b.round);
             season = calendar.season;
             updatedAt = calendar.updatedAt;
+            updateStandings();
+            updateWeekend();
+            const requestedRound = new URLSearchParams(location.search).get("round");
+            const requested = races.findIndex(race => String(race.round) === requestedRound);
+            const lastCompleted = races.findLastIndex(race => race.results?.length);
+            const upcoming = races.findIndex(race => Date.parse(race.startTime || race.date) >= Date.now());
+            selectedIndex = requested >= 0 ? requested : upcoming >= 0 ? upcoming : Math.max(lastCompleted, 0);
+            if (races.length) renderRace();
+            else {
+                fixtures.removeAttribute("aria-busy");
+                fixtures.replaceChildren();
+                text("p", "fixtures-empty", "F1 fixtures have not been published yet.", fixtures);
+            }
+            refreshPanel(ladder, renderLadder);
+        } catch {
+            SportsUI.retryPanel(fixtures, "F1 fixtures are temporarily unavailable.", loadCalendar);
         }
-        driverSeason = value(1)?.season;
-        constructorSeason = value(2)?.season;
-        drivers = Array.isArray(value(1)?.drivers_championship) ? value(1).drivers_championship : [];
-        constructors = Array.isArray(value(2)?.constructors_championship) ? value(2).constructors_championship : [];
-        if (season && Number(driverSeason) !== Number(season)) drivers = [];
-        if (season && Number(constructorSeason) !== Number(season)) constructors = [];
-        // A delayed new-season update must not substitute another season's identities.
-        driverById = new Map((driverSeason === season ? drivers : []).map(standing => [standing.driverId, standing]));
-        circuitData = value(3)?.circuits || {};
-        penaltyData = value(4)?.season === season ? value(4).races || {} : {};
-        penaltyCoverage = value(4)?.season === season ? value(4).coverage || {} : {};
-        sessionWeekends = Number(value(5)?.season) === Number(season) ? value(5).races || {} : {};
-        careerData=value(6)||{};
-        renderLadder();
-        if (!races.length) {
-            fixtures.replaceChildren();
-            text("p", "fixtures-empty", "F1 fixtures are currently unavailable. Please try again later.", fixtures);
-            return;
-        }
-        const requested = races.findIndex(race => race.round === Number(params.get("round")));
-        const lastCompleted = races.findLastIndex(race => race.results?.length);
-        const upcoming = races.findIndex(race => Date.parse(race.startTime || race.date) > Date.now());
-        selectedIndex = requested >= 0 ? requested : lastCompleted >= 0 ? lastCompleted : Math.max(upcoming, 0);
-        renderRace();
+        if (focused && document.activeElement === document.body) SportsUI.restorePanelFocus(fixtures);
     }
-    load();
+    async function loadDetails() {
+        const [circuits, notes, careers] = await Promise.allSettled(
+            ["f1-circuits.json", "f1-penalties.json", "f1-careers.json"].map(path => SportsSnapshots.read(path))
+        );
+        circuitData = circuits.value?.circuits || {};
+        penalties = notes.value;
+        careerData = careers.value || {};
+        updateWeekend();
+        if (races.length) refreshRace();
+        else if (profileSelection) refreshPanel(profilePanel, renderProfile);
+    }
+    loadCalendar();
+    loadStandings("drivers");
+    loadStandings("constructors");
+    loadSessions();
+    loadDetails();
 })();

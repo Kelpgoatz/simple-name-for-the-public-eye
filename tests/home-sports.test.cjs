@@ -45,6 +45,29 @@ test('a stale scheduled game is labelled awaiting an update without inventing a 
     assert.match(renderCard(game),/Update pending/);
     assert.doesNotMatch(renderCard(game),/score-value--win/);
 });
+
+test('only fresh provider live scores show a live period and score', () => {
+    const now = Date.parse('2026-11-04T23:15:00Z');
+    const data = snapshot({...match,status:'live',statusDetail:'Q3 · 2:10',homeScore:101,awayScore:98});
+    const fresh = {...data,fixturesUpdatedAt:'2026-11-04T23:00:00Z'};
+    assert.match(renderCard(summaries(fresh, now)[0]),/Live.*Q3 · 2:10/);
+    for (const game of [summaries(fresh, now, {stale:true})[0], summaries({...data,fixturesUpdatedAt:'2026-11-04T22:15:00Z'}, now)[0]]) {
+        assert.equal(game.active, false);
+        assert.match(renderCard(game),/Update pending/);
+        assert.doesNotMatch(renderCard(game),/Q3 · 2:10|>101</);
+    }
+});
+
+test('Sydney weeks switch on local Monday and duplicate source matches use the latest revision', () => {
+    const { weekRange } = require('../home-sports.js');
+    assert.deepEqual(weekRange(Date.parse('2026-11-01T12:59:00Z')), {start:'2026-10-26',end:'2026-11-01'});
+    assert.deepEqual(weekRange(Date.parse('2026-11-01T13:00:00Z')), {start:'2026-11-02',end:'2026-11-08'});
+    const data = snapshot({...match,updatedAt:'2026-11-04T20:00:00Z'});
+    data.groups.push({id:'rescheduled',matches:[{...match,startTime:'2026-11-05T22:00:00Z',updatedAt:'2026-11-04T21:00:00Z'}]});
+    const games = summaries(data, Date.parse('2026-11-04T21:05:00Z'));
+    assert.equal(games.length, 1);
+    assert.equal(games[0].group.id, 'rescheduled');
+});
 test('league cards share AFL layout and link to the exact fixture group', () => {
     const card=renderCard(summaries(snapshot(match))[0]);
     assert.match(card,/class="afl-game home-sport-game"/);

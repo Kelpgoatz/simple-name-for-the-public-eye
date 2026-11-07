@@ -40,6 +40,26 @@ test('empty search browses competitions, while explicit filters can browse teams
     assert.deepEqual(discovery.search(index,'',{kind:'nonexistent'}),[]);
 });
 
+test('discovery requests only data that can match the active query and filters', () => {
+    assert.deepEqual(discovery.searchSources('', '', ''), []);
+    assert.deepEqual(discovery.searchSources('formula', '', 'league'), []);
+    assert.deepEqual(discovery.searchSources('', 'nba', 'team'), ['nba']);
+    assert.deepEqual(discovery.searchSources('Hamilton', '', 'driver'), ['f1drivers', 'f2', 'f3']);
+    assert.deepEqual(discovery.searchSources('Boston', 'nba', 'driver'), []);
+});
+
+test('malformed snapshot rows are skipped while valid competition and team results remain', () => {
+    const index = discovery.buildIndex({
+        afl: [null, { matches: [null] }],
+        f1drivers: { drivers_championship: [null] },
+        f1teams: { constructors_championship: [null] },
+        f2: { drivers: [null], teams: [null] },
+        nba: { groups: [null, { matches: [null] }], standings: [null, { rows: [null, { team: { id: 2, name: 'Boston Celtics' } }] }] }
+    });
+    assert.equal(index.filter(entry => entry.kind === 'league').length, 12);
+    assert.equal(index.find(entry => entry.kind === 'team').name, 'Boston Celtics');
+});
+
 test('profile links encode identifiers rather than interpreting supplied query text',()=>{
     const value='driver&id=<bad>';
     const url=new URL(discovery.href('f3','driver',value),'https://example.com');

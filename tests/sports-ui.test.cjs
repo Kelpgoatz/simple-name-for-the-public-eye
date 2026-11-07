@@ -21,6 +21,15 @@ test("stale provider live flags do not open months-old games or claim they are l
     assert.match(html, /class="sports-score">27/);
 });
 
+test("a saved fixture update can expire even when its live game started recently", () => {
+    const live = { status: "live", startTime: "2026-11-03T20:00:00Z", statusDetail: "Live", homeScore: 0 };
+    const saved = "2026-11-03T21:00:00Z";
+    assert.equal(ui.initialGroupIndex([{ matches: [live] }, { matches: [futureMatch] }], now, "", saved), 1);
+    assert.match(ui.renderMatch(live, "nba", now, saved), /data-status="pending">Update pending · last reported score/);
+    assert.match(ui.renderMatch(live, "nba", now, "2026-11-03T23:55:00Z"), /data-status="live"/);
+    assert.match(ui.dataNotices({ updatedAt: "2026-11-03T23:55:00Z", fixturesUpdatedAt: "2026-10-31T00:00:00Z" }, "nba", now).join(" "), /saved update/);
+});
+
 test("slider chooses future fixtures, then the last published completed group", () => {
     const groups = [
         { matches: [{ status: "final", startTime: "2026-10-20T00:00:00Z" }] },
@@ -86,7 +95,8 @@ test("untrusted provider labels and links cannot inject markup or unsafe protoco
 test("conference ladders preserve source order and missing values", () => {
     const east = { label: "Eastern Conference", rows: [{ rank: 1, team: { name: "East team" }, wins: 0, losses: 0, winPct: null, gamesBehind: null }] };
     const west = { label: "Western Conference", rows: [{ rank: 1, team: { name: "West team" }, wins: 5, losses: 2, winPct: .714, gamesBehind: 0 }] };
-    assert.match(ui.renderStandings(east, "nba"), /Eastern Conference/);
+    assert.match(ui.renderStandings(east, "nba"), /tabindex="0" role="region" aria-label="Eastern Conference table"/);
+    assert.match(ui.renderStandings(east, "nba"), /<th scope="row"><span class="sports-table__team">/);
     assert.doesNotMatch(ui.renderStandings(east, "nba"), /West team|NaN|0.0%/);
     assert.match(ui.renderStandings(west, "nba"), /71.4%/);
     assert.match(ui.renderStandings({ rows: [] }, "nba"), /not been published/);

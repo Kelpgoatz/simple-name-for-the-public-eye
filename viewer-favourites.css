@@ -9,6 +9,7 @@
 .viewer-favourite-link > a { min-width: 0; }
 .viewer-favourite-link .viewer-star { width: 26px; height: 26px; flex-basis: 26px; padding: 4px; margin-left: 2px; }
 .viewer-favourite-link .viewer-star svg { width: 17px; height: 17px; }
+.viewer-favourite-row > :first-child { box-shadow: inset 3px 0 #b49543; }
 .home-league-heading { display: flex; align-items: center; gap: 5px; }
 .viewer-favourites-toast { position: fixed; z-index: 90; bottom: 20px; left: 50%; transform: translateX(-50%); width: max-content; max-width: calc(100% - 28px); margin: 0; padding: 12px 18px; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); font: 600 .7rem/1.5 var(--font-sans); }
 .viewer-favourites-toast[hidden] { display: none; }

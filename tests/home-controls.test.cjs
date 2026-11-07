@@ -1,15 +1,18 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const controls=require('../home-controls.js');
-test('homepage game status uses explicit live/results classes and safely handles unavailable states',()=>{
-    assert.equal(controls.gameClassification({status:'Live',classes:'afl-game__status'}),'live');
-    assert.equal(controls.gameClassification({status:'09:22',classes:'afl-game__status afl-game__status--live'}),'live');
-    assert.equal(controls.gameClassification({status:'Finished'}),'results');
-    assert.equal(controls.gameClassification({status:'Final'}),'results');
-    assert.equal(controls.gameClassification({status:'Practice',classes:'afl-game__status afl-game__status--finished'}),'results');
-    assert.equal(controls.gameClassification({status:'Upcoming',upcoming:true}),'upcoming');
-    assert.equal(controls.gameClassification({status:'Scheduled'}),'upcoming');
-    for(const status of ['Postponed','Cancelled','Update pending','Time to be confirmed',''])assert.equal(controls.gameClassification({status}),'other');
+test('homepage status filters use provider state and keep a countdown out of Live',()=>{
+    const { eventType } = require('../home-sports.js');
+    const { aflState } = require('../home-welcome.js');
+    const now = Date.parse('2026-11-06T00:00:00Z');
+    const inFiveMinutes = new Date(now + 5 * 60000);
+    const countdown = aflState({status:'SCHEDULED'}, inFiveMinutes, now);
+    assert.equal(countdown.isCountdown, true);
+    assert.equal(eventType({startTime:inFiveMinutes,state:countdown},now),'upcoming');
+    const started = new Date(now - 60000);
+    for (const [status, stale, type] of [['LIVE', false, 'live'], ['LIVE', true, 'other'], ['CONCLUDED', false, 'results'], ['SCHEDULED', false, 'other'], ['POSTPONED', false, 'other']]) {
+        assert.equal(eventType({startTime:started,state:aflState({status},started,now,{stale})},now),type);
+    }
 });
 test('game filters combine league and type without changing the underlying selection',()=>{
     const games=[{sport:'f1',type:'results'},{sport:'f2',type:'upcoming'},{sport:'f3',type:'results'},{sport:'nba',type:'live'},{sport:'nba',type:'other'}];

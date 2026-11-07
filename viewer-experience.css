@@ -11,27 +11,34 @@ body { overscroll-behavior-y: none; }
 body.viewer-menu-open { overflow: hidden; }
 main, .hero-grid > *, .sports-grid > * { min-width: 0; }
 button, a, input { touch-action: manipulation; }
-a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
 .viewer-skip-link { position: fixed; top: 10px; left: 12px; z-index: 1000; transform: translateY(-160%); padding: 12px 18px; background: var(--surface); color: var(--accent-ink); border: 2px solid var(--accent); font: 700 .8rem var(--font-sans); }
 .viewer-skip-link:focus { transform: none; }
 .viewer-mobile-nav { display: none; }
 .f1-nav-family { position: relative; display: flex; align-self: stretch; }
-.f1-nav-family__menu { position: absolute; top: 100%; left: 0; z-index: 30; min-width: 88px; padding: 4px; border: 1px solid var(--rule); background: var(--surface); opacity: 0; visibility: hidden; transform: translateY(-4px); transition: opacity 160ms ease, transform 160ms ease, visibility 160ms; }
-.nav .f1-nav-family__menu a { display: block; color: var(--accent-ink); min-height: 32px; padding: 8px 12px; font-size: .62rem; }
-.f1-nav-family:hover .f1-nav-family__menu, .f1-nav-family:focus-within .f1-nav-family__menu { opacity: 1; visibility: visible; transform: none; }
-.viewer-f2-link { grid-column: 1 / -1; display: flex; gap: 8px; align-items: center; min-height: 38px; color: var(--muted); font-size: .65rem; text-decoration: none; padding-left: 12px; border-left: 2px solid var(--rule); }
+.nav .f1-nav-family[data-enhanced] > a { padding-inline: 13px 8px; }
+.nav .f1-nav-family .f1-nav-family__toggle { min-width: 40px; padding-inline: 8px; }
+.f1-nav-family[data-current] .f1-nav-family__toggle { border-bottom-color: #fff; }
+.f1-nav-family__menu { position: absolute; top: 100%; left: 0; z-index: 30; min-width: 100%; padding: 4px; border: 1px solid var(--rule); background: var(--surface); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-4px); transition: opacity 160ms ease, transform 160ms ease, visibility 160ms; }
+.nav .f1-nav-family__menu a { display: flex; align-items: center; color: var(--accent-ink); min-height: 40px; padding: 8px 12px; border: 0; font-size: .72rem; }
+.nav .f1-nav-family__menu a:is(:hover, [aria-current="page"]) { color: var(--accent-ink); background: var(--surface-4); }
+.topbar .f1-nav-family__menu a:focus-visible { outline-color: var(--accent-ink); outline-offset: -3px; }
+.f1-nav-family__menu[data-open="true"],
+.f1-nav-family:not([data-enhanced]):is(:hover, :focus-within) .f1-nav-family__menu { opacity: 1; visibility: visible; pointer-events: auto; transform: none; transition-property: opacity, transform; }
 .viewer-sports-drawer { width: min(540px, calc(100% - 24px)); max-height: calc(100dvh - 28px); margin: auto; padding: 22px; color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-top: 4px solid var(--accent); overflow-y: auto; }
 .viewer-sports-drawer::backdrop { background: rgba(3,23,16,.65); }
 .viewer-sports-drawer__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 22px; }
 .viewer-sports-drawer__head p { margin: 0 0 5px; font: 700 .6rem var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.viewer-sports-drawer__head h2 { margin: 0; color: var(--accent-ink); font: 700 2.8rem/1.1 var(--font-serif); letter-spacing: -.05em; }
-.viewer-sports-drawer__head button { width: 44px; height: 44px; color: var(--accent-ink); background: transparent; border: 1px solid var(--rule); font-size: 1.8rem; cursor: pointer; }
-.viewer-sports-drawer__links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px; }
-.viewer-sports-drawer__links a { display: flex; flex-direction: column; justify-content: center; gap: 5px; min-height: 70px; padding: 12px; color: var(--ink); text-decoration: none; border: 1px solid var(--rule); background: var(--surface); }
-.viewer-sports-drawer__links a[aria-current="page"] { color: var(--accent-ink); border-color: var(--accent-ink); background: var(--surface-4); }
-.viewer-sports-drawer__links strong { font: 700 1rem var(--font-serif); }
-.viewer-sports-drawer__links span { color: var(--muted); font-size: .61rem; }
+.viewer-sports-drawer__head h2 { margin: 0; color: var(--accent-ink); font: 700 clamp(1.8rem, 7vw, 2.8rem)/1.1 var(--font-serif); letter-spacing: -.05em; }
+.viewer-sports-drawer__head button { width: 44px; height: 44px; flex: 0 0 44px; color: var(--accent-ink); background: transparent; border: 1px solid var(--rule); font-size: 1.8rem; cursor: pointer; }
+.viewer-sports-drawer__links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px 14px; }
+.viewer-sports-drawer__group { display: grid; align-content: start; gap: 4px; }
+.viewer-sports-drawer__group h3 { margin: 0 0 3px; color: var(--muted); font: 700 .72rem var(--font-sans); }
+.viewer-sports-drawer__group a { display: flex; align-items: center; min-height: 44px; padding: 6px 10px; color: var(--ink); text-decoration: none; border: 1px solid var(--rule); background: var(--surface); font: 700 .95rem/1.25 var(--font-serif); }
+.viewer-sports-drawer__group a:is(:hover, .viewer-sports-drawer__active) { color: var(--accent-ink); border-color: var(--accent-ink); background: var(--surface-4); }
+.viewer-sports-drawer__group a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
 .viewer-drawer-theme { width: 100%; margin-top: 18px; min-height: 44px; padding: 10px; border: 1px solid var(--rule); color: var(--accent-ink); background: var(--surface-4); font: 700 .7rem var(--font-sans); cursor: pointer; }
+.viewer-drawer-theme[aria-pressed="true"] { border-color: var(--accent-ink); }
 .viewer-sports-drawer__foot { margin: 16px 0 0; color: var(--muted); font: italic .8rem var(--font-serif); }
 .viewer-site-footer { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-top: 38px; padding: 25px 0 8px; border-top: 2px solid var(--accent); }
 .viewer-site-footer__brand { color: var(--accent-ink); text-decoration: none; font: 800 2rem/1.1 var(--font-masthead); letter-spacing: -.06em; }
@@ -98,7 +105,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
     .nav--permanent > a, .nav--permanent .sport-nav__toggle { min-height: 44px; padding: 13px 11px 10px; flex-shrink: 0; }
     .nav--permanent .sport-family { flex-shrink: 0; }
     .nav--permanent .f1-nav-family { flex-shrink: 0; }
-    .nav--permanent .f1-nav-family__menu { display: none; }
+    .nav--permanent .f1-nav-family__menu, .nav--permanent .f1-nav-family .f1-nav-family__toggle { display: none; }
     .nav--permanent .sport-nav__dropdown { display: none; }
     .topbar .topbar-actions { display: none; }
     .hero { padding-top: 20px; }

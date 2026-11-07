@@ -2,6 +2,40 @@ const root='https://www.fia.com';
 const decode=text=>String(text||'').replace(/&amp;/g,'&').replace(/&#039;|&#39;|&apos;/g,"'").replace(/&quot;/g,'"').replace(/&nbsp;|&#160;/g,' ').replace(/&eacute;/g,'é');
 const plain=text=>decode(String(text||'').replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();
 const norm=text=>String(text||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const recordedLap = value => /^\d+:\d{2}\.\d+$/.test(value || '');
+const lapSeconds = time => time.split(':').reduce((total, part) => total * 60 + Number(part), 0);
+function fastestLap(results) {
+    const fastest = results.filter(row => recordedLap(row.bestLap)).sort((a, b) => lapSeconds(a.bestLap) - lapSeconds(b.bestLap))[0];
+    return fastest ? { driverId: fastest.driverId, time: fastest.bestLap, lap: fastest.bestLapNumber } : null;
+}
+export function keepSavedTiming(data, previous) {
+    if (previous?.season !== data.season) return;
+    for (const race of data.races) {
+        const savedRace = previous.races?.find(old => old.id === race.id);
+        for (const session of race.sessions) {
+            const saved = savedRace?.sessions.find(old => old.id === session.id && old.startTime === session.startTime);
+            if (session.state !== 'completed' || !session.startTime || !saved?.timingSource || saved.state !== 'completed') continue;
+            const savedRows = new Map(saved.results.filter(row => row.driverId && recordedLap(row.bestLap)).map(row => [row.driverId, row]));
+            let retained = 0;
+            session.results = session.results.map(row => {
+                const old = savedRows.get(row.driverId);
+                if (row.bestLap || row.timingSource || !old || old.number !== row.number) return row;
+                retained++;
+                return { ...row, bestLap: old.bestLap, bestLapNumber: old.bestLapNumber, timingSource: old.timingSource || saved.timingSource };
+            });
+            if (!retained) continue;
+            session.timingRetained = retained;
+            session.timingSource ||= saved.timingSource;
+            if (saved.pdfTimingSource) session.pdfTimingSource ||= saved.pdfTimingSource;
+            session.fastestLap = fastestLap(session.results);
+            session.timingCoverage = { matched: session.results.filter(row => row.timingSource).length, total: session.results.length };
+        }
+    }
+    if (data.timingCoverage) {
+        data.timingCoverage.availableSessions = data.races.flatMap(race => race.sessions)
+            .filter(session => session.timingSource && session.results.some(row => recordedLap(row.bestLap))).length;
+    }
+}
 export function canReuseSession(session,cached,now=Date.now()){
     const started=Date.parse(cached?.startTime),updated=Date.parse(cached?.updatedAt);
     return session.state==='completed'&&Boolean(cached?.results?.length)&&Number.isFinite(started)&&now-started>72*3600000&&Number.isFinite(updated)&&now-updated<7*86400000;
@@ -30,11 +64,10 @@ export function enrichRows(session,classification,url){
         const driverWords=String(row.name||'').trim().split(/\s+/);const last=norm(driverWords.at(-1));
         if(!last||!norm(record.Driver).endsWith(last))return row;
         matched++;
-        const lap=/^\d+:\d{2}\.\d+$/.test(record['Best lap'])?record['Best lap']:null;
+        const lap=recordedLap(record['Best lap'])?record['Best lap']:null;
         return {...row,...(lap?{bestLap:lap,bestLapNumber:Number(record['Best lap lap'])||null}:{}),gap:row.gap??record['Gap first'],interval:row.interval??record['Gap previous'],timingSource:url};
     });
-    const known=results.filter(row=>/^\d+:\d{2}\.\d+$/.test(row.bestLap||'')).sort((a,b)=>{const seconds=t=>t.split(':').reduce((x,y)=>x*60+Number(y),0);return seconds(a.bestLap)-seconds(b.bestLap);});
-    return {...session,results,timingSource:url,timingCoverage:{matched,total:results.length},fastestLap:known.length?{driverId:known[0].driverId,time:known[0].bestLap,lap:known[0].bestLapNumber}:null};
+    return {...session,results,timingSource:url,timingCoverage:{matched,total:results.length},fastestLap:fastestLap(results)};
 }
 function links(html,prefix){return [...new Set([...html.matchAll(/href="([^"]+)"/g)].map(match=>decode(match[1])).filter(path=>path.startsWith(prefix)&&/classification$/.test(path)))];}
 const request=async(url,fetcher)=>{const response=await fetcher(url,{signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error(`FIA HTTP ${response.status}`);return response.text();};

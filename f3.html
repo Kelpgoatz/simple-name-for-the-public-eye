@@ -4,15 +4,17 @@
     <script src="team-names.js"></script>
     <script src="viewer-favourites.js"></script>
     <meta charset="UTF-8">
+    <script src="viewer-theme.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="Formula 3 race weekends, session classifications and championship standings.">
     <title>F3 Fixtures & Standings | cgrillo</title>
-    <script>try{document.documentElement.dataset.theme=localStorage.getItem('cgrillo-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}</script>
+    <link rel="canonical" href="https://www.cgrillo.com/f3.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
     <link rel="stylesheet" href="editorial.css">
     <link rel="stylesheet" href="sports.css">
     <script src="editorial.js" defer></script>
     <script src="fixture-slider.js"></script>
+    <script src="snapshot-loader.js" defer></script>
     <script src="sports.js" defer></script>
     <script src="feeder-results.js"></script>
     <script src="weekend-progress.js" defer></script>
@@ -67,7 +69,7 @@
             <section class="hero" aria-labelledby="f3-heading">
                 <div class="sports-heading"><div><p class="sports-kicker" data-f3-season>Current season</p><h2 id="f3-heading">Formula 3</h2></div><p class="sports-timezone">All session times in Sydney time</p></div>
                 <p class="sports-notice" data-f3-notice hidden role="status"></p>
-                <p class="sports-empty" data-f3-loading>Loading official F3 fixtures and results…</p>
+                <div data-f3-loading><p class="sports-empty">Loading official F3 fixtures and results…</p></div>
                 <section class="viewer-dashboard f3-profile" data-f3-profile hidden aria-label="Current season profile"></section>
                 <div class="hero-grid sports-grid" data-f3-view hidden>
                     <section class="fixtures-card" aria-labelledby="f3-fixtures-title">

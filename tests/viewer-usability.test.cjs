@@ -89,7 +89,7 @@ function ladderHarness(){
     const sidebar=new Element('aside');doc.body=new Element('body');doc.activeElement=doc.body;doc.createElement=tag=>new Element(tag);doc.querySelector=selector=>selector==='[data-home-ladders]'?sidebar:null;
     const empty=url=>url==='standings.json'||url==='afl-fixtures.json'?[]:url==='f1-fixtures.json'?{season:2026,races:[]}:url==='drivers-championship.json'?{season:2026,drivers_championship:[]}:url==='constructors-championship.json'?{season:2026,constructors_championship:[]}:{groups:[],standings:[],tournament:{}};
     const nba={sport:'nba',seasonLabel:'2026–27',seasonStart:'2026-10-01',seasonEnd:'2027-06-20',groups:[],standings:[{id:'east',label:'Eastern Conference',rows:[{rank:1,team:{id:'14',name:'Miami Heat',abbreviation:'MIA'},wins:5,losses:1}]}]};
-    const context={module:{exports:{}},document:doc,window:{HomeWelcome:{getScope:()=>scope},addEventListener:(name,callback)=>{handlers[name]=callback;}},ViewerFavourites:{get:()=>prefs},TeamNames:{label:(_sport,name)=>name},SportIdentity:{apply(){}},Date:class extends Date{static now(){return Date.parse('2026-11-06T00:00:00Z');}},setInterval(){},fetch:async url=>{requests.push(url);return{ok:mode!=='failed',json:async()=>mode==='nba'&&url==='sports-data/nba.json'?nba:empty(url)};}};
+    const context={module:{exports:{}},document:doc,window:{HomeWelcome:{getScope:()=>scope},addEventListener:(name,callback)=>{handlers[name]=callback;}},ViewerFavourites:{get:()=>prefs},TeamNames:{label:(_sport,name)=>name},SportIdentity:{apply(){}},Date:class extends Date{static now(){return Date.parse('2026-11-06T00:00:00Z');}},queueMicrotask,SportsSnapshots:{read:async url=>{requests.push(url);if(mode==='failed')throw new Error('Unavailable');return mode==='nba'&&url==='sports-data/nba.json'?nba:empty(url);}}};
     vm.runInNewContext(fs.readFileSync(require.resolve('../home-ladders.js'),'utf8'),context);
     const content=node=>[node.textContent,...node.children.map(content)].join(' ');
     return{doc,sidebar,prefs,handlers,requests,content:()=>content(sidebar),setMode:value=>{mode=value;},setScope:value=>{scope=value;},start:()=>context.module.exports.init(doc)};
@@ -113,7 +113,10 @@ test('failed ladder requests stay visible across scope changes and recover throu
 test('a later ladder failure keeps valid standings and identifies the saved update',async()=>{
     const app=ladderHarness();app.setMode('nba');app.start();await settle();
     assert.match(app.content(),/Miami Heat/);
+    const initialRequests = app.requests.length;
     app.setMode('failed');await app.handlers['viewer-favourites-change']();
+    assert.equal(app.requests.length,initialRequests,'updating favourites reuses the same loaded sources');
+    await app.handlers['viewer-home-refresh']();
     assert.match(app.content(),/Miami Heat/);
     assert.match(app.content(),/NBA ladder updates are unavailable/);
     assert.match(app.content(),/Showing saved standings/);

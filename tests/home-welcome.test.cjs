@@ -17,7 +17,12 @@ test('AFL status uses provider confirmation, and postponements override times an
     const postponed=aflState({status:'POSTPONED',homeScore:0,awayScore:0},start,now);assert.equal(postponed.isTbc,true);assert.equal(postponed.isLive,false);assert.equal(postponed.isFinished,false);
     const countdown=aflState({status:'SCHEDULED'},start,start.getTime()-5*60000);assert.equal(countdown.isCountdown,true);assert.equal(countdown.isLive,false);
     assert.equal(aflState({status:'SCHEDULED'},null,now).isScheduled,true);
-    const oldLive=aflState({status:'LIVE'},start,start.getTime()+9*3600000);assert.equal(oldLive.isLive,false);assert.equal(oldLive.isPending,true);
+    const oldLive=aflState({status:'LIVE'},start,start.getTime()+4*3600000+1);assert.equal(oldLive.isLive,false);assert.equal(oldLive.isPending,true);
+    for (const status of ['DELAYED', 'SUSPENDED', 'ABANDONED']) {
+        const state=aflState({status},start,start.getTime()-60000);
+        assert.equal(state.isTbc,true);
+        assert.equal(state.isCountdown,false);
+    }
 });
 
 test('homepage snapshots distinguish empty fixtures from corrupt or wrong-competition data',()=>{
@@ -39,7 +44,7 @@ test('next start uses the next timed racing session and links to that session',(
 });
 test('next start excludes past, postponed and unknown-time events, and feeder links preserve source IDs',()=>{
     const home=require('../home-welcome.js'),progress=require('../weekend-progress.js'),now=Date.parse('2026-11-06T10:00:00Z');
-    const games=[{sport:'nba',startTime:new Date(now-1000),match:{status:'scheduled'}},{sport:'nrl',startTime:new Date(now+60000),match:{status:'postponed'}}];
+    const games=[{sport:'nba',startTime:new Date(now-1000),match:{status:'scheduled'}},{sport:'nrl',startTime:new Date(now+60000),match:{status:'postponed'}},...['DELAYED','SUSPENDED','ABANDONED'].map(status=>({sport:'afl',startTime:new Date(now+60000),match:{status}}))];
     assert.equal(home.nextEvent(games,{now,progress}),null);
     const id='f2/race?meeting=1&session=2';const next=home.nextEvent([{sport:'f2',f2Race:{round:14,name:'Race weekend',sessions:[{id,label:'Feature Race',startTime:'2026-11-07T10:00:00Z',results:[]}]}}],{now,progress});
     assert.equal(new URL(next.href,'https://example.com').searchParams.get('session'),id);

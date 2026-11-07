@@ -9,13 +9,23 @@
         const identities=items=>{const seen=new Set();return(Array.isArray(items)?items:[]).filter(item=>item&&typeof item==='object'&&sports.includes(item.sport)&&['string','number'].includes(typeof item.id)&&String(item.id).trim().length>0&&String(item.id).length<=150&&typeof item.name==='string').map(item=>({sport:item.sport,id:String(item.id).trim(),name:item.name.trim().slice(0,160)})).filter(item=>{const id=item.sport+':'+item.id;if(seen.has(id))return false;seen.add(id);return true;}).slice(0,100);};
         return{leagues,teams:identities(input.teams),drivers:identities(input.drivers)};
     }
-    function get(){if(memoryOnly)return clean(memory);let raw;try{raw=root.localStorage.getItem(key);}catch{memoryOnly=true;return clean(memory);}try{memory=raw?clean(JSON.parse(raw)):empty();}catch{memory=empty();}return clean(memory);}
+    function get(){if(memoryOnly)return clean(memory);let raw;try{raw=root.localStorage.getItem(key);}catch{memoryOnly=true;persisted=false;return clean(memory);}try{memory=raw?clean(JSON.parse(raw)):empty();}catch{memory=empty();}return clean(memory);}
     function save(snapshot){memory=clean(snapshot);persisted=true;try{root.localStorage.setItem(key,JSON.stringify(memory));memoryOnly=false;}catch{persisted=false;memoryOnly=true;}if(root.dispatchEvent&&root.CustomEvent)root.dispatchEvent(new root.CustomEvent('viewer-favourites-change',{detail:clean(memory)}));return clean(memory);}
     const isLeague=sport=>get().leagues.includes(sport);
-    const isTeam=(sport,id)=>get().teams.some(item=>item.sport===sport&&item.id===String(id));
-    const isDriver=(sport,id)=>get().drivers.some(item=>item.sport===sport&&item.id===String(id));
+    const isTeam=(sport,id)=>get().teams.some(item=>item.sport===sport&&item.id===String(id).trim());
+    const isDriver=(sport,id)=>get().drivers.some(item=>item.sport===sport&&item.id===String(id).trim());
     function toggleLeague(sport){if(!sports.includes(sport))return get();const snapshot=get();snapshot.leagues=snapshot.leagues.includes(sport)?snapshot.leagues.filter(item=>item!==sport):[...snapshot.leagues,sport];return save(snapshot);}
-    function toggleIdentity(kind,sport,id,name){if(!sports.includes(sport)||!['string','number'].includes(typeof id)||!String(id).trim())return get();const snapshot=get(),identifier=String(id);const exists=snapshot[kind].some(item=>item.sport===sport&&item.id===identifier);snapshot[kind]=exists?snapshot[kind].filter(item=>item.sport!==sport||item.id!==identifier):[...snapshot[kind],{sport,id:identifier,name:String(name||id)}];return save(snapshot);}
+    function toggleIdentity(kind,sport,id,name){
+        if(!sports.includes(sport)||!['string','number'].includes(typeof id))return get();
+        const identifier=String(id).trim();
+        if(!identifier||identifier.length>150)return get();
+        const snapshot=get();
+        const index=snapshot[kind].findIndex(item=>item.sport===sport&&item.id===identifier);
+        if(index>=0)snapshot[kind].splice(index,1);
+        else if(snapshot[kind].length<100)snapshot[kind].push({sport,id:identifier,name:String(name||id)});
+        else return snapshot;
+        return save(snapshot);
+    }
     const toggleTeam=(sport,id,name)=>toggleIdentity('teams',sport,id,name);
     const toggleDriver=(sport,id,name)=>toggleIdentity('drivers',sport,id,name);
     const hasAny=()=>{const value=get();return Boolean(value.leagues.length||value.teams.length||value.drivers.length);};
@@ -41,7 +51,21 @@
         let pendingFocus=null;
         const route=()=>{const slug=location.pathname.split('/').pop()?.replace(/\.html$/,'');const query=new URLSearchParams(location.search);return{sport:sports.includes(slug)?slug:sports.includes(query.get('sport'))?query.get('sport'):null,query};};
         const button=(kind,sport,id,name)=>{const node=doc.createElement('button');node.type='button';node.className='viewer-star';node.dataset.favouriteKind=kind;node.dataset.favouriteSport=sport;node.dataset.favouriteId=id||'';node.dataset.favouriteName=name;node.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg>';return node;};
-        const updateButtons=()=>{const snapshot=get();doc.querySelectorAll('[data-favourite-kind]').forEach(node=>{const {favouriteKind:kind,favouriteSport:sport,favouriteId:id,favouriteName:name}=node.dataset;const selected=kind==='league'?snapshot.leagues.includes(sport):snapshot[kind==='driver'?'drivers':'teams'].some(item=>item.sport===sport&&item.id===id);node.setAttribute('aria-pressed',String(selected));const label=`${selected?'Unstar':'Star'} ${name}`;node.setAttribute('aria-label',label);node.title=label+' · Saved on this device only';});};
+        const updateButtons=()=>{
+            const snapshot=get();
+            const rows=new Set();
+            doc.querySelectorAll('[data-favourite-kind]').forEach(node=>{
+                const {favouriteKind:kind,favouriteSport:sport,favouriteId:id,favouriteName:name}=node.dataset;
+                const selected=kind==='league'?snapshot.leagues.includes(sport):snapshot[kind==='driver'?'drivers':'teams'].some(item=>item.sport===sport&&item.id===id);
+                node.setAttribute('aria-pressed',String(selected));
+                const label=`${selected?'Unstar':'Star'} ${name}`;
+                node.setAttribute('aria-label',label);
+                node.title=label+' · Saved on this device only';
+                const row=node.closest('tr');
+                if(row)rows.add(row);
+            });
+            rows.forEach(row=>row.classList.toggle('viewer-favourite-row',Boolean(row.querySelector('.viewer-star[aria-pressed="true"]'))));
+        };
         function decorate(){
             const {sport,query}=route();
             const heading=sport&&(doc.querySelector('.sports-heading h2')||doc.querySelector(`#${sport}-fixtures-title`));
@@ -50,9 +74,10 @@
             const profile=doc.querySelector('#f1-profile-heading')||doc.querySelector('.viewer-profile-head h2');
             const identityKind=query.has('team')?'team':query.has('driver')?'driver':null;
             if(sport&&identityKind&&profile&&!profile.querySelector('.viewer-star'))profile.appendChild(button(identityKind,sport,query.get(identityKind),profile.textContent.trim()));
-            doc.querySelectorAll('.ladder-card a[href], .standings-panel a[href], .f2-results a[href]').forEach(anchor=>{
+            doc.querySelectorAll('.ladder-card a[href], .standings-panel a[href], .f2-results a[href], .f3-results a[href]').forEach(anchor=>{
                 if(anchor.dataset.favouriteDecorated||anchor.closest('.viewer-star'))return;
                 let target;try{target=new URL(anchor.href,location.href);}catch{return;}
+                if(target.origin!==location.origin)return;
                 const targetSlug=target.pathname.split('/').pop();const team=target.searchParams.get('team');const driver=target.searchParams.get('driver');
                 const targetSport=targetSlug==='sport-view.html'?target.searchParams.get('sport'):targetSlug==='f1.html'?'f1':targetSlug==='f2.html'?'f2':targetSlug==='f3.html'?'f3':null;
                 if(!sports.includes(targetSport)||(!team&&!driver))return;
@@ -70,8 +95,16 @@
         doc.addEventListener('pointerdown',()=>{pendingFocus=null;});
         doc.addEventListener('keydown',()=>{pendingFocus=null;});
         root.addEventListener('viewer-favourites-change',updateButtons);
-        root.addEventListener('storage',event=>{if(event.key===key||event.key===null){memory=empty();memoryOnly=false;const snapshot=get();root.dispatchEvent(new root.CustomEvent('viewer-favourites-change',{detail:snapshot}));}});
-        let pending=false;const observer=new MutationObserver(()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;decorate();});});observer.observe(doc.body,{childList:true,subtree:true});decorate();
+        root.addEventListener('storage',event=>{if(!memoryOnly&&(event.key===key||event.key===null)){const snapshot=get();root.dispatchEvent(new root.CustomEvent('viewer-favourites-change',{detail:snapshot}));}});
+        const regions='.sports-heading, .home-league-heading, .ladder-card, .standings-panel, .f2-results, .f3-results, .viewer-profile-head, .f1-profile, [data-afl-games], [data-home-ladders]';
+        let pending=false;
+        const observer=new MutationObserver(changes=>{
+            if(pending||!changes.some(change=>change.target.closest?.(regions)||[...change.addedNodes].some(node=>node.matches?.(regions)||node.querySelector?.(regions))))return;
+            pending=true;
+            requestAnimationFrame(()=>{pending=false;decorate();});
+        });
+        observer.observe(doc.body,{childList:true,subtree:true});
+        decorate();
     }
     return{get,toggleLeague,toggleTeam,toggleDriver,isLeague,isTeam,isDriver,hasAny,clear,init,clean,restoreStarFocus,storageKey:key};
 });

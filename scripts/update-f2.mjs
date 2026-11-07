@@ -1,6 +1,6 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
 import {embeddedObjects,findObject,normalizeSession,image,officialNationality} from './lib/f2-source.mjs';
-import {enrichFiaSeason,canReuseSession} from './lib/fia-feeder-classifications.mjs';
+import {enrichFiaSeason,canReuseSession,keepSavedTiming} from './lib/fia-feeder-classifications.mjs';
 import {enrichFiaPdfSeason} from './lib/fia-feeder-pdf.mjs';
 const year=Number(process.argv.find(value=>/^20\d\d$/.test(value))||new Date().getUTCFullYear());
 const base='https://www.fiaformula2.com',output=new URL('../f2-data.json',import.meta.url),now=new Date();
@@ -55,6 +55,7 @@ const teams=teamSource.standings.map(row=>({id:String(row.teamKey),name:row.team
 const data={season:year,updatedAt:now.toISOString(),source:{name:'FIA Formula 2',url:`${base}/en/racing/${year}`,drivers:`${base}/en/standings/${year}/drivers`,teams:`${base}/en/standings/${year}/teams`},coverage:{complete:failures.length===0,failed:failures},races,drivers,teams};
 await enrichFiaSeason(data,{series:'f2',refreshAll:process.argv.includes('--refresh-all')});
 await enrichFiaPdfSeason(data,{series:'f2',refreshAll:process.argv.includes('--refresh-all')});
+keepSavedTiming(data,previous);
 const temp=new URL('../f2-data.json.tmp',import.meta.url);await writeFile(temp,JSON.stringify(data,null,2)+'\n');await rename(temp,output);
 console.log(`F2 ${year}: ${races.length} rounds, ${races.flatMap(r=>r.sessions).filter(s=>s.results.length).length} classified sessions, ${drivers.length} drivers, ${teams.length} teams; ${failures.length} unavailable selections`);
 if(failures.length)process.exitCode=1;

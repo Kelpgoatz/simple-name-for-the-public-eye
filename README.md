@@ -4,8 +4,9 @@ individual performances. It uses a royal-green, paper-and-serif visual style.
 The shared newspaper design lives in `editorial.css`, with the article reading
 layout in `editorial-articles.css`. All seventeen pages use the same cgrillo wordmark,
 royal-green navigation, solid paper surfaces and local fonts from `fonts/`.
-`editorial.js` displays the masthead date in Sydney time. Theme switching keeps
-the shared typography and solid surfaces, including the new lowercase-c favicon.
+`editorial.js` displays the masthead date in Sydney time. `viewer-theme.js` sets
+light or dark mode before styles load. It follows the system until a reader
+chooses a theme and saves that choice using the existing `cgrillo-theme` key.
 Sports links remain permanently visible in the green navigation. AFL, NRL and
 NBA have family menus for AFL/AFLW, NRL/NRLW and NBA/WNBA: hover to preview the
 links, or click to expand them inside the bar. Expanded families suppress their
@@ -37,16 +38,12 @@ All fixture pages share `fixture-slider.css` and `fixture-slider.js`: a visible
 filled track, consistent thumb and five spaced round/week/date shortcuts.
 Shortcuts use the same input handler as dragging and keyboard navigation.
 
-The homepage groups games by league. Today includes live games and starts within
-three hours either side of now. Upcoming covers the next 24 hours, reduced to 16 hours
-for NBA and WNBA. Yesterday uses Sydney dates, with NBA/WNBA results also limited to the past
-16 hours. F1 appears first in Upcoming with its wider five-day race-week view;
-recent F1 results remain visible for three days.
-AFLW, NRL, NRLW, NBA, WNBA, NBL, NFL and nearest-Grand-Slam tennis use `home-sports.js` and the same
-compact match layout as AFL, linking to the relevant date/round and tennis tour.
-Categories appear when a league has games in that date window. Compact F1 cards link to the
-race and show its podium plus a time-only fastest-lap badge. A purple marker
-identifies a podium driver who set the fastest lap; upcoming results show TBC.
+The homepage groups games by league under Live now, Upcoming and Recent results.
+The default view uses short windows around the current date, with longer windows
+for F1 race weekends. Show full week expands the board to Monday–Sunday in
+Sydney time. Team and tournament cards link to their relevant game or draw.
+Compact F1 cards link to their exact weekend session and show a podium and
+fastest-lap time when published. F2 and F3 appear when followed.
 
 F1 fixtures are in `f1.html`, with WDC/WCC standings, a round slider, circuit
 layouts, full race classifications and fastest laps. Times use the visitor's
@@ -236,7 +233,8 @@ archive, rather than claiming complete ATP/WTA career statistics. Verified title
 tables may extend beyond those game-record windows; missing honours are not
 inferred from a first-place regular-season finish.
 
-F2 is a small hover/focus sublink beneath the direct F1 navigation link. Its
+The Formula racing button next to the direct F1 link opens Formula 2 and Formula
+3 on desktop. The phone Sports menu lists all three under Motorsport. F2's
 current-year fixtures, session classifications, standings, driver/team profiles
 and national flags come from official Formula 2 calendar/timing/profile data.
 `node scripts/update-f2.mjs` refreshes `f2-data.json`; its workflow runs every half
@@ -278,23 +276,65 @@ All 25 completed F2 races and 19 F3 races in the initial snapshot have recorded
 best laps; individual DNS/no-time rows stay unavailable. Starting grids are
 never inferred from qualifying or reversed-grid rules.
 Classifications from the last 72 hours refresh on every import to pick up
-official corrections; older completed sessions use the seven-day cache.
+official corrections. Older completed sessions use the seven-day cache. If
+supplemental FIA timing is unavailable on a later import, exact matching
+session and driver lap records can be retained with their source.
 
 Install the pinned importer dependency with `npm ci --prefix scripts` before
 running the F2/F3 updaters locally. PDF.js is used only by the importers; it is not
 downloaded by the website. Both GitHub workflows install it from the lockfile.
 
 `viewer-discovery.js/css` adds an accessible search dialog for competitions,
-teams and F1/F2/F3 drivers, plus a Following manager. Its static-data index loads
-on first use; queries are filtered on the device and are not sent to a search
-service. The keyboard shortcut is `/` outside form fields. Phone users can open
-Search or Manage stars from the sports drawer.
+teams and F1/F2/F3 drivers, plus a Following manager. Competition links and saved
+stars are available immediately. Team and driver queries load the relevant saved
+lists, with a retry for unavailable sources. Search runs on the device. The
+keyboard shortcut is `Ctrl+K` or `Command+K` outside form fields. Phone users
+can open Search or Manage stars from the sports drawer.
 
-The homepage toolbar in `home-controls.js/css` filters the existing overview by
-All, Live, Upcoming or Results and competition, with counts and an empty-state
-reset. It preserves the established time windows and favourite settings.
+The homepage toolbar in `home-controls.js/css` filters by status and competition,
+with counts and an empty-state reset. `home-scoreboard.js` and `home-ladders.js`
+render independently as sources arrive. The developer-note form opens an email
+draft. Its history is local to the browser and sending happens in the mail app.
 Team dashboards now include linked recent results and fixture-phase filters;
 the selected phase applies to records, player leaders and the round slider.
 Game centres include pregame records, earlier head-to-head meetings in the same
 phase and leading recorded performances. No later result is used in a pregame
 comparison. Tennis labels retained draws by their actual match years.
+
+## Local development and verification
+
+The site serves the root HTML, CSS, JavaScript and JSON files directly. It
+needs no browser build step or API credentials for local review. Start the
+PyCharm built-in HTTP server and open `index.html` through it so the browser
+can fetch the saved JSON. The Node importers and weekly recap tool are separate
+from the browser. Run the existing test suites with Node.
+
+```sh
+node --test tests/*.test.cjs
+node --test weekly-sports-recaps/test/*.test.mjs
+```
+
+`snapshot-loader.js` gives first-party JSON reads an eight-second deadline and
+shares overlapping requests for the same file. Components validate their own
+data and can retain the last good result while retrying. League fixtures and
+standings can render independently from the same JSON file. F1 separates
+calendar, standings and session loads, and the Game Centre shows match facts
+before optional player and career snapshots are ready.
+
+The review prioritised errors that could misreport an AFL game or hide usable
+data during a partial outage. It also addressed lost FIA lap timing,
+duplicate homepage reads, inconsistent theme startup, and keyboard access to
+navigation and scrollable data. Existing provider imports, competition URLs
+and browser preference keys are used by the updated flows.
+
+For local review, try a phone-width layout, both themes, search and stars, then
+reload a round or session bookmark. Try the team and Game Centre profiles and
+use DevTools to block one JSON file and recover with its retry control. Check a
+developer-note draft using a configured email app.
+
+The browser uses snapshots, so coverage and freshness depend on the scheduled
+imports and source availability. Formula 1 uses the browser time zone and the
+homepage and other competition pages use Sydney time. Historical coverage and
+unavailable statistics are described on the affected pages. The highest-value
+follow-up is to monitor snapshot freshness and incomplete timing coverage
+across scheduled imports.

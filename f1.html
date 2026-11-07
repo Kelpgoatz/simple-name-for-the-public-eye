@@ -4,8 +4,10 @@
     <script src="team-names.js"></script>
     <script src="viewer-favourites.js"></script>
     <meta charset="UTF-8">
+    <script src="viewer-theme.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>F1 Fixtures &amp; Championships</title>
+    <title>Formula 1 Race Calendar, Results &amp; Championships | cgrillo</title>
+    <link rel="canonical" href="https://www.cgrillo.com/f1.html">
     <meta name="description" content="Formula 1 fixtures, circuit maps, full race results, fastest laps and World Drivers’ and Constructors’ Championship standings.">
     <style>
         :root {
@@ -819,6 +821,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" id="favicon">
     <link rel="stylesheet" href="editorial.css">
     <link rel="stylesheet" href="standings.css">
+    <script src="snapshot-loader.js"></script>
     <script src="sports.js"></script>
     <script src="editorial.js" defer></script>
     <script src="fixture-slider.js"></script>
@@ -896,8 +899,8 @@
                     <aside class="ladder-card" aria-labelledby="f1-ladder-title">
                         <div class="ladder-card__head">
                             <div class="tab-group" role="tablist" aria-label="F1 championship">
-                                <button class="tab tab--active" type="button" id="tab-drivers" role="tab" aria-controls="championship-panel" aria-label="World Drivers’ Championship" aria-selected="true" data-tab="drivers">WDC</button>
-                                <button class="tab" type="button" id="tab-constructors" role="tab" aria-controls="championship-panel" aria-label="World Constructors’ Championship" aria-selected="false" tabindex="-1" data-tab="constructors">WCC</button>
+                                <button class="tab tab--active" type="button" id="tab-drivers" role="tab" aria-controls="championship-panel" aria-label="WDC · World Drivers’ Championship" aria-selected="true" data-tab="drivers">WDC</button>
+                                <button class="tab" type="button" id="tab-constructors" role="tab" aria-controls="championship-panel" aria-label="WCC · World Constructors’ Championship" aria-selected="false" tabindex="-1" data-tab="constructors">WCC</button>
                             </div>
                             <span data-ladder-season>2026</span>
                         </div>

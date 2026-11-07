@@ -3,6 +3,29 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const api=import('../scripts/lib/fia-feeder-pdf.mjs');
 const item=(str,x,y)=>({str,transform:[1,0,0,1,x,y]});
+test('missing FIA timing can retain exact prior lap records without restoring old classifications', async () => {
+    const {keepSavedTiming} = await import('../scripts/lib/fia-feeder-classifications.mjs');
+    const session = {
+        id:'sprint', state:'completed', startTime:'2026-09-05T12:00:00Z',
+        results:[{driverId:'a',number:1,position:2}, {driverId:'b',number:5,position:1}, {driverId:'c',number:3,timingSource:'fresh'}]
+    };
+    const saved = {
+        ...session, timingSource:'https://www.fia.com/timing.pdf',
+        results:[
+            {driverId:'a',number:1,position:1,bestLap:'1:34.123',bestLapNumber:14},
+            {driverId:'b',number:2,bestLap:'1:31.123'},
+            {driverId:'c',number:3,bestLap:'1:32.123'}
+        ]
+    };
+    const wrap = session => ({season:2026,races:[{id:'monza',sessions:[session]}]});
+    keepSavedTiming(wrap(session),wrap(saved));
+    assert.equal(session.results[0].position,2);
+    assert.equal(session.results[0].bestLap,'1:34.123');
+    assert.equal(session.results[1].bestLap,undefined);
+    assert.equal(session.results[2].bestLap,undefined);
+    assert.deepEqual(session.fastestLap,{driverId:'a',time:'1:34.123',lap:14});
+    assert.equal(session.timingRetained,1);
+});
 test('timing PDF rows use explicit column headers and never confuse race times with fastest laps',async()=>{
     const {classificationItems}=await api;
     const items=[item('NO',41,650),item('DRIVER',61,650),item('NAT TEAM',156,650),item('TIME',339,650),item('FASTEST',495,650),item('ON',537,650),item('1',31,630),item('7',49,630),item('Alex EXAMPLE',61,630),item('Team',174,630),item('51:05.855',334,630),item('1:33.031',495,630),item('27',537,630)];

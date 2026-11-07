@@ -29,5 +29,13 @@
             return {...row,gapText,isFastest:lap!=null&&lap===leaderLap,lapSeconds:lap};
         });
     }
-    return {lapSeconds,defaultGap,fastest,hasFastestLaps,gridText,rows};
+    function validateSnapshot(data) {
+        const records = value => Array.isArray(value) && value.every(row => row && typeof row === 'object' && !Array.isArray(row));
+        if (!Number.isInteger(data?.season) || !records(data.drivers) || !records(data.teams) || !records(data.races) ||
+            data.races.some(race => !Number.isInteger(race.round) || !records(race.sessions) || race.sessions.some(session => !records(session.results)))) {
+            throw new Error('Invalid feeder-series snapshot');
+        }
+        return data;
+    }
+    return {lapSeconds,defaultGap,fastest,hasFastestLaps,gridText,rows,validateSnapshot};
 });

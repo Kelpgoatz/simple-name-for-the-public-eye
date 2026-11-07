@@ -20,6 +20,7 @@ body.discovery-open { overflow: hidden; }
 .discovery-filters label { display: flex; flex-direction: column; gap: 6px; font-size: .62rem; color: var(--muted); }
 .discovery-filters select { width: 100%; min-height: 44px; padding: 9px 10px; border: 1px solid var(--rule); border-radius: 0; color: var(--ink); background: var(--surface); font: 600 .7rem var(--font-sans); }
 .discovery-status { min-height: 24px; margin: 16px 0 6px; color: var(--muted); font-size: .66rem; line-height: 1.6; }
+.discovery-retry { min-height: 44px; margin-bottom: 10px; padding: 8px 12px; color: var(--accent-ink); background: var(--surface); border: 1px solid var(--rule); font: 700 .72rem var(--font-sans); cursor: pointer; }
 .discovery-results { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; padding: 0; margin: 0; list-style: none; }
 .discovery-result { display: flex; align-items: center; gap: 3px; min-width: 0; background: var(--surface); border: 1px solid var(--rule); }
 .discovery-result > a { display: flex; flex: 1; flex-direction: column; min-width: 0; gap: 5px; padding: 13px; color: var(--ink); text-decoration: none; }

@@ -25,3 +25,10 @@ test('blocked browser storage retains preferences for the visit and toggle remov
     api.toggleTeam('f2','674','Invicta Racing');assert.equal(api.isTeam('f2','674'),false);assert.equal(api.hasAny(),true);
     api.clear();assert.equal(api.hasAny(),false);
 });
+test('surrounding whitespace does not create duplicate or unremovable favourite IDs',()=>{
+    const {api}=setup();
+    api.toggleTeam('nba',' 14 ','Miami Heat');
+    assert.equal(api.isTeam('nba',' 14 '),true);
+    api.toggleTeam('nba','14','Miami Heat');
+    assert.equal(api.hasAny(),false);
+});
