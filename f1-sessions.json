@@ -32911,9 +32911,364 @@
           "label": "Q",
           "date": "2026-11-07",
           "startTime": "2026-11-07T18:00:00Z",
-          "source": "https://api.jolpi.ca/ergast/f1/2026/20/qualifying/?limit=100",
-          "status": "PENDING",
-          "results": []
+          "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/qualifying",
+          "status": "CONCLUDED",
+          "results": [
+            {
+              "driverId": "norris",
+              "driver": {
+                "name": "Lando",
+                "surname": "Norris",
+                "number": 1
+              },
+              "teamId": "mclaren",
+              "position": "1",
+              "lapsCompleted": 24,
+              "q1": "1:30.939",
+              "q2": "1:29.207",
+              "q3": "1:27.470",
+              "timingSegment": "Q3",
+              "bestLap": "1:27.470"
+            },
+            {
+              "driverId": "russell",
+              "driver": {
+                "name": "George",
+                "surname": "Russell",
+                "number": 63
+              },
+              "teamId": "mercedes",
+              "position": "2",
+              "lapsCompleted": 23,
+              "q1": "1:31.206",
+              "q2": "1:26.745",
+              "q3": "1:27.674",
+              "timingSegment": "Q3",
+              "bestLap": "1:27.674"
+            },
+            {
+              "driverId": "antonelli",
+              "driver": {
+                "name": "Andrea",
+                "surname": "Kimi Antonelli",
+                "number": 12
+              },
+              "teamId": "mercedes",
+              "position": "3",
+              "lapsCompleted": 23,
+              "q1": "1:32.229",
+              "q2": "1:29.302",
+              "q3": "1:28.095",
+              "timingSegment": "Q3",
+              "bestLap": "1:28.095"
+            },
+            {
+              "driverId": "leclerc",
+              "driver": {
+                "name": "Charles",
+                "surname": "Leclerc",
+                "number": 16
+              },
+              "teamId": "ferrari",
+              "position": "4",
+              "lapsCompleted": 22,
+              "q1": "1:32.121",
+              "q2": "1:28.082",
+              "q3": "1:28.289",
+              "timingSegment": "Q3",
+              "bestLap": "1:28.289"
+            },
+            {
+              "driverId": "lawson",
+              "driver": {
+                "name": "Liam",
+                "surname": "Lawson",
+                "number": 30
+              },
+              "teamId": "rb",
+              "position": "5",
+              "lapsCompleted": 24,
+              "q1": "1:32.085",
+              "q2": "1:27.049",
+              "q3": "1:28.321",
+              "timingSegment": "Q3",
+              "bestLap": "1:28.321"
+            },
+            {
+              "driverId": "hulkenberg",
+              "driver": {
+                "name": "Nico",
+                "surname": "Hulkenberg",
+                "number": 27
+              },
+              "teamId": "audi",
+              "position": "6",
+              "lapsCompleted": 23,
+              "q1": "1:31.693",
+              "q2": "1:28.361",
+              "q3": "1:28.668",
+              "timingSegment": "Q3",
+              "bestLap": "1:28.668"
+            },
+            {
+              "driverId": "hadjar",
+              "driver": {
+                "name": "Isack",
+                "surname": "Hadjar",
+                "number": 6
+              },
+              "teamId": "red_bull",
+              "position": "7",
+              "lapsCompleted": 24,
+              "q1": "1:32.059",
+              "q2": "1:27.218",
+              "q3": "1:28.763",
+              "timingSegment": "Q3",
+              "bestLap": "1:28.763"
+            },
+            {
+              "driverId": "bearman",
+              "driver": {
+                "name": "Oliver",
+                "surname": "Bearman",
+                "number": 87
+              },
+              "teamId": "haas",
+              "position": "8",
+              "lapsCompleted": 22,
+              "q1": "1:33.030",
+              "q2": "1:29.130",
+              "q3": "1:29.831",
+              "timingSegment": "Q3",
+              "bestLap": "1:29.831"
+            },
+            {
+              "driverId": "alonso",
+              "driver": {
+                "name": "Fernando",
+                "surname": "Alonso",
+                "number": 14
+              },
+              "teamId": "aston_martin",
+              "position": "9",
+              "lapsCompleted": 23,
+              "q1": "1:32.092",
+              "q2": "1:29.072",
+              "q3": "1:30.311",
+              "timingSegment": "Q3",
+              "bestLap": "1:30.311"
+            },
+            {
+              "driverId": "albon",
+              "driver": {
+                "name": "Alex",
+                "surname": "Albon",
+                "number": 23
+              },
+              "teamId": "williams",
+              "position": "10",
+              "lapsCompleted": 24,
+              "q1": "1:33.150",
+              "q2": "1:28.918",
+              "q3": "1:30.456",
+              "timingSegment": "Q3",
+              "bestLap": "1:30.456"
+            },
+            {
+              "driverId": "hamilton",
+              "driver": {
+                "name": "Lewis",
+                "surname": "Hamilton",
+                "number": 44
+              },
+              "teamId": "ferrari",
+              "position": "11",
+              "lapsCompleted": 13,
+              "q1": "1:31.666",
+              "q2": "1:30.001",
+              "q3": null,
+              "timingSegment": "Q2",
+              "bestLap": "1:30.001"
+            },
+            {
+              "driverId": "piastri",
+              "driver": {
+                "name": "Oscar",
+                "surname": "Piastri",
+                "number": 81
+              },
+              "teamId": "mclaren",
+              "position": "12",
+              "lapsCompleted": 20,
+              "q1": "1:32.251",
+              "q2": "1:30.369",
+              "q3": null,
+              "timingSegment": "Q2",
+              "bestLap": "1:30.369"
+            },
+            {
+              "driverId": "rafael_camara",
+              "driver": {
+                "name": "Rafael",
+                "surname": "Câmara",
+                "number": 51
+              },
+              "teamId": "haas",
+              "position": "13",
+              "lapsCompleted": 18,
+              "q1": "1:32.809",
+              "q2": "1:31.515",
+              "q3": null,
+              "timingSegment": "Q2",
+              "bestLap": "1:31.515"
+            },
+            {
+              "driverId": "lindblad",
+              "driver": {
+                "name": "Arvid",
+                "surname": "Lindblad",
+                "number": 41
+              },
+              "teamId": "rb",
+              "position": "14",
+              "lapsCompleted": 16,
+              "q1": "1:32.306",
+              "q2": "1:31.687",
+              "q3": null,
+              "timingSegment": "Q2",
+              "bestLap": "1:31.687"
+            },
+            {
+              "driverId": "sainz",
+              "driver": {
+                "name": "Carlos",
+                "surname": "Sainz",
+                "number": 55
+              },
+              "teamId": "williams",
+              "position": "15",
+              "lapsCompleted": 19,
+              "q1": "1:32.959",
+              "q2": "1:31.785",
+              "q3": null,
+              "timingSegment": "Q2",
+              "bestLap": "1:31.785"
+            },
+            {
+              "driverId": "max_verstappen",
+              "driver": {
+                "name": "Max",
+                "surname": "Verstappen",
+                "number": 3
+              },
+              "teamId": "red_bull",
+              "position": "16",
+              "lapsCompleted": 9,
+              "q1": "1:31.238",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:31.238"
+            },
+            {
+              "driverId": "colapinto",
+              "driver": {
+                "name": "Franco",
+                "surname": "Colapinto",
+                "number": 43
+              },
+              "teamId": "alpine",
+              "position": "17",
+              "lapsCompleted": 12,
+              "q1": "1:33.327",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:33.327"
+            },
+            {
+              "driverId": "gasly",
+              "driver": {
+                "name": "Pierre",
+                "surname": "Gasly",
+                "number": 10
+              },
+              "teamId": "alpine",
+              "position": "18",
+              "lapsCompleted": 12,
+              "q1": "1:33.449",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:33.449"
+            },
+            {
+              "driverId": "stroll",
+              "driver": {
+                "name": "Lance",
+                "surname": "Stroll",
+                "number": 18
+              },
+              "teamId": "aston_martin",
+              "position": "19",
+              "lapsCompleted": 11,
+              "q1": "1:33.653",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:33.653"
+            },
+            {
+              "driverId": "bottas",
+              "driver": {
+                "name": "Valtteri",
+                "surname": "Bottas",
+                "number": 77
+              },
+              "teamId": "cadillac",
+              "position": "20",
+              "lapsCompleted": 12,
+              "q1": "1:33.774",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:33.774"
+            },
+            {
+              "driverId": "perez",
+              "driver": {
+                "name": "Sergio",
+                "surname": "Pérez",
+                "number": 11
+              },
+              "teamId": "cadillac",
+              "position": "21",
+              "lapsCompleted": 12,
+              "q1": "1:34.509",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:34.509"
+            },
+            {
+              "driverId": "bortoleto",
+              "driver": {
+                "name": "Gabriel",
+                "surname": "Bortoleto",
+                "number": 5
+              },
+              "teamId": "audi",
+              "position": "22",
+              "lapsCompleted": 5,
+              "q1": "1:41.564",
+              "q2": null,
+              "q3": null,
+              "timingSegment": "Q1",
+              "bestLap": "1:41.564"
+            }
+          ],
+          "apiSource": "https://api.jolpi.ca/ergast/f1/2026/20/qualifying/?limit=100",
+          "checkedDate": "2026-11-07"
         }
       }
     },
