@@ -32912,7 +32912,7 @@
           "date": "2026-11-07",
           "startTime": "2026-11-07T18:00:00Z",
           "source": "https://api.jolpi.ca/ergast/f1/2026/20/qualifying/?limit=100",
-          "status": "SCHEDULED",
+          "status": "PENDING",
           "results": []
         }
       }
