@@ -26,7 +26,7 @@
         "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
         "teamId": "mercedes"
       },
-      "points": 380,
+      "points": 390,
       "position": 1,
       "wins": 9
     },
@@ -51,8 +51,33 @@
         "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
         "teamId": "red_bull"
       },
-      "points": 261,
+      "points": 279,
       "position": 2,
+      "wins": 3
+    },
+    {
+      "driverId": "russell",
+      "driver": {
+        "name": "George",
+        "surname": "Russell",
+        "nationality": "British",
+        "birthday": "1998-02-15",
+        "number": 63,
+        "shortName": "RUS",
+        "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)"
+      },
+      "teamId": "mercedes",
+      "team": {
+        "teamName": "Mercedes Formula 1 Team",
+        "country": "German",
+        "firstAppareance": 1954,
+        "constructorsChampionships": 8,
+        "driversChampionships": 9,
+        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+        "teamId": "mercedes"
+      },
+      "points": 262,
+      "position": 3,
       "wins": 3
     },
     {
@@ -76,34 +101,9 @@
         "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
         "teamId": "ferrari"
       },
-      "points": 259,
-      "position": 3,
-      "wins": 1
-    },
-    {
-      "driverId": "russell",
-      "driver": {
-        "name": "George",
-        "surname": "Russell",
-        "nationality": "British",
-        "birthday": "1998-02-15",
-        "number": 63,
-        "shortName": "RUS",
-        "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)"
-      },
-      "teamId": "mercedes",
-      "team": {
-        "teamName": "Mercedes Formula 1 Team",
-        "country": "German",
-        "firstAppareance": 1954,
-        "constructorsChampionships": 8,
-        "driversChampionships": 9,
-        "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
-        "teamId": "mercedes"
-      },
-      "points": 250,
+      "points": 261,
       "position": 4,
-      "wins": 3
+      "wins": 1
     },
     {
       "driverId": "leclerc",
@@ -126,7 +126,7 @@
         "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
         "teamId": "ferrari"
       },
-      "points": 245,
+      "points": 251,
       "position": 5,
       "wins": 1
     },
@@ -151,9 +151,9 @@
         "url": "https://en.wikipedia.org/wiki/McLaren",
         "teamId": "mclaren"
       },
-      "points": 221,
+      "points": 246,
       "position": 6,
-      "wins": 2
+      "wins": 3
     },
     {
       "driverId": "piastri",
@@ -176,7 +176,7 @@
         "url": "https://en.wikipedia.org/wiki/McLaren",
         "teamId": "mclaren"
       },
-      "points": 144,
+      "points": 152,
       "position": 7,
       "wins": 0
     },
@@ -201,7 +201,7 @@
         "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
         "teamId": "red_bull"
       },
-      "points": 107,
+      "points": 122,
       "position": 8,
       "wins": 0
     },
@@ -226,7 +226,7 @@
         "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
         "teamId": "red_bull"
       },
-      "points": 83,
+      "points": 87,
       "position": 9,
       "wins": 0
     },
@@ -376,7 +376,7 @@
         "url": "https://en.wikipedia.org/wiki/Audi_in_Formula_One",
         "teamId": "audi"
       },
-      "points": 13,
+      "points": 14,
       "position": 15,
       "wins": 0
     },
