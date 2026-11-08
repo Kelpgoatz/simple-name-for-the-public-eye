@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-08T07:54:38.633Z",
-  "fixturesUpdatedAt": "2026-11-08T07:54:38.633Z",
-  "standingsUpdatedAt": "2026-11-08T07:54:38.633Z",
+  "updatedAt": "2026-11-08T14:59:37.546Z",
+  "fixturesUpdatedAt": "2026-11-08T14:59:37.546Z",
+  "standingsUpdatedAt": "2026-11-08T14:59:37.546Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4259,8 +4259,8 @@
         {
           "id": "401873038",
           "startTime": "2026-11-08T14:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "5:57 - 1st",
           "venue": "Santiago Bernabéu",
           "home": {
             "id": "1",
@@ -4276,8 +4276,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
             "color": "#fb4f14"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 7,
+          "awayScore": 7,
           "winner": null
         },
         {
