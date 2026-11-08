@@ -3,7 +3,7 @@
   "url": "https://api.jolpi.ca/ergast/f1/2026/driverstandings/",
   "season": 2026,
   "championshipId": "f1_2026",
-  "total": 24,
+  "total": 25,
   "drivers_championship": [
     {
       "driverId": "antonelli",
@@ -603,6 +603,27 @@
       },
       "points": 0,
       "position": 24,
+      "wins": 0
+    },
+    {
+      "driverId": "rafael_camara",
+      "driver": {
+        "name": "Rafael",
+        "surname": "Camara",
+        "number": null
+      },
+      "teamId": "haas",
+      "team": {
+        "teamName": "Haas F1 Team",
+        "country": "American",
+        "firstAppareance": 2016,
+        "constructorsChampionships": null,
+        "driversChampionships": null,
+        "url": "https://en.wikipedia.org/wiki/Haas_F1_Team",
+        "teamId": "haas"
+      },
+      "points": 0,
+      "position": 25,
       "wins": 0
     }
   ]
