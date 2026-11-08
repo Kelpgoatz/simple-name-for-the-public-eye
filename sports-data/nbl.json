@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-08T01:33:25.963Z",
-  "fixturesUpdatedAt": "2026-11-08T01:33:25.963Z",
-  "standingsUpdatedAt": "2026-11-08T01:33:25.963Z",
+  "updatedAt": "2026-11-08T07:54:38.633Z",
+  "fixturesUpdatedAt": "2026-11-08T07:54:38.633Z",
+  "standingsUpdatedAt": "2026-11-08T07:54:38.633Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2222,8 +2222,8 @@
         {
           "id": "401875307",
           "startTime": "2026-11-08T04:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "9",
@@ -2239,15 +2239,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/pnx.png",
             "color": "#69bf29"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 110,
+          "awayScore": 99,
+          "winner": "home"
         },
         {
           "id": "401875296",
           "startTime": "2026-11-08T06:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "0:05 - 4th",
           "venue": "",
           "home": {
             "id": "7",
@@ -2263,8 +2263,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
             "color": "#f69138"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 92,
+          "awayScore": 98,
           "winner": null
         }
       ]
@@ -5305,6 +5305,26 @@
         {
           "rank": 1,
           "team": {
+            "id": "9",
+            "name": "Sydney Kings",
+            "abbreviation": "SYD",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
+            "color": "#552583"
+          },
+          "wins": 8,
+          "losses": 3,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.72727275,
+          "gamesBehind": 0,
+          "for": 1089,
+          "against": 980
+        },
+        {
+          "rank": 2,
+          "team": {
             "id": "10",
             "name": "Tasmania JackJumpers",
             "abbreviation": "TAS",
@@ -5321,26 +5341,6 @@
           "gamesBehind": 0,
           "for": 1035,
           "against": 985
-        },
-        {
-          "rank": 2,
-          "team": {
-            "id": "9",
-            "name": "Sydney Kings",
-            "abbreviation": "SYD",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
-            "color": "#552583"
-          },
-          "wins": 7,
-          "losses": 3,
-          "draws": 0,
-          "played": 10,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.7,
-          "gamesBehind": 0.5,
-          "for": 979,
-          "against": 881
         },
         {
           "rank": 3,
@@ -5452,15 +5452,15 @@
             "color": "#69bf29"
           },
           "wins": 4,
-          "losses": 6,
+          "losses": 7,
           "draws": 0,
-          "played": 10,
+          "played": 11,
           "points": null,
           "percentage": null,
-          "winPct": 0.4,
-          "gamesBehind": 3.5,
-          "for": 969,
-          "against": 943
+          "winPct": 0.36363637,
+          "gamesBehind": 4,
+          "for": 1068,
+          "against": 1053
         },
         {
           "rank": 9,
