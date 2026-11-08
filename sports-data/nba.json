@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-07T22:22:01.243Z",
-  "fixturesUpdatedAt": "2026-11-07T22:22:01.243Z",
-  "standingsUpdatedAt": "2026-11-07T22:22:01.243Z",
+  "updatedAt": "2026-11-08T01:33:25.963Z",
+  "fixturesUpdatedAt": "2026-11-08T01:33:25.963Z",
+  "standingsUpdatedAt": "2026-11-08T01:33:25.963Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -5082,8 +5082,8 @@
         {
           "id": "401909938",
           "startTime": "2026-11-07T22:00:00.000Z",
-          "status": "live",
-          "statusDetail": "7:52 - 1st",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Arena CDMX",
           "home": {
             "id": "11",
@@ -5099,15 +5099,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
             "color": "#0e2240"
           },
-          "homeScore": 7,
-          "awayScore": 12,
-          "winner": null
+          "homeScore": 102,
+          "awayScore": 114,
+          "winner": "away"
         },
         {
           "id": "401909939",
           "startTime": "2026-11-08T00:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "3:53 - 2nd",
           "venue": "State Farm Arena",
           "home": {
             "id": "1",
@@ -5123,15 +5123,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
             "color": "#000000"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 50,
+          "awayScore": 61,
           "winner": null
         },
         {
           "id": "401909940",
           "startTime": "2026-11-08T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "3:07 - 1st",
           "venue": "Rocket Arena",
           "home": {
             "id": "5",
@@ -5147,15 +5147,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
             "color": "#1d428a"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 16,
+          "awayScore": 17,
           "winner": null
         },
         {
           "id": "401909941",
           "startTime": "2026-11-08T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "2:24 - 1st",
           "venue": "Paycom Center",
           "home": {
             "id": "25",
@@ -5171,8 +5171,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
             "color": "#e31837"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 21,
+          "awayScore": 16,
           "winner": null
         },
         {
@@ -6974,32 +6974,8 @@
           "winner": null
         },
         {
-          "id": "401910005",
-          "startTime": "2026-11-18T03:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
-          "venue": "crypto.com Arena",
-          "home": {
-            "id": "13",
-            "name": "Los Angeles Lakers",
-            "abbreviation": "LAL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-            "color": "#552583"
-          },
-          "away": {
-            "id": "30",
-            "name": "Charlotte Hornets",
-            "abbreviation": "CHA",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
-            "color": "#008ca8"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
           "id": "401910006",
-          "startTime": "2026-11-18T04:00:00.000Z",
+          "startTime": "2026-11-18T03:30:00.000Z",
           "status": "scheduled",
           "statusDetail": "Scheduled",
           "venue": "Intuit Dome",
@@ -7016,6 +6992,30 @@
             "abbreviation": "UTAH",
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
             "color": "#4e008e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401910005",
+          "startTime": "2026-11-18T04:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "crypto.com Arena",
+          "home": {
+            "id": "13",
+            "name": "Los Angeles Lakers",
+            "abbreviation": "LAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "30",
+            "name": "Charlotte Hornets",
+            "abbreviation": "CHA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+            "color": "#008ca8"
           },
           "homeScore": null,
           "awayScore": null,
@@ -32033,26 +32033,6 @@
         {
           "rank": 10,
           "team": {
-            "id": "11",
-            "name": "Indiana Pacers",
-            "abbreviation": "IND",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
-            "color": "#0c2340"
-          },
-          "wins": 3,
-          "losses": 6,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.33333334,
-          "gamesBehind": 4.5,
-          "for": 1001,
-          "against": 1028
-        },
-        {
-          "rank": 11,
-          "team": {
             "id": "30",
             "name": "Charlotte Hornets",
             "abbreviation": "CHA",
@@ -32069,6 +32049,26 @@
           "gamesBehind": 5,
           "for": 963,
           "against": 1102
+        },
+        {
+          "rank": 11,
+          "team": {
+            "id": "11",
+            "name": "Indiana Pacers",
+            "abbreviation": "IND",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+            "color": "#0c2340"
+          },
+          "wins": 3,
+          "losses": 7,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.3,
+          "gamesBehind": 5,
+          "for": 1103,
+          "against": 1142
         },
         {
           "rank": 12,
@@ -32325,16 +32325,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
             "color": "#0e2240"
           },
-          "wins": 4,
+          "wins": 5,
           "losses": 3,
           "draws": 0,
-          "played": 7,
+          "played": 8,
           "points": null,
           "percentage": null,
-          "winPct": 0.5714286,
-          "gamesBehind": 2.5,
-          "for": 808,
-          "against": 803
+          "winPct": 0.625,
+          "gamesBehind": 2,
+          "for": 922,
+          "against": 905
         },
         {
           "rank": 10,
