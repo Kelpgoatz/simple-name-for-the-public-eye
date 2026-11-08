@@ -14,6 +14,7 @@
     },
     "bahrain_2026": {},
     "belgian_2026": {},
+    "brazilian_2026": {},
     "british_2026": {
       "antonelli": [
         {
@@ -195,6 +196,11 @@
     "belgian_2026": {
       "status": "checked",
       "source": "https://www.formula1.com/en/results/2026/races/1290/belgium/race-result",
+      "unmatched": []
+    },
+    "brazilian_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result",
       "unmatched": []
     },
     "british_2026": {

@@ -7978,9 +7978,406 @@
       },
       "lengthKm": 4.309,
       "corners": 15,
-      "status": "SCHEDULED",
+      "status": "CONCLUDED",
       "fastestLap": null,
-      "results": [],
+      "results": [
+        {
+          "position": "1",
+          "grid": "1",
+          "driverId": "norris",
+          "driver": {
+            "name": "Lando",
+            "surname": "Norris",
+            "number": 1
+          },
+          "teamId": "mclaren",
+          "points": 25,
+          "time": "1:35:23.504",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "2",
+          "grid": "21",
+          "driverId": "max_verstappen",
+          "driver": {
+            "name": "Max",
+            "surname": "Verstappen",
+            "number": 3
+          },
+          "teamId": "red_bull",
+          "points": 18,
+          "time": "+14.602",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "3",
+          "grid": "5",
+          "driverId": "hadjar",
+          "driver": {
+            "name": "Isack",
+            "surname": "Hadjar",
+            "number": 6
+          },
+          "teamId": "red_bull",
+          "points": 15,
+          "time": "+24.485",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "4",
+          "grid": "7",
+          "driverId": "russell",
+          "driver": {
+            "name": "George",
+            "surname": "Russell",
+            "number": 63
+          },
+          "teamId": "mercedes",
+          "points": 12,
+          "time": "+33.991",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "5",
+          "grid": "2",
+          "driverId": "antonelli",
+          "driver": {
+            "name": "Andrea",
+            "surname": "Kimi Antonelli",
+            "number": 12
+          },
+          "teamId": "mercedes",
+          "points": 10,
+          "time": "+36.017",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "6",
+          "grid": "10",
+          "driverId": "piastri",
+          "driver": {
+            "name": "Oscar",
+            "surname": "Piastri",
+            "number": 81
+          },
+          "teamId": "mclaren",
+          "points": 8,
+          "time": "+56.475",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "7",
+          "grid": "14",
+          "driverId": "leclerc",
+          "driver": {
+            "name": "Charles",
+            "surname": "Leclerc",
+            "number": 16
+          },
+          "teamId": "ferrari",
+          "points": 6,
+          "time": "+1:13.586",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "8",
+          "grid": "3",
+          "driverId": "lawson",
+          "driver": {
+            "name": "Liam",
+            "surname": "Lawson",
+            "number": 30
+          },
+          "teamId": "rb",
+          "points": 4,
+          "time": "+1:15.402",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 71,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "9",
+          "grid": "20",
+          "driverId": "hamilton",
+          "driver": {
+            "name": "Lewis",
+            "surname": "Hamilton",
+            "number": 44
+          },
+          "teamId": "ferrari",
+          "points": 2,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "10",
+          "grid": "4",
+          "driverId": "hulkenberg",
+          "driver": {
+            "name": "Nico",
+            "surname": "Hulkenberg",
+            "number": 27
+          },
+          "teamId": "audi",
+          "points": 1,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "11",
+          "grid": "18",
+          "driverId": "lindblad",
+          "driver": {
+            "name": "Arvid",
+            "surname": "Lindblad",
+            "number": 41
+          },
+          "teamId": "rb",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "12",
+          "grid": "8",
+          "driverId": "alonso",
+          "driver": {
+            "name": "Fernando",
+            "surname": "Alonso",
+            "number": 14
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "13",
+          "grid": "13",
+          "driverId": "colapinto",
+          "driver": {
+            "name": "Franco",
+            "surname": "Colapinto",
+            "number": 43
+          },
+          "teamId": "alpine",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "14",
+          "grid": "15",
+          "driverId": "gasly",
+          "driver": {
+            "name": "Pierre",
+            "surname": "Gasly",
+            "number": 10
+          },
+          "teamId": "alpine",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "15",
+          "grid": "9",
+          "driverId": "albon",
+          "driver": {
+            "name": "Alex",
+            "surname": "Albon",
+            "number": 23
+          },
+          "teamId": "williams",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "16",
+          "grid": "19",
+          "driverId": "bortoleto",
+          "driver": {
+            "name": "Gabriel",
+            "surname": "Bortoleto",
+            "number": 5
+          },
+          "teamId": "audi",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "17",
+          "grid": "6",
+          "driverId": "bearman",
+          "driver": {
+            "name": "Oliver",
+            "surname": "Bearman",
+            "number": 87
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 70,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "18",
+          "grid": "22",
+          "driverId": "perez",
+          "driver": {
+            "name": "Sergio",
+            "surname": "Pérez",
+            "number": 11
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": "+2 laps",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 69,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "19",
+          "grid": "12",
+          "driverId": "sainz",
+          "driver": {
+            "name": "Carlos",
+            "surname": "Sainz",
+            "number": 55
+          },
+          "teamId": "williams",
+          "points": 0,
+          "time": "+2 laps",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 69,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "20",
+          "grid": "11",
+          "driverId": "rafael_camara",
+          "driver": {
+            "name": "Rafael",
+            "surname": "Camara",
+            "number": 51
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": "+2 laps",
+          "retired": null,
+          "fastLap": null,
+          "lapsCompleted": 69,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "21",
+          "grid": "16",
+          "driverId": "stroll",
+          "driver": {
+            "name": "Lance",
+            "surname": "Stroll",
+            "number": 18
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": null,
+          "lapsCompleted": 30,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        },
+        {
+          "position": "22",
+          "grid": "17",
+          "driverId": "bottas",
+          "driver": {
+            "name": "Valtteri",
+            "surname": "Bottas",
+            "number": 77
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null,
+          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+        }
+      ],
       "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/20/results/?limit=100"
     },
     {
@@ -8101,5 +8498,5 @@
       "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/23/results/?limit=100"
     }
   ],
-  "updatedAt": "2026-11-06T12:07:37.020Z"
+  "updatedAt": "2026-11-08T20:49:37.648Z"
 }
