@@ -2,7 +2,7 @@
   "sport": "tennis",
   "season": 2026,
   "seasonLabel": "US Open 2026",
-  "updatedAt": "2026-11-09T02:35:34.808Z",
+  "updatedAt": "2026-11-09T10:16:20.922Z",
   "source": {
     "name": "ESPN tennis scoreboard",
     "url": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/189-2026/competitionType/1"
@@ -18857,5 +18857,5 @@
     }
   ],
   "standings": [],
-  "notice": "US Open 2026 is the nearest Grand Slam with dates currently available from ESPN; no Grand Slam is currently in progress. 2027 Grand Slam dates have not yet been published by the source."
+  "notice": "US Open 2026 is the nearest Grand Slam with dates currently available from ESPN; no Grand Slam is currently in progress."
 }
