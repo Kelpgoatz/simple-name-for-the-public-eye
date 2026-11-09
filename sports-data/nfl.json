@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-09T10:16:20.922Z",
-  "fixturesUpdatedAt": "2026-11-09T10:16:20.922Z",
-  "standingsUpdatedAt": "2026-11-09T10:16:20.922Z",
+  "updatedAt": "2026-11-09T20:50:21.687Z",
+  "fixturesUpdatedAt": "2026-11-09T20:50:21.687Z",
+  "standingsUpdatedAt": "2026-11-09T20:50:21.687Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5087,24 +5087,24 @@
           "winner": null
         },
         {
-          "id": "401873069",
+          "id": "401873076",
           "startTime": "2026-11-22T18:00:00.000Z",
           "status": "scheduled",
           "statusDetail": "Scheduled",
-          "venue": "MetLife Stadium",
+          "venue": "Lincoln Financial Field",
           "home": {
-            "id": "19",
-            "name": "New York Giants",
-            "abbreviation": "NYG",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
-            "color": "#003c7f"
+            "id": "21",
+            "name": "Philadelphia Eagles",
+            "abbreviation": "PHI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+            "color": "#06424d"
           },
           "away": {
-            "id": "30",
-            "name": "Jacksonville Jaguars",
-            "abbreviation": "JAX",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
-            "color": "#007487"
+            "id": "23",
+            "name": "Pittsburgh Steelers",
+            "abbreviation": "PIT",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+            "color": "#000000"
           },
           "homeScore": null,
           "awayScore": null,
@@ -5183,24 +5183,24 @@
           "winner": null
         },
         {
-          "id": "401873076",
+          "id": "401873069",
           "startTime": "2026-11-22T21:25:00.000Z",
           "status": "scheduled",
           "statusDetail": "Scheduled",
-          "venue": "Lincoln Financial Field",
+          "venue": "MetLife Stadium",
           "home": {
-            "id": "21",
-            "name": "Philadelphia Eagles",
-            "abbreviation": "PHI",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-            "color": "#06424d"
+            "id": "19",
+            "name": "New York Giants",
+            "abbreviation": "NYG",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+            "color": "#003c7f"
           },
           "away": {
-            "id": "23",
-            "name": "Pittsburgh Steelers",
-            "abbreviation": "PIT",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
-            "color": "#000000"
+            "id": "30",
+            "name": "Jacksonville Jaguars",
+            "abbreviation": "JAX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+            "color": "#007487"
           },
           "homeScore": null,
           "awayScore": null,
