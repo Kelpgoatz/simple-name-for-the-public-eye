@@ -14,7 +14,26 @@
     },
     "bahrain_2026": {},
     "belgian_2026": {},
-    "brazilian_2026": {},
+    "brazilian_2026": {
+      "antonelli": [
+        {
+          "note": "5s time penalty — an unsafe release.",
+          "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result"
+        }
+      ],
+      "bearman": [
+        {
+          "note": "5s time penalty — an unsafe release.",
+          "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result"
+        }
+      ],
+      "leclerc": [
+        {
+          "note": "5s time penalty — collision.",
+          "source": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result"
+        }
+      ]
+    },
     "british_2026": {
       "antonelli": [
         {

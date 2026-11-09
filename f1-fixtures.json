@@ -7979,7 +7979,11 @@
       "lengthKm": 4.309,
       "corners": 15,
       "status": "CONCLUDED",
-      "fastestLap": null,
+      "fastestLap": {
+        "driverId": "antonelli",
+        "teamId": "mercedes",
+        "time": "1:12.689"
+      },
       "results": [
         {
           "position": "1",
@@ -7994,10 +7998,9 @@
           "points": 25,
           "time": "1:35:23.504",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:12.983",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 3
         },
         {
           "position": "2",
@@ -8012,10 +8015,9 @@
           "points": 18,
           "time": "+14.602",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:13.131",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 5
         },
         {
           "position": "3",
@@ -8030,10 +8032,9 @@
           "points": 15,
           "time": "+24.485",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:12.877",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 2
         },
         {
           "position": "4",
@@ -8048,10 +8049,9 @@
           "points": 12,
           "time": "+33.991",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.040",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 12
         },
         {
           "position": "5",
@@ -8064,12 +8064,11 @@
           },
           "teamId": "mercedes",
           "points": 10,
-          "time": "+36.017",
+          "time": "+41.017",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:12.689",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 1
         },
         {
           "position": "6",
@@ -8084,31 +8083,12 @@
           "points": 8,
           "time": "+56.475",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:13.018",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 4
         },
         {
           "position": "7",
-          "grid": "14",
-          "driverId": "leclerc",
-          "driver": {
-            "name": "Charles",
-            "surname": "Leclerc",
-            "number": 16
-          },
-          "teamId": "ferrari",
-          "points": 6,
-          "time": "+1:13.586",
-          "retired": null,
-          "fastLap": null,
-          "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
-        },
-        {
-          "position": "8",
           "grid": "3",
           "driverId": "lawson",
           "driver": {
@@ -8117,13 +8097,29 @@
             "number": 30
           },
           "teamId": "rb",
-          "points": 4,
+          "points": 6,
           "time": "+1:15.402",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:13.495",
           "lapsCompleted": 71,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 6
+        },
+        {
+          "position": "8",
+          "grid": "14",
+          "driverId": "leclerc",
+          "driver": {
+            "name": "Charles",
+            "surname": "Leclerc",
+            "number": 16
+          },
+          "teamId": "ferrari",
+          "points": 4,
+          "time": "+1:18.586",
+          "retired": null,
+          "fastLap": "1:14.170",
+          "lapsCompleted": 71,
+          "fastestLapRank": 13
         },
         {
           "position": "9",
@@ -8138,10 +8134,9 @@
           "points": 2,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:13.724",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 8
         },
         {
           "position": "10",
@@ -8156,10 +8151,9 @@
           "points": 1,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.000",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 9
         },
         {
           "position": "11",
@@ -8174,10 +8168,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.004",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 10
         },
         {
           "position": "12",
@@ -8192,10 +8185,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.706",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 18
         },
         {
           "position": "13",
@@ -8210,10 +8202,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:13.710",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 7
         },
         {
           "position": "14",
@@ -8228,10 +8219,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.462",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 15
         },
         {
           "position": "15",
@@ -8246,10 +8236,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.464",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 16
         },
         {
           "position": "16",
@@ -8264,10 +8253,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.940",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 19
         },
         {
           "position": "17",
@@ -8282,10 +8270,9 @@
           "points": 0,
           "time": "+1 lap",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.036",
           "lapsCompleted": 70,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 11
         },
         {
           "position": "18",
@@ -8300,10 +8287,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:16.123",
           "lapsCompleted": 69,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 20
         },
         {
           "position": "19",
@@ -8318,10 +8304,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.613",
           "lapsCompleted": 69,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 17
         },
         {
           "position": "20",
@@ -8336,10 +8321,9 @@
           "points": 0,
           "time": "+2 laps",
           "retired": null,
-          "fastLap": null,
+          "fastLap": "1:14.369",
           "lapsCompleted": 69,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 14
         },
         {
           "position": "21",
@@ -8354,10 +8338,9 @@
           "points": 0,
           "time": null,
           "retired": "Retired",
-          "fastLap": null,
+          "fastLap": "1:17.430",
           "lapsCompleted": 30,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": 21
         },
         {
           "position": "22",
@@ -8374,8 +8357,7 @@
           "retired": "Did not start",
           "fastLap": null,
           "lapsCompleted": 0,
-          "fastestLapRank": null,
-          "gridSource": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+          "fastestLapRank": null
         }
       ],
       "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/20/results/?limit=100"
@@ -8498,5 +8480,5 @@
       "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/23/results/?limit=100"
     }
   ],
-  "updatedAt": "2026-11-08T20:49:37.648Z"
+  "updatedAt": "2026-11-09T00:59:32.014Z"
 }
