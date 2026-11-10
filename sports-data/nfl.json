@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-10T02:59:07.324Z",
-  "fixturesUpdatedAt": "2026-11-10T02:59:07.324Z",
-  "standingsUpdatedAt": "2026-11-10T02:59:07.324Z",
+  "updatedAt": "2026-11-10T10:59:14.908Z",
+  "fixturesUpdatedAt": "2026-11-10T10:59:14.908Z",
+  "standingsUpdatedAt": "2026-11-10T10:59:14.908Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4571,8 +4571,8 @@
         {
           "id": "401873051",
           "startTime": "2026-11-10T01:15:00.000Z",
-          "status": "live",
-          "statusDetail": "Halftime",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "U.S. Bank Stadium",
           "home": {
             "id": "16",
@@ -4589,8 +4589,8 @@
             "color": "#00338d"
           },
           "homeScore": 6,
-          "awayScore": 10,
-          "winner": null
+          "awayScore": 23,
+          "winner": "away"
         }
       ]
     },
@@ -8289,16 +8289,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
             "color": "#00338d"
           },
-          "wins": 6,
+          "wins": 7,
           "losses": 1,
           "draws": 0,
-          "played": 7,
+          "played": 8,
           "points": null,
           "percentage": null,
-          "winPct": 0.85714287,
+          "winPct": 0.875,
           "gamesBehind": 0,
-          "for": 233,
-          "against": 181
+          "for": 256,
+          "against": 187
         },
         {
           "rank": 2,
@@ -8316,7 +8316,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.7777778,
-          "gamesBehind": 0,
+          "gamesBehind": 0.5,
           "for": 198,
           "against": 186
         },
@@ -8336,7 +8336,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.75,
-          "gamesBehind": 0.5,
+          "gamesBehind": 1,
           "for": 229,
           "against": 121
         },
@@ -8356,7 +8356,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.75,
-          "gamesBehind": 0.5,
+          "gamesBehind": 1,
           "for": 180,
           "against": 144
         },
@@ -8376,7 +8376,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.75,
-          "gamesBehind": 0.5,
+          "gamesBehind": 1,
           "for": 202,
           "against": 143
         },
@@ -8396,7 +8396,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.75,
-          "gamesBehind": 0.5,
+          "gamesBehind": 1,
           "for": 240,
           "against": 175
         },
@@ -8416,7 +8416,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5555556,
-          "gamesBehind": 2,
+          "gamesBehind": 2.5,
           "for": 211,
           "against": 207
         },
@@ -8436,7 +8436,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5555556,
-          "gamesBehind": 2,
+          "gamesBehind": 2.5,
           "for": 161,
           "against": 196
         },
@@ -8456,7 +8456,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.44444445,
-          "gamesBehind": 3,
+          "gamesBehind": 3.5,
           "for": 238,
           "against": 268
         },
@@ -8476,7 +8476,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.44444445,
-          "gamesBehind": 3,
+          "gamesBehind": 3.5,
           "for": 189,
           "against": 236
         },
@@ -8496,7 +8496,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.375,
-          "gamesBehind": 3.5,
+          "gamesBehind": 4,
           "for": 209,
           "against": 192
         },
@@ -8516,7 +8516,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.22222222,
-          "gamesBehind": 5,
+          "gamesBehind": 5.5,
           "for": 182,
           "against": 223
         },
@@ -8536,7 +8536,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.22222222,
-          "gamesBehind": 5,
+          "gamesBehind": 5.5,
           "for": 184,
           "against": 249
         },
@@ -8556,7 +8556,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.125,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 126,
           "against": 200
         },
@@ -8576,7 +8576,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.125,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 144,
           "against": 199
         },
@@ -8596,7 +8596,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0,
-          "gamesBehind": 6.5,
+          "gamesBehind": 7,
           "for": 121,
           "against": 219
         }
@@ -8629,22 +8629,22 @@
         {
           "rank": 2,
           "team": {
-            "id": "16",
-            "name": "Minnesota Vikings",
-            "abbreviation": "MIN",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-            "color": "#4f2683"
+            "id": "3",
+            "name": "Chicago Bears",
+            "abbreviation": "CHI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+            "color": "#0b1c3a"
           },
-          "wins": 6,
-          "losses": 1,
+          "wins": 7,
+          "losses": 2,
           "draws": 0,
-          "played": 7,
+          "played": 9,
           "points": null,
           "percentage": null,
-          "winPct": 0.85714287,
+          "winPct": 0.7777778,
           "gamesBehind": 0.5,
-          "for": 140,
-          "against": 93
+          "for": 241,
+          "against": 184
         },
         {
           "rank": 3,
@@ -8689,26 +8689,6 @@
         {
           "rank": 5,
           "team": {
-            "id": "3",
-            "name": "Chicago Bears",
-            "abbreviation": "CHI",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-            "color": "#0b1c3a"
-          },
-          "wins": 7,
-          "losses": 2,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.7777778,
-          "gamesBehind": 0.5,
-          "for": 241,
-          "against": 184
-        },
-        {
-          "rank": 6,
-          "team": {
             "id": "8",
             "name": "Detroit Lions",
             "abbreviation": "DET",
@@ -8725,6 +8705,26 @@
           "gamesBehind": 1,
           "for": 222,
           "against": 189
+        },
+        {
+          "rank": 6,
+          "team": {
+            "id": "16",
+            "name": "Minnesota Vikings",
+            "abbreviation": "MIN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+            "color": "#4f2683"
+          },
+          "wins": 6,
+          "losses": 2,
+          "draws": 0,
+          "played": 8,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.75,
+          "gamesBehind": 1,
+          "for": 146,
+          "against": 116
         },
         {
           "rank": 7,
