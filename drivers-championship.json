@@ -610,7 +610,11 @@
       "driver": {
         "name": "Rafael",
         "surname": "Camara",
-        "number": null
+        "number": 51,
+        "nationality": "Brazilian",
+        "birthday": "2005-05-05",
+        "shortName": "CAM",
+        "url": "https://en.wikipedia.org/wiki/Rafael_C%C3%A2mara"
       },
       "teamId": "haas",
       "team": {
