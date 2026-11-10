@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-09T20:50:21.687Z",
-  "fixturesUpdatedAt": "2026-11-09T20:50:21.687Z",
-  "standingsUpdatedAt": "2026-11-09T20:50:21.687Z",
+  "updatedAt": "2026-11-10T02:59:07.324Z",
+  "fixturesUpdatedAt": "2026-11-10T02:59:07.324Z",
+  "standingsUpdatedAt": "2026-11-10T02:59:07.324Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4571,8 +4571,8 @@
         {
           "id": "401873051",
           "startTime": "2026-11-10T01:15:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "Halftime",
           "venue": "U.S. Bank Stadium",
           "home": {
             "id": "16",
@@ -4588,8 +4588,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
             "color": "#00338d"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 6,
+          "awayScore": 10,
           "winner": null
         }
       ]
