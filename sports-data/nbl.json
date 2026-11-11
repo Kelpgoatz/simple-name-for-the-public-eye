@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-11T03:08:10.163Z",
-  "fixturesUpdatedAt": "2026-11-11T03:08:10.163Z",
-  "standingsUpdatedAt": "2026-11-11T03:08:10.163Z",
+  "updatedAt": "2026-11-11T11:09:19.363Z",
+  "fixturesUpdatedAt": "2026-11-11T11:09:19.363Z",
+  "standingsUpdatedAt": "2026-11-11T11:09:19.363Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2277,8 +2277,8 @@
         {
           "id": "401875326",
           "startTime": "2026-11-11T08:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "8",
@@ -2294,9 +2294,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
             "color": "#ce202f"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 110,
+          "awayScore": 120,
+          "winner": "away"
         }
       ]
     },
@@ -5445,6 +5445,26 @@
         {
           "rank": 8,
           "team": {
+            "id": "4",
+            "name": "Illawarra Hawks",
+            "abbreviation": "HWK",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
+            "color": "#ce202f"
+          },
+          "wins": 5,
+          "losses": 9,
+          "draws": 0,
+          "played": 14,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.35714287,
+          "gamesBehind": 4.5,
+          "for": 1362,
+          "against": 1460
+        },
+        {
+          "rank": 9,
+          "team": {
             "id": "8",
             "name": "South East Melbourne Phoenix",
             "abbreviation": "PNX",
@@ -5452,18 +5472,18 @@
             "color": "#69bf29"
           },
           "wins": 4,
-          "losses": 7,
+          "losses": 8,
           "draws": 0,
-          "played": 11,
+          "played": 12,
           "points": null,
           "percentage": null,
-          "winPct": 0.36363637,
-          "gamesBehind": 4,
-          "for": 1068,
-          "against": 1053
+          "winPct": 0.33333334,
+          "gamesBehind": 4.5,
+          "for": 1178,
+          "against": 1173
         },
         {
-          "rank": 9,
+          "rank": 10,
           "team": {
             "id": "6",
             "name": "New Zealand Breakers",
@@ -5481,26 +5501,6 @@
           "gamesBehind": 4.5,
           "for": 1073,
           "against": 1079
-        },
-        {
-          "rank": 10,
-          "team": {
-            "id": "4",
-            "name": "Illawarra Hawks",
-            "abbreviation": "HWK",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/hwk.png",
-            "color": "#ce202f"
-          },
-          "wins": 4,
-          "losses": 9,
-          "draws": 0,
-          "played": 13,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.30769232,
-          "gamesBehind": 5,
-          "for": 1242,
-          "against": 1350
         }
       ]
     }
