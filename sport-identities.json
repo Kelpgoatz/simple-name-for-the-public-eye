@@ -275,9 +275,8 @@
       "source": "https://www.fiaformula2.com/en/drivers/gabriele-mini"
     },
     "rafael_camara": {
-      "nationality": "Brazil",
-      "image": "https://flagcdn.com/w40/br.png",
-      "source": "https://www.fiaformula2.com/en/drivers/rafael-camara"
+      "nationality": "Brazilian",
+      "image": "https://flagcdn.com/w40/br.png"
     },
     "nikola_tsolov": {
       "nationality": "Bulgaria",
@@ -338,6 +337,6 @@
     "flags": "https://flagcdn.com/",
     "driverResults": "https://www.formula1.com/en/results/2026/drivers"
   },
-  "constructorsUpdatedAt": "2026-11-10T19:59:24.637Z",
-  "aflUpdatedAt": "2026-11-10T19:59:24.692Z"
+  "constructorsUpdatedAt": "2026-11-11T07:04:02.408Z",
+  "aflUpdatedAt": "2026-11-11T07:04:02.388Z"
 }
