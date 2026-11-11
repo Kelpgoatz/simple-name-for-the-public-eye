@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-11T16:39:05.819Z",
+  "updatedAt": "2026-11-11T23:07:30.396Z",
   "source": {
     "name": "FIA Formula 2",
     "url": "https://www.fiaformula2.com/en/racing/2026",
@@ -27505,7 +27505,7 @@
           "startTime": "2026-11-27T09:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         },
         {
           "id": "f2/qualifying?meeting=1301&session=0",
@@ -27514,7 +27514,7 @@
           "startTime": "2026-11-27T13:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         },
         {
           "id": "f2/race?meeting=1301&session=1",
@@ -27523,7 +27523,7 @@
           "startTime": "2026-11-28T10:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         },
         {
           "id": "f2/race?meeting=1301&session=2",
@@ -27532,7 +27532,7 @@
           "startTime": "2026-11-29T09:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         }
       ],
       "circuit": "Lusail International Circuit",
@@ -27556,7 +27556,7 @@
           "startTime": "2026-12-03T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         },
         {
           "id": "f2/qualifying?meeting=1302&session=0",
@@ -27565,7 +27565,7 @@
           "startTime": "2026-12-03T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         },
         {
           "id": "f2/race?meeting=1302&session=1",
@@ -27574,7 +27574,7 @@
           "startTime": "2026-12-04T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         },
         {
           "id": "f2/race?meeting=1302&session=2",
@@ -27583,7 +27583,7 @@
           "startTime": "2026-12-05T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-11T16:39:05.819Z"
+          "updatedAt": "2026-11-11T23:07:30.396Z"
         }
       ],
       "circuit": "Yas Marina Circuit",
@@ -28021,16 +28021,14 @@
     "source": "https://www.fia.com/events/formula-2-championship/season-2026/fia-formula-2",
     "availableSessions": 49,
     "totalSessions": 51,
-    "requestedSessions": 51,
+    "requestedSessions": 2,
     "unavailable": [
       "R10 Practice",
-      "R10 Qualifying",
-      "R10 Sprint Race",
-      "R10 Feature Race"
+      "R10 Qualifying"
     ]
   },
   "pdfTimingCoverage": {
-    "enrichedSessions": 2,
+    "enrichedSessions": 0,
     "unavailable": []
   }
 }
