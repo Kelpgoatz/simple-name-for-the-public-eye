@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-11T18:44:20.224Z",
-  "fixturesUpdatedAt": "2026-11-11T18:44:20.224Z",
-  "standingsUpdatedAt": "2026-11-11T18:44:20.224Z",
+  "updatedAt": "2026-11-12T01:03:27.891Z",
+  "fixturesUpdatedAt": "2026-11-12T01:03:27.891Z",
+  "standingsUpdatedAt": "2026-11-12T01:03:27.891Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -5782,8 +5782,8 @@
         {
           "id": "401909966",
           "startTime": "2026-11-12T00:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "1:40 - 2nd",
           "venue": "Gainbridge Fieldhouse",
           "home": {
             "id": "11",
@@ -5799,15 +5799,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
             "color": "#e31837"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 50,
+          "awayScore": 47,
           "winner": null
         },
         {
           "id": "401909967",
           "startTime": "2026-11-12T00:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "4:38 - 2nd",
           "venue": "Madison Square Garden",
           "home": {
             "id": "18",
@@ -5823,15 +5823,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
             "color": "#860038"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 46,
+          "awayScore": 47,
           "winner": null
         },
         {
           "id": "401909968",
           "startTime": "2026-11-12T00:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "5:54 - 2nd",
           "venue": "Scotiabank Arena",
           "home": {
             "id": "28",
@@ -5847,8 +5847,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
             "color": "#008348"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 56,
+          "awayScore": 35,
           "winner": null
         },
         {
