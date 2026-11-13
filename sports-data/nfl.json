@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-12T22:40:22.126Z",
-  "fixturesUpdatedAt": "2026-11-12T22:40:22.126Z",
-  "standingsUpdatedAt": "2026-11-12T22:40:22.126Z",
+  "updatedAt": "2026-11-13T02:57:54.178Z",
+  "fixturesUpdatedAt": "2026-11-13T02:57:54.178Z",
+  "standingsUpdatedAt": "2026-11-13T02:57:54.178Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4602,8 +4602,8 @@
         {
           "id": "401873052",
           "startTime": "2026-11-13T01:15:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "11:52 - 3rd",
           "venue": "MetLife Stadium",
           "home": {
             "id": "19",
@@ -4619,8 +4619,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
             "color": "#5a1414"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 7,
+          "awayScore": 10,
           "winner": null
         },
         {
