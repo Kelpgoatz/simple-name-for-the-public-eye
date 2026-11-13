@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-13T02:57:54.178Z",
-  "fixturesUpdatedAt": "2026-11-13T02:57:54.178Z",
-  "standingsUpdatedAt": "2026-11-13T02:57:54.178Z",
+  "updatedAt": "2026-11-13T10:49:14.962Z",
+  "fixturesUpdatedAt": "2026-11-13T10:49:14.962Z",
+  "standingsUpdatedAt": "2026-11-13T10:49:14.962Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2363,8 +2363,8 @@
         {
           "id": "401875310",
           "startTime": "2026-11-13T06:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final/OT",
           "venue": "",
           "home": {
             "id": "6",
@@ -2380,15 +2380,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
             "color": "#1f4fa2"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 94,
+          "awayScore": 90,
+          "winner": "home"
         },
         {
           "id": "401875299",
           "startTime": "2026-11-13T08:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "0:00 - 4th",
           "venue": "",
           "home": {
             "id": "3",
@@ -2404,8 +2404,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
             "color": "#552583"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 84,
+          "awayScore": 82,
           "winner": null
         }
       ]
@@ -5432,18 +5432,38 @@
             "color": "#1f4fa2"
           },
           "wins": 6,
-          "losses": 6,
+          "losses": 7,
           "draws": 0,
-          "played": 12,
+          "played": 13,
           "points": null,
           "percentage": null,
-          "winPct": 0.5,
-          "gamesBehind": 2.5,
-          "for": 1139,
-          "against": 1191
+          "winPct": 0.46153846,
+          "gamesBehind": 3,
+          "for": 1229,
+          "against": 1285
         },
         {
           "rank": 8,
+          "team": {
+            "id": "6",
+            "name": "New Zealand Breakers",
+            "abbreviation": "NZL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
+            "color": "#e33c95"
+          },
+          "wins": 5,
+          "losses": 8,
+          "draws": 0,
+          "played": 13,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.3846154,
+          "gamesBehind": 4,
+          "for": 1167,
+          "against": 1169
+        },
+        {
+          "rank": 9,
           "team": {
             "id": "4",
             "name": "Illawarra Hawks",
@@ -5463,7 +5483,7 @@
           "against": 1460
         },
         {
-          "rank": 9,
+          "rank": 10,
           "team": {
             "id": "8",
             "name": "South East Melbourne Phoenix",
@@ -5481,26 +5501,6 @@
           "gamesBehind": 4.5,
           "for": 1178,
           "against": 1173
-        },
-        {
-          "rank": 10,
-          "team": {
-            "id": "6",
-            "name": "New Zealand Breakers",
-            "abbreviation": "NZL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
-            "color": "#e33c95"
-          },
-          "wins": 4,
-          "losses": 8,
-          "draws": 0,
-          "played": 12,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.33333334,
-          "gamesBehind": 4.5,
-          "for": 1073,
-          "against": 1079
         }
       ]
     }

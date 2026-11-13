@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-13T02:57:54.178Z",
-  "fixturesUpdatedAt": "2026-11-13T02:57:54.178Z",
-  "standingsUpdatedAt": "2026-11-13T02:57:54.178Z",
+  "updatedAt": "2026-11-13T10:49:14.962Z",
+  "fixturesUpdatedAt": "2026-11-13T10:49:14.962Z",
+  "standingsUpdatedAt": "2026-11-13T10:49:14.962Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4602,8 +4602,8 @@
         {
           "id": "401873052",
           "startTime": "2026-11-13T01:15:00.000Z",
-          "status": "live",
-          "statusDetail": "11:52 - 3rd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "MetLife Stadium",
           "home": {
             "id": "19",
@@ -4619,9 +4619,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
             "color": "#5a1414"
           },
-          "homeScore": 7,
-          "awayScore": 10,
-          "winner": null
+          "homeScore": 21,
+          "awayScore": 24,
+          "winner": "away"
         },
         {
           "id": "401873053",
@@ -8656,15 +8656,15 @@
             "color": "#003c7f"
           },
           "wins": 5,
-          "losses": 2,
+          "losses": 3,
           "draws": 1,
-          "played": 8,
+          "played": 9,
           "points": null,
           "percentage": null,
-          "winPct": 0.6875,
-          "gamesBehind": 1.5,
-          "for": 182,
-          "against": 172
+          "winPct": 0.6111111,
+          "gamesBehind": 2,
+          "for": 203,
+          "against": 196
         },
         {
           "rank": 4,
@@ -8809,6 +8809,26 @@
         {
           "rank": 11,
           "team": {
+            "id": "28",
+            "name": "Washington Commanders",
+            "abbreviation": "WSH",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+            "color": "#5a1414"
+          },
+          "wins": 3,
+          "losses": 5,
+          "draws": 1,
+          "played": 9,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.3888889,
+          "gamesBehind": 4,
+          "for": 196,
+          "against": 223
+        },
+        {
+          "rank": 12,
+          "team": {
             "id": "18",
             "name": "New Orleans Saints",
             "abbreviation": "NO",
@@ -8827,7 +8847,7 @@
           "against": 216
         },
         {
-          "rank": 12,
+          "rank": 13,
           "team": {
             "id": "27",
             "name": "Tampa Bay Buccaneers",
@@ -8847,7 +8867,7 @@
           "against": 178
         },
         {
-          "rank": 13,
+          "rank": 14,
           "team": {
             "id": "1",
             "name": "Atlanta Falcons",
@@ -8867,7 +8887,7 @@
           "against": 223
         },
         {
-          "rank": 14,
+          "rank": 15,
           "team": {
             "id": "22",
             "name": "Arizona Cardinals",
@@ -8885,26 +8905,6 @@
           "gamesBehind": 4.5,
           "for": 178,
           "against": 255
-        },
-        {
-          "rank": 15,
-          "team": {
-            "id": "28",
-            "name": "Washington Commanders",
-            "abbreviation": "WSH",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
-            "color": "#5a1414"
-          },
-          "wins": 2,
-          "losses": 5,
-          "draws": 1,
-          "played": 8,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.3125,
-          "gamesBehind": 4.5,
-          "for": 172,
-          "against": 202
         },
         {
           "rank": 16,
