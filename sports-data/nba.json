@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-14T16:58:02.001Z",
-  "fixturesUpdatedAt": "2026-11-14T16:58:02.001Z",
-  "standingsUpdatedAt": "2026-11-14T16:58:02.001Z",
+  "updatedAt": "2026-11-14T21:20:28.312Z",
+  "fixturesUpdatedAt": "2026-11-14T21:20:28.312Z",
+  "standingsUpdatedAt": "2026-11-14T21:20:28.312Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -7221,32 +7221,8 @@
           "winner": null
         },
         {
-          "id": "401910015",
-          "startTime": "2026-11-19T02:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
-          "venue": "Ball Arena",
-          "home": {
-            "id": "7",
-            "name": "Denver Nuggets",
-            "abbreviation": "DEN",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-            "color": "#0e2240"
-          },
-          "away": {
-            "id": "2",
-            "name": "Boston Celtics",
-            "abbreviation": "BOS",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-            "color": "#008348"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
           "id": "401910016",
-          "startTime": "2026-11-19T02:30:00.000Z",
+          "startTime": "2026-11-19T01:00:00.000Z",
           "status": "scheduled",
           "statusDetail": "Scheduled",
           "venue": "American Airlines Center",
@@ -7263,6 +7239,30 @@
             "abbreviation": "GS",
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
             "color": "#fdb927"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401910015",
+          "startTime": "2026-11-19T02:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Ball Arena",
+          "home": {
+            "id": "7",
+            "name": "Denver Nuggets",
+            "abbreviation": "DEN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+            "color": "#0e2240"
+          },
+          "away": {
+            "id": "2",
+            "name": "Boston Celtics",
+            "abbreviation": "BOS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+            "color": "#008348"
           },
           "homeScore": null,
           "awayScore": null,
