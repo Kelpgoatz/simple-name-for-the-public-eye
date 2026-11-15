@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-15T07:55:15.093Z",
-  "fixturesUpdatedAt": "2026-11-15T07:55:15.093Z",
-  "standingsUpdatedAt": "2026-11-15T07:55:15.093Z",
+  "updatedAt": "2026-11-15T15:35:27.342Z",
+  "fixturesUpdatedAt": "2026-11-15T15:35:27.342Z",
+  "standingsUpdatedAt": "2026-11-15T15:35:27.342Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4626,8 +4626,8 @@
         {
           "id": "401873053",
           "startTime": "2026-11-15T14:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "6:33 - 2nd",
           "venue": "FC Bayern Munich Stadium",
           "home": {
             "id": "8",
@@ -4643,8 +4643,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
             "color": "#002a5c"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 14,
+          "awayScore": 3,
           "winner": null
         },
         {

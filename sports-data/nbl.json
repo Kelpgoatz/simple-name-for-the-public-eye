@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-15T07:55:15.093Z",
-  "fixturesUpdatedAt": "2026-11-15T07:55:15.093Z",
-  "standingsUpdatedAt": "2026-11-15T07:55:15.093Z",
+  "updatedAt": "2026-11-15T15:35:27.342Z",
+  "fixturesUpdatedAt": "2026-11-15T15:35:27.342Z",
+  "standingsUpdatedAt": "2026-11-15T15:35:27.342Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2497,8 +2497,8 @@
         {
           "id": "401875300",
           "startTime": "2026-11-15T06:00:00.000Z",
-          "status": "live",
-          "statusDetail": "End of 3rd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "2",
@@ -2514,9 +2514,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
             "color": "#008b45"
           },
-          "homeScore": 66,
-          "awayScore": 79,
-          "winner": null
+          "homeScore": 92,
+          "awayScore": 104,
+          "winner": "away"
         }
       ]
     },
@@ -5331,16 +5331,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
             "color": "#008b45"
           },
-          "wins": 8,
+          "wins": 9,
           "losses": 4,
           "draws": 0,
-          "played": 12,
+          "played": 13,
           "points": null,
           "percentage": null,
-          "winPct": 0.6666667,
-          "gamesBehind": 0.5,
-          "for": 1127,
-          "against": 1083
+          "winPct": 0.6923077,
+          "gamesBehind": 0,
+          "for": 1231,
+          "against": 1175
         },
         {
           "rank": 3,
@@ -5432,15 +5432,15 @@
             "color": "#1f4fa2"
           },
           "wins": 6,
-          "losses": 7,
+          "losses": 8,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.46153846,
-          "gamesBehind": 3,
-          "for": 1229,
-          "against": 1285
+          "winPct": 0.42857143,
+          "gamesBehind": 3.5,
+          "for": 1321,
+          "against": 1389
         },
         {
           "rank": 8,
