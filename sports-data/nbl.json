@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-15T01:07:36.081Z",
-  "fixturesUpdatedAt": "2026-11-15T01:07:36.081Z",
-  "standingsUpdatedAt": "2026-11-15T01:07:36.081Z",
+  "updatedAt": "2026-11-15T07:55:15.093Z",
+  "fixturesUpdatedAt": "2026-11-15T07:55:15.093Z",
+  "standingsUpdatedAt": "2026-11-15T07:55:15.093Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2473,8 +2473,8 @@
         {
           "id": "401875298",
           "startTime": "2026-11-15T04:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final/2OT",
           "venue": "",
           "home": {
             "id": "9",
@@ -2490,15 +2490,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/nzl.png",
             "color": "#e33c95"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 111,
+          "awayScore": 102,
+          "winner": "home"
         },
         {
           "id": "401875300",
           "startTime": "2026-11-15T06:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "End of 3rd",
           "venue": "",
           "home": {
             "id": "2",
@@ -2514,8 +2514,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/tas.png",
             "color": "#008b45"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 66,
+          "awayScore": 79,
           "winner": null
         }
       ]
@@ -5311,16 +5311,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/syd.png",
             "color": "#552583"
           },
-          "wins": 8,
+          "wins": 9,
           "losses": 4,
           "draws": 0,
-          "played": 12,
+          "played": 13,
           "points": null,
           "percentage": null,
-          "winPct": 0.6666667,
+          "winPct": 0.6923077,
           "gamesBehind": 0,
-          "for": 1171,
-          "against": 1064
+          "for": 1282,
+          "against": 1166
         },
         {
           "rank": 2,
@@ -5338,7 +5338,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.6666667,
-          "gamesBehind": 0,
+          "gamesBehind": 0.5,
           "for": 1127,
           "against": 1083
         },
@@ -5358,7 +5358,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5714286,
-          "gamesBehind": 1,
+          "gamesBehind": 1.5,
           "for": 1376,
           "against": 1287
         },
@@ -5378,7 +5378,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5714286,
-          "gamesBehind": 1,
+          "gamesBehind": 1.5,
           "for": 1293,
           "against": 1343
         },
@@ -5398,7 +5398,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.53846157,
-          "gamesBehind": 1.5,
+          "gamesBehind": 2,
           "for": 1208,
           "against": 1202
         },
@@ -5418,7 +5418,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.53846157,
-          "gamesBehind": 1.5,
+          "gamesBehind": 2,
           "for": 1244,
           "against": 1271
         },
@@ -5438,7 +5438,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.46153846,
-          "gamesBehind": 2.5,
+          "gamesBehind": 3,
           "for": 1229,
           "against": 1285
         },
@@ -5452,15 +5452,15 @@
             "color": "#e33c95"
           },
           "wins": 5,
-          "losses": 8,
+          "losses": 9,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.3846154,
-          "gamesBehind": 3.5,
-          "for": 1167,
-          "against": 1169
+          "winPct": 0.35714287,
+          "gamesBehind": 4.5,
+          "for": 1269,
+          "against": 1280
         },
         {
           "rank": 9,
@@ -5478,7 +5478,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.33333334,
-          "gamesBehind": 4.5,
+          "gamesBehind": 5,
           "for": 1462,
           "against": 1571
         },
@@ -5498,7 +5498,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.30769232,
-          "gamesBehind": 4.5,
+          "gamesBehind": 5,
           "for": 1273,
           "against": 1275
         }
