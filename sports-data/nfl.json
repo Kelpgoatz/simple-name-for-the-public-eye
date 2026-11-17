@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-17T00:25:55.067Z",
-  "fixturesUpdatedAt": "2026-11-17T00:25:55.067Z",
-  "standingsUpdatedAt": "2026-11-17T00:25:55.067Z",
+  "updatedAt": "2026-11-17T08:24:25.896Z",
+  "fixturesUpdatedAt": "2026-11-17T08:24:25.896Z",
+  "standingsUpdatedAt": "2026-11-17T08:24:25.896Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4914,8 +4914,8 @@
         {
           "id": "401873065",
           "startTime": "2026-11-17T01:15:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "M&T Bank Stadium",
           "home": {
             "id": "33",
@@ -4931,9 +4931,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
             "color": "#0080c6"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 20,
+          "awayScore": 23,
+          "winner": "away"
         }
       ]
     },
@@ -8443,26 +8443,6 @@
         {
           "rank": 9,
           "team": {
-            "id": "33",
-            "name": "Baltimore Ravens",
-            "abbreviation": "BAL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
-            "color": "#29126f"
-          },
-          "wins": 4,
-          "losses": 5,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.44444445,
-          "gamesBehind": 4,
-          "for": 189,
-          "against": 236
-        },
-        {
-          "rank": 10,
-          "team": {
             "id": "13",
             "name": "Las Vegas Raiders",
             "abbreviation": "LV",
@@ -8479,6 +8459,26 @@
           "gamesBehind": 4.5,
           "for": 251,
           "against": 289
+        },
+        {
+          "rank": 10,
+          "team": {
+            "id": "33",
+            "name": "Baltimore Ravens",
+            "abbreviation": "BAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+            "color": "#29126f"
+          },
+          "wins": 4,
+          "losses": 6,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.4,
+          "gamesBehind": 4.5,
+          "for": 209,
+          "against": 259
         },
         {
           "rank": 11,
@@ -8543,6 +8543,26 @@
         {
           "rank": 14,
           "team": {
+            "id": "24",
+            "name": "Los Angeles Chargers",
+            "abbreviation": "LAC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+            "color": "#0080c6"
+          },
+          "wins": 1,
+          "losses": 8,
+          "draws": 0,
+          "played": 9,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.11111111,
+          "gamesBehind": 7,
+          "for": 144,
+          "against": 239
+        },
+        {
+          "rank": 15,
+          "team": {
             "id": "15",
             "name": "Miami Dolphins",
             "abbreviation": "MIA",
@@ -8561,7 +8581,7 @@
           "against": 224
         },
         {
-          "rank": 15,
+          "rank": 16,
           "team": {
             "id": "10",
             "name": "Tennessee Titans",
@@ -8579,26 +8599,6 @@
           "gamesBehind": 7,
           "for": 167,
           "against": 239
-        },
-        {
-          "rank": 16,
-          "team": {
-            "id": "24",
-            "name": "Los Angeles Chargers",
-            "abbreviation": "LAC",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
-            "color": "#0080c6"
-          },
-          "wins": 0,
-          "losses": 8,
-          "draws": 0,
-          "played": 8,
-          "points": null,
-          "percentage": null,
-          "winPct": 0,
-          "gamesBehind": 7.5,
-          "for": 121,
-          "against": 219
         }
       ]
     },
