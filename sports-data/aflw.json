@@ -3,11 +3,11 @@
   "season": 2026,
   "seasonId": 96,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-18T00:01:44.996Z",
-  "fixturesUpdatedAt": "2026-11-18T00:01:44.996Z",
+  "updatedAt": "2026-11-18T07:08:48.870Z",
+  "fixturesUpdatedAt": "2026-11-18T07:08:48.870Z",
   "seasonStart": "2026-08-09T06:35:00.000Z",
-  "seasonEnd": "2026-11-27T01:00:00.000Z",
-  "standingsUpdatedAt": "2026-11-18T00:01:44.996Z",
+  "seasonEnd": "2026-11-23T01:00:00.000Z",
+  "standingsUpdatedAt": "2026-11-18T07:08:48.870Z",
   "source": {
     "name": "AFL.com.au",
     "url": "https://www.afl.com.au/aflw/fixture"
@@ -2930,8 +2930,8 @@
     {
       "id": "16",
       "label": "Grand Final",
-      "startDate": "2026-11-27T01:00:00.000Z",
-      "endDate": "2026-11-27T01:00:00.000Z",
+      "startDate": "2026-11-23T01:00:00.000Z",
+      "endDate": "2026-11-23T01:00:00.000Z",
       "matches": [
         {
           "id": "9081",

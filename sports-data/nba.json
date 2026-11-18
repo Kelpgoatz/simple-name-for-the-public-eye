@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-18T00:01:44.996Z",
-  "fixturesUpdatedAt": "2026-11-18T00:01:44.996Z",
-  "standingsUpdatedAt": "2026-11-18T00:01:44.996Z",
+  "updatedAt": "2026-11-18T07:08:48.870Z",
+  "fixturesUpdatedAt": "2026-11-18T07:08:48.870Z",
+  "standingsUpdatedAt": "2026-11-18T07:08:48.870Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -6904,8 +6904,8 @@
         {
           "id": "401910002",
           "startTime": "2026-11-18T00:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Scotiabank Arena",
           "home": {
             "id": "28",
@@ -6921,15 +6921,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
             "color": "#1d428a"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 102,
+          "awayScore": 111,
+          "winner": "away"
         },
         {
           "id": "401910003",
           "startTime": "2026-11-18T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Target Center",
           "home": {
             "id": "16",
@@ -6945,15 +6945,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
             "color": "#e03a3e"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 106,
+          "awayScore": 105,
+          "winner": "home"
         },
         {
           "id": "401910004",
           "startTime": "2026-11-18T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Frost Bank Center",
           "home": {
             "id": "24",
@@ -6969,15 +6969,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
             "color": "#1d428a"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 93,
+          "awayScore": 105,
+          "winner": "away"
         },
         {
           "id": "401910006",
           "startTime": "2026-11-18T03:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Intuit Dome",
           "home": {
             "id": "12",
@@ -6993,15 +6993,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
             "color": "#4e008e"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 107,
+          "awayScore": 132,
+          "winner": "away"
         },
         {
           "id": "401910005",
           "startTime": "2026-11-18T04:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final/OT",
           "venue": "crypto.com Arena",
           "home": {
             "id": "13",
@@ -7017,9 +7017,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
             "color": "#008ca8"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 118,
+          "awayScore": 114,
+          "winner": "home"
         }
       ]
     },
@@ -31899,16 +31899,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
             "color": "#1d428a"
           },
-          "wins": 8,
+          "wins": 9,
           "losses": 4,
           "draws": 0,
-          "played": 12,
+          "played": 13,
           "points": null,
           "percentage": null,
-          "winPct": 0.6666667,
-          "gamesBehind": 2.5,
-          "for": 1388,
-          "against": 1323
+          "winPct": 0.6923077,
+          "gamesBehind": 2,
+          "for": 1493,
+          "against": 1416
         },
         {
           "rank": 4,
@@ -31959,16 +31959,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
             "color": "#1d428a"
           },
-          "wins": 7,
+          "wins": 8,
           "losses": 6,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.53846157,
-          "gamesBehind": 4,
-          "for": 1429,
-          "against": 1352
+          "winPct": 0.5714286,
+          "gamesBehind": 3.5,
+          "for": 1540,
+          "against": 1454
         },
         {
           "rank": 7,
@@ -32020,15 +32020,15 @@
             "color": "#d91244"
           },
           "wins": 5,
-          "losses": 8,
+          "losses": 9,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.3846154,
-          "gamesBehind": 6,
-          "for": 1479,
-          "against": 1466
+          "winPct": 0.35714287,
+          "gamesBehind": 6.5,
+          "for": 1581,
+          "against": 1577
         },
         {
           "rank": 10,
@@ -32060,15 +32060,15 @@
             "color": "#008ca8"
           },
           "wins": 4,
-          "losses": 9,
+          "losses": 10,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.30769232,
-          "gamesBehind": 7,
-          "for": 1288,
-          "against": 1428
+          "winPct": 0.2857143,
+          "gamesBehind": 7.5,
+          "for": 1402,
+          "against": 1546
         },
         {
           "rank": 12,
@@ -32159,6 +32159,26 @@
         {
           "rank": 1,
           "team": {
+            "id": "13",
+            "name": "Los Angeles Lakers",
+            "abbreviation": "LAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+            "color": "#552583"
+          },
+          "wins": 13,
+          "losses": 2,
+          "draws": 0,
+          "played": 15,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.8666667,
+          "gamesBehind": 0,
+          "for": 1837,
+          "against": 1722
+        },
+        {
+          "rank": 2,
+          "team": {
             "id": "24",
             "name": "San Antonio Spurs",
             "abbreviation": "SA",
@@ -32166,38 +32186,38 @@
             "color": "#000000"
           },
           "wins": 12,
-          "losses": 2,
+          "losses": 3,
           "draws": 0,
-          "played": 14,
+          "played": 15,
           "points": null,
           "percentage": null,
-          "winPct": 0.85714287,
-          "gamesBehind": 0,
-          "for": 1663,
-          "against": 1483
-        },
-        {
-          "rank": 2,
-          "team": {
-            "id": "13",
-            "name": "Los Angeles Lakers",
-            "abbreviation": "LAL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-            "color": "#552583"
-          },
-          "wins": 12,
-          "losses": 2,
-          "draws": 0,
-          "played": 14,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.85714287,
-          "gamesBehind": 0,
-          "for": 1719,
-          "against": 1608
+          "winPct": 0.8,
+          "gamesBehind": 1,
+          "for": 1756,
+          "against": 1588
         },
         {
           "rank": 3,
+          "team": {
+            "id": "16",
+            "name": "Minnesota Timberwolves",
+            "abbreviation": "MIN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+            "color": "#266092"
+          },
+          "wins": 11,
+          "losses": 4,
+          "draws": 0,
+          "played": 15,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.73333335,
+          "gamesBehind": 2,
+          "for": 1750,
+          "against": 1591
+        },
+        {
+          "rank": 4,
           "team": {
             "id": "10",
             "name": "Houston Rockets",
@@ -32212,29 +32232,9 @@
           "points": null,
           "percentage": null,
           "winPct": 0.73333335,
-          "gamesBehind": 1.5,
+          "gamesBehind": 2,
           "for": 1767,
           "against": 1643
-        },
-        {
-          "rank": 4,
-          "team": {
-            "id": "16",
-            "name": "Minnesota Timberwolves",
-            "abbreviation": "MIN",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-            "color": "#266092"
-          },
-          "wins": 10,
-          "losses": 4,
-          "draws": 0,
-          "played": 14,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.71428573,
-          "gamesBehind": 2,
-          "for": 1644,
-          "against": 1486
         },
         {
           "rank": 5,
@@ -32252,7 +32252,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.71428573,
-          "gamesBehind": 2,
+          "gamesBehind": 2.5,
           "for": 1704,
           "against": 1572
         },
@@ -32266,15 +32266,15 @@
             "color": "#e03a3e"
           },
           "wins": 9,
-          "losses": 4,
+          "losses": 5,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.6923077,
-          "gamesBehind": 2.5,
-          "for": 1533,
-          "against": 1448
+          "winPct": 0.64285713,
+          "gamesBehind": 3.5,
+          "for": 1638,
+          "against": 1554
         },
         {
           "rank": 7,
@@ -32292,7 +32292,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.64285713,
-          "gamesBehind": 3,
+          "gamesBehind": 3.5,
           "for": 1570,
           "against": 1499
         },
@@ -32312,7 +32312,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5833333,
-          "gamesBehind": 4,
+          "gamesBehind": 4.5,
           "for": 1366,
           "against": 1358
         },
@@ -32332,7 +32332,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5714286,
-          "gamesBehind": 4,
+          "gamesBehind": 4.5,
           "for": 1611,
           "against": 1576
         },
@@ -32352,7 +32352,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5,
-          "gamesBehind": 5,
+          "gamesBehind": 5.5,
           "for": 1569,
           "against": 1604
         },
@@ -32372,7 +32372,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.46153846,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 1469,
           "against": 1513
         },
@@ -32392,7 +32392,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.33333334,
-          "gamesBehind": 7.5,
+          "gamesBehind": 8,
           "for": 1737,
           "against": 1843
         },
@@ -32406,18 +32406,38 @@
             "color": "#12173f"
           },
           "wins": 4,
-          "losses": 8,
+          "losses": 9,
           "draws": 0,
-          "played": 12,
+          "played": 13,
           "points": null,
           "percentage": null,
-          "winPct": 0.33333334,
-          "gamesBehind": 7,
-          "for": 1348,
-          "against": 1398
+          "winPct": 0.30769232,
+          "gamesBehind": 8,
+          "for": 1455,
+          "against": 1530
         },
         {
           "rank": 14,
+          "team": {
+            "id": "26",
+            "name": "Utah Jazz",
+            "abbreviation": "UTAH",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+            "color": "#4e008e"
+          },
+          "wins": 2,
+          "losses": 13,
+          "draws": 0,
+          "played": 15,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.13333334,
+          "gamesBehind": 11,
+          "for": 1631,
+          "against": 1759
+        },
+        {
+          "rank": 15,
           "team": {
             "id": "23",
             "name": "Sacramento Kings",
@@ -32432,29 +32452,9 @@
           "points": null,
           "percentage": null,
           "winPct": 0.07692308,
-          "gamesBehind": 10.5,
+          "gamesBehind": 11,
           "for": 1401,
           "against": 1576
-        },
-        {
-          "rank": 15,
-          "team": {
-            "id": "26",
-            "name": "Utah Jazz",
-            "abbreviation": "UTAH",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
-            "color": "#4e008e"
-          },
-          "wins": 1,
-          "losses": 13,
-          "draws": 0,
-          "played": 14,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.071428575,
-          "gamesBehind": 11,
-          "for": 1499,
-          "against": 1652
         }
       ]
     }
