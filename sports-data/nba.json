@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-19T12:54:11.495Z",
-  "fixturesUpdatedAt": "2026-11-19T12:54:11.495Z",
-  "standingsUpdatedAt": "2026-11-19T12:54:11.495Z",
+  "updatedAt": "2026-11-19T21:22:30.672Z",
+  "fixturesUpdatedAt": "2026-11-19T21:22:30.672Z",
+  "standingsUpdatedAt": "2026-11-19T21:22:30.672Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -8923,6 +8923,30 @@
       "startDate": "2026-11-30T00:00:00Z",
       "matches": [
         {
+          "id": "401910054",
+          "startTime": "2026-11-29T20:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Rocket Arena",
+          "home": {
+            "id": "5",
+            "name": "Cleveland Cavaliers",
+            "abbreviation": "CLE",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+            "color": "#860038"
+          },
+          "away": {
+            "id": "14",
+            "name": "Miami Heat",
+            "abbreviation": "MIA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+            "color": "#98002e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
           "id": "401910051",
           "startTime": "2026-11-29T21:00:00.000Z",
           "status": "scheduled",
@@ -8989,30 +9013,6 @@
             "abbreviation": "PHX",
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
             "color": "#29127a"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
-          "id": "401910054",
-          "startTime": "2026-11-29T23:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
-          "venue": "Rocket Arena",
-          "home": {
-            "id": "5",
-            "name": "Cleveland Cavaliers",
-            "abbreviation": "CLE",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
-            "color": "#860038"
-          },
-          "away": {
-            "id": "14",
-            "name": "Miami Heat",
-            "abbreviation": "MIA",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
-            "color": "#98002e"
           },
           "homeScore": null,
           "awayScore": null,
