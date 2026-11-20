@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-20T02:32:12.233Z",
-  "fixturesUpdatedAt": "2026-11-20T02:32:12.233Z",
-  "standingsUpdatedAt": "2026-11-20T02:32:12.233Z",
+  "updatedAt": "2026-11-20T10:23:46.897Z",
+  "fixturesUpdatedAt": "2026-11-20T10:23:46.897Z",
+  "standingsUpdatedAt": "2026-11-20T10:23:46.897Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2590,8 +2590,8 @@
         {
           "id": "401875351",
           "startTime": "2026-11-20T08:30:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "0:01 - 4th",
           "venue": "",
           "home": {
             "id": "3",
@@ -2607,8 +2607,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
             "color": "#ec1c23"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 98,
+          "awayScore": 90,
           "winner": null
         }
       ]

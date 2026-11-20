@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-20T02:32:12.233Z",
-  "fixturesUpdatedAt": "2026-11-20T02:32:12.233Z",
-  "standingsUpdatedAt": "2026-11-20T02:32:12.233Z",
+  "updatedAt": "2026-11-20T10:23:46.897Z",
+  "fixturesUpdatedAt": "2026-11-20T10:23:46.897Z",
+  "standingsUpdatedAt": "2026-11-20T10:23:46.897Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4945,8 +4945,8 @@
         {
           "id": "401873066",
           "startTime": "2026-11-20T01:15:00.000Z",
-          "status": "live",
-          "statusDetail": "2:49 - 2nd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Reliant Stadium",
           "home": {
             "id": "34",
@@ -4962,9 +4962,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
             "color": "#003b75"
           },
-          "homeScore": 14,
+          "homeScore": 26,
           "awayScore": 3,
-          "winner": null
+          "winner": "home"
         },
         {
           "id": "401873070",
@@ -8443,6 +8443,26 @@
         {
           "rank": 9,
           "team": {
+            "id": "34",
+            "name": "Houston Texans",
+            "abbreviation": "HOU",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+            "color": "#021018"
+          },
+          "wins": 4,
+          "losses": 6,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.4,
+          "gamesBehind": 4.5,
+          "for": 259,
+          "against": 222
+        },
+        {
+          "rank": 10,
+          "team": {
             "id": "13",
             "name": "Las Vegas Raiders",
             "abbreviation": "LV",
@@ -8461,7 +8481,7 @@
           "against": 289
         },
         {
-          "rank": 10,
+          "rank": 11,
           "team": {
             "id": "33",
             "name": "Baltimore Ravens",
@@ -8481,26 +8501,6 @@
           "against": 259
         },
         {
-          "rank": 11,
-          "team": {
-            "id": "34",
-            "name": "Houston Texans",
-            "abbreviation": "HOU",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
-            "color": "#021018"
-          },
-          "wins": 3,
-          "losses": 6,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.33333334,
-          "gamesBehind": 5,
-          "for": 233,
-          "against": 219
-        },
-        {
           "rank": 12,
           "team": {
             "id": "11",
@@ -8510,15 +8510,15 @@
             "color": "#003b75"
           },
           "wins": 3,
-          "losses": 7,
+          "losses": 8,
           "draws": 0,
-          "played": 10,
+          "played": 11,
           "points": null,
           "percentage": null,
-          "winPct": 0.3,
-          "gamesBehind": 5.5,
-          "for": 208,
-          "against": 271
+          "winPct": 0.27272728,
+          "gamesBehind": 6,
+          "for": 211,
+          "against": 297
         },
         {
           "rank": 13,
