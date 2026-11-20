@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-19T21:22:30.672Z",
-  "fixturesUpdatedAt": "2026-11-19T21:22:30.672Z",
-  "standingsUpdatedAt": "2026-11-19T21:22:30.672Z",
+  "updatedAt": "2026-11-20T02:32:12.233Z",
+  "fixturesUpdatedAt": "2026-11-20T02:32:12.233Z",
+  "standingsUpdatedAt": "2026-11-20T02:32:12.233Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -4945,8 +4945,8 @@
         {
           "id": "401873066",
           "startTime": "2026-11-20T01:15:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "2:49 - 2nd",
           "venue": "Reliant Stadium",
           "home": {
             "id": "34",
@@ -4962,8 +4962,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
             "color": "#003b75"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 14,
+          "awayScore": 3,
           "winner": null
         },
         {
