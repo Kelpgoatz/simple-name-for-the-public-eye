@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-20T10:23:46.897Z",
-  "fixturesUpdatedAt": "2026-11-20T10:23:46.897Z",
-  "standingsUpdatedAt": "2026-11-20T10:23:46.897Z",
+  "updatedAt": "2026-11-20T18:45:34.428Z",
+  "fixturesUpdatedAt": "2026-11-20T18:45:34.428Z",
+  "standingsUpdatedAt": "2026-11-20T18:45:34.428Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -2590,8 +2590,8 @@
         {
           "id": "401875351",
           "startTime": "2026-11-20T08:30:00.000Z",
-          "status": "live",
-          "statusDetail": "0:01 - 4th",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "",
           "home": {
             "id": "3",
@@ -2609,7 +2609,7 @@
           },
           "homeScore": 98,
           "awayScore": 90,
-          "winner": null
+          "winner": "home"
         }
       ]
     },
@@ -5345,6 +5345,26 @@
         {
           "rank": 3,
           "team": {
+            "id": "3",
+            "name": "Cairns Taipans",
+            "abbreviation": "CNS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
+            "color": "#f69138"
+          },
+          "wins": 9,
+          "losses": 6,
+          "draws": 0,
+          "played": 15,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.6,
+          "gamesBehind": 1,
+          "for": 1391,
+          "against": 1433
+        },
+        {
+          "rank": 4,
+          "team": {
             "id": "5",
             "name": "Melbourne United",
             "abbreviation": "MEL",
@@ -5363,47 +5383,7 @@
           "against": 1287
         },
         {
-          "rank": 4,
-          "team": {
-            "id": "3",
-            "name": "Cairns Taipans",
-            "abbreviation": "CNS",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/cns.png",
-            "color": "#f69138"
-          },
-          "wins": 8,
-          "losses": 6,
-          "draws": 0,
-          "played": 14,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.5714286,
-          "gamesBehind": 1.5,
-          "for": 1293,
-          "against": 1343
-        },
-        {
           "rank": 5,
-          "team": {
-            "id": "7",
-            "name": "Perth Wildcats",
-            "abbreviation": "PER",
-            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
-            "color": "#ec1c23"
-          },
-          "wins": 7,
-          "losses": 6,
-          "draws": 0,
-          "played": 13,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.53846157,
-          "gamesBehind": 2,
-          "for": 1244,
-          "against": 1271
-        },
-        {
-          "rank": 6,
           "team": {
             "id": "1",
             "name": "Adelaide 36ers",
@@ -5421,6 +5401,26 @@
           "gamesBehind": 2.5,
           "for": 1305,
           "against": 1305
+        },
+        {
+          "rank": 6,
+          "team": {
+            "id": "7",
+            "name": "Perth Wildcats",
+            "abbreviation": "PER",
+            "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/per.png",
+            "color": "#ec1c23"
+          },
+          "wins": 7,
+          "losses": 7,
+          "draws": 0,
+          "played": 14,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.5,
+          "gamesBehind": 2.5,
+          "for": 1334,
+          "against": 1369
         },
         {
           "rank": 7,
