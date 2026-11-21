@@ -34175,352 +34175,638 @@
               "driver": {
                 "name": "Andrea",
                 "surname": "Kimi Antonelli",
-                "number": 12
+                "nationality": "Italian",
+                "birthday": "2006-08-25",
+                "number": 12,
+                "shortName": "ANT",
+                "url": "https://en.wikipedia.org/wiki/Andrea_Kimi_Antonelli"
               },
               "teamId": "mercedes",
+              "team": {
+                "teamName": "Mercedes Formula 1 Team",
+                "country": "German",
+                "firstAppareance": 1954,
+                "constructorsChampionships": 8,
+                "driversChampionships": 9,
+                "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+                "teamId": "mercedes"
+              },
               "position": "1",
-              "lapsCompleted": 26,
               "q1": "1:34.684",
               "q2": "1:35.086",
               "q3": "1:33.893",
+              "bestLap": "1:33.893",
               "timingSegment": "Q3",
-              "bestLap": "1:33.893"
+              "lapsCompleted": 26
             },
             {
               "driverId": "max_verstappen",
               "driver": {
                 "name": "Max",
                 "surname": "Verstappen",
-                "number": 3
+                "nationality": "Dutch",
+                "birthday": "1997-09-30",
+                "number": 3,
+                "shortName": "VER",
+                "url": "http://en.wikipedia.org/wiki/Max_Verstappen"
               },
               "teamId": "red_bull",
+              "team": {
+                "teamName": "Red Bull Racing",
+                "country": "Austrian",
+                "firstAppareance": 2005,
+                "constructorsChampionships": 6,
+                "driversChampionships": 8,
+                "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+                "teamId": "red_bull"
+              },
               "position": "2",
-              "lapsCompleted": 21,
               "q1": "1:35.264",
               "q2": "1:34.394",
               "q3": "1:34.151",
+              "bestLap": "1:34.151",
               "timingSegment": "Q3",
-              "bestLap": "1:34.151"
+              "lapsCompleted": 21
             },
             {
               "driverId": "russell",
               "driver": {
                 "name": "George",
                 "surname": "Russell",
-                "number": 63
+                "nationality": "British",
+                "birthday": "1998-02-15",
+                "number": 63,
+                "shortName": "RUS",
+                "url": "http://en.wikipedia.org/wiki/George_Russell_(racing_driver)"
               },
               "teamId": "mercedes",
+              "team": {
+                "teamName": "Mercedes Formula 1 Team",
+                "country": "German",
+                "firstAppareance": 1954,
+                "constructorsChampionships": 8,
+                "driversChampionships": 9,
+                "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+                "teamId": "mercedes"
+              },
               "position": "3",
-              "lapsCompleted": 26,
               "q1": "1:34.664",
               "q2": "1:34.617",
               "q3": "1:34.224",
+              "bestLap": "1:34.224",
               "timingSegment": "Q3",
-              "bestLap": "1:34.224"
+              "lapsCompleted": 26
             },
             {
               "driverId": "norris",
               "driver": {
                 "name": "Lando",
                 "surname": "Norris",
-                "number": 1
+                "nationality": "British",
+                "birthday": "1999-11-13",
+                "number": 1,
+                "shortName": "NOR",
+                "url": "http://en.wikipedia.org/wiki/Lando_Norris"
               },
               "teamId": "mclaren",
+              "team": {
+                "teamName": "McLaren Formula 1 Team",
+                "country": "British",
+                "firstAppareance": 1966,
+                "constructorsChampionships": 10,
+                "driversChampionships": 13,
+                "url": "https://en.wikipedia.org/wiki/McLaren",
+                "teamId": "mclaren"
+              },
               "position": "4",
-              "lapsCompleted": 21,
               "q1": "1:35.109",
               "q2": "1:34.766",
               "q3": "1:34.244",
+              "bestLap": "1:34.244",
               "timingSegment": "Q3",
-              "bestLap": "1:34.244"
+              "lapsCompleted": 21
             },
             {
               "driverId": "hadjar",
               "driver": {
                 "name": "Isack",
                 "surname": "Hadjar",
-                "number": 6
+                "nationality": "French",
+                "birthday": "2004-09-28",
+                "number": 6,
+                "shortName": "HAD",
+                "url": "https://en.wikipedia.org/wiki/Isack_Hadjar"
               },
               "teamId": "red_bull",
+              "team": {
+                "teamName": "Red Bull Racing",
+                "country": "Austrian",
+                "firstAppareance": 2005,
+                "constructorsChampionships": 6,
+                "driversChampionships": 8,
+                "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+                "teamId": "red_bull"
+              },
               "position": "5",
-              "lapsCompleted": 22,
               "q1": "1:35.413",
               "q2": "1:35.064",
               "q3": "1:34.592",
+              "bestLap": "1:34.592",
               "timingSegment": "Q3",
-              "bestLap": "1:34.592"
+              "lapsCompleted": 22
             },
             {
               "driverId": "lindblad",
               "driver": {
                 "name": "Arvid",
                 "surname": "Lindblad",
-                "number": 41
+                "nationality": "British",
+                "birthday": "2007-08-08",
+                "number": 41,
+                "shortName": "LIN",
+                "url": "https://en.wikipedia.org/wiki/Arvid_Lindblad"
               },
               "teamId": "rb",
+              "team": {
+                "teamName": "RB F1 Team",
+                "country": "Italian",
+                "firstAppareance": 2024,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Racing_Bulls",
+                "teamId": "rb"
+              },
               "position": "6",
-              "lapsCompleted": 25,
               "q1": "1:35.456",
               "q2": "1:34.963",
               "q3": "1:34.668",
+              "bestLap": "1:34.668",
               "timingSegment": "Q3",
-              "bestLap": "1:34.668"
+              "lapsCompleted": 25
             },
             {
               "driverId": "piastri",
               "driver": {
                 "name": "Oscar",
                 "surname": "Piastri",
-                "number": 81
+                "nationality": "Australian",
+                "birthday": "2001-04-06",
+                "number": 81,
+                "shortName": "PIA",
+                "url": "http://en.wikipedia.org/wiki/Oscar_Piastri"
               },
               "teamId": "mclaren",
+              "team": {
+                "teamName": "McLaren Formula 1 Team",
+                "country": "British",
+                "firstAppareance": 1966,
+                "constructorsChampionships": 10,
+                "driversChampionships": 13,
+                "url": "https://en.wikipedia.org/wiki/McLaren",
+                "teamId": "mclaren"
+              },
               "position": "7",
-              "lapsCompleted": 24,
               "q1": "1:35.491",
               "q2": "1:34.763",
               "q3": "1:34.899",
+              "bestLap": "1:34.899",
               "timingSegment": "Q3",
-              "bestLap": "1:34.899"
+              "lapsCompleted": 24
             },
             {
               "driverId": "lawson",
               "driver": {
                 "name": "Liam",
                 "surname": "Lawson",
-                "number": 30
+                "nationality": "New Zealander",
+                "birthday": "2002-02-11",
+                "number": 30,
+                "shortName": "LAW",
+                "url": "http://en.wikipedia.org/wiki/Liam_Lawson"
               },
               "teamId": "rb",
+              "team": {
+                "teamName": "RB F1 Team",
+                "country": "Italian",
+                "firstAppareance": 2024,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Racing_Bulls",
+                "teamId": "rb"
+              },
               "position": "8",
-              "lapsCompleted": 25,
               "q1": "1:35.489",
               "q2": "1:35.048",
               "q3": "1:35.090",
+              "bestLap": "1:35.090",
               "timingSegment": "Q3",
-              "bestLap": "1:35.090"
+              "lapsCompleted": 25
             },
             {
               "driverId": "gasly",
               "driver": {
                 "name": "Pierre",
                 "surname": "Gasly",
-                "number": 10
+                "nationality": "French",
+                "birthday": "1996-02-07",
+                "number": 10,
+                "shortName": "GAS",
+                "url": "http://en.wikipedia.org/wiki/Pierre_Gasly"
               },
               "teamId": "alpine",
+              "team": {
+                "teamName": "Alpine F1 Team",
+                "country": "French",
+                "firstAppareance": 2021,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team",
+                "teamId": "alpine"
+              },
               "position": "9",
-              "lapsCompleted": 24,
               "q1": "1:35.718",
               "q2": "1:34.559",
               "q3": "1:35.105",
+              "bestLap": "1:35.105",
               "timingSegment": "Q3",
-              "bestLap": "1:35.105"
+              "lapsCompleted": 24
             },
             {
               "driverId": "colapinto",
               "driver": {
                 "name": "Franco",
                 "surname": "Colapinto",
-                "number": 43
+                "nationality": "Argentine",
+                "birthday": "2003-05-27",
+                "number": 43,
+                "shortName": "COL",
+                "url": "http://en.wikipedia.org/wiki/Franco_Colapinto"
               },
               "teamId": "alpine",
+              "team": {
+                "teamName": "Alpine F1 Team",
+                "country": "French",
+                "firstAppareance": 2021,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team",
+                "teamId": "alpine"
+              },
               "position": "10",
-              "lapsCompleted": 23,
               "q1": "1:35.930",
               "q2": "1:34.982",
               "q3": "1:35.314",
+              "bestLap": "1:35.314",
               "timingSegment": "Q3",
-              "bestLap": "1:35.314"
+              "lapsCompleted": 23
             },
             {
               "driverId": "leclerc",
               "driver": {
                 "name": "Charles",
                 "surname": "Leclerc",
-                "number": 16
+                "nationality": "Monegasque",
+                "birthday": "1997-10-16",
+                "number": 16,
+                "shortName": "LEC",
+                "url": "http://en.wikipedia.org/wiki/Charles_Leclerc"
               },
               "teamId": "ferrari",
+              "team": {
+                "teamName": "Scuderia Ferrari",
+                "country": "Italian",
+                "firstAppareance": 1950,
+                "constructorsChampionships": 16,
+                "driversChampionships": 15,
+                "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+                "teamId": "ferrari"
+              },
               "position": "11",
-              "lapsCompleted": 17,
               "q1": "1:35.040",
               "q2": "1:35.197",
               "q3": null,
+              "bestLap": "1:35.197",
               "timingSegment": "Q2",
-              "bestLap": "1:35.197"
+              "lapsCompleted": 17
             },
             {
               "driverId": "hamilton",
               "driver": {
                 "name": "Lewis",
                 "surname": "Hamilton",
-                "number": 44
+                "nationality": "British",
+                "birthday": "1985-01-07",
+                "number": 44,
+                "shortName": "HAM",
+                "url": "http://en.wikipedia.org/wiki/Lewis_Hamilton"
               },
               "teamId": "ferrari",
+              "team": {
+                "teamName": "Scuderia Ferrari",
+                "country": "Italian",
+                "firstAppareance": 1950,
+                "constructorsChampionships": 16,
+                "driversChampionships": 15,
+                "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+                "teamId": "ferrari"
+              },
               "position": "12",
-              "lapsCompleted": 18,
               "q1": "1:35.743",
               "q2": "1:35.253",
               "q3": null,
+              "bestLap": "1:35.253",
               "timingSegment": "Q2",
-              "bestLap": "1:35.253"
+              "lapsCompleted": 18
             },
             {
               "driverId": "hulkenberg",
               "driver": {
                 "name": "Nico",
                 "surname": "Hulkenberg",
-                "number": 27
+                "nationality": "German",
+                "birthday": "1987-08-19",
+                "number": 27,
+                "shortName": "HUL",
+                "url": "http://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg"
               },
               "teamId": "audi",
+              "team": {
+                "teamName": "Audi Revolut F1 Team",
+                "country": "German",
+                "firstAppareance": 2026,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Audi_in_Formula_One",
+                "teamId": "audi"
+              },
               "position": "13",
-              "lapsCompleted": 16,
               "q1": "1:35.710",
               "q2": "1:35.460",
               "q3": null,
+              "bestLap": "1:35.460",
               "timingSegment": "Q2",
-              "bestLap": "1:35.460"
+              "lapsCompleted": 16
             },
             {
               "driverId": "sainz",
               "driver": {
                 "name": "Carlos",
                 "surname": "Sainz",
-                "number": 55
+                "nationality": "Spanish",
+                "birthday": "1994-09-01",
+                "number": 55,
+                "shortName": "SAI",
+                "url": "http://en.wikipedia.org/wiki/Carlos_Sainz_Jr."
               },
               "teamId": "williams",
+              "team": {
+                "teamName": "Williams Racing",
+                "country": "British",
+                "firstAppareance": 1977,
+                "constructorsChampionships": 9,
+                "driversChampionships": 7,
+                "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+                "teamId": "williams"
+              },
               "position": "14",
-              "lapsCompleted": 18,
               "q1": "1:35.588",
               "q2": "1:35.641",
               "q3": null,
+              "bestLap": "1:35.641",
               "timingSegment": "Q2",
-              "bestLap": "1:35.641"
+              "lapsCompleted": 18
             },
             {
               "driverId": "bortoleto",
               "driver": {
                 "name": "Gabriel",
                 "surname": "Bortoleto",
-                "number": 5
+                "nationality": "Brazilian",
+                "birthday": "2004-10-14",
+                "number": 5,
+                "shortName": "BOR",
+                "url": "https://en.wikipedia.org/wiki/Gabriel_Bortoleto"
               },
               "teamId": "audi",
+              "team": {
+                "teamName": "Audi Revolut F1 Team",
+                "country": "German",
+                "firstAppareance": 2026,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Audi_in_Formula_One",
+                "teamId": "audi"
+              },
               "position": "15",
-              "lapsCompleted": 12,
               "q1": "1:36.149",
               "q2": "1:35.993",
               "q3": null,
+              "bestLap": "1:35.993",
               "timingSegment": "Q2",
-              "bestLap": "1:35.993"
+              "lapsCompleted": 12
             },
             {
               "driverId": "albon",
               "driver": {
                 "name": "Alex",
                 "surname": "Albon",
-                "number": 23
+                "nationality": "Thai",
+                "birthday": "1996-03-23",
+                "number": 23,
+                "shortName": "ALB",
+                "url": "http://en.wikipedia.org/wiki/Alexander_Albon"
               },
               "teamId": "williams",
+              "team": {
+                "teamName": "Williams Racing",
+                "country": "British",
+                "firstAppareance": 1977,
+                "constructorsChampionships": 9,
+                "driversChampionships": 7,
+                "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+                "teamId": "williams"
+              },
               "position": "16",
-              "lapsCompleted": 18,
               "q1": "1:35.856",
               "q2": "1:36.125",
               "q3": null,
+              "bestLap": "1:36.125",
               "timingSegment": "Q2",
-              "bestLap": "1:36.125"
+              "lapsCompleted": 18
             },
             {
               "driverId": "rafael_camara",
               "driver": {
                 "name": "Rafael",
                 "surname": "Camara",
-                "number": 51
+                "number": 51,
+                "nationality": "Brazilian",
+                "birthday": "2005-05-05",
+                "shortName": "CAM",
+                "url": "https://en.wikipedia.org/wiki/Rafael_C%C3%A2mara"
               },
               "teamId": "haas",
+              "team": {
+                "teamName": "Haas F1 Team",
+                "country": "American",
+                "firstAppareance": 2016,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Haas_F1_Team",
+                "teamId": "haas"
+              },
               "position": "17",
-              "lapsCompleted": 9,
               "q1": "1:36.220",
               "q2": null,
               "q3": null,
+              "bestLap": "1:36.220",
               "timingSegment": "Q1",
-              "bestLap": "1:36.220"
+              "lapsCompleted": 9
             },
             {
               "driverId": "perez",
               "driver": {
                 "name": "Sergio",
                 "surname": "Pérez",
-                "number": 11
+                "nationality": "Mexican",
+                "birthday": "1990-01-26",
+                "number": 11,
+                "shortName": "PER",
+                "url": "http://en.wikipedia.org/wiki/Sergio_P%C3%A9rez"
               },
               "teamId": "cadillac",
+              "team": {
+                "teamName": "Cadillac Formula 1 Team",
+                "country": "American",
+                "firstAppareance": 2026,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Cadillac_in_Formula_One",
+                "teamId": "cadillac"
+              },
               "position": "18",
-              "lapsCompleted": 11,
               "q1": "1:37.383",
               "q2": null,
               "q3": null,
+              "bestLap": "1:37.383",
               "timingSegment": "Q1",
-              "bestLap": "1:37.383"
+              "lapsCompleted": 11
             },
             {
               "driverId": "alonso",
               "driver": {
                 "name": "Fernando",
                 "surname": "Alonso",
-                "number": 14
+                "nationality": "Spanish",
+                "birthday": "1981-07-29",
+                "number": 14,
+                "shortName": "ALO",
+                "url": "http://en.wikipedia.org/wiki/Fernando_Alonso"
               },
               "teamId": "aston_martin",
+              "team": {
+                "teamName": "Aston Martin F1 Team",
+                "country": "British",
+                "firstAppareance": 1959,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One",
+                "teamId": "aston_martin"
+              },
               "position": "19",
-              "lapsCompleted": 10,
               "q1": "1:37.400",
               "q2": null,
               "q3": null,
+              "bestLap": "1:37.400",
               "timingSegment": "Q1",
-              "bestLap": "1:37.400"
+              "lapsCompleted": 10
             },
             {
               "driverId": "stroll",
               "driver": {
                 "name": "Lance",
                 "surname": "Stroll",
-                "number": 18
+                "nationality": "Canadian",
+                "birthday": "1998-10-29",
+                "number": 18,
+                "shortName": "STR",
+                "url": "http://en.wikipedia.org/wiki/Lance_Stroll"
               },
               "teamId": "aston_martin",
+              "team": {
+                "teamName": "Aston Martin F1 Team",
+                "country": "British",
+                "firstAppareance": 1959,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One",
+                "teamId": "aston_martin"
+              },
               "position": "20",
-              "lapsCompleted": 10,
               "q1": "1:37.550",
               "q2": null,
               "q3": null,
+              "bestLap": "1:37.550",
               "timingSegment": "Q1",
-              "bestLap": "1:37.550"
+              "lapsCompleted": 10
             },
             {
               "driverId": "bottas",
               "driver": {
                 "name": "Valtteri",
                 "surname": "Bottas",
-                "number": 77
+                "nationality": "Finnish",
+                "birthday": "1989-08-28",
+                "number": 77,
+                "shortName": "BOT",
+                "url": "http://en.wikipedia.org/wiki/Valtteri_Bottas"
               },
               "teamId": "cadillac",
+              "team": {
+                "teamName": "Cadillac Formula 1 Team",
+                "country": "American",
+                "firstAppareance": 2026,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Cadillac_in_Formula_One",
+                "teamId": "cadillac"
+              },
               "position": "21",
-              "lapsCompleted": 11,
               "q1": "1:37.601",
               "q2": null,
               "q3": null,
+              "bestLap": "1:37.601",
               "timingSegment": "Q1",
-              "bestLap": "1:37.601"
+              "lapsCompleted": 11
             },
             {
               "driverId": "bearman",
               "driver": {
                 "name": "Oliver",
                 "surname": "Bearman",
-                "number": 87
+                "nationality": "British",
+                "birthday": "2005-05-08",
+                "number": 87,
+                "shortName": "BEA",
+                "url": "http://en.wikipedia.org/wiki/Oliver_Bearman"
               },
               "teamId": "haas",
+              "team": {
+                "teamName": "Haas F1 Team",
+                "country": "American",
+                "firstAppareance": 2016,
+                "constructorsChampionships": null,
+                "driversChampionships": null,
+                "url": "https://en.wikipedia.org/wiki/Haas_F1_Team",
+                "teamId": "haas"
+              },
               "position": "NC",
-              "lapsCompleted": 8,
               "q1": "1:48.005",
               "q2": null,
               "q3": null,
+              "bestLap": "1:48.005",
               "timingSegment": "Q1",
-              "bestLap": "1:48.005"
+              "lapsCompleted": 8
             }
           ],
           "apiSource": "https://api.jolpi.ca/ergast/f1/2026/21/qualifying/?limit=100",
