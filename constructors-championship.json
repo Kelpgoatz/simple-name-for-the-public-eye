@@ -16,7 +16,7 @@
         "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
         "teamId": "mercedes"
       },
-      "points": 652,
+      "points": 666,
       "position": 1,
       "wins": 12
     },
@@ -31,7 +31,7 @@
         "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
         "teamId": "ferrari"
       },
-      "points": 510,
+      "points": 517,
       "position": 2,
       "wins": 2
     },
@@ -46,9 +46,9 @@
         "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
         "teamId": "red_bull"
       },
-      "points": 415,
+      "points": 440,
       "position": 3,
-      "wins": 3
+      "wins": 4
     },
     {
       "teamId": "mclaren",
@@ -61,7 +61,7 @@
         "url": "https://en.wikipedia.org/wiki/McLaren",
         "teamId": "mclaren"
       },
-      "points": 398,
+      "points": 431,
       "position": 4,
       "wins": 3
     },
@@ -91,7 +91,7 @@
         "url": "https://en.wikipedia.org/wiki/Alpine_F1_Team",
         "teamId": "alpine"
       },
-      "points": 69,
+      "points": 87,
       "position": 6,
       "wins": 0
     },
@@ -136,7 +136,7 @@
         "url": "https://en.wikipedia.org/wiki/Williams_Racing",
         "teamId": "williams"
       },
-      "points": 12,
+      "points": 16,
       "position": 9,
       "wins": 0
     },
