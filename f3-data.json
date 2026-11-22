@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-21T23:57:54.730Z",
+  "updatedAt": "2026-11-22T06:58:08.713Z",
   "source": {
     "name": "FIA Formula 3",
     "url": "https://www.fiaformula3.com/en/racing/2026",
@@ -28432,12 +28432,8 @@
   ],
   "timingCoverage": {
     "source": "https://www.fia.com/events/fia-formula-3-championship/season-2026/fia-formula-3",
-    "availableSessions": 39,
-    "totalSessions": 40,
-    "requestedSessions": 1,
-    "unavailable": [
-      "R8 Group B - Qualifying"
-    ]
+    "note": "The operation was aborted due to timeout",
+    "availableSessions": 39
   },
   "pdfTimingCoverage": {
     "enrichedSessions": 0,
