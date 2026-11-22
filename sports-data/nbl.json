@@ -2,9 +2,9 @@
   "sport": "nbl",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-22T08:06:13.516Z",
-  "fixturesUpdatedAt": "2026-11-22T08:06:13.516Z",
-  "standingsUpdatedAt": "2026-11-22T08:06:13.516Z",
+  "updatedAt": "2026-11-22T16:12:10.079Z",
+  "fixturesUpdatedAt": "2026-11-22T16:12:10.079Z",
+  "standingsUpdatedAt": "2026-11-22T16:12:10.079Z",
   "seasonStart": "2026-07-25T07:00Z",
   "seasonEnd": "2027-06-01T06:59Z",
   "source": {
@@ -5332,15 +5332,15 @@
             "color": "#552583"
           },
           "wins": 9,
-          "losses": 4,
+          "losses": 5,
           "draws": 0,
-          "played": 13,
+          "played": 14,
           "points": null,
           "percentage": null,
-          "winPct": 0.6923077,
-          "gamesBehind": 0.5,
-          "for": 1282,
-          "against": 1166
+          "winPct": 0.64285713,
+          "gamesBehind": 1,
+          "for": 1386,
+          "against": 1281
         },
         {
           "rank": 3,
@@ -5431,16 +5431,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nbl/500/bri.png",
             "color": "#1f4fa2"
           },
-          "wins": 6,
+          "wins": 7,
           "losses": 8,
           "draws": 0,
-          "played": 14,
+          "played": 15,
           "points": null,
           "percentage": null,
-          "winPct": 0.42857143,
-          "gamesBehind": 4,
-          "for": 1321,
-          "against": 1389
+          "winPct": 0.46666667,
+          "gamesBehind": 3.5,
+          "for": 1436,
+          "against": 1493
         },
         {
           "rank": 8,
