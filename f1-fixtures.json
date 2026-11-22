@@ -8396,9 +8396,388 @@
       },
       "lengthKm": 3.853,
       "corners": 17,
-      "status": "SCHEDULED",
-      "fastestLap": null,
-      "results": [],
+      "status": "CONCLUDED",
+      "fastestLap": {
+        "driverId": "lawson",
+        "teamId": "rb",
+        "time": "1:35.591"
+      },
+      "results": [
+        {
+          "position": "1",
+          "grid": "1",
+          "driverId": "max_verstappen",
+          "driver": {
+            "name": "Max",
+            "surname": "Verstappen",
+            "number": 3
+          },
+          "teamId": "red_bull",
+          "points": 25,
+          "time": "1:27:39.624",
+          "retired": null,
+          "fastLap": "1:36.450",
+          "lapsCompleted": 50,
+          "fastestLapRank": 9
+        },
+        {
+          "position": "2",
+          "grid": "3",
+          "driverId": "norris",
+          "driver": {
+            "name": "Lando",
+            "surname": "Norris",
+            "number": 1
+          },
+          "teamId": "mclaren",
+          "points": 18,
+          "time": "+0.639",
+          "retired": null,
+          "fastLap": "1:36.182",
+          "lapsCompleted": 50,
+          "fastestLapRank": 4
+        },
+        {
+          "position": "3",
+          "grid": "17",
+          "driverId": "piastri",
+          "driver": {
+            "name": "Oscar",
+            "surname": "Piastri",
+            "number": 81
+          },
+          "teamId": "mclaren",
+          "points": 15,
+          "time": "+1.529",
+          "retired": null,
+          "fastLap": "1:36.334",
+          "lapsCompleted": 50,
+          "fastestLapRank": 8
+        },
+        {
+          "position": "4",
+          "grid": "6",
+          "driverId": "antonelli",
+          "driver": {
+            "name": "Andrea",
+            "surname": "Kimi Antonelli",
+            "number": 12
+          },
+          "teamId": "mercedes",
+          "points": 12,
+          "time": "+2.574",
+          "retired": null,
+          "fastLap": "1:36.235",
+          "lapsCompleted": 50,
+          "fastestLapRank": 6
+        },
+        {
+          "position": "5",
+          "grid": "8",
+          "driverId": "gasly",
+          "driver": {
+            "name": "Pierre",
+            "surname": "Gasly",
+            "number": 10
+          },
+          "teamId": "alpine",
+          "points": 10,
+          "time": "+2.927",
+          "retired": null,
+          "fastLap": "1:36.057",
+          "lapsCompleted": 50,
+          "fastestLapRank": 3
+        },
+        {
+          "position": "6",
+          "grid": "9",
+          "driverId": "colapinto",
+          "driver": {
+            "name": "Franco",
+            "surname": "Colapinto",
+            "number": 43
+          },
+          "teamId": "alpine",
+          "points": 8,
+          "time": "+7.955",
+          "retired": null,
+          "fastLap": "1:36.207",
+          "lapsCompleted": 50,
+          "fastestLapRank": 5
+        },
+        {
+          "position": "7",
+          "grid": "11",
+          "driverId": "hamilton",
+          "driver": {
+            "name": "Lewis",
+            "surname": "Hamilton",
+            "number": 44
+          },
+          "teamId": "ferrari",
+          "points": 6,
+          "time": "+12.795",
+          "retired": null,
+          "fastLap": "1:36.452",
+          "lapsCompleted": 50,
+          "fastestLapRank": 10
+        },
+        {
+          "position": "8",
+          "grid": "20",
+          "driverId": "sainz",
+          "driver": {
+            "name": "Carlos",
+            "surname": "Sainz",
+            "number": 55
+          },
+          "teamId": "williams",
+          "points": 4,
+          "time": "+12.938",
+          "retired": null,
+          "fastLap": "1:36.716",
+          "lapsCompleted": 50,
+          "fastestLapRank": 12
+        },
+        {
+          "position": "9",
+          "grid": "2",
+          "driverId": "russell",
+          "driver": {
+            "name": "George",
+            "surname": "Russell",
+            "number": 63
+          },
+          "teamId": "mercedes",
+          "points": 2,
+          "time": "+13.192",
+          "retired": null,
+          "fastLap": "1:36.331",
+          "lapsCompleted": 50,
+          "fastestLapRank": 7
+        },
+        {
+          "position": "10",
+          "grid": "10",
+          "driverId": "leclerc",
+          "driver": {
+            "name": "Charles",
+            "surname": "Leclerc",
+            "number": 16
+          },
+          "teamId": "ferrari",
+          "points": 1,
+          "time": "+17.554",
+          "retired": null,
+          "fastLap": "1:36.601",
+          "lapsCompleted": 50,
+          "fastestLapRank": 11
+        },
+        {
+          "position": "11",
+          "grid": "12",
+          "driverId": "hulkenberg",
+          "driver": {
+            "name": "Nico",
+            "surname": "Hulkenberg",
+            "number": 27
+          },
+          "teamId": "audi",
+          "points": 0,
+          "time": "+22.720",
+          "retired": null,
+          "fastLap": "1:37.038",
+          "lapsCompleted": 50,
+          "fastestLapRank": 13
+        },
+        {
+          "position": "12",
+          "grid": "13",
+          "driverId": "bortoleto",
+          "driver": {
+            "name": "Gabriel",
+            "surname": "Bortoleto",
+            "number": 5
+          },
+          "teamId": "audi",
+          "points": 0,
+          "time": "+28.602",
+          "retired": null,
+          "fastLap": "1:37.087",
+          "lapsCompleted": 50,
+          "fastestLapRank": 14
+        },
+        {
+          "position": "13",
+          "grid": "22",
+          "driverId": "bearman",
+          "driver": {
+            "name": "Oliver",
+            "surname": "Bearman",
+            "number": 87
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": "+28.843",
+          "retired": null,
+          "fastLap": "1:37.312",
+          "lapsCompleted": 50,
+          "fastestLapRank": 15
+        },
+        {
+          "position": "14",
+          "grid": "7",
+          "driverId": "lawson",
+          "driver": {
+            "name": "Liam",
+            "surname": "Lawson",
+            "number": 30
+          },
+          "teamId": "rb",
+          "points": 0,
+          "time": "+36.588",
+          "retired": null,
+          "fastLap": "1:35.591",
+          "lapsCompleted": 50,
+          "fastestLapRank": 1
+        },
+        {
+          "position": "15",
+          "grid": "4",
+          "driverId": "hadjar",
+          "driver": {
+            "name": "Isack",
+            "surname": "Hadjar",
+            "number": 6
+          },
+          "teamId": "red_bull",
+          "points": 0,
+          "time": "+46.488",
+          "retired": null,
+          "fastLap": "1:35.944",
+          "lapsCompleted": 50,
+          "fastestLapRank": 2
+        },
+        {
+          "position": "16",
+          "grid": "15",
+          "driverId": "rafael_camara",
+          "driver": {
+            "name": "Rafael",
+            "surname": "Camara",
+            "number": 51
+          },
+          "teamId": "haas",
+          "points": 0,
+          "time": "+47.814",
+          "retired": null,
+          "fastLap": "1:37.900",
+          "lapsCompleted": 50,
+          "fastestLapRank": 17
+        },
+        {
+          "position": "17",
+          "grid": "21",
+          "driverId": "stroll",
+          "driver": {
+            "name": "Lance",
+            "surname": "Stroll",
+            "number": 18
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": "+1:08.353",
+          "retired": null,
+          "fastLap": "1:38.805",
+          "lapsCompleted": 50,
+          "fastestLapRank": 20
+        },
+        {
+          "position": "18",
+          "grid": "19",
+          "driverId": "bottas",
+          "driver": {
+            "name": "Valtteri",
+            "surname": "Bottas",
+            "number": 77
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": "+1:11.673",
+          "retired": null,
+          "fastLap": "1:38.443",
+          "lapsCompleted": 50,
+          "fastestLapRank": 18
+        },
+        {
+          "position": "19",
+          "grid": "18",
+          "driverId": "alonso",
+          "driver": {
+            "name": "Fernando",
+            "surname": "Alonso",
+            "number": 14
+          },
+          "teamId": "aston_martin",
+          "points": 0,
+          "time": "+1 lap",
+          "retired": null,
+          "fastLap": "1:38.560",
+          "lapsCompleted": 49,
+          "fastestLapRank": 19
+        },
+        {
+          "position": "20",
+          "grid": "5",
+          "driverId": "lindblad",
+          "driver": {
+            "name": "Arvid",
+            "surname": "Lindblad",
+            "number": 41
+          },
+          "teamId": "rb",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:37.883",
+          "lapsCompleted": 19,
+          "fastestLapRank": 16
+        },
+        {
+          "position": "21",
+          "grid": "16",
+          "driverId": "perez",
+          "driver": {
+            "name": "Sergio",
+            "surname": "Pérez",
+            "number": 11
+          },
+          "teamId": "cadillac",
+          "points": 0,
+          "time": null,
+          "retired": "Retired",
+          "fastLap": "1:39.296",
+          "lapsCompleted": 17,
+          "fastestLapRank": 21
+        },
+        {
+          "position": "22",
+          "grid": "14",
+          "driverId": "albon",
+          "driver": {
+            "name": "Alex",
+            "surname": "Albon",
+            "number": 23
+          },
+          "teamId": "williams",
+          "points": 0,
+          "time": null,
+          "retired": "Did not start",
+          "fastLap": null,
+          "lapsCompleted": 0,
+          "fastestLapRank": null
+        }
+      ],
       "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/21/results/?limit=100"
     },
     {
@@ -8480,5 +8859,5 @@
       "resultsSource": "https://api.jolpi.ca/ergast/f1/2026/23/results/?limit=100"
     }
   ],
-  "updatedAt": "2026-11-09T00:59:32.014Z"
+  "updatedAt": "2026-11-22T17:13:46.195Z"
 }

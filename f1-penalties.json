@@ -114,6 +114,20 @@
       ]
     },
     "japanese_2026": {},
+    "las_vegas_2026": {
+      "leclerc": [
+        {
+          "note": "10s time penalty — collision.",
+          "source": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/race-result"
+        }
+      ],
+      "hadjar": [
+        {
+          "note": "10s time penalty — driving unnecessarily slowly under Safety Car conditions.",
+          "source": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/race-result"
+        }
+      ]
+    },
     "mexican_2026": {
       "piastri": [
         {
@@ -260,6 +274,11 @@
     "japanese_2026": {
       "status": "checked",
       "source": "https://www.formula1.com/en/results/2026/races/1281/japan/race-result",
+      "unmatched": []
+    },
+    "las_vegas_2026": {
+      "status": "checked",
+      "source": "https://www.formula1.com/en/results/2026/races/1300/las-vegas/race-result",
       "unmatched": []
     },
     "mexican_2026": {
