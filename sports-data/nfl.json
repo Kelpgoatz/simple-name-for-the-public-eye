@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-23T02:30:12.745Z",
-  "fixturesUpdatedAt": "2026-11-23T02:30:12.745Z",
-  "standingsUpdatedAt": "2026-11-23T02:30:12.745Z",
+  "updatedAt": "2026-11-23T11:08:43.916Z",
+  "fixturesUpdatedAt": "2026-11-23T11:08:43.916Z",
+  "standingsUpdatedAt": "2026-11-23T11:08:43.916Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5209,8 +5209,8 @@
         {
           "id": "401873077",
           "startTime": "2026-11-23T01:20:00.000Z",
-          "status": "live",
-          "statusDetail": "3:29 - 2nd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Estadio Banorte",
           "home": {
             "id": "25",
@@ -5226,9 +5226,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
             "color": "#4f2683"
           },
-          "homeScore": 14,
+          "homeScore": 35,
           "awayScore": 10,
-          "winner": null
+          "winner": "home"
         },
         {
           "id": "401873078",
@@ -8615,16 +8615,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
             "color": "#aa0000"
           },
-          "wins": 8,
+          "wins": 9,
           "losses": 1,
           "draws": 0,
-          "played": 9,
+          "played": 10,
           "points": null,
           "percentage": null,
-          "winPct": 0.8888889,
+          "winPct": 0.9,
           "gamesBehind": 0,
-          "for": 281,
-          "against": 196
+          "for": 316,
+          "against": 206
         },
         {
           "rank": 2,
@@ -8642,7 +8642,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.8,
-          "gamesBehind": 0.5,
+          "gamesBehind": 1,
           "for": 288,
           "against": 220
         },
@@ -8662,7 +8662,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.65,
-          "gamesBehind": 2,
+          "gamesBehind": 2.5,
           "for": 226,
           "against": 214
         },
@@ -8682,7 +8682,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.5,
-          "gamesBehind": 3.5,
+          "gamesBehind": 4,
           "for": 254,
           "against": 269
         },
@@ -8702,7 +8702,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.8,
-          "gamesBehind": 0.5,
+          "gamesBehind": 1,
           "for": 262,
           "against": 197
         },
@@ -8716,15 +8716,15 @@
             "color": "#4f2683"
           },
           "wins": 7,
-          "losses": 2,
+          "losses": 3,
           "draws": 0,
-          "played": 9,
+          "played": 10,
           "points": null,
           "percentage": null,
-          "winPct": 0.7777778,
-          "gamesBehind": 1,
-          "for": 176,
-          "against": 126
+          "winPct": 0.7,
+          "gamesBehind": 2,
+          "for": 186,
+          "against": 161
         },
         {
           "rank": 7,
@@ -8742,7 +8742,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.6,
-          "gamesBehind": 2.5,
+          "gamesBehind": 3,
           "for": 226,
           "against": 221
         },
@@ -8762,7 +8762,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.6,
-          "gamesBehind": 2.5,
+          "gamesBehind": 3,
           "for": 223,
           "against": 175
         },
@@ -8782,7 +8782,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.6,
-          "gamesBehind": 2.5,
+          "gamesBehind": 3,
           "for": 248,
           "against": 187
         },
@@ -8802,7 +8802,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.45454547,
-          "gamesBehind": 4,
+          "gamesBehind": 4.5,
           "for": 337,
           "against": 312
         },
@@ -8822,7 +8822,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.3888889,
-          "gamesBehind": 4.5,
+          "gamesBehind": 5,
           "for": 196,
           "against": 223
         },
@@ -8842,7 +8842,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.3,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 223,
           "against": 209
         },
@@ -8862,7 +8862,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.3,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 201,
           "against": 258
         },
@@ -8882,7 +8882,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.3,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 215,
           "against": 257
         },
@@ -8902,7 +8902,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.3,
-          "gamesBehind": 5.5,
+          "gamesBehind": 6,
           "for": 167,
           "against": 237
         },
@@ -8922,7 +8922,7 @@
           "points": null,
           "percentage": null,
           "winPct": 0.27272728,
-          "gamesBehind": 6,
+          "gamesBehind": 6.5,
           "for": 191,
           "against": 323
         }
