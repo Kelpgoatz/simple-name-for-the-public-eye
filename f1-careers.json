@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-21T23:49:51.306Z",
+  "updatedAt": "2026-11-23T00:19:56.135Z",
   "source": {
     "name": "Jolpica F1",
     "url": "https://api.jolpi.ca/ergast/f1/",
@@ -11,24 +11,24 @@
       "kind": "driver",
       "sourceId": "antonelli",
       "sourceName": "Andrea Kimi Antonelli",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/antonelli/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2025,
       "lastSeason": 2026,
       "totals": {
-        "starts": 44,
-        "entries": 44,
+        "starts": 45,
+        "entries": 45,
         "wins": 9,
         "podiums": 19,
         "poleStarts": 7,
         "titles": 0
       },
       "averages": {
-        "winRate": 20.454545454545457,
-        "podiumsPerStart": 0.4318181818181818,
-        "finish": 5.8,
-        "grid": 6.545454545454546
+        "winRate": 20,
+        "podiumsPerStart": 0.4222222222222222,
+        "finish": 5.7560975609756095,
+        "grid": 6.533333333333333
       },
       "titleYears": [],
       "bestChampionship": {
@@ -55,7 +55,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 9,
           "podiums": 16,
           "championship": null,
@@ -77,24 +77,24 @@
       "kind": "driver",
       "sourceId": "max_verstappen",
       "sourceName": "Max Verstappen",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/max_verstappen/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2015,
       "lastSeason": 2026,
       "totals": {
-        "starts": 253,
-        "entries": 253,
-        "wins": 74,
-        "podiums": 139,
-        "poleStarts": 50,
+        "starts": 254,
+        "entries": 254,
+        "wins": 75,
+        "podiums": 140,
+        "poleStarts": 51,
         "titles": 4
       },
       "averages": {
-        "winRate": 29.249011857707508,
-        "podiumsPerStart": 0.549407114624506,
-        "finish": 3.529680365296804,
-        "grid": 4.948412698412699
+        "winRate": 29.527559055118108,
+        "podiumsPerStart": 0.5511811023622047,
+        "finish": 3.518181818181818,
+        "grid": 4.932806324110672
       },
       "titleYears": [
         2021,
@@ -110,25 +110,25 @@
       },
       "bestResult": {
         "season": 2026,
-        "round": 19,
-        "race": "Mexico City Grand Prix",
-        "date": "2026-11-01",
-        "url": "https://en.wikipedia.org/wiki/2026_Mexico_City_Grand_Prix",
+        "round": 21,
+        "race": "Las Vegas Grand Prix",
+        "date": "2026-11-22",
+        "url": "https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix",
         "driverId": "max_verstappen",
         "driverName": "Max Verstappen",
         "constructorId": "red_bull",
         "position": 1,
         "positionText": "1",
-        "grid": 5,
+        "grid": 1,
         "points": 25,
         "status": "Finished"
       },
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
-          "wins": 3,
-          "podiums": 12,
+          "starts": 21,
+          "wins": 4,
+          "podiums": 13,
           "championship": null,
           "complete": false
         },
@@ -224,142 +224,28 @@
       "complete": true,
       "missingChampionshipYears": []
     },
-    "russell": {
-      "kind": "driver",
-      "sourceId": "russell",
-      "sourceName": "George Russell",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
-      "source": "https://api.jolpi.ca/ergast/f1/drivers/russell/results/",
-      "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
-      "firstSeason": 2019,
-      "lastSeason": 2026,
-      "totals": {
-        "starts": 172,
-        "entries": 172,
-        "wins": 8,
-        "podiums": 32,
-        "poleStarts": 13,
-        "titles": 0
-      },
-      "averages": {
-        "winRate": 4.651162790697675,
-        "podiumsPerStart": 0.18604651162790697,
-        "finish": 8.117647058823529,
-        "grid": 8.627218934911243
-      },
-      "titleYears": [],
-      "bestChampionship": {
-        "id": "russell",
-        "season": 2025,
-        "position": 4,
-        "points": 319
-      },
-      "bestResult": {
-        "season": 2026,
-        "round": 15,
-        "race": "Azerbaijan Grand Prix",
-        "date": "2026-09-26",
-        "url": "https://en.wikipedia.org/wiki/2026_Azerbaijan_Grand_Prix",
-        "driverId": "russell",
-        "driverName": "George Russell",
-        "constructorId": "mercedes",
-        "position": 1,
-        "positionText": "1",
-        "grid": 1,
-        "points": 25,
-        "status": "Finished"
-      },
-      "seasons": [
-        {
-          "season": 2026,
-          "starts": 20,
-          "wins": 3,
-          "podiums": 8,
-          "championship": null,
-          "complete": false
-        },
-        {
-          "season": 2025,
-          "starts": 24,
-          "wins": 2,
-          "podiums": 9,
-          "championship": 4,
-          "complete": true
-        },
-        {
-          "season": 2024,
-          "starts": 24,
-          "wins": 2,
-          "podiums": 4,
-          "championship": 6,
-          "complete": true
-        },
-        {
-          "season": 2023,
-          "starts": 22,
-          "wins": 0,
-          "podiums": 2,
-          "championship": 8,
-          "complete": true
-        },
-        {
-          "season": 2022,
-          "starts": 22,
-          "wins": 1,
-          "podiums": 8,
-          "championship": 4,
-          "complete": true
-        },
-        {
-          "season": 2021,
-          "starts": 22,
-          "wins": 0,
-          "podiums": 1,
-          "championship": 15,
-          "complete": true
-        },
-        {
-          "season": 2020,
-          "starts": 17,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 18,
-          "complete": true
-        },
-        {
-          "season": 2019,
-          "starts": 21,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 20,
-          "complete": true
-        }
-      ],
-      "complete": true,
-      "missingChampionshipYears": []
-    },
     "hamilton": {
       "kind": "driver",
       "sourceId": "hamilton",
       "sourceName": "Lewis Hamilton",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/hamilton/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2007,
       "lastSeason": 2026,
       "totals": {
-        "starts": 400,
-        "entries": 400,
+        "starts": 401,
+        "entries": 401,
         "wins": 106,
         "podiums": 209,
         "poleStarts": 105,
         "titles": 7
       },
       "averages": {
-        "winRate": 26.5,
-        "podiumsPerStart": 0.5225,
-        "finish": 3.8688524590163933,
-        "grid": 4.6825
+        "winRate": 26.433915211970078,
+        "podiumsPerStart": 0.5211970074812967,
+        "finish": 3.877384196185286,
+        "grid": 4.698254364089776
       },
       "titleYears": [
         2008,
@@ -394,7 +280,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 1,
           "podiums": 7,
           "championship": null,
@@ -556,28 +442,258 @@
       "complete": true,
       "missingChampionshipYears": []
     },
+    "russell": {
+      "kind": "driver",
+      "sourceId": "russell",
+      "sourceName": "George Russell",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
+      "source": "https://api.jolpi.ca/ergast/f1/drivers/russell/results/",
+      "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
+      "firstSeason": 2019,
+      "lastSeason": 2026,
+      "totals": {
+        "starts": 173,
+        "entries": 173,
+        "wins": 8,
+        "podiums": 32,
+        "poleStarts": 13,
+        "titles": 0
+      },
+      "averages": {
+        "winRate": 4.624277456647398,
+        "podiumsPerStart": 0.18497109826589594,
+        "finish": 8.123376623376624,
+        "grid": 8.588235294117647
+      },
+      "titleYears": [],
+      "bestChampionship": {
+        "id": "russell",
+        "season": 2025,
+        "position": 4,
+        "points": 319
+      },
+      "bestResult": {
+        "season": 2026,
+        "round": 15,
+        "race": "Azerbaijan Grand Prix",
+        "date": "2026-09-26",
+        "url": "https://en.wikipedia.org/wiki/2026_Azerbaijan_Grand_Prix",
+        "driverId": "russell",
+        "driverName": "George Russell",
+        "constructorId": "mercedes",
+        "position": 1,
+        "positionText": "1",
+        "grid": 1,
+        "points": 25,
+        "status": "Finished"
+      },
+      "seasons": [
+        {
+          "season": 2026,
+          "starts": 21,
+          "wins": 3,
+          "podiums": 8,
+          "championship": null,
+          "complete": false
+        },
+        {
+          "season": 2025,
+          "starts": 24,
+          "wins": 2,
+          "podiums": 9,
+          "championship": 4,
+          "complete": true
+        },
+        {
+          "season": 2024,
+          "starts": 24,
+          "wins": 2,
+          "podiums": 4,
+          "championship": 6,
+          "complete": true
+        },
+        {
+          "season": 2023,
+          "starts": 22,
+          "wins": 0,
+          "podiums": 2,
+          "championship": 8,
+          "complete": true
+        },
+        {
+          "season": 2022,
+          "starts": 22,
+          "wins": 1,
+          "podiums": 8,
+          "championship": 4,
+          "complete": true
+        },
+        {
+          "season": 2021,
+          "starts": 22,
+          "wins": 0,
+          "podiums": 1,
+          "championship": 15,
+          "complete": true
+        },
+        {
+          "season": 2020,
+          "starts": 17,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 18,
+          "complete": true
+        },
+        {
+          "season": 2019,
+          "starts": 21,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 20,
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "missingChampionshipYears": []
+    },
+    "norris": {
+      "kind": "driver",
+      "sourceId": "norris",
+      "sourceName": "Lando Norris",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
+      "source": "https://api.jolpi.ca/ergast/f1/drivers/norris/results/",
+      "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
+      "firstSeason": 2019,
+      "lastSeason": 2026,
+      "totals": {
+        "starts": 171,
+        "entries": 173,
+        "wins": 14,
+        "podiums": 51,
+        "poleStarts": 20,
+        "titles": 1
+      },
+      "averages": {
+        "winRate": 8.187134502923977,
+        "podiumsPerStart": 0.2982456140350877,
+        "finish": 6.226415094339623,
+        "grid": 6.380116959064328
+      },
+      "titleYears": [
+        2025
+      ],
+      "bestChampionship": {
+        "id": "norris",
+        "season": 2025,
+        "position": 1,
+        "points": 423
+      },
+      "bestResult": {
+        "season": 2026,
+        "round": 20,
+        "race": "Brazilian Grand Prix",
+        "date": "2026-11-08",
+        "url": "https://en.wikipedia.org/wiki/2026_Brazilian_Grand_Prix",
+        "driverId": "norris",
+        "driverName": "Lando Norris",
+        "constructorId": "mclaren",
+        "position": 1,
+        "positionText": "1",
+        "grid": 1,
+        "points": 25,
+        "status": "Finished"
+      },
+      "seasons": [
+        {
+          "season": 2026,
+          "starts": 20,
+          "wins": 3,
+          "podiums": 7,
+          "championship": null,
+          "complete": false
+        },
+        {
+          "season": 2025,
+          "starts": 24,
+          "wins": 7,
+          "podiums": 18,
+          "championship": 1,
+          "complete": true
+        },
+        {
+          "season": 2024,
+          "starts": 24,
+          "wins": 4,
+          "podiums": 13,
+          "championship": 2,
+          "complete": true
+        },
+        {
+          "season": 2023,
+          "starts": 22,
+          "wins": 0,
+          "podiums": 7,
+          "championship": 6,
+          "complete": true
+        },
+        {
+          "season": 2022,
+          "starts": 22,
+          "wins": 0,
+          "podiums": 1,
+          "championship": 7,
+          "complete": true
+        },
+        {
+          "season": 2021,
+          "starts": 22,
+          "wins": 0,
+          "podiums": 4,
+          "championship": 6,
+          "complete": true
+        },
+        {
+          "season": 2020,
+          "starts": 17,
+          "wins": 0,
+          "podiums": 1,
+          "championship": 9,
+          "complete": true
+        },
+        {
+          "season": 2019,
+          "starts": 20,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 11,
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "missingChampionshipYears": []
+    },
     "leclerc": {
       "kind": "driver",
       "sourceId": "leclerc",
       "sourceName": "Charles Leclerc",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/leclerc/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2018,
       "lastSeason": 2026,
       "totals": {
-        "starts": 192,
-        "entries": 193,
+        "starts": 193,
+        "entries": 194,
         "wins": 9,
         "podiums": 56,
         "poleStarts": 27,
         "titles": 0
       },
       "averages": {
-        "winRate": 4.6875,
-        "podiumsPerStart": 0.2916666666666667,
-        "finish": 5.345454545454546,
-        "grid": 6.145833333333333
+        "winRate": 4.66321243523316,
+        "podiumsPerStart": 0.29015544041450775,
+        "finish": 5.373493975903615,
+        "grid": 6.16580310880829
       },
       "titleYears": [],
       "bestChampionship": {
@@ -604,7 +720,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 1,
           "podiums": 6,
           "championship": null,
@@ -678,144 +794,28 @@
       "complete": true,
       "missingChampionshipYears": []
     },
-    "norris": {
-      "kind": "driver",
-      "sourceId": "norris",
-      "sourceName": "Lando Norris",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
-      "source": "https://api.jolpi.ca/ergast/f1/drivers/norris/results/",
-      "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
-      "firstSeason": 2019,
-      "lastSeason": 2026,
-      "totals": {
-        "starts": 170,
-        "entries": 172,
-        "wins": 14,
-        "podiums": 50,
-        "poleStarts": 20,
-        "titles": 1
-      },
-      "averages": {
-        "winRate": 8.235294117647058,
-        "podiumsPerStart": 0.29411764705882354,
-        "finish": 6.253164556962025,
-        "grid": 6.4
-      },
-      "titleYears": [
-        2025
-      ],
-      "bestChampionship": {
-        "id": "norris",
-        "season": 2025,
-        "position": 1,
-        "points": 423
-      },
-      "bestResult": {
-        "season": 2026,
-        "round": 20,
-        "race": "Brazilian Grand Prix",
-        "date": "2026-11-08",
-        "url": "https://en.wikipedia.org/wiki/2026_Brazilian_Grand_Prix",
-        "driverId": "norris",
-        "driverName": "Lando Norris",
-        "constructorId": "mclaren",
-        "position": 1,
-        "positionText": "1",
-        "grid": 1,
-        "points": 25,
-        "status": "Finished"
-      },
-      "seasons": [
-        {
-          "season": 2026,
-          "starts": 19,
-          "wins": 3,
-          "podiums": 6,
-          "championship": null,
-          "complete": false
-        },
-        {
-          "season": 2025,
-          "starts": 24,
-          "wins": 7,
-          "podiums": 18,
-          "championship": 1,
-          "complete": true
-        },
-        {
-          "season": 2024,
-          "starts": 24,
-          "wins": 4,
-          "podiums": 13,
-          "championship": 2,
-          "complete": true
-        },
-        {
-          "season": 2023,
-          "starts": 22,
-          "wins": 0,
-          "podiums": 7,
-          "championship": 6,
-          "complete": true
-        },
-        {
-          "season": 2022,
-          "starts": 22,
-          "wins": 0,
-          "podiums": 1,
-          "championship": 7,
-          "complete": true
-        },
-        {
-          "season": 2021,
-          "starts": 22,
-          "wins": 0,
-          "podiums": 4,
-          "championship": 6,
-          "complete": true
-        },
-        {
-          "season": 2020,
-          "starts": 17,
-          "wins": 0,
-          "podiums": 1,
-          "championship": 9,
-          "complete": true
-        },
-        {
-          "season": 2019,
-          "starts": 20,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 11,
-          "complete": true
-        }
-      ],
-      "complete": true,
-      "missingChampionshipYears": []
-    },
     "piastri": {
       "kind": "driver",
       "sourceId": "piastri",
       "sourceName": "Oscar Piastri",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/piastri/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2023,
       "lastSeason": 2026,
       "totals": {
-        "starts": 88,
-        "entries": 90,
+        "starts": 89,
+        "entries": 91,
         "wins": 9,
-        "podiums": 28,
+        "podiums": 29,
         "poleStarts": 6,
         "titles": 0
       },
       "averages": {
-        "winRate": 10.227272727272728,
-        "podiumsPerStart": 0.3181818181818182,
-        "finish": 5.865853658536586,
-        "grid": 5.988636363636363
+        "winRate": 10.112359550561797,
+        "podiumsPerStart": 0.3258426966292135,
+        "finish": 5.831325301204819,
+        "grid": 6.112359550561798
       },
       "titleYears": [],
       "bestChampionship": {
@@ -842,9 +842,9 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 18,
+          "starts": 19,
           "wins": 0,
-          "podiums": 2,
+          "podiums": 3,
           "championship": null,
           "complete": false
         },
@@ -880,14 +880,14 @@
       "kind": "driver",
       "sourceId": "hadjar",
       "sourceName": "Isack Hadjar",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/hadjar/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2025,
       "lastSeason": 2026,
       "totals": {
-        "starts": 41,
-        "entries": 41,
+        "starts": 42,
+        "entries": 42,
         "wins": 0,
         "podiums": 4,
         "poleStarts": 0,
@@ -895,9 +895,9 @@
       },
       "averages": {
         "winRate": 0,
-        "podiumsPerStart": 0.0975609756097561,
-        "finish": 9.162162162162161,
-        "grid": 9.414634146341463
+        "podiumsPerStart": 0.09523809523809523,
+        "finish": 9.31578947368421,
+        "grid": 9.285714285714286
       },
       "titleYears": [],
       "bestChampionship": {
@@ -924,7 +924,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 17,
+          "starts": 18,
           "wins": 0,
           "podiums": 3,
           "championship": null,
@@ -946,14 +946,14 @@
       "kind": "driver",
       "sourceId": "lawson",
       "sourceName": "Liam Lawson",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/lawson/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2023,
       "lastSeason": 2026,
       "totals": {
-        "starts": 55,
-        "entries": 55,
+        "starts": 56,
+        "entries": 56,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -962,8 +962,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 10.591836734693878,
-        "grid": 12.036363636363637
+        "finish": 10.66,
+        "grid": 11.946428571428571
       },
       "titleYears": [],
       "bestChampionship": {
@@ -990,7 +990,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1028,24 +1028,24 @@
       "kind": "driver",
       "sourceId": "gasly",
       "sourceName": "Pierre Gasly",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/gasly/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2017,
       "lastSeason": 2026,
       "totals": {
-        "starts": 197,
-        "entries": 198,
+        "starts": 198,
+        "entries": 199,
         "wins": 1,
         "podiums": 5,
         "poleStarts": 1,
         "titles": 0
       },
       "averages": {
-        "winRate": 0.5076142131979695,
-        "podiumsPerStart": 0.025380710659898477,
-        "finish": 10.578034682080926,
-        "grid": 11.26943005181347
+        "winRate": 0.5050505050505051,
+        "podiumsPerStart": 0.025252525252525252,
+        "finish": 10.545977011494253,
+        "grid": 11.25257731958763
       },
       "titleYears": [],
       "bestChampionship": {
@@ -1072,7 +1072,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1158,14 +1158,14 @@
       "kind": "driver",
       "sourceId": "arvid_lindblad",
       "sourceName": "Arvid Lindblad",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/arvid_lindblad/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2026,
       "lastSeason": 2026,
       "totals": {
-        "starts": 19,
-        "entries": 20,
+        "starts": 20,
+        "entries": 21,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -1175,7 +1175,7 @@
         "winRate": 0,
         "podiumsPerStart": 0,
         "finish": 10.166666666666666,
-        "grid": 11.894736842105264
+        "grid": 11.55
       },
       "titleYears": [],
       "bestChampionship": null,
@@ -1197,7 +1197,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 19,
+          "starts": 20,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1211,14 +1211,14 @@
       "kind": "driver",
       "sourceId": "colapinto",
       "sourceName": "Franco Colapinto",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/colapinto/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2024,
       "lastSeason": 2026,
       "totals": {
-        "starts": 46,
-        "entries": 47,
+        "starts": 47,
+        "entries": 48,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -1227,8 +1227,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 13.325,
-        "grid": 14.91304347826087
+        "finish": 13.146341463414634,
+        "grid": 14.787234042553191
       },
       "titleYears": [],
       "bestChampionship": {
@@ -1239,23 +1239,23 @@
       },
       "bestResult": {
         "season": 2026,
-        "round": 5,
-        "race": "Canadian Grand Prix",
-        "date": "2026-05-24",
-        "url": "https://en.wikipedia.org/wiki/2026_Canadian_Grand_Prix",
+        "round": 21,
+        "race": "Las Vegas Grand Prix",
+        "date": "2026-11-22",
+        "url": "https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix",
         "driverId": "colapinto",
         "driverName": "Franco Colapinto",
         "constructorId": "alpine",
         "position": 6,
         "positionText": "6",
-        "grid": 10,
+        "grid": 9,
         "points": 8,
-        "status": "Lapped"
+        "status": "Finished"
       },
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1285,14 +1285,14 @@
       "kind": "driver",
       "sourceId": "bearman",
       "sourceName": "Oliver Bearman",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/bearman/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2024,
       "lastSeason": 2026,
       "totals": {
-        "starts": 47,
-        "entries": 47,
+        "starts": 48,
+        "entries": 48,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -1301,8 +1301,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 11.435897435897436,
-        "grid": 14.02127659574468
+        "finish": 11.475,
+        "grid": 14.1875
       },
       "titleYears": [],
       "bestChampionship": {
@@ -1329,7 +1329,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1359,14 +1359,14 @@
       "kind": "driver",
       "sourceId": "bortoleto",
       "sourceName": "Gabriel Bortoleto",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/bortoleto/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2025,
       "lastSeason": 2026,
       "totals": {
-        "starts": 43,
-        "entries": 44,
+        "starts": 44,
+        "entries": 45,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -1375,8 +1375,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 12.621621621621621,
-        "grid": 13.767441860465116
+        "finish": 12.605263157894736,
+        "grid": 13.75
       },
       "titleYears": [],
       "bestChampionship": {
@@ -1403,7 +1403,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 19,
+          "starts": 20,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1425,14 +1425,14 @@
       "kind": "driver",
       "sourceId": "hulkenberg",
       "sourceName": "Nico Hülkenberg",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/hulkenberg/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2010,
       "lastSeason": 2026,
       "totals": {
-        "starts": 272,
-        "entries": 274,
+        "starts": 273,
+        "entries": 275,
         "wins": 0,
         "podiums": 1,
         "poleStarts": 1,
@@ -1440,9 +1440,9 @@
       },
       "averages": {
         "winRate": 0,
-        "podiumsPerStart": 0.003676470588235294,
-        "finish": 10.383928571428571,
-        "grid": 11.188191881918819
+        "podiumsPerStart": 0.003663003663003663,
+        "finish": 10.386666666666667,
+        "grid": 11.191176470588236
       },
       "titleYears": [],
       "bestChampionship": {
@@ -1469,7 +1469,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 19,
+          "starts": 20,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1591,11 +1591,157 @@
       "complete": true,
       "missingChampionshipYears": []
     },
+    "sainz": {
+      "kind": "driver",
+      "sourceId": "sainz",
+      "sourceName": "Carlos Sainz",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
+      "source": "https://api.jolpi.ca/ergast/f1/drivers/sainz/results/",
+      "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
+      "firstSeason": 2015,
+      "lastSeason": 2026,
+      "totals": {
+        "starts": 251,
+        "entries": 253,
+        "wins": 4,
+        "podiums": 29,
+        "poleStarts": 6,
+        "titles": 0
+      },
+      "averages": {
+        "winRate": 1.593625498007968,
+        "podiumsPerStart": 0.11553784860557768,
+        "finish": 8.167464114832535,
+        "grid": 9.492
+      },
+      "titleYears": [],
+      "bestChampionship": {
+        "id": "sainz",
+        "season": 2024,
+        "position": 5,
+        "points": 290
+      },
+      "bestResult": {
+        "season": 2024,
+        "round": 20,
+        "race": "Mexico City Grand Prix",
+        "date": "2024-10-27",
+        "url": "https://en.wikipedia.org/wiki/2024_Mexico_City_Grand_Prix",
+        "driverId": "sainz",
+        "driverName": "Carlos Sainz",
+        "constructorId": "ferrari",
+        "position": 1,
+        "positionText": "1",
+        "grid": 1,
+        "points": 25,
+        "status": "Finished"
+      },
+      "seasons": [
+        {
+          "season": 2026,
+          "starts": 21,
+          "wins": 0,
+          "podiums": 0,
+          "championship": null,
+          "complete": false
+        },
+        {
+          "season": 2025,
+          "starts": 23,
+          "wins": 0,
+          "podiums": 2,
+          "championship": 9,
+          "complete": true
+        },
+        {
+          "season": 2024,
+          "starts": 23,
+          "wins": 2,
+          "podiums": 9,
+          "championship": 5,
+          "complete": true
+        },
+        {
+          "season": 2023,
+          "starts": 21,
+          "wins": 1,
+          "podiums": 3,
+          "championship": 7,
+          "complete": true
+        },
+        {
+          "season": 2022,
+          "starts": 22,
+          "wins": 1,
+          "podiums": 9,
+          "championship": 5,
+          "complete": true
+        },
+        {
+          "season": 2021,
+          "starts": 22,
+          "wins": 0,
+          "podiums": 4,
+          "championship": 5,
+          "complete": true
+        },
+        {
+          "season": 2020,
+          "starts": 17,
+          "wins": 0,
+          "podiums": 1,
+          "championship": 6,
+          "complete": true
+        },
+        {
+          "season": 2019,
+          "starts": 21,
+          "wins": 0,
+          "podiums": 1,
+          "championship": 6,
+          "complete": true
+        },
+        {
+          "season": 2018,
+          "starts": 21,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 10,
+          "complete": true
+        },
+        {
+          "season": 2017,
+          "starts": 20,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 9,
+          "complete": true
+        },
+        {
+          "season": 2016,
+          "starts": 21,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 12,
+          "complete": true
+        },
+        {
+          "season": 2015,
+          "starts": 19,
+          "wins": 0,
+          "podiums": 0,
+          "championship": 15,
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "missingChampionshipYears": []
+    },
     "ocon": {
       "kind": "driver",
       "sourceId": "ocon",
       "sourceName": "Esteban Ocon",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/ocon/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2016,
@@ -1725,24 +1871,24 @@
       "kind": "driver",
       "sourceId": "alonso",
       "sourceName": "Fernando Alonso",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/alonso/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2001,
       "lastSeason": 2026,
       "totals": {
-        "starts": 446,
-        "entries": 448,
+        "starts": 447,
+        "entries": 449,
         "wins": 32,
         "podiums": 106,
         "poleStarts": 22,
         "titles": 2
       },
       "averages": {
-        "winRate": 7.174887892376682,
-        "podiumsPerStart": 0.23766816143497757,
-        "finish": 6.950819672131147,
-        "grid": 9.130044843049328
+        "winRate": 7.158836689038031,
+        "podiumsPerStart": 0.2371364653243848,
+        "finish": 6.983651226158038,
+        "grid": 9.149888143176733
       },
       "titleYears": [
         2005,
@@ -1772,7 +1918,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -1958,164 +2104,18 @@
       "complete": true,
       "missingChampionshipYears": []
     },
-    "sainz": {
-      "kind": "driver",
-      "sourceId": "sainz",
-      "sourceName": "Carlos Sainz",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
-      "source": "https://api.jolpi.ca/ergast/f1/drivers/sainz/results/",
-      "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
-      "firstSeason": 2015,
-      "lastSeason": 2026,
-      "totals": {
-        "starts": 250,
-        "entries": 252,
-        "wins": 4,
-        "podiums": 29,
-        "poleStarts": 6,
-        "titles": 0
-      },
-      "averages": {
-        "winRate": 1.6,
-        "podiumsPerStart": 0.116,
-        "finish": 8.16826923076923,
-        "grid": 9.449799196787149
-      },
-      "titleYears": [],
-      "bestChampionship": {
-        "id": "sainz",
-        "season": 2024,
-        "position": 5,
-        "points": 290
-      },
-      "bestResult": {
-        "season": 2024,
-        "round": 20,
-        "race": "Mexico City Grand Prix",
-        "date": "2024-10-27",
-        "url": "https://en.wikipedia.org/wiki/2024_Mexico_City_Grand_Prix",
-        "driverId": "sainz",
-        "driverName": "Carlos Sainz",
-        "constructorId": "ferrari",
-        "position": 1,
-        "positionText": "1",
-        "grid": 1,
-        "points": 25,
-        "status": "Finished"
-      },
-      "seasons": [
-        {
-          "season": 2026,
-          "starts": 20,
-          "wins": 0,
-          "podiums": 0,
-          "championship": null,
-          "complete": false
-        },
-        {
-          "season": 2025,
-          "starts": 23,
-          "wins": 0,
-          "podiums": 2,
-          "championship": 9,
-          "complete": true
-        },
-        {
-          "season": 2024,
-          "starts": 23,
-          "wins": 2,
-          "podiums": 9,
-          "championship": 5,
-          "complete": true
-        },
-        {
-          "season": 2023,
-          "starts": 21,
-          "wins": 1,
-          "podiums": 3,
-          "championship": 7,
-          "complete": true
-        },
-        {
-          "season": 2022,
-          "starts": 22,
-          "wins": 1,
-          "podiums": 9,
-          "championship": 5,
-          "complete": true
-        },
-        {
-          "season": 2021,
-          "starts": 22,
-          "wins": 0,
-          "podiums": 4,
-          "championship": 5,
-          "complete": true
-        },
-        {
-          "season": 2020,
-          "starts": 17,
-          "wins": 0,
-          "podiums": 1,
-          "championship": 6,
-          "complete": true
-        },
-        {
-          "season": 2019,
-          "starts": 21,
-          "wins": 0,
-          "podiums": 1,
-          "championship": 6,
-          "complete": true
-        },
-        {
-          "season": 2018,
-          "starts": 21,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 10,
-          "complete": true
-        },
-        {
-          "season": 2017,
-          "starts": 20,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 9,
-          "complete": true
-        },
-        {
-          "season": 2016,
-          "starts": 21,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 12,
-          "complete": true
-        },
-        {
-          "season": 2015,
-          "starts": 19,
-          "wins": 0,
-          "podiums": 0,
-          "championship": 15,
-          "complete": true
-        }
-      ],
-      "complete": true,
-      "missingChampionshipYears": []
-    },
     "albon": {
       "kind": "driver",
       "sourceId": "albon",
       "sourceName": "Alexander Albon",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/albon/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2019,
       "lastSeason": 2026,
       "totals": {
         "starts": 147,
-        "entries": 149,
+        "entries": 150,
         "wins": 0,
         "podiums": 2,
         "poleStarts": 0,
@@ -2214,7 +2214,7 @@
       "kind": "driver",
       "sourceId": "tsunoda",
       "sourceName": "Yuki Tsunoda",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/tsunoda/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2021,
@@ -2312,7 +2312,7 @@
       "kind": "driver",
       "sourceId": "ryo_hirakawa",
       "sourceName": "Ryo Hirakawa",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/ryo_hirakawa/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2026,
@@ -2365,14 +2365,14 @@
       "kind": "driver",
       "sourceId": "stroll",
       "sourceName": "Lance Stroll",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/stroll/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2017,
       "lastSeason": 2026,
       "totals": {
-        "starts": 209,
-        "entries": 211,
+        "starts": 210,
+        "entries": 212,
         "wins": 0,
         "podiums": 3,
         "poleStarts": 1,
@@ -2380,9 +2380,9 @@
       },
       "averages": {
         "winRate": 0,
-        "podiumsPerStart": 0.014354066985645933,
-        "finish": 11.713450292397662,
-        "grid": 14.41062801932367
+        "podiumsPerStart": 0.014285714285714285,
+        "finish": 11.744186046511627,
+        "grid": 14.442307692307692
       },
       "titleYears": [],
       "bestChampionship": {
@@ -2409,7 +2409,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -2495,24 +2495,24 @@
       "kind": "driver",
       "sourceId": "bottas",
       "sourceName": "Valtteri Bottas",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/bottas/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2013,
       "lastSeason": 2026,
       "totals": {
-        "starts": 265,
-        "entries": 267,
+        "starts": 266,
+        "entries": 268,
         "wins": 10,
         "podiums": 67,
         "poleStarts": 20,
         "titles": 0
       },
       "averages": {
-        "winRate": 3.7735849056603774,
-        "podiumsPerStart": 0.2528301886792453,
-        "finish": 8.23913043478261,
-        "grid": 8.886363636363637
+        "winRate": 3.7593984962406015,
+        "podiumsPerStart": 0.2518796992481203,
+        "finish": 8.281385281385282,
+        "grid": 8.924528301886792
       },
       "titleYears": [],
       "bestChampionship": {
@@ -2539,7 +2539,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 19,
+          "starts": 20,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -2649,24 +2649,24 @@
       "kind": "driver",
       "sourceId": "perez",
       "sourceName": "Sergio Pérez",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/perez/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2011,
       "lastSeason": 2026,
       "totals": {
-        "starts": 302,
-        "entries": 303,
+        "starts": 303,
+        "entries": 304,
         "wins": 6,
         "podiums": 39,
         "poleStarts": 3,
         "titles": 0
       },
       "averages": {
-        "winRate": 1.9867549668874174,
-        "podiumsPerStart": 0.1291390728476821,
+        "winRate": 1.9801980198019802,
+        "podiumsPerStart": 0.12871287128712872,
         "finish": 8.469924812030076,
-        "grid": 10.493243243243244
+        "grid": 10.511784511784512
       },
       "titleYears": [],
       "bestChampionship": {
@@ -2693,7 +2693,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -2819,14 +2819,14 @@
       "kind": "driver",
       "sourceId": "rafael_camara",
       "sourceName": "Rafael Camara",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/rafael_camara/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": 2026,
       "lastSeason": 2026,
       "totals": {
-        "starts": 1,
-        "entries": 1,
+        "starts": 2,
+        "entries": 2,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -2835,30 +2835,30 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 20,
-        "grid": 11
+        "finish": 18,
+        "grid": 13
       },
       "titleYears": [],
       "bestChampionship": null,
       "bestResult": {
         "season": 2026,
-        "round": 20,
-        "race": "Brazilian Grand Prix",
-        "date": "2026-11-08",
-        "url": "https://en.wikipedia.org/wiki/2026_Brazilian_Grand_Prix",
+        "round": 21,
+        "race": "Las Vegas Grand Prix",
+        "date": "2026-11-22",
+        "url": "https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix",
         "driverId": "rafael_camara",
         "driverName": "Rafael Camara",
         "constructorId": "haas",
-        "position": 20,
-        "positionText": "20",
-        "grid": 11,
+        "position": 16,
+        "positionText": "16",
+        "grid": 15,
         "points": 0,
-        "status": "Lapped"
+        "status": "Finished"
       },
       "seasons": [
         {
           "season": 2026,
-          "starts": 1,
+          "starts": 2,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -2872,7 +2872,7 @@
       "kind": "driver",
       "sourceId": "jak_crawford",
       "sourceName": "Jak Crawford",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/jak_crawford/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -2902,7 +2902,7 @@
       "kind": "driver",
       "sourceId": "leonardo_fornaroli",
       "sourceName": "Leonardo Fornaroli",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/leonardo_fornaroli/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -2932,7 +2932,7 @@
       "kind": "driver",
       "sourceId": "paul_aron",
       "sourceName": "Paul Aron",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/paul_aron/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -2962,7 +2962,7 @@
       "kind": "driver",
       "sourceId": "dino_beganovic",
       "sourceName": "Dino Beganovic",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/dino_beganovic/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -2992,7 +2992,7 @@
       "kind": "driver",
       "sourceId": "ayumu_iwasa",
       "sourceName": "Ayumu Iwasa",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/ayumu_iwasa/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3022,7 +3022,7 @@
       "kind": "driver",
       "sourceId": "frederik_vesti",
       "sourceName": "Frederik Vesti",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/frederik_vesti/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3052,7 +3052,7 @@
       "kind": "driver",
       "sourceId": "colton_herta",
       "sourceName": "Colton Herta",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/colton_herta/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3082,7 +3082,7 @@
       "kind": "driver",
       "sourceId": "luke_browning",
       "sourceName": "Luke Browning",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/luke_browning/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3112,7 +3112,7 @@
       "kind": "driver",
       "sourceId": "nikola_tsolov",
       "sourceName": "Nikola Tsolov",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/nikola_tsolov/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3142,7 +3142,7 @@
       "kind": "driver",
       "sourceId": "gabriele_mini",
       "sourceName": "Gabriele Mini",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/gabriele_mini/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3172,7 +3172,7 @@
       "kind": "driver",
       "sourceId": "freddie_slater",
       "sourceName": "Freddie Slater",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/drivers/freddie_slater/results/",
       "scope": "Formula 1 World Championship Grand Prix results only; sprint results are excluded.",
       "firstSeason": null,
@@ -3204,24 +3204,24 @@
       "kind": "team",
       "sourceId": "alpine",
       "sourceName": "Alpine F1 Team",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/alpine/results/",
       "scope": "Exact Jolpica constructor identity “Alpine F1 Team” (alpine). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 2021,
       "lastSeason": 2026,
       "totals": {
-        "starts": 134,
-        "entries": 134,
+        "starts": 135,
+        "entries": 135,
         "wins": 1,
         "podiums": 6,
         "poleStarts": 1,
         "titles": 0
       },
       "averages": {
-        "winRate": 0.7462686567164178,
-        "podiumsPerStart": 0.04477611940298507,
-        "finish": 11.012931034482758,
-        "grid": 12.06439393939394
+        "winRate": 0.7407407407407408,
+        "podiumsPerStart": 0.044444444444444446,
+        "finish": 10.965811965811966,
+        "grid": 12.037593984962406
       },
       "titleYears": [],
       "bestChampionship": {
@@ -3248,7 +3248,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -3302,14 +3302,14 @@
       "kind": "team",
       "sourceId": "aston_martin",
       "sourceName": "Aston Martin",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/aston_martin/results/",
       "scope": "Exact Jolpica constructor identity “Aston Martin” (aston_martin). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 1959,
       "lastSeason": 2026,
       "totals": {
-        "starts": 139,
-        "entries": 140,
+        "starts": 140,
+        "entries": 141,
         "wins": 0,
         "podiums": 9,
         "poleStarts": 0,
@@ -3317,9 +3317,9 @@
       },
       "averages": {
         "winRate": 0,
-        "podiumsPerStart": 0.06474820143884892,
-        "finish": 10.88,
-        "grid": 13.07037037037037
+        "podiumsPerStart": 0.06428571428571428,
+        "finish": 10.94273127753304,
+        "grid": 13.117647058823529
       },
       "titleYears": [],
       "bestChampionship": {
@@ -3346,7 +3346,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -3416,14 +3416,14 @@
       "kind": "team",
       "sourceId": "audi",
       "sourceName": "Audi",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/audi/results/",
       "scope": "Exact Jolpica constructor identity “Audi” (audi). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 2026,
       "lastSeason": 2026,
       "totals": {
-        "starts": 20,
-        "entries": 20,
+        "starts": 21,
+        "entries": 21,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -3432,8 +3432,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 11.470588235294118,
-        "grid": 12.368421052631579
+        "finish": 11.472222222222221,
+        "grid": 12.375
       },
       "titleYears": [],
       "bestChampionship": null,
@@ -3455,7 +3455,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -3469,14 +3469,14 @@
       "kind": "team",
       "sourceId": "cadillac",
       "sourceName": "Cadillac F1 Team",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/cadillac/results/",
       "scope": "Exact Jolpica constructor identity “Cadillac F1 Team” (cadillac). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 2026,
       "lastSeason": 2026,
       "totals": {
-        "starts": 20,
-        "entries": 20,
+        "starts": 21,
+        "entries": 21,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -3485,8 +3485,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 16.6,
-        "grid": 19.333333333333332
+        "finish": 16.653846153846153,
+        "grid": 19.24390243902439
       },
       "titleYears": [],
       "bestChampionship": null,
@@ -3508,7 +3508,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -3522,24 +3522,24 @@
       "kind": "team",
       "sourceId": "ferrari",
       "sourceName": "Ferrari",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/ferrari/results/",
       "scope": "Exact Jolpica constructor identity “Ferrari” (ferrari). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 1950,
       "lastSeason": 2026,
       "totals": {
-        "starts": 1144,
-        "entries": 1144,
+        "starts": 1145,
+        "entries": 1145,
         "wins": 250,
         "podiums": 849,
         "poleStarts": 255,
         "titles": 16
       },
       "averages": {
-        "winRate": 21.853146853146853,
-        "podiumsPerStart": 0.7421328671328671,
-        "finish": 4.692180616740088,
-        "grid": 6.285887585928022
+        "winRate": 21.83406113537118,
+        "podiumsPerStart": 0.7414847161572052,
+        "finish": 4.696369636963697,
+        "grid": 6.289292929292929
       },
       "titleYears": [
         1961,
@@ -3583,7 +3583,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 2,
           "podiums": 13,
           "championship": null,
@@ -4205,14 +4205,14 @@
       "kind": "team",
       "sourceId": "haas",
       "sourceName": "Haas F1 Team",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/haas/results/",
       "scope": "Exact Jolpica constructor identity “Haas F1 Team” (haas). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 2016,
       "lastSeason": 2026,
       "totals": {
-        "starts": 234,
-        "entries": 234,
+        "starts": 235,
+        "entries": 235,
         "wins": 0,
         "podiums": 0,
         "poleStarts": 0,
@@ -4221,8 +4221,8 @@
       "averages": {
         "winRate": 0,
         "podiumsPerStart": 0,
-        "finish": 13.03598971722365,
-        "grid": 13.886710239651416
+        "finish": 13.043478260869565,
+        "grid": 13.906724511930586
       },
       "titleYears": [],
       "bestChampionship": {
@@ -4249,7 +4249,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -4343,24 +4343,24 @@
       "kind": "team",
       "sourceId": "mclaren",
       "sourceName": "McLaren",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/mclaren/results/",
       "scope": "Exact Jolpica constructor identity “McLaren” (mclaren). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 1968,
       "lastSeason": 2026,
       "totals": {
-        "starts": 970,
-        "entries": 972,
+        "starts": 971,
+        "entries": 973,
         "wins": 202,
-        "podiums": 550,
+        "podiums": 552,
         "poleStarts": 181,
         "titles": 10
       },
       "averages": {
-        "winRate": 20.824742268041238,
-        "podiumsPerStart": 0.5670103092783505,
-        "finish": 5.823890784982935,
-        "grid": 7.811931243680485
+        "winRate": 20.803295571575696,
+        "podiumsPerStart": 0.568486096807415,
+        "finish": 5.81935923653715,
+        "grid": 7.814141414141414
       },
       "titleYears": [
         1974,
@@ -4398,9 +4398,9 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 19,
+          "starts": 20,
           "wins": 3,
-          "podiums": 8,
+          "podiums": 10,
           "championship": null,
           "complete": false
         },
@@ -4860,24 +4860,24 @@
       "kind": "team",
       "sourceId": "mercedes",
       "sourceName": "Mercedes",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/mercedes/results/",
       "scope": "Exact Jolpica constructor identity “Mercedes” (mercedes). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 1954,
       "lastSeason": 2026,
       "totals": {
-        "starts": 361,
-        "entries": 361,
+        "starts": 362,
+        "entries": 362,
         "wins": 143,
         "podiums": 334,
         "poleStarts": 156,
         "titles": 8
       },
       "averages": {
-        "winRate": 39.612188365650965,
-        "podiumsPerStart": 0.925207756232687,
-        "finish": 4.494688922610015,
-        "grid": 5.067934782608695
+        "winRate": 39.50276243093923,
+        "podiumsPerStart": 0.9226519337016574,
+        "finish": 4.500756429652042,
+        "grid": 5.065040650406504
       },
       "titleYears": [
         2014,
@@ -4913,7 +4913,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 12,
           "podiums": 24,
           "championship": null,
@@ -5071,14 +5071,14 @@
       "kind": "team",
       "sourceId": "rb",
       "sourceName": "RB F1 Team",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/rb/results/",
       "scope": "Exact Jolpica constructor identity “RB F1 Team” (rb). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 2024,
       "lastSeason": 2026,
       "totals": {
-        "starts": 68,
-        "entries": 68,
+        "starts": 69,
+        "entries": 69,
         "wins": 0,
         "podiums": 1,
         "poleStarts": 0,
@@ -5086,9 +5086,9 @@
       },
       "averages": {
         "winRate": 0,
-        "podiumsPerStart": 0.014705882352941176,
-        "finish": 11.173553719008265,
-        "grid": 11.377777777777778
+        "podiumsPerStart": 0.014492753623188406,
+        "finish": 11.19672131147541,
+        "grid": 11.299270072992702
       },
       "titleYears": [],
       "bestChampionship": {
@@ -5115,7 +5115,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
@@ -5145,24 +5145,24 @@
       "kind": "team",
       "sourceId": "red_bull",
       "sourceName": "Red Bull",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/red_bull/results/",
       "scope": "Exact Jolpica constructor identity “Red Bull” (red_bull). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 2005,
       "lastSeason": 2026,
       "totals": {
-        "starts": 437,
-        "entries": 438,
-        "wins": 133,
-        "podiums": 312,
-        "poleStarts": 113,
+        "starts": 438,
+        "entries": 439,
+        "wins": 134,
+        "podiums": 313,
+        "poleStarts": 114,
         "titles": 6
       },
       "averages": {
-        "winRate": 30.434782608695656,
-        "podiumsPerStart": 0.7139588100686499,
-        "finish": 5.288798920377868,
-        "grid": 6.7710982658959535
+        "winRate": 30.59360730593607,
+        "podiumsPerStart": 0.7146118721461188,
+        "finish": 5.296096904441454,
+        "grid": 6.7612456747404845
       },
       "titleYears": [
         2010,
@@ -5180,25 +5180,25 @@
       },
       "bestResult": {
         "season": 2026,
-        "round": 19,
-        "race": "Mexico City Grand Prix",
-        "date": "2026-11-01",
-        "url": "https://en.wikipedia.org/wiki/2026_Mexico_City_Grand_Prix",
+        "round": 21,
+        "race": "Las Vegas Grand Prix",
+        "date": "2026-11-22",
+        "url": "https://en.wikipedia.org/wiki/2026_Las_Vegas_Grand_Prix",
         "driverId": "max_verstappen",
         "driverName": "Max Verstappen",
         "constructorId": "red_bull",
         "position": 1,
         "positionText": "1",
-        "grid": 5,
+        "grid": 1,
         "points": 25,
         "status": "Finished"
       },
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
-          "wins": 3,
-          "podiums": 15,
+          "starts": 21,
+          "wins": 4,
+          "podiums": 16,
           "championship": null,
           "complete": false
         },
@@ -5378,24 +5378,24 @@
       "kind": "team",
       "sourceId": "williams",
       "sourceName": "Williams",
-      "updatedAt": "2026-11-21T23:49:51.306Z",
+      "updatedAt": "2026-11-23T00:19:56.135Z",
       "source": "https://api.jolpi.ca/ergast/f1/constructors/williams/results/",
       "scope": "Exact Jolpica constructor identity “Williams” (williams). Predecessor or renamed constructor identities are not merged.",
       "firstSeason": 1975,
       "lastSeason": 2026,
       "totals": {
-        "starts": 884,
-        "entries": 885,
+        "starts": 885,
+        "entries": 886,
         "wins": 114,
         "podiums": 316,
         "poleStarts": 128,
         "titles": 9
       },
       "averages": {
-        "winRate": 12.895927601809957,
-        "podiumsPerStart": 0.3574660633484163,
-        "finish": 8.478632478632479,
-        "grid": 9.544405997693195
+        "winRate": 12.88135593220339,
+        "podiumsPerStart": 0.35706214689265536,
+        "finish": 8.478260869565217,
+        "grid": 9.55043227665706
       },
       "titleYears": [
         1980,
@@ -5432,7 +5432,7 @@
       "seasons": [
         {
           "season": 2026,
-          "starts": 20,
+          "starts": 21,
           "wins": 0,
           "podiums": 0,
           "championship": null,
