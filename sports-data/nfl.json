@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-22T21:53:34.582Z",
-  "fixturesUpdatedAt": "2026-11-22T21:53:34.582Z",
-  "standingsUpdatedAt": "2026-11-22T21:53:34.582Z",
+  "updatedAt": "2026-11-23T02:30:12.745Z",
+  "fixturesUpdatedAt": "2026-11-23T02:30:12.745Z",
+  "standingsUpdatedAt": "2026-11-23T02:30:12.745Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5137,8 +5137,8 @@
         {
           "id": "401873074",
           "startTime": "2026-11-22T21:05:00.000Z",
-          "status": "live",
-          "statusDetail": "9:31 - 2nd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "SoFi Stadium",
           "home": {
             "id": "24",
@@ -5154,15 +5154,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
             "color": "#115740"
           },
-          "homeScore": 3,
-          "awayScore": 10,
-          "winner": null
+          "homeScore": 24,
+          "awayScore": 27,
+          "winner": "away"
         },
         {
           "id": "401873075",
           "startTime": "2026-11-22T21:25:00.000Z",
-          "status": "live",
-          "statusDetail": "3:12 - 1st",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Empower Field at Mile High",
           "home": {
             "id": "7",
@@ -5178,15 +5178,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
             "color": "#000000"
           },
-          "homeScore": 3,
-          "awayScore": 0,
-          "winner": null
+          "homeScore": 38,
+          "awayScore": 24,
+          "winner": "home"
         },
         {
           "id": "401873069",
           "startTime": "2026-11-22T21:25:00.000Z",
-          "status": "live",
-          "statusDetail": "6:00 - 1st",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "MetLife Stadium",
           "home": {
             "id": "19",
@@ -5202,15 +5202,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
             "color": "#007487"
           },
-          "homeScore": 3,
-          "awayScore": 3,
-          "winner": null
+          "homeScore": 23,
+          "awayScore": 18,
+          "winner": "home"
         },
         {
           "id": "401873077",
           "startTime": "2026-11-23T01:20:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "3:29 - 2nd",
           "venue": "Estadio Banorte",
           "home": {
             "id": "25",
@@ -5226,8 +5226,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
             "color": "#4f2683"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 14,
+          "awayScore": 10,
           "winner": null
         },
         {
@@ -8303,11 +8303,11 @@
         {
           "rank": 2,
           "team": {
-            "id": "12",
-            "name": "Kansas City Chiefs",
-            "abbreviation": "KC",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-            "color": "#e31837"
+            "id": "7",
+            "name": "Denver Broncos",
+            "abbreviation": "DEN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+            "color": "#0a2343"
           },
           "wins": 8,
           "losses": 2,
@@ -8317,31 +8317,11 @@
           "percentage": null,
           "winPct": 0.8,
           "gamesBehind": 1,
-          "for": 271,
-          "against": 163
+          "for": 236,
+          "against": 210
         },
         {
           "rank": 3,
-          "team": {
-            "id": "30",
-            "name": "Jacksonville Jaguars",
-            "abbreviation": "JAX",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
-            "color": "#007487"
-          },
-          "wins": 7,
-          "losses": 2,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.7777778,
-          "gamesBehind": 1.5,
-          "for": 269,
-          "against": 144
-        },
-        {
-          "rank": 4,
           "team": {
             "id": "4",
             "name": "Cincinnati Bengals",
@@ -8361,24 +8341,44 @@
           "against": 193
         },
         {
-          "rank": 5,
+          "rank": 4,
           "team": {
-            "id": "7",
-            "name": "Denver Broncos",
-            "abbreviation": "DEN",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
-            "color": "#0a2343"
+            "id": "30",
+            "name": "Jacksonville Jaguars",
+            "abbreviation": "JAX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+            "color": "#007487"
           },
           "wins": 7,
-          "losses": 2,
+          "losses": 3,
           "draws": 0,
-          "played": 9,
+          "played": 10,
           "points": null,
           "percentage": null,
-          "winPct": 0.7777778,
-          "gamesBehind": 1.5,
-          "for": 198,
-          "against": 186
+          "winPct": 0.7,
+          "gamesBehind": 2,
+          "for": 287,
+          "against": 167
+        },
+        {
+          "rank": 5,
+          "team": {
+            "id": "12",
+            "name": "Kansas City Chiefs",
+            "abbreviation": "KC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+            "color": "#e31837"
+          },
+          "wins": 8,
+          "losses": 2,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.8,
+          "gamesBehind": 1,
+          "for": 271,
+          "against": 163
         },
         {
           "rank": 6,
@@ -8470,15 +8470,15 @@
             "color": "#000000"
           },
           "wins": 4,
-          "losses": 6,
+          "losses": 7,
           "draws": 0,
-          "played": 10,
+          "played": 11,
           "points": null,
           "percentage": null,
-          "winPct": 0.4,
-          "gamesBehind": 5,
-          "for": 251,
-          "against": 289
+          "winPct": 0.36363637,
+          "gamesBehind": 5.5,
+          "for": 275,
+          "against": 327
         },
         {
           "rank": 11,
@@ -8503,6 +8503,26 @@
         {
           "rank": 12,
           "team": {
+            "id": "20",
+            "name": "New York Jets",
+            "abbreviation": "NYJ",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+            "color": "#115740"
+          },
+          "wins": 3,
+          "losses": 8,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.27272728,
+          "gamesBehind": 6.5,
+          "for": 221,
+          "against": 278
+        },
+        {
+          "rank": 13,
+          "team": {
             "id": "11",
             "name": "Indianapolis Colts",
             "abbreviation": "IND",
@@ -8521,26 +8541,6 @@
           "against": 297
         },
         {
-          "rank": 13,
-          "team": {
-            "id": "20",
-            "name": "New York Jets",
-            "abbreviation": "NYJ",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
-            "color": "#115740"
-          },
-          "wins": 2,
-          "losses": 8,
-          "draws": 0,
-          "played": 10,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.2,
-          "gamesBehind": 7,
-          "for": 194,
-          "against": 254
-        },
-        {
           "rank": 14,
           "team": {
             "id": "24",
@@ -8550,26 +8550,6 @@
             "color": "#0080c6"
           },
           "wins": 1,
-          "losses": 8,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.11111111,
-          "gamesBehind": 7.5,
-          "for": 144,
-          "against": 239
-        },
-        {
-          "rank": 15,
-          "team": {
-            "id": "10",
-            "name": "Tennessee Titans",
-            "abbreviation": "TEN",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
-            "color": "#4495d2"
-          },
-          "wins": 1,
           "losses": 9,
           "draws": 0,
           "played": 10,
@@ -8577,11 +8557,11 @@
           "percentage": null,
           "winPct": 0.1,
           "gamesBehind": 8,
-          "for": 197,
-          "against": 290
+          "for": 168,
+          "against": 266
         },
         {
-          "rank": 16,
+          "rank": 15,
           "team": {
             "id": "15",
             "name": "Miami Dolphins",
@@ -8599,6 +8579,26 @@
           "gamesBehind": 8,
           "for": 157,
           "against": 250
+        },
+        {
+          "rank": 16,
+          "team": {
+            "id": "10",
+            "name": "Tennessee Titans",
+            "abbreviation": "TEN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+            "color": "#4495d2"
+          },
+          "wins": 1,
+          "losses": 9,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.1,
+          "gamesBehind": 8,
+          "for": 197,
+          "against": 290
         }
       ]
     },
@@ -8655,16 +8655,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
             "color": "#003c7f"
           },
-          "wins": 5,
+          "wins": 6,
           "losses": 3,
           "draws": 1,
-          "played": 9,
+          "played": 10,
           "points": null,
           "percentage": null,
-          "winPct": 0.6111111,
-          "gamesBehind": 2.5,
-          "for": 203,
-          "against": 196
+          "winPct": 0.65,
+          "gamesBehind": 2,
+          "for": 226,
+          "against": 214
         },
         {
           "rank": 4,
