@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-23T22:43:25.148Z",
-  "fixturesUpdatedAt": "2026-11-23T22:43:25.148Z",
-  "standingsUpdatedAt": "2026-11-23T22:43:25.148Z",
+  "updatedAt": "2026-11-24T06:29:01.930Z",
+  "fixturesUpdatedAt": "2026-11-24T06:29:01.930Z",
+  "standingsUpdatedAt": "2026-11-24T06:29:01.930Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5233,8 +5233,8 @@
         {
           "id": "401873078",
           "startTime": "2026-11-24T01:15:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Northwest Stadium",
           "home": {
             "id": "28",
@@ -5250,9 +5250,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
             "color": "#fb4f14"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 22,
+          "awayScore": 20,
+          "winner": "home"
         }
       ]
     },
@@ -8323,26 +8323,6 @@
         {
           "rank": 3,
           "team": {
-            "id": "4",
-            "name": "Cincinnati Bengals",
-            "abbreviation": "CIN",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
-            "color": "#fb4f14"
-          },
-          "wins": 7,
-          "losses": 2,
-          "draws": 0,
-          "played": 9,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.7777778,
-          "gamesBehind": 1.5,
-          "for": 278,
-          "against": 193
-        },
-        {
-          "rank": 4,
-          "team": {
             "id": "30",
             "name": "Jacksonville Jaguars",
             "abbreviation": "JAX",
@@ -8359,6 +8339,26 @@
           "gamesBehind": 2,
           "for": 287,
           "against": 167
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": "4",
+            "name": "Cincinnati Bengals",
+            "abbreviation": "CIN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+            "color": "#fb4f14"
+          },
+          "wins": 7,
+          "losses": 3,
+          "draws": 0,
+          "played": 10,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.7,
+          "gamesBehind": 2,
+          "for": 298,
+          "against": 215
         },
         {
           "rank": 5,
@@ -8815,16 +8815,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
             "color": "#5a1414"
           },
-          "wins": 3,
+          "wins": 4,
           "losses": 5,
           "draws": 1,
-          "played": 9,
+          "played": 10,
           "points": null,
           "percentage": null,
-          "winPct": 0.3888889,
-          "gamesBehind": 5,
-          "for": 196,
-          "against": 223
+          "winPct": 0.45,
+          "gamesBehind": 4.5,
+          "for": 218,
+          "against": 243
         },
         {
           "rank": 12,
