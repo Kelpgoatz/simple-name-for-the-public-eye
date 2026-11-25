@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-25T09:17:42.991Z",
+  "updatedAt": "2026-11-25T19:26:09.364Z",
   "source": {
     "name": "FIA Formula 2",
     "url": "https://www.fiaformula2.com/en/racing/2026",
@@ -558,7 +558,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -1154,7 +1154,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/qualifying-classification",
           "timingCoverage": {
             "matched": 24,
@@ -1702,7 +1702,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -2250,7 +2250,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/melbourne/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -2813,7 +2813,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -3361,7 +3361,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -3909,7 +3909,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -4454,7 +4454,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/miami/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -4465,7 +4465,7 @@
             "time": "1:55.796",
             "lap": 22
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:23.352Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:28.129Z"
         }
       ],
       "circuit": "Miami International Autodrome",
@@ -5018,7 +5018,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -5566,7 +5566,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -6090,7 +6090,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/sprint-race-classification",
           "timingCoverage": {
             "matched": 21,
@@ -6614,7 +6614,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/montreal/feature-race-classification",
           "timingCoverage": {
             "matched": 21,
@@ -7177,7 +7177,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -7461,7 +7461,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/qualifying-classification",
           "timingCoverage": {
             "matched": 11,
@@ -7744,7 +7744,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/qualifying-classification",
           "timingCoverage": {
             "matched": 11,
@@ -8292,7 +8292,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -8840,7 +8840,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/monaco/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -9403,7 +9403,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -9951,7 +9951,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -10499,7 +10499,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -11046,7 +11046,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/barcelona-catalunya/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -11057,7 +11057,7 @@
             "time": "1:29.478",
             "lap": 26
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:26.158Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:30.906Z"
         }
       ],
       "circuit": "Circuit de Barcelona-Catalunya",
@@ -11610,7 +11610,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -12158,7 +12158,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -12703,7 +12703,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -12714,7 +12714,7 @@
             "time": "1:18.962",
             "lap": 7
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:27.572Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:32.682Z"
         },
         {
           "id": "f2/race?meeting=1288&session=2",
@@ -13250,7 +13250,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spielberg/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -13261,7 +13261,7 @@
             "time": "1:18.384",
             "lap": 31
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:28.382Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:33.662Z"
         }
       ],
       "circuit": "Red Bull Ring",
@@ -13814,7 +13814,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -14362,7 +14362,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -14956,7 +14956,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/sprint-race-classification",
           "timingCoverage": {
             "matched": 24,
@@ -14967,7 +14967,7 @@
             "time": "1:44.533",
             "lap": 9
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:29.879Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:35.185Z"
         },
         {
           "id": "f2/race?meeting=1289&session=2",
@@ -15552,7 +15552,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/silverstone/feature-race-classification",
           "timingCoverage": {
             "matched": 24,
@@ -15563,7 +15563,7 @@
             "time": "1:43.021",
             "lap": 27
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:30.490Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:36.004Z"
         }
       ],
       "circuit": "Silverstone Circuit",
@@ -16116,7 +16116,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -16664,7 +16664,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -17212,7 +17212,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -17758,7 +17758,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/spa-francorchamps/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -17769,7 +17769,7 @@
             "time": "1:59.308",
             "lap": 16
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:31.997Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:37.589Z"
         }
       ],
       "circuit": "Circuit de Spa-Francorchamps",
@@ -18322,7 +18322,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -18870,7 +18870,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -19418,7 +19418,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -19966,7 +19966,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/budapest/feature-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -20463,7 +20463,7 @@
               "countryCode": "co"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/qualifying?meeting=1293&session=0",
@@ -20913,7 +20913,7 @@
               "countryCode": "gb"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/race?meeting=1293&session=1",
@@ -21451,8 +21451,8 @@
               "timingSource": "https://www.fia.com/sites/default/files/2026_13_ita_f2_r1_timing_sprintraceprovisionalclassification_v01.pdf"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
-          "pdfTimingCheckedAt": "2026-11-18T18:10:32.890Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
+          "pdfTimingCheckedAt": "2026-11-25T19:26:38.982Z",
           "fastestLap": {
             "driverId": "JOSDUR01",
             "time": "1:33.616",
@@ -22005,8 +22005,8 @@
               "timingSource": "https://www.fia.com/sites/default/files/2026_13_ita_f2_r2_timing_featureraceprovisionalclassification_v01.pdf"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
-          "pdfTimingCheckedAt": "2026-11-18T18:10:33.593Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
+          "pdfTimingCheckedAt": "2026-11-25T19:26:39.820Z",
           "fastestLap": {
             "driverId": "RAFCAM01",
             "time": "1:32.884",
@@ -22574,7 +22574,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -23121,7 +23121,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/qualifying-classification",
           "timingCoverage": {
             "matched": 22,
@@ -23132,7 +23132,7 @@
             "time": "1:44.331",
             "lap": 12
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:34.968Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:41.190Z"
         },
         {
           "id": "f2/race?meeting=1294&session=1",
@@ -23643,7 +23643,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/sprint-race-classification",
           "timingCoverage": {
             "matched": 21,
@@ -23654,7 +23654,7 @@
             "time": "1:49.161",
             "lap": 21
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:35.271Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:42.033Z"
         },
         {
           "id": "f2/race?meeting=1294&session=2",
@@ -24167,7 +24167,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/madrid/feature-race-classification",
           "timingCoverage": {
             "matched": 21,
@@ -24178,7 +24178,7 @@
             "time": "1:46.257",
             "lap": 29
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:35.958Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:42.723Z"
         }
       ],
       "circuit": "Madring",
@@ -24731,7 +24731,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/session-classifications",
           "timingCoverage": {
             "matched": 22,
@@ -25279,7 +25279,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/qualifying-1-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/qualifying-1-classification",
           "timingCoverage": {
             "matched": 22,
@@ -25827,7 +25827,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/qualifying-2-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/qualifying-2-classification",
           "timingCoverage": {
             "matched": 22,
@@ -26374,7 +26374,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/sprint-race-classification",
           "timingCoverage": {
             "matched": 22,
@@ -26385,7 +26385,7 @@
             "time": "1:56.855",
             "lap": 10
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:37.452Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:43.764Z"
         },
         {
           "id": "f2/race?meeting=1295&session=2",
@@ -26922,7 +26922,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/feature-race-1-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/feature-race-1-classification",
           "timingCoverage": {
             "matched": 22,
@@ -26933,7 +26933,7 @@
             "time": "1:55.737",
             "lap": 23
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:38.026Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:43.823Z"
         },
         {
           "id": "f2/race?meeting=1295&session=3",
@@ -27470,7 +27470,7 @@
               "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/feature-race-2-classification"
             }
           ],
-          "updatedAt": "2026-11-18T18:10:03.597Z",
+          "updatedAt": "2026-11-25T19:26:09.364Z",
           "timingSource": "https://www.fia.com/events/formula-2-championship/season-2026/baku/feature-race-2-classification",
           "timingCoverage": {
             "matched": 22,
@@ -27481,7 +27481,7 @@
             "time": "1:55.494",
             "lap": 29
           },
-          "pdfTimingCheckedAt": "2026-11-18T18:10:38.646Z"
+          "pdfTimingCheckedAt": "2026-11-25T19:26:43.876Z"
         }
       ],
       "circuit": "Baku City Circuit",
@@ -27505,7 +27505,7 @@
           "startTime": "2026-11-27T11:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/qualifying?meeting=1301&session=0",
@@ -27514,7 +27514,7 @@
           "startTime": "2026-11-27T15:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/race?meeting=1301&session=1",
@@ -27523,7 +27523,7 @@
           "startTime": "2026-11-28T16:15:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/race?meeting=1301&session=2",
@@ -27532,7 +27532,7 @@
           "startTime": "2026-11-29T12:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         }
       ],
       "circuit": "Lusail International Circuit",
@@ -27556,7 +27556,7 @@
           "startTime": "2026-12-03T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/qualifying?meeting=1302&session=0",
@@ -27565,7 +27565,7 @@
           "startTime": "2026-12-03T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/race?meeting=1302&session=1",
@@ -27574,7 +27574,7 @@
           "startTime": "2026-12-04T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         },
         {
           "id": "f2/race?meeting=1302&session=2",
@@ -27583,7 +27583,7 @@
           "startTime": "2026-12-05T20:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-25T09:17:42.991Z"
+          "updatedAt": "2026-11-25T19:26:09.364Z"
         }
       ],
       "circuit": "Yas Marina Circuit",
@@ -28021,14 +28021,16 @@
     "source": "https://www.fia.com/events/formula-2-championship/season-2026/fia-formula-2",
     "availableSessions": 49,
     "totalSessions": 51,
-    "requestedSessions": 2,
+    "requestedSessions": 51,
     "unavailable": [
       "R10 Practice",
-      "R10 Qualifying"
+      "R10 Qualifying",
+      "R10 Sprint Race",
+      "R10 Feature Race"
     ]
   },
   "pdfTimingCoverage": {
-    "enrichedSessions": 0,
+    "enrichedSessions": 2,
     "unavailable": []
   }
 }
