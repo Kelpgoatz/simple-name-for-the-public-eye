@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-24T18:11:12.914Z",
-  "fixturesUpdatedAt": "2026-11-24T18:11:12.914Z",
-  "standingsUpdatedAt": "2026-11-24T18:11:12.914Z",
+  "updatedAt": "2026-11-25T02:34:23.373Z",
+  "fixturesUpdatedAt": "2026-11-25T02:34:23.373Z",
+  "standingsUpdatedAt": "2026-11-25T02:34:23.373Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -8225,8 +8225,8 @@
         {
           "id": "401909314",
           "startTime": "2026-11-25T00:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Kia Center",
           "home": {
             "id": "19",
@@ -8242,15 +8242,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
             "color": "#1d428a"
           },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
+          "homeScore": 86,
+          "awayScore": 104,
+          "winner": "away"
         },
         {
           "id": "401909315",
           "startTime": "2026-11-25T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "7:51 - 3rd",
           "venue": "Capital One Arena",
           "home": {
             "id": "27",
@@ -8266,8 +8266,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
             "color": "#008348"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 65,
+          "awayScore": 88,
           "winner": null
         },
         {
@@ -31939,16 +31939,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
             "color": "#1d428a"
           },
-          "wins": 10,
+          "wins": 11,
           "losses": 6,
           "draws": 0,
-          "played": 16,
+          "played": 17,
           "points": null,
           "percentage": null,
-          "winPct": 0.625,
-          "gamesBehind": 3,
-          "for": 1814,
-          "against": 1737
+          "winPct": 0.64705884,
+          "gamesBehind": 2.5,
+          "for": 1918,
+          "against": 1823
         },
         {
           "rank": 6,
@@ -32000,15 +32000,15 @@
             "color": "#0150b5"
           },
           "wins": 7,
-          "losses": 9,
+          "losses": 10,
           "draws": 0,
-          "played": 16,
+          "played": 17,
           "points": null,
           "percentage": null,
-          "winPct": 0.4375,
-          "gamesBehind": 6,
-          "for": 1740,
-          "against": 1806
+          "winPct": 0.4117647,
+          "gamesBehind": 6.5,
+          "for": 1826,
+          "against": 1910
         },
         {
           "rank": 9,
