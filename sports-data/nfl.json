@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-25T20:41:12.371Z",
-  "fixturesUpdatedAt": "2026-11-25T20:41:12.371Z",
-  "standingsUpdatedAt": "2026-11-25T20:41:12.371Z",
+  "updatedAt": "2026-11-26T03:12:18.243Z",
+  "fixturesUpdatedAt": "2026-11-26T03:12:18.243Z",
+  "standingsUpdatedAt": "2026-11-26T03:12:18.243Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5264,8 +5264,8 @@
         {
           "id": "401873079",
           "startTime": "2026-11-26T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "10:00 - 3rd",
           "venue": "SoFi Stadium",
           "home": {
             "id": "14",
@@ -5281,8 +5281,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
             "color": "#204e32"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 13,
+          "awayScore": 13,
           "winner": null
         },
         {
