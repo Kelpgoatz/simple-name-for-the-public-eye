@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-26T12:44:37.363Z",
+  "updatedAt": "2026-11-26T21:57:59.461Z",
   "source": {
     "name": "FIA Formula 3",
     "url": "https://www.fiaformula3.com/en/racing/2026",
@@ -750,7 +750,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -1490,7 +1490,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/qualifying-classification",
           "timingCoverage": {
             "matched": 30,
@@ -2230,7 +2230,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -2921,7 +2921,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/melbourne/feature-race-classification",
           "timingCoverage": {
             "matched": 28,
@@ -2932,7 +2932,7 @@
             "time": "1:37.336",
             "lap": 5
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:53.066Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:19.888Z"
         }
       ],
       "circuit": "Albert Park Grand Prix Circuit",
@@ -3677,7 +3677,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -4057,7 +4057,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/qualifying-classification",
           "timingCoverage": {
             "matched": 15,
@@ -4437,7 +4437,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/qualifying-classification",
           "timingCoverage": {
             "matched": 15,
@@ -5173,7 +5173,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -5184,7 +5184,7 @@
             "time": "1:25.227",
             "lap": 16
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:54.606Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:21.800Z"
         },
         {
           "id": "f3/race?meeting=1286&session=2",
@@ -5889,7 +5889,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monaco/feature-race-classification",
           "timingCoverage": {
             "matched": 29,
@@ -5900,7 +5900,7 @@
             "time": "1:25.150",
             "lap": 16
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:54.752Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:22.345Z"
         }
       ],
       "circuit": "Circuit de Monaco",
@@ -6645,7 +6645,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -7385,7 +7385,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/qualifying-classification",
           "timingCoverage": {
             "matched": 30,
@@ -8125,7 +8125,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -8865,7 +8865,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/barcelona-catalunya/feature-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -9620,7 +9620,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -10360,7 +10360,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/qualifying-classification",
           "timingCoverage": {
             "matched": 30,
@@ -11099,7 +11099,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -11110,7 +11110,7 @@
             "time": "1:23.521",
             "lap": 9
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:56.302Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:23.433Z"
         },
         {
           "id": "f3/race?meeting=1288&session=2",
@@ -11838,7 +11838,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spielberg/feature-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -11849,7 +11849,7 @@
             "time": "1:22.977",
             "lap": 9
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:56.729Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:23.509Z"
         }
       ],
       "circuit": "Red Bull Ring",
@@ -12594,7 +12594,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -13334,7 +13334,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/qualifying-classification",
           "timingCoverage": {
             "matched": 30,
@@ -14074,7 +14074,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -14814,7 +14814,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/silverstone/feature-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -15569,7 +15569,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -16309,7 +16309,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/qualifying-classification",
           "timingCoverage": {
             "matched": 30,
@@ -17048,7 +17048,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -17059,7 +17059,7 @@
             "time": "2:07.041",
             "lap": 5
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:57.603Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:25.353Z"
         },
         {
           "id": "f3/race?meeting=1290&session=2",
@@ -17786,7 +17786,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/spa-francorchamps/feature-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -17797,7 +17797,7 @@
             "time": "2:06.762",
             "lap": 6
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:57.716Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:25.727Z"
         }
       ],
       "circuit": "Circuit de Spa-Francorchamps",
@@ -18542,7 +18542,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -19282,7 +19282,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/qualifying-classification",
           "timingCoverage": {
             "matched": 30,
@@ -20020,7 +20020,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -20031,7 +20031,7 @@
             "time": "1:36.516",
             "lap": 19
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:58.675Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:27.498Z"
         },
         {
           "id": "f3/race?meeting=1291&session=2",
@@ -20758,7 +20758,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/budapest/feature-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -20769,7 +20769,7 @@
             "time": "1:36.064",
             "lap": 8
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:42:59.306Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:28.305Z"
         }
       ],
       "circuit": "Hungaroring",
@@ -21514,7 +21514,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/session-classifications",
           "timingCoverage": {
             "matched": 30,
@@ -21894,7 +21894,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/qualifying-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/qualifying-classification",
           "timingCoverage": {
             "matched": 15,
@@ -22214,8 +22214,8 @@
               "countryCode": "jp"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
-          "pdfTimingCheckedAt": "2026-11-19T18:43:00.926Z"
+          "updatedAt": "2026-11-26T21:57:59.461Z",
+          "pdfTimingCheckedAt": "2026-11-26T21:58:30.249Z"
         },
         {
           "id": "f3/race?meeting=1293&session=1",
@@ -22945,7 +22945,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/sprint-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -23684,7 +23684,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/feature-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/monza/feature-race-classification",
           "timingCoverage": {
             "matched": 30,
@@ -23695,7 +23695,7 @@
             "time": "1:39.525",
             "lap": 8
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:43:01.289Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:31.063Z"
         }
       ],
       "circuit": "Autodromo Nazionale Monza",
@@ -24389,7 +24389,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/session-classifications"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/session-classifications",
           "timingCoverage": {
             "matched": 28,
@@ -25078,7 +25078,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/qualifying-i-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/qualifying-i-classification",
           "timingCoverage": {
             "matched": 28,
@@ -25766,7 +25766,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/qualifying-ii-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/qualifying-ii-classification",
           "timingCoverage": {
             "matched": 28,
@@ -25777,7 +25777,7 @@
             "time": "1:49.750",
             "lap": 9
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:43:02.917Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:32.645Z"
         },
         {
           "id": "f3/race?meeting=1294&session=1",
@@ -26456,7 +26456,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/sprint-race-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/sprint-race-classification",
           "timingCoverage": {
             "matched": 28,
@@ -27138,7 +27138,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/feature-race-i-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/feature-race-i-classification",
           "timingCoverage": {
             "matched": 28,
@@ -27149,7 +27149,7 @@
             "time": "1:51.762",
             "lap": 18
           },
-          "pdfTimingCheckedAt": "2026-11-19T18:43:03.256Z"
+          "pdfTimingCheckedAt": "2026-11-26T21:58:33.038Z"
         },
         {
           "id": "f3/race?meeting=1294&session=3",
@@ -27828,7 +27828,7 @@
               "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/feature-race-ii-classification"
             }
           ],
-          "updatedAt": "2026-11-19T18:42:27.887Z",
+          "updatedAt": "2026-11-26T21:57:59.461Z",
           "timingSource": "https://www.fia.com/events/fia-formula-3-championship/season-2026/madrid/feature-race-ii-classification",
           "timingCoverage": {
             "matched": 28,
@@ -28434,7 +28434,7 @@
     "source": "https://www.fia.com/events/fia-formula-3-championship/season-2026/fia-formula-3",
     "availableSessions": 39,
     "totalSessions": 40,
-    "requestedSessions": 1,
+    "requestedSessions": 40,
     "unavailable": [
       "R8 Group B - Qualifying"
     ]
