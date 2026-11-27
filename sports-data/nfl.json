@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-26T21:58:37.712Z",
-  "fixturesUpdatedAt": "2026-11-26T21:58:37.712Z",
-  "standingsUpdatedAt": "2026-11-26T21:58:37.712Z",
+  "updatedAt": "2026-11-27T04:05:33.499Z",
+  "fixturesUpdatedAt": "2026-11-27T04:05:33.499Z",
+  "standingsUpdatedAt": "2026-11-27T04:05:33.499Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5312,8 +5312,8 @@
         {
           "id": "401873080",
           "startTime": "2026-11-26T21:30:00.000Z",
-          "status": "live",
-          "statusDetail": "9:37 - 1st",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "AT&T Stadium",
           "home": {
             "id": "6",
@@ -5329,15 +5329,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
             "color": "#06424d"
           },
-          "homeScore": 0,
-          "awayScore": 0,
-          "winner": null
+          "homeScore": 38,
+          "awayScore": 39,
+          "winner": "away"
         },
         {
           "id": "401873082",
           "startTime": "2026-11-27T01:20:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "3:29 - 4th",
           "venue": "Highmark Stadium",
           "home": {
             "id": "2",
@@ -5353,8 +5353,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
             "color": "#e31837"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 10,
+          "awayScore": 10,
           "winner": null
         },
         {
@@ -8789,26 +8789,6 @@
         {
           "rank": 10,
           "team": {
-            "id": "6",
-            "name": "Dallas Cowboys",
-            "abbreviation": "DAL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-            "color": "#002a5c"
-          },
-          "wins": 5,
-          "losses": 6,
-          "draws": 0,
-          "played": 11,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.45454547,
-          "gamesBehind": 4.5,
-          "for": 337,
-          "against": 312
-        },
-        {
-          "rank": 11,
-          "team": {
             "id": "28",
             "name": "Washington Commanders",
             "abbreviation": "WSH",
@@ -8827,7 +8807,47 @@
           "against": 243
         },
         {
+          "rank": 11,
+          "team": {
+            "id": "6",
+            "name": "Dallas Cowboys",
+            "abbreviation": "DAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+            "color": "#002a5c"
+          },
+          "wins": 5,
+          "losses": 7,
+          "draws": 0,
+          "played": 12,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.41666666,
+          "gamesBehind": 5,
+          "for": 375,
+          "against": 351
+        },
+        {
           "rank": 12,
+          "team": {
+            "id": "21",
+            "name": "Philadelphia Eagles",
+            "abbreviation": "PHI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+            "color": "#06424d"
+          },
+          "wins": 4,
+          "losses": 7,
+          "draws": 0,
+          "played": 11,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.36363637,
+          "gamesBehind": 5.5,
+          "for": 206,
+          "against": 275
+        },
+        {
+          "rank": 13,
           "team": {
             "id": "27",
             "name": "Tampa Bay Buccaneers",
@@ -8847,7 +8867,7 @@
           "against": 209
         },
         {
-          "rank": 13,
+          "rank": 14,
           "team": {
             "id": "1",
             "name": "Atlanta Falcons",
@@ -8867,7 +8887,7 @@
           "against": 258
         },
         {
-          "rank": 14,
+          "rank": 15,
           "team": {
             "id": "18",
             "name": "New Orleans Saints",
@@ -8885,26 +8905,6 @@
           "gamesBehind": 6,
           "for": 215,
           "against": 257
-        },
-        {
-          "rank": 15,
-          "team": {
-            "id": "21",
-            "name": "Philadelphia Eagles",
-            "abbreviation": "PHI",
-            "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
-            "color": "#06424d"
-          },
-          "wins": 3,
-          "losses": 7,
-          "draws": 0,
-          "played": 10,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.3,
-          "gamesBehind": 6,
-          "for": 167,
-          "against": 237
         },
         {
           "rank": 16,
