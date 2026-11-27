@@ -2,9 +2,9 @@
   "sport": "nfl",
   "season": 2026,
   "seasonLabel": "2026",
-  "updatedAt": "2026-11-27T13:45:19.374Z",
-  "fixturesUpdatedAt": "2026-11-27T13:45:19.374Z",
-  "standingsUpdatedAt": "2026-11-27T13:45:19.374Z",
+  "updatedAt": "2026-11-27T22:22:38.908Z",
+  "fixturesUpdatedAt": "2026-11-27T22:22:38.908Z",
+  "standingsUpdatedAt": "2026-11-27T22:22:38.908Z",
   "seasonStart": "2026-08-06T07:00Z",
   "seasonEnd": "2027-02-16T07:59Z",
   "source": {
@@ -5360,8 +5360,8 @@
         {
           "id": "401873083",
           "startTime": "2026-11-27T20:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
+          "status": "live",
+          "statusDetail": "13:10 - 4th",
           "venue": "Acrisure Stadium",
           "home": {
             "id": "23",
@@ -5377,8 +5377,8 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
             "color": "#0a2343"
           },
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 24,
+          "awayScore": 5,
           "winner": null
         },
         {
