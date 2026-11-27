@@ -34821,17 +34821,595 @@
           "label": "P1",
           "date": "2026-11-27",
           "startTime": "2026-11-27T13:30:00Z",
-          "source": null,
-          "status": "SCHEDULED",
-          "results": []
+          "source": "https://www.formula1.com/en/results/2026/races/1301/qatar/practice/1",
+          "status": "CONCLUDED",
+          "results": [
+            {
+              "driverId": "antonelli",
+              "driver": {
+                "name": "Andrea",
+                "surname": "Kimi Antonelli",
+                "number": 12
+              },
+              "teamId": "mercedes",
+              "position": "1",
+              "lapsCompleted": 31,
+              "bestLap": "1:23.217",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "russell",
+              "driver": {
+                "name": "George",
+                "surname": "Russell",
+                "number": 63
+              },
+              "teamId": "mercedes",
+              "position": "2",
+              "lapsCompleted": 29,
+              "bestLap": "1:23.724",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "hadjar",
+              "driver": {
+                "name": "Isack",
+                "surname": "Hadjar",
+                "number": 6
+              },
+              "teamId": "red_bull",
+              "position": "3",
+              "lapsCompleted": 25,
+              "bestLap": "1:23.878",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "norris",
+              "driver": {
+                "name": "Lando",
+                "surname": "Norris",
+                "number": 1
+              },
+              "teamId": "mclaren",
+              "position": "4",
+              "lapsCompleted": 26,
+              "bestLap": "1:24.067",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "piastri",
+              "driver": {
+                "name": "Oscar",
+                "surname": "Piastri",
+                "number": 81
+              },
+              "teamId": "mclaren",
+              "position": "5",
+              "lapsCompleted": 30,
+              "bestLap": "1:24.077",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "max_verstappen",
+              "driver": {
+                "name": "Max",
+                "surname": "Verstappen",
+                "number": 3
+              },
+              "teamId": "red_bull",
+              "position": "6",
+              "lapsCompleted": 26,
+              "bestLap": "1:24.133",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "leclerc",
+              "driver": {
+                "name": "Charles",
+                "surname": "Leclerc",
+                "number": 16
+              },
+              "teamId": "ferrari",
+              "position": "7",
+              "lapsCompleted": 30,
+              "bestLap": "1:24.473",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "hamilton",
+              "driver": {
+                "name": "Lewis",
+                "surname": "Hamilton",
+                "number": 44
+              },
+              "teamId": "ferrari",
+              "position": "8",
+              "lapsCompleted": 27,
+              "bestLap": "1:24.575",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "lindblad",
+              "driver": {
+                "name": "Arvid",
+                "surname": "Lindblad",
+                "number": 41
+              },
+              "teamId": "rb",
+              "position": "9",
+              "lapsCompleted": 27,
+              "bestLap": "1:24.601",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "gasly",
+              "driver": {
+                "name": "Pierre",
+                "surname": "Gasly",
+                "number": 10
+              },
+              "teamId": "alpine",
+              "position": "10",
+              "lapsCompleted": 28,
+              "bestLap": "1:24.874",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "bortoleto",
+              "driver": {
+                "name": "Gabriel",
+                "surname": "Bortoleto",
+                "number": 5
+              },
+              "teamId": "audi",
+              "position": "11",
+              "lapsCompleted": 25,
+              "bestLap": "1:25.053",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "colapinto",
+              "driver": {
+                "name": "Franco",
+                "surname": "Colapinto",
+                "number": 43
+              },
+              "teamId": "alpine",
+              "position": "12",
+              "lapsCompleted": 28,
+              "bestLap": "1:25.409",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "hulkenberg",
+              "driver": {
+                "name": "Nico",
+                "surname": "Hulkenberg",
+                "number": 27
+              },
+              "teamId": "audi",
+              "position": "13",
+              "lapsCompleted": 29,
+              "bestLap": "1:25.437",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "lawson",
+              "driver": {
+                "name": "Liam",
+                "surname": "Lawson",
+                "number": 30
+              },
+              "teamId": "rb",
+              "position": "14",
+              "lapsCompleted": 27,
+              "bestLap": "1:25.593",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "rafael_camara",
+              "driver": {
+                "name": "Rafael",
+                "surname": "Camara",
+                "number": 51
+              },
+              "teamId": "haas",
+              "position": "15",
+              "lapsCompleted": 26,
+              "bestLap": "1:25.685",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "albon",
+              "driver": {
+                "name": "Alex",
+                "surname": "Albon",
+                "number": 23
+              },
+              "teamId": "williams",
+              "position": "16",
+              "lapsCompleted": 26,
+              "bestLap": "1:25.692",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "bearman",
+              "driver": {
+                "name": "Oliver",
+                "surname": "Bearman",
+                "number": 87
+              },
+              "teamId": "haas",
+              "position": "17",
+              "lapsCompleted": 26,
+              "bestLap": "1:25.766",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "sainz",
+              "driver": {
+                "name": "Carlos",
+                "surname": "Sainz",
+                "number": 55
+              },
+              "teamId": "williams",
+              "position": "18",
+              "lapsCompleted": 27,
+              "bestLap": "1:25.992",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "jak_crawford",
+              "driver": {
+                "name": "Jak",
+                "surname": "Crawford",
+                "number": 34
+              },
+              "teamId": "aston_martin",
+              "position": "19",
+              "lapsCompleted": 25,
+              "bestLap": "1:26.306",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "stroll",
+              "driver": {
+                "name": "Lance",
+                "surname": "Stroll",
+                "number": 18
+              },
+              "teamId": "aston_martin",
+              "position": "20",
+              "lapsCompleted": 21,
+              "bestLap": "1:26.416",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "perez",
+              "driver": {
+                "name": "Sergio",
+                "surname": "Pérez",
+                "number": 11
+              },
+              "teamId": "cadillac",
+              "position": "21",
+              "lapsCompleted": 25,
+              "bestLap": "1:26.686",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "bottas",
+              "driver": {
+                "name": "Valtteri",
+                "surname": "Bottas",
+                "number": 77
+              },
+              "teamId": "cadillac",
+              "position": "22",
+              "lapsCompleted": 27,
+              "bestLap": "1:26.909",
+              "timingSegment": "Practice"
+            }
+          ],
+          "apiSource": null,
+          "checkedDate": "2026-11-27"
         },
         "fp2": {
           "label": "P2",
           "date": "2026-11-27",
           "startTime": "2026-11-27T17:00:00Z",
-          "source": null,
-          "status": "SCHEDULED",
-          "results": []
+          "source": "https://www.formula1.com/en/results/2026/races/1301/qatar/practice/2",
+          "status": "CONCLUDED",
+          "results": [
+            {
+              "driverId": "antonelli",
+              "driver": {
+                "name": "Andrea",
+                "surname": "Kimi Antonelli",
+                "number": 12
+              },
+              "teamId": "mercedes",
+              "position": "1",
+              "lapsCompleted": 31,
+              "bestLap": "1:23.077",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "russell",
+              "driver": {
+                "name": "George",
+                "surname": "Russell",
+                "number": 63
+              },
+              "teamId": "mercedes",
+              "position": "2",
+              "lapsCompleted": 33,
+              "bestLap": "1:23.204",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "norris",
+              "driver": {
+                "name": "Lando",
+                "surname": "Norris",
+                "number": 1
+              },
+              "teamId": "mclaren",
+              "position": "3",
+              "lapsCompleted": 31,
+              "bestLap": "1:23.522",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "piastri",
+              "driver": {
+                "name": "Oscar",
+                "surname": "Piastri",
+                "number": 81
+              },
+              "teamId": "mclaren",
+              "position": "4",
+              "lapsCompleted": 32,
+              "bestLap": "1:23.549",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "max_verstappen",
+              "driver": {
+                "name": "Max",
+                "surname": "Verstappen",
+                "number": 3
+              },
+              "teamId": "red_bull",
+              "position": "5",
+              "lapsCompleted": 31,
+              "bestLap": "1:23.576",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "hadjar",
+              "driver": {
+                "name": "Isack",
+                "surname": "Hadjar",
+                "number": 6
+              },
+              "teamId": "red_bull",
+              "position": "6",
+              "lapsCompleted": 33,
+              "bestLap": "1:23.583",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "leclerc",
+              "driver": {
+                "name": "Charles",
+                "surname": "Leclerc",
+                "number": 16
+              },
+              "teamId": "ferrari",
+              "position": "7",
+              "lapsCompleted": 22,
+              "bestLap": "1:24.099",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "hamilton",
+              "driver": {
+                "name": "Lewis",
+                "surname": "Hamilton",
+                "number": 44
+              },
+              "teamId": "ferrari",
+              "position": "8",
+              "lapsCompleted": 24,
+              "bestLap": "1:24.216",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "lawson",
+              "driver": {
+                "name": "Liam",
+                "surname": "Lawson",
+                "number": 30
+              },
+              "teamId": "rb",
+              "position": "9",
+              "lapsCompleted": 32,
+              "bestLap": "1:24.425",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "lindblad",
+              "driver": {
+                "name": "Arvid",
+                "surname": "Lindblad",
+                "number": 41
+              },
+              "teamId": "rb",
+              "position": "10",
+              "lapsCompleted": 33,
+              "bestLap": "1:24.547",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "bortoleto",
+              "driver": {
+                "name": "Gabriel",
+                "surname": "Bortoleto",
+                "number": 5
+              },
+              "teamId": "audi",
+              "position": "11",
+              "lapsCompleted": 34,
+              "bestLap": "1:24.614",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "gasly",
+              "driver": {
+                "name": "Pierre",
+                "surname": "Gasly",
+                "number": 10
+              },
+              "teamId": "alpine",
+              "position": "12",
+              "lapsCompleted": 14,
+              "bestLap": "1:24.764",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "hulkenberg",
+              "driver": {
+                "name": "Nico",
+                "surname": "Hulkenberg",
+                "number": 27
+              },
+              "teamId": "audi",
+              "position": "13",
+              "lapsCompleted": 25,
+              "bestLap": "1:24.871",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "albon",
+              "driver": {
+                "name": "Alex",
+                "surname": "Albon",
+                "number": 23
+              },
+              "teamId": "williams",
+              "position": "14",
+              "lapsCompleted": 32,
+              "bestLap": "1:25.276",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "colapinto",
+              "driver": {
+                "name": "Franco",
+                "surname": "Colapinto",
+                "number": 43
+              },
+              "teamId": "alpine",
+              "position": "15",
+              "lapsCompleted": 31,
+              "bestLap": "1:25.733",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "sainz",
+              "driver": {
+                "name": "Carlos",
+                "surname": "Sainz",
+                "number": 55
+              },
+              "teamId": "williams",
+              "position": "16",
+              "lapsCompleted": 30,
+              "bestLap": "1:25.839",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "rafael_camara",
+              "driver": {
+                "name": "Rafael",
+                "surname": "Camara",
+                "number": 51
+              },
+              "teamId": "haas",
+              "position": "17",
+              "lapsCompleted": 32,
+              "bestLap": "1:25.962",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "bearman",
+              "driver": {
+                "name": "Oliver",
+                "surname": "Bearman",
+                "number": 87
+              },
+              "teamId": "haas",
+              "position": "18",
+              "lapsCompleted": 34,
+              "bestLap": "1:25.996",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "alonso",
+              "driver": {
+                "name": "Fernando",
+                "surname": "Alonso",
+                "number": 14
+              },
+              "teamId": "aston_martin",
+              "position": "19",
+              "lapsCompleted": 27,
+              "bestLap": "1:26.046",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "stroll",
+              "driver": {
+                "name": "Lance",
+                "surname": "Stroll",
+                "number": 18
+              },
+              "teamId": "aston_martin",
+              "position": "20",
+              "lapsCompleted": 15,
+              "bestLap": "1:26.648",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "bottas",
+              "driver": {
+                "name": "Valtteri",
+                "surname": "Bottas",
+                "number": 77
+              },
+              "teamId": "cadillac",
+              "position": "21",
+              "lapsCompleted": 29,
+              "bestLap": "1:27.394",
+              "timingSegment": "Practice"
+            },
+            {
+              "driverId": "perez",
+              "driver": {
+                "name": "Sergio",
+                "surname": "Pérez",
+                "number": 11
+              },
+              "teamId": "cadillac",
+              "position": "22",
+              "lapsCompleted": 27,
+              "bestLap": "1:27.511",
+              "timingSegment": "Practice"
+            }
+          ],
+          "apiSource": null,
+          "checkedDate": "2026-11-27"
         },
         "fp3": {
           "label": "P3",
