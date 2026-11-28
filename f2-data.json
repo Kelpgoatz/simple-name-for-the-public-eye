@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updatedAt": "2026-11-27T21:40:12.825Z",
+  "updatedAt": "2026-11-28T03:34:07.692Z",
   "source": {
     "name": "FIA Formula 2",
     "url": "https://www.fiaformula2.com/en/racing/2026",
@@ -27956,7 +27956,7 @@
               "driverPageUrl": "/en/drivers/nicolas-pino"
             }
           ],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         },
         {
           "id": "f2/qualifying?meeting=1301&session=0",
@@ -28394,7 +28394,7 @@
               "driverPageUrl": "/en/drivers/nicolas-pino"
             }
           ],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         },
         {
           "id": "f2/race?meeting=1301&session=1",
@@ -28403,7 +28403,7 @@
           "startTime": "2026-11-28T16:15:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         },
         {
           "id": "f2/race?meeting=1301&session=2",
@@ -28412,7 +28412,7 @@
           "startTime": "2026-11-29T12:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         }
       ],
       "circuit": "Lusail International Circuit",
@@ -28436,7 +28436,7 @@
           "startTime": "2026-12-04T07:05:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         },
         {
           "id": "f2/qualifying?meeting=1302&session=0",
@@ -28445,7 +28445,7 @@
           "startTime": "2026-12-04T11:00:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         },
         {
           "id": "f2/race?meeting=1302&session=1",
@@ -28454,7 +28454,7 @@
           "startTime": "2026-12-05T12:15:59.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         },
         {
           "id": "f2/race?meeting=1302&session=2",
@@ -28463,7 +28463,7 @@
           "startTime": "2026-12-06T09:15:00.000Z",
           "state": "upcoming",
           "results": [],
-          "updatedAt": "2026-11-27T21:40:12.825Z"
+          "updatedAt": "2026-11-28T03:34:07.692Z"
         }
       ],
       "circuit": "Yas Marina Circuit",
@@ -28903,10 +28903,10 @@
     "totalSessions": 53,
     "requestedSessions": 4,
     "unavailable": [
-      "R13 Practice",
       "R10 Practice",
-      "R13 Qualifying",
-      "R10 Qualifying"
+      "R13 Practice",
+      "R10 Qualifying",
+      "R13 Qualifying"
     ]
   },
   "pdfTimingCoverage": {
