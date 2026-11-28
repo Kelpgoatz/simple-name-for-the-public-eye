@@ -2,9 +2,9 @@
   "sport": "nba",
   "season": 2027,
   "seasonLabel": "2026-27",
-  "updatedAt": "2026-11-28T04:10:04.168Z",
-  "fixturesUpdatedAt": "2026-11-28T04:10:04.168Z",
-  "standingsUpdatedAt": "2026-11-28T04:10:04.168Z",
+  "updatedAt": "2026-11-28T13:12:13.107Z",
+  "fixturesUpdatedAt": "2026-11-28T13:12:13.107Z",
+  "standingsUpdatedAt": "2026-11-28T13:12:13.107Z",
   "seasonStart": "2026-09-30T07:00Z",
   "seasonEnd": "2027-06-26T06:59Z",
   "source": {
@@ -8671,8 +8671,8 @@
         {
           "id": "401909332",
           "startTime": "2026-11-28T02:00:00.000Z",
-          "status": "live",
-          "statusDetail": "5:53 - 4th",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Mortgage Matchup Center",
           "home": {
             "id": "21",
@@ -8688,15 +8688,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
             "color": "#0064b1"
           },
-          "homeScore": 100,
-          "awayScore": 94,
-          "winner": null
+          "homeScore": 109,
+          "awayScore": 113,
+          "winner": "away"
         },
         {
           "id": "401909333",
           "startTime": "2026-11-28T02:30:00.000Z",
-          "status": "live",
-          "statusDetail": "6:16 - 3rd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Frost Bank Center",
           "home": {
             "id": "24",
@@ -8712,15 +8712,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
             "color": "#552583"
           },
-          "homeScore": 54,
-          "awayScore": 63,
-          "winner": null
+          "homeScore": 99,
+          "awayScore": 96,
+          "winner": "home"
         },
         {
           "id": "401909334",
           "startTime": "2026-11-28T02:30:00.000Z",
-          "status": "live",
-          "statusDetail": "2:33 - 3rd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Delta Center",
           "home": {
             "id": "26",
@@ -8736,15 +8736,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
             "color": "#0e2240"
           },
-          "homeScore": 81,
-          "awayScore": 77,
-          "winner": null
+          "homeScore": 107,
+          "awayScore": 120,
+          "winner": "away"
         },
         {
           "id": "401909335",
           "startTime": "2026-11-28T02:30:00.000Z",
-          "status": "live",
-          "statusDetail": "3:52 - 3rd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Intuit Dome",
           "home": {
             "id": "12",
@@ -8760,15 +8760,15 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
             "color": "#0a2240"
           },
-          "homeScore": 67,
-          "awayScore": 70,
-          "winner": null
+          "homeScore": 104,
+          "awayScore": 105,
+          "winner": "away"
         },
         {
           "id": "401909336",
           "startTime": "2026-11-28T02:30:00.000Z",
-          "status": "live",
-          "statusDetail": "6:36 - 3rd",
+          "status": "final",
+          "statusDetail": "Final",
           "venue": "Moda Center",
           "home": {
             "id": "22",
@@ -8784,9 +8784,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
             "color": "#fdb927"
           },
-          "homeScore": 76,
-          "awayScore": 60,
-          "winner": null
+          "homeScore": 116,
+          "awayScore": 94,
+          "winner": "home"
         }
       ]
     },
@@ -9712,6 +9712,54 @@
           "winner": null
         },
         {
+          "id": "401910085",
+          "startTime": "2026-12-03T01:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "State Farm Arena",
+          "home": {
+            "id": "1",
+            "name": "Atlanta Hawks",
+            "abbreviation": "ATL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+            "color": "#c8102e"
+          },
+          "away": {
+            "id": "11",
+            "name": "Indiana Pacers",
+            "abbreviation": "IND",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+            "color": "#0c2340"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401910088",
+          "startTime": "2026-12-03T01:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Frost Bank Center",
+          "home": {
+            "id": "24",
+            "name": "San Antonio Spurs",
+            "abbreviation": "SA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+            "color": "#000000"
+          },
+          "away": {
+            "id": "28",
+            "name": "Toronto Raptors",
+            "abbreviation": "TOR",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+            "color": "#d91244"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
           "id": "401910083",
           "startTime": "2026-12-03T02:00:00.000Z",
           "status": "scheduled",
@@ -9767,78 +9815,6 @@
       "startDate": "2026-12-04T00:00:00Z",
       "matches": [
         {
-          "id": "401910085",
-          "startTime": "2026-12-04T00:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
-          "venue": "State Farm Arena",
-          "home": {
-            "id": "1",
-            "name": "Atlanta Hawks",
-            "abbreviation": "ATL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
-            "color": "#c8102e"
-          },
-          "away": {
-            "id": "11",
-            "name": "Indiana Pacers",
-            "abbreviation": "IND",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
-            "color": "#0c2340"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
-          "id": "401909450",
-          "startTime": null,
-          "status": "scheduled",
-          "statusDetail": "Time TBC",
-          "venue": "State Farm Arena",
-          "home": {
-            "id": "-1",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
-          },
-          "away": {
-            "id": "-2",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
-          "id": "401909451",
-          "startTime": null,
-          "status": "scheduled",
-          "statusDetail": "Time TBC",
-          "venue": "",
-          "home": {
-            "id": "-1",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
-          },
-          "away": {
-            "id": "-2",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
           "id": "401910086",
           "startTime": "2026-12-04T00:30:00.000Z",
           "status": "scheduled",
@@ -9887,30 +9863,6 @@
           "winner": null
         },
         {
-          "id": "401910088",
-          "startTime": "2026-12-04T01:00:00.000Z",
-          "status": "scheduled",
-          "statusDetail": "Scheduled",
-          "venue": "Frost Bank Center",
-          "home": {
-            "id": "24",
-            "name": "San Antonio Spurs",
-            "abbreviation": "SA",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
-            "color": "#000000"
-          },
-          "away": {
-            "id": "28",
-            "name": "Toronto Raptors",
-            "abbreviation": "TOR",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
-            "color": "#d91244"
-          },
-          "homeScore": null,
-          "awayScore": null,
-          "winner": null
-        },
-        {
           "id": "401910089",
           "startTime": "2026-12-04T03:00:00.000Z",
           "status": "scheduled",
@@ -9942,24 +9894,79 @@
       "startDate": "2026-12-05T00:00:00Z",
       "matches": [
         {
-          "id": "401909452",
-          "startTime": null,
+          "id": "401909450",
+          "startTime": "2026-12-05T00:00:00.000Z",
           "status": "scheduled",
-          "statusDetail": "Time TBC",
-          "venue": "Little Caesars Arena",
+          "statusDetail": "Scheduled",
+          "venue": "State Farm Arena",
           "home": {
-            "id": "-1",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
+            "id": "1",
+            "name": "Atlanta Hawks",
+            "abbreviation": "ATL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/atl.png",
+            "color": "#c8102e"
           },
           "away": {
-            "id": "-2",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
+            "id": "20",
+            "name": "Philadelphia 76ers",
+            "abbreviation": "PHI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+            "color": "#1d428a"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401909451",
+          "startTime": "2026-12-05T02:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "American Airlines Center",
+          "home": {
+            "id": "6",
+            "name": "Dallas Mavericks",
+            "abbreviation": "DAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+            "color": "#0064b1"
+          },
+          "away": {
+            "id": "24",
+            "name": "San Antonio Spurs",
+            "abbreviation": "SA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+            "color": "#000000"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-06",
+      "label": "Sun, 6 Dec 2026",
+      "startDate": "2026-12-06T00:00:00Z",
+      "matches": [
+        {
+          "id": "401909452",
+          "startTime": "2026-12-06T00:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Little Caesars Arena",
+          "home": {
+            "id": "8",
+            "name": "Detroit Pistons",
+            "abbreviation": "DET",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+            "color": "#1d428a"
+          },
+          "away": {
+            "id": "2",
+            "name": "Boston Celtics",
+            "abbreviation": "BOS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+            "color": "#008348"
           },
           "homeScore": null,
           "awayScore": null,
@@ -9967,23 +9974,198 @@
         },
         {
           "id": "401909453",
-          "startTime": null,
+          "startTime": "2026-12-06T03:00:00.000Z",
           "status": "scheduled",
-          "statusDetail": "Time TBC",
-          "venue": "",
+          "statusDetail": "Scheduled",
+          "venue": "Moda Center",
           "home": {
-            "id": "-1",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
+            "id": "22",
+            "name": "Portland Trail Blazers",
+            "abbreviation": "POR",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+            "color": "#e03a3e"
           },
           "away": {
-            "id": "-2",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
+            "id": "29",
+            "name": "Memphis Grizzlies",
+            "abbreviation": "MEM",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+            "color": "#5d76a9"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "2026-12-07",
+      "label": "Mon, 7 Dec 2026",
+      "startDate": "2026-12-07T00:00:00Z",
+      "matches": [
+        {
+          "id": "401937096",
+          "startTime": "2026-12-06T20:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Toyota Center (Houston)",
+          "home": {
+            "id": "10",
+            "name": "Houston Rockets",
+            "abbreviation": "HOU",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+            "color": "#ce0e2d"
+          },
+          "away": {
+            "id": "21",
+            "name": "Phoenix Suns",
+            "abbreviation": "PHX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+            "color": "#29127a"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937097",
+          "startTime": "2026-12-06T22:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Delta Center",
+          "home": {
+            "id": "26",
+            "name": "Utah Jazz",
+            "abbreviation": "UTAH",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+            "color": "#4e008e"
+          },
+          "away": {
+            "id": "15",
+            "name": "Milwaukee Bucks",
+            "abbreviation": "MIL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+            "color": "#00471b"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937098",
+          "startTime": "2026-12-06T23:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Rocket Arena",
+          "home": {
+            "id": "5",
+            "name": "Cleveland Cavaliers",
+            "abbreviation": "CLE",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+            "color": "#860038"
+          },
+          "away": {
+            "id": "19",
+            "name": "Orlando Magic",
+            "abbreviation": "ORL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+            "color": "#0150b5"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937099",
+          "startTime": "2026-12-06T23:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Madison Square Garden",
+          "home": {
+            "id": "18",
+            "name": "New York Knicks",
+            "abbreviation": "NY",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+            "color": "#1d428a"
+          },
+          "away": {
+            "id": "27",
+            "name": "Washington Wizards",
+            "abbreviation": "WSH",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+            "color": "#e31837"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937100",
+          "startTime": "2026-12-07T00:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Target Center",
+          "home": {
+            "id": "16",
+            "name": "Minnesota Timberwolves",
+            "abbreviation": "MIN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+            "color": "#266092"
+          },
+          "away": {
+            "id": "12",
+            "name": "LA Clippers",
+            "abbreviation": "LAC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+            "color": "#12173f"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937101",
+          "startTime": "2026-12-07T00:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Paycom Center",
+          "home": {
+            "id": "25",
+            "name": "Oklahoma City Thunder",
+            "abbreviation": "OKC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+            "color": "#007ac1"
+          },
+          "away": {
+            "id": "13",
+            "name": "Los Angeles Lakers",
+            "abbreviation": "LAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+            "color": "#552583"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937102",
+          "startTime": "2026-12-07T02:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Ball Arena",
+          "home": {
+            "id": "7",
+            "name": "Denver Nuggets",
+            "abbreviation": "DEN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+            "color": "#0e2240"
+          },
+          "away": {
+            "id": "23",
+            "name": "Sacramento Kings",
+            "abbreviation": "SAC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+            "color": "#5a2d81"
           },
           "homeScore": null,
           "awayScore": null,
@@ -9997,24 +10179,24 @@
       "startDate": "2026-12-08T00:00:00Z",
       "matches": [
         {
-          "id": "401909454",
-          "startTime": null,
+          "id": "401937103",
+          "startTime": "2026-12-08T00:00:00.000Z",
           "status": "scheduled",
-          "statusDetail": "Time TBC",
-          "venue": "",
+          "statusDetail": "Scheduled",
+          "venue": "Gainbridge Fieldhouse",
           "home": {
-            "id": "-1",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
+            "id": "11",
+            "name": "Indiana Pacers",
+            "abbreviation": "IND",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+            "color": "#0c2340"
           },
           "away": {
-            "id": "-2",
-            "name": "TBD",
-            "abbreviation": "TBD",
-            "logo": null,
-            "color": "#073d2e"
+            "id": "14",
+            "name": "Miami Heat",
+            "abbreviation": "MIA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+            "color": "#98002e"
           },
           "homeScore": null,
           "awayScore": null,
@@ -10067,6 +10249,78 @@
           "homeScore": null,
           "awayScore": null,
           "winner": null
+        },
+        {
+          "id": "401937104",
+          "startTime": "2026-12-08T00:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Scotiabank Arena",
+          "home": {
+            "id": "28",
+            "name": "Toronto Raptors",
+            "abbreviation": "TOR",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+            "color": "#d91244"
+          },
+          "away": {
+            "id": "30",
+            "name": "Charlotte Hornets",
+            "abbreviation": "CHA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+            "color": "#008ca8"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937105",
+          "startTime": "2026-12-08T01:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "United Center",
+          "home": {
+            "id": "4",
+            "name": "Chicago Bulls",
+            "abbreviation": "CHI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+            "color": "#ce1141"
+          },
+          "away": {
+            "id": "17",
+            "name": "Brooklyn Nets",
+            "abbreviation": "BKN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+            "color": "#000000"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937106",
+          "startTime": "2026-12-08T01:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Smoothie King Center",
+          "home": {
+            "id": "3",
+            "name": "New Orleans Pelicans",
+            "abbreviation": "NO",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+            "color": "#0a2240"
+          },
+          "away": {
+            "id": "9",
+            "name": "Golden State Warriors",
+            "abbreviation": "GS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+            "color": "#fdb927"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
         }
       ]
     },
@@ -10075,6 +10329,78 @@
       "label": "Fri, 11 Dec 2026",
       "startDate": "2026-12-11T00:00:00Z",
       "matches": [
+        {
+          "id": "401937107",
+          "startTime": "2026-12-11T00:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Spectrum Center",
+          "home": {
+            "id": "30",
+            "name": "Charlotte Hornets",
+            "abbreviation": "CHA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
+            "color": "#008ca8"
+          },
+          "away": {
+            "id": "18",
+            "name": "New York Knicks",
+            "abbreviation": "NY",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+            "color": "#1d428a"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937108",
+          "startTime": "2026-12-11T00:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Kia Center",
+          "home": {
+            "id": "19",
+            "name": "Orlando Magic",
+            "abbreviation": "ORL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+            "color": "#0150b5"
+          },
+          "away": {
+            "id": "4",
+            "name": "Chicago Bulls",
+            "abbreviation": "CHI",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+            "color": "#ce1141"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937109",
+          "startTime": "2026-12-11T00:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Capital One Arena",
+          "home": {
+            "id": "27",
+            "name": "Washington Wizards",
+            "abbreviation": "WSH",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
+            "color": "#e31837"
+          },
+          "away": {
+            "id": "11",
+            "name": "Indiana Pacers",
+            "abbreviation": "IND",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+            "color": "#0c2340"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
         {
           "id": "401909456",
           "startTime": null,
@@ -10094,6 +10420,198 @@
             "abbreviation": "TBD",
             "logo": null,
             "color": "#073d2e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937110",
+          "startTime": "2026-12-11T00:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Barclays Center",
+          "home": {
+            "id": "17",
+            "name": "Brooklyn Nets",
+            "abbreviation": "BKN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
+            "color": "#000000"
+          },
+          "away": {
+            "id": "3",
+            "name": "New Orleans Pelicans",
+            "abbreviation": "NO",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
+            "color": "#0a2240"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937111",
+          "startTime": "2026-12-11T00:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Kaseya Center",
+          "home": {
+            "id": "14",
+            "name": "Miami Heat",
+            "abbreviation": "MIA",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+            "color": "#98002e"
+          },
+          "away": {
+            "id": "5",
+            "name": "Cleveland Cavaliers",
+            "abbreviation": "CLE",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
+            "color": "#860038"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937112",
+          "startTime": "2026-12-11T01:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Fiserv Forum",
+          "home": {
+            "id": "15",
+            "name": "Milwaukee Bucks",
+            "abbreviation": "MIL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+            "color": "#00471b"
+          },
+          "away": {
+            "id": "28",
+            "name": "Toronto Raptors",
+            "abbreviation": "TOR",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+            "color": "#d91244"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937113",
+          "startTime": "2026-12-11T02:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Mortgage Matchup Center",
+          "home": {
+            "id": "21",
+            "name": "Phoenix Suns",
+            "abbreviation": "PHX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+            "color": "#29127a"
+          },
+          "away": {
+            "id": "25",
+            "name": "Oklahoma City Thunder",
+            "abbreviation": "OKC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+            "color": "#007ac1"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937114",
+          "startTime": "2026-12-11T03:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Chase Center",
+          "home": {
+            "id": "9",
+            "name": "Golden State Warriors",
+            "abbreviation": "GS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+            "color": "#fdb927"
+          },
+          "away": {
+            "id": "7",
+            "name": "Denver Nuggets",
+            "abbreviation": "DEN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+            "color": "#0e2240"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937115",
+          "startTime": "2026-12-11T03:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "crypto.com Arena",
+          "home": {
+            "id": "13",
+            "name": "Los Angeles Lakers",
+            "abbreviation": "LAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+            "color": "#552583"
+          },
+          "away": {
+            "id": "26",
+            "name": "Utah Jazz",
+            "abbreviation": "UTAH",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+            "color": "#4e008e"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937116",
+          "startTime": "2026-12-11T03:00:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Golden 1 Center",
+          "home": {
+            "id": "23",
+            "name": "Sacramento Kings",
+            "abbreviation": "SAC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+            "color": "#5a2d81"
+          },
+          "away": {
+            "id": "16",
+            "name": "Minnesota Timberwolves",
+            "abbreviation": "MIN",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+            "color": "#266092"
+          },
+          "homeScore": null,
+          "awayScore": null,
+          "winner": null
+        },
+        {
+          "id": "401937117",
+          "startTime": "2026-12-11T03:30:00.000Z",
+          "status": "scheduled",
+          "statusDetail": "Scheduled",
+          "venue": "Intuit Dome",
+          "home": {
+            "id": "12",
+            "name": "LA Clippers",
+            "abbreviation": "LAC",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+            "color": "#12173f"
+          },
+          "away": {
+            "id": "10",
+            "name": "Houston Rockets",
+            "abbreviation": "HOU",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
+            "color": "#ce0e2d"
           },
           "homeScore": null,
           "awayScore": null,
@@ -32207,31 +32725,31 @@
         {
           "rank": 1,
           "team": {
-            "id": "13",
-            "name": "Los Angeles Lakers",
-            "abbreviation": "LAL",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-            "color": "#552583"
-          },
-          "wins": 15,
-          "losses": 3,
-          "draws": 0,
-          "played": 18,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.8333333,
-          "gamesBehind": 0,
-          "for": 2149,
-          "against": 2029
-        },
-        {
-          "rank": 2,
-          "team": {
             "id": "24",
             "name": "San Antonio Spurs",
             "abbreviation": "SA",
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
             "color": "#000000"
+          },
+          "wins": 16,
+          "losses": 4,
+          "draws": 0,
+          "played": 20,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.8,
+          "gamesBehind": 0,
+          "for": 2327,
+          "against": 2110
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": "13",
+            "name": "Los Angeles Lakers",
+            "abbreviation": "LAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+            "color": "#552583"
           },
           "wins": 15,
           "losses": 4,
@@ -32241,8 +32759,8 @@
           "percentage": null,
           "winPct": 0.7894737,
           "gamesBehind": 0.5,
-          "for": 2228,
-          "against": 2014
+          "for": 2245,
+          "against": 2128
         },
         {
           "rank": 3,
@@ -32313,16 +32831,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
             "color": "#e03a3e"
           },
-          "wins": 12,
+          "wins": 13,
           "losses": 6,
           "draws": 0,
-          "played": 18,
+          "played": 19,
           "points": null,
           "percentage": null,
-          "winPct": 0.6666667,
-          "gamesBehind": 3,
-          "for": 2102,
-          "against": 1987
+          "winPct": 0.68421054,
+          "gamesBehind": 2.5,
+          "for": 2218,
+          "against": 2081
         },
         {
           "rank": 7,
@@ -32333,16 +32851,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
             "color": "#0e2240"
           },
-          "wins": 10,
+          "wins": 11,
           "losses": 6,
           "draws": 0,
-          "played": 16,
+          "played": 17,
           "points": null,
           "percentage": null,
-          "winPct": 0.625,
-          "gamesBehind": 4,
-          "for": 1856,
-          "against": 1848
+          "winPct": 0.64705884,
+          "gamesBehind": 3.5,
+          "for": 1976,
+          "against": 1955
         },
         {
           "rank": 8,
@@ -32353,59 +32871,19 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
             "color": "#0064b1"
           },
-          "wins": 11,
+          "wins": 12,
           "losses": 7,
           "draws": 0,
-          "played": 18,
+          "played": 19,
           "points": null,
           "percentage": null,
-          "winPct": 0.6111111,
-          "gamesBehind": 4,
-          "for": 2031,
-          "against": 2013
+          "winPct": 0.6315789,
+          "gamesBehind": 3.5,
+          "for": 2144,
+          "against": 2122
         },
         {
           "rank": 9,
-          "team": {
-            "id": "9",
-            "name": "Golden State Warriors",
-            "abbreviation": "GS",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-            "color": "#fdb927"
-          },
-          "wins": 10,
-          "losses": 8,
-          "draws": 0,
-          "played": 18,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.5555556,
-          "gamesBehind": 5,
-          "for": 2020,
-          "against": 2015
-        },
-        {
-          "rank": 10,
-          "team": {
-            "id": "21",
-            "name": "Phoenix Suns",
-            "abbreviation": "PHX",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
-            "color": "#29127a"
-          },
-          "wins": 9,
-          "losses": 8,
-          "draws": 0,
-          "played": 17,
-          "points": null,
-          "percentage": null,
-          "winPct": 0.5294118,
-          "gamesBehind": 5.5,
-          "for": 1935,
-          "against": 1956
-        },
-        {
-          "rank": 11,
           "team": {
             "id": "25",
             "name": "Oklahoma City Thunder",
@@ -32425,6 +32903,46 @@
           "against": 2097
         },
         {
+          "rank": 10,
+          "team": {
+            "id": "9",
+            "name": "Golden State Warriors",
+            "abbreviation": "GS",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
+            "color": "#fdb927"
+          },
+          "wins": 10,
+          "losses": 9,
+          "draws": 0,
+          "played": 19,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.5263158,
+          "gamesBehind": 5.5,
+          "for": 2114,
+          "against": 2131
+        },
+        {
+          "rank": 11,
+          "team": {
+            "id": "21",
+            "name": "Phoenix Suns",
+            "abbreviation": "PHX",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+            "color": "#29127a"
+          },
+          "wins": 9,
+          "losses": 9,
+          "draws": 0,
+          "played": 18,
+          "points": null,
+          "percentage": null,
+          "winPct": 0.5,
+          "gamesBehind": 6,
+          "for": 2044,
+          "against": 2069
+        },
+        {
           "rank": 12,
           "team": {
             "id": "3",
@@ -32433,16 +32951,16 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
             "color": "#0a2240"
           },
-          "wins": 5,
+          "wins": 6,
           "losses": 14,
           "draws": 0,
-          "played": 19,
+          "played": 20,
           "points": null,
           "percentage": null,
-          "winPct": 0.2631579,
-          "gamesBehind": 10.5,
-          "for": 2176,
-          "against": 2328
+          "winPct": 0.3,
+          "gamesBehind": 10,
+          "for": 2281,
+          "against": 2432
         },
         {
           "rank": 13,
@@ -32454,15 +32972,15 @@
             "color": "#12173f"
           },
           "wins": 4,
-          "losses": 13,
+          "losses": 14,
           "draws": 0,
-          "played": 17,
+          "played": 18,
           "points": null,
           "percentage": null,
-          "winPct": 0.23529412,
-          "gamesBehind": 10.5,
-          "for": 1868,
-          "against": 1995
+          "winPct": 0.22222222,
+          "gamesBehind": 11,
+          "for": 1972,
+          "against": 2100
         },
         {
           "rank": 14,
@@ -32474,15 +32992,15 @@
             "color": "#4e008e"
           },
           "wins": 3,
-          "losses": 16,
+          "losses": 17,
           "draws": 0,
-          "played": 19,
+          "played": 20,
           "points": null,
           "percentage": null,
-          "winPct": 0.15789473,
-          "gamesBehind": 12.5,
-          "for": 2049,
-          "against": 2192
+          "winPct": 0.15,
+          "gamesBehind": 13,
+          "for": 2156,
+          "against": 2312
         },
         {
           "rank": 15,
